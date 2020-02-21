@@ -1,0 +1,19 @@
+#about-page {
+  .section-dots-wrap {
+    opacity: 0.2;
+  }
+
+  .see-more-box {
+    &.on-first-load {
+      span {
+        animation-duration: 2s;
+        animation-delay: 0.2s;
+      }
+
+      .link {
+        animation-duration: 2s;
+        animation-delay: 0.2s;
+      }
+    }
+  }
+}

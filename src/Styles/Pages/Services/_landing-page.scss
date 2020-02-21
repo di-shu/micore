@@ -1,0 +1,17 @@
+@include media-breakpoint-up('xl') {
+  #landing-service-page {
+    #service-main-section {
+      .main-statue {
+        canvas {
+          transform: translateY(40px);
+        }
+      }
+    }
+
+    #service-price-miscalculation {
+      .section-wrapper {
+        padding-bottom: 150px;
+      }
+    }
+  }
+}

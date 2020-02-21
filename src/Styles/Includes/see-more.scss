@@ -1,0 +1,101 @@
+@import "../Static/index";
+
+.see-more-link {
+  position: absolute;
+  bottom: 0;
+  z-index: 99;
+  width: 210px;
+  transition: all 1s $timing-func;
+  padding-top: 30px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: $accent-main;
+    height: 2px;
+  }
+
+  span {
+    display: block;
+    width: 100%;
+    opacity: 0.8;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  &.is-black {
+    span {
+      color: $accent-black;
+    }
+  }
+  
+  &.on-team-section {
+    position: fixed;
+    
+    span {
+      color: $accent-black;
+    }
+  }
+  
+  &.to-right {
+    transform: rotate(90deg) translate(0, 100%);
+    transform-origin: bottom right;
+    right: 0;
+
+    span {
+      text-align: left;
+    }
+  }
+  
+  &.to-left {
+    transform: rotate(-90deg) translate(0, 100%);
+    transform-origin: bottom left;
+    left: 0;
+
+    span {
+      text-align: right;
+    }
+  }
+  
+  &.on-first-load {
+    &:before {
+      animation: see-more-line-on-first-load 3s $timing-func 0.3s both;
+    }
+
+    span {
+      animation: see-more-text-on-first-load 3s $timing-func 0.3s both;
+    }
+  }
+}
+
+@include media-breakpoint-up('md') {
+  .see-more-link {
+    position: absolute;
+    width: 312px;
+    padding-top: 40px;
+
+    &:before {
+      height: 5px;
+    }
+  
+    &.on-enter {
+      animation: see-more-on-enter 1s $timing-func 0s both;
+    }
+  
+    &.on-leave {
+      animation: see-more-on-leave 1s $timing-func 0s both;
+    }
+  }
+}
+
+@include media-breakpoint-up('xl') {
+  .see-more-link {
+    position: fixed;
+  }
+}

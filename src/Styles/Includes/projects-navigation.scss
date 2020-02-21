@@ -1,0 +1,133 @@
+@import "../Static/index";
+
+.navigation-wrap {
+  &.scroll-down {
+    .nav-el {
+      &:before {
+        height: 3px;
+      }
+
+      &.prev, &.next {
+        span {
+          opacity: 0;
+          transform: translateY(-160%);
+        }
+      }
+    }
+  }
+
+  &.scroll-up {
+    .nav-el {
+      &:before {
+        height: 100%;
+      }
+
+      span {
+        color: #fff !important;
+      }
+    }
+  }
+
+  &.is-black {
+    .nav-el {
+      span {
+        color: $accent-black;
+      }
+    }
+  }
+}
+
+.nav-el {
+  position: fixed;
+  top: 15%;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  z-index: 99;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+
+  &.prev {
+    left: 0;
+    transform: rotate(-90deg) translateX(-100%);
+    transform-origin: top left;
+  }
+
+  &.next {
+    right: 0;
+    transform: rotate(90deg) translateX(100%);
+    transform-origin: top right;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: $accent-main;
+    transition: all 0.5s $timing-func;
+  }
+
+  span {
+    display: block;
+    transform: translateY(0);
+    opacity: 0.9;
+    color: $white;
+    font-family: $museo-300;
+    font-size: 14px;
+    letter-spacing: 1.05px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: all 0.5s $timing-func;
+  }
+}
+
+@include media-breakpoint-up('md') {
+  .navigation-wrap {
+    &.scroll-down {
+      .nav-el {
+        &:before {
+          height: 5px;
+        }
+      }
+    }
+  }
+
+  .nav-el {
+    top: 20%;
+    padding-top: 25px;
+    padding-bottom: 15px;
+
+    &:before {
+      height: 5px;
+    }
+
+    span {
+      font-size: 18px;
+      letter-spacing: 1.35px;
+      padding: 0 15px;
+    }
+  }
+}
+
+@include media-breakpoint-up('xl') {
+  .nav-el {
+    top: 50%;
+    transform: translateY(-50%);
+
+    &.next {
+      transform: translateY(-50%) rotate(90deg) translateX(100%);
+    }
+
+    &.prev {
+      transform: translateY(-50%) rotate(-90deg) translateX(-100%);
+    }
+
+    span {
+      padding: 0 15px;
+    }
+  }
+}

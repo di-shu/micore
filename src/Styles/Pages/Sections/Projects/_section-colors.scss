@@ -1,0 +1,110 @@
+[id*='-project-page'] {
+  .col-item-color {
+    margin-bottom: 50px;
+
+    &:nth-child(even) {
+      .color-info-wrap {
+        flex-direction: row-reverse;
+      }
+
+      .color-wrap {
+        margin-left: 0;
+        margin-right: 40px;
+      }
+
+      .info-wrap {
+        margin-left: 40px;
+      }
+    }
+  }
+
+  .color-info-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .color-wrap {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+  }
+
+  .color-text {
+    font-family: $museo-300;
+    font-size: 16px;
+    letter-spacing: 0.45px;
+  }
+
+  .info-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-text {
+    margin-bottom: 15px;
+    color: #12171e;
+    font-family: $museo-300;
+    font-size: 14px;
+    letter-spacing: 0.39px;
+    text-transform: uppercase;
+
+    &:nth-last-child(1), &:nth-last-child(2) {
+      font-family: $museo-100;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include media-breakpoint-up('lg') {
+  [id*='-project-page'] {
+    .col-item-color {
+      margin-bottom: 0;
+
+      &:nth-child(even) {
+        .color-wrap {
+          margin-right: 0;
+        }
+
+        .info-wrap {
+          margin-left: 0;
+        }
+      }
+    }
+
+    .color-info-wrap {
+      max-width: 100%;
+      flex-direction: column !important;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    .color-wrap {
+      margin-left: 0;
+      margin-top: 15px;
+      width: 130px;
+      height: 130px;
+    }
+
+    .info-wrap {
+      margin-top: 60px;
+    }
+  }
+}
+
+@include media-breakpoint-up('xl') {
+  [id*='-project-page'] {
+    .color-text {
+      font-size: 20px;
+      letter-spacing: 0.56px;
+    }
+  }
+}

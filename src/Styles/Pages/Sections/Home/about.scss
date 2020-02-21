@@ -1,0 +1,287 @@
+@import "../../../Static/index";
+
+#about-section {
+  .fp-scroller {
+    height: 100%;
+  }
+
+  .container-fluid {
+    padding-top: 65px;
+    height: 100%;
+
+    .row {
+      height: 100%;
+    }
+
+    .col-12 {
+      &:last-child {
+        height: calc(100% - 65px);
+      }
+    }
+  }
+
+  .section-dots-wrap {
+    width: 360px;
+    height: 360px;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+
+  .section-title {
+    position: relative;
+    font-size: 40px;
+    letter-spacing: 1.13px;
+    text-align: center;
+    margin-bottom: 30px;
+    z-index: 2;
+  }
+
+  .about-statue {
+    position: absolute;
+    bottom: 0;
+    width: 400px;
+    left: 65px;
+    z-index: 4;
+  
+    .statue-img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .text-box {
+    position: relative;
+    border: 1px solid #4d5257;
+    background-color: $accent-black;
+    padding: 15px 15px 50px;
+    max-width: 325px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .about-desc {
+    position: relative;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    line-height: 26px;
+    margin-bottom: 0;
+  }
+
+  .about-link {
+    position: absolute;
+    bottom: -15px;
+    left: 60px;
+    background-color: $accent-black;
+    color: #fff;
+    font-family: $museo-500;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.6s $timing-func 0.6s;
+    z-index: 1;
+
+
+    &:hover {
+      bottom: 0;
+      transition-delay: 0.2s;
+
+      &:before {
+        width: 100%;
+        opacity: 1;
+        background-color: $accent-main;
+        transition-delay: 0.6s;
+      }
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 0;
+      height: 1px;
+      background-color: #fff;
+      opacity: 0;
+      transition: all 0.6s $timing-func 0s;
+    }
+  }
+}
+
+@include media-breakpoint-up('md') {
+  #about-section {
+    .container-fluid {
+      padding-top: 110px;
+
+      .col-12 {
+        &:last-child {
+          height: calc(100% - 132px);
+        }
+      }
+    }
+
+    .section-dots-wrap {
+      width: 420px;
+      height: 420px;
+      top: auto;
+      right: auto;
+      bottom: -15px;
+      left: 110px;
+      transform: none;
+      opacity: 0.5;
+    }
+
+    .section-title {
+      font-size: 60px;
+      letter-spacing: 1.69px;
+      text-align: left;
+      margin-left: 100px;
+      margin-bottom: 60px;
+    }
+
+    .text-box {
+      max-width: 590px;
+      margin: 0 auto 0 100px;
+      padding: 50px 50px 60px;
+      border: 1px solid #fff;
+    }
+
+    .about-desc {
+      font-size: 20px;
+      letter-spacing: 2px;
+      line-height: 34px;
+    }
+
+    .about-link {
+      font-size: 20px;
+      padding: 0 10px;
+      left: 65px;
+      bottom: -15px;
+    }
+
+    .about-statue {
+      left: auto;
+      bottom: 0;
+      right: -155px;
+      width: 570px;
+    }
+  }
+}
+
+@include media-breakpoint-up('lg') {
+  #about-section {
+    .section-dots-wrap {
+      bottom: 65px;
+      width: 485px;
+      height: 485px;
+    }
+
+    .section-title {
+      margin-left: 100px;
+    }
+
+    .text-box {
+      margin-left: auto;
+      padding: 40px 40px 75px 50px;
+    }
+
+    .about-statue {
+      bottom: -30px;
+      right: -100px;
+    }
+  }
+}
+
+@include media-breakpoint-up('xl') {
+  #about-section {
+    .container-fluid {
+      .col-12 {
+        &:last-child {
+          height: calc(100% - 175px);
+        }
+      }
+    }
+
+    .section-title {
+      font-size: 71px;
+      letter-spacing: 2px;
+      margin-bottom: 90px;
+
+      &.on-enter {
+        animation: section-title-on-enter 1s $timing-func 0s both;
+      }
+
+      &.on-leave {
+        animation: section-title-on-leave 1s $timing-func 0s both;
+      }
+    }
+
+    .about-statue {
+      width: 800px;
+      bottom: 0;
+      right: -110px;
+
+      &.on-enter {
+        animation: statue-about-on-enter 1s $timing-func 0s both;
+      }
+
+      &.on-leave {
+        animation: statue-about-on-leave 1s $timing-func 0s both;
+      }
+    }
+
+    .text-box {
+      max-width: 655px;
+      padding: 0;
+      border: none;
+      margin-right: 315px;
+      overflow: hidden;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: -3px;
+        left: 3px;
+        right: 0;
+        bottom: -3px;
+        width: 100%;
+        z-index: 3;
+        background-color: $accent-black;
+        transform: translateX(0);
+      }
+
+      &.on-enter {
+        &:before {
+          animation: text-about-on-enter 1s $timing-func 0.4s both;
+        }
+      }
+
+      &.on-leave {
+        &:before {
+          animation: text-about-on-leave 1s $timing-func 0s both;
+        }
+      }
+    }
+
+    .about-desc {
+      border: 3px solid #fff;
+      padding: 50px 72px 100px;
+      margin-bottom: 10px;
+    }
+
+    .about-link {
+      font-size: 24px;
+      bottom: -5px;
+
+      &:before {
+        height: 3px;
+      }
+
+      &:hover {
+        bottom: 10px;
+      }
+    }
+  }
+}

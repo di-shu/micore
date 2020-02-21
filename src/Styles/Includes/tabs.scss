@@ -1,0 +1,128 @@
+@import "../Static/index";
+
+.tab-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.tab-item {
+  position: relative;
+  background-color: transparent;
+  border-radius: 0;
+  margin: 0;
+}
+
+.tab-link {
+  position: relative;
+  display: block;
+  opacity: 0.9;
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 0.97px;
+  text-transform: uppercase;
+  padding: 0 25px 10px;
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: $accent-main;
+    transition: all 1s $timing-func 0s;
+  }
+
+  &:hover {
+    color: #fff !important;
+  }
+
+  &.active {
+    &:before {
+      width: 100%;
+      transition-delay: 1s;
+    }
+  }
+}
+
+@include media-breakpoint-up('md') {
+  .tab-wrap {
+    margin-bottom: 40px;
+    justify-content: center;
+  }
+
+  .tab-item {
+    display: flex;
+    flex: 0 0 33.333333%;
+
+    &:nth-child(1) {
+      justify-content: flex-end;
+    }
+
+    &:nth-child(2) {
+      justify-content: center;
+    }
+
+    &:nth-child(3) {
+      justify-content: flex-start;
+    }
+  }
+
+  .tab-link {
+    padding: 0 0 20px 0;
+    font-size: 18px;
+    letter-spacing: 1.35px;
+
+    &:before {
+      height: 4px;
+    }
+  }
+}
+
+@include media-breakpoint-up('lg') {
+  .tab-wrap {
+    margin-bottom: 0;
+    position: absolute;
+    flex-direction: row-reverse;
+    top: 50%;
+    left: 0;
+    width: 530px;
+    transform: rotate(-90deg) translate(-50%, 0);
+    transform-origin: top left;
+  }
+
+  .tab-item {
+    justify-content: center !important;
+  }
+
+  .tab-link {
+    padding-bottom: 0;
+    padding-top: 43px;
+
+    &:before {
+      bottom: auto;
+      top: 0;
+    }
+  }
+}
+
+@include media-breakpoint-up('xl') {
+  .tab-wrap {
+    transition: all 1s $timing-func;
+
+    &.on-enter {
+      transform: rotate(-90deg) translate(-50%, 0%);
+    }
+
+    &.on-leave {
+      transform: rotate(-90deg) translate(-50%, -100%);
+    }
+  }
+}

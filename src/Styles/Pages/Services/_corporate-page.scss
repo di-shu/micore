@@ -1,0 +1,38 @@
+@include media-breakpoint-up('md') {
+  #corporate-service-page {
+    #service-main-section {
+      overflow: visible;
+
+      .main-statue {
+        transform: translateY(35px);
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up('lg') {
+  #corporate-service-page {
+    #service-main-section {
+      .main-statue {
+        right: -45px;
+        transform: translateY(35px);
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up('xl') {
+  #corporate-service-page {
+    #service-main-section {
+      .main-statue {
+        transform: translateY(50px);
+      }
+    }
+
+    #service-price-miscalculation {
+      .section-wrapper {
+        padding-bottom: 150px;
+      }
+    }
+  }
+}

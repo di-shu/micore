@@ -1,0 +1,6 @@
+export * from './Team'
+export * from './Socials'
+export * from './MenuLink'
+export * from './SkillsList'
+export * from './ServicesList'
+export * from './ProjectsList'
