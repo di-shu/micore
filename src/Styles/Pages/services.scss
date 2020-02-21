@@ -1,3 +1,5 @@
+@import "../Static/index";
+
 #services-page {
   min-height: 100vh;
   overflow: hidden;
@@ -212,11 +214,6 @@
 }
 
 @include media-breakpoint-up('xl') {
-  #services-page {
-    display: flex;
-    align-items: stretch;
-  }
-
   #services-section {
     width: 100%;
     padding-top: 0;

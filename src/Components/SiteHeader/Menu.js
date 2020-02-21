@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { isMobileOnly } from 'react-device-detect'
 import ListGroup from 'react-bootstrap/ListGroup'
 import { MenuLinks } from '../Config'
-import { SectionTitle, SocialsWrap } from './.'
+import { SectionTitle, SocialsWrap } from '../SectionsComponents'
 
 export const MenuContainer = (props) => {
   const { close, open } = props

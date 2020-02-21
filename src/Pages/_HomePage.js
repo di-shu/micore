@@ -12,20 +12,6 @@ import { SeeMoreLink, ImageWrapper, ScrollBox, FullPageWrapper } from '../Compon
 /* STYLES */
 import '../Styles/Pages/home.scss'
 
-const MainSections = [
-  { name: 'main', status: false, Component: HomeMain },
-  { name: 'about', status: false, Component: HomeAbout },
-  { name: 'services', status: false, Component: HomeServices },
-  { name: 'portfolio', status: false, Component: HomePortfolio },
-  { name: 'footer', status: false, Component: FooterSection }
-]
-
-const Options = {
-  index: 0,
-  firstLoad: true,
-  isLast: false
-}
-
 export const HomePage = () => {
   const [options, setOptions] = useState(Options)
   const [sections, setSections] = useState(MainSections)
@@ -58,4 +44,18 @@ export const HomePage = () => {
       />
     </>
   )
+}
+
+const MainSections = [
+  { name: 'main', status: false, Component: HomeMain },
+  { name: 'about', status: false, Component: HomeAbout },
+  { name: 'services', status: false, Component: HomeServices },
+  { name: 'portfolio', status: false, Component: HomePortfolio },
+  { name: 'footer', status: false, Component: FooterSection }
+]
+
+const Options = {
+  index: 0,
+  firstLoad: true,
+  isLast: false
 }

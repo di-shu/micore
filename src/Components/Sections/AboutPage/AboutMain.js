@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
 import { AnimationClass } from '../../../Helpers'
-import { ImageWrapper, SectionDesc, SectionTitle, SeeMoreLink } from '../.'
+import { ImageWrapper, SectionDesc, SectionTitle, SeeMoreLink } from '../../SectionsComponents'
 /* STYLES */
 import '~/Styles/Pages/Sections/About/main.scss'
 /* IMAGES */

@@ -1,9 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
+import { TabWrap } from '../../Tab'
 import { ProjectsList } from '../../Config'
 import { AnimationClass } from '../../../Helpers'
-import { TabWrap } from '../../Tab'
 import { SectionWrapper } from '../../SectionsComponents'
+/* STYLES */
+import '~/Styles/Pages/portfolio.scss'
 import '~/Styles/Pages/Sections/Home/portfolio.scss'
 
 export const HomePortfolio = ({ animation, isPortfolio }) => {

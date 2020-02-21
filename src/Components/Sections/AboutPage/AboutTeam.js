@@ -6,7 +6,9 @@ import Container from '@material-ui/core/Container'
 import Typography from '@material-ui/core/Typography'
 import { Team } from '../../Config'
 import { useDeviceDetect } from '../../../Helpers'
-import { ImageWrapper, TeamModal } from '../.'
+import { ImageWrapper, TeamModal } from '../../../Components'
+/* STYLES */
+import '~/Styles/Pages/Sections/About/team.scss'
 
 const CustomNextArrow = (props) => {
   const { className, onClick } = props

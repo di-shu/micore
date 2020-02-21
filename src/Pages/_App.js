@@ -1,6 +1,6 @@
 import React from 'react'
-import { Layout } from '../routes'
 import { AnimatePresence } from 'framer-motion'
+import { Layout } from '../Components'
 /* STYLES */
 import '../Styles/Static/fonts.scss'
 import '../Styles/Includes/index.scss'

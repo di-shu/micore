@@ -1,11 +1,12 @@
 import React from 'react'
 import { useSpring } from 'react-spring'
 import { isMobile, isMobileOnly } from 'react-device-detect'
-import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import Container from 'react-bootstrap/Container'
 import { AnimationClass } from '../../../Helpers'
 import { ApolloStatue, ImageWrapper, SectionTitle, SeeMoreLink, SocialsWrap } from '../../SectionsComponents'
+/* STYLES */
 import '~/Styles/Pages/Sections/Home/main.scss'
 
 const move = (x, y) => `${-x / 4}px ${-y / 8}px`

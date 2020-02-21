@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
 import { isMobile, isMobileOnly, isBrowser } from 'react-device-detect'
 import { ImageWrapper, SectionDesc, SectionTitle, SeeMoreLink } from '../../SectionsComponents'
+/* STYLES */
 import '~/Styles/Pages/Sections/Home/about.scss'
 /* IMAGES */
 const Statue = '/Assets/Images/statue-about.png'

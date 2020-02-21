@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col'
 import { ServicesList } from '../../Config'
 import { AnimationClass } from '../../../Helpers'
 import { SectionDesc, SectionTitle, ImageWrapper, SectionLayout } from '../../SectionsComponents'
+/* STYLES */
 import '~/Styles/Pages/Sections/Home/services.scss'
 
 export const HomeServices = ({ animation }) => {

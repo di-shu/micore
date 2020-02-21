@@ -1,4 +1,5 @@
 export * from './Blob'
+export * from './Layout'
 export * from './ScrollBox'
 export * from './SeeMoreLink'
 export * from './SectionInfo'

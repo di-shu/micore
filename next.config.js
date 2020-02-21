@@ -1,8 +1,8 @@
 const withSass = require('@zeit/next-sass')
+const withFonts = require('next-fonts')
 
-module.exports = withSass({
-  cssLoaderOptions: {
-    importLoaders: 1,
-    localIdentName: '[local]___[hash:base64:5]'
+module.exports = withSass(withFonts({
+  webpack(config) {
+    return config
   }
-})
+}))
