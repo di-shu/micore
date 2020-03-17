@@ -98,10 +98,12 @@
       }
 
       .services-image {
-        left: -15px;
-        max-width: 290px;
-        margin: 0 auto 0 0;
-        transform: rotateY(180deg);
+        img {
+          left: -15px;
+          max-width: 290px;
+          margin: 0 auto 0 0;
+          transform: rotateY(180deg);
+        }
       }
 
       .services-info {

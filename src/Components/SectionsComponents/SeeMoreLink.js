@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'next/link'
+import { ActiveLink } from './ActiveLink'
 
 export const SeeMoreLink = (props) => {
   const {
@@ -13,8 +13,6 @@ export const SeeMoreLink = (props) => {
   
   return display &&
     <div className={customClassName}>
-      <Link href={nav}>
-        <a><span>{label}</span></a>
-      </Link>
+      <ActiveLink link={nav}><span>{label}</span></ActiveLink>
     </div>
 }

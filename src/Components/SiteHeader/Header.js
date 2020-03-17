@@ -1,34 +1,22 @@
-import React, { useState } from 'react'
-import Link from 'next/link'
-import { MenuContainer } from './Menu'
+import React from 'react'
 import '../../Styles/Includes/header.scss'
+import { ActiveLink } from '../SectionsComponents'
 
 const Logo = '/Assets/Images/logo.svg'
 
-export const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  
-  const openMenu = () => {
-    setIsMenuOpen(true)
-  }
-  
-  const closeMenu = () => {
-    setIsMenuOpen(false)
-  }
-  
+export const Header = ({ open }) => {
   return (
-    <>
+    <header className="site-header">
       <div className="logo">
-        <Link href="/">
-          <a><img src={Logo} alt="Logo"/></a>
-        </Link>
+        <ActiveLink link="/">
+          <img src={Logo} alt="Logo"/>
+        </ActiveLink>
       </div>
-      <div className="menu" onClick={openMenu}>
+      <div className="menu" onClick={open}>
         <span/>
         <span/>
         <span/>
       </div>
-      <MenuContainer open={isMenuOpen} close={closeMenu}/>
-    </>
+    </header>
   )
 }

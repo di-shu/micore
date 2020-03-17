@@ -1,6 +1,6 @@
 import React from 'react'
-import Link from 'next/link'
 import { Socials } from '../Config'
+import { ActiveLink } from './ActiveLink'
 
 export const SocialsWrap = (props) => {
   const { display = true, firstLoad } = props
@@ -8,11 +8,9 @@ export const SocialsWrap = (props) => {
   return display && (
     <div className="socials-wrap">
       {Socials && Socials.map((item, index) => (
-        <Link key={index} href={item.href}>
-          <a target="_blank" className={`social-link ${firstLoad && 'on-first-load'}`}>
-            <img src={item.src} alt={item.label} />
-          </a>
-        </Link>
+        <ActiveLink key={index} link={item.href} target="_blank" className={`social-link ${firstLoad && 'on-first-load'}`}>
+          <img src={item.src} alt={item.label} />
+        </ActiveLink>
       ))}
     </div>
   )

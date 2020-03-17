@@ -1,0 +1,140 @@
+@import "../../Static/index";
+
+#service-price-miscalculation {
+  background-color: $accent-black;
+
+  .section-wrapper {
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
+
+  .section-dots-wrap {
+    top: 0;
+    right: 0;
+    transform: translate(50%, -80%);
+  }
+
+  .price-title {
+    margin-bottom: 40px;
+
+    &:first-letter {
+      color: $accent-main;
+    }
+
+    &:after {
+      content: 'или почему мы их не называем';
+      display: block;
+      opacity: 0.4;
+      color: #ffffff;
+      font-family: $museo-300;
+      font-size: 16px;
+      letter-spacing: 0.45px;
+      text-transform: none;
+    }
+  }
+
+  .price-desc {
+    margin-bottom: 90px;
+  }
+
+  .miscalculations-title {
+    margin-bottom: 0;
+  }
+
+  .col-stage {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+  }
+
+  .stage-title, .stage-desc {
+    width: 100%;
+    max-width: 270px;
+    margin: 0 auto;
+  }
+
+  .stage-title {
+    font-family: $museo-500;
+    font-size: 20px;
+    text-transform: none;
+    margin-bottom: 15px;
+
+    span {
+      color: $accent-main;
+      font-size: 24px;
+    }
+  }
+
+  .stage-desc {
+    margin-bottom: 0;
+    opacity: 0.5;
+  }
+}
+
+@include media-breakpoint-up('lg') {
+  #service-price-miscalculation {
+    .section-wrapper {
+      padding-bottom: 120px;
+    }
+
+    .section-dots-wrap {
+      height: 210px;
+      top: 50%;
+      right: 15px;
+      transform: translateY(-50%);
+
+      img {
+        object-fit: cover;
+      }
+    }
+
+    .col-stage {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+
+      &:nth-child(3n) {
+        border-right: none;
+      }
+
+      &:nth-child(n+4) {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up('xl') {
+  #service-price-miscalculation {
+    .section-wrapper {
+      padding-top: 115px;
+      padding-bottom: 95px;
+    }
+
+    .section-dots-wrap {
+      width: 360px;
+    }
+
+    .price-wrap {
+      margin-bottom: 235px;
+    }
+
+    .price-desc {
+      margin-top: 50px;
+      margin-bottom: 0;
+    }
+
+    .miscalculations-title {
+      margin-bottom: 30px;
+    }
+
+    .col-stage {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .stage-title, .stage-desc {
+      max-width: 280px;
+    }
+  }
+}

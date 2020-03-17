@@ -1,0 +1,52 @@
+@import "../../Static/index";
+
+#service-target-section {
+  background-color: #fff;
+
+  .section-wrapper {
+    padding-top: 40px;
+    padding-bottom: 45px;
+  }
+
+  .section-title {
+    margin-bottom: 15px;
+  }
+
+  .section-desc {
+    margin-bottom: 0;
+  }
+
+  .target-image {
+    margin-bottom: 50px;
+  }
+}
+
+@include media-breakpoint-up('lg') {
+  #service-target-section {
+    .target-image {
+      margin-bottom: 0;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .col-lg-6 {
+      &:last-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up('xl') {
+  #service-target-section {
+    .section-wrapper {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+  }
+}

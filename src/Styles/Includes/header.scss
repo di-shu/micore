@@ -1,5 +1,4 @@
-@import "../Static/constants";
-@import "../Static/mixins";
+@import "../Static/index";
 
 .header-row {
   &.is-case {
@@ -50,6 +49,7 @@
   justify-content: center;
   cursor: pointer;
   z-index: 999;
+  mix-blend-mode: difference;
   
   span {
     display: block;
@@ -58,7 +58,6 @@
     height: 2px;
     margin-bottom: 7px;
     transform: rotate(-20deg);
-    mix-blend-mode: difference;
     
     &:last-child {
       margin-bottom: 0;
@@ -255,7 +254,7 @@
     transition: all 0.3s $timing-func;
 
     &:last-child {
-      margin-right: 0;
+      margin-right: 0 !important;
     }
 
     &:hover {

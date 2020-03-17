@@ -1,0 +1,56 @@
+import React from 'react'
+import {
+  MainWrapper,
+  ImageWrapper,
+  ServiceQuote,
+  ServiceFeedback,
+  ServiceWorkStages,
+  ServiceMainSection,
+  ServiceShortPortfolio
+} from '~/Components'
+import { MakeBranding, MakeLogo } from '~/Components/Sections/Services/Branding'
+import '~/Styles/Pages/Services/branding.scss'
+
+const MainStatue = '/Assets/Images/Services/Branding/MainStatue.png'
+const Briefing = '/Assets/Images/Services/Branding/Icons/Brifing.svg'
+const Miscalculation = '/Assets/Images/Services/Branding/Icons/Miscalculation.svg'
+const ActBrief = '/Assets/Images/Services/Branding/Icons/ActBrief.svg'
+const Creating = '/Assets/Images/Services/Branding/Icons/Creating.svg'
+const FormStyle = '/Assets/Images/Services/Branding/Icons/FormStyle.svg'
+const Sources = '/Assets/Images/Services/Branding/Icons/Sources.svg'
+
+const Quotes = [
+  'Мы не опаздываем потому, что не спешим. Проекты в срок.',
+  'Предыдущая цитата ложь, неверьте ей!',
+  'Лэндинги у нас получаются иногда СЛИШКОМ большими.',
+  'Давайте сделаем лендинг на реакте!',
+  'Иногда при скролле лендинга может поломаться колесеко от мышки, но МЫ его сможем починить!',
+  'Здесь должна была быть какая то цитата, но контентмэйкер забил на нее. Теперь ей грустно :(',
+  'Если вам попалась эта цитата, знайте, вы сейчас смотрите сайт!',
+  'У нас работает акция! Купи один лэндинг по цене двух! Как-то так.',
+  'Анимации очень ценятся на лендингах, но больше ценятся те, кто их делает. Берегите своих разработчиков!'
+]
+const BrandingStages = [
+  { img: Briefing, name: 'Брифинг' },
+  { img: Miscalculation, name: 'Просчет' },
+  { img: ActBrief, name: 'Подписание договора и брифа' },
+  { img: Creating, name: 'Создание логотипа' },
+  { img: FormStyle, name: 'Создание элементов фирменного стиля' },
+  { img: Sources, name: 'Передача исходников' }
+]
+
+const Branding = () => {
+  return (
+    <MainWrapper id="branding-service-page">
+      <ServiceMainSection title="Branding" statue={MainStatue} />
+      <MakeBranding/>
+      <MakeLogo/>
+      <ServiceQuote quotes={Quotes} />
+      <ServiceWorkStages stages={BrandingStages} title="Этапы разработки фирменного стиля"/>
+      <ServiceFeedback title="Заполнить бриф и узнать цену"/>
+      <ServiceShortPortfolio content={<ImageWrapper isDot/>}/>
+    </MainWrapper>
+  )
+}
+
+export default Branding

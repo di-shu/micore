@@ -1,0 +1,96 @@
+@import "../Static/index";
+
+.input-groups {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+
+  &.input-area {
+    .input-label {
+      top: 10px;
+      left: 10px;
+      transform: translateY(0);
+    }
+
+    .input-control {
+      padding: 10px;
+      resize: none;
+      border: 1px solid #686d72;
+    }
+  }
+}
+
+.input-label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  opacity: 0.9;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  margin-bottom: 0;
+  transition: all 0.35s $timing-func;
+  transform-origin: top left;
+
+  &:first-letter {
+    color: $accent-main;
+  }
+}
+
+.input-control {
+  background-color: transparent !important;
+  border-color: none !important;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #686d72;
+  padding: 0 0 10px 0;
+  opacity: 0.9;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  outline: none !important;
+  box-shadow: none !important;
+
+  &:focus {
+    & ~ .input-label {
+      top: -5px;
+      transform: translateY(-50%) scale(0.7);
+
+      &.input-area {
+        transform: translateY(0) scale(0.7);
+      }
+    }
+
+    & ~ .input-line {
+      width: 100%;
+    }
+  }
+}
+
+.input-line {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  right: 0;
+  width: 0;
+  height: 1px;
+  margin: 0;
+  background-color: $accent-main;
+  transition: all 0.35s $timing-func;
+  z-index: 1;
+}
+
+@include media-breakpoint-up('xl') {
+  .input-groups {
+    max-width: 100%;
+    width: 270px;
+
+    &.input-area {
+      margin-top: 30px;
+    }
+  }
+}

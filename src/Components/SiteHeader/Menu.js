@@ -1,16 +1,16 @@
 import React from 'react'
-import Link from 'next/link'
-import { isMobileOnly } from 'react-device-detect'
 import ListGroup from 'react-bootstrap/ListGroup'
 import { MenuLinks } from '../Config'
-import { SectionTitle, SocialsWrap } from '../SectionsComponents'
+import { useDeviceDetect } from '../../Helpers'
+import { ActiveLink, SectionTitle, SocialsWrap } from '../SectionsComponents'
 
 export const MenuContainer = (props) => {
   const { close, open } = props
+  const { mobile } = useDeviceDetect()
   
   return (
     <div className={`menu-wrap ${open ? 'is-opened' : ''}`}>
-      {!isMobileOnly && <p className="switch-title">Sound</p>}
+      {!mobile && <p className="switch-title">Sound</p>}
       <div className="close-icon" onClick={close}>
         <span/>
         <span/>
@@ -23,40 +23,34 @@ export const MenuContainer = (props) => {
               <span className="menu-sub-title-line"/>
             </div>
             <div className="menu-link-wrap">
-              <Link href={to}>
-                <a className="menu-link" onClick={close}>{linkTitle}</a>
-              </Link>
+              <ActiveLink link={to} className="menu-link" onClick={close}>{linkTitle}</ActiveLink>
             </div>
           </ListGroup.Item>
         ))}
       </ListGroup>
-      {!isMobileOnly && (
+      {!mobile && (
         <div className="switch-box switch-box_sound">
           <div className="switch-link">
             <span className="switch-line"/>
-            <p className="switch-name">On</p>
+            <span className="switch-name">On</span>
           </div>
           <div className="switch-link">
             <span className="switch-line"/>
-            <p className="switch-name">Off</p>
+            <span className="switch-name">Off</span>
           </div>
         </div>
       )}
       <div className="switch-box">
-        <Link href="/">
-          <a  className="switch-link">
-            <p className="switch-name">EN</p>
-            <span className="switch-line"/>
-          </a>
-        </Link>
-        <Link href="/">
-          <a  className="switch-link">
-            <p className="switch-name">RU</p>
-            <span className="switch-line"/>
-          </a>
-        </Link>
+        <ActiveLink link="/" className="switch-link">
+          <p className="switch-name">EN</p>
+          <span className="switch-line"/>
+        </ActiveLink>
+        <ActiveLink link="/" className="switch-link">
+          <p className="switch-name">RU</p>
+          <span className="switch-line"/>
+        </ActiveLink>
       </div>
-      <SocialsWrap display={isMobileOnly} />
+      <SocialsWrap display={mobile} />
     </div>
   )
 }

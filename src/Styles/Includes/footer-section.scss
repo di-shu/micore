@@ -1,21 +1,16 @@
 @import "../Static/index";
 
 #footer-section {
-  padding: 60px 0 30px;
+  padding-top: 60px;
   height: auto;
-  overflow-y: auto;
   background-color: $accent-black;
-
-  &.footer-section {
-    padding-bottom: 0;
-
-    .container-wrap {
-      margin-bottom: 30px;
-    }
-  }
 
   .section-container {
     max-width: 300px;
+  }
+
+  .form-wrap {
+    margin-bottom: 50px;
   }
 
   .section-title {
@@ -140,7 +135,7 @@
     position: relative;
     width: 100%;
     max-width: 270px;
-    margin: 0 auto;
+    margin: 0 auto 30px;
     bottom: 0;
     left: 0;
     display: flex;
@@ -163,85 +158,6 @@
       font-size: 12px;
       letter-spacing: 0.9px;
     }
-  }
-
-  .input-groups {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 50px;
-
-    &.input-area {
-      .input-label {
-        top: 10px;
-        left: 10px;
-        transform: translateY(0);
-      }
-
-      .input-control {
-        padding: 10px;
-        resize: none;
-        border: 1px solid #686d72;
-      }
-    }
-  }
-
-  .input-label {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    opacity: 0.9;
-    color: #fff;
-    font-size: 16px;
-    letter-spacing: 1.2px;
-    margin-bottom: 0;
-    transition: all 0.35s $timing-func;
-    transform-origin: top left;
-  }
-
-  .input-control {
-    background-color: transparent;
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid #686d72;
-    padding: 0 0  10px 0;
-    opacity: 0.9;
-    color: #fff;
-    font-size: 16px;
-    letter-spacing: 1.2px;
-    outline: none !important;
-    box-shadow: none !important;
-
-    &:focus {
-      & ~ .input-label {
-        top: -5px;
-        transform: translateY(-50%) scale(0.7);
-
-        &.input-area {
-          transform: translateY(0) scale(0.7);
-        }
-      }
-
-      & ~ .input-line {
-        width: 100%;
-      }
-    }
-  }
-
-  .input-line {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    right: 0;
-    width: 0;
-    height: 1px;
-    margin: 0;
-    background-color: $accent-main;
-    transition: all 0.35s $timing-func;
-    z-index: 1;
   }
 }
 
@@ -321,20 +237,18 @@
   #footer-section {
     padding-bottom: 40px;
 
+    .fp-scroller {
+      height: 100%;
+    }
+
     &.footer-section {
       .section-container {
         max-width: 960px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-
-      .container-wrap {
-        margin-bottom: 0;
       }
 
       .form-wrap {
         max-width: 400px;
+        margin-bottom: 0;
       }
 
       .contact-info-wrap {
@@ -355,9 +269,16 @@
       }
     }
 
+    .container-wrap {
+      margin-bottom: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
     .section-container {
       max-width: 960px;
-      height: 100%;
     }
 
     .section-title {
@@ -410,21 +331,23 @@
     padding-bottom: 60px;
 
     &.footer-section {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       display: block;
+      padding: 0;
       background-color: rgba(6, 14, 23, 0.7);
       overflow: hidden;
-      z-index: 10;
       opacity: 0;
       visibility: hidden;
-      padding: 0;
+      transition: all 1s $timing-func;
+      z-index: 10;
 
       &.active {
         opacity: 1;
         visibility: visible;
-      }
-
-      .fp-scroller {
-        height: 100%;
       }
 
       .container-wrap {
@@ -434,6 +357,7 @@
         left: 0;
         right: 0;
         padding: 50px 0 70px;
+        height: auto !important;
         background-color: rgba(4, 13, 21, 0.95);
 
         &:before {
@@ -583,15 +507,6 @@
 
       .social-link {
         margin-right: 115px;
-      }
-    }
-
-    .input-groups {
-      max-width: 100%;
-      width: 270px;
-
-      &.input-area {
-        margin-top: 30px;
       }
     }
   }

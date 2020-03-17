@@ -1,11 +1,9 @@
 let glitch
 let isLoaded = false
-let windowW = window.innerWidth
-let windowH = window.innerHeight
 
 export const setup = (img) => (p5, canvasParentRef) => {
   p5.background('rgba(0, 0, 0, 0)')
-  p5.createCanvas(windowW, windowH).parent(canvasParentRef)
+  p5.createCanvas(window.innerWidth, window.innerHeight).parent(canvasParentRef)
   p5.loadImage(img, function (img) {
     glitch = new Glitch(img, p5)
     isLoaded = true

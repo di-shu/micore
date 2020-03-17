@@ -1,9 +1,9 @@
 import React from 'react'
 import Form from 'react-bootstrap/Form'
 
-export const InputControl = ({ id, label, value, type = 'input', rows, display = true, onChange }) => {
+export const InputControl = ({ id, label, value, type = 'input', rows, display = true, onChange, ...props }) => {
   return display && (
-    <Form.Group controlId={id} className={`input-groups  ${type === 'textarea' ? 'input-area' : ''}`}>
+    <Form.Group controlId={id} className={`input-groups ${type === 'textarea' ? 'input-area' : ''}`} {...props}>
       <Form.Control
         as={type}
         value={value}

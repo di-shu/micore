@@ -1,84 +1,116 @@
 import React from 'react'
-import Slider from 'react-slick'
-import { isMobileOnly } from 'react-device-detect'
-import Dialog from '@material-ui/core/Dialog'
-import Typography from '@material-ui/core/Typography'
-import { Team } from '../Config'
-import Link from 'next/link'
+import dynamic from 'next/dynamic'
+import Modal from 'react-bootstrap/Modal'
+import { TeamList } from '../Config'
+import { useDeviceDetect } from '../../Helpers'
+import { ActiveLink, ImageWrapper } from '../SectionsComponents'
 
-const logo = '/Assets/Images/logo.png'
+const Slider = dynamic(() => import('react-slick'), { ssr: false })
+const Logo = '/Assets/Images/logo.png'
 const CollapseArrow = '/Assets/Images/About/modal-collapse-arrow.png'
 
-export const TeamModal = (props) => {
-  const { isOpen, isClose, closeModal, slideSettings, index } = props
-  const { slideImage, fullName, position, description } = Team()[index]
+const CustomNextArrow = (props) => {
+  const { className, onClick } = props
   
   return (
-    <Dialog
-      keepMounted
-      open={isOpen}
-      onClose={closeModal}
-      PaperComponent="div"
-      fullScreen={isMobileOnly}
-      transitionDuration={{ enter: 500, exit: 500 }}
-      className={`member-modal ${isClose ? 'on-leave' : 'on-enter'}`}
+    <div onClick={onClick} className={className}>
+      <span>NEXT</span>
+    </div>
+  )
+}
+const CustomPrevArrow = (props) => {
+  const { className, onClick } = props
+  
+  return (
+    <div onClick={onClick} className={className}>
+      <span>PREV</span>
+    </div>
+  )
+}
+const SliderConfig = {
+  speed: 800,
+  dots: false,
+  infinite: true,
+  slidesToShow: 1,
+  swipe: false,
+  touchMove: false,
+  slidesToScroll: 1,
+  nextArrow: <CustomNextArrow className="custom-next-arrow"/>,
+  prevArrow: <CustomPrevArrow className="custom-prev-arrow"/>
+}
+
+const MemberSlider = ({ index, configs, team }) => {
+  const { mobile } = useDeviceDetect()
+  
+  return mobile && (
+    <div className="team-slider-wrap">
+      <Slider initialSlide={index} {...configs}>
+        {team.map(({ slideImage, fullName, position, description }, index) => (
+          <div key={`team-member_${index}`} className="team-custom-slide">
+            <ImageWrapper src={slideImage} className="team-image-wrap"/>
+            <div className="team-info-wrap">
+              <h5 className="member-name" children={fullName}/>
+              <div className="member-bottom-wrap">
+                <p className="member-position" children={position}/>
+                <p className="member-description" children={description}/>
+              </div>
+            </div>
+          </div>
+        ))}
+      </Slider>
+    </div>
+  )
+}
+const MemberCard = ({ img, fullName, position, desc }) => {
+  const { mobile } = useDeviceDetect()
+  
+  return !mobile && (
+    <div className="team-card-wrap">
+      <ImageWrapper src={img} className="team-image-wrap"/>
+      <div className="team-info-wrap">
+        <h5 className="member-name" children={fullName}/>
+        <p className="member-position" children={position}/>
+        <p className="member-description" children={desc}/>
+      </div>
+    </div>
+  )
+}
+
+export const TeamModal = (props) => {
+  const { isOpen, closeModal, index } = props
+  const { mobile } = useDeviceDetect()
+  const { slideImage, fullName, position, description } = TeamList[index]
+  
+  return (
+    <Modal
+      show={isOpen}
+      animation={false}
+      onHide={closeModal}
+      dialogClassName={`member-modal ${isOpen ? 'on-enter' : 'on-leave'}`}
     >
-      {isMobileOnly ? (
-        <div className="modal-header">
-          <Link href="/">
-            <a className="logo-link">
-              <img src={logo} alt="Logo"/>
-            </a>
-          </Link>
-          <div className="close-icon" onClick={closeModal}>
-            <span/>
-            <span/>
-          </div>
-        </div>
-      ) : (
-        <div className="collapse-arrow" onClick={closeModal}>
-          <img src={CollapseArrow} alt="Arrow"/>
-        </div>
+      <Modal.Header>
+        {mobile ? (
+          <>
+            <ActiveLink link="/" className="logo-link"><img src={Logo} alt="Logo"/></ActiveLink>
+            <div className="close-icon" onClick={closeModal}>
+              <span/>
+              <span/>
+            </div>
+          </>
+        ) : (
+          <ImageWrapper src={CollapseArrow} className="collapse-arrow" onClick={closeModal}/>
+        )}
+      </Modal.Header>
+      <Modal.Body>
+        <MemberSlider team={TeamList} index={index} configs={SliderConfig}/>
+        <MemberCard img={slideImage} fullName={fullName} position={position} desc={description}/>
+      </Modal.Body>
+      {mobile && (
+        <Modal.Footer>
+          <p>Tram-pam-pam</p>
+          <p>Manticore development</p>
+        </Modal.Footer>
       )}
-      {isMobileOnly ? (
-        <div className="team-slider-wrap">
-          <Slider initialSlide={index} {...slideSettings}>
-            {Team().map(({ slideImage, fullName, position, description }, index) => {
-              return (
-                <div key={`team-member_${index}`} className="team-custom-slide">
-                  <div className="team-image-wrap">
-                    <img src={slideImage} alt="Team member"/>
-                  </div>
-                  <div className="team-info-wrap">
-                    <Typography variant="h5" className="member-name" children={fullName}/>
-                    <div className="member-bottom-wrap">
-                      <Typography variant="subtitle1" component="p" className="member-position" children={position}/>
-                      <Typography variant="subtitle2" component="p" className="member-description" children={description}/>
-                    </div>
-                  </div>
-                </div>
-              )
-            })}
-          </Slider>
-        </div>
-      ) : (
-        <div className="team-card-wrap">
-          <div className="team-image-wrap">
-            <img src={slideImage} alt="Team member"/>
-          </div>
-          <div className="team-info-wrap">
-            <Typography variant="h5" className="member-name" children={fullName}/>
-            <Typography variant="subtitle1" component="p" className="member-position" children={position}/>
-            <Typography variant="subtitle2" component="p" className="member-description" children={description}/>
-          </div>
-        </div>
-      )}
-      {isMobileOnly && (
-        <div className="modal-footer">
-          <Typography children="Tram-pam-pam"/>
-          <Typography children="Manticore development"/>
-        </div>
-      )}
-    </Dialog>
+    </Modal>
   )
 }

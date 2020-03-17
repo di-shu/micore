@@ -1,18 +1,3 @@
-import React from 'react'
-// import {
-//   Attic,
-//   TwoAre,
-//   Balkany,
-//   VipYoga,
-//   BeeGames,
-//   Marinist,
-//   Gastrobar,
-//   ZlataTrade,
-//   PrideGroup,
-//   VladyDesign,
-//   Bessarabskiy,
-//   PrideLogistic
-// } from '../Projects'
 /* IMAGES */
 const AtticImage = '/Assets/Images/Portfolio/Attic.png'
 const TwoAreImage = '/Assets/Images/Portfolio/TwoAre.png'
@@ -27,7 +12,6 @@ const PrideGroupImage = '/Assets/Images/Portfolio/PrideGroupProject.png'
 const ZlataTradeImage = '/Assets/Images/Portfolio/Zlata-trade project.png'
 const VladyDesignImage = '/Assets/Images/Portfolio/VladyDesignProject.png'
 const PrideLogisticImage = '/Assets/Images/Portfolio/PrideLogisticProject.png'
-/**/
 
 export const ProjectsList = [
   {
@@ -37,100 +21,76 @@ export const ProjectsList = [
       {
         img: ZlataTradeImage,
         title: 'Zlata-trade',
-        id: 'zlata-project-page',
         link: '/projects/zlata-trade',
-        size: { xs: 12, md: 7, lg: 5, xl: 5 },
-        // // Component: <ZlataTrade />
+        size: { xs: 12, md: 7, lg: 5, xl: 5 }
       },
       {
         img: FCBalkanyImage,
         title: 'FC Balkany',
         link: '/projects/balkany',
-        id: 'balkany-project-page',
-        size: { xs: 12, md: 5, lg: 4, xl: 3 },
-        // // Component: <Balkany />
+        size: { xs: 12, md: 5, lg: 4, xl: 3 }
       },
       {
         img: PrideLogisticImage,
         title: 'Pride Logistic',
-        id: 'pride-project-page',
         link: '/projects/pride-logistic',
-        size: { xs: 12, md: 5, lg: 3, xl: 4 },
-        // // Component: <PrideLogistic />
+        size: { xs: 12, md: 5, lg: 3, xl: 4 }
       },
       {
+        isNavBlack: true,
         img: VladyDesignImage,
         title: 'Vlady design',
-        id: 'vlady-project-page',
-        isNavBlack: true,
         link: '/projects/vlady-design',
-        size: { xs: 12, md: 7, lg: 4, xl: 4 },
-        // // Component: <VladyDesign />
+        size: { xs: 12, md: 7, lg: 4, xl: 4 }
       },
       {
         img: BeeGamesImage,
         title: 'Bee Games',
-        id: 'bee-games-project-page',
         link: '/projects/bee-games',
-        size: { xs: 12, md: 7, lg: 4, xl: 5 },
-        // Component: <BeeGames />
+        size: { xs: 12, md: 7, lg: 4, xl: 5 }
       },
       {
         img: PrideGroupImage,
-        id: 'pride-group-project-page',
         title: 'Pride group',
         link: '/projects/pride-group',
-        size: { xs: 12, md: 5, lg: 4, xl: 3 },
-        // Component: <PrideGroup />
+        size: { xs: 12, md: 5, lg: 4, xl: 3 }
       },
       {
-        img: GastrobarImage,
-        id: 'gastrobar-page',
         title: 'Gastrobar',
+        img: GastrobarImage,
         link: '/projects/gastrobar',
-        size: { xs: 12, md: 4, lg: 8, xl: 9 },
-        // Component: <Gastrobar />
+        size: { xs: 12, md: 4, lg: 8, xl: 9 }
       },
       {
         img: BessarabskiyImage,
-        id: 'gastrobar-page',
         title: 'Bessarabskiy dvorik',
         link: '/projects/bessarabskiy',
-        size: { xs: 12, md: 8, lg: 4, xl: 3 },
-        // Component: <Bessarabskiy />
+        size: { xs: 12, md: 8, lg: 4, xl: 3 }
       },
       {
-        img: MarinistImage,
-        id: 'marinist-page',
         title: 'Marinist',
+        img: MarinistImage,
         link: '/projects/marinist',
-        size: { xs: 12, md: 7, lg: 5, xl: 4 },
-        // Component: <Marinist/>
+        size: { xs: 12, md: 7, lg: 5, xl: 4 }
       },
       {
         img: TwoAreImage,
-        id: 'two-are-page',
         title: 'Two are',
         link: '/projects/two-are',
-        size: { xs: 12, md: 5, lg: 7, xl: 4 },
-        // Component: <TwoAre/>
+        size: { xs: 12, md: 5, lg: 7, xl: 4 }
       },
       {
-        img: VipYogaImage,
-        id: 'vip-yoga-page',
-        title: 'Vip Yoga',
         isNavBlack: true,
+        img: VipYogaImage,
+        title: 'Vip Yoga',
         link: '/projects/vip-yoga',
-        size: { xs: 12, md: 5, lg: 7, xl: 4 },
-        // Component: <VipYoga/>
+        size: { xs: 12, md: 5, lg: 7, xl: 4 }
       },
       {
         img: AtticImage,
-        id: 'attic-page',
         title: 'Attic stroy',
         link: '/projects/attic-stroy',
-        size: { xs: 12, md: 7, lg: 5, xl: 8 },
-        // Component: <Attic/>
+        size: { xs: 12, md: 7, lg: 5, xl: 8 }
       }
     ]
   },
@@ -139,12 +99,10 @@ export const ProjectsList = [
     label: 'Design',
     content: [
       {
-        img: MarinistImage,
-        id: 'marinist-page',
-        title: 'Marinist',
-        link: '/projects/marinist',
-        size: { xs: 12, md: 7, lg: 5, xl: 5 },
-        // Component: <Marinist/>
+        img: ProjectImg,
+        link: '/projects',
+        title: 'Design page 1',
+        size: { xs: 12, md: 5, lg: 4, xl: 3 }
       },
       {
         img: ProjectImg,

@@ -1,0 +1,106 @@
+@import "../../Static/index";
+
+#service-quote-section {
+  background-color: $accent-black;
+
+  .section-wrapper {
+    padding-top: 110px;
+    padding-bottom: 80px;
+  }
+
+  .quote-box {
+    position: relative;
+    margin-bottom: 40px;
+    border: 1px solid #979797;
+    width: 100%;
+    height: 220px;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      height: 5px;
+      background-color: $accent-black;
+    }
+
+    &:before {
+      width: 150px;
+      top: -1px;
+      right: 15px;
+    }
+
+    &:after {
+      width: 100px;
+      left: 15px;
+      bottom: -1px;
+    }
+  }
+
+  .quote-commas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(30px, -30px);
+    width: 69px;
+    z-index: 1;
+  }
+
+  .quote-text {
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    color: #ffffff;
+    font-family: $museo-700;
+    font-size: 18px;
+    letter-spacing: 0.51px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .custom-btn {
+    max-width: 245px;
+  }
+}
+
+@include media-breakpoint-up('md') {
+  #service-quote-section {
+    .section-wrapper {
+      padding-bottom: 120px;
+    }
+
+    .quote-box {
+      &:before {
+        width: 280px;
+        right: 25px;
+      }
+
+      &:after {
+        width: 160px;
+        left: 25px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up('xl') {
+  #service-quote-section {
+    .section-wrapper {
+      padding-bottom: 140px;
+    }
+
+    .quote-wrapper {
+      padding-top: 225px;
+      padding-bottom: 70px;
+
+      .custom-btn {
+        max-width: 245px;
+      }
+    }
+
+    .quote-box {
+      height: 160px;
+    }
+  }
+}

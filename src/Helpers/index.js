@@ -1,4 +1,4 @@
-// export * from './glitch'
+export * from './glitch'
 export * from './getRandomInt'
 export * from './useMouseMove'
 export * from './animationClass'

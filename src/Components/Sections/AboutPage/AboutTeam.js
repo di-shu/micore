@@ -1,44 +1,14 @@
 import React, { useState } from 'react'
-import Slider from 'react-slick'
-import { isMobileOnly } from 'react-device-detect'
-import Grid from '@material-ui/core/Grid'
-import Container from '@material-ui/core/Container'
-import Typography from '@material-ui/core/Typography'
-import { Team } from '../../Config'
+import dynamic from 'next/dynamic'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import { TeamList } from '../../Config'
 import { useDeviceDetect } from '../../../Helpers'
-import { ImageWrapper, TeamModal } from '../../../Components'
+import { ImageWrapper, SectionDesc, SectionTitle, SectionWrapper, TeamModal } from '../../../Components'
 /* STYLES */
-import '~/Styles/Pages/Sections/About/team.scss'
+import '~/Styles/Sections/About/team.scss'
 
-const CustomNextArrow = (props) => {
-  const { className, onClick } = props
-  
-  return (
-    <div onClick={onClick} className={className}>
-      <Typography variant="subtitle1" children="NEXT" component="p"/>
-    </div>
-  )
-}
-const CustomPrevArrow = (props) => {
-  const { className, onClick } = props
-  
-  return (
-    <div onClick={onClick} className={className}>
-      <Typography variant="subtitle1" children="PREV" component="p"/>
-    </div>
-  )
-}
-const ModalSliderConfig = {
-  speed: 800,
-  dots: false,
-  infinite: true,
-  slidesToShow: 1,
-  swipe: false,
-  touchMove: false,
-  slidesToScroll: 1,
-  nextArrow: <CustomNextArrow className="custom-next-arrow"/>,
-  prevArrow: <CustomPrevArrow className="custom-prev-arrow"/>
-}
+const Slider = dynamic(() => import('react-slick'), { ssr: false })
 const TeamSliderConfig = {
   speed: 800,
   dots: false,
@@ -64,86 +34,72 @@ const TeamSliderConfig = {
   ]
 }
 
+const TeamGroup = ({ team, openModal }) => {
+  const { mobile } = useDeviceDetect()
+  
+  return mobile && (
+    <div className="team-wrapper">
+      {team.map(({ image, position, name, onClick }, index) => (
+        <div key={`team-member-${name}_${index}`} className="team-card" onClick={() => openModal(index)}>
+          <ImageWrapper src={image} className="member-image"/>
+          <p className="member-name">
+            <span>{position}: </span>{name}
+          </p>
+        </div>
+      ))}
+    </div>
+  )
+}
+
+const TeamSlider = ({ team, configs, openModal }) => {
+  const { mobile } = useDeviceDetect()
+  return !mobile && (
+    <div className="section-slider-wrap">
+      <Slider {...configs}>
+        {team.map(({ image, position, name, onClick }, index) => (
+          <div key={`team-member_${index}`} className="member-slide" onClick={() => openModal(index)}>
+            <ImageWrapper src={image} className="member-image"/>
+            <p className="member-name"><span>{position}:</span> {name}</p>
+          </div>
+        ))}
+      </Slider>
+    </div>
+  )
+}
+
 export const AboutTeam = () => {
-  const isLaptop = useDeviceDetect(true)
   const [isOpenModal, setIsOpenModal] = useState(false)
-  const [isCloseModal, setIsCloseModal] = useState(false)
   const [memberIndex, setMemberIndex] = useState(0)
+  const { laptop, desktop } = useDeviceDetect()
   
   const openModal = (index) => {
     setIsOpenModal(true)
-    setIsCloseModal(false)
     setMemberIndex(index)
   }
   const closeModal = () => {
-    setIsCloseModal(true)
-    setTimeout(() => setIsOpenModal(false), 600)
+    setIsOpenModal(false)
   }
   
   return (
-    <section id="about-third-section" className="section">
-      <Container maxWidth="lg" className="wrapper">
-        <Grid container className="info-grid-container">
-          <Grid item xs={12} md={7} className="info-grid-item">
+    <section id="about-team-section" className="section">
+      <SectionWrapper>
+        <Row className="row-info">
+          <Col xs={12} lg={7} className="col-info">
             <div className="info-wrap">
-              <Typography variant="h2" children="Our team" className="section-title"/>
-              <Typography className="section-description">
-                This website which duis aute irure dolor in rep ehenderit in voluptate velit esse cillum dolo rez eu fugia nulla pariatur.
-                Excepteur sint occae cat cupid atat non proident, sunt in culpa qui officia de.
-                This website which duis aute irure dolor in rep ehenderit in voluptate velit esse cillum dolo rez eu fugia nulla pariatur.
-                Excepteur sint occae cat cupid atat non proident, sunt in culpa qui officia de
-              </Typography>
+              <SectionTitle title="Our team"/>
+              <SectionDesc/>
             </div>
-          </Grid>
-          {isLaptop && (
-            <Grid item md={5} className="info-grid-item">
-              <ImageWrapper isDot />
-            </Grid>
+          </Col>
+          {(laptop || desktop) && (
+            <Col lg={5} className="info-grid-item">
+              <ImageWrapper isDot/>
+            </Col>
           )}
-        </Grid>
-        {isMobileOnly ? (
-          <div className="team-wrapper">
-            {Team(openModal).map(({ image, position, name, onClick }, index) => {
-              return (
-                <div key={`team-member-${name}_${index}`} className="team-card" onClick={() => onClick(index)}>
-                  <div className="member-image">
-                    <img src={image} alt="Team member"/>
-                  </div>
-                  <Typography className="member-name">
-                    <span>{position}:</span> {name}
-                  </Typography>
-                </div>
-              )
-            })}
-          </div>
-        ) : (
-          <div className="section-slider-wrap">
-            <Slider {...TeamSliderConfig}>
-              {Team(openModal).map(({ image, position, name, onClick }, index) => {
-                return (
-                  <div key={`team-member_${index}`} className="member-slide" onClick={() => onClick(index)}>
-                    <div className="member-image">
-                      <img src={image} alt="Team member"/>
-                    </div>
-                    <Typography className="member-name">
-                      <span>{position}:</span> {name}
-                    </Typography>
-                  </div>
-                )
-              })}
-            </Slider>
-          </div>
-        )}
-      </Container>
-      {isOpenModal && (
-        <TeamModal
-          index={memberIndex}
-          isOpen={isOpenModal}
-          isClose={isCloseModal}
-          closeModal={closeModal}
-          slideSettings={ModalSliderConfig}
-        />
-      )}
+        </Row>
+        <TeamGroup team={TeamList} openModal={openModal}/>
+      </SectionWrapper>
+      <TeamSlider team={TeamList} openModal={openModal} configs={TeamSliderConfig}/>
+      <TeamModal index={memberIndex} isOpen={isOpenModal} closeModal={closeModal}/>
     </section>
   )
 }

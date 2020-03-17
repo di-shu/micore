@@ -1,0 +1,158 @@
+@import "../../Static/index";
+
+#service-feedback-section {
+  background-color: $accent-black;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    background-color: $accent-main;
+    width: 188px;
+    height: 36px;
+    z-index: 2;
+  }
+
+  &:before {
+    top: 0;
+    left: 0;
+  }
+
+  &:after {
+    bottom: 0;
+    right: 0;
+  }
+
+  .section-wrapper {
+    padding-top: 95px;
+    padding-bottom: 95px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    letter-spacing: 0.68px;
+  }
+
+  .form-control {
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid  #686d72;
+    margin-bottom: 50px;
+    outline: none;
+    box-shadow: none;
+    padding: 11px 0;
+    opacity: 0.9;
+    color: #ffffff;
+    font-family: $museo-300;
+    font-size: 18px;
+    letter-spacing: 1.35px;
+
+    &::placeholder {
+      display: block;
+
+      &:first-letter {
+        color: $accent-main;
+      }
+    }
+  }
+
+  .input-label {
+    left: 5px;
+  }
+  .custom-btn {
+    max-width: 265px;
+  }
+}
+
+@include media-breakpoint-up('md') {
+  #service-feedback-section {
+    .form-wrap {
+      width: 100%;
+      max-width: 350px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@include media-breakpoint-up('lg') {
+  #service-feedback-section {
+    border-top: none;
+    border-bottom: none;
+
+    &:before, &:after {
+      width: 160px;
+    }
+
+    &:after {
+      bottom: auto;
+      top: 0;
+    }
+
+    .section-wrapper {
+      padding-top: 0;
+      padding-bottom: 115px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+      padding-top: 5px;
+    }
+
+    .form-wrap {
+      max-width: 100%;
+    }
+
+    .form-control {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@include media-breakpoint-up('xl') {
+  #service-feedback-section {
+    .section-title {
+      padding-top: 0;
+      font-size: 30px;
+      letter-spacing: 0.85px;
+    }
+
+    .form-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .custom-btn {
+      max-width: 125px;
+      margin-right: 0;
+      margin-left: 0;
+      padding: 6px 0;
+    }
+
+    .form-row {
+      flex-grow: 1;
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      justify-content: center;
+    }
+
+    .form-group {
+      margin-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
+      margin-right: 50px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .form-control {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@import "../../Static/index";
+
+[id*='-service-page'] {
+  .project-section {
+    position: relative;
+    overflow: hidden;
+
+    &:first-child {
+      min-height: 100vh;
+      background-color: $accent-black;
+    }
+  }
+
+  .section-title {
+    font-size: 30px;
+    letter-spacing: 0.85px;
+  }
+
+  .section-dots-wrap {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    opacity: 0.3;
+    z-index: 0;
+  }
+
+  .section-image-wrap {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+  }
+}
+
+@include media-breakpoint-up('xl') {
+  [id*='-service-page'] {
+    .scroll-box {
+      position: absolute;
+    }
+
+    .section-title {
+      font-size: 50px;
+      letter-spacing: 1.41px;
+    }
+
+    .section-dots-wrap {
+      width: 555px;
+      height: 555px;
+    }
+
+    #footer-section {
+      position: fixed;
+    }
+  }
+}

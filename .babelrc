@@ -1,10 +1,24 @@
 {
-  "presets": ["next/babel"],
+  "presets": [
+    [
+      "next/babel",
+      {
+        "styled-jsx": {
+          "plugins": [
+            "styled-jsx-plugin-sass"
+          ]
+        }
+      }
+    ]
+  ],
   "plugins": [
-    ["babel-plugin-root-import", {
-      "rootPathSuffix": "src",
-      "rootPathPrefix": "~"
-    }],
-    ["styled-jsx/babel"]
+    [
+      "babel-plugin-root-import",
+      {
+        "rootPathSuffix": "src",
+        "rootPathPrefix": "~"
+      }
+    ],
+    ["styled-components", { "ssr": true }]
   ]
 }

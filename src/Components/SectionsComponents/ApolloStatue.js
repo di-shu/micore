@@ -4,6 +4,7 @@ import { Blob } from './Blob'
 import { AnimationClass } from '../../Helpers'
 /* IMAGES */
 const Apollo = '/Assets/Images/BlobAnimation/Apollo.png'
+const Mask = '/Assets/Images/BlobAnimation/ApolloMask.svg'
 const Blob1 = '/Assets/Images/BlobAnimation/Blob1.svg'
 const Blob2 = '/Assets/Images/BlobAnimation/Blob2.svg'
 const Blob3 = '/Assets/Images/BlobAnimation/Blob3.svg'
@@ -26,7 +27,7 @@ const BlobsWrap = styled.div`
   height: 100%;
   overflow: hidden;
   mix-blend-mode: color;
-  mask-image: url('/Assets/Images/BlobAnimation/ApolloMask.svg');
+  mask-image: url(${props => props.mask});
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: cover;
@@ -36,7 +37,7 @@ export const ApolloStatue = ({ props, move, firstLoad, animation, display = true
   return display && (
     <div className={AnimationClass({ firstLoad, animation, className: 'statue-wrap' })}>
       <img src={Apollo} className="statue" alt="Apollo"/>
-      <BlobsWrap>
+      <BlobsWrap mask={Mask}>
         {Blobs.map((blob, index) => <Blob key={index} src={blob} move={move} props={props} />)}
       </BlobsWrap>
     </div>

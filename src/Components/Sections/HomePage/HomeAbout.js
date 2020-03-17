@@ -1,26 +1,27 @@
 import React from 'react'
-import Link from 'next/link'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
-import { isMobile, isMobileOnly, isBrowser } from 'react-device-detect'
-import { ImageWrapper, SectionDesc, SectionTitle, SeeMoreLink } from '../../SectionsComponents'
+import { ActiveLink, ImageWrapper, SectionDesc, SectionTitle, SeeMoreLink } from '../../SectionsComponents'
 /* STYLES */
-import '~/Styles/Pages/Sections/Home/about.scss'
+import '~/Styles/Sections/Home/about.scss'
+import { useDeviceDetect } from '../../../Helpers'
 /* IMAGES */
 const Statue = '/Assets/Images/statue-about.png'
 
 export const HomeAbout = ({ animation }) => {
+  const { desktop } = useDeviceDetect()
+  
   return (
     <section id="about-section" className="section">
-      <SeeMoreLink display={!isBrowser && !isMobileOnly}/>
+      <SeeMoreLink display={!desktop}/>
       <Container fluid>
         <Row>
           <Col xs={12}>
             <SectionTitle main className={animation ? 'on-enter' : 'on-leave'} title="About" isContentWhite />
           </Col>
           <Col xs={12}>
-            <ImageWrapper isDot display={isMobile} />
+            <ImageWrapper isDot display={!desktop} />
             <div className={`text-box ${animation ? 'on-enter' : 'on-leave'}`}>
               <SectionDesc isContentWhite className="about-desc">
                 We are Manticore Development, company
@@ -30,9 +31,7 @@ export const HomeAbout = ({ animation }) => {
                 atat non proident, sunt in culpa qui officia de
                 serunt mollit anim id est laborum.
               </SectionDesc>
-              <Link href="/about">
-                <a className="about-link">See more</a>
-              </Link>
+              <ActiveLink link="/about" className="about-link">See more</ActiveLink>
             </div>
             <ImageWrapper src={Statue} className={`about-statue ${animation ? 'on-enter' : 'on-leave'}`}/>
           </Col>

@@ -1,3 +1,13 @@
+@import "../Static/index";
+
+@keyframes modal-backdrop-on-enter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
 @keyframes modal-on-enter {
   from {
     transform: translateX(100%);
@@ -6,7 +16,6 @@
     transform: translateX(0);
   }
 }
-
 @keyframes modal-on-leave {
   from {
     transform: translateX(0);
@@ -17,20 +26,51 @@
 }
 
 .member-modal {
+  height: 100%;
+  margin: 0;
   background-color: $accent-black;
   
   &.on-enter {
-    animation: modal-on-enter 0.5s $timing-func both;
+    animation: modal-on-enter 1s $timing-func both;
   }
   
   &.on-leave {
-    animation: modal-on-leave 0.5s $timing-func both;
+    animation: modal-on-leave 1s $timing-func both;
   }
-  
-  .MuiDialog-paperFullScreen {
+
+  .modal-content {
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    height: 100%;
+  }
+
+  .modal-header {
+    padding: 25px;
+    border-radius: 0;
+    border: none;
+  }
+
+  .modal-body {
+    padding: 5px 0;
+  }
+
+  .modal-footer {
+    position: relative;
+    border: none;
+    background-color: #282c32;
+    padding: 0 15px;
+    height: 45px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      opacity: 0.9;
+      color: #d6d7d7;
+      font-size: 12px;
+      letter-spacing: 0.9px;
+    }
   }
   
   .team-image-wrap {
@@ -116,16 +156,28 @@
     
     &.slick-prev {
       left: 0;
-      transform: translateY(-50%) rotate(90deg) translateY(-8px);
+      transform: translateY(-50%) rotate(90deg) translateY(-6px);
     }
     
     &.slick-next {
       right: 0;
-      transform: translateY(-50%) rotate(-90deg) translateY(-8px);
+      transform: translateY(-50%) rotate(-90deg) translateY(-6px);
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background-color: $accent-main;
+      height: 2px;
     }
     
-    p {
+    span {
       position: relative;
+      display: block;
       opacity: 0.9;
       color: $white;
       font-family: $museo-300;
@@ -133,47 +185,32 @@
       letter-spacing: 1.05px;
       text-transform: uppercase;
       padding-bottom: 30px;
-      
-      &:before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        background-color: $accent-main;
-        height: 2px;
-      }
     }
   }
-  
-  .modal-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #282c32;
-    padding: 0 15px;
-    height: 45px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    p {
-      opacity: 0.9;
-      color: #d6d7d7;
-      font-family: $museo-300;
-      font-size: 12px;
-      letter-spacing: 0.9px;
-    }
+}
+
+.modal-backdrop {
+  &.show {
+    animation: modal-backdrop-on-enter 1s $timing-func both;
   }
 }
 
 @include media-breakpoint-up('md') {
   .member-modal {
-    width: 55vw;
-    left: auto !important;
-    
+    width: 65vw;
+    margin-left: auto;
+
+    .modal-header {
+      padding: 0;
+    }
+
+    .modal-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
     .collapse-arrow {
       position: absolute;
       top: 50%;
@@ -181,18 +218,11 @@
       left: 15px;
       width: 25px;
       height: 27px;
+      z-index: 1;
       
       img {
-        width: 100%;
-        height: 100%;
         object-fit: contain;
       }
-    }
-    
-    .MuiDialog-paper {
-      width: 100%;
-      max-width: 100%;
-      margin: 0;
     }
     
     .team-image-wrap {
@@ -240,6 +270,7 @@
 @include media-breakpoint-up('lg') {
   .member-modal {
     width: 45vw;
+    max-width: 100%;
     
     .team-image-wrap {
       max-width: 235px;
@@ -249,17 +280,8 @@
 
 @include media-breakpoint-up('xl') {
   .member-modal {
-    .MuiDialog-scrollPaper {
+    .modal-body {
       align-items: stretch;
-    }
-    
-    .MuiDialog-paper {
-      overflow: visible;
-      height: 100%;
-      max-height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
     }
     
     .collapse-arrow {

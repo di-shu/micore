@@ -1,13 +1,11 @@
 import React, { useState } from 'react'
-import Link from 'next/link'
-import { isBrowser, isMobileOnly } from 'react-device-detect'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Form from 'react-bootstrap/Form'
 import Container from 'react-bootstrap/Container'
 import { InputControl } from '../Inputs'
 import { useDeviceDetect } from '../../Helpers'
-import { SocialsWrap, ImageWrapper } from '../SectionsComponents'
+import { SocialsWrap, ImageWrapper, ActiveLink } from '../SectionsComponents'
 /* IMAGES */
 const MapMarker = '/Assets/Images/map-marker.svg'
 const FooterLogo = '/Assets/Images/footer-logo.svg'
@@ -26,13 +24,12 @@ const FormInputs = [
     rows: 4,
     id: 'message',
     type: 'textarea',
-    display: !isBrowser,
     label: 'Type message...'
   }
 ]
 
 export const FooterSection = ({ isContact, animation, isBottom }) => {
-  const isLaptop = useDeviceDetect(true)
+  const { mobile, laptop, desktop } = useDeviceDetect()
   const [values, setValues] = useState({ name: '', phone: '', message: '' })
   
   const handleSubmit = (e) => {
@@ -43,9 +40,9 @@ export const FooterSection = ({ isContact, animation, isBottom }) => {
   }
   
   return (
-    <section id="footer-section" className={`section ${isBottom ? 'active' : ''} ${!isContact ? 'footer-section' : 'active'}`}>
+    <section id="footer-section" className={`${!isBottom ? 'section' : ''} ${isBottom ? 'active' : ''} ${!isContact ? 'footer-section' : 'active'}`}>
       <div className={`container-wrap ${animation || isBottom ? 'on-enter' : 'on-leave'}`}>
-        {isContact && isLaptop && (
+        {isContact && (laptop || desktop) && (
           <div className="image-wrap">
             <img src={ContactHand} alt="Hand"/>
           </div>
@@ -63,17 +60,17 @@ export const FooterSection = ({ isContact, animation, isBottom }) => {
                         type={type}
                         rows={rows}
                         label={label}
-                        display={display}
                         value={values[id]}
                         onChange={handleChange}
                         key={`form-input_${index}`}
+                        display={index === 2 ? !desktop : true}
                       />
                     ))}
                     <div className="btn-wrap">
                       <button type="submit" className="btn-submit"><span>SEND</span></button>
                     </div>
                   </Col>
-                  {!isContact && isBrowser && (
+                  {!isContact && desktop && (
                     <Col xl={{ span: 6, offset: 1 }} className="col-center-wrap">
                       <div className="img-wrap">
                         <img src={FooterLogo} alt="Logo"/>
@@ -92,7 +89,7 @@ export const FooterSection = ({ isContact, animation, isBottom }) => {
               </Form>
             </Col>
             <Col xs={12} lg={isContact ? 12 : 6} xl={isContact ? 12 : { span: 3, offset: 1 }} className="contact-info-wrap">
-              {!isContact && isBrowser && <h2 className="section-title contacts">Contacts</h2>}
+              {!isContact && desktop && <h2 className="section-title contacts">Contacts</h2>}
               <Row>
                 <Col xs={12} lg={isContact ? 6 : 12}>
                   <div className="contact-wrap">
@@ -102,7 +99,7 @@ export const FooterSection = ({ isContact, animation, isBottom }) => {
                   </div>
                 </Col>
                 <Col xs={12} lg={isContact ? 6 : 12}>
-                  <div className={`contact-wrap ${isBrowser ? ' mb-0' : ''}`}>
+                  <div className={`contact-wrap ${desktop ? ' mb-0' : ''}`}>
                     <h3 className="contact-title">Odessa</h3>
                     <h4 className="contact-sub-title">Francuskiy bulvar, 66/2</h4>
                     <h4 className="contact-sub-title with-line">
@@ -114,12 +111,10 @@ export const FooterSection = ({ isContact, animation, isBottom }) => {
                             <span>see map</span>
                           </>
                         ) : (
-                          <Link href="/contact">
-                            <a className="btn-show-map">
-                              <ImageWrapper src={MapMarker} />
-                              <span>contact us</span>
-                            </a>
-                          </Link>
+                          <ActiveLink link="/contact" className="btn-show-map">
+                            <ImageWrapper src={MapMarker} />
+                            <span>contact us</span>
+                          </ActiveLink>
                         )}
                       </div>
                     </h4>
@@ -130,13 +125,13 @@ export const FooterSection = ({ isContact, animation, isBottom }) => {
           </Row>
           <SocialsWrap />
         </Container>
+        {mobile && (
+          <div className="copyright-container">
+            <h6>Some text</h6>
+            <h6>Manticore development</h6>
+          </div>
+        )}
       </div>
-      {isMobileOnly && (
-        <div className="copyright-container">
-          <h6>Some text</h6>
-          <h6>Manticore development</h6>
-        </div>
-      )}
     </section>
   )
 }
