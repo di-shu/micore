@@ -8,25 +8,25 @@ export const ServicesList = [
   {
     img: LandingImage,
     name: 'Landing page',
-    link: '/Services/landing',
+    link: '/services/landing',
     desc: 'We are Manticore Development, company which duis aute irure dolor in reprehenderit'
   },
   {
     img: CorporateImage,
     name: 'Corporate Web-site',
-    link: '/Services/corporate',
+    link: '/services/corporate',
     desc: 'We are Manticore Development, company which duis aute irure dolor in reprehenderit'
   },
   {
     name: 'Branding',
     img: BrandingImage,
-    link: '/Services/branding',
+    link: '/services/branding',
     desc: 'We are Manticore Development, company which duis aute irure dolor in reprehenderit'
   },
   {
     name: 'Other',
     img: OtherImage,
-    link: '/Services/other',
+    link: '/services/other',
     desc: 'We are Manticore Development, company which duis aute irure dolor in reprehenderit'
   }
 ]
