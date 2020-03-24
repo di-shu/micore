@@ -1,32 +1,32 @@
 /* IMAGES */
-const OtherImage = '/Assets/Images/services/Other.png'
-const BrandingImage = '/Assets/Images/services/Branding.png'
-const CorporateImage = '/Assets/Images/services/Corporate.png'
-const LandingImage = '/Assets/Images/services/LandingImage.png'
+const OtherImage = '/Assets/Images/Services/Other.png'
+const BrandingImage = '/Assets/Images/Services/Branding.png'
+const CorporateImage = '/Assets/Images/Services/Corporate.png'
+const LandingImage = '/Assets/Images/Services/LandingImage.png'
 
 export const ServicesList = [
   {
     img: LandingImage,
     name: 'Landing page',
-    link: '/services/landing',
+    link: '/Services/landing',
     desc: 'We are Manticore Development, company which duis aute irure dolor in reprehenderit'
   },
   {
     img: CorporateImage,
     name: 'Corporate Web-site',
-    link: '/services/corporate',
+    link: '/Services/corporate',
     desc: 'We are Manticore Development, company which duis aute irure dolor in reprehenderit'
   },
   {
     name: 'Branding',
     img: BrandingImage,
-    link: '/services/branding',
+    link: '/Services/branding',
     desc: 'We are Manticore Development, company which duis aute irure dolor in reprehenderit'
   },
   {
     name: 'Other',
     img: OtherImage,
-    link: '/services/other',
+    link: '/Services/other',
     desc: 'We are Manticore Development, company which duis aute irure dolor in reprehenderit'
   }
 ]

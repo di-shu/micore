@@ -11,15 +11,15 @@ import {
 } from '../../src/Components'
 import '../../src/Styles/Pages/Services/landing.scss'
 /*IMAGES*/
-const MainStatue = '/Assets/Images/services/LandingPage/MainStatue.png'
-const TZ = '../../../../Assets/Images/services/LandingPage/Icons/TZ.svg'
-const Design = '../../../../Assets/Images/services/LandingPage/Icons/Design.svg'
-const Content = '../../../../Assets/Images/services/LandingPage/Icons/Content.svg'
-const Develop = '../../../../Assets/Images/services/LandingPage/Icons/Develop.svg'
-const Prototype = '../../../../Assets/Images/services/LandingPage/Icons/Prototype.svg'
-const DogovoriTZ = '../../../../Assets/Images/services/LandingPage/Icons/DogovoriTZ.svg'
-const ContentFill = '../../../../Assets/Images/services/LandingPage/Icons/ContentFill.svg'
-const LoadSiteOnDomen = '../../../../Assets/Images/services/LandingPage/Icons/LoadSiteOnDomen.svg'
+const MainStatue = '/Assets/Images/Services/LandingPage/MainStatue.png'
+const TZ = '../../../../Assets/Images/Services/LandingPage/Icons/TZ.svg'
+const Design = '../../../../Assets/Images/Services/LandingPage/Icons/Design.svg'
+const Content = '../../../../Assets/Images/Services/LandingPage/Icons/Content.svg'
+const Develop = '../../../../Assets/Images/Services/LandingPage/Icons/Develop.svg'
+const Prototype = '../../../../Assets/Images/Services/LandingPage/Icons/Prototype.svg'
+const DogovoriTZ = '../../../../Assets/Images/Services/LandingPage/Icons/DogovoriTZ.svg'
+const ContentFill = '../../../../Assets/Images/Services/LandingPage/Icons/ContentFill.svg'
+const LoadSiteOnDomen = '../../../../Assets/Images/Services/LandingPage/Icons/LoadSiteOnDomen.svg'
 
 
 const LandingStages = [

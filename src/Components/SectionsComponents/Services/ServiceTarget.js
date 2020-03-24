@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../SectionsComponents'
 
-const TargetImg = '/Assets/Images/services/LandingPage/Target.png'
+const TargetImg = '/Assets/Images/Services/LandingPage/Target.png'
 
 export const ServiceTarget = ({ title = "Какая цель?", desc, img = TargetImg }) => {
   return (

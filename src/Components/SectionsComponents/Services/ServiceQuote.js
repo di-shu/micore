@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { ImageWrapper, SectionLayout } from '../../SectionsComponents'
 
-const QuoteCommas = '/Assets/Images/services/LandingPage/QuoteCommas.svg'
+const QuoteCommas = '/Assets/Images/Services/LandingPage/QuoteCommas.svg'
 
 export const ServiceQuote = ({ quotes }) => {
   const [emptyMsg, setEmptyMsg] = useState('')
