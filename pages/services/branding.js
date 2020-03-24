@@ -7,9 +7,9 @@ import {
   ServiceWorkStages,
   ServiceMainSection,
   ServiceShortPortfolio
-} from '~/Components'
-import { MakeBranding, MakeLogo } from '~/Components/Sections/services/Branding'
-import '~/Styles/Pages/services/branding.scss'
+} from '../../src/Components'
+import { MakeBranding, MakeLogo } from '../../src/Components/Sections/services/Branding'
+import '../../src/Styles/Pages/Services/branding.scss'
 
 const MainStatue = '/Assets/Images/services/Branding/MainStatue.png'
 const Briefing = '/Assets/Images/services/Branding/Icons/Brifing.svg'

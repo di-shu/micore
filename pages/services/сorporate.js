@@ -8,9 +8,9 @@ import {
   ServiceMainSection,
   ServiceShortPortfolio,
   ServicePriceMiscalculations
-} from '~/Components'
-import '~/Styles/Pages/services/corporate.scss'
-
+} from '../../src/Components'
+import '../../src/Styles/Pages/Services/corporate.scss'
+/*IMAGES*/
 const MainStatue = '/Assets/Images/services/Corporate/MainStatue.png'
 const Briefing = '/Assets/Images/services/Branding/Icons/Brifing.svg'
 const Miscalculation = '/Assets/Images/services/Branding/Icons/Miscalculation.svg'
@@ -67,7 +67,7 @@ const CorporateWorkingStages = [
   { img: Sources, name: 'Передача исходников' }
 ]
 
-const Orporate = () => {
+const Corporate = () => {
   return (
     <MainWrapper id="corporate-service-page">
       <ServiceMainSection title="Corporate website" statue={MainStatue}/>
@@ -81,4 +81,4 @@ const Orporate = () => {
   )
 }
 
-export default Orporate
+export default Corporate

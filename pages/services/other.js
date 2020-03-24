@@ -7,9 +7,9 @@ import {
   ServiceMainSection,
   ServiceShortPortfolio,
   ServicePriceMiscalculations
-} from '~/Components'
-import { Sites } from '~/Components/Sections/services/Other'
-import '~/Styles/Pages/services/other.scss'
+} from '../../src/Components'
+import { Sites } from '../../src/Components/Sections/services/Other'
+import '../../src/Styles/Pages/Services/other.scss'
 
 const MainStatue = '/Assets/Images/services/Other/MainStatue.png'
 

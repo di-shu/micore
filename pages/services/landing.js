@@ -8,8 +8,9 @@ import {
   ServiceMainSection,
   ServiceShortPortfolio,
   ServicePriceMiscalculations
-} from '~/Components'
-import '~/Styles/Pages/services/landing.scss'
+} from '../../src/Components'
+import '../../src/Styles/Pages/Services/landing.scss'
+/*IMAGES*/
 const MainStatue = '/Assets/Images/services/LandingPage/MainStatue.png'
 const TZ = '../../../../Assets/Images/services/LandingPage/Icons/TZ.svg'
 const Design = '../../../../Assets/Images/services/LandingPage/Icons/Design.svg'
