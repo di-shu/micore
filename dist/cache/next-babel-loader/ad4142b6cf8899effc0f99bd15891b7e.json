@@ -1,1 +1,0 @@
-{"ast":null,"code":"export * from './FullPageWrapper';","map":{"version":3,"sources":["D:/Documents/micore-next-app/src/Components/FullPage/index.js"],"names":[],"mappings":"AAAA,cAAc,mBAAd","sourcesContent":["export * from './FullPageWrapper'\r\n"]},"metadata":{},"sourceType":"module"}
