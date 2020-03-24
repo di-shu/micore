@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[26],{"sJC+":function(n,s,w){(window.__NEXT_P=window.__NEXT_P||[]).push(["/Projects/Bessarabskiy",function(){return w("NlAX")}])}},[["sJC+",1,2,3,9,0,4,5,6,8,14,13]]]);

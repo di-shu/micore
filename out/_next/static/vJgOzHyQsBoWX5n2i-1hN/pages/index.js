@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[42],{RNiq:function(n,i,t){"use strict";t.r(i);var e=t("q1tI"),u=t.n(e),o=t("rKfA"),w=t("j3gy"),r=u.a.createElement;i.default=function(){return r(w.g,{id:"main-page"},r(o.b,null))}},vlRD:function(n,i,t){(window.__NEXT_P=window.__NEXT_P||[]).push(["/",function(){return t("RNiq")}])}},[["vlRD",1,2,3,9,0,4,5,6,8,10,12,11]]]);
