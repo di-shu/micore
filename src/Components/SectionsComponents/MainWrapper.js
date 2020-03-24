@@ -6,7 +6,7 @@ import { FooterSection } from '../Sections'
 import { Layout } from './Layout'
 import { ProjectsNavigation } from './Projects'
 /* STYLES */
-import 'src/Styles/Sections/Services/index.scss'
+import '~/Styles/Sections/Services/index.scss'
 import '~/Styles/Sections/Projects/index.scss'
 
 const easing = [0.64, 0.04, 0.35, 1]
