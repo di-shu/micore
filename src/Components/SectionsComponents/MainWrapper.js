@@ -1,9 +1,13 @@
 import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { useRouter } from 'next/router'
-import { Layout } from './Layout'
+import { ProjectsList } from '../Config'
 import { FooterSection } from '../Sections'
-import { useCheckBottom } from '../../Helpers'
+import { Layout } from './Layout'
+import { ProjectsNavigation } from './Projects'
+/* STYLES */
+import '~/Styles/Sections/Services/index.scss'
+import '~/Styles/Sections/Projects/index.scss'
 
 const easing = [0.64, 0.04, 0.35, 1]
 const variants = {
@@ -14,12 +18,13 @@ const variants = {
 
 export const MainWrapper = ({ id, children }) => {
   const { pathname } = useRouter()
-  const isBottom = useCheckBottom()
   const isProject = pathname.includes('/projects')
   const isServices = pathname.includes('/services')
   
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0 })
+    setTimeout(() => {
+      window.scrollTo({ top: 0, left: 0 })
+    }, 100)
   }, [])
   
   return (
@@ -31,8 +36,9 @@ export const MainWrapper = ({ id, children }) => {
           animate="visible"
           variants={variants}
         >
+          {isProject && <ProjectsNavigation links={ProjectsList[0].content}/>}
           {children}
-          {(isProject || isServices) && <FooterSection isBottom={isBottom} />}
+          {(isProject || isServices) && <FooterSection />}
         </motion.div>
       </main>
     </Layout>

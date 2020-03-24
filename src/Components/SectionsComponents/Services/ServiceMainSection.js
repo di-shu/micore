@@ -3,7 +3,6 @@ import dynamic from 'next/dynamic'
 import { ScrollBox } from '../ScrollBox'
 import { draw, setup, useDeviceDetect } from '../../../Helpers'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../SectionsComponents'
-import '~/Styles/Sections/Services/main-section.scss'
 
 const Sketch = dynamic(() => import('react-p5'), { ssr: false })
 

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { ImageWrapper, SectionLayout } from '../../SectionsComponents'
-import '~/Styles/Sections/Services/quote-section.scss'
 
 const QuoteCommas = '/Assets/Images/Services/LandingPage/QuoteCommas.svg'
 

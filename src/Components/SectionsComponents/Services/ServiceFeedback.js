@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Form from 'react-bootstrap/Form'
 import { InputControl } from '../../Inputs'
 import { SectionLayout, SectionTitle } from '../../SectionsComponents'
-import '~/Styles/Sections/Services/feedback-section.scss'
 
 export const ServiceFeedback = ({ title, content }) => {
   const [user, setUser] = useState({ feedbackName: '', feedbackPhone: '', feedbackMessage: '' })

@@ -3,7 +3,6 @@ import { isBrowser } from 'react-device-detect'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { ImageWrapper, SectionLayout, SectionTitle } from '../../SectionsComponents'
-import '~/Styles/Sections/Services/work-stages-section.scss'
 
 export const ServiceWorkStages = ({ stages, title }) => {
   return (

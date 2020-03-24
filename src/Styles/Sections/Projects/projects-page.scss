@@ -1,0 +1,190 @@
+@import "../../Static/index";
+
+[id*='-project-page'] {
+  background-color: $accent-black;
+
+  section {
+    position: relative;
+    background-color: #fff;
+    z-index: 1;
+
+    &.is-overflow {
+      overflow: hidden;
+    }
+  }
+
+  [id*='-main'] {
+    padding-top: 65px;
+    height: 100vh;
+  }
+
+  .section-dots-wrap {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    z-index: -1;
+  }
+
+  .square-info-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 445px;
+    margin: 0 auto 45px 0;
+    border: 1px solid #12171e;
+    background-color: #ffffff;
+    padding: 35px 0;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      background-color: #fff;
+      z-index: 1;
+    }
+
+    &.project-wrap {
+      &:before {
+        width: 10px;
+        height: 60px;
+        bottom: -1px;
+        left: -1px;
+      }
+
+      &:after {
+        top: -1px;
+        right: -1px;
+        width: 70px;
+        height: 40px;
+      }
+    }
+
+    &.content-wrap {
+      &:before {
+        bottom: -1px;
+        left: 40px;
+        width: 95px;
+        height: 8px;
+      }
+
+      &:after {
+        top: 50%;
+        right: -1px;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 75px;
+      }
+    }
+
+    .square-text-wrap {
+      width: 100%;
+      max-width: 75%;
+      margin: 0 auto;
+    }
+
+    p {
+      color: #12171e;
+      font-family: $museo-300;
+      font-size: 16px;
+      letter-spacing: 0.45px;
+      line-height: 29px;
+      word-break: break-all;
+    }
+
+    a, span {
+      color: inherit;
+      font-family: inherit;
+      font-size: inherit;
+      letter-spacing: inherit;
+      line-height: inherit;
+    }
+
+    span {
+      color: $accent-main;
+    }
+  }
+
+  .text-with-dot {
+    position: relative;
+    padding-left: 20px;
+    color: $accent-black;
+    font-family: $museo-100;
+    font-size: 14px;
+    letter-spacing: 0.39px;
+    margin-bottom: 30px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 4px;
+      height: 4px;
+      border-radius: 100%;
+      background-color: $accent-main;
+      transform: translateY(-50%);
+    }
+
+    &.is-white {
+      color: #fff;
+    }
+  }
+}
+
+@include media-breakpoint-up('md') {
+  [id*='-project-page'] {
+    [id*='-main'] {
+      padding-top: 75px;
+    }
+  }
+}
+
+@include media-breakpoint-up('lg') {
+  [id*='-project-page'] {
+    .section-dots-wrap {
+      width: 440px;
+      height: 440px;
+    }
+  }
+}
+
+@include media-breakpoint-up('xl') {
+  [id*='-project-page'] {
+    [id*='-main'] {
+      padding-top: 80px;
+    }
+
+    .square-info-wrap {
+      padding: 40px 0;
+      margin: 0 auto 65px 0;
+
+      p {
+        font-size: 20px;
+        letter-spacing: 0.56px;
+        line-height: 29px;
+      }
+    }
+
+    .section-dots-wrap {
+      width: 540px;
+      height: 540px;
+    }
+
+    .text-with-dot {
+      font-size: 16px;
+      letter-spacing: 0.45px;
+      margin-bottom: 30px;
+    }
+
+    #footer-section {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 100;
+    }
+  }
+}

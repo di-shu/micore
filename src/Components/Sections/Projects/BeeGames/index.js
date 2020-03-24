@@ -1,0 +1,7 @@
+export * from './Main'
+export * from './About'
+export * from './DesignStory'
+export * from './Results'
+export * from './Devices'
+export * from './HomePage'
+export * from './Last'

@@ -1,0 +1,7 @@
+export * from './Main'
+export * from './About'
+export * from './Idea'
+export * from './Colors'
+export * from './Branding'
+export * from './Identity'
+export * from './Symbol'

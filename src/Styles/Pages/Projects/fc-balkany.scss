@@ -1,0 +1,821 @@
+@import "../../Static/index";
+
+#balkany-main {
+  background-color: $balkany-accent;
+
+  .section-title, .section-desc {
+    color: #3e4676;
+  }
+
+  .rectangle-image {
+    position: absolute;
+    top: -65px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 70%;
+    margin: 0 auto;
+    background-color: #fff;
+    height: 80%;
+    z-index: 1;
+  }
+
+  .border-image {
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 90%;
+    border: 3px solid #fff;
+    height: 125px;
+  }
+
+  .ball-image {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .pattern-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+
+    img {
+      object-fit: cover;
+    }
+  }
+}
+
+#balkany-logo-design {
+  overflow: hidden;
+
+  .section-wrapper {
+    padding-bottom: 90px;
+  }
+
+  .section-image-wrap {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+}
+
+#balkany-logo-concepts {
+  .section-wrapper {
+    padding-bottom: 90px;
+  }
+
+  .section-desc {
+    margin-bottom: 50px;
+  }
+
+  .section-image-wrap {
+    margin-bottom: 10px;
+    height: 180px;
+
+    img {
+      object-fit: contain;
+    }
+  }
+}
+
+#balkany-results {
+  .section-title {
+    margin-bottom: 50px;
+  }
+
+  .section-desc {
+    margin-bottom: 40px;
+  }
+
+  .section-image-wrap {
+    width: 100%;
+    height: 170px;
+
+    img {
+      object-fit: cover;
+      object-position: top center;
+    }
+  }
+
+  .color-info-wrap {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+
+  .color-info-text {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    p {
+      color: #12171e;
+      font-family: $museo-100;
+      font-size: 14px;
+      letter-spacing: 0.39px;
+      margin-bottom: 15px;
+
+      &:first-child {
+        font-family: $museo-300;
+      }
+    }
+  }
+
+  .color-info-round {
+    background-color: $balkany-accent;
+    width: 365px;
+    min-width: 365px;
+    height: 365px;
+    border-radius: 100%;
+    transform: translateX(50%);
+  }
+
+  .custom-line {
+    position: relative;
+    width: 100%;
+
+    span {
+      display: block;
+      background-color: #979797;
+      height: 1px;
+
+      &:nth-child(1) {
+        width: 100%;
+      }
+
+      &:nth-child(2) {
+        position: absolute;
+        right: -65px;
+        top: 0;
+        width: 65px;
+        transform-origin: top left;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+#balkany-branding {
+  overflow: hidden;
+
+  .section-desc {
+    margin-bottom: 50px;
+  }
+
+  .section-wrapper {
+    padding-bottom: 0;
+  }
+
+  .section-slider-wrap {
+    margin-bottom: 40px;
+  }
+
+  .slick-slide {
+    & > div {
+      max-width: 90%;
+      margin: 0 auto 40px;
+    }
+  }
+
+  .slick-dots {
+    margin-top: 0;
+  }
+}
+
+#balkany-fan {
+  .section-desc {
+    margin-bottom: 20px;
+  }
+
+  .section-wrapper {
+    padding-top: 80px;
+  }
+
+  .stadium {
+    width: 100%;
+    height: 210px;
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .scarf {
+    position: absolute;
+    top: 0;
+    right: -40px;
+    width: 165px;
+  }
+}
+
+#balkany-about-site {
+  background-color: $balkany-accent;
+
+  .section-wrapper {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+
+  .section-title, .section-desc {
+    color: #fff;
+  }
+
+  .section-desc {
+    margin-bottom: 50px;
+  }
+
+  .main {
+    width: 100%;
+    height: 250px;
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .devices {
+    width: auto;
+    height: auto;
+  }
+}
+
+#balkany-news {
+  .section-wrapper {
+    padding-bottom: 0;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+  .section-desc {
+    margin-bottom: 55px;
+  }
+
+  .section-image-wrap {
+    width: 100%;
+    max-width: 305px;
+    margin: 0 auto;
+  }
+}
+
+#balkany-about-desktop {
+  background-color: $balkany-accent;
+
+  .section-title, .section-desc {
+    color: #fff;
+  }
+
+  .section-desc {
+    margin-bottom: 50px;
+  }
+
+  .section-wrapper {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+
+  .desktop-mac {
+    width: 100%;
+  }
+
+  .full-mac {
+    background-color: #fff;
+    width: 100%;
+  }
+}
+
+#balkany-adaptation {
+  .section-desc {
+    margin-bottom: 60px;
+  }
+
+  .section-image-wrap {
+    position: relative;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .phone-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+    z-index: 1;
+  }
+}
+
+#balkany-tablet {
+  background-color: $balkany-accent;
+
+  .section-title, .section-desc {
+    color: #fff;
+  }
+
+  .section-desc {
+    margin-bottom: 30px;
+  }
+
+  .devices-image-wrap {
+    margin-bottom: 50px;
+  }
+}
+
+@include media-breakpoint-up('md') {
+  #balkany-main {
+    .ball-image {
+      bottom: 0;
+      max-width: 70%;
+    }
+  }
+
+  #balkany-logo-design {
+    .section-image-wrap {
+      margin-bottom: 0;
+    }
+
+    .section-desc {
+      margin-top: 30px;
+    }
+  }
+
+  #balkany-logo-concepts {
+    .section-desc {
+      margin-bottom: 0;
+    }
+
+    .concept-grid-container {
+      margin-bottom: 40px;
+    }
+
+    .section-image-wrap {
+      margin-bottom: 0;
+    }
+
+    .image-grid-item {
+      margin-bottom: 30px;
+
+      &:nth-child(even) {
+        padding-left: 15px;
+      }
+
+      &:nth-child(odd) {
+        padding-right: 15px;
+      }
+    }
+
+    .concept-grid-item {
+      &:nth-child(even) {
+        padding-left: 15px;
+      }
+
+      &:nth-child(odd) {
+        padding-right: 15px;
+      }
+    }
+  }
+
+  #balkany-results {
+    .section-image-wrap {
+      height: 270px;
+    }
+  }
+
+  #balkany-fan {
+    .scarf {
+      width: 265px;
+      right: -50px;
+    }
+
+    .stadium {
+      height: 310px;
+    }
+
+    .section-desc {
+      max-width: 50%;
+    }
+  }
+
+  #balkany-about-site {
+    .main {
+      height: 450px;
+    }
+  }
+
+  #balkany-adaptation {
+    .section-image-wrap {
+      margin-bottom: 0;
+      height: 100%;
+    }
+
+    .grid-item {
+      &:nth-child(even) {
+        padding-left: 15px;
+      }
+
+      &:nth-child(odd) {
+        padding-right: 15px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up('lg') {
+  #balkany-main {
+    .border-image {
+      bottom: -5px;
+      border-width: 5px;
+      height: 175px;
+      max-width: 70%;
+    }
+
+    .rectangle-image {
+      height: 70%;
+      max-width: 40%;
+    }
+
+    .ball-image {
+      max-width: 50%;
+    }
+
+    .section-desc, .section-title {
+      color: #fff;
+    }
+  }
+
+  #balkany-logo-design {
+    .image-wrap {
+      width: 100%;
+      max-width: 340px;
+      margin: 0 0 0 auto;
+    }
+
+    .grid-item {
+      &:nth-child(even) {
+        padding-right: 15px;
+      }
+
+      &:nth-child(odd) {
+        padding-left: 15px;
+      }
+    }
+  }
+
+  #balkany-logo-concepts {
+    .image-wrap {
+      &.image-grid-item {
+        &:nth-child(even) {
+          padding: 0 15px;
+        }
+
+        &:nth-child(odd) {
+          padding: 0 15px;
+        }
+      }
+    }
+
+    .concept-grid-item {
+      &:nth-child(even) {
+        padding: 0 15px;
+      }
+
+      &:nth-child(odd) {
+        padding: 0 15px;
+      }
+    }
+  }
+
+  #balkany-results {
+    .section-image-wrap {
+      height: 350px;
+    }
+  }
+
+  #balkany-branding {
+    .section-desc {
+      max-width: 50%;
+      margin-bottom: 80px;
+    }
+
+    .slick-slide {
+      & > div {
+        max-width: 850px;
+      }
+    }
+
+    .section-dots-wrap {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 425px;
+      height: 425px;
+      transform: translate(-35px, -50%);
+    }
+  }
+
+  #balkany-fan {
+    .scarf {
+      width: 465px;
+      right: -80px;
+    }
+
+    .stadium {
+      height: 470px;
+    }
+  }
+
+  #balkany-about-site {
+    overflow: visible;
+
+    .main {
+      height: 550px;
+    }
+
+    .devices {
+      transform: translateY(60px);
+    }
+
+    .section-desc {
+      max-width: 50%;
+    }
+  }
+
+  #balkany-news {
+    overflow: visible;
+
+    .section-desc {
+      text-align: center;
+    }
+
+    .section-image-wrap {
+      max-width: 60%;
+      transform: translateY(5px);
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  #balkany-about-desktop {
+    .section-desc {
+      max-width: 50%;
+    }
+
+    .desktop-mac {
+      width: 100%;
+      transform: translateY(10px);
+    }
+
+    .full-mac {
+      img {
+        position: relative;
+        left: -10%;
+      }
+    }
+  }
+
+  #balkany-adaptation {
+    .section-wrapper {
+      padding-bottom: 75px;
+    }
+  }
+
+  #balkany-tablet {
+    .section-desc {
+      max-width: 50%;
+      margin-bottom: 0;
+    }
+
+    .devices-image-wrap {
+      margin-bottom: 0;
+      transform: translateY(-70px);
+    }
+  }
+}
+
+@include media-breakpoint-up('xl') {
+  #balkany-main {
+    .rectangle-image {
+      top: -80px;
+      height: 65%;
+      max-width: 680px;
+    }
+
+    .ball-image {
+      max-width: 815px;
+    }
+
+    .border-image {
+      bottom: -10px;
+      border-width: 10px;
+      height: 330px;
+      max-width: 1100px
+    }
+  }
+
+  #balkany-logo-design {
+    .section-wrapper {
+      padding-bottom: 215px;
+    }
+
+    .section-dots-wrap {
+      width: 525px;
+      height: 525px;
+      position: absolute;
+      right: 0;
+      transform: translateY(-90%);
+    }
+
+    .section-desc {
+      margin-top: 0;
+    }
+  }
+
+  #balkany-logo-concepts {
+    .section-wrapper {
+      padding-top: 90px;
+      padding-bottom: 180px;
+    }
+
+    .section-title {
+      margin-top: 30px;
+    }
+
+    .image-grid-item {
+      margin-bottom: 40px;
+    }
+
+    .concept-grid-container {
+      margin-bottom: 70px;
+    }
+
+    .section-image-wrap {
+      max-width: 400px;
+      height: 260px;
+      margin: 0 0 0 auto;
+
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+
+  #balkany-results {
+    .section-wrapper {
+      padding-bottom: 75px;
+    }
+
+    .color-info-wrap {
+      margin-bottom: 0;
+    }
+
+    .color-info-text {
+      top: 25%;
+      width: 100%;
+      max-width: 45%;
+      transform: translateY(-50%);
+    }
+
+    .color-info-round {
+      width: 615px;
+      min-width: 615px;
+      height: 615px;
+      margin-top: -165px;
+    }
+
+    .custom-line {
+      span {
+        &:nth-child(2) {
+          width: 130px;
+          right: -130px;
+        }
+      }
+    }
+
+    .section-image-wrap {
+      height: 500px;
+    }
+  }
+
+  #balkany-branding {
+    .section-dots-wrap {
+      transform: translate(-35px, -40%);
+    }
+
+    .section-slider-wrap {
+      margin-bottom: 75px;
+    }
+
+    .section-wrapper {
+      padding-bottom: 0;
+
+      &.second-branding {
+        padding-bottom: 85px;
+
+        .section-desc {
+          margin-bottom: 50px;
+        }
+
+        .slide-wrap {
+          height: 520px;
+        }
+
+        .slick-dots {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+
+  #balkany-fan {
+    .section-wrapper {
+      padding-top: 250px;
+      padding-bottom: 250px;
+    }
+
+    .scarf {
+      width: auto;
+      right: 0;
+      transform: translate(40%, 0);
+    }
+
+    .stadium {
+      height: 960px;
+    }
+  }
+
+  #balkany-about-site {
+    .section-wrapper {
+      padding-top: 120px;
+    }
+
+    .section-desc {
+      margin-bottom: 0;
+    }
+
+    .main {
+      height: 960px;
+    }
+  }
+
+  #balkany-news {
+    .section-desc {
+      margin-bottom: 110px;
+    }
+
+    .section-image-wrap {
+      max-width: fit-content;
+    }
+  }
+
+  #balkany-about-desktop {
+    .section-wrapper {
+      padding-top: 120px;
+    }
+
+    .full-mac {
+      height: 1100px;
+
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+
+  #balkany-adaptation {
+    .section-wrapper {
+      padding-top: 30px;
+    }
+
+    .section-title {
+      margin-top: 60px;
+    }
+
+    .section-image-wrap {
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+
+  #balkany-tablet {
+    .section-wrapper {
+      padding-bottom: 80px;
+    }
+  }
+}

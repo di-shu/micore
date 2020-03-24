@@ -3,7 +3,6 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { ProjectsList } from '../../Config'
 import { ActiveLink, ImageWrapper, SectionLayout, SectionTitle } from '../../SectionsComponents'
-import '~/Styles/Sections/Services/short-portfolio-section.scss'
 
 export const ServiceShortPortfolio = ({ content }) => {
   return (

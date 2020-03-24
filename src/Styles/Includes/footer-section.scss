@@ -344,6 +344,7 @@
       visibility: hidden;
       transition: all 1s $timing-func;
       z-index: 10;
+      will-change: opacity;
 
       &.active {
         opacity: 1;
@@ -359,6 +360,7 @@
         padding: 50px 0 70px;
         height: auto !important;
         background-color: rgba(4, 13, 21, 0.95);
+        will-change: opacity, transform;
 
         &:before {
           content: '';

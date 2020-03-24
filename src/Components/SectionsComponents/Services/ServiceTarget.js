@@ -2,7 +2,6 @@ import React from 'react'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../SectionsComponents'
-import '~/Styles/Sections/Services/service-target.scss'
 
 const TargetImg = '/Assets/Images/Services/LandingPage/Target.png'
 

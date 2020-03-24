@@ -1,0 +1,338 @@
+@import "../../Static/index";
+
+#vip-yoga-project-page {
+  .nav-el {
+    span {
+      color: #000;
+    }
+  }
+}
+
+#vip-yoga-philosophy {
+  background-color: #accadb;
+
+  .section-desc {
+    margin-bottom: 60px;
+  }
+
+  .section-wrapper {
+    padding-bottom: 15px;
+  }
+}
+
+#vip-yoga-about {
+  z-index: 7;
+
+  .section-wrapper {
+    padding-bottom: 30px;
+  }
+
+  .section-dots-wrap {
+    top: -65px;
+    right: -80px;
+  }
+
+  .section-desc {
+    margin-bottom: 50px;
+  }
+
+  .about-image {
+    margin-bottom: 80px;
+  }
+
+  .logo-image {
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
+  }
+}
+
+#vip-yoga-colors-and-fonts {
+  .section-wrapper {
+    padding-bottom: 130px;
+  }
+
+  .color-info-wrap {
+    max-width: 250px;
+  }
+
+  .info-wrap {
+    margin: 0 !important;
+  }
+
+  .section-desc {
+    margin-bottom: 10px;
+  }
+
+  .font-example {
+    color: #12171e;
+    font-family: $quicksand-light;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 6px;
+    line-height: 35px;
+    margin-bottom: 0;
+  }
+}
+
+#vip-yoga-branding {
+  background-color: #595959;
+
+  .body-image {
+    width: 100%;
+    max-width: 310px;
+    margin: 0 auto;
+  }
+
+  .section-wrapper {
+    border-top: 1px solid #d8d8d8;
+    padding-bottom: 20px;
+  }
+
+  .section-desc {
+    margin-bottom: 50px;
+  }
+}
+
+#vip-yoga-bottom {
+  .section-slider-wrap {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+  }
+
+  .slide-image-wrap {
+    img {
+      max-width: 210px;
+      margin: 0 auto;
+    }
+  }
+
+  .slick-dots {
+    margin-top: 50px;
+  }
+}
+
+@include media-breakpoint-up('lg') {
+  #vip-yoga-project-page {
+    .nav-el {
+      span {
+        color: #fff;
+      }
+    }
+  }
+
+  #vip-yoga-philosophy {
+    .section-wrapper {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    .section-desc {
+      margin-bottom: 0;
+    }
+
+    .philosophy-row {
+      align-items: center;
+    }
+  }
+
+  #vip-yoga-about {
+    .section-wrapper {
+      padding-top: 80px;
+      padding-bottom: 60px;
+    }
+
+    .section-title {
+      font-size: 50px;
+      letter-spacing: 1.41px;
+      text-transform: none;
+    }
+
+    .section-desc {
+      margin-bottom: 0;
+    }
+
+    .section-dots-wrap {
+      left: 0;
+      top: -220px;
+    }
+
+    .about-row {
+      align-items: center;
+      flex-direction: row-reverse;
+    }
+
+    .about-image {
+      margin-bottom: 120px;
+    }
+
+    .logo-image {
+      max-width: 420px;
+    }
+  }
+
+  #vip-yoga-colors-and-fonts {
+    .section-wrapper {
+      padding-top: 60px;
+      padding-bottom: 120px;
+    }
+
+    .section-title {
+      margin-bottom: 60px;
+    }
+
+    .colors-row {
+      margin: 0;
+    }
+
+    .col-item-color {
+      padding: 0;
+
+      &:first-child {
+        .color-info-wrap {
+          flex-direction: row-reverse !important;
+        }
+
+        .color-image {
+          margin-left: 30px;
+        }
+      }
+
+      &:last-child {
+        .color-info-wrap {
+          flex-direction: row !important;
+        }
+
+        .color-image {
+          margin-right: 30px;
+          transform: translate(-15px, -25px);
+        }
+      }
+    }
+
+    .color-info-wrap {
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .info-text {
+      margin-bottom: 5px;
+    }
+  }
+
+  #vip-yoga-branding {
+    .section-wrapper {
+      border-top: none;
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+
+    .body-image {
+      position: absolute;
+      top: 0;
+      right: 70px;
+      bottom: 0;
+      max-width: 665px;
+
+      img {
+        object-fit: contain;
+        object-position: right;
+      }
+    }
+
+    .section-desc {
+      margin-bottom: 80px;
+    }
+  }
+}
+
+@include media-breakpoint-up('xl') {
+  #vip-yoga-philosophy {
+    .section-wrapper {
+      padding-top: 125px;
+      padding-bottom: 125px;
+    }
+  }
+
+  #vip-yoga-about {
+    .section-wrapper {
+      padding-top: 140px;
+      padding-bottom: 85px;
+    }
+
+    .section-title, .section-desc {
+      width: 100%;
+      max-width: 480px;
+      margin: 0 0 0 auto;
+    }
+
+    .about-image {
+      margin-bottom: 140px;
+    }
+
+    .logo-image {
+      max-width: 620px;
+    }
+  }
+
+  #vip-yoga-colors-and-fonts {
+    .section-wrapper {
+      padding-top: 85px;
+      padding-bottom: 140px;
+    }
+
+    .section-title {
+      margin-bottom: 135px;
+    }
+
+    .section-desc {
+      font-size: 20px;
+      letter-spacing: 0.56px;
+    }
+
+    .col-item-color {
+      &:last-child {
+        .color-image {
+          transform: translate(-30px, -25px);
+        }
+      }
+    }
+
+    .info-text {
+      &:first-child {
+        font-size: 20px;
+        letter-spacing: 0.56px;
+      }
+    }
+  }
+
+  #vip-yoga-branding {
+    .section-wrapper {
+      padding-top: 135px;
+      padding-bottom: 105px;
+    }
+
+    .section-desc {
+      margin-bottom: 125px;
+    }
+  }
+
+  #vip-yoga-bottom {
+    .section-slider-wrap {
+      padding-top: 90px;
+      padding-bottom: 70px;
+    }
+
+    .slide-image-wrap {
+      img {
+        max-width: 430px;
+        max-height: 680px;
+      }
+    }
+
+    .slick-dots {
+      margin-top: 85px;
+    }
+  }
+}

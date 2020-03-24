@@ -1,4 +1,3 @@
-/* IMAGES */
 const AtticImage = '/Assets/Images/Portfolio/Attic.png'
 const TwoAreImage = '/Assets/Images/Portfolio/TwoAre.png'
 const ProjectImg = '/Assets/Images/project-default-img.png'
@@ -6,7 +5,7 @@ const VipYogaImage = '/Assets/Images/Portfolio/VipYoga.png'
 const MarinistImage = '/Assets/Images/Portfolio/Marinist.png'
 const GastrobarImage = '/Assets/Images/Portfolio/Gastrobar.png'
 const BessarabskiyImage = '/Assets/Images/Portfolio/Bessarabkiy.png'
-const BeeGamesImage = '/Assets/Images/Portfolio/BeeGamesProject.png'
+const BeeGamesImage = '/Assets/Images/Portfolio/BeeGames.png'
 const FCBalkanyImage = '/Assets/Images/Portfolio/FCBalkanyProject.png'
 const PrideGroupImage = '/Assets/Images/Portfolio/PrideGroupProject.png'
 const ZlataTradeImage = '/Assets/Images/Portfolio/Zlata-trade project.png'

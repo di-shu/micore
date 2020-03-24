@@ -1,0 +1,822 @@
+@import "../../Static/index";
+
+#zlata-project-page {
+  .devices-image-wrap {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+
+#zlata-trade-main {
+  background-color: $zlata-accent;
+
+  .image-eagle {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    width: 284px;
+  }
+
+  .image-wheat {
+    position: absolute;
+    top: 100px;
+    right: -20px;
+    width: 230px;
+  }
+}
+
+#zlata-brief {
+  background-color: $accent-black;
+
+  .section-title {
+    color: #fff;
+    padding: 0 15px;
+  }
+
+  .section-desc {
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #1d242c;
+  }
+
+  .brief-card {
+    background-color: #1d242c;
+    padding: 25px 15px;
+    margin-bottom: 20px;
+  }
+
+  .brief-title {
+    position: relative;
+    color: #fff;
+    font-family: $museo-300;
+    font-size: 40px;
+    letter-spacing: 1.13px;
+    line-height: normal;
+    margin-bottom: 10px;
+    padding: 0 25px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      background-color: $accent-main;
+      opacity: 0.7;
+      width: 55px;
+      height: 6px;
+    }
+  }
+
+  .brief-info {
+    color: #ffffff;
+    font-family: $museo-300;
+    font-size: 16px;
+    letter-spacing: 0.45px;
+    line-height: 29px;
+    margin-bottom: 30px;
+    padding: 0 25px;
+  }
+
+  .brief-image-wrap {
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+#zlata-results {
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  .section-desc {
+    margin-bottom: 60px;
+  }
+
+  .result-color-wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+
+    &:last-child {
+      margin-bottom: 25px;
+    }
+
+    &.primary {
+      .result-color {
+        margin-right: 95px;
+        left: 40px;
+        background-color: $zlata-accent-primary;
+      }
+    }
+
+    &.secondary {
+      flex-direction: row-reverse;
+
+      .result-color {
+        margin-left: 95px;
+        right: 40px;
+        background-color: $zlata-accent-secondary;
+      }
+    }
+  }
+
+  .result-color {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 110px;
+    transform: rotate(45deg);
+
+    span {
+      color: #fff;
+      font-family: $museo-300;
+      font-size: 14px;
+      letter-spacing: 0.39px;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .result-color-info {
+    span {
+      font-size: 9px;
+      letter-spacing: 0.26px;
+      color: #12171e;
+      margin-bottom: 10px;
+
+      &:nth-child(2), &:nth-child(3) {
+        font-family: $museo-100;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+#zlata-adaptation {
+  .section-wrapper {
+    padding-bottom: 60px;
+
+    .image-wrap {
+      text-align: center;
+      margin-bottom: 40px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  .logo-adaptation-container {
+    background-color: $accent-black;
+
+    .image-wrap {
+      &.logo-adaptation {
+        height: calc(100% - 60px);
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &.logo-street {
+        width: 100%;
+        height: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+#zlata-branding {
+  img {
+    object-fit: contain;
+  }
+
+  .section-title {
+    margin-bottom: 45px;
+  }
+
+  .section-desc {
+    margin-bottom: 30px;
+  }
+
+  .billboard-image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#zlata-desktop {
+  background-image: radial-gradient(circle, #343841, #283039);
+
+  .adaptation {
+    background-color: #fff;
+
+    .section-desc {
+      margin-bottom: 60px;
+    }
+  }
+
+  .about-desktop, .about-site {
+    .section-title, .section-desc {
+      color: #fff;
+    }
+  }
+
+  .grid-item-adaptation {
+    margin-bottom: 50px;
+  }
+
+  .icon-wrap {
+    width: 30px;
+    height: 35px;
+    margin: 0 auto 20px;
+  }
+
+  .icon-name {
+    color: $accent-black;
+    font-family: $museo-100;
+    font-size: 16px;
+    letter-spacing: 0.45px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+#zlata-mobile {
+  padding-bottom: 50px;
+  background-image: radial-gradient(circle, #343841, #283039);
+
+  .mobile-adaptation {
+    background-color: #fff;
+
+    .section-desc {
+      margin-bottom: 55px;
+    }
+  }
+
+  .about-tablet {
+    .section-title, .section-desc {
+      color: #fff;
+    }
+
+    .section-desc {
+      margin-bottom: 35px;
+    }
+  }
+
+  .mobile-image-wrap {
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  .mobile-dots {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  .mobile-phone {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    img {
+      width: auto;
+    }
+  }
+
+  .list-item {
+    margin-bottom: 30px;
+  }
+
+  .list-text {
+    position: relative;
+    padding-left: 15px;
+    color: $accent-black;
+    font-family: $museo-100;
+    font-size: 14px;
+    letter-spacing: 0.39px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 4px;
+      height: 4px;
+      border-radius: 100%;
+      background-color: $accent-main;
+    }
+  }
+}
+
+@include media-breakpoint-up('md') {
+  #zlata-trade-main {
+    .image-eagle {
+      left: 60px;
+      width: 400px;
+    }
+
+    .image-wheat {
+      right: -40px;
+      width: 400px;
+      top: 40%;
+      transform: translateY(-50%);
+    }
+  }
+
+  #zlata-brief {
+    .section-title {
+      padding: 0 30px;
+    }
+
+    .section-desc {
+      padding: 30px;
+      margin-bottom: 40px;
+    }
+
+    .grid-container-brief {
+      padding: 0 15px;
+    }
+
+    .grid-item-brief {
+      padding: 0 15px;
+    }
+  }
+
+  #zlata-results {
+    .result-color-wrap {
+      &.primary {
+        .result-color {
+          left: 55px;
+        }
+      }
+
+      &.secondary {
+        .result-color {
+          right: 55px;
+        }
+      }
+    }
+  }
+
+  #zlata-adaptation {
+    .grid-container-adaptation {
+      flex-direction: row-reverse;
+    }
+
+    .section-desc {
+      padding-right: 30px;
+    }
+
+    .section-wrapper {
+      .image-wrap {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  #zlata-mobile {
+    .mobile-adaptation-container {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+@include media-breakpoint-up('lg') {
+  #zlata-trade-main {
+    .image-eagle {
+      left: 100px;
+    }
+
+    .section-wrapper {
+      position: relative;
+      bottom: 0;
+      align-items: flex-start;
+    }
+  }
+
+  #zlata-results {
+    .result-color-item-wrap {
+      display: flex;
+      justify-content: center;
+    }
+
+    .result-color-wrap {
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 0;
+      margin-right: 140px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.primary {
+        .result-color {
+          margin-right: 0;
+          left: 0;
+          margin-bottom: 60px;
+        }
+      }
+
+      &.secondary {
+        flex-direction: column;
+        margin-bottom: 0;
+
+        .result-color {
+          margin-left: 0;
+          right: 0;
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+
+  #zlata-adaptation {
+    .section-title {
+      margin-bottom: 20px;
+    }
+
+    .logo-adaptation-container {
+      .image-wrap {
+        &.logo-adaptation {
+          height: 100%;
+          max-height: 310px;
+
+          img {
+            object-fit: contain;
+          }
+        }
+      }
+    }
+  }
+
+  #zlata-branding {
+    .section-desc {
+      max-width: 50%;
+    }
+
+    .uniform-slider {
+      .slick-slide {
+        & > div {
+          max-width: 850px;
+          margin: 0 auto 75px;
+        }
+      }
+    }
+  }
+
+  #zlata-desktop {
+    .about-site, .about-desktop {
+      .section-desc {
+        max-width: 50%;
+      }
+    }
+
+    .adaptation {
+      .section-title {
+        text-align: center;
+      }
+
+      .section-desc {
+        text-align: center;
+      }
+    }
+
+    .devices-image-wrap {
+      margin-bottom: 60px;
+    }
+  }
+
+  #zlata-mobile {
+    .section-wrapper {
+      &.mobile-adaptation {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
+      &.about-tablet {
+        .section-desc {
+          max-width: 50%;
+        }
+      }
+    }
+
+    .mobile-image-wrap {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include media-breakpoint-up('xl') {
+  #zlata-trade-main {
+    .section-wrapper {
+      position: absolute;
+      align-items: center;
+      bottom: 0;
+      background-color: $zlata-accent-primary;
+      opacity: 0.9;
+      padding: 55px 0;
+      max-width: 100%;
+    }
+
+    .image-eagle {
+      left: 115px;
+      width: 700px;
+      height: auto;
+    }
+
+    .image-wheat {
+      top: 0;
+      right: -55px;
+      width: 600px;
+      transform: translateY(0%);
+    }
+  }
+
+  #zlata-brief {
+    .section-wrapper {
+      padding-top: 75px;
+      padding-bottom: 60px;
+    }
+
+    .section-title {
+      margin-bottom: 60px;
+      padding: 0 30px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .section-desc {
+      padding: 35px;
+      margin: 0 15px 30px;
+      font-size: 20px;
+      letter-spacing: 2px;
+      line-height: 34px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .grid-container-brief {
+      position: relative;
+      z-index: 1;
+    }
+
+    .brief-card {
+      padding: 25px;
+    }
+
+    .brief-title {
+      padding: 0;
+      font-size: 40px;
+      letter-spacing: 1.13px;
+      margin-bottom: 10px;
+
+      &:after {
+        right: -25px;
+      }
+    }
+
+    .brief-info {
+      font-size: 16px;
+      letter-spacing: 0.45px;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+
+    .section-dots-wrap {
+      position: absolute;
+      top: 75px;
+      right: -80px;
+      width: 675px;
+      height: 675px;
+      z-index: 0;
+      opacity: 0.1;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  #zlata-results {
+    position: relative;
+
+    .section-wrapper {
+      padding: 180px 60px;
+    }
+
+    .section-title {
+      margin-bottom: 60px;
+    }
+
+    .result-color-wrap {
+      justify-content: flex-start;
+      margin-right: 0;
+    }
+
+    .result-color-item-wrap {
+      justify-content: space-around;
+    }
+
+    .result-color {
+      width: 130px;
+      height: 130px;
+      margin-bottom: 80px !important;
+
+      span {
+        font-size: 20px;
+        letter-spacing: 0.56px;
+      }
+    }
+
+    .grid-container {
+      justify-content: space-between;
+    }
+
+    .result-color-info {
+      span {
+        font-size: 14px;
+        letter-spacing: 0.39px;
+      }
+    }
+  }
+
+  #zlata-adaptation {
+    .section-wrapper {
+      padding: 180px 80px;
+      max-width: 100%;
+    }
+
+    .section-title {
+      margin-bottom: 0;
+    }
+
+    .section-desc {
+      margin-top: 40px;
+    }
+
+    .section-wrapper {
+      .image-wrap {
+        &.logo-count {
+          width: 100%;
+          max-width: 440px;
+        }
+      }
+    }
+
+    .logo-adaptation-container {
+      .image-wrap {
+        &.logo-adaptation {
+          max-height: 390px;
+          padding: 60px 0;
+          width: 100%;
+          max-width: 440px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  #zlata-branding {
+    .section-wrapper {
+      padding-top: 120px;
+      padding-bottom: 0;
+      overflow: hidden;
+    }
+
+    .section-slider-wrap {
+      padding-bottom: 90px;
+    }
+
+    .section-title {
+      margin-bottom: 40px;
+    }
+
+    .section-desc {
+      margin-bottom: 30px;
+    }
+
+    .section-dots-wrap {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 520px;
+      height: 520px;
+      opacity: 1;
+      z-index: 0;
+      transform: translateY(-50%);
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .slick-dots {
+      margin-top: 0;
+    }
+  }
+
+  #zlata-desktop {
+    .section-wrapper {
+      padding-top: 120px;
+      padding-bottom: 120px;
+
+      &.adaptation {
+        max-width: 100%;
+
+        .section-desc {
+          margin-bottom: 65px;
+        }
+      }
+    }
+
+    .devices-image-wrap {
+      margin: 0;
+    }
+
+    .grid-item-adaptation {
+      margin-bottom: 0;
+    }
+
+    .section-title {
+      margin-bottom: 40px;
+    }
+
+    .section-desc {
+      margin-bottom: 0;
+    }
+  }
+
+  #zlata-mobile {
+    padding-bottom: 0;
+
+    .section-wrapper {
+      &.about-tablet {
+        padding: 140px 60px 180px;
+      }
+
+      &.mobile-adaptation {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        max-width: 100%;
+
+        .section-desc {
+          margin-bottom: 65px;
+        }
+      }
+    }
+
+    .devices-image-wrap {
+      margin: 0;
+    }
+
+    .list-text {
+      font-size: 16px;
+      letter-spacing: 0.45px;
+    }
+
+    .mobile-adaptation-container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .mobile-image-wrap {
+      text-align: right;
+    }
+
+    .mobile-dots {
+      width: 480px;
+      height: 480px;
+    }
+
+    .mobile-phone {
+      top: 0;
+    }
+  }
+}

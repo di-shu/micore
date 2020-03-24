@@ -1,0 +1,158 @@
+@import "../../Static/index";
+
+.flipbook-container {
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 25px;
+
+  &.isOpen {
+    .open-wrap {
+      opacity: 0;
+      transform: translate(-50%, -90px);
+    }
+
+    .flipbook {
+      &:before {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+
+  .page {
+    width: 100%;
+    height: 100%;
+  }
+
+  .open-wrap {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -70px);
+    z-index: 32;
+    transition: all 0.5s $timing-func;
+
+    .sub-title {
+      color: #fff;
+      font-family: $museo-700;
+      font-size: 16px;
+      letter-spacing: 0.45px;
+    }
+  }
+
+  .line {
+    height: 90px;
+    width: 1px;
+    background-color: #fff;
+  }
+
+  .circle {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 100%;
+  }
+}
+
+.flipbook {
+  overflow: visible !important;
+  margin: 0 auto;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #242424;
+    opacity: 0.6;
+    z-index: 31;
+    transition: all 0.5s $timing-func;
+  }
+
+  img {
+    object-fit: contain;
+  }
+}
+
+.logobook-nav {
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .arrow-left, .arrow-right {
+    width: 13px;
+    cursor: pointer;
+  }
+
+  .arrow-left {
+    margin-right: 25px;
+  }
+
+  .arrow-right {
+    margin-left: 25px;
+  }
+
+  p {
+    font-size: 14px;
+    letter-spacing: 0.39px;
+  }
+}
+
+@include media-breakpoint-up('md') {
+  .flipbook-container {
+    .open-wrap {
+      left: 75%;
+    }
+  }
+}
+
+@include media-breakpoint-up('lg') {
+  .flipbook-container {
+    width: 100%;
+    max-width:100%;
+    margin: 100px 0 50px auto;
+
+    &.isOpen {
+      .open-wrap {
+        transform: translate(-40px, 0px);
+      }
+    }
+
+    .open-wrap {
+      left: 10%;
+      top: auto;
+      bottom: 60px;
+      transform: translate(0, 0);
+      flex-direction: row;
+    }
+
+    .line {
+      height: 1px;
+      width: 350px;
+    }
+
+    .logobook-nav {
+      bottom: -50px;
+    }
+  }
+}
+
+@include media-breakpoint-up('xl') {
+  .flipbook-container {
+    .open-wrap {
+      left: 15%;
+    }
+  }
+}

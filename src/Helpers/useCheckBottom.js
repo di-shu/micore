@@ -6,14 +6,20 @@ export const useCheckBottom = () => {
   useEffect(() => {
     window.addEventListener('scroll', windowScroll)
     
-    return () => window.removeEventListener('scroll', windowScroll)
+    return () => {
+      window.removeEventListener('scroll', windowScroll)
+    }
   }, [])
-  
+
   const windowScroll = () => {
-    const windowBottomPosition = window.scrollY + window.innerHeight
+    const windowBottomPosition = Math.round(window.scrollY + window.innerHeight)
     const pageBottomPosition = document.getElementsByTagName('main')[0].offsetHeight
-  
-    windowBottomPosition === pageBottomPosition ? setIsBottom(true) : setIsBottom(false)
+
+    if (windowBottomPosition === pageBottomPosition) {
+      setIsBottom(true)
+    } else {
+      setIsBottom(false)
+    }
   }
   
   return isBottom

@@ -4,6 +4,6 @@ import { MainWrapper } from '~/Components/SectionsComponents'
 
 export default () => (
   <MainWrapper id="contact-page">
-    <FooterSection isContact />
+    <FooterSection isContact/>
   </MainWrapper>
 )

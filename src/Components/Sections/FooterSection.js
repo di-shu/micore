@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col'
 import Form from 'react-bootstrap/Form'
 import Container from 'react-bootstrap/Container'
 import { InputControl } from '../Inputs'
-import { useDeviceDetect } from '../../Helpers'
+import { useCheckBottom, useDeviceDetect } from '../../Helpers'
 import { SocialsWrap, ImageWrapper, ActiveLink } from '../SectionsComponents'
 /* IMAGES */
 const MapMarker = '/Assets/Images/map-marker.svg'
@@ -28,9 +28,10 @@ const FormInputs = [
   }
 ]
 
-export const FooterSection = ({ isContact, animation, isBottom }) => {
-  const { mobile, laptop, desktop } = useDeviceDetect()
+export const FooterSection = ({ isContact, animation }) => {
   const [values, setValues] = useState({ name: '', phone: '', message: '' })
+  const isBottom = useCheckBottom()
+  const { mobile, laptop, desktop } = useDeviceDetect()
   
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -38,7 +39,7 @@ export const FooterSection = ({ isContact, animation, isBottom }) => {
   const handleChange = e => {
     setValues({ ...values, [e.target.id]: e.target.value })
   }
-  
+
   return (
     <section id="footer-section" className={`${!isBottom ? 'section' : ''} ${isBottom ? 'active' : ''} ${!isContact ? 'footer-section' : 'active'}`}>
       <div className={`container-wrap ${animation || isBottom ? 'on-enter' : 'on-leave'}`}>

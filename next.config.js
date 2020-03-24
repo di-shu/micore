@@ -3,6 +3,7 @@ const withFonts = require('next-fonts')
 const withPlugins = require('next-compose-plugins')
 
 const nextConfig = {
+  distDir: './dist',
   devIndicators: {
     autoPrerender: false
   }

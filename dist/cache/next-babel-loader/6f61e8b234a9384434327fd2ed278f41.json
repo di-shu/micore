@@ -1,0 +1,1 @@
+{"ast":null,"code":"export * from './TabWrap';","map":{"version":3,"sources":["D:/Documents/micore-next-app/src/Components/Tab/index.js"],"names":[],"mappings":"AAAA,cAAc,WAAd","sourcesContent":["export * from './TabWrap'\r\n"]},"metadata":{},"sourceType":"module"}

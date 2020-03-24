@@ -1,0 +1,33 @@
+@import "../../Static/index";
+
+[id*='-project-page'] {
+  .font-title {
+    font-size: 20px;
+    letter-spacing: 0.56px;
+    line-height: 29px;
+    color: #12171e;
+    margin-bottom: 15px;
+  }
+
+  .font-example {
+    color: #afafaf;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1.45px;
+    line-height: 28px;
+    margin-bottom: 50px;
+    word-break: break-all;
+
+    &.font-second {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include media-breakpoint-up('md') {
+  [id*='-project-page'] {
+    .font-example {
+      margin-bottom: 0;
+    }
+  }
+}
