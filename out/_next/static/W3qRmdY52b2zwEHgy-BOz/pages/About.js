@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[16],{PZQO:function(n,t,u){"use strict";u.r(t);var o=u("q1tI"),w=u.n(o),e=u("rKfA"),i=u("j3gy"),a=w.a.createElement;t.default=function(){return a(i.g,{id:"about-page"},a(e.a,null))}},PwFv:function(n,t,u){(window.__NEXT_P=window.__NEXT_P||[]).push(["/About",function(){return u("PZQO")}])}},[["PwFv",1,2,4,8,0,3,5,6,9,10,12,11]]]);
