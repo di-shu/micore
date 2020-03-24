@@ -8,10 +8,10 @@ import {
   ServiceShortPortfolio,
   ServicePriceMiscalculations
 } from '~/Components'
-import { Sites } from '~/Components/Sections/Services/Other'
-import '~/Styles/Pages/Services/other.scss'
+import { Sites } from '~/Components/Sections/services/Other'
+import '~/Styles/Pages/services/other.scss'
 
-const MainStatue = '/Assets/Images/Services/Other/MainStatue.png'
+const MainStatue = '/Assets/Images/services/Other/MainStatue.png'
 
 const OtherStages = [
   {

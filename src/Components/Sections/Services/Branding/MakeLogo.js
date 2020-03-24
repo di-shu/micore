@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col'
 import { useDeviceDetect } from '../../../../Helpers'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 
-const LogoImage = '/Assets/Images/Services/Branding/MakeLogo.svg'
+const LogoImage = '/Assets/Images/services/Branding/MakeLogo.svg'
 
 export const MakeLogo = () => {
   const isLaptop = useDeviceDetect(true)

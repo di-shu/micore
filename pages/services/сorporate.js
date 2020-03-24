@@ -9,19 +9,17 @@ import {
   ServiceShortPortfolio,
   ServicePriceMiscalculations
 } from '~/Components'
-import '~/Styles/Pages/Services/landing.scss'
-const MainStatue = '/Assets/Images/Services/LandingPage/MainStatue.png'
-const TZ = '../../../../Assets/Images/Services/LandingPage/Icons/TZ.svg'
-const Design = '../../../../Assets/Images/Services/LandingPage/Icons/Design.svg'
-const Content = '../../../../Assets/Images/Services/LandingPage/Icons/Content.svg'
-const Develop = '../../../../Assets/Images/Services/LandingPage/Icons/Develop.svg'
-const Prototype = '../../../../Assets/Images/Services/LandingPage/Icons/Prototype.svg'
-const DogovoriTZ = '../../../../Assets/Images/Services/LandingPage/Icons/DogovoriTZ.svg'
-const ContentFill = '../../../../Assets/Images/Services/LandingPage/Icons/ContentFill.svg'
-const LoadSiteOnDomen = '../../../../Assets/Images/Services/LandingPage/Icons/LoadSiteOnDomen.svg'
+import '~/Styles/Pages/services/corporate.scss'
 
+const MainStatue = '/Assets/Images/services/Corporate/MainStatue.png'
+const Briefing = '/Assets/Images/services/Branding/Icons/Brifing.svg'
+const Miscalculation = '/Assets/Images/services/Branding/Icons/Miscalculation.svg'
+const ActBrief = '/Assets/Images/services/Branding/Icons/ActBrief.svg'
+const Creating = '/Assets/Images/services/Branding/Icons/Creating.svg'
+const FormStyle = '/Assets/Images/services/Branding/Icons/FormStyle.svg'
+const Sources = '/Assets/Images/services/Branding/Icons/Sources.svg'
 
-const LandingStages = [
+const CorporateStages = [
   {
     title: 'Обсуждение проекта',
     desc: 'This website which duis aute irure dolor  in rep ehenderit in voluptate velit esse cillum dolo rez eu fugia.'
@@ -47,6 +45,7 @@ const LandingStages = [
     desc: 'This website which duis aute irure dolor  in rep ehenderit in voluptate velit esse cillum dolo rez eu fugia.'
   }
 ]
+
 const Quotes = [
   'Мы не опаздываем потому, что не спешим. Проекты в срок.',
   'Предыдущая цитата ложь, неверьте ей!',
@@ -58,29 +57,28 @@ const Quotes = [
   'У нас работает акция! Купи один лэндинг по цене двух! Как-то так.',
   'Анимации очень ценятся на лендингах, но больше ценятся те, кто их делает. Берегите своих разработчиков!'
 ]
-const Stages = [
-  { img: TZ, name: 'Составление технического задания' },
-  { img: DogovoriTZ, name: 'Подписание договора и тз' },
-  { img: Prototype, name: 'Создание прототипа сайта' },
-  { img: Design, name: 'Отрисовка дизайна' },
-  { img: Content, name: 'Подготовка контента' },
-  { img: Develop, name: 'Разработка сайта' },
-  { img: ContentFill, name: 'Наполнение контентом' },
-  { img: LoadSiteOnDomen, name: 'Загрузка сайта на домен' },
+
+const CorporateWorkingStages = [
+  { img: Briefing, name: 'Брифинг' },
+  { img: Miscalculation, name: 'Просчет' },
+  { img: ActBrief, name: 'Подписание договора и брифа' },
+  { img: Creating, name: 'Создание логотипа' },
+  { img: FormStyle, name: 'Создание элементов фирменного стиля' },
+  { img: Sources, name: 'Передача исходников' }
 ]
 
-const Landing = () => {
+const Orporate = () => {
   return (
-    <MainWrapper id="landing-service-page">
-      <ServiceMainSection title="Landing page" statue={MainStatue} />
-      <ServiceTarget />
-      <ServicePriceMiscalculations stages={LandingStages} />
+    <MainWrapper id="corporate-service-page">
+      <ServiceMainSection title="Corporate website" statue={MainStatue}/>
+      <ServiceTarget/>
+      <ServicePriceMiscalculations stages={CorporateStages}/>
       <ServiceFeedback title="Получить первичный просчет в течении суток"/>
       <ServiceQuote quotes={Quotes}/>
-      <ServiceWorkStages stages={Stages} title="Этапы работы"/>
-      <ServiceShortPortfolio />
+      <ServiceWorkStages stages={CorporateWorkingStages} title="Этапы работы"/>
+      <ServiceShortPortfolio/>
     </MainWrapper>
   )
 }
 
-export default Landing
+export default Orporate

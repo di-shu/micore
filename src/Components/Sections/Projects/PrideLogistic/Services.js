@@ -9,7 +9,7 @@ import {
 } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
 /* IMAGES */
-const ServicesImg = '/Assets/Images/PrideLogistic/Services.png'
+const ServicesImg = '/Assets/Images/PrideLogistic/services.png'
 const AllDevices = '/Assets/Images/PrideLogistic/AllDevices.png'
 const MacOnDesktop = '/Assets/Images/PrideLogistic/MacOnDesktop.png'
 const MobileVersion = '/Assets/Images/PrideLogistic/MobileVersion.png'

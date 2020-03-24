@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 
-const BrandingImage = '/Assets/Images/Services/Branding/BrandingImage.png'
+const BrandingImage = '/Assets/Images/services/Branding/BrandingImage.png'
 
 export const MakeBranding = () => {
   return (
