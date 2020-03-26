@@ -10,13 +10,13 @@ export const MenuLinks = [
     linkTitle: 'All you need to know'
   },
   {
-    to: '/contact',
-    title: 'Contacts',
-    linkTitle: 'Get in touch'
-  },
-  {
     to: '/services',
     title: 'Services',
     linkTitle: 'Our services'
+  },
+  {
+    to: '/contact',
+    title: 'Contacts',
+    linkTitle: 'Get in touch'
   }
 ]

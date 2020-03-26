@@ -1,19 +1,15 @@
 import React from 'react'
 import ListGroup from 'react-bootstrap/ListGroup'
 import { MenuLinks } from '../Config'
-import { useDeviceDetect } from '../../Helpers'
-import { ActiveLink, SectionTitle, SocialsWrap } from '../SectionsComponents'
+import { ActiveLink, SectionTitle } from '../SectionsComponents'
 
 export const MenuContainer = ({ close, open, animation }) => {
-  const { mobile } = useDeviceDetect()
-  
   return open && (
     <div className={`menu-wrap ${animation ? 'is-opened' : ''}`}>
-      {!mobile && <p className="switch-title">Sound</p>}
-      <div className="close-icon" onClick={close}>
-        <span/>
-        <span/>
-      </div>
+      {/*<div className="close-icon" onClick={close}>*/}
+      {/*  <span/>*/}
+      {/*  <span/>*/}
+      {/*</div>*/}
       <ListGroup className="list-wrap">
         {MenuLinks.map(({ title, linkTitle, to }, index) => (
           <ListGroup.Item key={`menu-link_${index}`} className="list-item">
@@ -27,18 +23,6 @@ export const MenuContainer = ({ close, open, animation }) => {
           </ListGroup.Item>
         ))}
       </ListGroup>
-      {!mobile && (
-        <div className="switch-box switch-box_sound">
-          <div className="switch-link">
-            <span className="switch-line"/>
-            <span className="switch-name">On</span>
-          </div>
-          <div className="switch-link">
-            <span className="switch-line"/>
-            <span className="switch-name">Off</span>
-          </div>
-        </div>
-      )}
       <div className="switch-box">
         <ActiveLink link="/" className="switch-link">
           <p className="switch-name">EN</p>
@@ -48,8 +32,11 @@ export const MenuContainer = ({ close, open, animation }) => {
           <p className="switch-name">RU</p>
           <span className="switch-line"/>
         </ActiveLink>
+        <ActiveLink link="/" className="switch-link">
+          <p className="switch-name">UK</p>
+          <span className="switch-line"/>
+        </ActiveLink>
       </div>
-      <SocialsWrap display={mobile} />
     </div>
   )
 }
