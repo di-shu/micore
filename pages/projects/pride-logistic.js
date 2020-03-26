@@ -9,7 +9,7 @@ import {
   Results,
   Services
 } from '../../src/Components/Sections/Projects/PrideLogistic'
-import { MainWrapper } from '../../src/Components/SectionsComponents'
+import MainWrapper from '../../src/Components/SectionsComponents/MainWrapper'
 /*STYLES*/
 import '~/Styles/Pages/Projects/pride-logistic.scss'
 

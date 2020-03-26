@@ -9,11 +9,12 @@ export const SeeMoreLink = (props) => {
     nav = '/portfolio',
     label = 'See works'
   } = props
-  const customClassName = `see-more-link ${display ? 'd-block' : 'd-none'} ${className ? className : ''} ${direction === 'right' ? 'to-right' : 'to-left'}`
   
   return (
-    <div className={customClassName}>
-      <ActiveLink link={nav}><span>{label}</span></ActiveLink>
+    <div className={`see-more-link ${display ? 'd-block' : 'd-none'} ${className ? className : ''} ${direction === 'right' ? 'to-right' : 'to-left'}`}>
+      <ActiveLink link={nav}>
+        <span>{label}</span>
+      </ActiveLink>
     </div>
   )
   

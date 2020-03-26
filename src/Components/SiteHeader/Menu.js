@@ -4,12 +4,11 @@ import { MenuLinks } from '../Config'
 import { useDeviceDetect } from '../../Helpers'
 import { ActiveLink, SectionTitle, SocialsWrap } from '../SectionsComponents'
 
-export const MenuContainer = (props) => {
-  const { close, open } = props
+export const MenuContainer = ({ close, open, animation }) => {
   const { mobile } = useDeviceDetect()
   
-  return (
-    <div className={`menu-wrap ${open ? 'is-opened' : ''}`}>
+  return open && (
+    <div className={`menu-wrap ${animation ? 'is-opened' : ''}`}>
       {!mobile && <p className="switch-title">Sound</p>}
       <div className="close-icon" onClick={close}>
         <span/>

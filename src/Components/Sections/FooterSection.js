@@ -31,7 +31,7 @@ const FormInputs = [
 export const FooterSection = ({ isContact, animation }) => {
   const [values, setValues] = useState({ name: '', phone: '', message: '' })
   const isBottom = useCheckBottom()
-  const { mobile, laptop, desktop } = useDeviceDetect()
+  const { mobile, desktop, minWidthLaptop } = useDeviceDetect()
   
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -43,7 +43,7 @@ export const FooterSection = ({ isContact, animation }) => {
   return (
     <section id="footer-section" className={`${!isBottom ? 'section' : ''} ${isBottom ? 'active' : ''} ${!isContact ? 'footer-section' : 'active'}`}>
       <div className={`container-wrap ${animation || isBottom ? 'on-enter' : 'on-leave'}`}>
-        {isContact && (laptop || desktop) && (
+        {isContact && minWidthLaptop && (
           <div className="image-wrap">
             <img src={ContactHand} alt="Hand"/>
           </div>

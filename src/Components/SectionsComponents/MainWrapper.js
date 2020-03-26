@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { useRouter } from 'next/router'
+import { Layout } from './Layout'
 import { ProjectsList } from '../Config'
 import { FooterSection } from '../Sections'
-import { Layout } from './Layout'
 import { ProjectsNavigation } from './Projects'
+import { useCheckRoute } from '../../Helpers'
 /* STYLES */
 import '~/Styles/Sections/Services/index.scss'
 import '~/Styles/Sections/Projects/index.scss'
@@ -16,17 +16,15 @@ const variants = {
   hidden: { opacity: 0, transition: { duration: 1, ease: easing } }
 }
 
-export const MainWrapper = ({ id, children }) => {
-  const { pathname } = useRouter()
-  const isProject = pathname.includes('/projects')
-  const isServices = pathname.includes('/services')
-  
+const MainWrapper = ({ id, children }) => {
+  const { isProject, isServices } = useCheckRoute()
+
   useEffect(() => {
     setTimeout(() => {
       window.scrollTo({ top: 0, left: 0 })
     }, 100)
   }, [])
-  
+
   return (
     <Layout>
       <main id={id} className="main-wrapper">
@@ -36,11 +34,13 @@ export const MainWrapper = ({ id, children }) => {
           animate="visible"
           variants={variants}
         >
-          {isProject && <ProjectsNavigation links={ProjectsList[0].content}/>}
+          <ProjectsNavigation links={ProjectsList[0].content}/>
           {children}
-          {(isProject || isServices) && <FooterSection />}
+          {(isProject || isServices) && <FooterSection/>}
         </motion.div>
       </main>
     </Layout>
   )
 }
+
+export default MainWrapper

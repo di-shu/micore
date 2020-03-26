@@ -1,5 +1,4 @@
 import React from 'react'
-import { MainWrapper } from '../../src/Components'
 import {
   Main,
   About,
@@ -14,6 +13,7 @@ import {
   LogoConcept,
   ColorsAndFonts
 } from '../../src/Components/Sections/Projects/Attic'
+import MainWrapper from '../../src/Components/SectionsComponents/MainWrapper'
 /* STYLES */
 import '~/Styles/Pages/Projects/attic.scss'
 

@@ -1,6 +1,7 @@
 export * from './glitch'
 export * from './getRandomInt'
 export * from './useMouseMove'
+export * from './useCheckRoute'
 export * from './animationClass'
 export * from './useCheckBottom'
 export * from './useDeviceDetect'

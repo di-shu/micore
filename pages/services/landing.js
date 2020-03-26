@@ -1,6 +1,5 @@
 import React from 'react'
 import {
-  MainWrapper,
   ServiceQuote,
   ServiceTarget,
   ServiceFeedback,
@@ -9,7 +8,8 @@ import {
   ServiceShortPortfolio,
   ServicePriceMiscalculations
 } from '../../src/Components'
-import '../../src/Styles/Pages/Services/landing.scss'
+import MainWrapper from '../../src/Components/SectionsComponents/MainWrapper'
+import '~/Styles/Pages/Services/landing.scss'
 /*IMAGES*/
 const MainStatue = '/Assets/Images/Services/LandingPage/MainStatue.png'
 const TZ = '../../../../Assets/Images/Services/LandingPage/Icons/TZ.svg'

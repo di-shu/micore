@@ -1,7 +1,6 @@
 import React from 'react'
 import { isBrowser } from 'react-device-detect'
 import {
-  MainWrapper,
   ImageWrapper,
   ServiceFeedback,
   ServiceMainSection,
@@ -9,7 +8,8 @@ import {
   ServicePriceMiscalculations
 } from '../../src/Components'
 import { Sites } from '../../src/Components/Sections/Services/Other'
-import '../../src/Styles/Pages/Services/other.scss'
+import MainWrapper from '../../src/Components/SectionsComponents/MainWrapper'
+import '~/Styles/Pages/Services/other.scss'
 
 const MainStatue = '/Assets/Images/Services/Other/MainStatue.png'
 

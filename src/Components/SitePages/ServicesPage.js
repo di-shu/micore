@@ -9,7 +9,7 @@ import { SeeMoreLink, SectionTitle, ImageWrapper, SectionDesc, ScrollBox, Active
 /* STYLES */
 import '~/Styles/Pages/services.scss'
 
-export const ServicesPage = () => {
+const ServicesPage = () => {
   const { mobile, desktop } = useDeviceDetect()
   
   return (
@@ -41,3 +41,5 @@ export const ServicesPage = () => {
     </>
   )
 }
+
+export default ServicesPage

@@ -1,6 +1,6 @@
 import React from 'react'
-import { MainWrapper } from '~/Components'
 import { HomePortfolio } from '~/Components/Sections/HomePage'
+import MainWrapper from '~/Components/SectionsComponents/MainWrapper'
 
 export default () => (
   <MainWrapper id="portfolio-page">

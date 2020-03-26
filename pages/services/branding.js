@@ -1,6 +1,5 @@
 import React from 'react'
 import {
-  MainWrapper,
   ImageWrapper,
   ServiceQuote,
   ServiceFeedback,
@@ -8,8 +7,9 @@ import {
   ServiceMainSection,
   ServiceShortPortfolio
 } from '../../src/Components'
+import MainWrapper from '../../src/Components/SectionsComponents/MainWrapper'
 import { MakeBranding, MakeLogo } from '../../src/Components/Sections/Services/Branding'
-import '../../src/Styles/Pages/Services/branding.scss'
+import '~/Styles/Pages/Services/branding.scss'
 
 const MainStatue = '/Assets/Images/Services/Branding/MainStatue.png'
 const Briefing = '/Assets/Images/Services/Branding/Icons/Brifing.svg'

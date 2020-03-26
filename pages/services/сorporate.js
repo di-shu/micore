@@ -1,6 +1,5 @@
 import React from 'react'
 import {
-  MainWrapper,
   ServiceQuote,
   ServiceTarget,
   ServiceFeedback,
@@ -9,7 +8,8 @@ import {
   ServiceShortPortfolio,
   ServicePriceMiscalculations
 } from '../../src/Components'
-import '../../src/Styles/Pages/Services/corporate.scss'
+import MainWrapper from '../../src/Components/SectionsComponents/MainWrapper'
+import '~/Styles/Pages/Services/corporate.scss'
 /*IMAGES*/
 const MainStatue = '/Assets/Images/Services/Corporate/MainStatue.png'
 const Briefing = '/Assets/Images/Services/Branding/Icons/Brifing.svg'

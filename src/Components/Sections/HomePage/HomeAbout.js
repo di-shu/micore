@@ -2,7 +2,7 @@ import React from 'react'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
-import { ActiveLink, ImageWrapper, SectionDesc, SectionTitle, SeeMoreLink } from '../../SectionsComponents'
+import { ActiveLink, ImageWrapper, SectionDesc, SectionTitle } from '../../SectionsComponents'
 /* STYLES */
 import '~/Styles/Sections/Home/about.scss'
 import { useDeviceDetect } from '../../../Helpers'
@@ -14,7 +14,6 @@ export const HomeAbout = ({ animation }) => {
   
   return (
     <section id="about-section" className="section">
-      <SeeMoreLink display={!desktop}/>
       <Container fluid>
         <Row>
           <Col xs={12}>

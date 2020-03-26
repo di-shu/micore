@@ -17,7 +17,7 @@ export const HomeServices = ({ animation }) => {
             <ActiveLink link={service.link} className="service-link" />
             <Row className="services-card">
               <Col xs={12} lg={6}>
-                <ImageWrapper src={service.img} className="services-image"/>
+                <ImageWrapper src={service.img} className={`services-image ${index === ServicesList.length - 1 ? 'other' : ''}`}/>
               </Col>
               <Col xs={12} lg={6}>
                 <div className="services-info">

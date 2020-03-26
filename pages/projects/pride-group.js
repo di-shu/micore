@@ -1,5 +1,5 @@
 import React from 'react'
-import { MainWrapper } from '../../src/Components/SectionsComponents'
+import MainWrapper from '../../src/Components/SectionsComponents/MainWrapper'
 import {
   About,
   Branding,

@@ -9,20 +9,20 @@
     bottom: 60px;
   }
 
-  .see-more-box {
+  .see-more-link {
     bottom: auto;
-    top: 30%;
-    transform: rotate(-90deg) translateX(-100%);
+    top: calc(30% + 205px);
+    transform: rotate(-90deg) translateY(100%);
     width: 205px;
     transition: all 1s $timing-func;
     z-index: 20;
+    padding-top: 15px;
 
-    span {
+    &:before {
       height: 3px;
     }
 
-    .link {
-      padding-top: 15px;
+    span {
       opacity: 0.9;
       font-size: 14px;
       letter-spacing: 1.05px;
@@ -123,18 +123,17 @@
 
 @include media-breakpoint-up('md') {
   [id*='-project-page'] {
-    .see-more-box {
+    .see-more-link {
       position: absolute;
-      top: 50%;
+      top: calc(30% + 265px);
       width: 265px;
-      transform: rotate(-90deg) translate(-50%, 0%);
+      padding-top: 25px;
 
-      span {
+      &:before {
         height: 5px;
       }
 
-      .link {
-        padding-top: 25px;
+      span {
         font-size: 18px;
       }
     }
@@ -143,21 +142,15 @@
 
 @include media-breakpoint-up('lg') {
   [id*='-project-page'] {
-    .see-more-box {
+    .see-more-link {
       top: auto;
       bottom: 0;
-      transform: rotate(-90deg) translate(-52px, 0%);
     }
   }
 }
 
 @include media-breakpoint-up('xl') {
   [id*='-project-page'] {
-    .see-more-link {
-      position: absolute;
-      padding-top: 25px;
-    }
-
     .bottom-navigation {
       bottom: 0;
     }

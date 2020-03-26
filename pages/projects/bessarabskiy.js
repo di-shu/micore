@@ -14,7 +14,7 @@ import {
   AboutSite,
   ColorsAndFonts
 } from '../../src/Components/Sections/Projects/Bessarabskiy'
-import { MainWrapper } from '../../src/Components/SectionsComponents'
+import MainWrapper from '../../src/Components/SectionsComponents/MainWrapper'
 /*STYLES*/
 import '~/Styles/Pages/Projects/bessarabskiy.scss'
 

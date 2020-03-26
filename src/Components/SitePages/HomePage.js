@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import { FooterSection } from '../Sections'
+import { FullPageWrapper } from '../FullPage'
 import { AnimationClass, useDeviceDetect } from '../../Helpers'
-import { SeeMoreLink, ImageWrapper, ScrollBox, FullPageWrapper } from '../index'
-import { HomeMain, HomeAbout, HomeServices, HomePortfolio, } from '../Sections/HomePage'
+import { SeeMoreLink, ImageWrapper, ScrollBox } from '../SectionsComponents'
+import { MainSections, Options } from './Config/HomePageConfigs'
 /* STYLES */
-import '../../Styles/Pages/home.scss'
+import '~/Styles/Pages/home.scss'
 
-export const HomePage = () => {
+const HomePage = () => {
   const { desktop } = useDeviceDetect()
   const [options, setOptions] = useState(Options)
   const [sections, setSections] = useState(MainSections)
@@ -41,16 +41,4 @@ export const HomePage = () => {
   )
 }
 
-const MainSections = [
-  { name: 'main', status: false, Component: HomeMain },
-  { name: 'about', status: false, Component: HomeAbout },
-  { name: 'services', status: false, Component: HomeServices },
-  { name: 'portfolio', status: false, Component: HomePortfolio },
-  { name: 'footer', status: false, Component: FooterSection }
-]
-
-const Options = {
-  index: 0,
-  firstLoad: true,
-  isLast: false
-}
+export default HomePage

@@ -1,11 +1,11 @@
 import React from 'react'
-import { HomePage } from '~/Components/SitePages'
-import { MainWrapper } from '~/Components/SectionsComponents'
+import dynamic from 'next/dynamic'
+import MainWrapper from '~/Components/SectionsComponents/MainWrapper'
 
-const Home = () => (
+const HomePage = dynamic(() => import('~/Components/SitePages/HomePage'))
+
+export default () => (
   <MainWrapper id="main-page">
     <HomePage />
   </MainWrapper>
 )
-
-export default Home

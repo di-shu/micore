@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import { ActiveLink } from '../ActiveLink'
-import { useDeviceDetect, useScrollDirection } from '../../../Helpers'
+import { useCheckRoute, useDeviceDetect, useScrollDirection } from '../../../Helpers'
 
 export const ProjectsNavigation = ({ links }) => {
   const [prev, setPrev] = useState('/')
@@ -9,6 +9,7 @@ export const ProjectsNavigation = ({ links }) => {
   const [isBlack, setIsBlack] = useState(false)
   const { pathname } = useRouter()
   const { mobile } = useDeviceDetect()
+  const { isProject } = useCheckRoute()
   const scrollDir = useScrollDirection()
   
   useEffect(() => {
@@ -27,7 +28,7 @@ export const ProjectsNavigation = ({ links }) => {
     })
   }, [pathname, links])
   
-  return (
+  return isProject && (
     <div className={`navigation-wrap ${isBlack ? 'is-black' : ''} ${scrollDir === 'up' ? 'scroll-up' : scrollDir === 'down' ? 'scroll-down' : ''}`}>
       <ActiveLink link={prev} scroll={false} className="nav-el prev">
         <span>{mobile ? 'Prev' : 'Previous'}</span>

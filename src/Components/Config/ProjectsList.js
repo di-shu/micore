@@ -8,7 +8,8 @@ const BessarabskiyImage = '/Assets/Images/Portfolio/Bessarabkiy.png'
 const BeeGamesImage = '/Assets/Images/Portfolio/BeeGames.png'
 const FCBalkanyImage = '/Assets/Images/Portfolio/FCBalkanyProject.png'
 const PrideGroupImage = '/Assets/Images/Portfolio/PrideGroupProject.png'
-const ZlataTradeImage = '/Assets/Images/Portfolio/Zlata-trade project.png'
+const ZlataTradeImage = '/Assets/Images/Portfolio/ZlataTrade.png'
+const ManticoreImage = '/Assets/Images/Portfolio/ManticoreProject.png'
 const VladyDesignImage = '/Assets/Images/Portfolio/VladyDesignProject.png'
 const PrideLogisticImage = '/Assets/Images/Portfolio/PrideLogisticProject.png'
 
@@ -18,10 +19,16 @@ export const ProjectsList = [
     label: 'Web-sites',
     content: [
       {
+        img: ManticoreImage,
+        title: 'Manticore',
+        link: '/projects/manticore',
+        size: { xs: 12, md: 7, lg: 5, xl: 5 }
+      },
+      {
         img: ZlataTradeImage,
         title: 'Zlata-trade',
         link: '/projects/zlata-trade',
-        size: { xs: 12, md: 7, lg: 5, xl: 5 }
+        size: { xs: 12, md: 7, lg: 5, xl: 4 }
       },
       {
         img: FCBalkanyImage,
@@ -46,7 +53,7 @@ export const ProjectsList = [
         img: BeeGamesImage,
         title: 'Bee Games',
         link: '/projects/bee-games',
-        size: { xs: 12, md: 7, lg: 4, xl: 5 }
+        size: { xs: 12, md: 7, lg: 4, xl: 4 }
       },
       {
         img: PrideGroupImage,
@@ -64,7 +71,7 @@ export const ProjectsList = [
         img: BessarabskiyImage,
         title: 'Bessarabskiy dvorik',
         link: '/projects/bessarabskiy',
-        size: { xs: 12, md: 8, lg: 4, xl: 3 }
+        size: { xs: 12, md: 8, lg: 4, xl: 5 }
       },
       {
         title: 'Marinist',
@@ -76,7 +83,7 @@ export const ProjectsList = [
         img: TwoAreImage,
         title: 'Two are',
         link: '/projects/two-are',
-        size: { xs: 12, md: 5, lg: 7, xl: 4 }
+        size: { xs: 12, md: 5, lg: 7, xl: 3 }
       },
       {
         isNavBlack: true,
@@ -89,7 +96,7 @@ export const ProjectsList = [
         img: AtticImage,
         title: 'Attic stroy',
         link: '/projects/attic-stroy',
-        size: { xs: 12, md: 7, lg: 5, xl: 8 }
+        size: { xs: 12, md: 7, lg: 5, xl: 4 }
       }
     ]
   },

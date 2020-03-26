@@ -2,7 +2,7 @@ let glitch
 let isLoaded = false
 
 export const setup = (img) => (p5, canvasParentRef) => {
-  p5.background('rgba(0, 0, 0, 0)')
+  p5.background('rgba(255, 255, 255, 0)')
   p5.createCanvas(window.innerWidth, window.innerHeight).parent(canvasParentRef)
   p5.loadImage(img, function (img) {
     glitch = new Glitch(img, p5)
@@ -12,7 +12,7 @@ export const setup = (img) => (p5, canvasParentRef) => {
 
 export const draw = (p5) => {
   p5.clear()
-  p5.background('rgba(0, 0, 0, 0)')
+  p5.background('rgba(255, 255, 255, 0)')
   
   if (isLoaded) {
     glitch.show()
@@ -32,7 +32,7 @@ class Glitch {
     this.scatImgs = []
     this.throughFlag = true
     this.copyData = new Uint8ClampedArray(this.imgOrigin.pixels)
-  
+
     // flow line
     for (let i = 0; i < 1; i++) {
       let o = {
@@ -204,18 +204,20 @@ class Glitch {
   }
   
   setImage() {
+    const imgW = (this.p5.height * 3) / 4
+
     this.p5.push()
-    this.p5.translate((this.p5.width - this.imgOrigin.width) / 2, (this.p5.height - this.imgOrigin.height) / 2)
-    this.p5.image(this.imgOrigin, 0, 0)
+    // this.p5.translate((this.p5.width - this.imgOrigin.width) / 2, (this.p5.height - this.imgOrigin.height) / 2)
+    this.p5.image(this.imgOrigin, (this.p5.width - imgW) / 2, 0, imgW, this.p5.height)
     this.p5.pop()
   }
   
   show() {
     //restore the original state
     this.replaceData(this.imgOrigin, this.copyData)
-
     // sometimes pass without effect processing
     let n = this.p5.floor(this.p5.random(100))
+    const imgW = (this.p5.height * 3) / 4
 
     if (n > 75 && this.throughFlag) {
       this.throughFlag = false
@@ -226,8 +228,8 @@ class Glitch {
 
     if (!this.throughFlag) {
       this.p5.push()
-      this.p5.translate((this.p5.width - this.imgOrigin.width) / 2, (this.p5.height - this.imgOrigin.height) / 2)
-      this.p5.image(this.imgOrigin, 0, 0)
+      // this.p5.translate((this.p5.width - this.imgOrigin.width) / 2, (this.p5.height - this.imgOrigin.height) / 2)
+      this.p5.image(this.imgOrigin, (this.p5.width - imgW) / 2, 0, imgW, this.p5.height)
       this.p5.pop()
 
       return

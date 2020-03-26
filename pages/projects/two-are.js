@@ -9,7 +9,7 @@ import {
   Main,
   Philosophy
 } from '../../src/Components/Sections/Projects/TwoAre'
-import { MainWrapper } from '../../src/Components/SectionsComponents'
+import MainWrapper from '../../src/Components/SectionsComponents/MainWrapper'
 /*STYLES*/
 import '~/Styles/Pages/Projects/two-are.scss'
 

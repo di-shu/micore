@@ -7,7 +7,7 @@ import {
   Devices,
   HomePage, Last
 } from '../../src/Components/Sections/Projects/BeeGames'
-import { MainWrapper } from '../../src/Components/SectionsComponents'
+import MainWrapper from '../../src/Components/SectionsComponents/MainWrapper'
 /* STYLES */
 import '~/Styles/Pages/Projects/bee-games.scss'
 

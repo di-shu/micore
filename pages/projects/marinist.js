@@ -15,7 +15,7 @@ import {
   Adaptation,
   SelectionPages
 } from '../../src/Components/Sections/Projects/Marinist'
-import { MainWrapper } from '../../src/Components/SectionsComponents'
+import MainWrapper from '../../src/Components/SectionsComponents/MainWrapper'
 /*STYLES*/
 import '~/Styles/Pages/Projects/marinist.scss'
 

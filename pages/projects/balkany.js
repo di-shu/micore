@@ -13,7 +13,7 @@ import {
   Results,
   Tablet
 } from '../../src/Components/Sections/Projects/Balkany'
-import { MainWrapper } from '../../src/Components/SectionsComponents'
+import MainWrapper from '../../src/Components/SectionsComponents/MainWrapper'
 /*STYLES*/
 import '~/Styles/Pages/Projects/fc-balkany.scss'
 

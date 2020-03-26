@@ -17,7 +17,7 @@ const Options = {
   isLast: false
 }
 
-export const AboutPage = () => {
+const AboutPage = () => {
   const [options, setOptions] = useState(Options)
   const [sections, setSections] = useState(AboutSections)
   
@@ -34,3 +34,5 @@ export const AboutPage = () => {
     </>
   )
 }
+
+export default AboutPage
