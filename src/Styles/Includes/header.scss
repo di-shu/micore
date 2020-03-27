@@ -141,7 +141,7 @@
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
-  transition: all 1s $timing-func 0.4s;
+  transition: all 0.5s $timing-func 1.6s;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -150,6 +150,53 @@
   &.is-opened {
     opacity: 1;
     visibility: visible;
+    transition-delay: 0s;
+
+    .list-item {
+      transform: translateY(0);
+      opacity: 1;
+
+      &:nth-child(1) {
+        transition-delay: 0.2s;
+      }
+
+      &:nth-child(2) {
+        transition-delay: 0.4s;
+      }
+
+      &:nth-child(3) {
+        transition-delay: 0.6s;
+      }
+
+      &:nth-child(4) {
+        transition-delay: 0.8s;
+      }
+    }
+
+    .socials-wrap {
+      transform: translateY(0);
+      opacity: 1;
+      transition-delay: 1s;
+    }
+
+    .switch-box {
+      .switch-link {
+        transform: translateY(0);
+        opacity: 1;
+
+        &:nth-child(1) {
+          transition-delay: 1.2s;
+        }
+
+        &:nth-child(2) {
+          transition-delay: 1.4s;
+        }
+
+        &:nth-child(3) {
+          transition-delay: 1.6s;
+        }
+      }
+    }
   }
 
   .list-wrap {
@@ -168,9 +215,24 @@
     background-color: transparent;
     border: none;
     border-radius: 0;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 1s $timing-func;
 
-    &:last-child {
-      margin-bottom: 0;
+    &:nth-child(1) {
+      transition-delay: 1.4s;
+    }
+
+    &:nth-child(2) {
+      transition-delay: 1.2s;
+    }
+
+    &:nth-child(3) {
+      transition-delay: 1s;
+    }
+
+    &:nth-child(4) {
+      transition-delay: 0.8s;
     }
 
     &:hover {
@@ -225,27 +287,76 @@
     transition: color 0.5s $timing-func;
   }
 
+  .socials-wrap {
+    width: 100%;
+    display: flex;
+    padding: 0 25px;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 1s $timing-func 0.6s;
+
+    .social-link {
+      width: 23px;
+      margin-right: 40px;
+      opacity: 0.3;
+      transition: all 0.3s $timing-func;
+
+      &:last-child {
+        margin-right: 0 !important;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
   .switch-box {
     position: absolute;
-    bottom: 25px;
+    bottom: 0;
     right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
 
     .switch-link {
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 25px;
+      margin-bottom: 0;
       text-decoration: none;
+      margin-right: 60px;
+      transform: translateY(20px);
+      opacity: 0;
+      transition: all 1s $timing-func;
 
       &:last-child {
-        margin-bottom: 0;
+        margin-right: 0;
       }
 
       &:hover {
         .switch-line {
-          height: 12px;
+          width: 12px;
           background-color: $accent-main;
         }
+      }
+
+      &:nth-child(1) {
+        transition-delay: 0.4s;
+      }
+
+      &:nth-child(2) {
+        transition-delay: 0.2s;
+      }
+
+      &:nth-child(3) {
+        transition-delay: 0s;
       }
     }
 
@@ -255,81 +366,15 @@
       font-size: 16px;
       letter-spacing: 1.2px;
       text-transform: uppercase;
-      transform: rotate(-90deg);
       transition: color 0.3s $timing-func;
     }
   
     .switch-line {
-      margin-left: 12px;
-      width: 32px;
-      height: 1px;
+      margin-left: 0;
+      width: 1px;
+      height: 32px;
       background-color: #686d72;
       transition: all 0.3s $timing-func;
-    }
-  }
-}
-
-.close-icon {
-  position: absolute;
-  top: 22px;
-  right: 22px;
-  width: 32px;
-  height: 32px;
-  z-index: 20;
-  cursor: pointer;
-  transition: all 0.5s $timing-func;
-  
-  &:hover {
-    transform: scale(1.3);
-    
-    span {
-      background-color: $accent-main;
-    }
-  }
-  
-  span {
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: $accent-gray;
-    top: 50%;
-    left: 0;
-    right: 0;
-    transition: all 0.5s $timing-func;
-    
-    &:nth-child(1) {
-      transform: translateY(-50%) rotate(45deg);
-    }
-    
-    &:nth-child(2) {
-      transform: translateY(-50%) rotate(-45deg);
-    }
-  }
-}
-
-.socials-wrap {
-  display: flex;
-  position: absolute;
-  bottom: 25px;
-  left: 25px;
-  
-  .social-link {
-    width: 23px;
-    margin-right: 75px;
-    opacity: 0.3;
-    transition: all 0.3s $timing-func;
-
-    &:last-child {
-      margin-right: 0 !important;
-    }
-
-    &:hover {
-      opacity: 1;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
     }
   }
 }
@@ -359,25 +404,23 @@
     .switch-box {
       bottom: auto;
       top: 135px;
+      left: 0;
+      right: auto;
+      justify-content: center;
+      transform: rotate(90deg) translateY(-100%);
+      transform-origin: left top;
 
       .switch-link {
-        margin-bottom: 45px;
-
         &:hover {
           .switch-line {
-            height: 20px;
+            width: 20px;
           }
         }
       }
 
-      &_sound {
-        right: auto;
-        left: 0;
-
-        .switch-line {
-          margin-left: 0;
-          margin-right: 12px;
-        }
+      .switch-name {
+        transform: rotate(-180deg);
+        margin-bottom: 25px;
       }
     }
 
@@ -428,12 +471,5 @@
     top: 40px;
     right: 50px;
     mix-blend-mode: difference;
-  }
-
-  .menu-wrap {
-    .close-icon {
-      top: 42px;
-      right: 47px;
-    }
   }
 }

@@ -11,7 +11,7 @@ export const SeeMoreLink = (props) => {
   } = props
   
   return (
-    <div className={`see-more-link ${display ? 'd-block' : 'd-none'} ${className ? className : ''} ${direction === 'right' ? 'to-right' : 'to-left'}`}>
+    <div className={`see-more-link ${className ? className : ''} ${direction === 'right' ? 'to-right' : 'to-left'}`} style={{ display: display ? 'block' : 'none' }}>
       <ActiveLink link={nav}>
         <span>{label}</span>
       </ActiveLink>

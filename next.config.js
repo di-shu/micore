@@ -8,4 +8,4 @@ const nextConfig = {
   }
 }
 
-module.exports = withPlugins([withSass, withFonts], nextConfig)
+module.exports = withPlugins([withSass(), withFonts], nextConfig)

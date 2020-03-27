@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Header, MenuContainer, MetaHead } from '../SiteHeader'
+import React from 'react'
+import { Header, MetaHead } from '../SiteHeader'
 
 export const Layout = ({ children }) => {
   return (

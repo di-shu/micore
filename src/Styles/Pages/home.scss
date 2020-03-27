@@ -17,12 +17,6 @@
     opacity: 0.5;
     transition: all 1s $timing-func;
   }
-
-  #footer-section {
-    .container-wrap {
-      height: calc(100vh - 44px);
-    }
-  }
 }
 
 @include media-breakpoint-up('md') {
@@ -33,11 +27,12 @@
       z-index: 999;
 
       .social-link {
+        opacity: 0.3;
         width: 28px;
         margin-right: 95px;
 
         &.on-first-load {
-          animation: social-on-first-load 3s $timing-func 0.3s backwards;
+          animation: social-on-first-load 3s $timing-func 0.3s both;
 
           &:nth-child(2) {
             animation-delay: 0.4s;
@@ -47,21 +42,17 @@
             animation-delay: 0.5s;
           }
         }
+
+        &:last-child {
+          margin-right: 0;
+        }
       }
     }
 
     #footer-section {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
       .socials-wrap {
         position: relative;
         bottom: 0;
-      }
-
-      .container-wrap {
-        margin-bottom: 0;
       }
     }
   }
@@ -115,8 +106,6 @@
     }
 
     #footer-section {
-      display: block;
-
       .socials-wrap {
         left: 50%;
       }

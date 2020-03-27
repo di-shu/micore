@@ -1,11 +1,10 @@
 @import "../Static/index";
 
 #footer-section {
-  padding-top: 60px;
-  height: auto;
   background-color: $accent-black;
 
   .section-container {
+    padding-top: 60px;
     max-width: 300px;
   }
 
@@ -142,6 +141,7 @@
     justify-content: space-between;
 
     .social-link {
+      opacity: 0.3;
       margin-right: 0;
     }
   }
@@ -163,19 +163,17 @@
 
 @include media-breakpoint-up('md') {
   #footer-section {
-    height: 100vh;
-    padding-top: 80px;
+    min-height: 100vh;
 
     &.footer-section {
-      padding-top: 60px;
-      padding-bottom: 60px;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      .section-container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
     }
 
     .section-container {
+      padding-top: 80px;
       max-width: 480px;
     }
 
@@ -235,15 +233,11 @@
 
 @include media-breakpoint-up('lg') {
   #footer-section {
-    padding-bottom: 40px;
-
-    .fp-scroller {
-      height: 100%;
-    }
-
     &.footer-section {
       .section-container {
         max-width: 960px;
+        padding-top: 0;
+        padding-bottom: 0;
       }
 
       .form-wrap {
@@ -270,7 +264,7 @@
     }
 
     .container-wrap {
-      margin-bottom: 0;
+      min-height: 100vh;
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -325,11 +319,6 @@
 
 @include media-breakpoint-up('xl') {
   #footer-section {
-    display: flex;
-    align-items: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
-
     &.footer-section {
       position: fixed;
       top: 0;
@@ -350,14 +339,19 @@
         opacity: 1;
         visibility: visible;
       }
+      .fp-scroller {
+        height: 100%;
+      }
 
       .container-wrap {
+        display: block;
         position: absolute;
         width: 100%;
         bottom: 0;
         left: 0;
         right: 0;
         padding: 50px 0 70px;
+        min-height: auto;
         height: auto !important;
         background-color: rgba(4, 13, 21, 0.95);
         will-change: opacity, transform;
@@ -396,6 +390,8 @@
 
       .section-container {
         max-width: 1140px;
+        padding-top: 0;
+        padding-bottom: 0;
       }
 
       .section-title {
@@ -466,11 +462,9 @@
       }
     }
 
-    .container-wrap {
-      width: 100%;
-    }
-
     .section-container {
+      padding-top: 60px;
+      padding-bottom: 60px;
       max-width: 1140px;
     }
 

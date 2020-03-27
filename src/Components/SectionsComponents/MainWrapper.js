@@ -6,6 +6,9 @@ import { FooterSection } from '../Sections'
 import { ProjectsNavigation } from './Projects'
 import { useCheckRoute } from '../../Helpers'
 /* STYLES */
+import '~/Styles/Static/fonts.scss'
+import '~/Styles/Static/general.scss'
+import '~/Styles/Includes/index.scss'
 import '~/Styles/Sections/Services/index.scss'
 import '~/Styles/Sections/Projects/index.scss'
 

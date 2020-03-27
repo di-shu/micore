@@ -1,15 +1,14 @@
 import React from 'react'
 import ListGroup from 'react-bootstrap/ListGroup'
 import { MenuLinks } from '../Config'
-import { ActiveLink, SectionTitle } from '../SectionsComponents'
+import { useDeviceDetect } from '../../Helpers'
+import { ActiveLink, SectionTitle, SocialsWrap } from '../SectionsComponents'
 
 export const MenuContainer = ({ close, open, animation }) => {
+  const { mobile } = useDeviceDetect()
+
   return open && (
     <div className={`menu-wrap ${animation ? 'is-opened' : ''}`}>
-      {/*<div className="close-icon" onClick={close}>*/}
-      {/*  <span/>*/}
-      {/*  <span/>*/}
-      {/*</div>*/}
       <ListGroup className="list-wrap">
         {MenuLinks.map(({ title, linkTitle, to }, index) => (
           <ListGroup.Item key={`menu-link_${index}`} className="list-item">
@@ -23,6 +22,7 @@ export const MenuContainer = ({ close, open, animation }) => {
           </ListGroup.Item>
         ))}
       </ListGroup>
+      <SocialsWrap display={mobile} />
       <div className="switch-box">
         <ActiveLink link="/" className="switch-link">
           <p className="switch-name">EN</p>

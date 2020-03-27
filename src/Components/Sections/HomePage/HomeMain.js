@@ -14,7 +14,7 @@ export const HomeMain = ({ firstLoad, animation }) => {
   const { mobile, desktop } = useDeviceDetect()
   const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 9, tension: 136, friction: 81 } }))
   const handleMouseMove = ({ clientX: x, clientY: y }) => set({ xy: [x, y] })
-  
+
   return (
     <section id="main-section" className="section" onMouseMove={handleMouseMove}>
       <SeeMoreLink
@@ -28,7 +28,7 @@ export const HomeMain = ({ firstLoad, animation }) => {
           <Col xs={12} lg={6} className={AnimationClass({ firstLoad, animation, className: 'col-info' })}>
             <ImageWrapper isDot display={!desktop} className={AnimationClass({ firstLoad, animation })}/>
             <SectionTitle isContentWhite className="sub-title">
-              We Are {mobile && <span>WEB-Studio</span>}
+              We Are <span>WEB-Studio</span>
             </SectionTitle>
             <SectionTitle main isContentWhite className="title" title="MANTICORE" />
           </Col>

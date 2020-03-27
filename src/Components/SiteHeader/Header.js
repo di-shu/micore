@@ -21,7 +21,7 @@ export const Header = () => {
 
     setTimeout(() => {
       setIsMenuOpen(false)
-    }, 1200)
+    }, 2000)
   }
 
   return (
