@@ -46,31 +46,47 @@
   }
 
   .modal-header {
-    padding: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
     border-radius: 0;
     border: none;
+    z-index: 1;
+    mix-blend-mode: difference;
+
+    .close-icon {
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      width: 30px;
+      height: 30px;
+
+      span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 38px;
+        height: 2px;
+        background-color: #fff;
+
+        &:nth-child(1) {
+          transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        &:nth-child(2) {
+          transform: translate(-50%, -50%) rotate(-45deg);
+        }
+      }
+    }
   }
 
   .modal-body {
-    padding: 5px 0;
-  }
-
-  .modal-footer {
-    position: relative;
-    border: none;
-    background-color: #282c32;
-    padding: 0 15px;
-    height: 45px;
+    padding: 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    p {
-      opacity: 0.9;
-      color: #d6d7d7;
-      font-size: 12px;
-      letter-spacing: 0.9px;
-    }
+    flex-direction: column;
+    justify-content: center;
   }
   
   .team-image-wrap {
@@ -146,7 +162,7 @@
     flex-direction: column;
     align-items: center;
     border: 1px solid #686d72;
-    padding: 10px;
+    padding: 10px 10px 24px;
   }
   
   .slick-arrow {
@@ -156,12 +172,14 @@
     
     &.slick-prev {
       left: 0;
-      transform: translateY(-50%) rotate(90deg) translateY(-6px);
+      transform: translateY(-50%) rotate(90deg) translateY(-100%);
+      transform-origin: left top;
     }
     
     &.slick-next {
       right: 0;
-      transform: translateY(-50%) rotate(-90deg) translateY(-6px);
+      transform-origin: right top;
+      transform: translateY(-50%) rotate(-90deg) translateY(-100%);
     }
 
     &:before {
@@ -184,7 +202,7 @@
       font-size: 14px;
       letter-spacing: 1.05px;
       text-transform: uppercase;
-      padding-bottom: 30px;
+      padding-bottom: 12px;
     }
   }
 }
@@ -246,6 +264,7 @@
       left: 0;
       transform: none;
       max-width: 100%;
+      margin-bottom: 10px;
     }
     
     .member-position {
@@ -271,7 +290,11 @@
   .member-modal {
     width: 45vw;
     max-width: 100%;
-    
+
+    .modal-header {
+      position: unset;
+    }
+
     .team-image-wrap {
       max-width: 235px;
     }

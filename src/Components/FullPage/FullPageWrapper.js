@@ -23,13 +23,13 @@ export const FullPageWrapper = (props) => {
     <ReactFullpage
       scrollOverflow
       onLeave={sectionMove}
-      scrollingSpeed={1000}
+      scrollingSpeed={1200}
       verticalCentered={false}
       render={() => {
         return (
           <ReactFullpage.Wrapper>
             <div className={`fullpage-inner-wrap ${options.isLast ? 'last-section' : ''}`}>
-              {sections.map(({ name, status, Component }, index) => Component && (
+              {sections.map(({ name, status, Component }, index) => (
                 <Component key={name} animation={status} firstLoad={index === 0 && options.firstLoad}/>
               ))}
             </div>

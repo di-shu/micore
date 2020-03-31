@@ -1,52 +1,72 @@
 import React, { useState } from 'react'
+import { useRouter } from 'next/router'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Form from 'react-bootstrap/Form'
 import Container from 'react-bootstrap/Container'
 import { InputControl } from '../Inputs'
+import { ImageWrapper, SectionTitle, SocialsWrap } from '../SectionsComponents'
 import { useCheckBottom, useDeviceDetect } from '../../Helpers'
-import { SocialsWrap, ImageWrapper, ActiveLink } from '../SectionsComponents'
 /* IMAGES */
 const MapMarker = '/Assets/Images/map-marker.svg'
 const FooterLogo = '/Assets/Images/footer-logo.svg'
 const ContactHand = '/Assets/Images/contact-hand.png'
 
+const InitValues = { name: '', phone: '', message: '' }
+
 const FormInputs = [
   {
     id: 'name',
-    label: 'Name'
+    label: 'Name',
+    required: true
   },
   {
     id: 'phone',
-    label: 'Phone number'
+    type: 'tel',
+    label: 'Phone number',
+    mask: '+38 (099) 999-99-99',
+    required: true
   },
   {
     rows: 4,
     id: 'message',
     type: 'textarea',
-    label: 'Type message...'
+    placeholder: 'Type message...'
   }
 ]
 
 export const FooterSection = ({ isContact, animation }) => {
-  const [values, setValues] = useState({ name: '', phone: '', message: '' })
+  const [values, setValues] = useState(InitValues)
   const isBottom = useCheckBottom()
+  const { pathname } = useRouter()
   const { mobile, desktop, minWidthLaptop } = useDeviceDetect()
-  
+
   const handleSubmit = (e) => {
     e.preventDefault()
+    $.ajax({
+      method: 'POST',
+      url: 'http://micore-admin.comnd-x.com/send',
+      data: {
+        ...values,
+        url: pathname,
+        country: 'RU'
+      }
+    }).done(() => {
+      setValues(InitValues)
+    })
   }
+
   const handleChange = e => {
     setValues({ ...values, [e.target.id]: e.target.value })
   }
+
+  console.log(isContact)
 
   return (
     <section id="footer-section" className={`${!isBottom ? 'section' : ''} ${isBottom ? 'active' : ''} ${!isContact ? 'footer-section' : 'active'}`}>
       <div className={`container-wrap ${animation || isBottom ? 'on-enter' : 'on-leave'}`}>
         {isContact && minWidthLaptop && (
-          <div className="image-wrap">
-            <img src={ContactHand} alt="Hand"/>
-          </div>
+          <ImageWrapper src={ContactHand} className="image-wrap"/>
         )}
         <Container className={`section-container ${isBottom ? 'on-enter' : 'on-leave'}`}>
           <Row>
@@ -54,17 +74,20 @@ export const FooterSection = ({ isContact, animation }) => {
               <Form className="form-wrap" onSubmit={handleSubmit}>
                 <Row>
                   <Col xs={12} lg={12} xl={isContact ? 12 : 5} className="col-form-wrap">
-                    <h2 className="section-title contact-us">Contact us</h2>
-                    {FormInputs.map(({ id, label, type, rows, display }, index) => (
+                    <SectionTitle className="contact-us" display={desktop} title="Contact us"/>
+                    {FormInputs.map(({ id, label, placeholder, type, rows, display, required, mask }, index) => (
                       <InputControl
                         id={id}
                         type={type}
                         rows={rows}
+                        mask={mask}
                         label={label}
                         value={values[id]}
+                        required={required}
                         onChange={handleChange}
+                        placeholder={placeholder}
                         key={`form-input_${index}`}
-                        display={index === 2 ? !desktop : true}
+                        display={index === 2 ? isContact ? true : !desktop : true}
                       />
                     ))}
                     <div className="btn-wrap">
@@ -73,15 +96,13 @@ export const FooterSection = ({ isContact, animation }) => {
                   </Col>
                   {!isContact && desktop && (
                     <Col xl={{ span: 6, offset: 1 }} className="col-center-wrap">
-                      <div className="img-wrap">
-                        <img src={FooterLogo} alt="Logo"/>
-                      </div>
+                      <ImageWrapper src={FooterLogo} className="img-wrap"/>
                       <InputControl
                         rows={4}
                         id="message"
                         type="textarea"
                         value={values.message}
-                        label="Type message..."
+                        placeholder="Type message..."
                         onChange={handleChange}
                       />
                     </Col>
@@ -105,26 +126,17 @@ export const FooterSection = ({ isContact, animation }) => {
                     <h4 className="contact-sub-title">Francuskiy bulvar, 66/2</h4>
                     <h4 className="contact-sub-title with-line">
                       <span>Office, 702b</span>
-                      <div className="btn-show-map">
-                        {isContact ? (
-                          <>
-                            <img src={MapMarker} alt="Map icon"/>
-                            <span>see map</span>
-                          </>
-                        ) : (
-                          <ActiveLink link="/contact" className="btn-show-map">
-                            <ImageWrapper src={MapMarker} />
-                            <span>contact us</span>
-                          </ActiveLink>
-                        )}
-                      </div>
+                      <a href="https://goo.gl/maps/vU6GcPpd4y2cfwhz7" target="_blank" className="btn-show-map">
+                        <img src={MapMarker} alt="Map icon"/>
+                        <span>see map</span>
+                      </a>
                     </h4>
                   </div>
                 </Col>
               </Row>
             </Col>
           </Row>
-          <SocialsWrap />
+          <SocialsWrap/>
         </Container>
         {mobile && (
           <div className="copyright-container">

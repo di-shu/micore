@@ -59,9 +59,9 @@
   
   .about-main-statue {
     width: 100%;
-    max-width: 310px;
+    max-width: 280px;
     margin: 0 0 0 auto;
-  
+
     &.on-first-load {
       animation: indian-girl-on-first-load 2s $timing-func 0.2s both;
     }
@@ -158,8 +158,9 @@
     }
     
     .about-main-statue {
+      position: relative;
       max-width: 675px;
-      transform: translateY(60px);
+      top: 60px;
     }
   }
 }

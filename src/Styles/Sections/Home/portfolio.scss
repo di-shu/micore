@@ -53,8 +53,7 @@
       right: 0;
       bottom: 0;
       z-index: 1;
-      background-color: #751E3E;
-      mix-blend-mode: multiply;
+      background-color: rgba(29, 36, 43, 0.3);
     }
 
     img {
@@ -181,10 +180,11 @@
 
 @include media-breakpoint-up('xl') {
   #portfolio-section {
-   .section-wrapper {
-     padding-top: 10%;
-      padding-left: 0;
-      padding-right: 0;
+    .section-wrapper {
+      padding: 30px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .tab-content {
@@ -209,27 +209,23 @@
     .card-wrap {
       position: relative;
       width: 100%;
-      height: 300px;
+      height: 350px;
       padding-bottom: 10px;
       padding-right: 10px;
-      
+
       &:hover {
         .project-link {
-          transform: translate(-50%, 0);
+          transform: translate(0, 0);
           opacity: 1;
-          
+
           &:before {
             width: 100%;
           }
         }
-        
+
         .project-image {
-          &:after {
-            opacity: 0;
-          }
-          
           &:before {
-            background-color: #751E3E;
+            opacity: 0;
           }
         }
       }
@@ -249,8 +245,8 @@
       display: block;
       position: absolute;
       bottom: 40px;
-      left: 50%;
-      transform: translate(-50%, 15px);
+      right: 40px;
+      transform: translate(0, 15px);
       opacity: 0;
       color: #fff;
       font-family: $museo-100;
@@ -260,7 +256,7 @@
       padding-top: 7px;
       text-decoration: none;
       z-index: 3;
-      transition: all 0.6s $timing-func;
+      transition: all 0.7s $timing-func;
 
       &:before {
         content: '';
@@ -271,26 +267,14 @@
         transform: translate(-50%, 0);
         height: 1px;
         background-color: rgba(255, 255, 255, 0.4);
-        transition: all 0.6s $timing-func;
+        transition: all 0.7s $timing-func;
       }
     }
 
     .project-image {
       &:before {
-        background-color: rgba(29, 36, 43, 0.9);
-        transition: all 0.6s $timing-func;
-      }
-
-      &:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 2;
-        background-color: rgba(29, 36, 43, 0.4);
-        transition: all 0.6s $timing-func;
+        opacity: 1;
+        transition: all 0.7s $timing-func;
       }
     }
 
@@ -299,8 +283,7 @@
       padding-right: calc(10% + 10px);
       right: 0;
       bottom: 0;
-      margin-top: 80px;
-      margin-bottom: 60px;
+      margin: 30px 0 0;
 
       &.on-enter {
         .see-all-link {
@@ -311,7 +294,7 @@
           }
         }
       }
-  
+
       &.on-leave {
         .see-all-link {
           animation: see-all-link-on-leave 1s $timing-func 0s both;

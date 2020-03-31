@@ -9,6 +9,7 @@ import { ImageWrapper, SectionDesc, SectionTitle, SectionWrapper, TeamModal } fr
 import '~/Styles/Sections/About/team.scss'
 
 const Slider = dynamic(() => import('react-slick'), { ssr: false })
+
 const TeamSliderConfig = {
   speed: 800,
   dots: false,
@@ -34,52 +35,20 @@ const TeamSliderConfig = {
   ]
 }
 
-const TeamGroup = ({ team, openModal }) => {
-  const { mobile } = useDeviceDetect()
-  
-  return mobile && (
-    <div className="team-wrapper">
-      {team.map(({ image, position, name, onClick }, index) => (
-        <div key={`team-member-${name}_${index}`} className="team-card" onClick={() => openModal(index)}>
-          <ImageWrapper src={image} className="member-image"/>
-          <p className="member-name">
-            <span>{position}: </span>{name}
-          </p>
-        </div>
-      ))}
-    </div>
-  )
-}
-
-const TeamSlider = ({ team, configs, openModal }) => {
-  const { mobile } = useDeviceDetect()
-  return !mobile && (
-    <div className="section-slider-wrap">
-      <Slider {...configs}>
-        {team.map(({ image, position, name, onClick }, index) => (
-          <div key={`team-member_${index}`} className="member-slide" onClick={() => openModal(index)}>
-            <ImageWrapper src={image} className="member-image"/>
-            <p className="member-name"><span>{position}:</span> {name}</p>
-          </div>
-        ))}
-      </Slider>
-    </div>
-  )
-}
-
 export const AboutTeam = () => {
-  const [isOpenModal, setIsOpenModal] = useState(false)
   const [memberIndex, setMemberIndex] = useState(0)
-  const { laptop, desktop } = useDeviceDetect()
-  
+  const [isOpenModal, setIsOpenModal] = useState(false)
+  const { mobile, minWidthLaptop } = useDeviceDetect()
+
   const openModal = (index) => {
     setIsOpenModal(true)
     setMemberIndex(index)
   }
+
   const closeModal = () => {
     setIsOpenModal(false)
   }
-  
+
   return (
     <section id="about-team-section" className="section">
       <SectionWrapper>
@@ -90,16 +59,40 @@ export const AboutTeam = () => {
               <SectionDesc/>
             </div>
           </Col>
-          {(laptop || desktop) && (
+          {minWidthLaptop && (
             <Col lg={5} className="info-grid-item">
               <ImageWrapper isDot/>
             </Col>
           )}
         </Row>
-        <TeamGroup team={TeamList} openModal={openModal}/>
+
+        {mobile && (
+          <div className="team-wrapper">
+            {TeamList.map(({ image, position, name }, index) => (
+              <div key={`member-${name}_${index}`} className="team-card" onClick={() => openModal(index)}>
+                <ImageWrapper src={image} className="member-image"/>
+                <p className="member-name">
+                  <span>{position}: </span>{name}
+                </p>
+              </div>
+            ))}
+          </div>
+        )}
       </SectionWrapper>
-      <TeamSlider team={TeamList} openModal={openModal} configs={TeamSliderConfig}/>
-      <TeamModal index={memberIndex} isOpen={isOpenModal} closeModal={closeModal}/>
+
+      {!mobile && (
+        <div className="section-slider-wrap">
+          <Slider {...TeamSliderConfig}>
+            {TeamList.map(({ image, position, name }, index) => (
+              <div key={`team-member_${index}`} className="member-slide" onClick={() => openModal(index)}>
+                <ImageWrapper src={image} className="member-image"/>
+                <p className="member-name"><span>{position}:</span> {name}</p>
+              </div>
+            ))}
+          </Slider>
+        </div>
+      )}
+      <TeamModal index={memberIndex} isOpen={isOpenModal} close={closeModal}/>
     </section>
   )
 }

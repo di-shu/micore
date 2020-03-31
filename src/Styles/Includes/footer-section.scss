@@ -4,6 +4,7 @@
   background-color: $accent-black;
 
   .section-container {
+    position: relative;
     padding-top: 60px;
     max-width: 300px;
   }
@@ -50,7 +51,7 @@
       background-color: $accent-main;
       width: 100%;
       z-index: 1;
-      transition: all 1s $timing-func;
+      transition: all .7s $timing-func;
     }
 
     & > span {
@@ -85,6 +86,7 @@
     font-size: 20px;
     letter-spacing: 2.29px;
     text-transform: uppercase;
+    margin-bottom: 10px;
   }
 
   .contact-sub-title {
@@ -93,6 +95,7 @@
     font-family: $museo-300;
     font-size: 14px;
     letter-spacing: 1.05px;
+    margin-bottom: 10px;
 
     &.with-line {
       display: flex;
@@ -127,6 +130,10 @@
     img {
       width: 21px;
       margin: 0 auto 10px;
+    }
+
+    span {
+      margin-bottom: 10px;
     }
   }
 
@@ -165,15 +172,9 @@
   #footer-section {
     min-height: 100vh;
 
-    &.footer-section {
-      .section-container {
-        padding-top: 60px;
-        padding-bottom: 60px;
-      }
-    }
-
     .section-container {
-      padding-top: 80px;
+      padding-top: 60px;
+      padding-bottom: 60px;
       max-width: 480px;
     }
 
@@ -285,8 +286,17 @@
       max-width: 130px;
     }
 
+    .form-wrap {
+      margin-bottom: 0;
+    }
+
     .image-wrap {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
       width: 100%;
+      max-width: 60%;
       height: 100%;
       transform: translateX(20%);
 
@@ -314,6 +324,12 @@
         margin-bottom: 0;
       }
     }
+
+    .btn-show-map {
+      span {
+        margin-bottom: 3px;
+      }
+    }
   }
 }
 
@@ -339,6 +355,7 @@
         opacity: 1;
         visibility: visible;
       }
+
       .fp-scroller {
         height: 100%;
       }
@@ -427,9 +444,16 @@
         max-width: 100%;
       }
 
+      .input-groups {
+        &.input-area {
+          margin-top: 30px;
+          margin-bottom: 0;
+        }
+      }
+
       .socials-wrap {
         position: absolute;
-        bottom: 70px;
+        bottom: 0;
         left: 50%;
         width: auto;
         transform: translateX(-50%);
@@ -477,6 +501,13 @@
     .form-wrap {
       padding-left: 0;
       max-width: 100%;
+      margin-bottom: 0;
+    }
+
+    .input-groups {
+      &.input-area {
+        margin-top: 0;
+      }
     }
 
     .image-wrap {

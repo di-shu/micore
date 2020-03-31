@@ -1,12 +1,12 @@
 import React from 'react'
 import {
-  ServiceQuote,
-  ServiceTarget,
   ServiceFeedback,
-  ServiceWorkStages,
   ServiceMainSection,
+  ServicePriceMiscalculations,
+  ServiceQuote,
   ServiceShortPortfolio,
-  ServicePriceMiscalculations
+  ServiceTarget,
+  ServiceWorkStages
 } from '../../src/Components'
 import MainWrapper from '../../src/Components/SectionsComponents/MainWrapper'
 import '~/Styles/Pages/Services/corporate.scss'

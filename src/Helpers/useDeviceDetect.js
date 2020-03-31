@@ -21,7 +21,7 @@ export const useDeviceDetect = () => {
     }
   
     if (width > 992 && width < 1199) {
-      setDevice({ ...InitState, laptop: true })
+      setDevice({ ...InitState, minWidthLaptop: true, laptop: true })
     }
   
     if (width > 1200) {

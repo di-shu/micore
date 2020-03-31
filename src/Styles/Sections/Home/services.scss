@@ -26,17 +26,8 @@
       margin-bottom: 80px;
     }
 
-    .services-image {
-      &.other {
-        position: relative;
-        right: -15px;
-      }
-
-      img {
-        position: relative;
-        width: 100% !important;
-        height: 100% !important;
-      }
+    .services-title {
+      margin-bottom: 10px;
     }
 
     .services-card {
@@ -184,7 +175,7 @@
       }
 
       .services-desc {
-        margin-bottom: 0;
+        margin-bottom: 20px;
       }
     }
   }
@@ -196,13 +187,13 @@
       .section-wrapper {
         position: unset;
         max-width: 1230px;
-        padding-top: 225px;
+        padding-top: 22vh;
       }
 
       .section-title {
         position: absolute;
-        top: 120px;
-        left: 120px;
+        top: 12vh;
+        left: 12vw;
         margin-bottom: 0;
         transition: all 1s $timing-func;
 
@@ -226,6 +217,7 @@
         overflow: visible;
         padding-top: 0;
         flex-shrink: 0;
+        min-height: auto;
         padding-left: 15px;
         padding-right: 15px;
         transition: opacity 1s $timing-func;
@@ -269,14 +261,6 @@
           &.on-enter {
             transition-delay: 0.9s;
           }
-
-          .services-image {
-            img {
-              left: 0;
-              right: auto;
-              transform: rotateY(180deg);
-            }
-          }
         }
       }
 
@@ -303,6 +287,13 @@
         visibility: visible;
         transform: translateY(0);
         text-align: left;
+      }
+
+      .custom-btn {
+        margin-left: 0;
+        visibility: visible;
+        opacity: 1;
+        transform: none;
       }
 
       .services-info {

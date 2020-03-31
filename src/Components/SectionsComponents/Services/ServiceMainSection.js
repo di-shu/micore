@@ -6,27 +6,27 @@ import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../Se
 
 const Sketch = dynamic(() => import('react-p5'), { ssr: false })
 
-const SectionHeader = (statue) => () => {
+const SectionHeader = (statue, proportions) => () => {
   const { desktop } = useDeviceDetect()
-  
+
   return (
     <>
-      <ScrollBox />
-      <ImageWrapper isDot />
+      <ScrollBox/>
+      <ImageWrapper isDot/>
       {desktop ? (
-        <Sketch setup={setup(statue)} draw={draw} className="section-image-wrap main-statue"/>
+        <Sketch setup={setup(statue, proportions)} draw={draw} className="section-image-wrap main-statue"/>
       ) : (
-        <ImageWrapper src={statue} className="main-statue" />
+        <ImageWrapper src={statue} className="main-statue"/>
       )}
     </>
   )
 }
 
-export const ServiceMainSection = ({ title, desc, statue }) => {
+export const ServiceMainSection = ({ title, desc, statue, isProportions }) => {
   return (
-    <SectionLayout id="service-main-section" Header={SectionHeader(statue)}>
-      <SectionTitle title={title} main isContentWhite />
-      <SectionDesc isContentWhite children={desc} />
+    <SectionLayout id="service-main-section" Header={SectionHeader(statue, isProportions)}>
+      <SectionTitle title={title} main isContentWhite/>
+      <SectionDesc isContentWhite children={desc}/>
     </SectionLayout>
   )
 }

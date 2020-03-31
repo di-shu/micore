@@ -1,6 +1,12 @@
+@import "../Static/index";
+
 #about-page {
   .section-dots-wrap {
     opacity: 0.2;
+  }
+
+  .scroll-box {
+    bottom: 15px;
   }
 
   .see-more-box {
@@ -14,6 +20,14 @@
         animation-duration: 2s;
         animation-delay: 0.2s;
       }
+    }
+  }
+}
+
+@include media-breakpoint-up('lg') {
+  #about-page {
+    .scroll-box {
+      bottom: 60px;
     }
   }
 }

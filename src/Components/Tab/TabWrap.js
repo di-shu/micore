@@ -53,7 +53,7 @@ export const TabWrap = ({ animation, tabs, isSlice, isSkills }) => {
         {tabs.map((tab, index) => (
           <Tab.Pane key={`tab_${index}`} eventKey={tab.key}>
             {isSkills ? (
-              <Accordion defaultActiveKey={tab.content[0].value}>
+              <Accordion defaultActiveKey={!mobile && 'panel1'}>
                 {tab.content.map((content, index) => (
                   <Card key={`skill_${index}`} className="skill-row">
                     <Card.Header className="skill-header">
@@ -62,7 +62,7 @@ export const TabWrap = ({ animation, tabs, isSlice, isSkills }) => {
                         <ImageWrapper src={content.icon} className="skill-icon"/>
                       </Accordion.Toggle>
                     </Card.Header>
-                    <Accordion.Collapse eventKey={mobile ? content.value: 'panel1'} className="skill-collapse">
+                    <Accordion.Collapse eventKey={mobile ? content.value : 'panel1'} className="skill-collapse">
                       <Card.Body className="skill-body">
                         <p className="skill-description">{content.description}</p>
                       </Card.Body>

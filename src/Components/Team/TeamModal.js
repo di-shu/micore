@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic'
 import Modal from 'react-bootstrap/Modal'
 import { TeamList } from '../Config'
 import { useDeviceDetect } from '../../Helpers'
-import { ActiveLink, ImageWrapper } from '../SectionsComponents'
+import { ImageWrapper } from '../SectionsComponents'
 
 const Slider = dynamic(() => import('react-slick'), { ssr: false })
 const Logo = '/Assets/Images/logo.png'
@@ -77,40 +77,30 @@ const MemberCard = ({ img, fullName, position, desc }) => {
 }
 
 export const TeamModal = (props) => {
-  const { isOpen, closeModal, index } = props
+  const { isOpen, index, close } = props
   const { mobile } = useDeviceDetect()
   const { slideImage, fullName, position, description } = TeamList[index]
   
   return (
     <Modal
       show={isOpen}
-      animation={false}
-      onHide={closeModal}
-      dialogClassName={`member-modal ${isOpen ? 'on-enter' : 'on-leave'}`}
+      onHide={close}
+      backdrop={false}
+      dialogClassName={`member-modal`}
     >
       <Modal.Header>
-        {mobile ? (
-          <>
-            <ActiveLink link="/" className="logo-link"><img src={Logo} alt="Logo"/></ActiveLink>
-            <div className="close-icon" onClick={closeModal}>
-              <span/>
-              <span/>
-            </div>
-          </>
-        ) : (
-          <ImageWrapper src={CollapseArrow} className="collapse-arrow" onClick={closeModal}/>
+        {mobile && (
+          <div className="close-icon" onClick={close}>
+            <span/>
+            <span/>
+          </div>
         )}
+        <ImageWrapper src={CollapseArrow} className="collapse-arrow" onClick={close} display={!mobile}/>
       </Modal.Header>
       <Modal.Body>
         <MemberSlider team={TeamList} index={index} configs={SliderConfig}/>
         <MemberCard img={slideImage} fullName={fullName} position={position} desc={description}/>
       </Modal.Body>
-      {mobile && (
-        <Modal.Footer>
-          <p>Tram-pam-pam</p>
-          <p>Manticore development</p>
-        </Modal.Footer>
-      )}
     </Modal>
   )
 }

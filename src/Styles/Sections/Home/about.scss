@@ -54,11 +54,12 @@
   .text-box {
     position: relative;
     border: 1px solid #4d5257;
-    background-color: $accent-black;
+    background-color: rgba(16, 21, 27, 0.7);
     padding: 15px 15px 50px;
     max-width: 325px;
     width: 100%;
     margin: 0 auto;
+    z-index: 5;
   }
 
   .about-desc {
@@ -79,18 +80,18 @@
     font-size: 18px;
     text-transform: uppercase;
     text-decoration: none;
-    transition: all 0.6s $timing-func 0.6s;
+    transition: all 0.4s $timing-func 0.4s;
     z-index: 1;
 
 
     &:hover {
       bottom: 10px;
-      transition-delay: 0.2s;
+      transition-delay: 0s;
 
       &:before {
         width: 100%;
         background-color: $accent-main;
-        transition-delay: 0.6s;
+        transition-delay: 0.4s;
       }
     }
 
@@ -103,7 +104,7 @@
       width: 0;
       height: 1px;
       background-color: #fff;
-      transition: all 0.6s $timing-func 0s;
+      transition: all 0.4s $timing-func 0s;
     }
   }
 }
@@ -144,6 +145,8 @@
       margin: 0 auto 0 100px;
       padding: 50px 50px 60px;
       border: 1px solid #fff;
+      background-color: $accent-black;
+      z-index: 3;
     }
 
     .about-desc {

@@ -1,11 +1,11 @@
 let glitch
 let isLoaded = false
 
-export const setup = (img) => (p5, canvasParentRef) => {
+export const setup = (img, proportions) => (p5, canvasParentRef) => {
   p5.background('rgba(255, 255, 255, 0)')
   p5.createCanvas(window.innerWidth, window.innerHeight).parent(canvasParentRef)
   p5.loadImage(img, function (img) {
-    glitch = new Glitch(img, p5)
+    glitch = new Glitch(img, p5, proportions)
     isLoaded = true
   })
 }
@@ -20,7 +20,8 @@ export const draw = (p5) => {
 }
 
 class Glitch {
-  constructor(img, p5) {
+  constructor(img, p5, proportions) {
+    this.proportions = proportions
     this.p5 = p5
     this.channelLen = 4
     this.imgOrigin = img
@@ -204,11 +205,10 @@ class Glitch {
   }
   
   setImage() {
-    const imgW = (this.p5.height * 3) / 4
+    const imgW = this.proportions ? (this.p5.height * 3) / 4 : this.imgOrigin.width
 
     this.p5.push()
-    // this.p5.translate((this.p5.width - this.imgOrigin.width) / 2, (this.p5.height - this.imgOrigin.height) / 2)
-    this.p5.image(this.imgOrigin, (this.p5.width - imgW) / 2, 0, imgW, this.p5.height)
+    this.p5.image(this.imgOrigin, this.p5.width - imgW, 0, this.imgOrigin.width, this.p5.height)
     this.p5.pop()
   }
   
@@ -217,7 +217,8 @@ class Glitch {
     this.replaceData(this.imgOrigin, this.copyData)
     // sometimes pass without effect processing
     let n = this.p5.floor(this.p5.random(100))
-    const imgW = (this.p5.height * 3) / 4
+
+    const imgW = this.proportions ? (this.p5.height * 3) / 4 : this.imgOrigin.width
 
     if (n > 75 && this.throughFlag) {
       this.throughFlag = false
@@ -228,8 +229,7 @@ class Glitch {
 
     if (!this.throughFlag) {
       this.p5.push()
-      // this.p5.translate((this.p5.width - this.imgOrigin.width) / 2, (this.p5.height - this.imgOrigin.height) / 2)
-      this.p5.image(this.imgOrigin, (this.p5.width - imgW) / 2, 0, imgW, this.p5.height)
+      this.p5.image(this.imgOrigin, this.p5.width - imgW, 0, this.imgOrigin.width, this.p5.height)
       this.p5.pop()
 
       return

@@ -7,10 +7,6 @@
     padding: 85px 0 0;
   }
 
-  .fp-scrollable {
-    height: 100%;
-  }
-
   .section-title {
     color: $accent-black;
     font-size: 30px;
@@ -43,14 +39,14 @@
     opacity: 0;
     visibility: hidden;
     transform: translateY(40px);
-    transition: all 1s $timing-func 0s;
+    transition: all 0.8s $timing-func 0s;
 
     &.active {
       position: relative;
       opacity: 1;
       visibility: visible;
       transform: translateY(0);
-      transition-delay: 1s;
+      transition-delay: .8s;
       z-index: 1;
     }
   }
@@ -91,8 +87,13 @@
   
   .skill-icon {
     width: 40px;
+    height: 50px;
     filter: grayscale(1);
     transition: all 0.5s $timing-func;
+
+    img {
+      object-fit: contain;
+    }
   }
   
   .skill-description {
@@ -101,7 +102,7 @@
     font-family: $museo-500;
     font-size: 14px;
     letter-spacing: 0.39px;
-    line-height: 29px;
+    line-height: 24px;
   }
 }
 

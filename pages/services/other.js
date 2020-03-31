@@ -1,12 +1,6 @@
 import React from 'react'
 import { isBrowser } from 'react-device-detect'
-import {
-  ImageWrapper,
-  ServiceFeedback,
-  ServiceMainSection,
-  ServiceShortPortfolio,
-  ServicePriceMiscalculations
-} from '../../src/Components'
+import { ImageWrapper, ServiceFeedback, ServiceMainSection, ServicePriceMiscalculations, ServiceShortPortfolio } from '../../src/Components'
 import { Sites } from '../../src/Components/Sections/Services/Other'
 import MainWrapper from '../../src/Components/SectionsComponents/MainWrapper'
 import '~/Styles/Pages/Services/other.scss'
@@ -43,7 +37,7 @@ const OtherStages = [
 const Other = () => {
   return (
     <MainWrapper id="other-service-page">
-      <ServiceMainSection title="Other" statue={MainStatue}/>
+      <ServiceMainSection title="Other" statue={MainStatue} isProportions/>
       <Sites/>
       <ServicePriceMiscalculations isPrice={false} stages={OtherStages}/>
       <ServiceFeedback

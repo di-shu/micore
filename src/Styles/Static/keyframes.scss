@@ -45,12 +45,12 @@
     transform: translate(0, 0);
   }
   to {
-    transform: translate(0, 50px);
+    transform: translate(0, 90px);
   }
 }
 @keyframes dots-on-enter {
   from {
-    transform: translate(0, 50px);
+    transform: translate(0, 90px);
   }
   to {
     transform: translate(0, 0);

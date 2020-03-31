@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container'
 import { ServicesList } from '../Config'
 import { FooterSection } from '../Sections'
 import { useDeviceDetect } from '../../Helpers'
-import { SeeMoreLink, SectionTitle, ImageWrapper, SectionDesc, ScrollBox, ActiveLink } from '../SectionsComponents'
+import { ActiveLink, ImageWrapper, ScrollBox, SectionDesc, SectionTitle } from '../SectionsComponents'
 /* STYLES */
 import '~/Styles/Pages/services.scss'
 
@@ -14,7 +14,6 @@ const ServicesPage = () => {
   
   return (
     <>
-      <SeeMoreLink direction="right" display={!desktop} />
       <section id="services-section">
         <Container fluid>
           <SectionTitle main title="Services" isContentWhite />

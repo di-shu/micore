@@ -7,7 +7,7 @@ export const useCheckRoute = () => {
   const { pathname } = useRouter()
 
   useEffect(() => {
-    if (pathname.includes('/projects')) {
+    if (pathname.includes('/projects/')) {
       setTimeout(() => {
         setIsProject(true)
       }, 100)
@@ -15,7 +15,7 @@ export const useCheckRoute = () => {
       setIsProject(false)
     }
 
-    if (pathname.includes('/services')) {
+    if (pathname.includes('/services/')) {
       setTimeout(() => {
         setIsServices(true)
       }, 100)

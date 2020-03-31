@@ -1,12 +1,5 @@
 import React from 'react'
-import {
-  ImageWrapper,
-  ServiceQuote,
-  ServiceFeedback,
-  ServiceWorkStages,
-  ServiceMainSection,
-  ServiceShortPortfolio
-} from '../../src/Components'
+import { ImageWrapper, ServiceFeedback, ServiceMainSection, ServiceQuote, ServiceShortPortfolio, ServiceWorkStages } from '../../src/Components'
 import MainWrapper from '../../src/Components/SectionsComponents/MainWrapper'
 import { MakeBranding, MakeLogo } from '../../src/Components/Sections/Services/Branding'
 import '~/Styles/Pages/Services/branding.scss'
@@ -42,7 +35,7 @@ const BrandingStages = [
 const Branding = () => {
   return (
     <MainWrapper id="branding-service-page">
-      <ServiceMainSection title="Branding" statue={MainStatue} />
+      <ServiceMainSection title="Branding" statue={MainStatue} isProportions/>
       <MakeBranding/>
       <MakeLogo/>
       <ServiceQuote quotes={Quotes} />
