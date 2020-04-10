@@ -17,6 +17,7 @@ const Blob7 = '/Assets/Images/BlobAnimation/Blob7.svg'
 const Blobs = [Blob1, Blob2, Blob3, Blob4, Blob5, Blob6, Blob7]
 
 const BlobsWrap = styled.div`
+  isolation: isolate;
   position: absolute;
   top: 0;
   left: 0;
@@ -26,7 +27,7 @@ const BlobsWrap = styled.div`
   width: 100%;
   height: 100%;
   overflow: hidden;
-  mix-blend-mode: color;
+  mix-blend-mode: difference;
   mask-image: url(${props => props.mask});
   mask-repeat: no-repeat;
   mask-position: center;

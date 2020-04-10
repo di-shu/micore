@@ -35,19 +35,7 @@
   }
 
   .form-control {
-    background-color: transparent;
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid  #686d72;
-    margin-bottom: 50px;
-    outline: none;
-    box-shadow: none;
-    padding: 11px 0;
-    opacity: 0.9;
-    color: #ffffff;
-    font-family: $museo-300;
-    font-size: 18px;
-    letter-spacing: 1.35px;
+    padding: 10px 0;
 
     &::placeholder {
       display: block;
@@ -58,9 +46,10 @@
     }
   }
 
-  .input-label {
-    left: 5px;
+  textarea {
+    border: none;
   }
+
   .custom-btn {
     max-width: 265px;
   }
@@ -102,27 +91,10 @@
     }
 
     .form-wrap {
-      max-width: 100%;
-    }
-
-    .form-control {
-      margin-bottom: 20px;
-    }
-  }
-}
-
-@include media-breakpoint-up('xl') {
-  #service-feedback-section {
-    .section-title {
-      padding-top: 0;
-      font-size: 30px;
-      letter-spacing: 0.85px;
-    }
-
-    .form-wrap {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
+      max-width: 100%;
     }
 
     .custom-btn {
@@ -149,10 +121,37 @@
       &:last-child {
         margin-right: 0;
       }
+
+      &.input-area {
+        margin-top: 0;
+
+        .form-control {
+          padding: 6px 0;
+
+          &::placeholder {
+            opacity: 0.9;
+            color: #fff;
+
+            &:first-letter {
+              color: $accent-main;
+            }
+          }
+        }
+      }
     }
 
     .form-control {
       margin-bottom: 0;
+    }
+  }
+}
+
+@include media-breakpoint-up('xl') {
+  #service-feedback-section {
+    .section-title {
+      padding-top: 0;
+      font-size: 30px;
+      letter-spacing: 0.85px;
     }
   }
 }

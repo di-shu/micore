@@ -1,6 +1,7 @@
 import React from 'react'
 
-export const SectionTitle = ({ title, children, main = false, className, isContentWhite, display = true }) => {
+export const SectionTitle = (props) => {
+  const { title, children, main = false, className, isContentWhite, display = true } = props
   const customClassName = `section-title ${className ? className : ''} ${isContentWhite ? 'is-white' : ''}`
   
   return display && main ? (
@@ -10,9 +11,9 @@ export const SectionTitle = ({ title, children, main = false, className, isConte
   )
 }
 
-export const SectionDesc = ({ children, withDot, className, isContentWhite, display = true }) => {
-  const FloatText = 'This website which duis aute irure dolor  in rep ehenderit in voluptate velit esse cillum' +
-    ' dolo rez eu fugia nulla pariatur.'
+export const SectionDesc = (props) => {
+  const { children, withDot, className, isContentWhite, display = true } = props
+  const FloatText = 'This website which duis aute irure dolor  in rep ehenderit in voluptate velit esse cillum.'
   const customClassName = `section-desc ${className ? className : ''} ${withDot ? 'with-dot' : ''} ${isContentWhite ? 'is-white' : ''}`
   
   return display && (

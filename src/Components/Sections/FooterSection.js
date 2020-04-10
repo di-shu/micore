@@ -6,7 +6,7 @@ import Form from 'react-bootstrap/Form'
 import Container from 'react-bootstrap/Container'
 import { InputControl } from '../Inputs'
 import { ImageWrapper, SectionTitle, SocialsWrap } from '../SectionsComponents'
-import { useCheckBottom, useDeviceDetect } from '../../Helpers'
+import { useDeviceDetect, useScroll } from '../../Helpers'
 /* IMAGES */
 const MapMarker = '/Assets/Images/map-marker.svg'
 const FooterLogo = '/Assets/Images/footer-logo.svg'
@@ -37,8 +37,8 @@ const FormInputs = [
 
 export const FooterSection = ({ isContact, animation }) => {
   const [values, setValues] = useState(InitValues)
-  const isBottom = useCheckBottom()
   const { pathname } = useRouter()
+  const { isBottom } = useScroll()
   const { mobile, desktop, minWidthLaptop } = useDeviceDetect()
 
   const handleSubmit = (e) => {
@@ -53,14 +53,13 @@ export const FooterSection = ({ isContact, animation }) => {
       }
     }).done(() => {
       setValues(InitValues)
+      alert('Сообщение упешно отправлено!')
     })
   }
 
   const handleChange = e => {
     setValues({ ...values, [e.target.id]: e.target.value })
   }
-
-  console.log(isContact)
 
   return (
     <section id="footer-section" className={`${!isBottom ? 'section' : ''} ${isBottom ? 'active' : ''} ${!isContact ? 'footer-section' : 'active'}`}>

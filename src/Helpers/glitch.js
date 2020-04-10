@@ -1,11 +1,11 @@
 let glitch
 let isLoaded = false
 
-export const setup = (img, proportions) => (p5, canvasParentRef) => {
+export const setup = ({ statue, ...other }) => (p5, canvasParentRef) => {
   p5.background('rgba(255, 255, 255, 0)')
-  p5.createCanvas(window.innerWidth, window.innerHeight).parent(canvasParentRef)
-  p5.loadImage(img, function (img) {
-    glitch = new Glitch(img, p5, proportions)
+  p5.createCanvas(other.statueW, other.statueH).parent(canvasParentRef)
+  p5.loadImage(statue, function (img) {
+    glitch = new Glitch(img, p5, other)
     isLoaded = true
   })
 }
@@ -20,9 +20,9 @@ export const draw = (p5) => {
 }
 
 class Glitch {
-  constructor(img, p5, proportions) {
-    this.proportions = proportions
+  constructor(img, p5, params) {
     this.p5 = p5
+    this.params = params
     this.channelLen = 4
     this.imgOrigin = img
     this.imgOrigin.loadPixels()
@@ -33,6 +33,36 @@ class Glitch {
     this.scatImgs = []
     this.throughFlag = true
     this.copyData = new Uint8ClampedArray(this.imgOrigin.pixels)
+
+    this.offsetX = this.params.offsetX
+    this.offsetY = this.params.offsetY
+    this.imgPosX = 0
+    this.imgPosY = 0
+    this.imgW = this.params.proportions === '3/4' ? (this.p5.height * 3) / 4 : this.params.statueW
+    this.imgH = this.params.statueH
+
+    switch(this.params.posX) {
+      case 'left':
+        this.imgPosX = 0 + this.offsetX
+        break
+      case 'center':
+        this.imgPosX = ((this.p5.width - this.imgW) / 2) + this.offsetX
+        break
+      case 'right':
+        this.imgPosX = (this.p5.width - this.imgW) + this.offsetX
+        break
+    }
+
+    switch (this.params.posY) {
+      case 'top':
+        this.imgPosY = 0 + this.offsetY
+        break
+      case 'center':
+        this.imgPosY = ((this.p5.height - this.imgH) / 2) + this.offsetY
+        break
+      case 'bottom':
+        this.imgPosY = (this.p5.height - this.imgH) + this.offsetY
+    }
 
     // flow line
     for (let i = 0; i < 1; i++) {
@@ -57,7 +87,7 @@ class Glitch {
       this.shiftRGBs.push(o)
     }
     
-    // scat imgs
+    // scat images
     for (let i = 0; i < 3; i++) {
       let scatImg = {
         img: null,
@@ -205,20 +235,14 @@ class Glitch {
   }
   
   setImage() {
-    const imgW = this.proportions ? (this.p5.height * 3) / 4 : this.imgOrigin.width
-
     this.p5.push()
-    this.p5.image(this.imgOrigin, this.p5.width - imgW, 0, this.imgOrigin.width, this.p5.height)
+    this.p5.image(this.imgOrigin, this.imgPosX, this.imgPosY, this.imgW, this.imgH)
     this.p5.pop()
   }
   
   show() {
-    //restore the original state
     this.replaceData(this.imgOrigin, this.copyData)
-    // sometimes pass without effect processing
     let n = this.p5.floor(this.p5.random(100))
-
-    const imgW = this.proportions ? (this.p5.height * 3) / 4 : this.imgOrigin.width
 
     if (n > 75 && this.throughFlag) {
       this.throughFlag = false
@@ -229,7 +253,7 @@ class Glitch {
 
     if (!this.throughFlag) {
       this.p5.push()
-      this.p5.image(this.imgOrigin, this.p5.width - imgW, 0, this.imgOrigin.width, this.p5.height)
+      this.p5.image(this.imgOrigin, this.imgPosX, this.imgPosY, this.imgW, this.imgH)
       this.p5.pop()
 
       return

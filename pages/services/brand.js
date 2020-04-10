@@ -23,6 +23,7 @@ const Quotes = [
   'У нас работает акция! Купи один лэндинг по цене двух! Как-то так.',
   'Анимации очень ценятся на лендингах, но больше ценятся те, кто их делает. Берегите своих разработчиков!'
 ]
+
 const BrandingStages = [
   { img: Briefing, name: 'Брифинг' },
   { img: Miscalculation, name: 'Просчет' },
@@ -32,10 +33,21 @@ const BrandingStages = [
   { img: Sources, name: 'Передача исходников' }
 ]
 
-const Branding = () => {
+const StatueOptions = {
+  statueW: 610,
+  statueH: 840,
+  statue: MainStatue,
+  posX: 'right',
+  posY: 'bottom',
+  proportions: 'origin',
+  offsetX: 0,
+  offsetY: 0
+}
+
+const Brand = () => {
   return (
     <MainWrapper id="branding-service-page">
-      <ServiceMainSection title="Branding" statue={MainStatue} isProportions/>
+      <ServiceMainSection title="Branding" statue={MainStatue} isProportions statueParams={StatueOptions}/>
       <MakeBranding/>
       <MakeLogo/>
       <ServiceQuote quotes={Quotes} />
@@ -46,4 +58,4 @@ const Branding = () => {
   )
 }
 
-export default Branding
+export default Brand

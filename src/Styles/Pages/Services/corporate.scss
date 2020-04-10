@@ -28,7 +28,12 @@
   #corporate-service-page {
     #service-main-section {
       .main-statue {
-        transform: translateY(50px);
+        right: 0;
+        transform: none;
+
+        canvas {
+          transform: translateY(60px);
+        }
       }
     }
 

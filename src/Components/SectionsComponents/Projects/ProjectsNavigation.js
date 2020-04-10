@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import { ActiveLink } from '../ActiveLink'
-import { useCheckRoute, useDeviceDetect, useScrollDirection } from '../../../Helpers'
+import { useCheckRoute, useDeviceDetect, useScroll } from '../../../Helpers'
 
 export const ProjectsNavigation = ({ links }) => {
   const [prev, setPrev] = useState('/')
@@ -10,7 +10,7 @@ export const ProjectsNavigation = ({ links }) => {
   const { pathname } = useRouter()
   const { mobile } = useDeviceDetect()
   const { isProject } = useCheckRoute()
-  const scrollDir = useScrollDirection()
+  const { scrollDir } = useScroll()
   
   useEffect(() => {
     // eslint-disable-next-line array-callback-return

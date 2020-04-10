@@ -10,7 +10,7 @@ const MainSectionFooterContent = () => {
   const { minWidthLaptop } = useDeviceDetect()
 
   return minWidthLaptop ? (
-    <Sketch setup={setup(MainImg)} draw={draw} className="section-image-wrap main-statue"/>
+    <Sketch setup={setup(MainImg, true, 'center')} draw={draw} className="section-image-wrap main-statue"/>
   ) : (
     <ImageWrapper src={MainImg} className="main-statue"/>
   )

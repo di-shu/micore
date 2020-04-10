@@ -2,6 +2,7 @@
 
 #service-work-stages-section {
   background-color: $accent-black;
+  padding-bottom: 20px;
 
   .section-title {
     margin-bottom: 60px;
@@ -15,19 +16,19 @@
   .stage-wrap {
     width: 100%;
     max-width: 220px;
-    margin: 0 auto 65px auto;
+    margin: 0 auto 40px auto;
   }
 
   .stage-image {
     width: 44px;
-    height: 54px;
-    margin: 0 auto 20px auto;
+    height: 48px;
+    margin: 0 auto 12px auto;
   }
 
   .stage-name {
     color: #ffffff;
     font-family: $museo-500;
-    font-size: 16px;
+    font-size: 12px;
     letter-spacing: 0.45px;
     text-align: center;
   }
@@ -58,6 +59,11 @@
       top: 50%;
       left: -275px;
       transform: translateY(-50%);
+    }
+
+    .stage-name {
+      font-size: 18px;
+      letter-spacing: 0.51px;
     }
   }
 }

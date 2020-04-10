@@ -20,7 +20,7 @@ export const ServicesList = [
   {
     name: 'Branding',
     img: BrandingImage,
-    link: '/services/branding',
+    link: '/services/brand',
     desc: 'We are Manticore Development, company which duis aute irure dolor in reprehenderit'
   },
   {

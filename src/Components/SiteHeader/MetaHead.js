@@ -14,7 +14,8 @@ export const MetaHead = () => {
       <meta property="og:url" content="PERMALINK"/>
       <meta property="og:site_name" content="SITE NAME"/>
       <link rel="canonical" href="https://micore-stuido.com"/>
-      
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
       <link rel="stylesheet" type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"/>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"

@@ -17,10 +17,6 @@
 
     &:hover {
       .short-portfolio-image {
-        &:before {
-          background-color: #ca4770;
-        }
-
         img {
           filter: grayscale(0);
         }
@@ -29,8 +25,6 @@
   }
 
   .short-portfolio-image {
-    border: 1px solid rgba(255, 255, 255, 0.3);
-
     &:before {
       content: '';
       position: absolute;
@@ -39,8 +33,7 @@
       right: 0;
       bottom: 0;
       z-index: 1;
-      mix-blend-mode: multiply;
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: rgba(29, 36, 43, 0.3);
       transition: all .7s $timing-func;
     }
 
@@ -52,8 +45,8 @@
 
   .short-portfolio-name {
     position: absolute;
-    top: 30px;
-    left: 30px;
+    top: 40px;
+    left: 40px;
     opacity: 0.9;
     color: #ffffff;
     font-family: $museo-700;
@@ -131,7 +124,7 @@
     }
 
     .section-title {
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
 
     .section-dots-wrap {

@@ -163,6 +163,7 @@
 @include media-breakpoint-up('xl') {
   #main-section {
     .statue-wrap {
+      isolation: isolate;
       max-width: 500px;
 
       &.on-enter {

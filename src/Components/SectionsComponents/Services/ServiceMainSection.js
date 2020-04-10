@@ -2,31 +2,39 @@ import React from 'react'
 import dynamic from 'next/dynamic'
 import { ScrollBox } from '../ScrollBox'
 import { draw, setup, useDeviceDetect } from '../../../Helpers'
-import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../SectionsComponents'
+import { ImageWrapper, MyScrollAnimation, SectionDesc, SectionLayout, SectionTitle } from '../../SectionsComponents'
 
 const Sketch = dynamic(() => import('react-p5'), { ssr: false })
 
-const SectionHeader = (statue, proportions) => () => {
+const SectionHeader = ({ statue, options }) => {
   const { desktop } = useDeviceDetect()
 
   return (
     <>
-      <ScrollBox/>
-      <ImageWrapper isDot/>
+      <MyScrollAnimation delay={[400]}>
+        <ImageWrapper isDot/>
+      </MyScrollAnimation>
       {desktop ? (
-        <Sketch setup={setup(statue, proportions)} draw={draw} className="section-image-wrap main-statue"/>
+        <MyScrollAnimation animationName="fadeIn" delay={[600]}>
+          <Sketch setup={setup(options)} draw={draw} className="section-image-wrap main-statue"/>
+        </MyScrollAnimation>
       ) : (
-        <ImageWrapper src={statue} className="main-statue"/>
+        <MyScrollAnimation animationName="fadeIn" delay={[600]}>
+          <ImageWrapper src={statue} className="main-statue"/>
+        </MyScrollAnimation>
       )}
+      <ScrollBox/>
     </>
   )
 }
 
-export const ServiceMainSection = ({ title, desc, statue, isProportions }) => {
+export const ServiceMainSection = ({ title, desc, statue, statueParams }) => {
   return (
-    <SectionLayout id="service-main-section" Header={SectionHeader(statue, isProportions)}>
-      <SectionTitle title={title} main isContentWhite/>
-      <SectionDesc isContentWhite children={desc}/>
+    <SectionLayout id="service-main-section" Footer={() => <SectionHeader statue={statue} options={statueParams}/>}>
+      <MyScrollAnimation delay={[0, 200]}>
+        <SectionTitle title={title} main isContentWhite/>
+        <SectionDesc isContentWhite children={desc}/>
+      </MyScrollAnimation>
     </SectionLayout>
   )
 }

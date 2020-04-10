@@ -67,10 +67,21 @@ const CorporateWorkingStages = [
   { img: Sources, name: 'Передача исходников' }
 ]
 
+const StatueOptions = {
+  statueW: 995,
+  statueH: 940,
+  statue: MainStatue,
+  posX: 'left',
+  posY: 'bottom',
+  proportions: 'origin',
+  offsetX: 45,
+  offsetY: 0
+}
+
 const Corporate = () => {
   return (
     <MainWrapper id="corporate-service-page">
-      <ServiceMainSection title="Corporate website" statue={MainStatue}/>
+      <ServiceMainSection title="Corporate website" statue={MainStatue} statueParams={StatueOptions}/>
       <ServiceTarget/>
       <ServicePriceMiscalculations stages={CorporateStages}/>
       <ServiceFeedback title="Получить первичный просчет в течении суток"/>

@@ -21,8 +21,8 @@
       color: $accent-main;
     }
 
-    &:after {
-      content: 'или почему мы их не называем';
+    span {
+      margin-top: 8px;
       display: block;
       opacity: 0.4;
       color: #ffffff;
@@ -77,11 +77,15 @@
       padding-bottom: 120px;
     }
 
+    .price-title {
+      margin-bottom: 0;
+    }
+
     .section-dots-wrap {
       height: 210px;
-      top: 50%;
+      top: 350px;
       right: 15px;
-      transform: translateY(-50%);
+      transform: translateY(0%);
 
       img {
         object-fit: cover;
@@ -89,12 +93,22 @@
     }
 
     .col-stage {
-      padding-top: 40px;
-      padding-bottom: 40px;
+      padding-top: 30px;
+      padding-bottom: 30px;
       border-right: 1px solid rgba(255, 255, 255, 0.2);
 
       &:nth-child(3n) {
         border-right: none;
+
+        .stage-title, .stage-desc {
+          margin-right: 0;
+        }
+      }
+
+      &:nth-child(3n+1) {
+        .stage-title, .stage-desc {
+          margin-left: 0;
+        }
       }
 
       &:nth-child(n+4) {
@@ -126,6 +140,8 @@
 
     .miscalculations-title {
       margin-bottom: 30px;
+      margin-left: -15px;
+      margin-right: -15px;
     }
 
     .col-stage {
@@ -134,7 +150,7 @@
     }
 
     .stage-title, .stage-desc {
-      max-width: 280px;
+      max-width: 276px;
     }
   }
 }

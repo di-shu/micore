@@ -70,10 +70,21 @@ const Stages = [
   { img: LoadSiteOnDomen, name: 'Загрузка сайта на домен' },
 ]
 
+const StatueOptions = {
+  statueW: 935,
+  statueH: 850,
+  statue: MainStatue,
+  posX: 'left',
+  posY: 'bottom',
+  proportions: 'origin',
+  offsetX: 60,
+  offsetY: 0
+}
+
 const Landing = () => {
   return (
     <MainWrapper id="landing-service-page">
-      <ServiceMainSection title="Landing page" statue={MainStatue} />
+      <ServiceMainSection title="Landing page" statue={MainStatue} statueParams={StatueOptions} />
       <ServiceTarget />
       <ServicePriceMiscalculations stages={LandingStages} />
       <ServiceFeedback title="Получить первичный просчет в течении суток"/>

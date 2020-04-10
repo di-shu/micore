@@ -5,11 +5,13 @@ import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../Se
 
 export const ServicePriceMiscalculations = ({ priceDesc, stages, isPrice = true }) => {
   return (
-    <SectionLayout id="service-price-miscalculation" Header={() => <ImageWrapper isDot />}>
+    <SectionLayout id="service-price-miscalculation">
       {isPrice && (
         <Row className="price-wrap">
           <Col xs={12} lg={6}>
-            <SectionTitle title="Цены" className="price-title" isContentWhite />
+            <SectionTitle className="price-title" isContentWhite>
+              Цены <span>или почему мы их не называем</span>
+            </SectionTitle>
           </Col>
           <Col xs={12} lg={6}>
             <SectionDesc isContentWhite className="price-desc" children={priceDesc} />
@@ -24,7 +26,9 @@ export const ServicePriceMiscalculations = ({ priceDesc, stages, isPrice = true 
           <Row>
             {stages && stages.map(({ title, desc }, index) => (
               <Col key={`stage_${index}`} className="col-stage" xs={12} md={6} lg={4}>
-                <SectionTitle title={<><span>{index + 1}</span> {title}</>} className="stage-title" isContentWhite />
+                <SectionTitle className="stage-title" isContentWhite>
+                  <span>{index + 1}</span> {title}
+                </SectionTitle>
                 <SectionDesc children={desc} isContentWhite className="stage-desc" />
               </Col>
             ))}

@@ -40,6 +40,13 @@
       transform: translate(-50%, -50%);
       max-width: 245px;
       z-index: 2;
+      transition: all 1.2s $timing-func;
+
+      &.hide {
+        opacity: 0;
+        visibility: hidden;
+        transform: translate(-50%, calc(-50% + 30px));
+      }
 
       &:after {
         content: 'нажми сюда';
@@ -59,6 +66,33 @@
 
   .branding-image {
     filter: blur(4px);
+    transition: all 1s $timing-func;
+
+    &.final {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 2;
+    }
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+      filter: blur(0);
+      transition-delay: 0.7s;
+    }
+
+    &.hide {
+      filter: blur(0);
+    }
+
+    img {
+      object-fit: cover;
+    }
   }
 
   .section-desc {
@@ -104,25 +138,50 @@
       transform: translate(-50%, -50%);
       z-index: 2;
       max-width: 245px;
+      transition: all 0.7s $timing-func;
+
+      &.hide {
+        opacity: 0;
+        visibility: hidden;
+        transform: translate(-50%, calc(-50% + 30px));
+      }
     }
   }
 
   .logo-image {
     width: auto;
+    opacity: 1;
+    transition: all .7s $timing-func;
+
+    &.active {
+      opacity: 0;
+    }
+
+    &.start-change {
+      &:before {
+        opacity: 0;
+      }
+
+      img {
+        filter: blur(0);
+      }
+    }
 
     &:before {
       content: '';
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      top: -10px;
+      left: -10px;
+      width: calc(100% + 20px);
+      height: calc(100% + 20px);
       background-color: rgba(4, 13, 21, 0.53);
       z-index: 1;
+      transition: all .7s $timing-func;
     }
 
     img {
       filter: blur(4px);
+      transition: all .4s $timing-func;
     }
   }
 
@@ -198,14 +257,12 @@
       }
 
       .main-statue {
-        width: 50vw;
-        right: 65px;
         padding: 0;
-        left: auto;
-        max-width: 600px;
+        left: 0;
+        width: 100%;
 
         canvas {
-          transform: translateY(40px);
+          transform: translateX(-65px);
         }
       }
     }

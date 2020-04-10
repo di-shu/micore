@@ -1,41 +1,67 @@
 import React, { useState } from 'react'
+import { useRouter } from 'next/router'
 import Form from 'react-bootstrap/Form'
 import { InputControl } from '../../Inputs'
 import { SectionLayout, SectionTitle } from '../../SectionsComponents'
 
+const InitUser = { feedbackName: '', feedbackPhone: '', feedbackMessage: '' }
+
 export const ServiceFeedback = ({ title, content }) => {
-  const [user, setUser] = useState({ feedbackName: '', feedbackPhone: '', feedbackMessage: '' })
+  const [user, setUser] = useState(InitUser)
+  const { pathname } = useRouter()
+
   const handleChange = (e) => {
     const { id, value } = e.target
     
     setUser((prev) => ({ ...prev, [id]: value }))
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    $.ajax({
+      method: 'POST',
+      url: 'http://micore-admin.comnd-x.com/send',
+      data: {
+        name: user.feedbackName,
+        phone: user.feedbackPhone,
+        message: user.feedbackMessage,
+        url: pathname,
+        country: 'RU'
+      }
+    }).done(() => {
+      setUser(InitUser)
+      alert('Сообщение упешно отправлено!')
+    })
   }
   
   return (
     <SectionLayout id="service-feedback-section">
       {content}
       <SectionTitle title={title} isContentWhite />
-      <Form className="form-wrap">
-        <div className="form-row">
-          <InputControl
-            label="Name"
-            id="feedbackName"
-            onChange={handleChange}
-            value={user.feedbackName}
-          />
-          <InputControl
-            label="Phone"
-            id="feedbackPhone"
-            onChange={handleChange}
-            value={user.feedbackPhone}
-          />
-          <InputControl
-            label="Message"
-            id="feedbackMessage"
-            onChange={handleChange}
-            value={user.feedbackMessage}
-          />
-        </div>
+      <Form className="form-wrap" onSubmit={handleSubmit}>
+        <InputControl
+          required
+          label="Name"
+          id="feedbackName"
+          onChange={handleChange}
+          value={user.feedbackName}
+        />
+        <InputControl
+          required
+          label="Phone"
+          id="feedbackPhone"
+          onChange={handleChange}
+          mask="+38 (099) 999-99-99"
+          value={user.feedbackPhone}
+        />
+        <InputControl
+          rows={1}
+          type="textarea"
+          id="feedbackMessage"
+          placeholder="Message"
+          onChange={handleChange}
+          value={user.feedbackMessage}
+        />
         <button type="submit" className="custom-btn"><span>Send</span></button>
       </Form>
     </SectionLayout>
