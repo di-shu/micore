@@ -1,7 +1,7 @@
 import React from 'react'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../../Components'
+import { ImageWrapper, MyScrollAnimation, SectionDesc, SectionLayout, SectionTitle } from '../../../../Components'
 import { useDeviceDetect } from '../../../../Helpers'
 
 const SiteCrm = '/Assets/Images/Services/Other/SiteCrm.png'
@@ -15,12 +15,12 @@ const SitesConfigs = [
   { title: 'Сайт-каталог', image: SiteCatalog },
   { title: 'Портал', image: SitePortal },
   { title: 'CRM', image: SiteCrm },
-  { title: 'Логистика', image: SiteLogistic },
+  { title: 'Логистика', image: SiteLogistic }
 ]
 
 export const Sites = () => {
   const { mobile } = useDeviceDetect()
-  
+
   return (
     <SectionLayout id="other-sites">
       <Row>
@@ -28,16 +28,24 @@ export const Sites = () => {
           <Col key={`site_${index}`} className={`col-site-wrap${index % 2 !== 0 ? ' col-odd' : ''}`} xs={12}>
             <Row>
               <Col xs={12} md={6}>
-                <SectionTitle title={site.title} className="site-title" />
-                <SectionDesc className="site-desc" children={site.desc} display={!mobile} />
-                <ImageWrapper src={site.image} className="site-image" display={mobile} />
+                <MyScrollAnimation delay={[200, 400]}>
+                  <SectionTitle title={site.title} className="site-title"/>
+                  <SectionDesc className="site-desc" children={site.desc} display={!mobile}/>
+                </MyScrollAnimation>
+                <MyScrollAnimation animationName={index % 2 ? 'fadeInLeft' : 'fadeInRight'}>
+                  <ImageWrapper src={site.image} className="site-image" display={mobile}/>
+                </MyScrollAnimation>
               </Col>
               <Col xs={12} md={6}>
-                <ImageWrapper src={site.image} className="site-image" display={!mobile} />
-                <SectionDesc className="site-desc" children={site.desc} display={mobile} />
+                <MyScrollAnimation animationName={index % 2 ? 'fadeInLeft' : 'fadeInRight'}>
+                  <ImageWrapper src={site.image} className="site-image" display={!mobile}/>
+                </MyScrollAnimation>
+                <MyScrollAnimation>
+                  <SectionDesc className="site-desc" children={site.desc} display={mobile}/>
+                </MyScrollAnimation>
               </Col>
             </Row>
-            <ImageWrapper isDot className="site-dots" display={index + 1 !== SitesConfigs.length} />
+            <ImageWrapper isDot className="site-dots" display={index + 1 !== SitesConfigs.length}/>
           </Col>
         ))}
       </Row>

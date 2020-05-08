@@ -12,15 +12,14 @@ import MainWrapper from '../../src/Components/SectionsComponents/MainWrapper'
 import '~/Styles/Pages/Services/landing.scss'
 /*IMAGES*/
 const MainStatue = '/Assets/Images/Services/LandingPage/MainStatue.png'
-const TZ = '../../../../Assets/Images/Services/LandingPage/Icons/TZ.svg'
-const Design = '../../../../Assets/Images/Services/LandingPage/Icons/Design.svg'
-const Content = '../../../../Assets/Images/Services/LandingPage/Icons/Content.svg'
-const Develop = '../../../../Assets/Images/Services/LandingPage/Icons/Develop.svg'
-const Prototype = '../../../../Assets/Images/Services/LandingPage/Icons/Prototype.svg'
-const DogovoriTZ = '../../../../Assets/Images/Services/LandingPage/Icons/DogovoriTZ.svg'
-const ContentFill = '../../../../Assets/Images/Services/LandingPage/Icons/ContentFill.svg'
-const LoadSiteOnDomen = '../../../../Assets/Images/Services/LandingPage/Icons/LoadSiteOnDomen.svg'
-
+const TZ = '/Assets/Images/Services/LandingPage/Icons/TZ.svg'
+const Design = '/Assets/Images/Services/LandingPage/Icons/Design.svg'
+const Content = '/Assets/Images/Services/LandingPage/Icons/Content.svg'
+const Develop = '/Assets/Images/Services/LandingPage/Icons/Develop.svg'
+const Prototype = '/Assets/Images/Services/LandingPage/Icons/Prototype.svg'
+const DogovoriTZ = '/Assets/Images/Services/LandingPage/Icons/DogovoriTZ.svg'
+const ContentFill = '/Assets/Images/Services/LandingPage/Icons/ContentFill.svg'
+const LoadSiteOnDomen = '/Assets/Images/Services/LandingPage/Icons/LoadSiteOnDomen.svg'
 
 const LandingStages = [
   {

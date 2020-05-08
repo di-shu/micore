@@ -99,6 +99,11 @@
     .col-short-portfolio {
       padding: 0;
       margin-bottom: 0;
+      z-index: 3;
+    }
+
+    .short-portfolio-name {
+      font-size: 18px;
     }
 
     .section-dots-wrap {

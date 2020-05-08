@@ -98,7 +98,8 @@
     }
 
     .custom-btn {
-      max-width: 125px;
+      width: 125px;
+      min-width: 125px;
       margin-right: 0;
       margin-left: 0;
       padding: 6px 0;

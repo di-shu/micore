@@ -75,7 +75,7 @@ const StatueOptions = {
   posY: 'bottom',
   proportions: 'origin',
   offsetX: 45,
-  offsetY: 0
+  offsetY: 70
 }
 
 const Corporate = () => {

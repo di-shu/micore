@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useRouter } from 'next/router'
 import Form from 'react-bootstrap/Form'
 import { InputControl } from '../../Inputs'
-import { SectionLayout, SectionTitle } from '../../SectionsComponents'
+import { MyScrollAnimation, SectionLayout, SectionTitle } from '../../SectionsComponents'
 
 const InitUser = { feedbackName: '', feedbackPhone: '', feedbackMessage: '' }
 
@@ -37,32 +37,36 @@ export const ServiceFeedback = ({ title, content }) => {
   return (
     <SectionLayout id="service-feedback-section">
       {content}
-      <SectionTitle title={title} isContentWhite />
+      <MyScrollAnimation delay={[0]}>
+        <SectionTitle title={title} isContentWhite />
+      </MyScrollAnimation>
       <Form className="form-wrap" onSubmit={handleSubmit}>
-        <InputControl
-          required
-          label="Name"
-          id="feedbackName"
-          onChange={handleChange}
-          value={user.feedbackName}
-        />
-        <InputControl
-          required
-          label="Phone"
-          id="feedbackPhone"
-          onChange={handleChange}
-          mask="+38 (099) 999-99-99"
-          value={user.feedbackPhone}
-        />
-        <InputControl
-          rows={1}
-          type="textarea"
-          id="feedbackMessage"
-          placeholder="Message"
-          onChange={handleChange}
-          value={user.feedbackMessage}
-        />
-        <button type="submit" className="custom-btn"><span>Send</span></button>
+        <MyScrollAnimation delay={[200, 400, 600, 800, 1000]}>
+          <InputControl
+            required
+            label="Name"
+            id="feedbackName"
+            onChange={handleChange}
+            value={user.feedbackName}
+          />
+          <InputControl
+            required
+            label="Phone"
+            id="feedbackPhone"
+            onChange={handleChange}
+            mask="+38 (099) 999-99-99"
+            value={user.feedbackPhone}
+          />
+          <InputControl
+            rows={1}
+            type="textarea"
+            id="feedbackMessage"
+            placeholder="Message"
+            onChange={handleChange}
+            value={user.feedbackMessage}
+          />
+          <button type="submit" className="custom-btn"><span>Send</span></button>
+        </MyScrollAnimation>
       </Form>
     </SectionLayout>
   )

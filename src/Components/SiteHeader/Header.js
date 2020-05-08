@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { MenuContainer } from './Menu'
-import { ActiveLink } from '../SectionsComponents'
+import { ActiveLink, MyScrollAnimation } from '../SectionsComponents'
 /*IMAGES*/
 const Logo = '/Assets/Images/logo.svg'
 
@@ -29,11 +29,13 @@ export const Header = () => {
       <MenuContainer open={isMenuOpen} animation={isOpened}/>
       <header className="site-header">
         <div className="logo">
-          <ActiveLink link="/">
-            <img src={Logo} alt="Logo"/>
-          </ActiveLink>
+          <MyScrollAnimation animationName='fadeInLeft'>
+            <ActiveLink link="/">
+              <img src={Logo} alt="Logo"/>
+            </ActiveLink>
+          </MyScrollAnimation>
         </div>
-        <div className={`menu ${isOpened ? 'is-opened' : 'is-closed'}`} onClick={isMenuOpen ? closeMenu : openMenu}>
+        <div className={`menu ${isOpened ? 'is-opened' : 'is-closed'} animated fadeInRight`} onClick={isMenuOpen ? closeMenu : openMenu}>
           <span/>
           <span/>
           <span/>

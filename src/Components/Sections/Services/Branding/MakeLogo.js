@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { useDeviceDetect } from '../../../../Helpers'
-import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
+import { ImageWrapper, MyScrollAnimation, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 
 const LogoImage = '/Assets/Images/logo.svg'
 
@@ -74,19 +74,23 @@ export const MakeLogo = () => {
     <SectionLayout id="branding-make-logo" Header={() => <ImageWrapper isDot display={!minWidthLaptop} />}>
       <Row>
         <Col xs={12} lg={6}>
-          <SectionTitle title="Как разрабатывается логотип" isContentWhite />
-          <SectionDesc isContentWhite className="d-none d-lg-block"/>
-          <div className="making-logo-wrap d-flex d-lg-none">
-            <ImageWrapper src={selectedLetter} className={`logo-image ${isLastLetter ? 'active' : ''} ${startChange ? 'start-change' : ''}`} />
-            <button className={`custom-btn ${startChange ? 'hide' : ''}`} onClick={changeLetter}><span>Создать логотип</span></button>
-          </div>
+          <MyScrollAnimation delay={[200, 400, 600]}>
+            <SectionTitle title="Как разрабатывается логотип" isContentWhite />
+            <SectionDesc isContentWhite className="d-none d-lg-block"/>
+            <div className="making-logo-wrap d-flex d-lg-none">
+              <ImageWrapper src={selectedLetter} className={`logo-image ${isLastLetter ? 'active' : ''} ${startChange ? 'start-change' : ''}`} />
+              <button className={`custom-btn ${startChange ? 'hide' : ''}`} onClick={changeLetter}><span>Создать логотип</span></button>
+            </div>
+          </MyScrollAnimation>
         </Col>
         <Col xs={12} lg={6}>
-          <SectionDesc isContentWhite className="d-block d-lg-none"/>
-          <div className="making-logo-wrap d-none d-lg-flex">
-            <ImageWrapper src={selectedLetter} className={`logo-image ${isLastLetter ? 'active' : ''} ${startChange ? 'start-change' : ''}`} />
-            <button className={`custom-btn ${startChange ? 'hide' : ''}`} onClick={changeLetter}><span>Создать логотип</span></button>
-          </div>
+          <MyScrollAnimation delay={[200, 400]}>
+            <SectionDesc isContentWhite className="d-block d-lg-none"/>
+            <div className="making-logo-wrap d-none d-lg-flex">
+              <ImageWrapper src={selectedLetter} className={`logo-image ${isLastLetter ? 'active' : ''} ${startChange ? 'start-change' : ''}`} />
+              <button className={`custom-btn ${startChange ? 'hide' : ''}`} onClick={changeLetter}><span>Создать логотип</span></button>
+            </div>
+          </MyScrollAnimation>
         </Col>
       </Row>
     </SectionLayout>
