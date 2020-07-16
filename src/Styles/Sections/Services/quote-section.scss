@@ -10,10 +10,6 @@
 
   .quote-box {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 40px;
     border: 1px solid #979797;
     width: 100%;
@@ -49,28 +45,30 @@
   }
 
   .quote-text {
-    position: absolute;
-    top: 50%;
+    top: 0;
+    bottom: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    max-width: 90%;
-    margin: 0 auto;
-    color: #ffffff;
-    font-family: $museo-700;
-    font-size: 18px;
-    letter-spacing: 0.51px;
-    text-transform: uppercase;
-    text-align: center;
     opacity: 0;
-    transition: opacity .3s $timing-func 0s;
-
+    width: 100%;
+    color: #fff;
+    height: 160px;
+    margin: 0 auto;
+    max-width: 500px;
+    font-size: 18px;
+    display: flex;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 0.5px;
+    justify-content: center;
+    font-family: $museo-700;
+    text-transform: uppercase;
+    transform: translate(-50%, 0%);
+    transition: all .3s $timing-func 0s;
+  
     &.show {
-      position: relative;
-      top: 0;
-      left: 0;
-      transform: none;
       opacity: 1;
+      z-index: 5;
       transition-delay: 0.3s;
     }
   }

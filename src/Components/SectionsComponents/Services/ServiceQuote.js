@@ -21,9 +21,13 @@ export const ServiceQuote = ({ quotes }) => {
   return (
     <SectionLayout id="service-quote-section">
       <div className="quote-box">
-        <ImageWrapper src={QuoteCommas} className="quote-commas" />
+        <ImageWrapper src={QuoteCommas} className="quote-commas"/>
         <MyScrollAnimation delay={[0]}>
-          {quotes.map((quote, index) => <p key={`quote_${index}`} className={`quote-text ${index === randIndex ? 'show' : ''}`}>{quote}</p>)}
+          {quotes.map((quote, index) =>
+            <div key={`quote_${index}`} className={`quote-text ${index === 2 ? 'show' : ''}`}>
+              {quote}
+            </div>
+          )}
         </MyScrollAnimation>
       </div>
       <MyScrollAnimation delay={[200]}>

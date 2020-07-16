@@ -4,17 +4,17 @@ import Col from 'react-bootstrap/Col'
 import { useDeviceDetect } from '../../../../../Helpers'
 import { SectionLine } from '../../../../SectionsComponents/Projects'
 /* IMAGES */
-const AdaptationLogo = '../../Assets/images/ZlataProject/AdaptationLogo.png'
-const AdaptationLogoStreet = '../../Assets/images/ZlataProject/AdaptationLogoStreet.png'
+const AdaptationLogo = '../../images/ZlataProject/AdaptationLogo.png'
+const AdaptationLogoStreet = '../../images/ZlataProject/AdaptationLogoStreet.png'
 
 export const AdaptationHeader = () => {
   const { desktop } = useDeviceDetect()
-  
+
   return (
     <>
-      <SectionLine display={desktop} direction="top" />
-      <SectionLine display={desktop} direction="left" />
-      <SectionLine display={desktop} direction="bottom" />
+      <SectionLine display={desktop} direction="top"/>
+      <SectionLine display={desktop} direction="left"/>
+      <SectionLine display={desktop} direction="bottom"/>
       <Row className="logo-adaptation-container">
         <Col xs={6}>
           <div className="image-wrap logo-adaptation">

@@ -3,8 +3,8 @@ import { motion } from 'framer-motion'
 import { Layout } from './Layout'
 import { ProjectsList } from '../Config'
 import { FooterSection } from '../Sections'
-import { ProjectsNavigation } from './Projects'
 import { useCheckRoute } from '../../Helpers'
+import { ProjectsNavigation } from './Projects'
 /* STYLES */
 import '~/Styles/Static/fonts.scss'
 import '~/Styles/Static/general.scss'
@@ -39,7 +39,7 @@ const MainWrapper = ({ id, children }) => {
         >
           <ProjectsNavigation links={ProjectsList[0].content}/>
           {children}
-          {(isProject || isServices) && <FooterSection/>}
+          {(isProject || isServices) && <FooterSection animation/>}
         </motion.div>
       </main>
     </Layout>

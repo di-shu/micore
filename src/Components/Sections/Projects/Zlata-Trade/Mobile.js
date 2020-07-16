@@ -12,19 +12,19 @@ import {
 import { useDeviceDetect } from '../../../../Helpers'
 import { AdaptationAboutInfo } from './Config'
 /* IMAGES */
-const ZlataPhone = '../../Assets/images/ZlataProject/ZlataPhone.png'
-const ZlataDesktopXS = '../../Assets/images/ZlataProject/zlata_1_xs.png'
-const ZlataDesktopXL = '../../Assets/images/ZlataProject/zlata_1_xl.png'
+const ZlataPhone = '../../images/ZlataProject/ZlataPhone.png'
+const ZlataDesktopXS = '../../images/ZlataProject/zlata_1_xs.png'
+const ZlataDesktopXL = '../../images/ZlataProject/zlata_1_xl.png'
 
 export const Mobile = () => {
   const { mobile } = useDeviceDetect()
-  
+
   return (
     <SectionLayout id="zlata-mobile" wrap={false} Footer={() => <BottomNavigation/>}>
       <div className="mobile-adaptation">
         <Row className="mobile-adaptation-container">
           <Col xs={12} md={6}>
-            <ImageWrapper isDot className="mobile-dots" display={!mobile} />
+            <ImageWrapper isDot className="mobile-dots" display={!mobile}/>
             <ImageWrapper src={ZlataPhone} className="mobile-phone" display={!mobile} />
           </Col>
           <Col xs={12} md={6}>

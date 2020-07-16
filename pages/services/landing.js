@@ -1,25 +1,25 @@
 import React from 'react'
 import {
-  ServiceQuote,
-  ServiceTarget,
   ServiceFeedback,
-  ServiceWorkStages,
   ServiceMainSection,
+  ServicePriceMiscalculations,
+  ServiceQuote,
   ServiceShortPortfolio,
-  ServicePriceMiscalculations
+  ServiceTarget,
+  ServiceWorkStages
 } from '../../src/Components'
 import MainWrapper from '../../src/Components/SectionsComponents/MainWrapper'
 import '~/Styles/Pages/Services/landing.scss'
 /*IMAGES*/
-const MainStatue = '/Assets/images/Services/LandingPage/MainStatue.png'
-const TZ = '/Assets/images/Services/LandingPage/Icons/TZ.svg'
-const Design = '/Assets/images/Services/LandingPage/Icons/Design.svg'
-const Content = '/Assets/images/Services/LandingPage/Icons/Content.svg'
-const Develop = '/Assets/images/Services/LandingPage/Icons/Develop.svg'
-const Prototype = '/Assets/images/Services/LandingPage/Icons/Prototype.svg'
-const DogovoriTZ = '/Assets/images/Services/LandingPage/Icons/DogovoriTZ.svg'
-const ContentFill = '/Assets/images/Services/LandingPage/Icons/ContentFill.svg'
-const LoadSiteOnDomen = '/Assets/images/Services/LandingPage/Icons/LoadSiteOnDomen.svg'
+const MainStatue = '/images/Services/LandingPage/MainStatue.png'
+const TZ = '/images/Services/LandingPage/Icons/TZ.svg'
+const Design = '/images/Services/LandingPage/Icons/Design.svg'
+const Content = '/images/Services/LandingPage/Icons/Content.svg'
+const Develop = '/images/Services/LandingPage/Icons/Develop.svg'
+const Prototype = '/images/Services/LandingPage/Icons/Prototype.svg'
+const DogovoriTZ = '/images/Services/LandingPage/Icons/DogovoriTZ.svg'
+const ContentFill = '/images/Services/LandingPage/Icons/ContentFill.svg'
+const LoadSiteOnDomen = '/images/Services/LandingPage/Icons/LoadSiteOnDomen.svg'
 
 const LandingStages = [
   {

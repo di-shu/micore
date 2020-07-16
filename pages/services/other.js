@@ -1,11 +1,17 @@
 import React from 'react'
-import { ImageWrapper, ServiceFeedback, ServiceMainSection, ServicePriceMiscalculations, ServiceShortPortfolio } from '../../src/Components'
+import {
+  ImageWrapper,
+  ServiceFeedback,
+  ServiceMainSection,
+  ServicePriceMiscalculations,
+  ServiceShortPortfolio
+} from '../../src/Components'
 import { Sites } from '../../src/Components/Sections/Services/Other'
 import MainWrapper from '../../src/Components/SectionsComponents/MainWrapper'
 import '~/Styles/Pages/Services/other.scss'
 import { useDeviceDetect } from '../../src/Helpers'
 
-const MainStatue = '/Assets/images/Services/Other/MainStatue.png'
+const MainStatue = '/images/Services/Other/MainStatue.png'
 
 const OtherStages = [
   {

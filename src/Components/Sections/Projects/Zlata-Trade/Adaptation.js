@@ -1,10 +1,10 @@
 import React from 'react'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import { AdaptationHeader, AdaptationFooter } from './Config'
-import { SectionDesc, SectionTitle, SectionLayout } from '../../../SectionsComponents'
+import { AdaptationFooter, AdaptationHeader } from './Config'
+import { SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 /* IMAGES */
-const LogoSizes = '../../Assets/images/ZlataProject/LogoSizes.png'
+const LogoSizes = '../../images/ZlataProject/LogoSizes.png'
 
 export const Adaptation = () => {
   return (

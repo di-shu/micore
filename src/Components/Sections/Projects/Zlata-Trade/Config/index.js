@@ -1,8 +1,8 @@
-const PhoneIcon = '../../Assets/images/PhoneIcon.svg'
-const LaptopIcon = '../../Assets/images/LaptopIcon.svg'
-const TabletIcon = '../../Assets/images/TabletIcon.svg'
-const DesktopIcon = '../../Assets/images/DesktopIcon.svg'
-const BriefImg = '../../Assets/images/ZlataProject/Brief.png'
+const PhoneIcon = '../../images/PhoneIcon.svg'
+const LaptopIcon = '../../images/LaptopIcon.svg'
+const TabletIcon = '../../images/TabletIcon.svg'
+const DesktopIcon = '../../images/DesktopIcon.svg'
+const BriefImg = '../../images/ZlataProject/Brief.png'
 const ZlataClothes = '/images/ZlataProject/ZlataClothes.png'
 const BrandingSlide = '/images/ZlataProject/BrandingSlide.png'
 
