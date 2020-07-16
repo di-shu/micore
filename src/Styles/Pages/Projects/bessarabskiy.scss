@@ -1076,7 +1076,11 @@
     }
 
     .section-image-wrap {
-      height: 900px
+      height: 900px;
+  
+      img {
+        object-fit: cover;
+      }
     }
   }
 
