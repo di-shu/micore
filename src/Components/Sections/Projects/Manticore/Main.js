@@ -4,7 +4,7 @@ import { ImageWrapper, ProjectMainSection } from '../../../SectionsComponents'
 import dynamic from 'next/dynamic'
 const Sketch = dynamic(() => import('react-p5'), { ssr: false })
 /*IMAGES*/
-const MainImg = '/Assets/Images/ManticoreProject/MainStatue.png'
+const MainImg = '/images/ManticoreProject/MainStatue.png'
 
 const MainSectionFooterContent = () => {
   const { minWidthLaptop } = useDeviceDetect()

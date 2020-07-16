@@ -1,5 +1,5 @@
-const MacOpen = '/Assets/Images/ManticoreProject/MacOpen.png'
-const MacDefault = '/Assets/Images/ManticoreProject/MacDefault.png'
+const MacOpen = '/images/ManticoreProject/MacOpen.png'
+const MacDefault = '/images/ManticoreProject/MacDefault.png'
 
 export const ManticoreAboutInfo = [
   'Type something 1',

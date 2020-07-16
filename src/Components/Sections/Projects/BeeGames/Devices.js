@@ -1,8 +1,8 @@
 import React from 'react'
 import { ImageWrapper, SectionLayout } from '../../../SectionsComponents'
 /* IMAGES */
-const DesktopPC = '/Assets/Images/BeeGames/DesktopPC.png'
-const NintendoSwitch = '/Assets/Images/BeeGames/NintendoSwitch.png'
+const DesktopPC = '/images/BeeGames/DesktopPC.png'
+const NintendoSwitch = '/images/BeeGames/NintendoSwitch.png'
 
 export const Devices = () => {
   return (

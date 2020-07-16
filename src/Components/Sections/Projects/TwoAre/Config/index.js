@@ -1,4 +1,4 @@
-const SlideImg = '/Assets/Images/TwoAre/SlideImg.png'
+const SlideImg = '/images/TwoAre/SlideImg.png'
 
 export const TwoAreAboutInfo = [
   'Type something',

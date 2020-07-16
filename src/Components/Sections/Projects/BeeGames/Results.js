@@ -9,10 +9,10 @@ import {
   ProjectInfoWrap
 } from '../../../SectionsComponents'
 /* IMAGES */
-const HexBlack = '/Assets/Images/BeeGames/HexBlack.svg'
-const HexYellow = '/Assets/Images/BeeGames/HexYellow.svg'
-const Honeycomb = '/Assets/Images/BeeGames/Honeycomb.png'
-const FontExample = '/Assets/Images/BeeGames/FontExample.svg'
+const HexBlack = '/images/BeeGames/HexBlack.svg'
+const HexYellow = '/images/BeeGames/HexYellow.svg'
+const Honeycomb = '/images/BeeGames/Honeycomb.png'
+const FontExample = '/images/BeeGames/FontExample.svg'
 
 export const Results = () => {
   return (

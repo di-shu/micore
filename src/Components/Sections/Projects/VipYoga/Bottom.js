@@ -2,7 +2,7 @@ import React from 'react'
 import { BottomNavigation, ImageWrapper, SectionLayout, SectionSlider } from '../../../SectionsComponents'
 import { VipYogaSlides } from './Config'
 /*IMAGES*/
-const FooterImg = '/Assets/Images/VipYoga/FooterPhoto.png'
+const FooterImg = '/images/VipYoga/FooterPhoto.png'
 
 export const Bottom = () => {
   return (

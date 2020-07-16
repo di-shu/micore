@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col'
 import { AboutSiteInfo } from './Config'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle, TypeSomething } from '../../../../Components'
 /* IMAGES */
-const AboutSiteImage = '/Assets/Images/Marinist/AboutSite.png'
+const AboutSiteImage = '/images/Marinist/AboutSite.png'
 
 export const AboutSite = () => {
   return (

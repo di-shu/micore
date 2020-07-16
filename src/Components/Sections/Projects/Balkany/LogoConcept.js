@@ -9,7 +9,7 @@ import {
   SectionTitle
 } from '../../../SectionsComponents'
 /* IMAGES */
-const LogoStory = '/Assets/Images/Balkany/LogoStory.png'
+const LogoStory = '/images/Balkany/LogoStory.png'
 
 export const LogoConcept = () => {
   return (

@@ -10,7 +10,7 @@ import {
 } from '../../../SectionsComponents'
 import { AtticAboutSiteInfo } from './Config'
 /* IMAGES */
-const AboutSiteImg = '/Assets/Images/Attic/AboutSite.png'
+const AboutSiteImg = '/images/Attic/AboutSite.png'
 
 export const AboutSite = () => {
   return (

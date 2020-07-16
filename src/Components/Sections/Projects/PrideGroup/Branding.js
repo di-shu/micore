@@ -2,7 +2,7 @@ import React from 'react'
 import { PrideGroupSlides } from './Config'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionSlider, SectionTitle, SectionWrapper } from '../../../SectionsComponents'
 /*IMAGES*/
-const BrandingBG = '/Assets/Images/PrideGroup/BrandingBG.png'
+const BrandingBG = '/images/PrideGroup/BrandingBG.png'
 
 export const Branding = () => {
   return (

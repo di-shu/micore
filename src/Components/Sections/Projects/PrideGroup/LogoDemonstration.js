@@ -1,7 +1,7 @@
 import React from 'react'
 import { ImageWrapper, SectionLayout } from '../../../SectionsComponents'
 /*IMAGES*/
-const MainLogoBlack = '/Assets/Images/PrideGroup/MainLogoBlack.svg'
+const MainLogoBlack = '/images/PrideGroup/MainLogoBlack.svg'
 
 export const LogoDemonstration = () => {
   return (

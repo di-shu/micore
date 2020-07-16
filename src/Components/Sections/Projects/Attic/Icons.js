@@ -9,7 +9,7 @@ import {
 } from '../../../SectionsComponents'
 import { AtticIcons } from './Config'
 /* IMAGES */
-const ElephantImg = '/Assets/Images/Attic/Elephant.png'
+const ElephantImg = '/images/Attic/Elephant.png'
 
 export const Icons = () => {
   return (

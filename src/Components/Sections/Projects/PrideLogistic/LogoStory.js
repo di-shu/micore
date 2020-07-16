@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
 /* IMAGES */
-const LogoDesign = '/Assets/Images/PrideLogistic/LogoDesign.svg'
+const LogoDesign = '/images/PrideLogistic/LogoDesign.svg'
 
 export const LogoStory = () => {
   const { mobile, tablet, laptop, desktop } = useDeviceDetect()

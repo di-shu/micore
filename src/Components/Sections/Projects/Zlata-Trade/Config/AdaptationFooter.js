@@ -2,8 +2,8 @@ import React from 'react'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 /* IMAGES */
-const DescriptionLogo = '../../Assets/Images/ZlataProject/LogoWithDescription.png'
-const DescriptionLogoStreet = '../../Assets/Images/ZlataProject/LogoStreetWithDescription.png'
+const DescriptionLogo = '../../Assets/images/ZlataProject/LogoWithDescription.png'
+const DescriptionLogoStreet = '../../Assets/images/ZlataProject/LogoStreetWithDescription.png'
 
 export const AdaptationFooter = () => {
   return (

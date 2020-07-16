@@ -4,11 +4,11 @@ import Col from 'react-bootstrap/Col'
 import { BottomNavigation, ImageWrapper, SectionDesc, SectionLayout, SectionTitle, SectionWrapper } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
 /* IMAGES */
-const TShirt = '/Assets/Images/Gastrobar/TShirt.png'
-const Hand = '/Assets/Images/Gastrobar/HandIcon.svg'
-const Artbook = '/Assets/Images/Gastrobar/Artbook.png'
-const Pattern = '/Assets/Images/Gastrobar/PatternBG.png'
-const LogoGrill = '/Assets/Images/Gastrobar/LogoGrill.svg'
+const TShirt = '/images/Gastrobar/TShirt.png'
+const Hand = '/images/Gastrobar/HandIcon.svg'
+const Artbook = '/images/Gastrobar/Artbook.png'
+const Pattern = '/images/Gastrobar/PatternBG.png'
+const LogoGrill = '/images/Gastrobar/LogoGrill.svg'
 
 const SymbolContentFooter = () => {
   const { mobile } = useDeviceDetect()

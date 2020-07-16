@@ -1,7 +1,7 @@
 import React from 'react'
 import { BottomNavigation, ImageWrapper, SectionDesc, SectionLayout } from '../../../SectionsComponents'
 /* IMAGES */
-const BeeGamesPC = '/Assets/Images/BeeGames/BeeGameDesktopPC.png'
+const BeeGamesPC = '/images/BeeGames/BeeGameDesktopPC.png'
 
 export const Last = () => {
   return (

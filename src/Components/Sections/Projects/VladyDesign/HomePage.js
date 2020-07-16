@@ -9,14 +9,14 @@ import {
 } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
 /* IMAGES */
-const Plan = '/Assets/Images/VladyDesign/VladyPlanLook.png'
-const Pages = '/Assets/Images/VladyDesign/VladyPagesLook.png'
-const Flowers = '/Assets/Images/VladyDesign/VladyFlowers.png'
-const VladyMac = '/Assets/Images/VladyDesign/VladyMacLook.png'
-const Mobile = '/Assets/Images/VladyDesign/VladyMobileLook.png'
-const VladyTablet = '/Assets/Images/VladyDesign/VladyTabletLook.png'
-const VladyDesktop = '/Assets/Images/VladyDesign/VladyDesktopLook.png'
-const ShadowFlowers = '/Assets/Images/VladyDesign/VladyFlowersWithShadow.png'
+const Plan = '/images/VladyDesign/VladyPlanLook.png'
+const Pages = '/images/VladyDesign/VladyPagesLook.png'
+const Flowers = '/images/VladyDesign/VladyFlowers.png'
+const VladyMac = '/images/VladyDesign/VladyMacLook.png'
+const Mobile = '/images/VladyDesign/VladyMobileLook.png'
+const VladyTablet = '/images/VladyDesign/VladyTabletLook.png'
+const VladyDesktop = '/images/VladyDesign/VladyDesktopLook.png'
+const ShadowFlowers = '/images/VladyDesign/VladyFlowersWithShadow.png'
 
 const VladyDesignFooterContent = () => {
   const { desktop } = useDeviceDetect()

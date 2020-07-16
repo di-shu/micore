@@ -6,11 +6,11 @@ import Form from 'react-bootstrap/Form'
 import Container from 'react-bootstrap/Container'
 import { InputControl } from '../Inputs'
 import { ImageWrapper, SectionTitle, SocialsWrap } from '../SectionsComponents'
-import { useDeviceDetect, useScroll } from '../../Helpers'
+import { useDeviceDetect } from '../../Helpers'
 /* IMAGES */
-const MapMarker = '/Assets/Images/map-marker.svg'
-const FooterLogo = '/Assets/Images/footer-logo.svg'
-const ContactHand = '/Assets/Images/contact-hand.png'
+const MapMarker = '/images/map-marker.svg'
+const FooterLogo = '/images/footer-logo.svg'
+const ContactHand = '/images/contact-hand.png'
 
 const InitValues = { name: '', phone: '', message: '' }
 
@@ -38,7 +38,6 @@ const FormInputs = [
 export const FooterSection = ({ isContact, animation }) => {
   const [values, setValues] = useState(InitValues)
   const { pathname } = useRouter()
-  const { isBottom } = useScroll()
   const { mobile, desktop, minWidthLaptop } = useDeviceDetect()
 
   const handleSubmit = (e) => {
@@ -62,12 +61,12 @@ export const FooterSection = ({ isContact, animation }) => {
   }
 
   return (
-    <section id="footer-section" className={`${!isBottom ? 'section' : ''} ${isBottom ? 'active' : ''} ${!isContact ? 'footer-section' : 'active'}`}>
-      <div className={`container-wrap ${animation || isBottom ? 'on-enter' : 'on-leave'}`}>
+    <section id="footer-section" className={`section ${!isContact ? 'footer-section' : 'active'}`}>
+      <div className={`container-wrap ${animation ? 'on-enter' : 'on-leave'}`}>
         {isContact && minWidthLaptop && (
           <ImageWrapper src={ContactHand} className="image-wrap"/>
         )}
-        <Container className={`section-container ${isBottom ? 'on-enter' : 'on-leave'}`}>
+        <Container className="section-container">
           <Row>
             <Col xs={12} lg={6} xl={isContact ? 6 : 8}>
               <Form className="form-wrap" onSubmit={handleSubmit}>

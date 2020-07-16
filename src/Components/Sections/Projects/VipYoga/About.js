@@ -3,8 +3,8 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 /*IMAGES*/
-const Logo = '/Assets/Images/VipYoga/Logo.svg'
-const AboutImg = '/Assets/Images/VipYoga/About.png'
+const Logo = '/images/VipYoga/Logo.svg'
+const AboutImg = '/images/VipYoga/About.png'
 
 export const About = () => {
   return (

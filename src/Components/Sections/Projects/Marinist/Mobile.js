@@ -3,8 +3,8 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { BottomNavigation, ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 /*IMAGES*/
-const iPhoneX = '/Assets/Images/Marinist/iPhoneX.png'
-const WavesPattern = '/Assets/Images/Marinist/WavesPattern.png'
+const iPhoneX = '/images/Marinist/iPhoneX.png'
+const WavesPattern = '/images/Marinist/WavesPattern.png'
 
 const SectionHeader = () => <ImageWrapper src={WavesPattern} className="waves-pattern" />
 const SectionFooter = () => <BottomNavigation />

@@ -216,6 +216,7 @@
     
     .about-main-statue {
       transform: translateY(0);
+      height: calc(100vh + 250px);
   
       &.on-enter {
         animation: indian-girl-on-first-load 0.5s $timing-func 0.2s both;
@@ -223,6 +224,10 @@
   
       &.on-leave {
         animation: indian-girl-on-leave 0.5s $timing-func 0.2s both;
+      }
+
+      img {
+        object-fit: contain;
       }
     }
   }

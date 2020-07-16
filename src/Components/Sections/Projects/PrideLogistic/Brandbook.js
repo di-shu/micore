@@ -3,7 +3,7 @@ import { PrideBrandbook } from './Config'
 import { useDeviceDetect } from '../../../../Helpers'
 import { FlipBook, ImageWrapper, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 /* IMAGES */
-const Car = '/Assets/Images/PrideLogistic/LogoCar.png'
+const Car = '/images/PrideLogistic/LogoCar.png'
 
 export const Brandbook = () => {
   const { laptop, desktop } = useDeviceDetect()

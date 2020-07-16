@@ -4,10 +4,10 @@ import Row from 'react-bootstrap/Row'
 import { useDeviceDetect } from '../../../../Helpers'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 /* IMAGES */
-const HexYellow = '/Assets/Images/BeeGames/HexYellow.svg'
-const Honeycomb = '/Assets/Images/BeeGames/Honeycomb.png'
-const DesktopSite = '/Assets/Images/BeeGames/DesktopSite.png'
-const Examples = '/Assets/Images/BeeGames/BeeGamesExamples.png'
+const HexYellow = '/images/BeeGames/HexYellow.svg'
+const Honeycomb = '/images/BeeGames/Honeycomb.png'
+const DesktopSite = '/images/BeeGames/DesktopSite.png'
+const Examples = '/images/BeeGames/BeeGamesExamples.png'
 
 export const HomePage = () => {
   const { mobile } = useDeviceDetect()

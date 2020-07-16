@@ -8,10 +8,10 @@ import {
 } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
 /* IMAGES */
-const iPhone = '/Assets/Images/Bessarabkiy/iPhone.png'
-const FooterShape = '/Assets/Images/Bessarabkiy/FooterShape.svg'
-const MobilePages = '/Assets/Images/Bessarabkiy/MobilePages.png'
-const DesktopPages = '/Assets/Images/Bessarabkiy/DesktopPages.png'
+const iPhone = '/images/Bessarabkiy/iPhone.png'
+const FooterShape = '/images/Bessarabkiy/FooterShape.svg'
+const MobilePages = '/images/Bessarabkiy/MobilePages.png'
+const DesktopPages = '/images/Bessarabkiy/DesktopPages.png'
 
 const SectionFooter = () => (
   <div className="bottom-wrapper">

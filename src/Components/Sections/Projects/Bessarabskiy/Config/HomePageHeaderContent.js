@@ -4,9 +4,9 @@ import Col from 'react-bootstrap/Col'
 import { useDeviceDetect } from '../../../../../Helpers'
 import { ImageWrapper, SectionDesc, SectionTitle, SectionWrapper } from '../../../../SectionsComponents'
 /*IMAGES*/
-const Broccoli = '/Assets/Images/Bessarabkiy/Broccoli.png'
-const PageScreen1 = '/Assets/Images/Bessarabkiy/PageScreen.png'
-const PageScreen2 = '/Assets/Images/Bessarabkiy/PageScreen2.png'
+const Broccoli = '/images/Bessarabkiy/Broccoli.png'
+const PageScreen1 = '/images/Bessarabkiy/PageScreen.png'
+const PageScreen2 = '/images/Bessarabkiy/PageScreen2.png'
 
 export const HomePageHeaderContent = () => {
   const { minWidthLaptop } = useDeviceDetect()

@@ -1,6 +1,6 @@
-const fbIcon = '/Assets/Images/facebook.svg'
-const instIcon = '/Assets/Images/instagram.svg'
-const beIcon = '/Assets/Images/behance.svg'
+const fbIcon = '/images/facebook.svg'
+const instIcon = '/images/instagram.svg'
+const beIcon = '/images/behance.svg'
 
 export const Socials = [
   {

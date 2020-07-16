@@ -2,8 +2,8 @@ import React from 'react'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionSlider, SectionTitle, SectionWrapper } from '../../../SectionsComponents'
 import { GastrobarBrandingSlides } from './Config'
 /*IMAGES*/
-const Pattern = '/Assets/Images/Gastrobar/PatternBG.png'
-const BrandingBG = '/Assets/Images/Gastrobar/BrandingBG.png'
+const Pattern = '/images/Gastrobar/PatternBG.png'
+const BrandingBG = '/images/Gastrobar/BrandingBG.png'
 
 export const Branding = () => {
   return (

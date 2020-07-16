@@ -11,9 +11,9 @@ import {
 import { AtticMobile } from './index'
 import { useDeviceDetect } from '../../../../../Helpers'
 /* IMAGES */
-const FooterHands = '/Assets/Images/Attic/FooterHands.png'
-const FooterHandFirst = '/Assets/Images/Attic/FooterHandFirst.png'
-const FooterHandSecond = '/Assets/Images/Attic/FooterHandSecond.png'
+const FooterHands = '/images/Attic/FooterHands.png'
+const FooterHandFirst = '/images/Attic/FooterHandFirst.png'
+const FooterHandSecond = '/images/Attic/FooterHandSecond.png'
 
 export const SectionFooter = () => {
   const { mobile } = useDeviceDetect()

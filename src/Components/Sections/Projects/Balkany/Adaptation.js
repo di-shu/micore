@@ -11,7 +11,7 @@ import {
 import { useDeviceDetect } from '../../../../Helpers'
 import { AdaptationInfo } from './Config'
 /* IMAGES */
-const Phone = '/Assets/Images/Balkany/AdaptationPhone.png'
+const Phone = '/images/Balkany/AdaptationPhone.png'
 
 export const Adaptation = () => {
   const { mobile } = useDeviceDetect()

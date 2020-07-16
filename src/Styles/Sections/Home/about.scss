@@ -220,7 +220,8 @@
     }
 
     .about-statue {
-      width: 800px;
+      width: auto;
+      height: 85vh;
       bottom: 0;
       right: -110px;
 
@@ -230,6 +231,10 @@
 
       &.on-leave {
         animation: statue-about-on-leave 1s $timing-func 0s both;
+      }
+
+      img {
+        object-fit: contain;
       }
     }
 

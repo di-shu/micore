@@ -1,7 +1,7 @@
 import React from 'react'
 import { ImageWrapper, SectionLayout } from '../../../SectionsComponents'
 /* IMAGES */
-const LogoFull = '/Assets/Images/Marinist/LogoFull.png'
+const LogoFull = '/images/Marinist/LogoFull.png'
 
 const SectionHeader = () => <ImageWrapper isDot />
 

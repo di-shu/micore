@@ -10,7 +10,7 @@ import {
 } from '../../../SectionsComponents'
 import { BrandingContent } from './Config'
 /*IMAGES*/
-const BodyImg = '/Assets/Images/VipYoga/Body.png'
+const BodyImg = '/images/VipYoga/Body.png'
 
 export const Branding = () => {
   return (

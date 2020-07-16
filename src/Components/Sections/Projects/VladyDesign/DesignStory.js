@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
 /* IMAGES */
-const VladyLogo = '/Assets/Images/VladyDesign/VladyLogo.svg'
+const VladyLogo = '/images/VladyDesign/VladyLogo.svg'
 
 export const DesignStory = () => {
   const { minWidthLaptop } = useDeviceDetect()

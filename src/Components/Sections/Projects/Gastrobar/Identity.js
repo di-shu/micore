@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col'
 import { GastroBarIdentityInfo } from './Config'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle, TypeSomething } from '../../../SectionsComponents'
 /*IMAGES*/
-const Pattern = '/Assets/Images/Gastrobar/PatternBG.png'
+const Pattern = '/images/Gastrobar/PatternBG.png'
 
 export const Identity = () => {
   return (

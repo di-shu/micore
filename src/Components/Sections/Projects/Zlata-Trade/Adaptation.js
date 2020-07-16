@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col'
 import { AdaptationHeader, AdaptationFooter } from './Config'
 import { SectionDesc, SectionTitle, SectionLayout } from '../../../SectionsComponents'
 /* IMAGES */
-const LogoSizes = '../../Assets/Images/ZlataProject/LogoSizes.png'
+const LogoSizes = '../../Assets/images/ZlataProject/LogoSizes.png'
 
 export const Adaptation = () => {
   return (

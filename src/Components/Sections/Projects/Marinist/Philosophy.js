@@ -3,8 +3,8 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 /* IMAGES */
-const Water = '/Assets/Images/Marinist/Water.png'
-const LogoMinimized = '/Assets/Images/Marinist/LogoMinimized.svg'
+const Water = '/images/Marinist/Water.png'
+const LogoMinimized = '/images/Marinist/LogoMinimized.svg'
 
 export const Philosophy = () => {
   return (

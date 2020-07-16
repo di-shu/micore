@@ -4,8 +4,8 @@ import Col from 'react-bootstrap/Col'
 import { useDeviceDetect } from '../../../../../Helpers'
 import { SectionLine } from '../../../../SectionsComponents/Projects'
 /* IMAGES */
-const AdaptationLogo = '../../Assets/Images/ZlataProject/AdaptationLogo.png'
-const AdaptationLogoStreet = '../../Assets/Images/ZlataProject/AdaptationLogoStreet.png'
+const AdaptationLogo = '../../Assets/images/ZlataProject/AdaptationLogo.png'
+const AdaptationLogoStreet = '../../Assets/images/ZlataProject/AdaptationLogoStreet.png'
 
 export const AdaptationHeader = () => {
   const { desktop } = useDeviceDetect()

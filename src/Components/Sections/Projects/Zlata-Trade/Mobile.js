@@ -12,9 +12,9 @@ import {
 import { useDeviceDetect } from '../../../../Helpers'
 import { AdaptationAboutInfo } from './Config'
 /* IMAGES */
-const ZlataPhone = '../../Assets/Images/ZlataProject/ZlataPhone.png'
-const ZlataDesktopXS = '../../Assets/Images/ZlataProject/zlata_1_xs.png'
-const ZlataDesktopXL = '../../Assets/Images/ZlataProject/zlata_1_xl.png'
+const ZlataPhone = '../../Assets/images/ZlataProject/ZlataPhone.png'
+const ZlataDesktopXS = '../../Assets/images/ZlataProject/zlata_1_xs.png'
+const ZlataDesktopXL = '../../Assets/images/ZlataProject/zlata_1_xl.png'
 
 export const Mobile = () => {
   const { mobile } = useDeviceDetect()

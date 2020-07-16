@@ -165,6 +165,7 @@
     .statue-wrap {
       isolation: isolate;
       max-width: 500px;
+      height: 85vh;
 
       &.on-enter {
         animation: statue-on-enter 1s $timing-func 0s both;
@@ -172,6 +173,10 @@
 
       &.on-leave {
         animation: statue-on-leave 1s $timing-func 0s both;
+      }
+
+      .statue {
+        object-fit: contain;
       }
     }
 

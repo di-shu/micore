@@ -3,10 +3,10 @@ import { HomePageHeaderContent } from './Config'
 import { useDeviceDetect } from '../../../../Helpers'
 import { SectionDesc, ImageWrapper, SectionTitle, SectionLayout } from '../../../../Components'
 /* IMAGES */
-const Pepper = '/Assets/Images/Bessarabkiy/Pepper.png'
-const Menu = '/Assets/Images/Bessarabkiy/MenuPage.png'
-const Basket = '/Assets/Images/Bessarabkiy/BasketPage.png'
-const Reservation = '/Assets/Images/Bessarabkiy/Reservation.png'
+const Pepper = '/images/Bessarabkiy/Pepper.png'
+const Menu = '/images/Bessarabkiy/MenuPage.png'
+const Basket = '/images/Bessarabkiy/BasketPage.png'
+const Reservation = '/images/Bessarabkiy/Reservation.png'
 
 export const HomePage = () => {
   const { minWidthLaptop } = useDeviceDetect()

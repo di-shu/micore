@@ -2,8 +2,8 @@ import React from 'react'
 import { ProjectMainSection } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
 /*IMAGES*/
-const MainBGMobile = '/Assets/Images/VipYoga/MainBGMobile.png'
-const MainBGDesktop = '/Assets/Images/VipYoga/MainBGDesktop.png'
+const MainBGMobile = '/images/VipYoga/MainBGMobile.png'
+const MainBGDesktop = '/images/VipYoga/MainBGDesktop.png'
 
 export const Main = () => {
   const { mobile, minWidthLaptop } = useDeviceDetect()

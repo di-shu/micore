@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 /*IMAGES*/
-const DuetImg = '/Assets/Images/TwoAre/DJDuet.png'
+const DuetImg = '/images/TwoAre/DJDuet.png'
 
 export const AboutDuet = () => {
   return (

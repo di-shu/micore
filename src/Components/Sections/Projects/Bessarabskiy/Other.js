@@ -9,7 +9,7 @@ import {
   ProjectInfoWrap
 } from '../../../SectionsComponents'
 /*IMAGES*/
-const Napkins = '/Assets/Images/Bessarabkiy/BessarabskiyNapkins.png'
+const Napkins = '/images/Bessarabkiy/BessarabskiyNapkins.png'
 
 export const Other = () => (
   <SectionLayout id="bessarabskiy-other" Footer={() => <ImageWrapper src={Napkins}/>}>

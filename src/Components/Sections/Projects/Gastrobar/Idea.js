@@ -3,10 +3,10 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle, SectionWrapper } from '../../../SectionsComponents'
 /*IMAGES*/
-const Logo = '/Assets/Images/Gastrobar/Logo.png'
-const Grill = '/Assets/Images/Gastrobar/Grill.png'
-const Pattern = '/Assets/Images/Gastrobar/PatternBG.png'
-const GraphiteBG = '/Assets/Images/Gastrobar/GraphiteBG.png'
+const Logo = '/images/Gastrobar/Logo.png'
+const Grill = '/images/Gastrobar/Grill.png'
+const Pattern = '/images/Gastrobar/PatternBG.png'
+const GraphiteBG = '/images/Gastrobar/GraphiteBG.png'
 
 const IdeaFooterContent = () => {
   return (

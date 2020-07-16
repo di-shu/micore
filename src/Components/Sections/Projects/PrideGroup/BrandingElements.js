@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row'
 import { BrandingAdditionalInfo } from './Config'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle, TypeSomething } from '../../../SectionsComponents'
 /*IMAGES*/
-const Landscape = '/Assets/Images/PrideGroup/Landscape.png'
+const Landscape = '/images/PrideGroup/Landscape.png'
 
 export const BrandingElements = () => {
   return (

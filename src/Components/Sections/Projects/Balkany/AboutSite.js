@@ -6,8 +6,8 @@ import {
   SectionTitle
 } from '../../../SectionsComponents'
 /* IMAGES */
-const Devices = '/Assets/Images/Balkany/BalkanyDevices.png'
-const AboutSiteImg = '/Assets/Images/Balkany/AboutSiteImage.png'
+const Devices = '/images/Balkany/BalkanyDevices.png'
+const AboutSiteImg = '/images/Balkany/AboutSiteImage.png'
 
 export const AboutSite = () => {
   return (

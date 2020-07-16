@@ -3,7 +3,7 @@ import { ProjectAboutSection, ImageWrapper } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
 import { AboutInfo } from './Config'
 /* IMAGES */
-const BlurBall = '/Assets/Images/Balkany/BlurBall.png'
+const BlurBall = '/images/Balkany/BlurBall.png'
 
 export const About = () => {
   const { desktop } = useDeviceDetect()

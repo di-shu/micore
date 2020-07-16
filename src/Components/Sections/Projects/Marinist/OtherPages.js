@@ -2,9 +2,9 @@ import React from 'react'
 import { useDeviceDetect } from '../../../../Helpers'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 /*IMAGES*/
-const WavesPattern = '/Assets/Images/Marinist/WavesPattern.png'
-const OtherPagesImage = '/Assets/Images/Marinist/OtherPages.png'
-const OtherPagesMobile = '/Assets/Images/Marinist/OtherPagesMobile.png'
+const WavesPattern = '/images/Marinist/WavesPattern.png'
+const OtherPagesImage = '/images/Marinist/OtherPages.png'
+const OtherPagesMobile = '/images/Marinist/OtherPagesMobile.png'
 
 const SectionHeader = () => <ImageWrapper src={WavesPattern} className="waves-pattern" />
 

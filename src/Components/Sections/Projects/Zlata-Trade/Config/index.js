@@ -1,10 +1,10 @@
-const PhoneIcon = '../../Assets/Images/PhoneIcon.svg'
-const LaptopIcon = '../../Assets/Images/LaptopIcon.svg'
-const TabletIcon = '../../Assets/Images/TabletIcon.svg'
-const DesktopIcon = '../../Assets/Images/DesktopIcon.svg'
-const BriefImg = '../../Assets/Images/ZlataProject/Brief.png'
-const ZlataClothes = '/Assets/Images/ZlataProject/ZlataClothes.png'
-const BrandingSlide = '/Assets/Images/ZlataProject/BrandingSlide.png'
+const PhoneIcon = '../../Assets/images/PhoneIcon.svg'
+const LaptopIcon = '../../Assets/images/LaptopIcon.svg'
+const TabletIcon = '../../Assets/images/TabletIcon.svg'
+const DesktopIcon = '../../Assets/images/DesktopIcon.svg'
+const BriefImg = '../../Assets/images/ZlataProject/Brief.png'
+const ZlataClothes = '/images/ZlataProject/ZlataClothes.png'
+const BrandingSlide = '/images/ZlataProject/BrandingSlide.png'
 
 export const BriefList = [
   {

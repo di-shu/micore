@@ -16,7 +16,7 @@ export const Colors = () => {
 
   return (
     <SectionLayout id="marinist-colors">
-      <SectionTitle title={desktop ? 'Colors & Fonts' : 'Colors'} />
+      <SectionTitle title={desktop ? 'Colors & fonts' : 'Colors'} />
       <Row className="row-color-wrap">
         <Col xs={12} lg={6}>
           <ProjectColor colors={MarinistColors} />

@@ -13,10 +13,13 @@
     "autoprefixer": "^9.7.5",
     "framer-motion": "^1.8.4",
     "gsap": "^3.2.6",
+    "image-trace-loader": "^1.0.2",
     "jquery": "^3.4.1",
     "next": "9.2.2",
     "next-compose-plugins": "^2.2.0",
     "next-fonts": "^1.0.3",
+    "next-images": "^1.4.0",
+    "next-optimized-images": "^2.6.1",
     "next-transpile-modules": "^3.2.0",
     "node-sass": "^4.13.1",
     "postcss": "^7.0.27",
@@ -33,7 +36,8 @@
     "react-text-mask": "^5.4.3",
     "styled-components": "^5.0.1",
     "styled-jsx-plugin-sass": "^1.0.0",
-    "turn.js": "^1.0.5"
+    "turn.js": "^1.0.5",
+    "webp-loader": "^0.6.0"
   },
   "browserslist": [
     ">0.3%",

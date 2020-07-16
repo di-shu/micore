@@ -3,8 +3,8 @@ import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 /*IMAGES*/
-const Lion = '/Assets/Images/PrideGroup/Lion.png'
-const Landscape = '/Assets/Images/PrideGroup/Landscape.png'
+const Lion = '/images/PrideGroup/Lion.png'
+const Landscape = '/images/PrideGroup/Landscape.png'
 
 export const Philosophy = () => {
   return (

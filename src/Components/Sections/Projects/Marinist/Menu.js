@@ -1,7 +1,7 @@
 import React from 'react'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 /*IMAGES*/
-const MenuImage = '/Assets/Images/Marinist/Menu.png'
+const MenuImage = '/images/Marinist/Menu.png'
 
 export const Menu = () => {
   return (

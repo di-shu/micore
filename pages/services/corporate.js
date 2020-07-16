@@ -11,13 +11,13 @@ import {
 import MainWrapper from '../../src/Components/SectionsComponents/MainWrapper'
 import '~/Styles/Pages/Services/corporate.scss'
 /*IMAGES*/
-const MainStatue = '/Assets/Images/Services/Corporate/MainStatue.png'
-const Briefing = '/Assets/Images/Services/Branding/Icons/Brifing.svg'
-const Miscalculation = '/Assets/Images/Services/Branding/Icons/Miscalculation.svg'
-const ActBrief = '/Assets/Images/Services/Branding/Icons/ActBrief.svg'
-const Creating = '/Assets/Images/Services/Branding/Icons/Creating.svg'
-const FormStyle = '/Assets/Images/Services/Branding/Icons/FormStyle.svg'
-const Sources = '/Assets/Images/Services/Branding/Icons/Sources.svg'
+const MainStatue = '/Assets/images/Services/Corporate/MainStatue.png'
+const Briefing = '/Assets/images/Services/Branding/Icons/Brifing.svg'
+const Miscalculation = '/Assets/images/Services/Branding/Icons/Miscalculation.svg'
+const ActBrief = '/Assets/images/Services/Branding/Icons/ActBrief.svg'
+const Creating = '/Assets/images/Services/Branding/Icons/Creating.svg'
+const FormStyle = '/Assets/images/Services/Branding/Icons/FormStyle.svg'
+const Sources = '/Assets/images/Services/Branding/Icons/Sources.svg'
 
 const CorporateStages = [
   {

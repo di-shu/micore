@@ -6,8 +6,8 @@ import { useDeviceDetect } from '../../Helpers'
 import { ImageWrapper } from '../SectionsComponents'
 
 const Slider = dynamic(() => import('react-slick'), { ssr: false })
-const Logo = '/Assets/Images/logo.png'
-const CollapseArrow = '/Assets/Images/About/modal-collapse-arrow.png'
+const Logo = '/images/logo.png'
+const CollapseArrow = '/images/About/modal-collapse-arrow.png'
 
 const CustomNextArrow = (props) => {
   const { className, onClick } = props

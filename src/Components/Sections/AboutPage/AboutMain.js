@@ -7,7 +7,7 @@ import { ImageWrapper, SectionDesc, SectionTitle } from '../../SectionsComponent
 /* STYLES */
 import '~/Styles/Sections/About/main.scss'
 /* IMAGES */
-const IndianGirl = '/Assets/Images/About/Indian_Girl.png'
+const IndianGirl = '/images/About/Indian_Girl.png'
 
 export const AboutMain = ({ firstLoad, animation }) => {
   return (

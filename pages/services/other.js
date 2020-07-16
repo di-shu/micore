@@ -5,7 +5,7 @@ import MainWrapper from '../../src/Components/SectionsComponents/MainWrapper'
 import '~/Styles/Pages/Services/other.scss'
 import { useDeviceDetect } from '../../src/Helpers'
 
-const MainStatue = '/Assets/Images/Services/Other/MainStatue.png'
+const MainStatue = '/Assets/images/Services/Other/MainStatue.png'
 
 const OtherStages = [
   {

@@ -1,5 +1,5 @@
-const Vadique = '/Assets/Images/About/Vadique.png'
-const TeamImage = '/Assets/Images/About/Team_photo.png'
+const Vadique = '/images/About/Vadique.png'
+const TeamImage = '/images/About/Team_photo.png'
 
 export const TeamList = [
   {

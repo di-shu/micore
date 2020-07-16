@@ -3,15 +3,15 @@ import styled from 'styled-components'
 import { Blob } from './Blob'
 import { AnimationClass } from '../../Helpers'
 /* IMAGES */
-const Apollo = '/Assets/Images/BlobAnimation/Apollo.png'
-const Mask = '/Assets/Images/BlobAnimation/ApolloMask.svg'
-const Blob1 = '/Assets/Images/BlobAnimation/Blob1.svg'
-const Blob2 = '/Assets/Images/BlobAnimation/Blob2.svg'
-const Blob3 = '/Assets/Images/BlobAnimation/Blob3.svg'
-const Blob4 = '/Assets/Images/BlobAnimation/Blob4.svg'
-const Blob5 = '/Assets/Images/BlobAnimation/Blob5.svg'
-const Blob6 = '/Assets/Images/BlobAnimation/Blob6.svg'
-const Blob7 = '/Assets/Images/BlobAnimation/Blob7.svg'
+const Apollo = '/images/BlobAnimation/Apollo.png?trace'
+const Mask = '/images/BlobAnimation/ApolloMask.svg?trace'
+const Blob1 = '/images/BlobAnimation/Blob1.svg?trace'
+const Blob2 = '/images/BlobAnimation/Blob2.svg?trace'
+const Blob3 = '/images/BlobAnimation/Blob3.svg?trace'
+const Blob4 = '/images/BlobAnimation/Blob4.svg?trace'
+const Blob5 = '/images/BlobAnimation/Blob5.svg?trace'
+const Blob6 = '/images/BlobAnimation/Blob6.svg?trace'
+const Blob7 = '/images/BlobAnimation/Blob7.svg?trace'
 /**/
 
 const Blobs = [Blob1, Blob2, Blob3, Blob4, Blob5, Blob6, Blob7]
@@ -30,8 +30,8 @@ const BlobsWrap = styled.div`
   mix-blend-mode: difference;
   mask-image: url(${props => props.mask});
   mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: cover;
+  mask-position: center center;
+  mask-size: 100% 100%;
 `
 
 export const ApolloStatue = ({ props, move, firstLoad, animation, display = true }) => {

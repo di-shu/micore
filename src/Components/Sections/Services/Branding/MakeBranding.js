@@ -3,8 +3,8 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { ImageWrapper, MyScrollAnimation, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 
-const BrandingImage = '/Assets/Images/Services/Branding/BrandingImage.png'
-const BrandFinalImage = '/Assets/Images/Services/Branding/BrandFinalImage.jpg'
+const BrandingImage = '/images/Services/Branding/BrandingImage.png'
+const BrandFinalImage = '/images/Services/Branding/BrandFinalImage.jpg'
 
 export const MakeBranding = () => {
   const [isBrandChange, setIsBrandChange] = useState(false)

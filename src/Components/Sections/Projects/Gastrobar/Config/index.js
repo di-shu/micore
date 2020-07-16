@@ -1,4 +1,4 @@
-const GastrobarSlideImage = '/Assets/Images/Gastrobar/Bag.png'
+const GastrobarSlideImage = '/images/Gastrobar/Bag.png'
 
 export const GastroBarAboutInfo = [
   'Type something 1',

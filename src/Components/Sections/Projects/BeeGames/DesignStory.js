@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
 /* IMAGES */
-const BeeLogo = '/Assets/Images/BeeGames/MainLogo.svg'
+const BeeLogo = '/images/BeeGames/MainLogo.svg'
 
 export const DesignStory = () => {
   const { minWidthLaptop } = useDeviceDetect()

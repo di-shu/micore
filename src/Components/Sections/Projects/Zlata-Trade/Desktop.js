@@ -9,8 +9,8 @@ import {
 import { IconAdaptation, IconList } from './Config'
 import { useDeviceDetect } from '../../../../Helpers'
 /* IMAGES */
-const ZlataDesktopXS = '../../Assets/Images/ZlataProject/zlata_1_xs.png'
-const ZlataDesktopXL = '../../Assets/Images/ZlataProject/zlata_1_xl.png'
+const ZlataDesktopXS = '../../Assets/images/ZlataProject/zlata_1_xs.png'
+const ZlataDesktopXL = '../../Assets/images/ZlataProject/zlata_1_xl.png'
 
 export const Desktop = () => {
   const { desktop } = useDeviceDetect()

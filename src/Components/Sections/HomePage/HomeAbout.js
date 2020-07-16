@@ -7,7 +7,7 @@ import { ActiveLink, ImageWrapper, SectionDesc, SectionTitle } from '../../Secti
 import '~/Styles/Sections/Home/about.scss'
 import { useDeviceDetect } from '../../../Helpers'
 /* IMAGES */
-const Statue = '/Assets/Images/statue-about.png'
+const Statue = '/images/statue-about.png'
 
 export const HomeAbout = ({ animation }) => {
   const { desktop } = useDeviceDetect()

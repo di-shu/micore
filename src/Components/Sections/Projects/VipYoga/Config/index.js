@@ -1,6 +1,6 @@
-const DropBlue = '/Assets/Images/VipYoga/DropBlue.svg'
-const DropGray = '/Assets/Images/VipYoga/DropGray.svg'
-const SlideBottle = '/Assets/Images/VipYoga/SlideBottle.png'
+const DropBlue = '/images/VipYoga/DropBlue.svg'
+const DropGray = '/images/VipYoga/DropGray.svg'
+const SlideBottle = '/images/VipYoga/SlideBottle.png'
 
 export const AdditionalInfo = [
   'Type something',

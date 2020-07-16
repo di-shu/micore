@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
 /*IMAGES*/
-const ArrowLeft = '/Assets/Images/FlipbookArrL.svg'
-const ArrowRight = '/Assets/Images/FlipbookArrR.svg'
-const ArrowLeftW = '/Assets/Images/FlipbookArrLW.svg'
-const ArrowRightW = '/Assets/Images/FlipbookArrRW.svg'
+const ArrowLeft = '/images/FlipbookArrL.svg'
+const ArrowRight = '/images/FlipbookArrR.svg'
+const ArrowLeftW = '/images/FlipbookArrLW.svg'
+const ArrowRightW = '/images/FlipbookArrRW.svg'
 
 export const FlipBook = ({ isNavWhite, pages }) => {
   let fadeClass = useRef(null)

@@ -4,11 +4,11 @@ import Col from 'react-bootstrap/Col'
 import { ImageWrapper, MyScrollAnimation, SectionDesc, SectionLayout, SectionTitle } from '../../../../Components'
 import { useDeviceDetect } from '../../../../Helpers'
 
-const SiteCrm = '/Assets/Images/Services/Other/SiteCrm.png'
-const SitePortal = '/Assets/Images/Services/Other/SitePortal.png'
-const SiteCatalog = '/Assets/Images/Services/Other/SiteCatalog.png'
-const InternetShop = '/Assets/Images/Services/Other/InternetShop.png'
-const SiteLogistic = '/Assets/Images/Services/Other/SiteLogistic.png'
+const SiteCrm = '/images/Services/Other/SiteCrm.png'
+const SitePortal = '/images/Services/Other/SitePortal.png'
+const SiteCatalog = '/images/Services/Other/SiteCatalog.png'
+const InternetShop = '/images/Services/Other/InternetShop.png'
+const SiteLogistic = '/images/Services/Other/SiteLogistic.png'
 
 const SitesConfigs = [
   { title: 'Интернет магазин', image: InternetShop },

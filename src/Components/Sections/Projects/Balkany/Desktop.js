@@ -6,8 +6,8 @@ import {
   SectionTitle
 } from '../../../SectionsComponents'
 /* IMAGES */
-const DesktopMac = '/Assets/Images/Balkany/AboutDesktopMac.png'
-const DesktopMacFull = '/Assets/Images/Balkany/AboutDesktopFullSite.png'
+const DesktopMac = '/images/Balkany/AboutDesktopMac.png'
+const DesktopMacFull = '/images/Balkany/AboutDesktopFullSite.png'
 
 export const Desktop = () => {
   return (

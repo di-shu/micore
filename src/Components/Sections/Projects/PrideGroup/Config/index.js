@@ -1,4 +1,4 @@
-const SlideImg = '/Assets/Images/PrideGroup/SlideImage.png'
+const SlideImg = '/images/PrideGroup/SlideImage.png'
 
 export const PrideGroupSlides = [
   { img: SlideImg },

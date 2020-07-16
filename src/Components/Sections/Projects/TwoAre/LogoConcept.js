@@ -1,7 +1,7 @@
 import React from 'react'
 import { ImageWrapper, SectionLayout } from '../../../SectionsComponents'
 /*IMAGES*/
-const LogoConceptImg = '/Assets/Images/TwoAre/LogoConcept.svg'
+const LogoConceptImg = '/images/TwoAre/LogoConcept.svg'
 
 const SectionHeader = () => <ImageWrapper isDot />
 

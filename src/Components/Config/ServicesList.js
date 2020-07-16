@@ -1,8 +1,8 @@
 /* IMAGES */
-const OtherImage = '/Assets/Images/Services/Other.png'
-const BrandingImage = '/Assets/Images/Services/Branding.png'
-const CorporateImage = '/Assets/Images/Services/Corporate.png'
-const LandingImage = '/Assets/Images/Services/LandingImage.png'
+const OtherImage = '/images/Services/Other.png'
+const BrandingImage = '/images/Services/Branding.png'
+const CorporateImage = '/images/Services/Corporate.png'
+const LandingImage = '/images/Services/LandingImage.png'
 
 export const ServicesList = [
   {

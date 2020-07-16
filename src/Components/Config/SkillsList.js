@@ -1,4 +1,4 @@
-const icon = '/Assets/Images/About/Skill_Icon.png'
+const icon = '/images/About/Skill_Icon.png'
 
 export const SkillsList = [
   {

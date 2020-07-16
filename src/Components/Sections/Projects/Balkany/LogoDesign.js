@@ -10,7 +10,7 @@ import {
 } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
 /* IMAGES */
-const LogoStory = '/Assets/Images/Balkany/LogoStory.png'
+const LogoStory = '/images/Balkany/LogoStory.png'
 
 export const LogoDesign = () => {
   const { desktop } = useDeviceDetect()

@@ -10,7 +10,7 @@ import {
 } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
 /* IMAGES */
-const Form = '/Assets/Images/Balkany/BalkanyForm.png'
+const Form = '/images/Balkany/BalkanyForm.png'
 
 export const Results = () => {
   const { mobile, laptop, desktop } = useDeviceDetect()

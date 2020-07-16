@@ -8,7 +8,7 @@ import {
 } from '../../../SectionsComponents'
 import { ApplicationSlides } from './Config'
 /* IMAGES */
-const ApplicationBackground = '/Assets/Images/PrideLogistic/LogoApplicationBackground.png'
+const ApplicationBackground = '/images/PrideLogistic/LogoApplicationBackground.png'
 
 export const LogoApplication = () => {
   return (

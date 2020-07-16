@@ -4,8 +4,8 @@ import Col from 'react-bootstrap/Col'
 import { BottomNavigation, ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
 /* IMAGES */
-const SymbolLogo = '/Assets/Images/PrideGroup/SymbolLogo.svg'
-const PrideMockup = '/Assets/Images/PrideGroup/PrideGroupMockup.png'
+const SymbolLogo = '/images/PrideGroup/SymbolLogo.svg'
+const PrideMockup = '/images/PrideGroup/PrideGroupMockup.png'
 
 const SymbolFooterContent = () => {
   return (

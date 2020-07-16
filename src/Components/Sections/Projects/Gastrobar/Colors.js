@@ -1,9 +1,9 @@
 import React from 'react'
 import { FontExample, ImageWrapper, SectionLayout, SectionTitle, SectionWrapper } from '../../../SectionsComponents'
 /*IMAGES*/
-const TriangleGrey = '/Assets/Images/Gastrobar/TriangleGray.svg'
-const LetterExample = '/Assets/Images/Gastrobar/LetterExample.svg'
-const TriangleBlack = '/Assets/Images/Gastrobar/TriangleBlack.svg'
+const TriangleGrey = '/images/Gastrobar/TriangleGray.svg'
+const LetterExample = '/images/Gastrobar/LetterExample.svg'
+const TriangleBlack = '/images/Gastrobar/TriangleBlack.svg'
 
 const ColorsFooterContent = () => {
   return (

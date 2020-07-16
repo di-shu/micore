@@ -9,10 +9,10 @@ import {
 } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
 /* IMAGES */
-const ServicesImg = '/Assets/Images/PrideLogistic/Services.png'
-const AllDevices = '/Assets/Images/PrideLogistic/AllDevices.png'
-const MacOnDesktop = '/Assets/Images/PrideLogistic/MacOnDesktop.png'
-const MobileVersion = '/Assets/Images/PrideLogistic/MobileVersion.png'
+const ServicesImg = '/images/PrideLogistic/Services.png'
+const AllDevices = '/images/PrideLogistic/AllDevices.png'
+const MacOnDesktop = '/images/PrideLogistic/MacOnDesktop.png'
+const MobileVersion = '/images/PrideLogistic/MobileVersion.png'
 
 const ServicesHeaderContent = () => {
   const { minWidthLaptop } = useDeviceDetect()

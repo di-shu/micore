@@ -10,7 +10,7 @@ import {
 } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
 /* IMAGES */
-const LogoResult = '/Assets/Images/PrideLogistic/LogoResult.png'
+const LogoResult = '/images/PrideLogistic/LogoResult.png'
 
 export const Results = () => {
   const { mobile } = useDeviceDetect()

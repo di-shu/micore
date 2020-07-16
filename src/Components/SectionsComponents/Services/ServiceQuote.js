@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { ImageWrapper, MyScrollAnimation, SectionLayout } from '../../SectionsComponents'
 
-const QuoteCommas = '/Assets/Images/Services/LandingPage/QuoteCommas.svg'
+const QuoteCommas = '/images/Services/LandingPage/QuoteCommas.svg'
 
 export const ServiceQuote = ({ quotes }) => {
   const [randIndex, setRandIndex] = useState(0)

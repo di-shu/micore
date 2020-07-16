@@ -1,7 +1,7 @@
 import React from 'react'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 /*IMAGES*/
-const Xzibit = '/Assets/Images/ManticoreProject/Xzibit.png'
+const Xzibit = '/images/ManticoreProject/Xzibit.png'
 
 export const Why = () => {
   return (

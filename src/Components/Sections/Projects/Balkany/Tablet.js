@@ -7,7 +7,7 @@ import {
   SectionTitle
 } from '../../../SectionsComponents'
 /* IMAGES */
-const TabletDevices = '/Assets/Images/Balkany/TabletDevices.png'
+const TabletDevices = '/images/Balkany/TabletDevices.png'
 
 export const Tablet = () => {
   return (

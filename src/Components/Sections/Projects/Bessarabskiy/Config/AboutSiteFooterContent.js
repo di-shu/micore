@@ -3,12 +3,12 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { ImageWrapper, SectionDesc, SectionTitle, SectionWrapper } from '../../../../SectionsComponents'
 /*IMAGES*/
-const PhoneWhite = '/Assets/Images/MobileIconWhite.svg'
-const LaptopWhite = '/Assets/Images/LaptopIconWhite.svg'
-const TabletWhite = '/Assets/Images/TabletIconWhite.svg'
-const DesktopWhite = '/Assets/Images/DesktopIconWhite.svg'
-const GrapeShape = '/Assets/Images/Bessarabkiy/GrapeShape.svg'
-const iMac = '/Assets/Images/Bessarabkiy/iMacPresentation.png'
+const PhoneWhite = '/images/MobileIconWhite.svg'
+const LaptopWhite = '/images/LaptopIconWhite.svg'
+const TabletWhite = '/images/TabletIconWhite.svg'
+const DesktopWhite = '/images/DesktopIconWhite.svg'
+const GrapeShape = '/images/Bessarabkiy/GrapeShape.svg'
+const iMac = '/images/Bessarabkiy/iMacPresentation.png'
 
 export const AboutSiteFooterContent = () => {
   return (

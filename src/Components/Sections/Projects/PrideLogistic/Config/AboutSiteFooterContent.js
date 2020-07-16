@@ -2,10 +2,10 @@ import React from 'react'
 import { useDeviceDetect } from '../../../../../Helpers'
 import { ImageWrapper, SectionWrapper } from '../../../../SectionsComponents'
 /* IMAGES */
-const MacAbout = '/Assets/Images/PrideLogistic/MacAbout.png'
-const PrideMenu = '/Assets/Images/PrideLogistic/SiteMenu.png'
-const SitePages = '/Assets/Images/PrideLogistic/SitePages.png'
-const SitePagesMobile = '/Assets/Images/PrideLogistic/SitePagesMobile.png'
+const MacAbout = '/images/PrideLogistic/MacAbout.png'
+const PrideMenu = '/images/PrideLogistic/SiteMenu.png'
+const SitePages = '/images/PrideLogistic/SitePages.png'
+const SitePagesMobile = '/images/PrideLogistic/SitePagesMobile.png'
 
 export const AboutSiteBottomContent = () => {
   const { mobile } = useDeviceDetect()

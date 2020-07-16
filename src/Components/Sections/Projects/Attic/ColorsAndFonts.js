@@ -4,8 +4,8 @@ import Col from 'react-bootstrap/Col'
 import { FontExample, ImageWrapper, ProjectColor, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 import { AtticColors } from './Config'
 /* IMAGES */
-const LogoGoldLine = '/Assets/Images/Attic/LogoGoldLine.png'
-const LogoGoldFill = '/Assets/Images/Attic/LogoGoldFill.png'
+const LogoGoldLine = '/images/Attic/LogoGoldLine.png'
+const LogoGoldFill = '/images/Attic/LogoGoldFill.png'
 
 export const ColorsAndFonts = () => {
   return (

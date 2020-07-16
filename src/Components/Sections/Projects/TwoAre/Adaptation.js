@@ -3,8 +3,8 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 /*IMAGES*/
-const LogoImg = '/Assets/Images/TwoAre/Logo.svg'
-const HeadphonesImg = '/Assets/Images/TwoAre/Headphones.png'
+const LogoImg = '/images/TwoAre/Logo.svg'
+const HeadphonesImg = '/images/TwoAre/Headphones.png'
 
 const SectionFooter = () => (
   <>

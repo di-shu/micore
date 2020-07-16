@@ -7,7 +7,7 @@ import {
   SectionTitle
 } from '../../../SectionsComponents'
 /* IMAGES */
-const BalkanyMac = '/Assets/Images/Balkany/BalkanyMac.png'
+const BalkanyMac = '/images/Balkany/BalkanyMac.png'
 
 export const News = () => {
   return (

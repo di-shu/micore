@@ -7,7 +7,7 @@ import {
 } from '../../../../Components'
 import { AboutSiteFooterContent } from './Config'
 /* IMAGES */
-const Tomato = '/Assets/Images/Bessarabkiy/Tomato.png'
+const Tomato = '/images/Bessarabkiy/Tomato.png'
 
 export const AboutSite = () => (
   <SectionLayout

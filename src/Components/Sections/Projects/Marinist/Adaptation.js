@@ -3,11 +3,11 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 /*IMAGES*/
-const DesktopAdaptation = '/Assets/Images/Marinist/DesktopAdaptation.png'
-const LaptopAdaptation = '/Assets/Images/Marinist/LaptopAdaptation.png'
-const TabletAdaptation = '/Assets/Images/Marinist/TabletAdaptation.png'
-const MobileAdaptation = '/Assets/Images/Marinist/MobileAdaptation.png'
-const DeviceAdaptation = '/Assets/Images/Marinist/DeviceAdaptation.png'
+const DesktopAdaptation = '/images/Marinist/DesktopAdaptation.png'
+const LaptopAdaptation = '/images/Marinist/LaptopAdaptation.png'
+const TabletAdaptation = '/images/Marinist/TabletAdaptation.png'
+const MobileAdaptation = '/images/Marinist/MobileAdaptation.png'
+const DeviceAdaptation = '/images/Marinist/DeviceAdaptation.png'
 
 export const Adaptation = () => {
   return (
