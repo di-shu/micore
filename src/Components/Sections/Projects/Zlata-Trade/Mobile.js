@@ -6,40 +6,42 @@ import {
   ImageWrapper,
   SectionDesc,
   SectionLayout,
-  SectionTitle,
-  TypeSomething
+  SectionTitle
 } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
-import { AdaptationAboutInfo } from './Config'
 /* IMAGES */
 const ZlataPhone = '../../images/ZlataProject/ZlataPhone.png'
-const ZlataDesktopXS = '../../images/ZlataProject/zlata_1_xs.png'
-const ZlataDesktopXL = '../../images/ZlataProject/zlata_1_xl.png'
+const ZlataTablet = '../../images/ZlataProject/ZlataTablet.png'
 
 export const Mobile = () => {
   const { mobile } = useDeviceDetect()
-
+  
   return (
     <SectionLayout id="zlata-mobile" wrap={false} Footer={() => <BottomNavigation/>}>
       <div className="mobile-adaptation">
         <Row className="mobile-adaptation-container">
           <Col xs={12} md={6}>
             <ImageWrapper isDot className="mobile-dots" display={!mobile}/>
-            <ImageWrapper src={ZlataPhone} className="mobile-phone" display={!mobile} />
+            <ImageWrapper src={ZlataPhone} className="mobile-phone" display={!mobile}/>
           </Col>
           <Col xs={12} md={6}>
-            <SectionTitle title="Mobile adaptation"/>
-            <SectionDesc/>
-            <ImageWrapper isDot className="mobile-dots" display={mobile} />
-            <ImageWrapper src={ZlataPhone} className="mobile-phone" display={mobile} />
-            <TypeSomething content={AdaptationAboutInfo}/>
+            <SectionTitle title="Мобильная версия"/>
+            <SectionDesc>
+              Под телефоны мы нарисовали не адаптацию десктопа, а отдельно полноценную версию со своей проработкой
+              взаимодействия и уникальным опытом для пользователя
+            </SectionDesc>
+            <ImageWrapper isDot className="mobile-dots" display={mobile}/>
+            <ImageWrapper src={ZlataPhone} className="mobile-phone" display={mobile}/>
           </Col>
         </Row>
       </div>
       <div className="about-tablet">
-        <SectionTitle title="About tablet"/>
-        <SectionDesc/>
-        <ImageWrapper src={mobile ? ZlataDesktopXS : ZlataDesktopXL} className="devices-image-wrap" />
+        <SectionTitle title="Новости"/>
+        <SectionDesc>
+          Постоянно обновляющийся новостной блог позволяет пользователям возвращаться на сайт для получения полезного
+          контента. Компания рассказывает как и о своих новостях, так и о новостях индустрии в принципе
+        </SectionDesc>
+        <ImageWrapper src={ZlataTablet} className="devices-image-wrap"/>
       </div>
     </SectionLayout>
   )

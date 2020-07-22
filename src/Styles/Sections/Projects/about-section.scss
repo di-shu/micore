@@ -1,12 +1,25 @@
 @import "../../Static/index";
 
-#about-section {
+#about-projects-section {
   .section-wrapper {
     padding-bottom: 50px;
   }
 
   .section-desc {
-    margin-bottom: 60px;
+    margin-bottom: 0;
+  }
+
+  .square-info-wrap {
+    p {
+      max-width: none;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: 0.3px;
+    }
+  }
+
+  .section-title {
+    margin-bottom: 20px;
   }
 
   .section-line {
@@ -20,13 +33,9 @@
 }
 
 @include media-breakpoint-up('lg') {
-  #about-section {
+  #about-projects-section {
     .section-desc {
       margin-bottom: 0;
-    }
-
-    .grid-container {
-      flex-direction: row-reverse;
     }
 
     .grid-item {
@@ -42,9 +51,9 @@
 }
 
 @include media-breakpoint-up('xl') {
-  #about-section {
+  #about-projects-section {
     .section-wrapper {
-      padding-bottom: 180px;
+      padding-bottom: 120px;
     }
 
     .blur-ball {
@@ -61,6 +70,15 @@
       position: absolute;
       right: 0;
       transform: translateY(-90%);
+    }
+
+    .square-info-wrap {
+      margin-bottom: 0;
+    }
+
+    .section-title {
+      margin-bottom: 55px;
+      margin-left: 0;
     }
 
     .section-line {

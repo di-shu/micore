@@ -16,17 +16,14 @@ export const ProjectAboutSection = (props) => {
   return (
     <>
       <SectionLayout
-        id="about-section"
+        id="about-projects-section"
         Header={() => Content ? Content : null}
         sectionClassName={isOverflow ? 'is-overflow' : ''}
         Footer={() => isLine ? <SectionLine direction="bottom"/> : null}
       >
         <ImageWrapper isDot display={desktop}/>
-        <SectionTitle title="About project"/>
+        <SectionTitle title="О проекте"/>
         <Row className="grid-container">
-          <Col xs={12} lg={6} className="grid-item">
-            <SectionDesc withDot children={description}/>
-          </Col>
           <Col xs={12} lg={6} className="grid-item">
             <ProjectInfoWrap
               name={name}
@@ -34,6 +31,9 @@ export const ProjectAboutSection = (props) => {
               link={link}
               isProjectInfo
             />
+          </Col>
+          <Col xs={12} lg={6} className="grid-item">
+            <SectionDesc withDot children={description}/>
           </Col>
         </Row>
         <TypeSomething content={additionalInfo} size={3}/>

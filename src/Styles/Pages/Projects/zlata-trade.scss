@@ -3,7 +3,6 @@
 #zlata-project-page {
   .devices-image-wrap {
     width: 100%;
-    margin-top: 50px;
   }
 }
 
@@ -28,40 +27,43 @@
 #zlata-brief {
   background-color: $accent-black;
 
+  .section-wrapper {
+    padding: 40px 0 10px;
+  }
+
   .section-title {
     color: #fff;
     padding: 0 15px;
+    margin-bottom: 20px;
   }
 
   .section-desc {
     color: #fff;
-    padding: 15px;
     margin-bottom: 20px;
+    padding: 20px 15px 25px;
     background-color: #1d242c;
   }
 
   .brief-card {
     background-color: #1d242c;
-    padding: 25px 15px;
-    margin-bottom: 20px;
+    padding: 25px 25px 32px;
+    margin-bottom: 10px;
   }
 
   .brief-title {
     position: relative;
     color: #fff;
     font-family: $museo-300;
-    font-size: 40px;
-    letter-spacing: 1.13px;
-    line-height: normal;
+    font-size: 24px;
+    letter-spacing: 0.68px;
+    line-height: 29px;
     margin-bottom: 10px;
-    padding: 0 25px;
 
     &:after {
       content: '';
       position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 0;
+      bottom: 11px;
+      right: -10px;
       background-color: $accent-main;
       opacity: 0.7;
       width: 55px;
@@ -72,11 +74,9 @@
   .brief-info {
     color: #ffffff;
     font-family: $museo-300;
-    font-size: 16px;
-    letter-spacing: 0.45px;
-    line-height: 29px;
-    margin-bottom: 30px;
-    padding: 0 25px;
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 0;
   }
 
   .brief-image-wrap {
@@ -92,11 +92,32 @@
 
 #zlata-results {
   .section-title {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+  }
+
+  .section-wrapper {
+    padding-bottom: 50px;
   }
 
   .section-desc {
-    margin-bottom: 60px;
+    margin-bottom: 35px;
+  }
+
+  .square-info-wrap {
+    padding: 70px 0 77px;
+    margin-bottom: 55px;
+  }
+
+  .square-text-wrap {
+    display: flex;
+
+    p {
+      margin-right: 60px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 
   .result-color-wrap {
@@ -133,6 +154,7 @@
     justify-content: center;
     align-items: center;
     width: 110px;
+    min-width: 110px;
     height: 110px;
     transform: rotate(45deg);
 
@@ -146,9 +168,12 @@
   }
 
   .result-color-info {
+    display: flex;
+    flex-direction: column;
+
     span {
-      font-size: 9px;
-      letter-spacing: 0.26px;
+      font-size: 12px;
+      letter-spacing: 0.34px;
       color: #12171e;
       margin-bottom: 10px;
 
@@ -162,11 +187,11 @@
 
 #zlata-adaptation {
   .section-wrapper {
-    padding-bottom: 60px;
+    padding-bottom: 50px;
 
     .image-wrap {
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 0;
 
       img {
         width: 100%;
@@ -176,19 +201,28 @@
   }
 
   .section-title {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+  }
+
+  .section-desc {
+    margin-bottom: 35px;
   }
 
   .logo-adaptation-container {
+    min-height: 190px;
     background-color: $accent-black;
 
     .image-wrap {
       &.logo-adaptation {
-        height: calc(100% - 60px);
-        padding: 30px;
+        height: 100%;
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+        padding: 25px 0 25px 30px;
+
+        img {
+          object-fit: contain;
+        }
       }
 
       &.logo-street {
@@ -210,17 +244,21 @@
     object-fit: contain;
   }
 
+  .section-wrapper {
+    padding-bottom: 0;
+  }
+
   .section-title {
-    margin-bottom: 45px;
+    margin-bottom: 10px;
   }
 
   .section-desc {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 
   .billboard-image {
     width: 100%;
-    height: 100vh;
+    height: 400px;
   
     img {
       object-fit: cover;
@@ -232,11 +270,32 @@
   background-image: radial-gradient(circle, #343841, #283039);
 
   .adaptation {
+    padding-bottom: 10px;
     background-color: #fff;
 
     .section-desc {
-      margin-bottom: 60px;
+      margin-bottom: 45px;
     }
+  }
+
+  .section-desc {
+    margin-bottom: 0;
+  }
+
+  .section-wrapper {
+    padding-bottom: 0;
+  }
+
+  .about-site {
+    .devices-image-wrap {
+      margin-top: -35px;
+    }
+  }
+
+  .about-desktop {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .about-desktop, .about-site {
@@ -246,7 +305,7 @@
   }
 
   .grid-item-adaptation {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   .icon-wrap {
@@ -266,8 +325,11 @@
 }
 
 #zlata-mobile {
-  padding-bottom: 50px;
   background-image: radial-gradient(circle, #343841, #283039);
+
+  .section-title {
+    margin-bottom: 10px;
+  }
 
   .mobile-adaptation {
     background-color: #fff;
@@ -278,35 +340,39 @@
   }
 
   .about-tablet {
+    padding-bottom: 0;
+
     .section-title, .section-desc {
       color: #fff;
     }
 
     .section-desc {
-      margin-bottom: 35px;
+      margin-bottom: 0;
     }
   }
 
   .mobile-image-wrap {
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
 
   .mobile-dots {
     width: 100%;
-    height: 100%;
+    height: 310px;
     z-index: 0;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+
+    img {
+      object-fit: cover;
+    }
   }
 
   .mobile-phone {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    img {
-      width: auto;
-    }
+    position: relative;
+    left: -15px;
+    width: calc(100% + 15px);
   }
 
   .list-item {
@@ -358,10 +424,6 @@
     .section-desc {
       padding: 30px;
       margin-bottom: 40px;
-    }
-
-    .grid-container-brief {
-      padding: 0 15px;
     }
 
     .grid-item-brief {
@@ -543,8 +605,12 @@
       bottom: 0;
       background-color: $zlata-accent-primary;
       opacity: 0.9;
-      padding: 55px 0;
+      padding: 45px 0;
       max-width: 100%;
+    }
+
+    .section-desc {
+      margin-bottom: 10px;
     }
 
     .image-eagle {
@@ -563,23 +629,23 @@
 
   #zlata-brief {
     .section-wrapper {
-      padding-top: 75px;
-      padding-bottom: 60px;
+      padding-top: 80px;
+      padding-bottom: 80px;
     }
 
     .section-title {
-      margin-bottom: 60px;
-      padding: 0 30px;
+      margin-bottom: 30px;
+      padding: 0;
       position: relative;
       z-index: 1;
     }
 
     .section-desc {
-      padding: 35px;
-      margin: 0 15px 30px;
+      padding: 30px 30px 35px;
+      margin: 0 0 30px;
       font-size: 20px;
-      letter-spacing: 2px;
-      line-height: 34px;
+      letter-spacing: 0.3px;
+      line-height: 32px;
       position: relative;
       z-index: 1;
     }

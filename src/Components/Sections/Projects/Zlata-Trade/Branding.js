@@ -16,6 +16,7 @@ export const Branding = () => {
     <SectionLayout
       id="zlata-branding"
       Header={BrandingHeader}
+      className="uniform-wrapper"
       Footer={() => (
         <SectionSlider
           slidesToShow={1}
@@ -23,11 +24,12 @@ export const Branding = () => {
           className="uniform-slider"
         />
       )}
-      className="uniform-wrapper"
     >
-      <ImageWrapper isDot display={desktop} />
-      <SectionTitle title="About branding: ZLATA - TRADE"/>
-      <SectionDesc/>
+      <ImageWrapper isDot display={desktop}/>
+      <SectionTitle title="Униформа"/>
+      <SectionDesc>
+        Для сотрудников мы подготовили дизайн удобной и фирменной рабочей униформы, как элемент корпоративной культуры.
+      </SectionDesc>
     </SectionLayout>
   )
 }

@@ -2,25 +2,21 @@ const PhoneIcon = '../../images/PhoneIcon.svg'
 const LaptopIcon = '../../images/LaptopIcon.svg'
 const TabletIcon = '../../images/TabletIcon.svg'
 const DesktopIcon = '../../images/DesktopIcon.svg'
-const BriefImg = '../../images/ZlataProject/Brief.png'
 const ZlataClothes = '/images/ZlataProject/ZlataClothes.png'
 const BrandingSlide = '/images/ZlataProject/BrandingSlide.png'
 
 export const BriefList = [
   {
-    title: 'Coin 1',
-    desc: 'This website which duis aute irure dolor in rep ehenderit in voluptate velit esse',
-    img: BriefImg
+    title: 'Монета',
+    desc: 'Давняя бессарабская монета, найдена на раскопках в месте, где была основана компания Zlata Trade'
   },
   {
-    title: 'Coin 2',
-    desc: 'This website which duis aute irure dolor in rep ehenderit in voluptate velit esse',
-    img: BriefImg
+    title: 'Сокол',
+    desc: 'Свободолюбивая птица, символизирует уверенность и стремление покорять новые высоты'
   },
   {
-    title: 'Coin 3',
-    desc: 'This website which duis aute irure dolor in rep ehenderit in voluptate velit esse',
-    img: BriefImg
+    title: 'Пшеница',
+    desc: 'Пшеница, а значит хлеб растет на благо людям. А хороший урожай знаменует богатство и достаток'
   }
 ]
 

@@ -33,10 +33,10 @@
     justify-content: center;
     width: 100%;
     max-width: 445px;
-    margin: 0 auto 45px 0;
+    margin: 0 auto 20px 0;
     border: 1px solid #12171e;
     background-color: #ffffff;
-    padding: 35px 0;
+    padding: 27px 0 35px;
 
     &:before, &:after {
       content: '';
@@ -78,18 +78,13 @@
       }
     }
 
-    .square-text-wrap {
-      width: 100%;
-      max-width: 75%;
-      margin: 0 auto;
-    }
-
     p {
       color: #12171e;
       font-family: $museo-300;
-      font-size: 16px;
-      letter-spacing: 0.45px;
-      line-height: 29px;
+      font-size: 14px;
+      letter-spacing: 0.39px;
+      line-height: 24px;
+      max-width: 85px;
       word-break: break-all;
     }
 

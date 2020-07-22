@@ -24,14 +24,16 @@ export const Results = () => {
         </>
       )}
     >
-      <SectionTitle title="Our results"/>
+      <SectionTitle title="Цвета"/>
       <Row className="grid-container">
         <Col xs={12} md={6} lg={5} xl={6}>
+          <SectionDesc>
+            Умеренная, гармоничная цветовая гамма фирменного стиля обеспечивает его четкое и удобное восприятие.
+          </SectionDesc>
           <ProjectInfoWrap>
-            <p><span>1st</span> - Plum color</p>
-            <p><span>2nd</span> - Gold</p>
+            <p><span>1st</span> - primary Plum color</p>
+            <p><span>2nd</span> - slave Gold</p>
           </ProjectInfoWrap>
-          <SectionDesc withDot/>
         </Col>
         <Col xs={12} md={6} lg={7} xl={6} className="result-color-item-wrap">
           <div className="result-color-wrap primary">

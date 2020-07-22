@@ -10,32 +10,31 @@
   position: relative;
   color: #000;
   font-family: $museo-700;
-  font-size: 24px;
-  letter-spacing: 0.68px;
+  font-size: 26px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .section-desc {
   position: relative;
   opacity: 0.9;
   color: #000;
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 20px;
   font-family: $museo-300;
-  font-size: 16px;
-  letter-spacing: 0.45px;
-  line-height: 29px;
-  margin-bottom: 40px;
 
   &.with-dot {
-    padding-left: 20px;
+    padding-left: 12px;
 
     &:before {
       content: '';
       position: absolute;
       left: 0;
-      top: 10px;
-      width: 8px;
-      height: 8px;
+      top: 12px;
+      width: 4px;
+      height: 4px;
       border-radius: 100%;
       background-color: $accent-main;
     }
@@ -45,7 +44,7 @@
 .section-wrapper {
   position: relative;
   padding-top: 50px;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
   z-index: 5;
 
   &.no-padding {
@@ -68,12 +67,13 @@
 
   .section-title {
     font-size: 50px;
-    letter-spacing: 1.41px;
+    letter-spacing: 1px;
     margin-bottom: 40px;
   }
 
   .section-desc {
     font-size: 16px;
-    letter-spacing: 0.45px;
+    letter-spacing: 0.3px;
+    line-height: 28px;
   }
 }

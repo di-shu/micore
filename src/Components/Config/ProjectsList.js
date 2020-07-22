@@ -9,7 +9,6 @@ const BeeGamesImage = '/images/Portfolio/BeeGames.png'
 const FCBalkanyImage = '/images/Portfolio/FCBalkanyProject.png'
 const PrideGroupImage = '/images/Portfolio/PrideGroupProject.png'
 const ZlataTradeImage = '/images/Portfolio/ZlataTrade.png'
-const ManticoreImage = '/images/Portfolio/ManticoreProject.png'
 const VladyDesignImage = '/images/Portfolio/VladyDesignProject.png'
 const PrideLogisticImage = '/images/Portfolio/PrideLogisticProject.png'
 
@@ -19,28 +18,22 @@ export const ProjectsList = [
     label: 'Web-sites',
     content: [
       {
-        img: ManticoreImage,
-        title: 'Manticore',
-        link: '/projects/manticore',
-        size: { xs: 12, md: 7, lg: 6, xl: 5 }
-      },
-      {
         img: ZlataTradeImage,
         title: 'Zlata-trade',
         link: '/projects/zlata-trade',
-        size: { xs: 12, md: 5, lg: 4, xl: 4 }
+        size: { xs: 12, md: 5, lg: 4, xl: 5 }
       },
       {
         img: FCBalkanyImage,
         title: 'FC Balkany',
         link: '/projects/balkany',
-        size: { xs: 12, md: 5, lg: 2, xl: 3 }
+        size: { xs: 12, md: 5, lg: 2, xl: 4 }
       },
       {
         img: PrideLogisticImage,
         title: 'Pride Logistic',
         link: '/projects/pride-logistic',
-        size: { xs: 12, md: 7, lg: 4, xl: 4 }
+        size: { xs: 12, md: 7, lg: 4, xl: 3 }
       },
       {
         isNavBlack: true,
@@ -59,25 +52,25 @@ export const ProjectsList = [
         img: PrideGroupImage,
         title: 'Pride group',
         link: '/projects/pride-group',
-        size: { xs: 12, md: 5, lg: 6, xl: 5 }
+        size: { xs: 12, md: 5, lg: 6, xl: 4 }
       },
       {
         title: 'Gastrobar',
         img: GastrobarImage,
         link: '/projects/gastrobar',
-        size: { xs: 12, md: 7, lg: 4, xl: 4 }
+        size: { xs: 12, md: 7, lg: 4, xl: 5 }
       },
       {
         img: BessarabskiyImage,
         title: 'Bessarabskiy dvorik',
         link: '/projects/bessarabskiy',
-        size: { xs: 12, md: 7, lg: 2, xl: 3 }
+        size: { xs: 12, md: 7, lg: 2, xl: 4 }
       },
       {
         title: 'Marinist',
         img: MarinistImage,
         link: '/projects/marinist',
-        size: { xs: 12, md: 5, lg: 4, xl: 4 }
+        size: { xs: 12, md: 5, lg: 4, xl: 3 }
       },
       {
         img: TwoAreImage,
@@ -96,7 +89,7 @@ export const ProjectsList = [
         img: AtticImage,
         title: 'Attic stroy',
         link: '/projects/attic-stroy',
-        size: { xs: 12, md: 7, lg: 6, xl: 5 }
+        size: { xs: 12, md: 7, lg: 6, xl: 4 }
       }
     ]
   },

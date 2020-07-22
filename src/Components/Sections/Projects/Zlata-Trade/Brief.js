@@ -15,13 +15,17 @@ export const Brief = () => {
   
   return (
     <SectionLayout id="zlata-brief">
-      <SectionTitle title="Logo brief"/>
-      <SectionDesc/>
-      <ImageWrapper isDot display={desktop} />
+      <SectionTitle title="Философия"/>
+      <SectionDesc>
+        На старте проекта мы определились о чем будет говорить новая айдентика. Важной ее составляющей выступает логотип
+        компании. Главный символ в виде сокола имеет свою историю и глубокий смысл. В нем зашифрованы определяющие для
+        компании ценности - уважение к прошлому и уверенность в будущем.
+      </SectionDesc>
+      <ImageWrapper isDot display={desktop}/>
       <Row className="grid-container-brief">
         {BriefList.map((brief, index) => (
           <Col key={`brief_${index}`} xs={12} md={6} lg={4} className="grid-item-brief">
-            <BriefCard title={brief.title} desc={brief.desc} img={brief.img} />
+            <BriefCard title={brief.title} desc={brief.desc}/>
           </Col>
         ))}
       </Row>
