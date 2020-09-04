@@ -5,6 +5,7 @@ const withPlugins = require('next-compose-plugins')
 const withTM = require('next-transpile-modules')(['gsap'])
 
 const nextConfig = {
+  distDir: 'build',
   devIndicators: {
     autoPrerender: false
   }

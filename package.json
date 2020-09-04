@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start"
+    "start": "next start",
+    "build": "next build && next export"
   },
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.17",
