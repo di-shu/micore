@@ -6,7 +6,6 @@ import {
   Branding,
   Desktop,
   Fan,
-  LogoConcept,
   LogoDesign,
   Main,
   News,
@@ -23,10 +22,9 @@ const Balkany = () => {
       <Main/>
       <About/>
       <LogoDesign/>
-      <LogoConcept/>
       <Results/>
-      <Branding/>
       <Fan/>
+      <Branding/>
       <Branding isSecond={true}/>
       <AboutSite/>
       <News/>

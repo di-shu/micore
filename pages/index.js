@@ -6,6 +6,6 @@ const HomePage = dynamic(() => import('~/Components/SitePages/HomePage'))
 
 export default () => (
   <MainWrapper id="main-page">
-    <HomePage />
+    <HomePage/>
   </MainWrapper>
 )

@@ -10,13 +10,13 @@ import {
 } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
 /* IMAGES */
-const Form = '/images/Balkany/BalkanyForm.png'
+const Form = '/images/Balkany/BalkanyForm.jpg'
 
 export const Results = () => {
   const { mobile, laptop, desktop } = useDeviceDetect()
   
   return (
-    <SectionLayout id="balkany-results" Footer={() => <ImageWrapper src={Form}/>}>
+    <SectionLayout id="balkany-results" Footer={() => <div className="section-image-wrap" style={{ backgroundImage: `url(${Form})` }}/>}>
       <SectionTitle title="Our results"/>
       <Row>
         <Col xs={12} lg={6}>

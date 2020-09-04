@@ -4,6 +4,7 @@ import { SeeMoreLink } from '../SeeMoreLink'
 import { ImageWrapper } from '../ImageWrapper'
 import { SectionLayout } from '../SectionLayout'
 import { SectionDesc, SectionTitle } from '../SectionInfo'
+import { MyScrollAnimation } from '../MyScrollAnimation'
 
 export const ProjectMainSection = ({ id, name, background, content, isContentWhite, isNavBlack, children }) => {
   return (

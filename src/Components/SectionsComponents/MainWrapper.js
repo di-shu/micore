@@ -24,7 +24,7 @@ const MainWrapper = ({ id, children }) => {
 
   useEffect(() => {
     setTimeout(() => {
-      // window.scrollTo({ top: 0, left: 0 })
+      window.scrollTo({ top: 0, left: 0 })
     }, 100)
   }, [])
 

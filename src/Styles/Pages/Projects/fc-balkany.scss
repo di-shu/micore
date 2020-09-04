@@ -311,13 +311,17 @@
   }
 
   .phone-image {
-    position: absolute;
+    position: relative;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
     width: 100%;
     height: auto;
     z-index: 1;
+
+    @include media-breakpoint-up('lg') {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
 
@@ -708,7 +712,10 @@
     }
 
     .section-image-wrap {
-      height: 500px;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
     }
   }
 
