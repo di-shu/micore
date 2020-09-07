@@ -6,6 +6,9 @@ const withTM = require('next-transpile-modules')(['gsap'])
 
 const nextConfig = {
   distDir: 'build',
+  target: 'serverless',
+  generateEtags: false,
+  poweredByHeader: false,
   devIndicators: {
     autoPrerender: false
   }
