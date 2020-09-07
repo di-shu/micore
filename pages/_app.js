@@ -4,9 +4,11 @@ import { GlobalStyle } from '../src/Components/Config'
 
 export default ({ Component, pageProps, router }) => {
   return (
-    <AnimatePresence exitBeforeEnter>
+    <>
       <GlobalStyle/>
-      <Component key={router.route} {...pageProps} />
-    </AnimatePresence>
+      <AnimatePresence exitBeforeEnter>
+        <Component key={router.route} {...pageProps} />
+      </AnimatePresence>
+    </>
   )
 }
