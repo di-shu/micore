@@ -11,4 +11,4 @@ const nextConfig = {
   }
 }
 
-module.exports = withPlugins([withSass(), withFonts, withImages, withTM], nextConfig)
+module.exports = withPlugins([withSass, withFonts, withImages, withTM], nextConfig)
