@@ -1,5 +1,5 @@
-const BrandingImg = '/images/Balkany/BalkanyBranding.png'
-const Uniform = '/images/Balkany/BalkanyUniform.png'
+const BrandingImg = '/images/Balkany/balkany_mockup2.png'
+const Uniform = '/images/Balkany/balkany_mockup5.jpg'
 
 export const AboutInfo = [
   'Type something 1',

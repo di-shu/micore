@@ -10,7 +10,7 @@ import {
 } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
 /* IMAGES */
-const LogoStory = '/images/Balkany/LogoStory.png'
+const LogoStory = '/images/Balkany/balkany_logo.svg'
 
 export const LogoDesign = () => {
   const { desktop } = useDeviceDetect()
@@ -18,13 +18,18 @@ export const LogoDesign = () => {
   return (
     <SectionLayout id="balkany-logo-design" Footer={() => <SectionLine direction="bottom"/>}>
       <ImageWrapper isDot display={desktop}/>
-      <SectionTitle title="Logo design story"/>
+      <SectionTitle title="Смысл"/>
       <Row style={{ flexDirection: 'row-reverse' }}>
         <Col xs={12} md={6} className="grid-item">
           <ImageWrapper src={LogoStory}/>
         </Col>
         <Col xs={12} md={6} className="grid-item">
-          <SectionDesc withDot/>
+          <SectionDesc>
+            Преданность традициям, семье и современным тенденциям в футболе - ценности футбольного клуба “Балканы”.
+            Именно они отражены в новом логотипе команды. Наклон логотипа символизирует движение вперед, рвение
+            достигать новых побед. Важным для клуба является место его рождения - село Заря Одесской области, которое
+            заложено в очертании первой буквы.
+          </SectionDesc>
         </Col>
       </Row>
     </SectionLayout>

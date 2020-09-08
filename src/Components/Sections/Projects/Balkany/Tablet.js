@@ -7,13 +7,11 @@ import {
   SectionTitle
 } from '../../../SectionsComponents'
 /* IMAGES */
-const TabletDevices = '/images/Balkany/TabletDevices.png'
+const TabletDevices = '/images/Balkany/balkany_mockup10.png'
 
 export const Tablet = () => {
   return (
     <SectionLayout id="balkany-tablet" Footer={() => <BottomNavigation />}>
-      <SectionTitle title="About tablet"/>
-      <SectionDesc/>
       <ImageWrapper src={TabletDevices} className="devices-image-wrap"/>
     </SectionLayout>
   )

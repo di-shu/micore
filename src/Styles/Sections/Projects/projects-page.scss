@@ -155,6 +155,21 @@
       padding: 40px 0;
       margin: 0 auto 65px 0;
 
+      &.content-wrap {
+        .square-text-wrap {
+          display: flex;
+
+          p {
+            max-width: 120px;
+            word-break: break-word;
+
+            &:first-child {
+              margin-right: 85px;
+            }
+          }
+        }
+      }
+
       p {
         font-size: 20px;
         letter-spacing: 0.56px;

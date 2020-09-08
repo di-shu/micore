@@ -1,7 +1,7 @@
 import React from 'react'
 import { ProjectMainSection } from '../../../SectionsComponents'
 /* IMAGES */
-const MainPhoto = '/images/PrideLogistic/MainPhoto.png'
+const MainPhoto = '/images/PrideLogistic/pridelog_main.jpg'
 
 export const Main = () => {
   return (

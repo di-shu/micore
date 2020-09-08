@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
 /* IMAGES */
-const LogoDesign = '/images/PrideLogistic/LogoDesign.svg'
+const LogoDesign = '/images/PrideLogistic/pridelog_logo.svg'
 
 export const LogoStory = () => {
   const { mobile, tablet, laptop, desktop } = useDeviceDetect()
@@ -13,9 +13,13 @@ export const LogoStory = () => {
     <SectionLayout id="pride-logo-story">
       <Row>
         <Col xs={12} lg={6}>
-          <SectionTitle title="Logo design story"/>
+          <SectionTitle title="Смысл"/>
           <ImageWrapper src={LogoDesign} display={mobile || tablet}/>
-          <SectionDesc withDot/>
+          <SectionDesc>
+            Креативным решение при разработке логотипа стала динамическая конструкция построена на взаимодействии шрифта
+            и символа. Лев в прыжке раскрывает философию и специфику деятельности компании, символизирует надежность,
+            скорость и результат. Округлый, ровный шрифт подчеркивает динамичность композиции.
+          </SectionDesc>
         </Col>
         {(laptop || desktop) && (
           <Col lg={6}>

@@ -17,15 +17,17 @@ export const Results = () => {
   
   return (
     <SectionLayout id="pride-results">
-      <SectionTitle title="Our results"/>
+      <SectionTitle title="Фундамент"/>
       <Row>
         <Col xs={12} md={6}>
+          <SectionDesc>
+            Охранные поля визуально выделяют логотип и препятствует пересечению с другими элементами
+          </SectionDesc>
           <ImageWrapper className="logo-results-wrap" src={LogoResult} display={mobile}/>
           <ProjectInfoWrap>
-            <p><span>P</span>rimary - Orange color</p>
-            <p><span>F</span>ont - Sinhala MN</p>
+            <p><span>S</span>inhala MN</p>
+            <p><span>L</span>uganskyV</p>
           </ProjectInfoWrap>
-          <SectionDesc withDot/>
         </Col>
         <ImageWrapper className="logo-results-wrap" src={LogoResult} display={!mobile}/>
       </Row>

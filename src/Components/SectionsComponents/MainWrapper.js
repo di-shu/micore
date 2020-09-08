@@ -22,9 +22,9 @@ const MainWrapper = ({ id, children }) => {
   const { isProject, isServices } = useCheckRoute()
 
   useEffect(() => {
-    setTimeout(() => {
-      window.scrollTo({ top: 0, left: 0 })
-    }, 100)
+    // setTimeout(() => {
+    //   window.scrollTo({ top: 0, left: 0 })
+    // }, 100)
   }, [])
 
   return (

@@ -16,23 +16,20 @@ import MainWrapper from '../../src/Components/SectionsComponents/MainWrapper'
 /*STYLES*/
 import '~/Styles/Pages/Projects/fc-balkany.scss'
 
-const Balkany = () => {
+export default () => {
   return (
     <MainWrapper id="balkany-project-page">
       <Main/>
       <About/>
       <LogoDesign/>
       <Results/>
-      <Fan/>
       <Branding/>
+      <Fan/>
       <Branding isSecond={true}/>
       <AboutSite/>
       <News/>
       <Desktop/>
-      <Adaptation/>
       <Tablet/>
     </MainWrapper>
   )
 }
-
-export default Balkany

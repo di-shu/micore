@@ -9,7 +9,8 @@ import {
 } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
 /* IMAGES */
-const ServicesImg = '/images/PrideLogistic/Services.png'
+const ServicesImg = '/images/PrideLogistic/pridelog_mockup3.jpg'
+const Device2 = '/images/PrideLogistic/pridelog_mockup4.jpg'
 const AllDevices = '/images/PrideLogistic/AllDevices.png'
 const MacOnDesktop = '/images/PrideLogistic/MacOnDesktop.png'
 const MobileVersion = '/images/PrideLogistic/MobileVersion.png'
@@ -21,17 +22,15 @@ const ServicesHeaderContent = () => {
     <>
       <SectionWrapper className="first-services">
         <div className="inner-wrap">
-          <SectionTitle title="services"/>
-          <SectionDesc/>
+          <ImageWrapper isDot display={minWidthLaptop}/>
+          <SectionTitle title="Сайт"/>
+          <SectionDesc>
+            Следующим этапом проекта стала разработка корпоративного сайта. Ресурс обладает функциональностью, удобной и
+            понятной навигацией, качественно презентует услуги компании.
+          </SectionDesc>
         </div>
       </SectionWrapper>
-      <div className="services-image-wrap">
-        <ImageWrapper isDot display={minWidthLaptop}/>
-        <img src={ServicesImg} alt="Services" className="services-image"/>
-      </div>
-      <div className="devices-image-wrap">
-        <img src={MacOnDesktop} alt="Mac on desktop"/>
-      </div>
+      <ImageWrapper src={ServicesImg} className="services-image-wrap"/>
     </>
   )
 }
@@ -55,9 +54,9 @@ export const Services = () => {
   
   return (
     <SectionLayout id="pride-services" Header={ServicesHeaderContent} Footer={ServicesFooterContent}>
-      <SectionTitle title="services"/>
-      <SectionDesc/>
+      <ImageWrapper src={Device2} className="second-device"/>
       <ImageWrapper isDot display={minWidthLaptop} className="right"/>
+      <ImageWrapper isDot display={minWidthLaptop} className="left"/>
     </SectionLayout>
   )
 }

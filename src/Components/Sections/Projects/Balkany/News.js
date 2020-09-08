@@ -7,13 +7,15 @@ import {
   SectionTitle
 } from '../../../SectionsComponents'
 /* IMAGES */
-const BalkanyMac = '/images/Balkany/BalkanyMac.png'
+const BalkanyMac = '/images/Balkany/balkany_mockup7.jpg'
 
 export const News = () => {
   return (
     <SectionLayout id="balkany-news">
-      <SectionTitle title="News"/>
-      <SectionDesc/>
+      <SectionTitle title="Новости"/>
+      <SectionDesc>
+        Новостной блок на сайте клуба постоянно обновляется и является самым посещаемым разделом сайта.
+      </SectionDesc>
       <ImageWrapper src={BalkanyMac}/>
     </SectionLayout>
   )

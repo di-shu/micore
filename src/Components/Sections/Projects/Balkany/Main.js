@@ -1,7 +1,8 @@
 import React from 'react'
 import { ImageWrapper, ProjectMainSection } from '../../../SectionsComponents'
-const Ball = '/images/Balkany/Ball.png'
-const Pattern = '/images/Balkany/DirtyPattern.png'
+
+const Ball = '/images/Balkany/balkany_ball.png'
+const Pattern = '/images/Balkany/balkany_back.jpg'
 
 const SectionContent = () => (
   <>

@@ -28,10 +28,10 @@ const Brandbook27 = '/images/PrideLogistic/PrideBrandbook/Pride-book-print_27.jp
 const Brandbook28 = '/images/PrideLogistic/PrideBrandbook/Pride-book-print_28.jpg'
 const Brandbook29 = '/images/PrideLogistic/PrideBrandbook/Pride-book-print_29.jpg'
 const Brandbook30 = '/images/PrideLogistic/PrideBrandbook/Pride-book-print_30.jpg'
-const LogoVar1 = '/images/PrideLogistic/LogoVar1.svg'
-const LogoVar2 = '/images/PrideLogistic/LogoVar2.svg'
-const LogoVar3 = '/images/PrideLogistic/LogoVar3.svg'
-const LogoSlide = '/images/PrideLogistic/LogoSlide.png'
+const LogoVar1 = '/images/PrideLogistic/pridelog_var1.svg'
+const LogoVar2 = '/images/PrideLogistic/pridelog_var2.svg'
+const LogoVar3 = '/images/PrideLogistic/pridelog_var3.svg'
+const LogoSlide = '/images/PrideLogistic/pridelog_cup.png'
 
 export const PrideBrandbook = [
   Brandbook1,
@@ -69,21 +69,16 @@ export const PrideBrandbook = [
 export const LogosInfo = [
   {
     logo: LogoVar1,
-    text: 'This website which duis aute irure dolor  in rep ehenderit in voluptate velit esse ' +
-      'cillum dolo rez eu fugia nulla pariatur. Excepteur sint occae cat cupid atat non proident, sunt in  ' +
-      'culpa qui officia de This website '
+    text: 'Шрифтовой логотип с интегрированным символом. Дорога сразу раскрывает сферу деятельности компании.'
   },
   {
     logo: LogoVar2,
-    text: 'This website which duis aute irure dolor  in rep ehenderit in voluptate velit esse ' +
-      'cillum dolo rez eu fugia nulla pariatur. Excepteur sint occae cat cupid atat non proident, sunt in  ' +
-      'culpa qui officia de This website '
+    text: 'Усложненный вариант интеграции теперь уже символа льва в аббревиатуру из первых букв названия компании. ' +
+      'В таком формате, аббревиатура могла бы использоваться отдельно от шрифтовой части.'
   },
   {
     logo: LogoVar3,
-    text: 'This website which duis aute irure dolor  in rep ehenderit in voluptate velit esse ' +
-      'cillum dolo rez eu fugia nulla pariatur. Excepteur sint occae cat cupid atat non proident, sunt in  ' +
-      'culpa qui officia de This website '
+    text: 'Этот вариант впоследствии был доработан в начертании льва, а также шрифта и более всего понравился заказчику.'
   }
 ]
 

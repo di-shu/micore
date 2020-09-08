@@ -22,8 +22,13 @@ export const Branding = ({ isSecond }) => {
       }
     >
       <ImageWrapper isDot display={laptop || desktop}/>
-      <SectionTitle title="About branding: Balkany"/>
-      <SectionDesc/>
+      <SectionTitle title={isSecond ? 'Форма' : 'Брендинг'}/>
+      <SectionDesc>
+        {isSecond ?
+          'Белый - еще один цвет футбольного клуба. Цвет истины, чистоты и победы. ' +
+          'В белой форме футболисты «Балкан» традиционно выступают на домашнем стадионе. ' :
+          'Новый стиль активно используется в сувенирной брендовой продукции клуба.'}
+      </SectionDesc>
     </SectionLayout>
   )
 }

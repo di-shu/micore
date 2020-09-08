@@ -16,10 +16,17 @@ export const Results = () => {
   const { mobile, laptop, desktop } = useDeviceDetect()
   
   return (
-    <SectionLayout id="balkany-results" Footer={() => <div className="section-image-wrap" style={{ backgroundImage: `url(${Form})` }}/>}>
-      <SectionTitle title="Our results"/>
+    <SectionLayout
+      id="balkany-results"
+      Footer={() => <div className="section-image-wrap" style={{ backgroundImage: `url(${Form})` }}/>}
+    >
+      <SectionTitle title="Шрифт и цвет"/>
       <Row>
         <Col xs={12} lg={6}>
+          <SectionDesc>
+            Синий цвет, цвет чистого неба - основной цвет нового стиля. Он символизирует честность, добрую славу и
+            стремление вверх.
+          </SectionDesc>
           <ProjectInfoWrap>
             <p><span>P</span>rimary Blue color</p>
             <p><span>F</span>ont Phenomena</p>
@@ -38,7 +45,6 @@ export const Results = () => {
               <div className="color-info-round"/>
             </div>
           )}
-          <SectionDesc withDot/>
         </Col>
         {(laptop || desktop) && (
           <Col lg={6}>

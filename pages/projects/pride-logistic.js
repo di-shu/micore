@@ -13,7 +13,7 @@ import MainWrapper from '../../src/Components/SectionsComponents/MainWrapper'
 /*STYLES*/
 import '~/Styles/Pages/Projects/pride-logistic.scss'
 
-const PrideLogistic = () => {
+export default () => {
   return (
     <MainWrapper id="pride-logistic-project-page">
       <Main/>
@@ -27,5 +27,3 @@ const PrideLogistic = () => {
     </MainWrapper>
   )
 }
-
-export default PrideLogistic

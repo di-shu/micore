@@ -6,8 +6,8 @@ import {
   SectionTitle
 } from '../../../SectionsComponents'
 /* IMAGES */
-const BalkanyScarf = '/images/Balkany/BalkanyScarf.png'
-const BalkanyStadiumFan = '/images/Balkany/BalkanyStadiumFan.png'
+const BalkanyScarf = '/images/Balkany/balkany_mockup3.png'
+const BalkanyStadiumFan = '/images/Balkany/balkany_mockup4.jpg'
 
 export const Fan = () => {
   return (
@@ -16,8 +16,12 @@ export const Fan = () => {
       Header={() => <ImageWrapper src={BalkanyScarf} className="scarf"/>}
       Footer={() => <ImageWrapper src={BalkanyStadiumFan} className="stadium"/>}
     >
-      <SectionTitle title="About fan club"/>
-      <SectionDesc withDot/>
+      <SectionTitle title="Фан клуб"/>
+      <SectionDesc>
+        Хотя «Балканы» и молодой футбольный клуб, у него уже есть свои активные и преданные фанаты. Мы создали фирменный
+        дизайн фанатской атрибутики: флаги, шарфы, футболки и т.д. Новая айдентика теперь присутствует и на трибунах
+        стадионов, куда приезжают болельщики поддержать родную команду.
+      </SectionDesc>
     </SectionLayout>
   )
 }
