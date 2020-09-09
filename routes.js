@@ -1,0 +1,11 @@
+const routes = require('next-routes')
+
+module.exports = routes()
+  .add('about', '/about')
+  .add('contact', '/contact')
+  .add('portfolio', '/portfolio')
+  .add('services', '/services')
+  .add('brand', '/services/brand')
+  .add('corporate', '/services/corporate')
+  .add('landing', '/services/landing')
+  .add('other', '/services/other')
