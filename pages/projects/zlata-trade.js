@@ -9,7 +9,7 @@ import {
   Mobile,
   Results
 } from '../../src/Components/Sections/Projects/Zlata-Trade'
-import MainWrapper from '../../src/Components/SectionsComponents/MainWrapper'
+import { MainWrapper } from '~/Components/SectionsComponents'
 /*STYLES*/
 import '~/Styles/Pages/Projects/zlata-trade.scss'
 

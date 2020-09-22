@@ -19,7 +19,7 @@ const Options = {
   isLast: false
 }
 
-const AboutPage = () => {
+export const AboutPage = () => {
   const [options, setOptions] = useState(Options)
   const [sections, setSections] = useState(AboutSections)
   const { mobile } = useDeviceDetect()
@@ -39,5 +39,3 @@ const AboutPage = () => {
     </>
   )
 }
-
-export default AboutPage

@@ -11,7 +11,7 @@ import {
   Results,
   Tablet
 } from '../../src/Components/Sections/Projects/Balkany'
-import MainWrapper from '../../src/Components/SectionsComponents/MainWrapper'
+import { MainWrapper } from '~/Components/SectionsComponents'
 /*STYLES*/
 import '~/Styles/Pages/Projects/fc-balkany.scss'
 

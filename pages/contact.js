@@ -1,9 +1,11 @@
 import React from 'react'
 import { FooterSection } from '~/Components/Sections'
-import MainWrapper from '~/Components/SectionsComponents/MainWrapper'
+import { MainWrapper } from '~/Components/SectionsComponents'
 
-export default () => (
+const Contact = () => (
   <MainWrapper id="contact-page">
     <FooterSection isContact/>
   </MainWrapper>
 )
+
+export default Contact

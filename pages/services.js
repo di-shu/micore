@@ -1,9 +1,11 @@
 import React from 'react'
-import ServicesPage from '~/Components/SitePages/ServicesPage'
-import MainWrapper from '~/Components/SectionsComponents/MainWrapper'
+import { ServicesPage } from '~/Components/Pages'
+import { MainWrapper } from '~/Components/SectionsComponents'
 
-export default () => (
+const Services = () => (
   <MainWrapper id="services-page">
     <ServicesPage/>
   </MainWrapper>
 )
+
+export default Services

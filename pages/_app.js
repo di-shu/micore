@@ -1,8 +1,8 @@
 import React from 'react'
 import { AnimatePresence } from 'framer-motion'
-import { GlobalStyle } from '../src/Components/Config'
+import { GlobalStyle } from '~/Components/Config'
 
-export default ({ Component, pageProps, router }) => {
+const App = ({ Component, pageProps, router }) => {
   return (
     <>
       <GlobalStyle/>
@@ -12,3 +12,5 @@ export default ({ Component, pageProps, router }) => {
     </>
   )
 }
+
+export default App

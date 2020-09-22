@@ -13,7 +13,7 @@ import {
   LogoConcept,
   ColorsAndFonts
 } from '../../src/Components/Sections/Projects/Attic'
-import MainWrapper from '../../src/Components/SectionsComponents/MainWrapper'
+import { MainWrapper } from '~/Components/SectionsComponents'
 /* STYLES */
 import '~/Styles/Pages/Projects/attic.scss'
 

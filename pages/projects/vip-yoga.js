@@ -8,7 +8,7 @@ import {
   Main,
   Philosophy
 } from '../../src/Components/Sections/Projects/VipYoga'
-import MainWrapper from '../../src/Components/SectionsComponents/MainWrapper'
+import { MainWrapper } from '~/Components/SectionsComponents'
 /*STYLES*/
 import '~/Styles/Pages/Projects/vip-yoga.scss'
 

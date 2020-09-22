@@ -9,7 +9,7 @@ import { ActiveLink, ImageWrapper, ScrollBox, SectionDesc, SectionTitle } from '
 /* STYLES */
 import '~/Styles/Pages/services.scss'
 
-const ServicesPage = () => {
+export const ServicesPage = () => {
   const { mobile, desktop } = useDeviceDetect()
   
   return (
@@ -40,5 +40,3 @@ const ServicesPage = () => {
     </>
   )
 }
-
-export default ServicesPage

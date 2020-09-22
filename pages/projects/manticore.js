@@ -1,5 +1,5 @@
 import React from 'react'
-import MainWrapper from '../../src/Components/SectionsComponents/MainWrapper'
+import { MainWrapper } from '~/Components/SectionsComponents'
 import { About, AboutName, Main, SimplyWords, Why } from '../../src/Components/Sections/Projects/Manticore'
 /* STYLES */
 import '~/Styles/Pages/Projects/manticore.scss'

@@ -21,7 +21,7 @@ export const SkillsList = [
         value: 'panel3',
         name: 'jquery',
         icon: icon,
-        description: 'J'
+        description: ''
       },
       {
         value: 'panel4',

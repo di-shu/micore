@@ -4,7 +4,7 @@ import { ImageWrapper, SectionWrapper } from '../../../../SectionsComponents'
 /* IMAGES */
 const MacAbout = '/images/PrideLogistic/MacAbout.png'
 const PrideMenu = '/images/PrideLogistic/SiteMenu.png'
-const SitePages = '/images/PrideLogistic/SitePages.png'
+const SitePages = '/images/PrideLogistic/Pages.png'
 const SitePagesMobile = '/images/PrideLogistic/SitePagesMobile.png'
 
 export const AboutSiteBottomContent = () => {

@@ -18,7 +18,7 @@ const variants = {
   hidden: { opacity: 0, transition: { duration: 1, ease: easing } }
 }
 
-const MainWrapper = ({ id, children }) => {
+export const MainWrapper = ({ id, children }) => {
   const { isProject, isServices } = useCheckRoute()
 
   useEffect(() => {
@@ -44,5 +44,3 @@ const MainWrapper = ({ id, children }) => {
     </Layout>
   )
 }
-
-export default MainWrapper

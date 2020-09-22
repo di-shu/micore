@@ -6,7 +6,7 @@ import { MainSections, Options } from './Config/HomePageConfigs'
 /* STYLES */
 import '~/Styles/Pages/home.scss'
 
-const HomePage = () => {
+export const HomePage = () => {
   const { desktop } = useDeviceDetect()
   const [options, setOptions] = useState(Options)
   const [sections, setSections] = useState(MainSections)
@@ -40,5 +40,3 @@ const HomePage = () => {
     </>
   )
 }
-
-export default HomePage

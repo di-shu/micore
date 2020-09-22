@@ -1,9 +1,13 @@
 import React from 'react'
-import HomePage from '~/Components/SitePages/HomePage'
-import MainWrapper from '~/Components/SectionsComponents/MainWrapper'
+import { HomePage } from '~/Components/Pages'
+import { MainWrapper } from '~/Components/SectionsComponents'
 
-export default () => (
-  <MainWrapper id="main-page">
-    <HomePage/>
-  </MainWrapper>
-)
+const Home = () => {
+  return (
+    <MainWrapper id="main-page">
+      <HomePage/>
+    </MainWrapper>
+  )
+}
+
+export default Home

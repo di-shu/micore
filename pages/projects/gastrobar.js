@@ -1,5 +1,5 @@
 import React from 'react'
-import MainWrapper from '../../src/Components/SectionsComponents/MainWrapper'
+import { MainWrapper } from '~/Components/SectionsComponents'
 import { About, Branding, Colors, Idea, Identity, Main, Symbol } from '../../src/Components/Sections/Projects/Gastrobar'
 /*STYLES*/
 import '~/Styles/Pages/Projects/gastrobar.scss'

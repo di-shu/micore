@@ -1,9 +1,13 @@
 import React from 'react'
-import AboutPage from '~/Components/SitePages/AboutPage'
-import MainWrapper from '~/Components/SectionsComponents/MainWrapper'
+import { AboutPage } from '~/Components/Pages'
+import { MainWrapper } from '~/Components/SectionsComponents'
 
-export default () => (
-  <MainWrapper id="about-page">
-    <AboutPage />
-  </MainWrapper>
-)
+const About = () => {
+  return (
+    <MainWrapper id="about-page">
+      <AboutPage />
+    </MainWrapper>
+  )
+}
+
+export default About

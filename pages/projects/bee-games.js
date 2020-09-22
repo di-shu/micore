@@ -1,13 +1,14 @@
 import React from 'react'
 import {
-  About,
-  DesignStory,
+  Last,
   Main,
+  About,
   Results,
   Devices,
-  HomePage, Last
+  HomePage,
+  DesignStory
 } from '../../src/Components/Sections/Projects/BeeGames'
-import MainWrapper from '../../src/Components/SectionsComponents/MainWrapper'
+import { MainWrapper } from '~/Components/SectionsComponents'
 /* STYLES */
 import '~/Styles/Pages/Projects/bee-games.scss'
 
