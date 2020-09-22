@@ -2,7 +2,6 @@ import React from 'react'
 import {
   About,
   AboutSite,
-  Adaptation,
   Branding,
   Desktop,
   Fan,

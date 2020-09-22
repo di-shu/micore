@@ -1,8 +1,6 @@
 import React from 'react'
-import dynamic from 'next/dynamic'
+import HomePage from '~/Components/SitePages/HomePage'
 import MainWrapper from '~/Components/SectionsComponents/MainWrapper'
-
-const HomePage = dynamic(() => import('~/Components/SitePages/HomePage'))
 
 export default () => (
   <MainWrapper id="main-page">

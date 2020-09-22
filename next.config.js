@@ -7,10 +7,16 @@ const withTM = require('next-transpile-modules')(['gsap'])
 const nextConfig = {
   distDir: 'build',
   target: 'serverless',
-  generateEtags: false,
   poweredByHeader: false,
-  devIndicators: {
-    autoPrerender: false
+  devIndicators: { autoPrerender: false },
+  exportPathMap: async function (defaultPathMap, { dev, dir, outDir, distDir, buildId }) {
+    return {
+      '/': { page: '/' },
+      '/about': { page: '/about' },
+      '/contact': { page: '/contact' },
+      '/services': { page: '/services' },
+      '/portfolio': { page: '/portfolio' },
+    }
   }
 }
 
