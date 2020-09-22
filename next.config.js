@@ -4,6 +4,7 @@ const withPlugins = require('next-compose-plugins')
 
 const nextConfig = {
   poweredByHeader: false,
+  useFileSystemPublicRoutes: false,
   devIndicators: { autoPrerender: false }
 }
 
