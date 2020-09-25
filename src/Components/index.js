@@ -1,6 +1,6 @@
 export * from './Tab'
-export * from './Team'
 export * from './Pages'
+export * from './Modals'
 export * from './Config'
 export * from './Inputs'
 export * from './FullPage'

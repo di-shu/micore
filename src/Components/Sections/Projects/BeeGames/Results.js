@@ -11,7 +11,7 @@ import {
 /* IMAGES */
 const HexBlack = '/images/BeeGames/HexBlack.svg'
 const HexYellow = '/images/BeeGames/HexYellow.svg'
-const Honeycomb = '/images/BeeGames/Honeycomb.png'
+const Honeycomb = '/images/BeeGames/Honeycomb.svg'
 const FontExample = '/images/BeeGames/FontExample.svg'
 
 export const Results = () => {

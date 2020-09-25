@@ -430,6 +430,8 @@
   }
 
   #bee-games-homepage {
+    z-index: 6;
+
     .section-wrapper {
       max-width: 100%;
     }
@@ -442,6 +444,14 @@
     .honeycomb-image {
       width: auto;
       top: -80px;
+    }
+
+    .examples-image {
+      left: 0;
+      width: auto;
+      height: auto;
+      margin-top: -135px;
+      transform: translateY(135px);
     }
 
     .site-image {
@@ -462,10 +472,19 @@
   }
 
   #bee-games-last {
-    padding-top: 0;
+    padding-top: 185px;
 
     .section-desc {
       top: 50px;
+    }
+
+    .section-image-wrap {
+      height: 100vh;
+
+      img {
+        object-fit: cover;
+        object-position: bottom;
+      }
     }
   }
 }

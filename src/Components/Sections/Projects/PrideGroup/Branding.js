@@ -2,7 +2,7 @@ import React from 'react'
 import { PrideGroupSlides } from './Config'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionSlider, SectionTitle, SectionWrapper } from '../../../SectionsComponents'
 /*IMAGES*/
-const BrandingBG = '/images/PrideGroup/BrandingBG.png'
+const BrandingBG = '/images/PrideGroup/BrandingBG.jpg'
 
 export const Branding = () => {
   return (
@@ -10,8 +10,10 @@ export const Branding = () => {
       <div className="branding-wrap">
         <ImageWrapper src={BrandingBG}/>
         <SectionWrapper>
-          <SectionTitle title="Branding"/>
-          <SectionDesc withDot/>
+          <SectionTitle title="Брендинг"/>
+          <SectionDesc>
+            Дизайн фирменной продукции соответствует единой визуальной концепции минимализма и продолжает идею тонких линий.
+          </SectionDesc>
         </SectionWrapper>
       </div>
     </SectionLayout>

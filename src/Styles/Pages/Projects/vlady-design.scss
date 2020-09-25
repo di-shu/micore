@@ -81,8 +81,13 @@
   
   .desktop-view {
     left: 50%;
-    transform: translateX(-50%);
     width: 110%;
+    transform: translateX(-50%);
+
+    video {
+      width: 100%;
+      height: 100%;
+    }
   }
   
   .mac-view {
@@ -321,8 +326,8 @@
   #vlady-homepage {
     .desktop-view {
       left: 0;
-      transform: none;
       width: 100%;
+      transform: none;
     }
     
     .section-wrapper {
@@ -349,6 +354,14 @@
     
     .section-with-lines {
       padding-bottom: 0;
+    }
+
+    .mobile-view {
+      height: 100vh;
+
+      img {
+        object-fit: cover;
+      }
     }
   }
 }

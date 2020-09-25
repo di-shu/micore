@@ -8,14 +8,15 @@ import {
   BottomNavigation
 } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
+
 /* IMAGES */
-const Plan = '/images/VladyDesign/VladyPlanLook.png'
+const Video = '/images/VladyDesign/vlady_video.mp4'
+const Plan = '/images/VladyDesign/VladyPlanLook.jpg'
 const Pages = '/images/VladyDesign/VladyPagesLook.png'
 const Flowers = '/images/VladyDesign/VladyFlowers.png'
 const VladyMac = '/images/VladyDesign/VladyMacLook.png'
-const Mobile = '/images/VladyDesign/VladyMobileLook.png'
-const VladyTablet = '/images/VladyDesign/VladyTabletLook.png'
-const VladyDesktop = '/images/VladyDesign/VladyDesktopLook.png'
+const Mobile = '/images/VladyDesign/VladyMobileLook.jpg'
+const VladyTablet = '/images/VladyDesign/VladyTabletLook.jpg'
 const ShadowFlowers = '/images/VladyDesign/VladyFlowersWithShadow.png'
 
 const VladyDesignFooterContent = () => {
@@ -31,7 +32,11 @@ const VladyDesignFooterContent = () => {
           <ImageWrapper src={!desktop ? Flowers : ShadowFlowers} className="flowers"/>
           <ImageWrapper src={Plan} className="plan-view"/>
         </div>
-        <SectionDesc className="plan-desc"/>
+        <SectionDesc className="plan-desc">
+          Ещё одним этапом была разработка адаптивного дизайна под большинство устройств.
+          Также мы отдельно проработали подход к анимациям под телефоны и планшетны.
+          Всё для достижения максимально вау-эффекта с какого места бы не зашёл пользователь.
+        </SectionDesc>
         <ImageWrapper src={Pages} className="pages-view"/>
         <ImageWrapper src={Mobile} className="mobile-view"/>
         <BottomNavigation/>
@@ -45,10 +50,14 @@ export const HomePage = () => {
     <SectionLayout
       id="vlady-homepage"
       Footer={VladyDesignFooterContent}
-      Header={() => <ImageWrapper src={VladyDesktop} className="desktop-view"/>}
+      Header={() => <div className="desktop-view"><video autoPlay="autoPlay" loop="loop" preload="auto" src={Video}/></div>}
     >
-      <SectionTitle title="Home page"/>
-      <SectionDesc/>
+      <SectionTitle title="Главная страница"/>
+      <SectionDesc>
+        При заходе на главную страницу визуальный фокус сосредоточен на анимированном логотипе студии.
+        Такой эффект работает прежде всего на узнаваемость бренда. Также страница знакомит клиента с компанией,
+        ее услугами и портфолио.
+      </SectionDesc>
     </SectionLayout>
   )
 }

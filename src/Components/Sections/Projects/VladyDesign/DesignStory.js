@@ -13,9 +13,12 @@ export const DesignStory = () => {
     <SectionLayout id="vlady-design-story">
       <Row>
         <Col xs={12} lg={6}>
-          <SectionTitle title="Logo design story"/>
+          <SectionTitle title="Логотип"/>
           <ImageWrapper src={VladyLogo} display={!minWidthLaptop}/>
-          <SectionDesc withDot/>
+          <SectionDesc>
+            У компании уже был логотип - главный элемент визуального стиля бренда. Задачей было продолжить концепцию
+            эстетичного минимализма в дизайне сайта.
+          </SectionDesc>
         </Col>
         {
           minWidthLaptop && (

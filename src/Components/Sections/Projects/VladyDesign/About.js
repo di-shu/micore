@@ -1,6 +1,5 @@
 import React from 'react'
 import { ProjectAboutSection } from '../../../SectionsComponents'
-import { VladyAboutInfo } from './Config'
 
 export const About = () => {
   return (
@@ -9,7 +8,9 @@ export const About = () => {
       year="2019"
       name="Vlady Design"
       link="vladydesign.com"
-      additionalInfo={VladyAboutInfo}
+      description="Студия дизайна Vlady Design специализируется на создании интерьера жилых и коммерческих помещений.
+      Желание выделиться среди конкурентов и качественно представить себя во всемирной паутине привело их к нам.
+      Мы разработали дизайн сайта, учитывая пожелания заказчика, и успешно воплотили его в реальность."
     />
   )
 }

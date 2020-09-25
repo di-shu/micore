@@ -1,14 +1,13 @@
 import React from 'react'
 import { MainWrapper } from '~/Components/SectionsComponents'
 import {
-  About,
-  Branding,
-  BrandingElements,
-  Colors,
-  LogoDemonstration,
   Main,
+  About,
+  Colors,
+  Branding,
   Philosophy,
-  Symbol
+  BrandingElements,
+  LogoDemonstration
 } from '../../src/Components/Sections/Projects/PrideGroup'
 /*STYLES*/
 import '~/Styles/Pages/Projects/pride-group.scss'
@@ -23,7 +22,6 @@ const PrideGroup = () => {
       <Colors/>
       <Branding/>
       <BrandingElements/>
-      <Symbol/>
     </MainWrapper>
   )
 }

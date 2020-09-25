@@ -1,7 +1,7 @@
 import React from 'react'
-import { BottomNavigation, ImageWrapper, SectionDesc, SectionLayout } from '../../../SectionsComponents'
+import { BottomNavigation, ImageWrapper, SectionLayout } from '../../../SectionsComponents'
 /* IMAGES */
-const BeeGamesPC = '/images/BeeGames/BeeGameDesktopPC.png'
+const BeeGamesPC = '/images/BeeGames/BeeGameDesktopPC.jpg'
 
 export const Last = () => {
   return (
@@ -15,8 +15,6 @@ export const Last = () => {
           </>
         )
       }}
-    >
-      <SectionDesc/>
-    </SectionLayout>
+    />
   )
 }

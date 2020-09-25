@@ -3,6 +3,9 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { FontExample, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 
+const FontLight = '/images/PrideGroup/Font_Light.svg'
+const FontRegular = '/images/PrideGroup/Font_Regular.svg'
+
 export const Colors = () => {
   return (
     <SectionLayout id="pride-group-colors">
@@ -45,7 +48,12 @@ export const Colors = () => {
           </div>
         </Col>
       </Row>
-      <FontExample fontNameFirst="Proxima Nova Light" fontNameSecond="Proxima Nova Regular"/>
+      <FontExample
+        fontExampleFirst={FontLight}
+        fontExampleSecond={FontRegular}
+        fontNameFirst="Proxima Nova Light"
+        fontNameSecond="Proxima Nova Regular"
+      />
     </SectionLayout>
   )
 }

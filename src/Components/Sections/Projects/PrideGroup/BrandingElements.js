@@ -1,21 +1,42 @@
 import React from 'react'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
-import { BrandingAdditionalInfo } from './Config'
-import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle, TypeSomething } from '../../../SectionsComponents'
+import {
+  SectionDesc,
+  SectionTitle,
+  ImageWrapper,
+  SectionLayout,
+  BottomNavigation
+} from '../../../SectionsComponents'
+
 /*IMAGES*/
 const Landscape = '/images/PrideGroup/Landscape.png'
+const SymbolLogo = '/images/PrideGroup/SymbolLogo.svg'
+const FooterBackground = '/images/PrideGroup/PrideGroupMockup.jpg'
 
 export const BrandingElements = () => {
   return (
-    <SectionLayout id="pride-group-branding-elements" Header={() => <ImageWrapper src={Landscape}/>}>
+    <SectionLayout
+      id="pride-group-branding-elements"
+      Footer={() => (
+        <>
+          <ImageWrapper className="footer-background" src={FooterBackground}/>
+          <BottomNavigation/>
+        </>
+      )}
+    >
+      <ImageWrapper className="section-background" src={Landscape}/>
       <Row style={{ display: 'flex', alignItems: 'center' }}>
         <Col xs={12} lg={6}>
-          <SectionTitle title="Branding elements"/>
-          <SectionDesc/>
+          <SectionTitle title="Символ"/>
+          <SectionDesc>
+            Лев - воплощение благородства, уверенности и справедливости. Конструкция из трех львов,
+            смотрящих на три стороны света, состоит из треугольных элементов.
+            Все эти детали отсылают нас к основной идеи - триединства организации.
+          </SectionDesc>
         </Col>
         <Col xs={12} lg={6}>
-          <TypeSomething content={BrandingAdditionalInfo}/>
+          <ImageWrapper src={SymbolLogo} className="symbol-logo"/>
         </Col>
       </Row>
     </SectionLayout>

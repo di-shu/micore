@@ -1,7 +1,7 @@
 import React from 'react'
 import { ImageWrapper, ProjectMainSection } from '../../../../Components'
 /* IMAGES */
-const MainBG = '/images/BeeGames/MainBG.png'
+const MainBG = '/images/BeeGames/MainBG.svg'
 const MainImage = '/images/BeeGames/MainImage.png'
 
 const SectionContent = () => <ImageWrapper src={MainImage} className="main-image" />
