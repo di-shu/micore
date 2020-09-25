@@ -4,7 +4,7 @@ import Head from 'next/head'
 export const MetaHead = () => {
   return (
     <Head>
-      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no"/>
       
       <meta name="description" content="Web studio Manticore Development"/>
       <meta property="og:type" content="article"/>
@@ -14,7 +14,7 @@ export const MetaHead = () => {
       <meta property="og:url" content="PERMALINK"/>
       <meta property="og:site_name" content="SITE NAME"/>
   
-      <link rel="stylesheet" href="'https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap&subset=cyrillic,cyrillic-ext,latin-ext'"/>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"/>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
       <link rel="stylesheet" type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"/>
