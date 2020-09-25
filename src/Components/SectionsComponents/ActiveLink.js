@@ -1,10 +1,19 @@
 import React from 'react'
-import Link from 'next/link'
+// import Link from 'next/link'
+import { useRouter } from 'next/router'
 
-export const ActiveLink = ({ link, scroll = true, className, children, ...props }) => {
+export const ActiveLink = ({ link, className, children, ...props }) => {
+  const router = useRouter()
+  
+  const handleClick = (e) => {
+    e.preventDefault()
+    router.push(link)
+  }
+  
   return (
-    <Link href={link} scroll={scroll} passHref>
-      <a className={className} {...props}>{children}</a>
-    </Link>
+    <a className={className} href={link} onClick={handleClick} {...props}>{children}</a>
+    // <Link href={link} scroll={scroll} passHref>
+    //
+    // </Link>
   )
 }
