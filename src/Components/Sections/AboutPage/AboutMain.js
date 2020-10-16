@@ -18,11 +18,17 @@ export const AboutMain = ({ firstLoad, animation }) => {
             <SectionTitle className={AnimationClass({ firstLoad, animation })}>
               WE are WEB studio <span>M</span>ANTICORE development
             </SectionTitle>
-            <SectionDesc className={AnimationClass({ firstLoad, animation })} />
+            <SectionDesc className={AnimationClass({ firstLoad, animation })}>
+              Компания родилась с идеи в марте 2017-го года. С того времени наша философия остаётся неизменная: создание
+              нового на основе старого. Соединив принципы дизайна разных эпох продукт выходит не похожим на конкурентов.
+              Мы ищем клиентов, которые понимают, что интернет занимает в мире не последнее место и готовы идти в ногу
+              со временем вместе.
+            </SectionDesc>
           </Col>
           <Col xs={12} lg={6} className="grid-item-wrap grid-images">
-            <ImageWrapper isDot className={AnimationClass({ firstLoad, animation })} />
-            <ImageWrapper src={IndianGirl} className={AnimationClass({ firstLoad, animation, className: 'about-main-statue' })} />
+            <ImageWrapper isDot className={AnimationClass({ firstLoad, animation })}/>
+            <ImageWrapper src={IndianGirl}
+                          className={AnimationClass({ firstLoad, animation, className: 'about-main-statue' })}/>
           </Col>
         </Row>
       </Container>

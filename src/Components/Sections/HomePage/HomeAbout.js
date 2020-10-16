@@ -17,20 +17,17 @@ export const HomeAbout = ({ animation }) => {
       <Container fluid>
         <Row>
           <Col xs={12}>
-            <SectionTitle main className={animation ? 'on-enter' : 'on-leave'} title="About" isContentWhite />
+            <SectionTitle main className={animation ? 'on-enter' : 'on-leave'} title="О нас" isContentWhite/>
           </Col>
           <Col xs={12}>
-            <ImageWrapper isDot display={!desktop} />
+            <ImageWrapper isDot display={!desktop}/>
             <div className={`text-box ${animation ? 'on-enter' : 'on-leave'}`}>
               <SectionDesc isContentWhite className="about-desc">
-                We are Manticore Development, company
-                which duis aute irure dolor in reprehenderit
-                in voluptate velit esse cillum dolore eu fugia
-                nulla pariatur. Excepteur sint occaecat cupid
-                atat non proident, sunt in culpa qui officia de
-                serunt mollit anim id est laborum.
+                Разрабатываем креативные сайты и брендинги, заточенные под бизнес клиента. Наш подход нацелен на
+                создание проекта, который будет помогать бизнесу зарабатывать, а оставлять пользователю положительный
+                опыт.
               </SectionDesc>
-              <ActiveLink link="/about" className="about-link">See more</ActiveLink>
+              <ActiveLink link="/about" className="about-link">Подробнее</ActiveLink>
             </div>
             <ImageWrapper src={Statue} className={`about-statue ${animation ? 'on-enter' : 'on-leave'}`}/>
           </Col>

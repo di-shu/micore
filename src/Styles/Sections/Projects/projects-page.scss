@@ -16,6 +16,14 @@
   [id*='-main'] {
     height: 100vh;
     padding-top: 65px;
+
+    @include media-breakpoint-up('md') {
+      padding-top: 75px;
+    }
+
+    @include media-breakpoint-up('xl') {
+      padding-top: 85px;
+    }
   }
 
   .section-dots-wrap {
@@ -23,6 +31,16 @@
     width: 340px;
     height: 340px;
     position: absolute;
+
+    @include media-breakpoint-up('lg') {
+      width: 440px;
+      height: 440px;
+    }
+
+    @include media-breakpoint-up('xl') {
+      width: 540px;
+      height: 540px;
+    }
   }
 
   .square-info-wrap {
@@ -37,6 +55,11 @@
     justify-content: center;
     border: 1px solid #12171e;
     background-color: #ffffff;
+
+    @include media-breakpoint-up('xl') {
+      height: 190px;
+      margin: 0 auto 65px 0;
+    }
 
     &:before, &:after {
       z-index: 1;
@@ -76,6 +99,20 @@
         width: 10px;
         height: 75px;
       }
+
+      @include media-breakpoint-up('xl') {
+        .square-text-wrap {
+          display: flex;
+
+          p {
+            word-break: break-word;
+
+            &:first-child {
+              margin-right: 85px;
+            }
+          }
+        }
+      }
     }
 
     p {
@@ -85,6 +122,12 @@
       word-break: break-all;
       letter-spacing: 0.39px;
       font-family: $museo-300;
+
+      @include media-breakpoint-up('xl') {
+        font-size: 20px;
+        line-height: 29px;
+        letter-spacing: 0.56px;
+      }
     }
 
     a, span {
@@ -109,6 +152,12 @@
     font-family: $museo-100;
     letter-spacing: 0.39px;
 
+    @include media-breakpoint-up('xl') {
+      font-size: 16px;
+      margin-bottom: 30px;
+      letter-spacing: 0.45px;
+    }
+
     &:before {
       left: 0;
       top: 50%;
@@ -125,82 +174,23 @@
       color: #fff;
     }
   }
-}
 
-@include media-breakpoint-up('md') {
-  [id*='-project-page'] {
-    [id*='-main'] {
-      padding-top: 75px;
-    }
-  }
-}
-
-@include media-breakpoint-up('lg') {
-  [id*='-project-page'] {
-    .section-dots-wrap {
-      width: 440px;
-      height: 440px;
-    }
-  }
-}
-
-@include media-breakpoint-up('xl') {
-  [id*='-project-page'] {
-    [id*='-main'] {
-      padding-top: 80px;
-    }
-
-    .square-info-wrap {
-      height: 190px;
-      margin: 0 auto 65px 0;
-
-      &.content-wrap {
-        .square-text-wrap {
-          display: flex;
-
-          p {
-            word-break: break-word;
-
-            &:first-child {
-              margin-right: 85px;
-            }
-          }
-        }
-      }
-
-      p {
-        font-size: 20px;
-        letter-spacing: 0.56px;
-        line-height: 29px;
-      }
-    }
-
-    .section-dots-wrap {
-      width: 540px;
-      height: 540px;
-    }
-
-    .text-with-dot {
-      font-size: 16px;
-      letter-spacing: 0.45px;
-      margin-bottom: 30px;
-    }
-
+  @include media-breakpoint-up('xl') {
     #footer-section {
-      position: relative !important;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
+      opacity: 1;
       z-index: 100;
       min-height: auto;
-      opacity: 1;
       visibility: visible;
+      position: relative !important;
 
       .container-wrap {
+        min-height: 100%;
         position: relative;
         height: 100% !important;
-        min-height: 100%;
       }
     }
   }

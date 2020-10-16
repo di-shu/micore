@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 import { FooterSection } from '../Sections'
 import { FullPageWrapper, ScrollBox } from '../index'
-import { AboutMain, Skills } from '../Sections/AboutPage' //AboutTeam
+import { AboutMain } from '../Sections/AboutPage' //AboutTeam, Skills
 /* STYLES */
 import '~/Styles/Pages/about.scss'
 import { useDeviceDetect } from '../../Helpers'
 
 const AboutSections = [
-  { name: 'about-main', status: false, Component: AboutMain },
-  { name: 'skills', status: false, Component: Skills },
+  { name: 'about-main', status: true, Component: AboutMain },
+  // { name: 'skills', status: false, Component: Skills },
   // { name: 'team', status: false, Component: AboutTeam },
   { name: 'about-footer', status: false, Component: FooterSection }
 ]

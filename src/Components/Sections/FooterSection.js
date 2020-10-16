@@ -17,13 +17,13 @@ const InitValues = { name: '', phone: '', message: '' }
 const FormInputs = [
   {
     id: 'name',
-    label: 'Name',
+    label: 'Имя',
     required: true
   },
   {
     id: 'phone',
     type: 'tel',
-    label: 'Phone number',
+    label: 'Телефон',
     mask: '+38 (099) 999-99-99',
     required: true
   },
@@ -31,7 +31,7 @@ const FormInputs = [
     rows: 4,
     id: 'message',
     type: 'textarea',
-    placeholder: 'Type message...'
+    placeholder: 'Сообщение'
   }
 ]
 
@@ -72,7 +72,7 @@ export const FooterSection = ({ isContact, animation }) => {
               <Form className="form-wrap" onSubmit={handleSubmit}>
                 <Row>
                   <Col xs={12} lg={12} xl={isContact ? 12 : 5} className="col-form-wrap">
-                    <SectionTitle className="contact-us" display={desktop} title="Contact us"/>
+                    <SectionTitle className="contact-us" display={desktop} title="Связаться"/>
                     {FormInputs.map(({ id, label, placeholder, type, rows, display, required, mask }, index) => (
                       <InputControl
                         id={id}
@@ -89,7 +89,7 @@ export const FooterSection = ({ isContact, animation }) => {
                       />
                     ))}
                     <div className="btn-wrap">
-                      <button type="submit" className="btn-submit"><span>SEND</span></button>
+                      <button type="submit" className="btn-submit"><span>Отправить</span></button>
                     </div>
                   </Col>
                   {!isContact && desktop && (
@@ -100,7 +100,7 @@ export const FooterSection = ({ isContact, animation }) => {
                         id="message"
                         type="textarea"
                         value={values.message}
-                        placeholder="Type message..."
+                        placeholder="Сообщение"
                         onChange={handleChange}
                       />
                     </Col>
@@ -109,24 +109,24 @@ export const FooterSection = ({ isContact, animation }) => {
               </Form>
             </Col>
             <Col xs={12} lg={isContact ? 12 : 6} xl={isContact ? 12 : { span: 3, offset: 1 }} className="contact-info-wrap">
-              {!isContact && desktop && <h2 className="section-title contacts">Contacts</h2>}
+              {!isContact && desktop && <h2 className="section-title contacts">Контакты</h2>}
               <Row>
                 <Col xs={12} lg={isContact ? 6 : 12}>
                   <div className="contact-wrap">
-                    <h3 className="contact-title">Everything else</h3>
-                    <h4 className="contact-sub-title">micore@gmail.com</h4>
-                    <h4 className="contact-sub-title with-line"><span>38 097 184 00 09</span></h4>
+                    {isContact && <h3 className="contact-title">Контакты</h3>}
+                    <a href="mailto:micore@gmail.com" className="contact-sub-title">micore@gmail.com</a>
+                    <a href="tel:+380971840009" className="contact-sub-title"><span>+38 097 184 00 09</span></a>
                   </div>
                 </Col>
                 <Col xs={12} lg={isContact ? 6 : 12}>
                   <div className={`contact-wrap ${desktop ? ' mb-0' : ''}`}>
-                    <h3 className="contact-title">Odessa</h3>
-                    <h4 className="contact-sub-title">Francuskiy bulvar, 66/2</h4>
+                    <h3 className="contact-title">Одесса</h3>
+                    <h4 className="contact-sub-title">улица Львовская, 48</h4>
                     <h4 className="contact-sub-title with-line">
-                      <span>Office, 702b</span>
-                      <a href="https://goo.gl/maps/vU6GcPpd4y2cfwhz7" target="_blank" className="btn-show-map">
+                      <span>Офис, 301</span>
+                      <a href="https://goo.gl/maps/XCmNkLGyBsCcrXvM6" target="_blank" className="btn-show-map">
                         <img src={MapMarker} alt="Map icon"/>
-                        <span>see map</span>
+                        <span>карта</span>
                       </a>
                     </h4>
                   </div>
@@ -138,7 +138,7 @@ export const FooterSection = ({ isContact, animation }) => {
         </Container>
         {mobile && (
           <div className="copyright-container">
-            <h6>Some text</h6>
+            <h6>2017-2020, all rights reserved</h6>
             <h6>Manticore development</h6>
           </div>
         )}

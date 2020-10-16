@@ -5,13 +5,13 @@
     padding-top: 0;
 
     .section-wrapper {
-      padding-top: 100px;
       padding-bottom: 0;
+      padding-top: 100px;
     }
 
     .section-title {
-      margin-bottom: 30px;
       margin-left: 0;
+      margin-bottom: 30px;
 
       &:first-letter {
         color: $accent-main;
@@ -32,15 +32,34 @@
 
     .services-card {
       padding-bottom: 0 !important;
+
+      &:before {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        content: '';
+        opacity: 0;
+        position: absolute;
+        transition: all 0.5s ease-in-out;
+        background-image: linear-gradient(180deg, rgba(255,255,255,0.00) 0%, #FFFFFF 100%);
+      }
+
+      &:hover {
+        &:before {
+          opacity: 0.07;
+        }
+      }
     }
 
     .service-link {
-      position: absolute;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
       z-index: 5;
+      position: absolute;
     }
   }
 }
@@ -191,10 +210,12 @@
       }
 
       .section-title {
-        position: absolute;
         top: 12vh;
         left: 12vw;
+        margin-top: 0;
+        margin-left: 0;
         margin-bottom: 0;
+        position: absolute;
         transition: all 1s $timing-func;
 
         &.on-enter {

@@ -23,20 +23,20 @@ export const MenuContainer = ({ close, open, animation }) => {
         ))}
       </ListGroup>
       <SocialsWrap display={mobile} />
-      <div className="switch-box">
-        <ActiveLink link="/" className="switch-link">
-          <p className="switch-name">EN</p>
-          <span className="switch-line"/>
-        </ActiveLink>
-        <ActiveLink link="/" className="switch-link">
-          <p className="switch-name">RU</p>
-          <span className="switch-line"/>
-        </ActiveLink>
-        <ActiveLink link="/" className="switch-link">
-          <p className="switch-name">UK</p>
-          <span className="switch-line"/>
-        </ActiveLink>
-      </div>
+      {/*<div className="switch-box">*/}
+      {/*  <ActiveLink link="/" className="switch-link">*/}
+      {/*    <p className="switch-name">EN</p>*/}
+      {/*    <span className="switch-line"/>*/}
+      {/*  </ActiveLink>*/}
+      {/*  <ActiveLink link="/" className="switch-link">*/}
+      {/*    <p className="switch-name">RU</p>*/}
+      {/*    <span className="switch-line"/>*/}
+      {/*  </ActiveLink>*/}
+      {/*  <ActiveLink link="/" className="switch-link">*/}
+      {/*    <p className="switch-name">UK</p>*/}
+      {/*    <span className="switch-line"/>*/}
+      {/*  </ActiveLink>*/}
+      {/*</div>*/}
     </div>
   )
 }

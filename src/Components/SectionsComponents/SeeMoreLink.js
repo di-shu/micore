@@ -7,7 +7,7 @@ export const SeeMoreLink = (props) => {
     display = true,
     direction = 'left',
     nav = '/portfolio',
-    label = 'See works'
+    label = 'Наши работы'
   } = props
   
   return (

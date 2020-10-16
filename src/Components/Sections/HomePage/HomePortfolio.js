@@ -15,7 +15,7 @@ export const HomePortfolio = ({ animation, isPortfolio }) => {
         <TabWrap tabs={ProjectsList} animation={animation} isSlice={isPortfolio}/>
         {!isPortfolio && (
           <div className={AnimationClass({ animation, className: 'link-wrap' })}>
-            <ActiveLink link="/portfolio" className="see-all-link">see all</ActiveLink>
+            <ActiveLink link="/portfolio" className="see-all-link">смотреть все</ActiveLink>
           </div>
         )}
       </SectionWrapper>
