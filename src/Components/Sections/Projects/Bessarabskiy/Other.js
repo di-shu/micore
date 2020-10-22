@@ -8,24 +8,26 @@ import {
   SectionLayout,
   ProjectInfoWrap
 } from '../../../SectionsComponents'
+import { useDeviceDetect } from '../../../../Helpers'
 /*IMAGES*/
 const Napkins = '/images/Bessarabkiy/BessarabskiyNapkins.png'
 
-export const Other = () => (
-  <SectionLayout id="bessarabskiy-other" Footer={() => <ImageWrapper src={Napkins}/>}>
-    <SectionTitle title="Other products"/>
-    <Row>
-      <Col xs={12} lg={6}>
-        <ProjectInfoWrap
-          isProjectInfo
-          year="june, 2018"
-          name="Бессарабский Дворик"
-          link="bessarabskiy-dvorik.com"
-        />
-      </Col>
-      <Col xs={12} lg={6}>
-        <SectionDesc/>
-      </Col>
-    </Row>
-  </SectionLayout>
-)
+export const Other = () => {
+  const { minWidthLaptop } = useDeviceDetect()
+  
+  return (
+    <SectionLayout id="bessarabskiy-other" Footer={() => <ImageWrapper src={Napkins}/>}>
+      <ImageWrapper isDot display={minWidthLaptop}/>
+      <Row>
+        <Col xs={12} lg={6}>
+          <SectionTitle title="Другие атрибуты"/>
+          <SectionDesc>
+            Все внутренние и внешние ресторанные атрибуты, будь то меню, визитки, сертификаты, или даже обычные салфетки
+            брендированы. Эстетичная и органичная брендовая продукция обеспечивает визуальную коммуникацию заведения с
+            гостями.
+          </SectionDesc>
+        </Col>
+      </Row>
+    </SectionLayout>
+  )
+}

@@ -16,27 +16,26 @@ export const ServicesPage = () => {
     <>
       <section id="services-section">
         <Container fluid>
-          <SectionTitle main title="Services" isContentWhite />
+          <SectionTitle main title="Услуги" isContentWhite/>
           <Row>
             {ServicesList.map((service, index) => (
               <Col key={`service_${index}`} xs={12} md={6} xl={3} className="col-service">
-                <div className="services-card">
-                  <ImageWrapper src={service.img} className="services-image" />
-                  <div className="services-info">
-                    <SectionTitle isContentWhite className="services-title" title={service.name} />
-                    <SectionDesc isContentWhite className="services-desc" children={service.desc} />
-                    <ActiveLink link={service.link} className="custom-btn">
-                      <span>SEE MORE</span>
-                    </ActiveLink>
-                    {index === 0 && mobile && <ScrollBox />}
+                <ActiveLink link={service.link}>
+                  <div className="services-card">
+                    <ImageWrapper src={service.img} className="services-image"/>
+                    <div className="services-info">
+                      <SectionTitle isContentWhite className="services-title" title={service.name}/>
+                      <SectionDesc isContentWhite className="services-desc" children={service.desc}/>
+                      {index === 0 && mobile && <ScrollBox/>}
+                    </div>
                   </div>
-                </div>
+                </ActiveLink>
               </Col>
             ))}
           </Row>
         </Container>
       </section>
-      {!desktop && <FooterSection />}
+      {!desktop && <FooterSection/>}
     </>
   )
 }

@@ -19,13 +19,16 @@ export const News = () => (
   <SectionLayout id="bessarabskiy-news" Header={SectionHeader}>
     <Row>
       <Col xs={12} lg={6} xl={5}>
-        <SectionTitle title="News page"/>
-        <SectionDesc withDot/>
+        <SectionTitle title="Новости"/>
+        <SectionDesc>
+          В ресторане часто проводятся тематические вечеринки и мастер-классы для взрослых и детей. Новостной блок
+          информирует посетителей сайта о предстоящих мероприятиях.
+        </SectionDesc>
       </Col>
       <Col xs={12} lg={6} xl={7}>
         <ImageWrapper src={PageNews} className="news-page-image"/>
       </Col>
     </Row>
-    <ImageWrapper src={PepperYellow} className="pepper-image"/>
+    <ImageWrapper src={PepperYellow} className="pepper-image-bottom"/>
   </SectionLayout>
 )

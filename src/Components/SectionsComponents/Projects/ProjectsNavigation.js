@@ -8,9 +8,8 @@ export const ProjectsNavigation = ({ links }) => {
   const [next, setNext] = useState('/')
   const [isBlack, setIsBlack] = useState(false)
   const { pathname } = useRouter()
-  const { mobile } = useDeviceDetect()
-  const { isProject } = useCheckRoute()
   const { scrollDir } = useScroll()
+  const { isProject } = useCheckRoute()
   
   useEffect(() => {
     // eslint-disable-next-line array-callback-return
@@ -30,11 +29,11 @@ export const ProjectsNavigation = ({ links }) => {
   
   return isProject && (
     <div className={`navigation-wrap ${isBlack ? 'is-black' : ''} ${scrollDir === 'up' ? 'scroll-up' : scrollDir === 'down' ? 'scroll-down' : ''}`}>
-      <ActiveLink link={prev} scroll={false} className="nav-el prev">
-        <span>{mobile ? 'Prev' : 'Previous'}</span>
+      <ActiveLink link={prev} className="nav-el prev">
+        <span>Назад</span>
       </ActiveLink>
-      <ActiveLink link={next} scroll={false} className="nav-el next">
-        <span>Next</span>
+      <ActiveLink link={next} className="nav-el next">
+        <span>Вперед</span>
       </ActiveLink>
     </div>
   )

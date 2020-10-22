@@ -10,27 +10,27 @@ export const MainStatue = '/images/Services/Corporate/MainStatue.png'
 export const CorporateStages = [
   {
     title: 'Обсуждение проекта',
-    desc: 'This website which duis aute irure dolor  in rep ehenderit in voluptate velit esse cillum dolo rez eu fugia.'
+    desc: 'В начале обычно задача звучит так: «Я хочу корпоративный сайт, сколько стоит?'
   },
   {
     title: 'Первичные требования',
-    desc: 'This website which duis aute irure dolor  in rep ehenderit in voluptate velit esse cillum dolo rez eu fugia.'
+    desc: 'Но нам нужны детали: о вашей компании; об услугах; какие блоки должны быть.'
   },
   {
     title: 'Техническое задание',
-    desc: 'This website which duis aute irure dolor  in rep ehenderit in voluptate velit esse cillum dolo rez eu fugia.'
+    desc: 'Мы составляем первичное ТЗ исходя из полученных данных при обсуждении проекта.'
   },
   {
     title: 'Сроки и стоимость',
-    desc: 'This website which duis aute irure dolor  in rep ehenderit in voluptate velit esse cillum dolo rez eu fugia.'
+    desc: 'Озвучиваем срок и стоимость, при необходимости предлагаем альтернативные варианты.'
   },
   {
     title: 'Детализация ТЗ',
-    desc: 'This website which duis aute irure dolor  in rep ehenderit in voluptate velit esse cillum dolo rez eu fugia.'
+    desc: 'Дополняем ТЗ деталями, урезаем или дополняем функционал после первичной оценки, утверждаем.'
   },
   {
     title: 'Конечная стоимость',
-    desc: 'This website which duis aute irure dolor  in rep ehenderit in voluptate velit esse cillum dolo rez eu fugia.'
+    desc: 'Даём финальную оценку, подписываем документы и стартуем проект.'
   }
 ]
 

@@ -12,27 +12,27 @@ export const MainStatue = '/images/Services/LandingPage/MainStatue.png'
 export const LandingStages = [
   {
     title: 'Обсуждение проекта',
-    desc: 'This website which duis aute irure dolor  in rep ehenderit in voluptate velit esse cillum dolo rez eu fugia.'
+    desc: 'В начале обычно задача звучит так: «мне нужен лендинг для продажи телефонов, сколько стоит?'
   },
   {
     title: 'Первичные требования',
-    desc: 'This website which duis aute irure dolor  in rep ehenderit in voluptate velit esse cillum dolo rez eu fugia.'
+    desc: 'Но нам нужны детали. Каких телефонов? Сколько моделей? Какие блоки должны быть?'
   },
   {
     title: 'Техническое задание',
-    desc: 'This website which duis aute irure dolor  in rep ehenderit in voluptate velit esse cillum dolo rez eu fugia.'
+    desc: 'Мы составляем первичное ТЗ исходя из полученных данных при обсуждении проекта.'
   },
   {
     title: 'Сроки и стоимость',
-    desc: 'This website which duis aute irure dolor  in rep ehenderit in voluptate velit esse cillum dolo rez eu fugia.'
+    desc: 'Озвучиваем срок и стоимость, при необходимости предлагаем альтернативные варианты.'
   },
   {
     title: 'Детализация ТЗ',
-    desc: 'This website which duis aute irure dolor  in rep ehenderit in voluptate velit esse cillum dolo rez eu fugia.'
+    desc: 'Озвучиваем срок и стоимость, при необходимости предлагаем альтернативные варианты.'
   },
   {
     title: 'Конечная стоимость',
-    desc: 'This website which duis aute irure dolor  in rep ehenderit in voluptate velit esse cillum dolo rez eu fugia.'
+    desc: 'Даём финальную оценку, подписываем документы и стартуем проект.'
   }
 ]
 

@@ -29,7 +29,7 @@ export const ProjectColor = ({ colors }) => {
               </div>
             )}
             <div className="info-wrap">
-              <p className="info-text">{color.colorName}</p>
+              <p className="info-text">{color.colorName || color.name}</p>
               <p className="info-text">{color.hex}</p>
               <p className="info-text">{color.CMYK}</p>
               <p className="info-text">{color.fullName}</p>

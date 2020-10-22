@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col'
 import Form from 'react-bootstrap/Form'
 import Container from 'react-bootstrap/Container'
 import { InputControl } from '../Inputs'
-import { ImageWrapper, SectionTitle, SocialsWrap } from '../SectionsComponents'
+import { ImageWrapper, MyScrollAnimation, SectionTitle, SocialsWrap } from '../SectionsComponents'
 import { useDeviceDetect } from '../../Helpers'
 /* IMAGES */
 const MapMarker = '/images/map-marker.svg'
@@ -62,7 +62,8 @@ export const FooterSection = ({ isContact, animation }) => {
 
   return (
     <section id="footer-section" className={`section ${!isContact ? 'footer-section' : 'active'}`}>
-      <div className={`container-wrap ${animation ? 'on-enter' : 'on-leave'}`}>
+      <MyScrollAnimation animationName="fadeIn" offset={300}>
+        <div className={`container-wrap ${animation ? 'on-enter' : 'on-leave'}`}>
         {isContact && minWidthLaptop && (
           <ImageWrapper src={ContactHand} className="image-wrap"/>
         )}
@@ -143,6 +144,7 @@ export const FooterSection = ({ isContact, animation }) => {
           </div>
         )}
       </div>
+      </MyScrollAnimation>
     </section>
   )
 }

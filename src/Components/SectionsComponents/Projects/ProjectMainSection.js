@@ -13,13 +13,13 @@ export const ProjectMainSection = ({ id, name, background, content, isContentWhi
       Header={() => (
         <>
           {background && <ImageWrapper src={background} className="section-background" />}
-          <SeeMoreLink label="Back to projects" className={isNavBlack ? 'is-black' : ''}/>
+          <SeeMoreLink label="Назад к проектам" className={isNavBlack ? 'is-black' : ''}/>
           <ScrollBox isBlack={isNavBlack} />
         </>
       )}
       Footer={content}
     >
-      <SectionDesc isContentWhite={isContentWhite}>Project name</SectionDesc>
+      <SectionDesc isContentWhite={isContentWhite}>Название проекта</SectionDesc>
       <SectionTitle main title={name} isContentWhite={isContentWhite} />
       {children}
     </SectionLayout>

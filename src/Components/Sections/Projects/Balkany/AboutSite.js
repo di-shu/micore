@@ -13,7 +13,11 @@ export const AboutSite = () => {
   return (
     <SectionLayout id="balkany-about-site" Header={() => <ImageWrapper src={AboutSiteImg} className="main"/>}>
       <SectionTitle title="Сайт"/>
-      <SectionDesc withDot/>
+      <SectionDesc>
+        Важная часть проекта - веб-сайт футбольного клуба. Ресурс выполнен в лаконичном фирменном дизайне и содержит
+        максимум полезного функционала. Его ключевая особенность - объемная административная панель для управления
+        практически всеми разделами сайта.
+      </SectionDesc>
       <ImageWrapper src={Devices} className="devices"/>
     </SectionLayout>
   )

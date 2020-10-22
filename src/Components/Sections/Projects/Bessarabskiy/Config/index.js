@@ -52,22 +52,22 @@ export const BessarabskiyColors = [
   {
     hex: '#35271c',
     textColor: '#fff',
-    name: 'dark-brown',
+    name: 'Темно-коричневый',
     fullName: 'PANTONE Black 4 C',
     CMYK: 'CMYK: 43, 62, 71, 65%'
   },
   {
     hex: '#f3ece0',
+    name: 'Бежевый',
     textColor: '#000',
-    name: 'ivory',
     fullName: 'PANTONE P 3-9 C',
     CMYK: 'CMYK: 3, 5, 10, 0%'
   },
   {
+    name: 'Золотой',
     textColor: '#000',
-    hex: 'Gold Gradient',
+    hex: 'Золотой градиент',
     fullName: 'PANTONE 729 C',
-    name: 'warm-gold-gradient',
     CMYK: 'CMYK: 21, 41, 100, 7%',
     background: 'linear-gradient(180deg, #c2a06d 0%, #d2a979 27%, #cc9764 63%, #b78150 100%)'
   }

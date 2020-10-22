@@ -16,20 +16,21 @@ export const Brief = () => {
     <SectionLayout id="bessarabskiy-brief">
       <Row>
         <Col xs={12} lg={7} className="brief-grid-item">
-          <SectionTitle title="Logo brief"/>
-          <SectionDesc className="main-desc"/>
+          <SectionTitle title="Смысл лого"/>
+          <SectionDesc className="main-desc">
+            Ресторан умело сочетает традиционные местные бессарабские мотивы в кухне и интерьере заведения.
+            Эту идею мы перенесли в визуальный образ бренда.
+          </SectionDesc>
           {minWidthLaptop && (
             <Row className="logo-var-container">
               <Col lg={6} className="logo-brief-wrap">
-                <SectionTitle title="First version" className="version-title"/>
-                <SectionDesc className="version-desc"/>
+                <SectionTitle title="Первичная версия" className="version-title"/>
                 <div className="logo-wrap">
                   <ImageWrapper src={LogoVar1}/>
                 </div>
               </Col>
               <Col lg={6} className="logo-brief-wrap">
-                <SectionTitle title="Results" className="version-title"/>
-                <SectionDesc className="version-desc"/>
+                <SectionTitle title="Результат" className="version-title"/>
                 <div className="logo-wrap">
                   <ImageWrapper src={LogoVar2}/>
                 </div>
@@ -38,15 +39,16 @@ export const Brief = () => {
           )}
         </Col>
         <Col xs={12} lg={5} className="brief-grid-item">
-          <SectionTitle title="Idea" className="version-title"/>
-          <SectionDesc className="version-desc"/>
+          <SectionTitle title="Идея" className="version-title"/>
+          <SectionDesc className="version-desc">
+            Бессарабия - край виноделов. Поэтому основными символами логотипа заведения стали виноградные гроздья и
+            винная бочка.
+          </SectionDesc>
           <div className="brief-images-wrap">
             <div className="brief-row-wrap barrel-wrap">
               <ImageWrapper src={Barrel} className="barrel-image"/>
-              <span className="version-title">Barrel</span>
             </div>
             <div className="brief-row-wrap grape-wrap">
-              <span className="version-title">Grape</span>
               <ImageWrapper src={Leaf} className="grape-image"/>
             </div>
           </div>
@@ -55,15 +57,13 @@ export const Brief = () => {
           <Col xs={12} lg={6} className="logo-wrapper">
             <Row>
               <Col xs={12} className="logo-brief-wrap">
-                <SectionTitle title="First version" className="version-title"/>
-                <SectionDesc className="version-desc"/>
+                <SectionTitle title="Первичная версия" className="version-title"/>
                 <div className="logo-wrap">
                   <ImageWrapper src={LogoVar1}/>
                 </div>
               </Col>
               <Col xs={12} className="logo-brief-wrap">
-                <SectionTitle title="Results" className="version-title"/>
-                <SectionDesc className="version-desc"/>
+                <SectionTitle title="Результат" className="version-title"/>
                 <div className="logo-wrap">
                   <ImageWrapper src={LogoVar2}/>
                 </div>

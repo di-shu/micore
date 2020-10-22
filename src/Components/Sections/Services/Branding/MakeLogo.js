@@ -42,7 +42,7 @@ const LettersArray = [
   '/images/Services/Branding/MLetters/mi-33.svg',
   '/images/Services/Branding/MLetters/mi-34.svg',
   '/images/Services/Branding/MLetters/mi-35.svg',
-  '/images/Services/Branding/MLetters/mi-36.svg',
+  '/images/Services/Branding/MLetters/mi-36.svg'
 ]
 
 let count = 0
@@ -52,13 +52,13 @@ export const MakeLogo = () => {
   const [isLastLetter, setIsLastLetter] = useState(false)
   const [selectedLetter, setSelectedLetter] = useState(LettersArray[0])
   const { minWidthLaptop } = useDeviceDetect()
-
+  
   const changeLetter = () => {
     setStartChange(true)
     const int = setInterval(() => {
       count++
       setSelectedLetter(LettersArray[count])
-
+      
       if (count === LettersArray.length - 1) {
         clearInterval(int)
         setIsLastLetter(true)
@@ -69,17 +69,24 @@ export const MakeLogo = () => {
       }
     }, 125)
   }
-
+  
   return (
-    <SectionLayout id="branding-make-logo" Header={() => <ImageWrapper isDot display={!minWidthLaptop} />}>
+    <SectionLayout id="branding-make-logo" Header={() => <ImageWrapper isDot display={!minWidthLaptop}/>}>
       <Row>
         <Col xs={12} lg={6}>
           <MyScrollAnimation delay={[200, 400, 600]}>
-            <SectionTitle title="Как разрабатывается логотип" isContentWhite />
-            <SectionDesc isContentWhite className="d-none d-lg-block"/>
+            <SectionTitle title="Как разрабатывается логотип" isContentWhite/>
+            <SectionDesc isContentWhite className="d-none d-lg-block">
+              Иногда заказчикам кажется, что лого появляется по нажатию на волшебную кнопку "создать логотип" (кнопка
+              справа, кстати), но лого создаётся исходя из брифа и последующего анализа рынка. В ходе работы мы пробуем
+              разные идеи, шрифты, символы и дизайнерские приёмы, но в конечном итоге мы предоставляем 3 дотошно
+              проработанных концепции
+            </SectionDesc>
             <div className="making-logo-wrap d-flex d-lg-none">
-              <ImageWrapper src={selectedLetter} className={`logo-image ${isLastLetter ? 'active' : ''} ${startChange ? 'start-change' : ''}`} />
-              <button className={`custom-btn ${startChange ? 'hide' : ''}`} onClick={changeLetter}><span>Создать логотип</span></button>
+              <ImageWrapper src={selectedLetter}
+                            className={`logo-image ${isLastLetter ? 'active' : ''} ${startChange ? 'start-change' : ''}`}/>
+              <button className={`custom-btn ${startChange ? 'hide' : ''}`} onClick={changeLetter}>
+                <span>Создать логотип</span></button>
             </div>
           </MyScrollAnimation>
         </Col>
@@ -87,8 +94,10 @@ export const MakeLogo = () => {
           <MyScrollAnimation delay={[200, 400]}>
             <SectionDesc isContentWhite className="d-block d-lg-none"/>
             <div className="making-logo-wrap d-none d-lg-flex">
-              <ImageWrapper src={selectedLetter} className={`logo-image ${isLastLetter ? 'active' : ''} ${startChange ? 'start-change' : ''}`} />
-              <button className={`custom-btn ${startChange ? 'hide' : ''}`} onClick={changeLetter}><span>Создать логотип</span></button>
+              <ImageWrapper src={selectedLetter}
+                            className={`logo-image ${isLastLetter ? 'active' : ''} ${startChange ? 'start-change' : ''}`}/>
+              <button className={`custom-btn ${startChange ? 'hide' : ''}`} onClick={changeLetter}>
+                <span>Создать логотип</span></button>
             </div>
           </MyScrollAnimation>
         </Col>

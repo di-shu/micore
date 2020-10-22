@@ -1,6 +1,7 @@
 import React from 'react'
 import dynamic from 'next/dynamic'
 import { ScrollBox } from '../ScrollBox'
+import ReactHtmlParser from 'react-html-parser'
 import { draw, setup, useDeviceDetect } from '../../../Helpers'
 import { ImageWrapper, MyScrollAnimation, SectionDesc, SectionLayout, SectionTitle } from '../../SectionsComponents'
 
@@ -33,7 +34,7 @@ export const ServiceMainSection = ({ title, desc, statue, statueParams }) => {
     <SectionLayout id="service-main-section" Footer={() => <SectionHeader statue={statue} options={statueParams}/>}>
       <MyScrollAnimation delay={[0, 200]}>
         <SectionTitle title={title} main isContentWhite/>
-        <SectionDesc isContentWhite children={desc}/>
+        <SectionDesc isContentWhite children={ReactHtmlParser(desc)}/>
       </MyScrollAnimation>
     </SectionLayout>
   )

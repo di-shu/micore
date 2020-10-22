@@ -27,6 +27,11 @@
 
   .brief-images-wrap {
     margin-bottom: 50px;
+
+    @include media-breakpoint-up(md) {
+      max-width: 350px;
+      margin: 0 auto 50px;
+    }
   }
 
   .brief-row-wrap {
@@ -69,6 +74,18 @@
     width: 210px;
   }
 
+  .brief-grid-item {
+    @include media-breakpoint-up(lg) {
+      &:first-child {
+        padding-right: 15px;
+      }
+
+      &:last-child {
+        padding-left: 15px;
+      }
+    }
+  }
+
   .logo-brief-wrap {
     position: relative;
     margin-bottom: 50px;
@@ -77,11 +94,35 @@
     &:last-child {
       margin-bottom: -40px;
     }
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0;
+
+      &:first-child {
+        padding-right: 15px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+        padding-left: 15px;
+      }
+    }
   }
 
   .logo-wrapper {
     padding-left: 45px;
     padding-right: 45px;
+
+    @include media-breakpoint-up(md) {
+      margin: 0 auto;
+      max-width: 600px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding: 0;
+      max-width: 100%;
+      margin: 0 auto 0 0;
+    }
   }
 
   .logo-wrap {
@@ -100,6 +141,12 @@
       width: 100%;
       max-width: 180px;
       margin: 0 auto;
+    }
+  }
+
+  .logo-var-container {
+    @include media-breakpoint-up(lg) {
+      margin-bottom: -50px;
     }
   }
 }
@@ -129,12 +176,26 @@
 
 #bessarabskiy-colors-and-fonts {
   .section-wrapper {
-    padding-bottom: 50px;
+    padding-bottom: 0;
+  }
+
+  .section-desc {
+    max-width: 250px;
+    margin-bottom: 45px;
+
+    @include media-breakpoint-up(lg) {
+      max-width: 335px;
+      margin-bottom: 55px;
+    }
   }
 
   .content-wrap {
     .section-desc {
       margin-bottom: 0;
+    }
+
+    @include media-breakpoint-up(md) {
+      margin: 0 auto 40px;
     }
   }
 
@@ -154,6 +215,44 @@
 
   .font-info {
     margin-bottom: 0;
+  }
+
+  .font-name-row {
+    margin-bottom: 15px;
+  }
+
+  .font-example-title {
+    opacity: 0.4;
+    color: #12171e;
+    font-size: 16px;
+    margin-bottom: 5px;
+    letter-spacing: 0.24px;
+    font-family: $museo-500;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 20px;
+      letter-spacing: 0.3px;
+    }
+  }
+
+  .font-name {
+    font-size: 22px;
+    letter-spacing: 0.3px;
+    font-family: $museo-700;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 26px;
+    }
+  }
+
+  .font-weight {
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    font-family: $museo-500;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 20px;
+    }
   }
 }
 
@@ -201,183 +300,283 @@
 
 #bessarabskiy-about-site {
   .about-site-wrapper {
-    padding-bottom: 200px;
-    overflow: hidden;
-  }
+    z-index: 1;
+    padding-bottom: 0;
 
-  .adaptation-wrapper {
-    position: relative;
-    background-color: #38261a;
-    padding-bottom: 115px;
-    z-index: 5;
-  }
-
-  .adaptation-section-wrapper {
-    padding: 40px 20px;
-    width: 100%;
-    max-width: 90%;
-    border: 1px solid #f3ece0;
-
-    .section-title, .section-desc {
-      color: #fff;
-    }
-
-    .section-title {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, -20px);
-      background-color: #38261a;
-      padding: 0 10px;
+    .section-desc {
       margin-bottom: 0;
     }
 
-    .section-desc {
-      margin-bottom: 60px;
-    }
-  }
+    .section-dots-wrap {
+      top: 0;
+      right: -100px;
+      transform: translateY(-50%);
 
-  .section-dots-wrap {
-    position: absolute;
-    bottom: -20px;
-    right: -100px;
-    width: 340px;
-    height: 340px;
-    z-index: -1;
-  }
-
-  .tomato-image {
-    position: absolute;
-    bottom: 125px;
-    right: 45px;
-    width: 85px;
-    z-index: 1;
-  }
-
-  .iMac-image {
-    width: 100%;
-    margin-bottom: 0;
-    transform: translateY(-70%);
-  }
-
-  .grape-image {
-    position: absolute;
-    z-index: -1;
-    top: 75px;
-    left: 15px;
-    width: 200px;
-  }
-
-  .grid-item-icon {
-    &:nth-child(1), &:nth-child(2) {
-      .icon-wrap {
-        margin-bottom: 100px;
+      @include media-breakpoint-up(lg) {
+        right: 0;
+        transform: none;
       }
     }
   }
 
-  .icon-wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .adaptation-wrapper {
+    z-index: 2;
+    position: relative;
 
-    p {
-      color: #f3ece0;
-      font-family: $museo-100;
-      font-size: 16px;
-      letter-spacing: 0.45px;
-      text-transform: uppercase;
+    @include media-breakpoint-up(lg) {
+      margin: 0 auto;
+      max-width: 1140px;
+      padding-bottom: 230px;
     }
   }
 
-  .device-icon-image {
-    width: 30px;
-    height: 30px;
-    margin: 0 auto 25px;
+  .pages-wrapper {
+    z-index: 1;
+    position: relative;
+
+    @include media-breakpoint-up(lg) {
+      padding-top: 0;
+    }
+
+    &:after {
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: -120px;
+      z-index: -1;
+      content: '';
+      position: absolute;
+      background-color: #38261a;
+      height: calc(100vh + 120px);
+
+      @include media-breakpoint-up(lg) {
+        left: 50%;
+        top: -600px;
+        width: 100vw;
+        height: 1000px;
+        transform: translateX(-50%);
+      }
+    }
+
+    .section-dots-wrap {
+      top: 0;
+      left: 0;
+      z-index: 0;
+
+      @include media-breakpoint-up(lg) {
+        top: auto;
+        bottom: 275px;
+      }
+    }
+  }
+
+  .pages-images-wrapper {
+    position: relative;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: -35%;
+    }
+  }
+
+  .tomato-image {
+    top: 0;
+    z-index: 1;
+    right: 30px;
+    width: 65px;
+    height: 84px;
+    position: absolute;
+
+    @include media-breakpoint-up(lg) {
+      width: 160px;
+      right: -25px;
+      height: 200px;
+      transform: translateY(-50%);
+    }
+  }
+
+  .computer-image {
+    margin-top: 25px;
+  }
+
+  .grape-image {
+    top: -40px;
+    left: 15px;
+    z-index: 1;
+    width: 200px;
+    height: 180px;
+    position: absolute;
+
+    @include media-breakpoint-up(lg) {
+      top: -320px;
+      left: -75px;
+      width: 455px;
+      height: 410px;
+    }
+  }
+
+  .broccoli-image {
+    top: 20px;
+    z-index: 1;
+    left: 15px;
+    width: 88px;
+    height: 100px;
+    position: absolute;
+
+    @include media-breakpoint-up(lg) {
+      top: auto;
+      left: 45px;
+      width: 165px;
+      bottom: 390px;
+      height: 190px;
+    }
+  }
+
+  .screen-page-1 {
+    z-index: 1;
+    position: relative;
+    transform: translateX(calc(50% - 30px));
+
+    @include media-breakpoint-up(lg) {
+      margin-right: 0;
+      max-width: 650px;
+      margin-left: auto;
+      transform: translateX(calc(50% - 60px));
+    }
+  }
+
+  .screen-page-2 {
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    position: absolute;
+
+    @include media-breakpoint-up(lg) {
+      left: auto;
+      bottom: 70px;
+      right: 240px;
+    }
   }
 }
 
 #bessarabskiy-home-page {
   z-index: 6;
+  position: relative;
+
+  .section-dots-wrap {
+    right: 0;
+    bottom: 0;
+    width: 480px;
+    height: 480px;
+    transform: translateY(50%);
+  }
 
   .section-wrapper {
     padding-top: 0;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
+
+    @include media-breakpoint-up(lg) {
+      padding-bottom: 350px;
+    }
   }
 
-  .screen-page-1 {
-    position: relative;
-    right: -185px;
-    width: 370px;
-    transform: translateY(-100px);
-  }
-
-  .screen-page-2 {
-    position: relative;
-    margin-top: -330px;
-    z-index: 2;
-    width: 360px;
-  }
-
-  .broccoli-image {
-    position: absolute;
-    top: 140px;
-    left: 30px;
-    width: 90px;
-  }
-
-  .section-dots-wrap {
-    position: absolute;
-    width: 340px;
-    height: 340px;
-    z-index: -1;
-
-    &.top-dots {
-      top: 80px;
-      left: 16px;
+  .screen-page-wrap {
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
     }
   }
 
   .screen-image {
     margin-bottom: 20px;
+
+    @include media-breakpoint-up(lg) {
+      max-width: 635px;
+      margin-bottom: 0;
+    }
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  .screen-desc-wrap {
+    display: flex;
+    margin-bottom: 40px;
+    flex-direction: column;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0;
+      padding-left: 125px;
+    }
   }
 
   .screen-name {
-    position: relative;
-    color: #35271c;
-    font-family:$museo-300;
     font-size: 24px;
-    letter-spacing: 0.68px;
     line-height: 29px;
-    padding-bottom: 10px;
+    position: relative;
     margin-bottom: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 0.68px;
+    font-family: $museo-500;
 
-    &:before {
-      content: '';
-      position: absolute;
+    @include media-breakpoint-up(lg) {
+      font-size: 40px;
+      padding-bottom: 0;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+    }
+
+    &:after {
+      left: 0;
       bottom: 0;
       height: 1px;
-      width: 75px;
+      content: '';
+      width: 75px ;
+      position: absolute;
       background-color: #b78150;
+
+      @include media-breakpoint-up(lg) {
+        top: 10px;
+        height: 2px;
+        width: 100px;
+        bottom: auto;
+        left: -145px;
+      }
     }
   }
 
   .screen-desc {
-    color: #35271c;
-    font-family: $museo-100;
-    font-size: 14px;
-    line-height: 29px;
+    margin-bottom: 0;
+    letter-spacing: 0.3px;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0.3px;
+    }
   }
 
   .pepper-image {
-    position: absolute;
-    width: 130px;
+    left: 15px;
+    z-index: 1;
+    width: 114px;
+    height: 112px;
     bottom: -65px;
-    left: 16px;
+    position: absolute;
+
+    @include media-breakpoint-up(lg) {
+      left: auto;
+      right: 100px;
+      width: 400px;
+      height: 320px;
+      bottom: 215px;
+    }
   }
 }
 
 #bessarabskiy-news {
+  z-index: 2;
   background-color: #382a1d;
 
   .macBook-image {
@@ -409,7 +608,7 @@
     margin-bottom: -55px;
   }
 
-  .pepper-image {
+  .pepper-image-bottom {
     position: absolute;
     bottom: -110px;
     right: 0;
@@ -520,101 +719,10 @@
   }
 }
 
-@include media-breakpoint-up('md') {
-  #bessarabskiy-brief {
-    .brief-images-wrap {
-      max-width: 350px;
-      margin: 0 auto 50px;
-    }
-
-    .logo-wrapper {
-      max-width: 600px;
-      margin: 0 auto;
-    }
-  }
-
-  #bessarabskiy-colors-and-fonts {
-    .content-wrap {
-      margin: 0 auto 40px;
-    }
-  }
-
-  #bessarabskiy-about-site {
-    .about-site-wrapper {
-      padding-bottom: 300px;
-    }
-
-    .adaptation-section-wrapper {
-      margin-top: -30%;
-    }
-  }
-
-  #bessarabskiy-home-page {
-    .screen-page-1 {
-      margin: 0 0 0 auto;
-      right: 0;
-    }
-
-    .screen-page-2 {
-      margin: -330px auto 0;
-    }
-
-    .pepper-image {
-      width: 200px;
-      bottom: -90px;
-    }
-  }
-}
-
 @include media-breakpoint-up('lg') {
-  #bessarabskiy-brief {
-    .logo-wrapper {
-      max-width: 100%;
-      margin: 0 auto 0 0;
-      padding: 0;
-    }
-
-    .logo-brief-wrap {
-      &:first-child {
-        padding-right: 15px;
-      }
-
-      &:last-child {
-        padding-left: 15px;
-      }
-    }
-
-    .logo-var-container {
-      margin-bottom: -50px;
-    }
-
-    .brief-grid-item {
-      &:first-child {
-        padding-right: 15px;
-      }
-
-      &:last-child {
-        padding-left: 15px;
-      }
-    }
-
-    .logo-brief-wrap {
-      margin-bottom: 0;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-
   #bessarabskiy-colors-and-fonts {
     .section-wrapper {
       padding-bottom: 80px;
-    }
-
-    .color-grid-container {
-      display: flex;
-      flex-direction: row-reverse;
     }
 
     .font-grid-container {
@@ -682,155 +790,27 @@
       padding-bottom: 100px;
     }
 
+    .section-dots-wrap {
+      width: 420px;
+      height: 420px;
+      position: absolute;
+      top: 0;
+      right: 25px;
+      z-index: -1;
+    }
+
+    .section-image-wrap {
+      position: relative;
+      z-index: 6;
+      margin-bottom: 0;
+    }
+
     .project-info-wrap {
       margin: 0 auto 0 0;
     }
 
     .section-desc {
       margin-bottom: 0;
-    }
-  }
-
-  #bessarabskiy-about-site {
-    .about-site-wrapper {
-      padding-top: 110px;
-      padding-bottom: 325px;
-    }
-
-    .section-dots-wrap {
-      position: absolute;
-      bottom: auto;
-      top: 110px;
-      right: 150px;
-    }
-
-    .section-desc {
-      &.with-dot {
-        max-width: 50%;
-        margin-bottom: 0;
-      }
-    }
-
-    .tomato-image {
-      bottom: auto;
-      top: 220px;
-      right: 130px;
-      width: 160px;
-    }
-
-    .iMac-image {
-      transform: translateY(-50%);
-    }
-
-    .adaptation-section-wrapper {
-      margin-top: -15%;
-      padding: 70px 70px 90px;
-      background-color: #38261a;
-
-      .section-title {
-        transform: translate(-50%, -25px);
-      }
-
-      .section-desc {
-        text-align: center;
-      }
-    }
-
-    .grape-image {
-      width: 450px;
-      top: 250px;
-    }
-
-    .icon-wrap {
-      margin-bottom: 0 !important;
-    }
-  }
-
-  #bessarabskiy-home-page {
-    .section-wrapper {
-      &:last-child {
-        overflow: hidden;
-        padding-bottom: 300px;
-      }
-    }
-
-    .pages-wrapper {
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
-
-    .screen-page-1 {
-      right: -85px;
-      width: 470px;
-      transform: translateY(0px);
-      margin-top: -130px;
-    }
-
-    .screen-page-2 {
-      margin-top: 0;
-      margin-left: 50%;
-      width: 460px;
-    }
-
-    .section-dots-wrap {
-      width: 420px;
-      height: 420px;
-
-      &.top-dots {
-        top: 0;
-        left: 15px;
-      }
-    }
-
-    .broccoli-image {
-      width: 165px;
-      left: 120px;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 2;
-    }
-
-    .screen-page-wrap {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-    }
-
-    .screen-image {
-      margin-bottom: 0;
-      width: 100%;
-      min-width: 535px;
-    }
-
-    .screen-desc-wrap {
-      padding-left: 95px;
-    }
-
-    .screen-name {
-      &:before {
-        top: 50%;
-        left: -105px;
-        transform: translateY(-50%);
-        bottom: auto;
-      }
-    }
-
-    .screen-desc {
-      margin-bottom: 0;
-    }
-
-    .pepper-image {
-      left: auto;
-      right: 0;
-      width: 330px;
-      bottom: 120px;
-    }
-
-    .section-dots-wrap {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      transform: translateY(50%);
     }
   }
 
@@ -853,7 +833,7 @@
       margin-top: -170px;
     }
 
-    .pepper-image {
+    .pepper-image-bottom {
       bottom: -65%;
       right: auto;
       width: 200px;
@@ -866,15 +846,25 @@
       padding-top: 180px;
       padding-bottom: 75px;
     }
+
     .section-title {
       text-align: center;
+      margin-bottom: 20px;
     }
 
     .section-desc {
-      text-align: center;
       width: 100%;
-      margin: 0 auto 85px;
-      max-width: 980px;
+      font-size: 14px;
+      max-width: 510px;
+      line-height: 26px;
+      text-align: center;
+      margin: 0 auto 55px;
+      letter-spacing: 0.3px;
+    }
+
+    .grid-container-icons {
+      margin: 0 auto;
+      max-width: 742px;
     }
   }
 
@@ -900,7 +890,7 @@
   #bessarabskiy-mobile {
     .section-desc {
       max-width: 50%;
-      margin-bottom: 160px;
+      margin-bottom: 55px;
     }
 
     .section-dots-wrap {
@@ -932,22 +922,32 @@
     .brief-grid-item {
       &:last-child {
         margin-top: 110px;
+
+        .section-title {
+          font-size: 32px;
+          letter-spacing: 1px;
+          margin-bottom: 12px;
+          font-family: $museo-500;
+        }
       }
     }
 
     .main-desc {
       color: #f3ece0;
-      font-size: 20px;
-      letter-spacing: 2px;
-      line-height: 34px;
+      font-size: 16px;
+      max-width: 435px;
+      line-height: 26px;
       margin-bottom: 85px;
+      letter-spacing: 0.3px;
     }
 
     .version-desc {
       color: #f3ece0;
       font-size: 16px;
-      letter-spacing: 0.45px;
-      line-height: 29px;
+      line-height: 26px;
+      font-style: normal;
+      margin-bottom: 65px;
+      letter-spacing: 0.3px;
     }
 
     .brief-images-wrap {
@@ -975,10 +975,11 @@
 
     .version-title, .brief-row-wrap span {
       color: #f3ece0;
-      font-size: 40px;
-      letter-spacing: 1.13px;
-      line-height: 29px;
+      font-size: 26px;
+      line-height: normal;
+      margin-bottom: 20px;
       text-transform: none;
+      letter-spacing: 0.5px;
       font-family: $museo-300;
     }
 
@@ -1015,11 +1016,11 @@
   #bessarabskiy-colors-and-fonts {
     .section-wrapper {
       padding-top: 100px;
-      padding-bottom: 200px;
+      padding-bottom: 120px;
     }
 
     .section-title {
-      margin-bottom: 60px;
+      margin-bottom: 20px;
     }
 
     .font-info {
@@ -1035,7 +1036,8 @@
 
   #bessarabskiy-branding {
     .section-wrapper {
-      padding-top: 45px;
+      padding-top: 0;
+      padding-bottom: 60px;
     }
 
     .section-dots-wrap {
@@ -1059,12 +1061,18 @@
 
   #bessarabskiy-other {
     .section-wrapper {
-      padding-top: 80px;
-      padding-bottom: 175px;
+      padding-top: 0;
+      padding-bottom: 55px;
+    }
+
+    .section-dots-wrap {
+      width: 540px;
+      height: 540px;
+      right: 25px;
     }
 
     .section-title {
-      margin-bottom: 60px;
+      margin-bottom: 20px;
     }
 
     .project-info-wrap {
@@ -1077,106 +1085,10 @@
 
     .section-image-wrap {
       height: 900px;
-  
+
       img {
         object-fit: cover;
       }
-    }
-  }
-
-  #bessarabskiy-about-site {
-    .about-site-wrapper {
-      padding-bottom: 450px;
-      overflow: visible;
-    }
-
-    .adaptation-section-wrapper {
-      max-width: 1140px;
-    }
-
-    .adaptation-wrapper {
-      padding-bottom: 170px;
-    }
-
-    .section-dots-wrap {
-      width: 540px;
-      height: 540px;
-      position: absolute;
-      top: 110px;
-      right: 0;
-    }
-
-    .tomato-image {
-      top: 220px;
-      right: -25px;
-    }
-
-    .iMac-image {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-  }
-
-  #bessarabskiy-home-page {
-    .section-wrapper {
-      padding-top: 100px;
-      padding-bottom: 0;
-
-      &:last-child {
-        padding-top: 20px;
-        padding-bottom: 445px;
-      }
-    }
-
-    .section-desc {
-      &.with-dot {
-        margin-bottom: 55px;
-      }
-    }
-
-    .screen-page-1 {
-      margin-top: -230px;
-      width: 650px;
-    }
-
-    .screen-page-2 {
-      width: 635px;
-      margin-left: 40%;
-    }
-
-    .section-dots-wrap {
-      width: 540px;
-      height: 540px;
-
-      &.top-dots {
-        top: 0;
-        left: 0;
-        transform: none;
-      }
-    }
-    .screen-image {
-      min-width: 635px;
-    }
-
-    .screen-name {
-      font-size: 40px;
-      letter-spacing: 1.13px;
-      padding-bottom: 0;
-      margin-bottom: 20px;
-
-      &:before {
-        left: -115px;
-      }
-    }
-
-    .screen-desc {
-      font-size: 16px;
-      line-height: 29px;
-    }
-
-    .pepper-image {
-      bottom: 215px;
-      width: 405px;
     }
   }
 
@@ -1191,7 +1103,7 @@
       margin-bottom: -25%;
     }
 
-    .pepper-image {
+    .pepper-image-bottom {
       width: 315px;
       bottom: -100%;
     }
@@ -1199,7 +1111,7 @@
 
   #bessarabskiy-icons {
     .section-wrapper {
-      padding-top: 260px;
+      padding-top: 310px;
     }
   }
 

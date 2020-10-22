@@ -7,34 +7,37 @@ import { ProjectColor, SectionDesc, SectionLayout, SectionTitle, ProjectInfoWrap
 export const ColorsAndFonts = () => {
   return (
     <SectionLayout id="bessarabskiy-colors-and-fonts">
-      <SectionTitle title="Colors & Fonts"/>
+      <SectionTitle title="Цвета и шрифты"/>
       <Row className="color-grid-container">
         <Col xs={12} lg={6}>
+          <SectionDesc>
+            Цветовая гамма состоит из трёх гармонично сочетаюющихся цветов
+          </SectionDesc>
           <ProjectColor colors={BessarabskiyColors} />
         </Col>
         <Col xs={12} lg={6}>
-          <ProjectInfoWrap>
-            <p><span>1st</span> - dark brown</p>
-            <p><span>2nd</span> - ivory</p>
-            <p><span>3rd</span> - warm gold gradient</p>
-          </ProjectInfoWrap>
-          <SectionDesc withDot className="color-desc"/>
-        </Col>
-      </Row>
-      <Row className="font-grid-container">
-        <Col xs={12} lg={6}>
-          <p className="font-example">
-            A B C D E F
-            G H I J K L M
-            N O P Q R S T
-            U V W X Y Z
-          </p>
-        </Col>
-        <Col xs={12} lg={6}>
-          <ProjectInfoWrap>
-            <p>Main font</p>
-            <SectionDesc withDot>Copperplate Gothic Bold</SectionDesc>
-          </ProjectInfoWrap>
+          <div className="d-flex flex-column" style={{ marginBottom: 27 }}>
+            <p className="font-example-title">Логотип</p>
+            <div className="font-name-row d-flex justify-content-between align-items-center">
+              <p className="font-name">Copperplate Gothic</p>
+              <p className="font-weight">Bold</p>
+            </div>
+            <div>
+              <img src="/images/Bessarabkiy/FontExample1.svg" alt="Font"/>
+              <img src="/images/Bessarabkiy/FontExample2.svg" alt="Font"/>
+            </div>
+          </div>
+          <div className="d-flex flex-column">
+            <p className="font-example-title">Сайт</p>
+            <div className="font-name-row d-flex justify-content-between align-items-center">
+              <p className="font-name">Montserrat</p>
+              <p className="font-weight">bold, medium, regular</p>
+            </div>
+            <div className="d-flex flex-column">
+              <img src="/images/Bessarabkiy/FontExample3.svg" alt="Font"/>
+              <img src="/images/Bessarabkiy/FontExample4.svg" alt="Font"/>
+            </div>
+          </div>
         </Col>
       </Row>
     </SectionLayout>

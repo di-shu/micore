@@ -17,7 +17,12 @@ export const ServicePriceMiscalculations = ({ priceDesc, stages, isPrice = true 
           </Col>
           <Col xs={12} lg={6}>
             <MyScrollAnimation delay={[200]}>
-              <SectionDesc isContentWhite className="price-desc" children={priceDesc}/>
+              <SectionDesc
+                isContentWhite
+                className="price-desc"
+                children="Просчёт стоимости - это процесс, который строится на коммуникации менеджеров, дизайнеров и
+                разработчиков"
+              />
             </MyScrollAnimation>
           </Col>
         </Row>

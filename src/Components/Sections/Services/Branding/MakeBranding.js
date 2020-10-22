@@ -18,8 +18,10 @@ export const MakeBranding = () => {
       <Row>
         <Col xs={12} lg={6}>
           <MyScrollAnimation delay={[200, 400, 600]}>
-            <SectionTitle title="Этому бренду нужен новый герой" />
-            <SectionDesc className="d-none d-lg-block" />
+            <SectionTitle title="Узнаваемость на каждом шагу" />
+            <SectionDesc className="d-none d-lg-block">
+              Узнаваемость компании строится в целостности фирменного стиля и продолжении на потоках коммуникации.
+            </SectionDesc>
             <div className="make-branding-wrap d-block d-lg-none">
               <ImageWrapper src={BrandingImage} className={`branding-image start ${isBrandChange ? 'hide' : ''}`} />
               <ImageWrapper src={BrandFinalImage} className={`branding-image final ${isBrandChange ? 'active' : ''}`} />

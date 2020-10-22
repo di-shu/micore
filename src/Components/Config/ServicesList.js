@@ -9,24 +9,24 @@ export const ServicesList = [
     img: LandingImage,
     name: 'Landing page',
     link: '/services/landing',
-    desc: 'We are Manticore Development, company which duis aute irure dolor in reprehenderit'
+    desc: 'Целевая страница, где мы расскажем о преимуществах вашего товара или услуги'
   },
   {
     img: CorporateImage,
     name: 'Corporate Web-site',
     link: '/services/corporate',
-    desc: 'We are Manticore Development, company which duis aute irure dolor in reprehenderit'
+    desc: 'Сайты для бизнеса любого масштаба, решающие амбициозные бизнес-задачи'
   },
   {
     name: 'Branding',
     img: BrandingImage,
     link: '/services/brand',
-    desc: 'We are Manticore Development, company which duis aute irure dolor in reprehenderit'
+    desc: 'Полный цикл по созданию цельного брендинга компании в онлайне и офлайне'
   },
   {
     name: 'Other',
     img: OtherImage,
     link: '/services/other',
-    desc: 'We are Manticore Development, company which duis aute irure dolor in reprehenderit'
+    desc: 'Интернет-магазины, порталы, CRM системы, логистики и другие сложные продукты'
   }
 ]

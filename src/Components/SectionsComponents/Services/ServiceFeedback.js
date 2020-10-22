@@ -44,14 +44,14 @@ export const ServiceFeedback = ({ title, content }) => {
         <MyScrollAnimation delay={[200, 400, 600, 800, 1000]}>
           <InputControl
             required
-            label="Name"
+            label="Имя"
             id="feedbackName"
             onChange={handleChange}
             value={user.feedbackName}
           />
           <InputControl
             required
-            label="Phone"
+            label="Телефон"
             id="feedbackPhone"
             onChange={handleChange}
             mask="+38 (099) 999-99-99"
@@ -61,11 +61,11 @@ export const ServiceFeedback = ({ title, content }) => {
             rows={1}
             type="textarea"
             id="feedbackMessage"
-            placeholder="Message"
+            placeholder="Сообщение"
             onChange={handleChange}
             value={user.feedbackMessage}
           />
-          <button type="submit" className="custom-btn"><span>Send</span></button>
+          <button type="submit" className="custom-btn"><span>Связаться</span></button>
         </MyScrollAnimation>
       </Form>
     </SectionLayout>

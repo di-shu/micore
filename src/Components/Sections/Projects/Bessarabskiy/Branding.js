@@ -18,13 +18,14 @@ export const Branding = () => {
   return (
     <SectionLayout id="bessarabskiy-branding" Footer={() => <SectionSlider slides={BessarabskiySlides}/>}>
       <ImageWrapper isDot display={minWidthLaptop}/>
-      <SectionTitle title="About branding"/>
       <Row>
-        <Col xs={12} lg={6} className="grid-item">
-          <SectionDesc withDot/>
-        </Col>
-        <Col xs={12} lg={6} className="grid-item">
-          <TypeSomething content={BessarabskiyBrandingInfo} />
+        <Col xs={12} lg={6}>
+          <SectionTitle title="Брендирование"/>
+          <SectionDesc>
+            Главная задача нового заведения - заявить о себе и добиться узнаваемости на локальном рынке. Для достижения
+            цели мы подготовили для ресторана дизайн носителей фирменной символики: от авторучек и блокнотов для
+            официантов, до пакетов для доставки и подставок под бокалы.
+          </SectionDesc>
         </Col>
       </Row>
     </SectionLayout>

@@ -103,6 +103,7 @@
       @include media-breakpoint-up('xl') {
         .square-text-wrap {
           display: flex;
+          padding: 0 30px;
 
           p {
             word-break: break-word;

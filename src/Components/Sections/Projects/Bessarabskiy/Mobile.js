@@ -17,7 +17,7 @@ const SectionFooter = () => (
   <div className="bottom-wrapper">
     <ImageWrapper src={iPhone} className="iphone-image"/>
     <ImageWrapper src={FooterShape} className="shape-image"/>
-    <BottomNavigation />
+    <BottomNavigation/>
   </div>
 )
 
@@ -27,8 +27,11 @@ export const Mobile = () => {
   return (
     <SectionLayout id="bessarabskiy-mobile" Footer={SectionFooter}>
       <ImageWrapper isDot/>
-      <SectionTitle title="Mobile adaptation"/>
-      <SectionDesc/>
+      <SectionTitle title="Адаптация"/>
+      <SectionDesc>
+        Разработка адаптива специфический и трудоемкий процесс. Дизайн для каждого устройства индивидуальный. Текст,
+        кнопки, шрифты, анимация меняют свой вид и расположение, не теряя производительности.
+      </SectionDesc>
       <ImageWrapper src={DesktopPages} className="site-pages-image" display={minWidthLaptop}/>
       <ImageWrapper src={MobilePages} className="site-pages-image" display={!minWidthLaptop}/>
     </SectionLayout>

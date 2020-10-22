@@ -1,7 +1,6 @@
 import React from 'react'
-import { HomePageHeaderContent } from './Config'
 import { useDeviceDetect } from '../../../../Helpers'
-import { SectionDesc, ImageWrapper, SectionTitle, SectionLayout } from '../../../../Components'
+import { SectionDesc, ImageWrapper, SectionLayout } from '../../../../Components'
 /* IMAGES */
 const Pepper = '/images/Bessarabkiy/Pepper.png'
 const Menu = '/images/Bessarabkiy/MenuPage.png'
@@ -12,39 +11,34 @@ export const HomePage = () => {
   const { minWidthLaptop } = useDeviceDetect()
   
   return (
-    <SectionLayout
-      id="bessarabskiy-home-page"
-      Header={HomePageHeaderContent}
-    >
-      {!minWidthLaptop && (
-        <>
-          <SectionTitle title="Home page"/>
-          <SectionDesc withDot/>
-        </>
-      )}
+    <SectionLayout id="bessarabskiy-home-page">
       <div className="screen-page-wrap">
         <ImageWrapper src={Menu} className="screen-image"/>
         <div className="screen-desc-wrap">
-          <p className="screen-name">Menu</p>
-          <SectionDesc className="screen-desc"/>
+          <p className="screen-name">Меню</p>
+          <SectionDesc className="screen-desc">Удобная навигация</SectionDesc>
         </div>
       </div>
       <div className="screen-page-wrap">
         <ImageWrapper src={Basket} className="screen-image"/>
         <div className="screen-desc-wrap">
-          <p className="screen-name">Basket</p>
-          <SectionDesc className="screen-desc"/>
+          <p className="screen-name">Корзина</p>
+          <SectionDesc className="screen-desc">
+            Всплывающая панель корзины заказа
+          </SectionDesc>
         </div>
       </div>
       <div className="screen-page-wrap">
         <ImageWrapper src={Reservation} className="screen-image"/>
         <div className="screen-desc-wrap">
-          <p className="screen-name">Reservation</p>
-          <SectionDesc className="screen-desc"/>
+          <p className="screen-name">История заказов</p>
+          <SectionDesc className="screen-desc">
+            Форма резервирования столика
+          </SectionDesc>
         </div>
       </div>
       <ImageWrapper src={Pepper} className="pepper-image"/>
-      <ImageWrapper isDot display={minWidthLaptop} />
+      <ImageWrapper isDot display={minWidthLaptop}/>
     </SectionLayout>
   )
 }

@@ -5,7 +5,6 @@ import {
   Main,
   About,
   Brief,
-  Fonts,
   Icons,
   Other,
   Mobile,
@@ -31,7 +30,6 @@ const Bessarabskiy = () => (
     <HomePage/>
     <News/>
     <Icons/>
-    <Fonts/>
     <Mobile/>
   </MainWrapper>
 )
