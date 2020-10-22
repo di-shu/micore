@@ -16,7 +16,7 @@ export const ColorsAndFonts = () => {
           <ProjectColor colors={AtticColors} />
         </Col>
         <Col xs={12} lg={6}>
-          <FontExample fontNameFirst="Andis Regular" fontNameSecond="Gill Sans Regular" />
+          {/*<FontExample fontNameFirst="Andis Regular" fontNameSecond="Gill Sans Regular" />*/}
         </Col>
       </Row>
       <Row>

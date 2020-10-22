@@ -48,12 +48,12 @@ export const Colors = () => {
           </div>
         </Col>
       </Row>
-      <FontExample
-        fontExampleFirst={FontLight}
-        fontExampleSecond={FontRegular}
-        fontNameFirst="Proxima Nova Light"
-        fontNameSecond="Proxima Nova Regular"
-      />
+      {/*<FontExample*/}
+      {/*  fontExampleFirst={FontLight}*/}
+      {/*  fontExampleSecond={FontRegular}*/}
+      {/*  fontNameFirst="Proxima Nova Light"*/}
+      {/*  fontNameSecond="Proxima Nova Regular"*/}
+      {/*/>*/}
     </SectionLayout>
   )
 }

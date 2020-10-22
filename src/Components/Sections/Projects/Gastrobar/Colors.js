@@ -8,7 +8,7 @@ const TriangleBlack = '/images/Gastrobar/TriangleBlack.svg'
 const ColorsFooterContent = () => {
   return (
     <SectionWrapper className="fonts-wrapper">
-      <FontExample fontNameFirst="Proxima Nova Extrabold" fontNameSecond="Gotham Pro Medium"/>
+      {/*<FontExample fontNameFirst="Proxima Nova Extrabold" fontNameSecond="Gotham Pro Medium"/>*/}
       <ImageWrapper src={LetterExample} className="letter-image"/>
     </SectionWrapper>
   )

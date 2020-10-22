@@ -5,29 +5,24 @@ import {
   SectionDesc,
   SectionTitle,
   ProjectColor,
-  SectionLayout,
-  ProjectInfoWrap
+  SectionLayout, FontExample, ImageWrapper
 } from '../../../SectionsComponents'
-import { MarinistColors } from './Config'
-import { useDeviceDetect } from '../../../../Helpers'
+import { MarinistColors, MarinistFonts } from './Config'
 
 export const Colors = () => {
-  const { desktop } = useDeviceDetect()
-
   return (
-    <SectionLayout id="marinist-colors">
-      <SectionTitle title={desktop ? 'Colors & fonts' : 'Colors'} />
+    <SectionLayout id="marinist-colors" Header={() => <ImageWrapper isDot/>}>
+      <SectionTitle title="Цвета и шрифты"/>
       <Row className="row-color-wrap">
-        <Col xs={12} lg={6}>
-          <ProjectColor colors={MarinistColors} />
+        <Col xs={12} lg={7}>
+          <SectionDesc>
+            Цветовое палитра представлена тремя цветами: лазурный бирюзовый - цвет морской волны, темно-коричневый -
+            выделяет шрифтовую часть, изумрудный морской - используется в качестве фона.
+          </SectionDesc>
+          <ProjectColor colors={MarinistColors}/>
         </Col>
-        <Col xs={12} lg={6}>
-          <ProjectInfoWrap>
-            <p><span>1st</span> - dark brown</p>
-            <p><span>2nd</span> - wave blue</p>
-            <p><span>3rd</span> - dark sea wave</p>
-          </ProjectInfoWrap>
-          <SectionDesc withDot />
+        <Col xs={12} lg={5}>
+          <FontExample fonts={MarinistFonts}/>
         </Col>
       </Row>
     </SectionLayout>

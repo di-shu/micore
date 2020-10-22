@@ -6,16 +6,19 @@ const WavesPattern = '/images/Marinist/WavesPattern.png'
 const OtherPagesImage = '/images/Marinist/OtherPages.png'
 const OtherPagesMobile = '/images/Marinist/OtherPagesMobile.png'
 
-const SectionHeader = () => <ImageWrapper src={WavesPattern} className="waves-pattern" />
+const SectionHeader = () => <ImageWrapper src={WavesPattern} className="waves-pattern"/>
 
 export const OtherPages = () => {
   const { mobile } = useDeviceDetect()
-
+  
   return (
     <SectionLayout id="marinist-other-pages" Header={SectionHeader}>
-      <SectionTitle title="Other pages" />
-      <SectionDesc withDot />
-      <ImageWrapper src={mobile ? OtherPagesMobile : OtherPagesImage} className="other-pages" />
+      <SectionTitle title="Другие страницы"/>
+      <SectionDesc>
+        На других страницах сайта представлена вся важная информация о резиденции МARINIST: данные о проекте, информация
+        о застройщике, разрешительные документы, галерея с фото и видео.
+      </SectionDesc>
+      <ImageWrapper src={mobile ? OtherPagesMobile : OtherPagesImage} className="other-pages"/>
     </SectionLayout>
   )
 }

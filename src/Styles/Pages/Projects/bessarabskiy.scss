@@ -198,62 +198,6 @@
       margin: 0 auto 40px;
     }
   }
-
-  .font-example {
-    width: 100%;
-    max-width: 200px;
-    margin: 0 auto 50px;
-    opacity: 0.2;
-    color: #12171e;
-    font-family: $copperplate-bold;
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: 2.33px;
-    line-height: 40px;
-    text-transform: uppercase;
-  }
-
-  .font-info {
-    margin-bottom: 0;
-  }
-
-  .font-name-row {
-    margin-bottom: 15px;
-  }
-
-  .font-example-title {
-    opacity: 0.4;
-    color: #12171e;
-    font-size: 16px;
-    margin-bottom: 5px;
-    letter-spacing: 0.24px;
-    font-family: $museo-500;
-
-    @include media-breakpoint-up(lg) {
-      font-size: 20px;
-      letter-spacing: 0.3px;
-    }
-  }
-
-  .font-name {
-    font-size: 22px;
-    letter-spacing: 0.3px;
-    font-family: $museo-700;
-
-    @include media-breakpoint-up(lg) {
-      font-size: 26px;
-    }
-  }
-
-  .font-weight {
-    font-size: 16px;
-    letter-spacing: 0.3px;
-    font-family: $museo-500;
-
-    @include media-breakpoint-up(lg) {
-      font-size: 20px;
-    }
-  }
 }
 
 #bessarabskiy-branding {
@@ -728,16 +672,6 @@
     .font-grid-container {
       margin-top: 100px;
     }
-
-    .font-example {
-      max-width: 260px;
-      margin-bottom: 0;
-    }
-
-    .font-info {
-      margin: 0 auto 0 0;
-      padding: 55px 0;
-    }
   }
 
   #bessarabskiy-branding {
@@ -1021,16 +955,6 @@
 
     .section-title {
       margin-bottom: 20px;
-    }
-
-    .font-info {
-      p {
-        max-width: 270px;
-
-        &:first-child {
-          margin-bottom: 15px;
-        }
-      }
     }
   }
 

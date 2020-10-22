@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Layout } from './Layout'
-import { ProjectsList } from '../Config'
+import { AllProjects } from '../Config'
 import { FooterSection } from '../Sections'
 import { useCheckRoute } from '../../Helpers'
 import { ProjectsNavigation } from './Projects'
@@ -10,6 +10,7 @@ import '~/Styles/Static/general.scss'
 import '~/Styles/Includes/index.scss'
 import '~/Styles/Sections/Services/index.scss'
 import '~/Styles/Sections/Projects/index.scss'
+import { MyScrollAnimation } from './MyScrollAnimation'
 
 const easing = [0.64, 0.04, 0.35, 1]
 const variants = {
@@ -22,9 +23,9 @@ export const MainWrapper = ({ id, children }) => {
   const { isProject, isServices } = useCheckRoute()
   
   useEffect(() => {
-    // setTimeout(() => {
-    //   window.scrollTo({ top: 0, left: 0 })
-    // }, 100)
+    setTimeout(() => {
+      window.scrollTo({ top: 0, left: 0 })
+    }, 100)
   }, [])
 
   return (
@@ -36,9 +37,13 @@ export const MainWrapper = ({ id, children }) => {
           animate="visible"
           variants={variants}
         >
-          <ProjectsNavigation links={ProjectsList[0].content}/>
+          <ProjectsNavigation links={AllProjects}/>
           {children}
-          {(isProject || isServices) && <FooterSection animation/>}
+          {(isProject || isServices) && (
+            <MyScrollAnimation animationName="fadeIn" offset={300}>
+              <FooterSection animation/>
+            </MyScrollAnimation>
+          )}
         </motion.div>
       </main>
     </Layout>

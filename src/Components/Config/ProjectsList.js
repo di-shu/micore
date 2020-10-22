@@ -11,6 +11,71 @@ const ZlataTradeImage = '/images/Portfolio/ZlataTrade.png'
 const VladyDesignImage = '/images/Portfolio/VladyDesignProject.png'
 const PrideLogisticImage = '/images/Portfolio/PrideLogisticProject.png'
 
+export const AllProjects = [
+  {
+    img: ZlataTradeImage,
+    title: 'Zlata-trade',
+    link: '/projects/zlata-trade'
+  },
+  {
+    img: FCBalkanyImage,
+    title: 'FC Balkany',
+    link: '/projects/balkany'
+  },
+  {
+    img: PrideLogisticImage,
+    title: 'Pride Logistic',
+    link: '/projects/pride-logistic'
+  },
+  {
+    img: BeeGamesImage,
+    title: 'Bee Games',
+    link: '/projects/bee-games'
+  },
+  {
+    isNavBlack: true,
+    img: VladyDesignImage,
+    title: 'Vlady design',
+    link: '/projects/vlady-design'
+  },
+  {
+    img: PrideGroupImage,
+    title: 'Pride group',
+    link: '/projects/pride-group'
+  },
+  {
+    img: BessarabskiyImage,
+    title: 'Bessarabskiy dvorik',
+    link: '/projects/bessarabskiy'
+  },
+  {
+    title: 'Marinist',
+    img: MarinistImage,
+    link: '/projects/marinist'
+  },
+  {
+    title: 'Gastrobar',
+    img: GastrobarImage,
+    link: '/projects/gastrobar'
+  },
+  {
+    img: TwoAreImage,
+    title: 'Two are',
+    link: '/projects/two-are'
+  },
+  {
+    isNavBlack: true,
+    img: VipYogaImage,
+    title: 'Vip Yoga',
+    link: '/projects/vip-yoga'
+  },
+  {
+    img: AtticImage,
+    title: 'Attic stroy',
+    link: '/projects/attic-stroy'
+  }
+]
+
 export const ProjectsList = [
   {
     key: 'web-sites',

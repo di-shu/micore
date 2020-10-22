@@ -5,9 +5,12 @@ import { MarinistLogobook } from './Config'
 export const Logobook = () => {
   return (
     <SectionLayout id="marinist-logobook">
-      <SectionTitle title="Logobook" />
-      <SectionDesc />
-      <FlipBook pages={MarinistLogobook} />
+      <SectionTitle title="Логобук"/>
+      <SectionDesc>
+        Ввиду большого количества будущих носителей бренда, появилась необходимость логобука - правил использования
+        логотипа
+      </SectionDesc>
+      <FlipBook pages={MarinistLogobook}/>
     </SectionLayout>
   )
 }

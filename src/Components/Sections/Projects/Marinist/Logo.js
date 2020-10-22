@@ -3,11 +3,9 @@ import { ImageWrapper, SectionLayout } from '../../../SectionsComponents'
 /* IMAGES */
 const LogoFull = '/images/Marinist/LogoFull.png'
 
-const SectionHeader = () => <ImageWrapper isDot />
-
 export const Logo = () => {
   return (
-    <SectionLayout id="marinist-logo" Header={SectionHeader}>
+    <SectionLayout id="marinist-logo">
       <ImageWrapper src={LogoFull} className="logo-full-image" />
     </SectionLayout>
   )

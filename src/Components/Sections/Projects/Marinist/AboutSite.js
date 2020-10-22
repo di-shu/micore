@@ -9,19 +9,15 @@ const AboutSiteImage = '/images/Marinist/AboutSite.png'
 export const AboutSite = () => {
   return (
     <SectionLayout id="marinist-about-site">
-      <ImageWrapper isDot />
-      <SectionTitle title="About site" />
-      <SectionDesc withDot />
-      <ImageWrapper src={AboutSiteImage} className="about-site-image" />
-      <Row>
-        <Col xs={12} lg={6}>
-          <SectionTitle title="Home page" className="home-page-title" />
-          <SectionDesc className="home-page-desc" />
-        </Col>
-        <Col xs={12} lg={6}>
-          <TypeSomething content={AboutSiteInfo} />
-        </Col>
-      </Row>
+      <ImageWrapper isDot/>
+      <SectionTitle title="Сайт"/>
+      <SectionDesc>
+        Сайт резиденции МARINIST - платформа для презентации и продажи квартир. Дизайн продолжает визуальный стиль
+        проекта. А эффекты и микро анимации подчеркивают важные элементы веб-дизайна. Сайт содержит ряд важных раздел и
+        обширный функционал: пользователь с его помощью может искать квартиры через планировку дома или классический
+        поиск по параметрам, а администратор управлять большинством разделов сайта.
+      </SectionDesc>
+      <ImageWrapper src={AboutSiteImage} className="about-site-image"/>
     </SectionLayout>
   )
 }

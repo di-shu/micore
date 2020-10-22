@@ -1,27 +1,20 @@
 import React from 'react'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import { SectionDesc, SectionTitle } from '../SectionInfo'
-import { ImageWrapper } from '../ImageWrapper'
 
-export const FontExample = ({ fontNameFirst, fontNameSecond, fontExampleFirst, fontExampleSecond }) => {
-  return (
-    <>
-      <SectionTitle title="Fonts" />
-      <Row>
-        <Col xs={12} md={6}>
-          <div className="font-example-wrap">
-            <SectionDesc withDot className="font-title" children={fontNameFirst} />
-            <ImageWrapper src={fontExampleFirst} alt={fontNameFirst}/>
-          </div>
-        </Col>
-        <Col xs={12} md={6}>
-          <div className="font-example-wrap">
-            <SectionDesc withDot className="font-title" children={fontNameSecond} />
-            <ImageWrapper src={fontExampleSecond} alt={fontNameSecond}/>
-          </div>
-        </Col>
-      </Row>
-    </>
-  )
+export const FontExample = ({ fonts }) => {
+  return fonts.map((font, index) => {
+    return (
+      <div key={index} className="d-flex flex-column" style={{ marginBottom: index === 0 ? 27 : 0 }}>
+        <p className="font-example-title">{font.fontTitle}</p>
+        <div className="font-name-row d-flex justify-content-between align-items-center">
+          <p className="font-name">{font.fontName}</p>
+          <p className="font-weight">{font.fontWeight}</p>
+        </div>
+        <div>
+          {font.letters.map((letter, index) => (
+            <img key={index} src={letter} alt="Font"/>
+          ))}
+        </div>
+      </div>
+    )
+  })
 }

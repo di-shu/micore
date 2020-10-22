@@ -7,13 +7,13 @@ import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../..
 export const SelectionPages = () => {
   return (
     <SectionLayout id="marinist-selection-pages">
-      <SectionTitle title="Selection pages" />
+      <SectionTitle title="Поиск квартиры"/>
       <Row>
         {Pages.map((page, index) => (
           <Col key={index} xs={12} className="col-selection-item">
             <Row>
               <Col xs={12} lg={7}>
-                <ImageWrapper src={page.img} className="page-image" />
+                <ImageWrapper src={page.img} className="page-image"/>
               </Col>
               <Col xs={12} lg={5} className="page-info">
                 <h6 className="page-name">{page.name}</h6>

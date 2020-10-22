@@ -14,11 +14,11 @@ import { MarinistSlides, BrandingInfo } from './Config'
 
 const SectionFooter = () => {
   const { minWidthLaptop } = useDeviceDetect()
-
+  
   return (
     <div className="slider-wrap">
-      <ImageWrapper isDot display={minWidthLaptop} />
-      <SectionSlider slides={MarinistSlides} />
+      <ImageWrapper isDot display={minWidthLaptop}/>
+      <SectionSlider slides={MarinistSlides}/>
     </div>
   )
 }
@@ -27,13 +27,13 @@ export const Branding = () => {
   
   return (
     <SectionLayout id="marinist-branding" Footer={SectionFooter}>
-      <SectionTitle title="About branding" />
       <Row>
         <Col xs={12} lg={6}>
-          <SectionDesc withDot />
-        </Col>
-        <Col xs={12} lg={6}>
-          <TypeSomething content={BrandingInfo} />
+          <SectionTitle title="Бреднирование"/>
+          <SectionDesc>
+            Важной составляющей проекта стала разработка носителей бренда вплоть до мельчайших деталей. В их число
+            входит фирменные: шрифты, знак, паттерн и декоративные элементы
+          </SectionDesc>
         </Col>
       </Row>
     </SectionLayout>

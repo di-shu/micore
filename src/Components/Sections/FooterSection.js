@@ -62,8 +62,7 @@ export const FooterSection = ({ isContact, animation }) => {
 
   return (
     <section id="footer-section" className={`section ${!isContact ? 'footer-section' : 'active'}`}>
-      <MyScrollAnimation animationName="fadeIn" offset={300}>
-        <div className={`container-wrap ${animation ? 'on-enter' : 'on-leave'}`}>
+      <div className={`container-wrap ${animation ? 'on-enter' : 'on-leave'}`}>
         {isContact && minWidthLaptop && (
           <ImageWrapper src={ContactHand} className="image-wrap"/>
         )}
@@ -144,7 +143,6 @@ export const FooterSection = ({ isContact, animation }) => {
           </div>
         )}
       </div>
-      </MyScrollAnimation>
     </section>
   )
 }

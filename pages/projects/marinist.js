@@ -3,7 +3,6 @@ import {
   Main,
   Logo,
   Menu,
-  Fonts,
   About,
   Colors,
   Mobile,
@@ -22,12 +21,11 @@ import '~/Styles/Pages/Projects/marinist.scss'
 const Marinist = () => {
   return (
     <MainWrapper id="marinist-project-page">
-      <Main />
+      <Main/>
       <About/>
+      <Logo/>
       <Philosophy/>
-      <Logo />
       <Colors/>
-      <Fonts />
       <Branding/>
       <Logobook/>
       <AboutSite/>

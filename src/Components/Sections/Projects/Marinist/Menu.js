@@ -6,10 +6,12 @@ const MenuImage = '/images/Marinist/Menu.png'
 export const Menu = () => {
   return (
     <SectionLayout id="marinist-menu">
-      <SectionTitle title="Menu" />
-      <SectionDesc withDot />
-      <ImageWrapper src={MenuImage} className="menu-image" />
-      <ImageWrapper isDot />
+      <SectionTitle title="Меню"/>
+      <SectionDesc>
+        Навигация по сайту простая и быстрая благодаря зафиксированном слева вертикальному меню
+      </SectionDesc>
+      <ImageWrapper src={MenuImage} className="menu-image"/>
+      <ImageWrapper isDot/>
     </SectionLayout>
   )
 }
