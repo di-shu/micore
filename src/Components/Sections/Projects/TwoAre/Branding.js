@@ -7,13 +7,13 @@ import { TypeContent, TwoAreSlides } from './Config'
 export const Branding = () => {
   return (
     <SectionLayout id="two-are-branding" Footer={() => <SectionSlider slides={TwoAreSlides}/>}>
-      <SectionTitle title="Branding" isContentWhite />
+      <SectionTitle title="Брендирование" isContentWhite/>
       <Row>
         <Col xs={12} lg={8}>
-          <SectionDesc withDot isContentWhite />
-        </Col>
-        <Col xs={12} lg={4}>
-          <TypeSomething content={TypeContent} whiteText />
+          <SectionDesc isContentWhite>
+            Логотип Dj-проекта - это графическая визитка, которая работает на его продвижение. Эмблему можно
+            использовать на афишах, в оформлении альбомов, дисков и страниц на музыкальных ресурсах.
+          </SectionDesc>
         </Col>
       </Row>
     </SectionLayout>

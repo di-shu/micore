@@ -4,22 +4,23 @@ import Col from 'react-bootstrap/Col'
 import { ProjectColor, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 import { VipYogaColors } from './Config'
 
+const FontExample = '/images/VipYoga/yoga_font.svg'
+
 export const ColorsAndFonts = () => {
   return (
     <SectionLayout id="vip-yoga-colors-and-fonts">
       <Row>
-        <Col xs={12} lg={6}>
-          <SectionTitle title="Colors" />
-          <ProjectColor colors={VipYogaColors} />
+        <Col xs={12} lg={6} className="col-colors">
+          <SectionTitle title="Цвета"/>
+          <ProjectColor colors={VipYogaColors}/>
         </Col>
-        <Col xs={12} lg={6}>
-          <SectionTitle title="Fonts" />
+        <Col xs={12} lg={6} className="col-colors">
+          <SectionTitle title="Шрифты"/>
           <div className="fonts-wrap">
             <SectionDesc withDot>Quicksand Light</SectionDesc>
-            <p className="font-example">
-              AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz <br/>
-              1234567890
-            </p>
+            <div className="font-example-image">
+              <img src={FontExample} alt="Quicksand Light"/>
+            </div>
           </div>
         </Col>
       </Row>

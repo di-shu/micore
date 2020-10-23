@@ -282,8 +282,18 @@
       padding-bottom: 140px;
     }
 
+    .col-colors {
+      &:nth-child(odd) {
+        padding-right: 60px;
+      }
+
+      &:nth-child(even) {
+        padding-left: 60px;
+      }
+    }
+
     .section-title {
-      margin-bottom: 135px;
+      margin-bottom: 50px;
     }
 
     .section-desc {
@@ -294,7 +304,8 @@
     .col-item-color {
       &:last-child {
         .color-image {
-          transform: translate(-30px, -25px);
+          margin-right: 0;
+          transform: translate(-15px, -25px);
         }
       }
     }

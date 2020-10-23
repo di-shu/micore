@@ -12,11 +12,8 @@ export const Mobile = () => {
   return (
     <SectionLayout id="attic-mobile" Footer={SectionFooter} className="top-info-wrapper">
       <Row>
-        <Col xs={12} lg={3}>
-          <SectionTitle title="Mobile" />
-        </Col>
-        <Col xs={12} lg={8}>
-          <SectionDesc />
+        <Col xs={12}>
+          <SectionTitle title="Мобильная адаптация" />
         </Col>
       </Row>
     </SectionLayout>

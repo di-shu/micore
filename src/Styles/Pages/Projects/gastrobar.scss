@@ -14,6 +14,7 @@
   }
 
   .about-idea-wrapper {
+    overflow: hidden;
     position: relative;
   }
 
@@ -39,20 +40,20 @@
   }
 
   .grill-image {
-    position: relative;
     left: 30px;
-    width: 620px;
-    transform: translateY(80px);
     z-index: 2;
+    width: 620px;
+    position: relative;
+    margin-bottom: 30px;
   }
 
   .section-pattern {
-    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
-    width: 650px;
     z-index: 1;
+    width: 650px;
+    position: absolute;
     transform: scaleX(-1) translate(80px, 115px);
 
     img {
@@ -61,20 +62,30 @@
   }
 
   .logo-wrapper {
-    padding-top: 140px;
-    padding-bottom: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .logo-image {
     width: 100%;
-    max-width: 300px;
     margin: 0 auto;
+    max-width: 300px;
   }
 }
 
 #gastrobar-colors {
+  .section-wrapper {
+    padding-top: 0;
+    padding-bottom: 95px;
+  }
+
   .section-title {
     margin-bottom: 50px;
+  }
+
+  /* COLORS */
+  .colors-all-wrap {
+    margin-bottom: 30px;
   }
 
   .colors-wrap {
@@ -120,7 +131,6 @@
       color: #b3b3b3;
       font-size: 16px;
       letter-spacing: 0.45px;
-      line-height: 29px;
     }
 
     &.number {
@@ -137,29 +147,49 @@
 
   .info-text {
     color: #12171e;
-    font-family: $museo-100;
     font-size: 14px;
+    font-family: $museo-100;
     letter-spacing: 0.39px;
   }
 
-  .letter-image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    width: 180px;
+  /* FONTS */
+  .font-example-all-wrap {
+
   }
 
-  .font-example {
-    &.font-first {
-      font-family: $proxima-800;
-    }
+  .font-example-wrap {
+    margin-bottom: 55px;
 
-    &.font-second {
-      font-family: $gotham-medium;
-      margin-bottom: 40px;
+    &:last-child {
+      margin-bottom: 0;
     }
+  }
+
+  .font-example-name {
+    font-size: 20px;
+    line-height: 29px;
+    font-style: normal;
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 20px;
+    letter-spacing: 0.56px;
+
+    &:before {
+      top: 50%;
+      left: 0;
+      width: 8px;
+      z-index: 1;
+      height: 8px;
+      content: '';
+      border-radius: 50%;
+      position: absolute;
+      transform: translateY(-50%);
+      background-color: $accent-main;
+    }
+  }
+
+  .font-example-image {
+
   }
 }
 
@@ -222,12 +252,13 @@
   }
 
   .section-wrapper {
-    padding-bottom: 40px;
     z-index: 1;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   .section-desc {
-    margin-bottom: 130px;
+    margin-bottom: 0;
   }
 
   .section-pattern {
@@ -324,24 +355,16 @@
   #gastrobar-colors {
     .colors-all-wrap {
       display: flex;
+      align-items: stretch;
+      flex-direction: column;
     }
 
     .colors-wrap {
-      width: 50%;
+      width: 100%;
 
-      &.gray {
-        margin-top: 50px;
+      &:last-child {
+        justify-content: flex-end;
       }
-    }
-
-    .font-example {
-      &.font-black {
-        margin-bottom: 0;
-      }
-    }
-
-    .letter-image {
-      width: 360px;
     }
   }
 
@@ -409,14 +432,12 @@
   }
 
   #gastrobar-colors {
-    .colors-wrap {
-      &.black {
-        justify-content: flex-end;
-      }
+    .section-title {
+      margin-bottom: 65px;
     }
 
-    .fonts-wrapper {
-      padding-bottom: 100px;
+    .colors-all-wrap {
+      margin-bottom: 0;
     }
   }
 
@@ -484,14 +505,18 @@
       transform: none;
     }
 
+    .about-idea-wrapper {
+      overflow: visible;
+    }
+
     .about-section-wrapper {
       padding-top: 0;
       padding-bottom: 0;
     }
 
     .logo-wrapper {
-      padding-top: 235px;
-      padding-bottom: 60px;
+      padding-top: 200px;
+      padding-bottom: 160px;
     }
 
     .logo-image {
@@ -508,12 +533,17 @@
 
   #gastrobar-colors {
     .colors-wrapper {
-      padding-bottom: 190px;
+      padding-bottom: 120px;
     }
 
-    .fonts-wrapper {
-      padding-top: 0;
-      padding-bottom: 180px;
+    .col-lg-6 {
+      &:nth-child(odd) {
+        padding-right: 50px;
+      }
+
+      &:nth-child(even) {
+        padding-left: 50px;
+      }
     }
   }
 
@@ -574,7 +604,6 @@
     }
 
     .tshirt-wrapper {
-      padding-bottom: 160px;
       padding-top: 0;
       overflow: hidden;
     }

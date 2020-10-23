@@ -27,8 +27,12 @@ export const Idea = () => {
         <SectionWrapper className="about-section-wrapper">
           <Row style={{ display: 'flex', alignItems: 'center' }}>
             <Col xs={12} lg={6}>
-              <SectionTitle title="About idea"/>
-              <SectionDesc/>
+              <SectionTitle title="Идея"/>
+              <SectionDesc>
+                Big Green Egg - керамическая печь, в которой уникальным образом переплетаются американская любовь к
+                барбекю и японская традиция приготовления пищи в камадо. Основная идея - превратить изображение печи в
+                графический символ.
+              </SectionDesc>
             </Col>
             <Col xs={12} lg={6}>
               <ImageWrapper src={Grill} className="grill-image"/>

@@ -17,9 +17,12 @@ export const Branding = () => {
     <SectionLayout id="vip-yoga-branding" Header={() => <ImageWrapper src={BodyImg} className="body-image"/>}>
       <Row>
         <Col xs={12} lg={5}>
-          <SectionTitle title="Branding" isContentWhite/>
-          <SectionDesc withDot isContentWhite/>
-          <TypeSomething content={BrandingContent} whiteText/>
+          <SectionTitle title="Брендирование" isContentWhite/>
+          <SectionDesc isContentWhite>
+            Формат логотипа хорошо подходит для создания рекламных материалов любого рода: банера для сайта, рекламы в
+            соцсетях, печатной продукции (флаера, постеры, буклеты, билборды). Логотип вписанный в пластичные асаны
+            создает эффект 3D.
+          </SectionDesc>
         </Col>
       </Row>
     </SectionLayout>

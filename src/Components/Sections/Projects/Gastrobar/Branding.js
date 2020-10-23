@@ -1,5 +1,12 @@
 import React from 'react'
-import { ImageWrapper, SectionDesc, SectionLayout, SectionSlider, SectionTitle, SectionWrapper } from '../../../SectionsComponents'
+import {
+  ImageWrapper,
+  SectionDesc,
+  SectionLayout,
+  SectionSlider,
+  SectionTitle,
+  SectionWrapper
+} from '../../../SectionsComponents'
 import { GastrobarBrandingSlides } from './Config'
 /*IMAGES*/
 const Pattern = '/images/Gastrobar/PatternBG.png'
@@ -10,8 +17,11 @@ export const Branding = () => {
     <SectionLayout id="gastrobar-branding" customWrap Footer={() => <SectionSlider slides={GastrobarBrandingSlides}/>}>
       <div className="branding-info-wrapper">
         <SectionWrapper>
-          <SectionTitle title="Branding"/>
-          <SectionDesc withDot/>
+          <SectionTitle title="Брендинг"/>
+          <SectionDesc>
+            Собственный уникальный фирменный стиль гармонирует с общей концепцией заведения, помогает занять свою нишу и
+            привлекает постоянных клиентов.
+          </SectionDesc>
         </SectionWrapper>
         <ImageWrapper src={BrandingBG} className="section-bg"/>
         <ImageWrapper src={Pattern} className="section-pattern"/>

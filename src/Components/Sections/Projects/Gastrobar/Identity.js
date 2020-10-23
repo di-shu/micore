@@ -9,13 +9,13 @@ const Pattern = '/images/Gastrobar/PatternBG.png'
 export const Identity = () => {
   return (
     <SectionLayout id="gastrobar-identity" Footer={() => <ImageWrapper src={Pattern} className="section-pattern"/>}>
-      <SectionTitle title="Identity"/>
+      <SectionTitle title="Паттерн"/>
       <Row>
-        <Col xs={12} lg={6}>
-          <SectionDesc/>
-        </Col>
-        <Col xs={12} lg={6}>
-          <TypeSomething content={GastroBarIdentityInfo}/>
+        <Col xs={12} lg={5}>
+          <SectionDesc>
+            Органической частью новой айдентики стал геометрический паттерн. Он усиливает общий визуальный эффект и
+            работает на узнаваемость бренда.
+          </SectionDesc>
         </Col>
       </Row>
     </SectionLayout>

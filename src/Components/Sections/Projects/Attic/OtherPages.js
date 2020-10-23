@@ -12,18 +12,18 @@ import { AtticPages } from './Config'
 export const OtherPages = () => {
   return (
     <SectionLayout id="attic-other-pages">
-      <ImageWrapper isDot />
-      <SectionTitle title="Other pages" />
+      <ImageWrapper isDot/>
+      <SectionTitle title="Другие страницы"/>
       <Row>
         {AtticPages.map((page, index) => (
           <Col xs={12} key={index} className="col-wrap-info">
             <Row className={index % 2 !== 0 ? 'row-even' : ''}>
               <Col xs={12} lg={4} className="col-page-info">
-                <SectionTitle className="page-title" title={page.title} />
-                <SectionDesc className="page-desc" children={page.desc} />
+                <SectionTitle className="page-title" title={page.title}/>
+                <SectionDesc className="page-desc" children={page.desc}/>
               </Col>
               <Col xs={12} lg={8}>
-                <ImageWrapper src={page.image} className="page-image" />
+                <ImageWrapper src={page.image} className="page-image"/>
               </Col>
             </Row>
           </Col>

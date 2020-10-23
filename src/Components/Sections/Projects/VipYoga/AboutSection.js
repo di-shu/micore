@@ -6,9 +6,10 @@ export const AboutSection = () => {
   return (
     <ProjectAboutSection
       name="ViP Yoga"
-      year="june, 2019"
-      link="instagram.com/poltavets_vip_yoga"
-      additionalInfo={AdditionalInfo}
+      year="июнь, 2019"
+      description="Клиент: инструктор индивидуальных и групповых занятий по йоге. Задача: создать логотип студии йоги.
+      В фирменном знаке важно: подчеркнуть индивидуальность; передать атмосферу занятий; избегать стандартных приемов с
+      начертанием поз из йоги или использования восточной символики. "
     />
   )
 }

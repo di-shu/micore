@@ -30,7 +30,6 @@ export const SectionFooter = () => {
                 </Col>
                 <Col xs={6} lg={12}>
                   <SectionTitle title={mobile.title} className="mobile-title" isContentWhite />
-                  <SectionDesc children={mobile.desc} className="mobile-desc" isContentWhite />
                 </Col>
               </Row>
             </Col>

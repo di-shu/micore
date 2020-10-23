@@ -10,11 +10,16 @@ export const Philosophy = () => {
     <SectionLayout id="vip-yoga-philosophy">
       <Row className="philosophy-row">
         <Col xs={12} lg={5}>
-          <SectionTitle title="Philosophy" />
-          <SectionDesc />
+          <SectionTitle title="Смысл"/>
+          <SectionDesc>
+            Мы предложили заказчице концепцию логотипа в виде круглой шрифтовой эмблемы. В основе конструкции
+            аббревиатура и имя нашей клиентки - Виктории Полтавец. Цветовая гамма сдержанная, с акцентом на приглушенно
+            голубой - цвет моря на рассвете - это неспроста, Виктория проводит занятия по йоге рано утром на городском
+            пляже.
+          </SectionDesc>
         </Col>
         <Col xs={12} lg={7}>
-          <ImageWrapper src={PhilosophyImg} className="philosophy-image" />
+          <ImageWrapper src={PhilosophyImg} className="philosophy-image"/>
         </Col>
       </Row>
     </SectionLayout>

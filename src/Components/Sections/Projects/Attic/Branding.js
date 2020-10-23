@@ -24,9 +24,10 @@ export const Branding = () => {
     >
       <Row>
         <Col xs={12} lg={6}>
-          <SectionTitle title="Branding" isContentWhite={!minWidthLaptop} />
-          <SectionDesc withDot isContentWhite={!minWidthLaptop} />
-          <TypeSomething content={BrandingInfo} whiteText={!minWidthLaptop} />
+          <SectionTitle title="Брендирование" isContentWhite />
+          <SectionDesc isContentWhite>
+            Корпоративная символика используется во всех коммуникациях строительной компании.
+          </SectionDesc>
         </Col>
       </Row>
     </SectionLayout>

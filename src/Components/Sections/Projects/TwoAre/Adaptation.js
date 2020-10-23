@@ -8,8 +8,8 @@ const HeadphonesImg = '/images/TwoAre/Headphones.png'
 
 const SectionFooter = () => (
   <>
-    <ImageWrapper isDot />
-    <ImageWrapper src={HeadphonesImg} className="headphones-image" />
+    <ImageWrapper isDot/>
+    <ImageWrapper src={HeadphonesImg} className="headphones-image"/>
   </>
 )
 
@@ -18,13 +18,16 @@ export const Adaptation = () => {
     <SectionLayout id="two-are-adaptation" Footer={SectionFooter}>
       <Row>
         <Col xs={12} lg={4}>
-          <SectionTitle title="Adaptation" />
+          <SectionTitle title="Адаптация"/>
         </Col>
         <Col xs={12} lg={8}>
-          <SectionDesc />
+          <SectionDesc>
+            Адаптивная версия логотипа выглядит отличается от основной лишь формой. Такой трюк позволяет эффективно
+            использовать символ бренда по разному, в зависимости от контекста.
+          </SectionDesc>
         </Col>
         <Col xs={12} lg={4}>
-          <ImageWrapper src={LogoImg} className="logo-image" />
+          <ImageWrapper src={LogoImg} className="logo-image"/>
         </Col>
       </Row>
     </SectionLayout>

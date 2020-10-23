@@ -7,18 +7,18 @@ import { AtticTablet } from './Config'
 export const Tablet = () => {
   return (
     <SectionLayout id="attic-tablet">
-      <ImageWrapper isDot />
-      <SectionTitle title="Tablet" />
+      <ImageWrapper isDot/>
+      <SectionTitle title="Планшет"/>
       <Row>
         {AtticTablet.map((tablet, index) => (
           <Col xs={12} key={`tablet_page_${index}`} className="col-tablet">
             <Row>
               <Col xs={12} lg={6}>
-                <SectionTitle title={tablet.title} className="tablet-title" />
-                <SectionDesc children={tablet.desc} className="tablet-desc" />
+                <SectionTitle title={tablet.title} className="tablet-title"/>
+                <SectionDesc children={tablet.desc} className="tablet-desc"/>
               </Col>
               <Col xs={12} lg={6}>
-                <ImageWrapper src={tablet.image} className="tablet-image" />
+                <ImageWrapper src={tablet.image} className="tablet-image"/>
               </Col>
             </Row>
           </Col>

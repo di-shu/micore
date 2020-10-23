@@ -5,10 +5,11 @@ import { TwoAreAboutInfo } from './Config'
 export const About = () => {
   return (
     <ProjectAboutSection
-      link="?"
+      link="-"
       name="Two are"
-      year="june, 2019"
-      additionalInfo={TwoAreAboutInfo}
+      year="июнь, 2019"
+      description="Задача: создать логотип для украинского DJ-проекта. Требования: логотип должен быть простым и стильным,
+      захватывать внимание и удерживать его."
     />
   )
 }

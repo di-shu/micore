@@ -6,9 +6,9 @@ export const ProjectInfoWrap = ({ name, year, link, children, isProjectInfo }) =
       <div className="square-text-wrap">
         {isProjectInfo ? (
           <>
-            <p className="square-info-text">Имя - {name}</p>
-            <p className="square-info-text">Год - {year}</p>
-            <p className="square-info-text">Ссылка - <a target="_blank" rel="noopener noreferrer" href={`http://${link}`}>{link}</a></p>
+            {name && <p className="square-info-text">Имя - {name}</p>}
+            {year && <p className="square-info-text">Год - {year}</p>}
+            {link && <p className="square-info-text">Ссылка - <a target="_blank" rel="noopener noreferrer" href={`http://${link}`}>{link}</a></p>}
           </>
         ) : children}
       </div>

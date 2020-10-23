@@ -36,16 +36,20 @@ export const AtticAboutInfo = [
 
 export const AtticPages = [
   {
-    title: 'Portfolio',
-    image: Portfolio
+    title: 'Портфолио',
+    image: Portfolio,
+    desc: 'Доверие пользователя - важный критерий конверсии. При подборе подрядчика многие обращают внимание на уже ' +
+      'сделанные работы'
   },
   {
-    title: 'Building',
-    image: Building
+    title: 'Строительство и ремонт',
+    image: Building,
+    desc: 'Отдельные посадочные страницы под основные услуги были необходимы для разделения целевой аудитории и трафика'
   },
   {
-    title: 'Menu',
-    image: Menu
+    title: 'Меню',
+    image: Menu,
+    desc: 'Для уменьшения деталей в шапке сайта, чтобы сосредоточить пользователя на контенте, мы использовали минимализм'
   }
 ]
 
@@ -114,32 +118,29 @@ export const AtticIcons = [
 
 export const AtticTablet = [
   {
-    title: 'About company',
-    image: TabletAbout
+    title: 'О компании',
+    image: TabletAbout,
+    desc: 'На этой странице можно найти такие блоки как: миссия и цель компании, этапы работы, вопрос-ответ, стоимость ' +
+      'и оплата для подробного ознакомления с компанией'
   },
   {
-    title: 'Portfolio',
-    image: TabletPortfolio
+    title: 'Адаптация',
+    image: TabletPortfolio,
+    desc: 'Все страница адаптированы под множество устройств. Мы также отрисовали отдельные макеты под телефон и планшет'
   }
 ]
 
 export const AtticMobile = [
   {
-    title: 'Menu',
-    image: MobileMenu,
-    desc: 'This website which duis aute irure dolor  in rep ehenderit in voluptate ' +
-      'velit esse cillum dolo rez eu fugia nulla pariatur.'
+    title: 'Меню',
+    image: MobileMenu
   },
   {
-    title: 'Home page',
-    image: MobileHomePage,
-    desc: 'This website which duis aute irure dolor  in rep ehenderit in voluptate ' +
-      'velit esse cillum dolo rez eu fugia nulla pariatur.'
+    title: 'Главная страница',
+    image: MobileHomePage
   },
   {
-    title: 'Contacts',
-    image: MobileContacts,
-    desc: 'This website which duis aute irure dolor  in rep ehenderit in voluptate ' +
-      'velit esse cillum dolo rez eu fugia nulla pariatur.'
+    title: 'Контакты',
+    image: MobileContacts
   }
 ]

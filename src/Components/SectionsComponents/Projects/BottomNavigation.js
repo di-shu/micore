@@ -9,17 +9,17 @@ export const BottomNavigation = ({ link = '#', isBlack }) => {
   return (
     <div className="bottom-navigation">
       <ActiveLink link="/portfolio" className={`bottom-project-link ${isBlack ? 'is-black' : ''}`}>
-        <span>Portfolio</span>
+        <span>Все работы</span>
       </ActiveLink>
       <ActiveLink link={link} className={`bottom-project-link ${isBlack ? 'is-black' : ''}`}>
-        <span>Visit site</span>
+        <span>Перейти на сайт</span>
       </ActiveLink>
-      {desktop && (
-        <div className="bottom-scroll-nav">
-          <p className={`bottom-text ${isBlack ? 'is-black' : ''}`}>Contact <span>us</span></p>
-          <ScrollBox isBlack={isBlack} firstLoad={false}/>
-        </div>
-      )}
+      {/*{desktop && (*/}
+      {/*  <div className="bottom-scroll-nav">*/}
+      {/*    <p className={`bottom-text ${isBlack ? 'is-black' : ''}`}>Contact <span>us</span></p>*/}
+      {/*    <ScrollBox isBlack={isBlack} firstLoad={false}/>*/}
+      {/*  </div>*/}
+      {/*)}*/}
     </div>
   )
 }

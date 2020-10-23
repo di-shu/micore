@@ -16,23 +16,17 @@ export const AboutSite = () => {
   return (
     <SectionLayout id="attic-about-site">
       <Row>
-        <Col xs={12} lg={4}>
-          <SectionTitle title="About site" />
-        </Col>
-        <Col xs={12} lg={8}>
-          <SectionDesc withDot />
+        <Col xs={12}>
+          <ImageWrapper src={AboutSiteImg} className="about-site-image"/>
         </Col>
         <Col xs={12}>
-          <ImageWrapper src={AboutSiteImg} className="about-site-image" />
-        </Col>
-        <Col xs={12}>
-          <SectionTitle title="Home page" className="home-page-title" />
+          <SectionTitle title="Главная страница" className="home-page-title"/>
           <Row>
             <Col xs={12} lg={6}>
-              <SectionDesc className="home-page-desc" />
-            </Col>
-            <Col xs={12} lg={6}>
-              <TypeSomething content={AtticAboutSiteInfo} whiteText />
+              <SectionDesc className="home-page-desc">
+                Для разделения пути целевой аудитории, первое, что видит пользователь - две основные услуги компании:
+                ремонт квартир и строительство домов.
+              </SectionDesc>
             </Col>
           </Row>
         </Col>

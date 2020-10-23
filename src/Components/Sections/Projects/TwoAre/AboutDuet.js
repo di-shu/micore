@@ -10,11 +10,15 @@ export const AboutDuet = () => {
     <SectionLayout id="two-are-about-duet">
       <Row className="row-about-duet">
         <Col xs={12} lg={6} className="col-duet-info">
-          <SectionTitle title="About DJ duet" />
-          <SectionDesc />
+          <SectionTitle title="DJ duet"/>
+          <SectionDesc>
+            Талантливые продюсеры и старые друзья - Two Are - это диджейский дуэт музыкантов. У обоих большой опыт
+            работы на украинской электронной сцене. В своей музыке сочетают глубокий и прогрессивный хаус с прямым
+            техно-звуком.
+          </SectionDesc>
         </Col>
         <Col xs={12} lg={6}>
-          <ImageWrapper src={DuetImg} className="about-duet-image" />
+          <ImageWrapper src={DuetImg} className="about-duet-image"/>
         </Col>
       </Row>
     </SectionLayout>
