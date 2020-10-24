@@ -18766,18 +18766,18 @@ var MenuLinks = [{
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AllProjects", function() { return AllProjects; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProjectsList", function() { return ProjectsList; });
-var AtticImage = '/images/Portfolio/Attic.png';
-var TwoAreImage = '/images/Portfolio/TwoAre.png';
-var VipYogaImage = '/images/Portfolio/VipYoga.png';
-var MarinistImage = '/images/Portfolio/Marinist.png';
-var GastrobarImage = '/images/Portfolio/Gastrobar.png';
-var BessarabskiyImage = '/images/Portfolio/Bessarabkiy.png';
-var BeeGamesImage = '/images/Portfolio/BeeGames.png';
-var FCBalkanyImage = '/images/Portfolio/FCBalkanyProject.png';
-var PrideGroupImage = '/images/Portfolio/PrideGroupProject.png';
-var ZlataTradeImage = '/images/Portfolio/ZlataTrade.png';
-var VladyDesignImage = '/images/Portfolio/VladyDesignProject.png';
-var PrideLogisticImage = '/images/Portfolio/PrideLogisticProject.png';
+var AtticImage = '/images/Portfolio/attic.jpg';
+var TwoAreImage = '/images/Portfolio/twoare.jpg';
+var VipYogaImage = '/images/Portfolio/yoga.jpg';
+var MarinistImage = '/images/Portfolio/Marinist.jpg';
+var GastrobarImage = '/images/Portfolio/gastrobar.jpg';
+var BessarabskiyImage = '/images/Portfolio/dvorik.jpg';
+var BeeGamesImage = '/images/Portfolio/beegame.jpg';
+var FCBalkanyImage = '/images/Portfolio/fcbalkans.jpg';
+var PrideGroupImage = '/images/Portfolio/pride_group.jpg';
+var ZlataTradeImage = '/images/Portfolio/zlata-trade.jpg';
+var VladyDesignImage = '/images/Portfolio/vlady.jpg';
+var PrideLogisticImage = '/images/Portfolio/pridelogistics.jpg';
 var AllProjects = [{
   img: ZlataTradeImage,
   title: 'Zlata-trade',
@@ -19030,6 +19030,132 @@ var ProjectsList = [{
       xs: 12,
       md: 7,
       lg: 5,
+      xl: 4
+    }
+  }]
+}, {
+  key: 'all',
+  label: 'Все',
+  content: [{
+    img: ZlataTradeImage,
+    title: 'Zlata-trade',
+    link: '/projects/zlata-trade',
+    size: {
+      xs: 12,
+      md: 5,
+      lg: 5,
+      xl: 5
+    }
+  }, {
+    img: FCBalkanyImage,
+    title: 'FC Balkany',
+    link: '/projects/balkany',
+    size: {
+      xs: 12,
+      md: 7,
+      lg: 2,
+      xl: 4
+    }
+  }, {
+    img: PrideLogisticImage,
+    title: 'Pride Logistic',
+    link: '/projects/pride-logistic',
+    size: {
+      xs: 12,
+      md: 7,
+      lg: 5,
+      xl: 3
+    }
+  }, {
+    img: BeeGamesImage,
+    title: 'Bee Games',
+    link: '/projects/bee-games',
+    size: {
+      xs: 12,
+      md: 5,
+      lg: 4,
+      xl: 4
+    }
+  }, {
+    isNavBlack: true,
+    img: VladyDesignImage,
+    title: 'Vlady design',
+    link: '/projects/vlady-design',
+    size: {
+      xs: 12,
+      md: 5,
+      lg: 4,
+      xl: 4
+    }
+  }, {
+    img: PrideGroupImage,
+    title: 'Pride group',
+    link: '/projects/pride-group',
+    size: {
+      xs: 12,
+      md: 7,
+      lg: 4,
+      xl: 4
+    }
+  }, {
+    img: BessarabskiyImage,
+    title: 'Bessarabskiy dvorik',
+    link: '/projects/bessarabskiy',
+    size: {
+      xs: 12,
+      md: 5,
+      lg: 5,
+      xl: 5
+    }
+  }, {
+    title: 'Marinist',
+    img: MarinistImage,
+    link: '/projects/marinist',
+    size: {
+      xs: 12,
+      md: 7,
+      lg: 2,
+      xl: 4
+    }
+  }, {
+    title: 'Gastrobar',
+    img: GastrobarImage,
+    link: '/projects/gastrobar',
+    size: {
+      xs: 12,
+      md: 7,
+      lg: 5,
+      xl: 3
+    }
+  }, {
+    img: TwoAreImage,
+    title: 'Two are',
+    link: '/projects/two-are',
+    size: {
+      xs: 12,
+      md: 5,
+      lg: 4,
+      xl: 4
+    }
+  }, {
+    isNavBlack: true,
+    img: VipYogaImage,
+    title: 'Vip Yoga',
+    link: '/projects/vip-yoga',
+    size: {
+      xs: 12,
+      md: 5,
+      lg: 4,
+      xl: 4
+    }
+  }, {
+    img: AtticImage,
+    title: 'Attic stroy',
+    link: '/projects/attic-stroy',
+    size: {
+      xs: 12,
+      md: 7,
+      lg: 4,
       xl: 4
     }
   }]
