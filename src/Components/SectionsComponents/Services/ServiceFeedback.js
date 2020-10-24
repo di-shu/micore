@@ -1,14 +1,25 @@
 import React, { useState } from 'react'
 import { useRouter } from 'next/router'
 import Form from 'react-bootstrap/Form'
+import { Modal } from 'react-bootstrap'
 import { InputControl } from '../../Inputs'
 import { MyScrollAnimation, SectionLayout, SectionTitle } from '../../SectionsComponents'
 
 const InitUser = { feedbackName: '', feedbackPhone: '', feedbackMessage: '' }
 
 export const ServiceFeedback = ({ title, content }) => {
+  const [loading, setLoading] = useState(false)
+  const [modal, setModal] = useState(false)
   const [user, setUser] = useState(InitUser)
   const { pathname } = useRouter()
+  
+  const openModal = () => {
+    setModal(true)
+  }
+  
+  const closeModal = () => {
+    setModal(false)
+  }
 
   const handleChange = (e) => {
     const { id, value } = e.target
@@ -18,6 +29,9 @@ export const ServiceFeedback = ({ title, content }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+  
+    setLoading(true)
+    
     $.ajax({
       method: 'POST',
       url: 'http://micore-admin.comnd-x.com/send',
@@ -27,10 +41,15 @@ export const ServiceFeedback = ({ title, content }) => {
         message: user.feedbackMessage,
         url: pathname,
         country: 'RU'
+      },
+      success: () => {
+        openModal()
+        setUser(InitUser)
+        setLoading(false)
+      },
+      error: () => {
+        alert('Ошибка при отправке запроса!')
       }
-    }).done(() => {
-      setUser(InitUser)
-      alert('Сообщение упешно отправлено!')
     })
   }
   
@@ -65,9 +84,22 @@ export const ServiceFeedback = ({ title, content }) => {
             onChange={handleChange}
             value={user.feedbackMessage}
           />
-          <button type="submit" className="custom-btn"><span>Связаться</span></button>
+          <button type="submit" className="custom-btn">
+            {loading && <div className="preloader" />}
+            <span>Связаться</span>
+          </button>
         </MyScrollAnimation>
       </Form>
+      
+      <Modal size="lg" centered show={modal} className="modal-success">
+        <div className="modal-content-wrap">
+          <h1 className="modal-title">Ваша заявка принята!</h1>
+          <h5 className="modal-sub-title">Мы свяжемся с вами в ближайшее время!</h5>
+          <button type="button" className="custom-btn" onClick={closeModal}>
+            <span>Окей</span>
+          </button>
+        </div>
+      </Modal>
     </SectionLayout>
   )
 }

@@ -3,10 +3,10 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { SectionDesc, SectionTitle, ImageWrapper, SectionLayout } from '../../../SectionsComponents'
 /*IMAGES*/
-const MacBook = '/images/Bessarabkiy/Macbook.png'
-const PageNews = '/images/Bessarabkiy/PageNews.png'
-const GrapeFull = '/images/Bessarabkiy/GrapeFull.svg'
-const PepperYellow = '/images/Bessarabkiy/PaperYellow.png'
+const MacBook = '/images/Bessarabskiy/Macbook.png'
+const PageNews = '/images/Bessarabskiy/PageNews.png'
+const GrapeFull = '/images/Bessarabskiy/GrapeFull.svg'
+const PepperYellow = '/images/Bessarabskiy/PaperYellow.png'
 
 const SectionHeader = () => (
   <>

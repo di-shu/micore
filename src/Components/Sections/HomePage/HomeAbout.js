@@ -24,7 +24,7 @@ export const HomeAbout = ({ animation }) => {
             <div className={`text-box ${animation ? 'on-enter' : 'on-leave'}`}>
               <SectionDesc isContentWhite className="about-desc">
                 Разрабатываем креативные сайты и брендинги, заточенные под бизнес клиента. Наш подход нацелен на
-                создание проекта, который будет помогать бизнесу зарабатывать, а оставлять пользователю положительный
+                создание проекта, который будет помогать бизнесу зарабатывать, а пользователю оставлять положительный
                 опыт.
               </SectionDesc>
               <ActiveLink link="/about" className="about-link">Подробнее</ActiveLink>

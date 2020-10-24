@@ -1,15 +1,15 @@
-const AtticImage = '/images/Portfolio/Attic.png'
-const TwoAreImage = '/images/Portfolio/TwoAre.png'
-const VipYogaImage = '/images/Portfolio/VipYoga.png'
-const MarinistImage = '/images/Portfolio/Marinist.png'
-const GastrobarImage = '/images/Portfolio/Gastrobar.png'
-const BessarabskiyImage = '/images/Portfolio/Bessarabkiy.png'
-const BeeGamesImage = '/images/Portfolio/BeeGames.png'
-const FCBalkanyImage = '/images/Portfolio/FCBalkanyProject.png'
-const PrideGroupImage = '/images/Portfolio/PrideGroupProject.png'
-const ZlataTradeImage = '/images/Portfolio/ZlataTrade.png'
-const VladyDesignImage = '/images/Portfolio/VladyDesignProject.png'
-const PrideLogisticImage = '/images/Portfolio/PrideLogisticProject.png'
+const AtticImage = '/images/Portfolio/attic.jpg'
+const TwoAreImage = '/images/Portfolio/twoare.jpg'
+const VipYogaImage = '/images/Portfolio/yoga.jpg'
+const MarinistImage = '/images/Portfolio/Marinist.jpg'
+const GastrobarImage = '/images/Portfolio/gastrobar.jpg'
+const BessarabskiyImage = '/images/Portfolio/dvorik.jpg'
+const BeeGamesImage = '/images/Portfolio/beegame.jpg'
+const FCBalkanyImage = '/images/Portfolio/fcbalkans.jpg'
+const PrideGroupImage = '/images/Portfolio/pride_group.jpg'
+const ZlataTradeImage = '/images/Portfolio/zlata-trade.jpg'
+const VladyDesignImage = '/images/Portfolio/vlady.jpg'
+const PrideLogisticImage = '/images/Portfolio/pridelogistics.jpg'
 
 export const AllProjects = [
   {
@@ -210,5 +210,86 @@ export const ProjectsList = [
         size: { xs: 12, md: 7, lg: 5, xl: 4 }
       }
     ]
-  }
+  },
+  {
+    key: 'all',
+    label: 'Все',
+    content: [
+      {
+        img: ZlataTradeImage,
+        title: 'Zlata-trade',
+        link: '/projects/zlata-trade',
+        size: { xs: 12, md: 5, lg: 5, xl: 5 }
+      },
+      {
+        img: FCBalkanyImage,
+        title: 'FC Balkany',
+        link: '/projects/balkany',
+        size: { xs: 12, md: 7, lg: 2, xl: 4 }
+      },
+      {
+        img: PrideLogisticImage,
+        title: 'Pride Logistic',
+        link: '/projects/pride-logistic',
+        size: { xs: 12, md: 7, lg: 5, xl: 3 }
+      },
+      {
+        img: BeeGamesImage,
+        title: 'Bee Games',
+        link: '/projects/bee-games',
+        size: { xs: 12, md: 5, lg: 4, xl: 4 }
+      },
+      {
+        isNavBlack: true,
+        img: VladyDesignImage,
+        title: 'Vlady design',
+        link: '/projects/vlady-design',
+        size: { xs: 12, md: 5, lg: 4, xl: 4 }
+      },
+      {
+        img: PrideGroupImage,
+        title: 'Pride group',
+        link: '/projects/pride-group',
+        size: { xs: 12, md: 7, lg: 4, xl: 4 }
+      },
+      
+      {
+        img: BessarabskiyImage,
+        title: 'Bessarabskiy dvorik',
+        link: '/projects/bessarabskiy',
+        size: { xs: 12, md: 5, lg: 5, xl: 5 }
+      },
+      {
+        title: 'Marinist',
+        img: MarinistImage,
+        link: '/projects/marinist',
+        size: { xs: 12, md: 7, lg: 2, xl: 4 }
+      },
+      {
+        title: 'Gastrobar',
+        img: GastrobarImage,
+        link: '/projects/gastrobar',
+        size: { xs: 12, md: 7, lg: 5, xl: 3 }
+      },
+      {
+        img: TwoAreImage,
+        title: 'Two are',
+        link: '/projects/two-are',
+        size: { xs: 12, md: 5, lg: 4, xl: 4 }
+      },
+      {
+        isNavBlack: true,
+        img: VipYogaImage,
+        title: 'Vip Yoga',
+        link: '/projects/vip-yoga',
+        size: { xs: 12, md: 5, lg: 4, xl: 4 }
+      },
+      {
+        img: AtticImage,
+        title: 'Attic stroy',
+        link: '/projects/attic-stroy',
+        size: { xs: 12, md: 7, lg: 4, xl: 4 }
+      }
+    ]
+  },
 ]

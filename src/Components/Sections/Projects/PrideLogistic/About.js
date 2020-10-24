@@ -6,9 +6,9 @@ export const About = () => {
   return (
     <ProjectAboutSection
       isOverflow
-      year="february, 2019"
+      year="февраль, 2019"
       name="Pride Logistics"
-      link="pride-logistika.com"
+      link="http://pride-logistika.com"
       description="Уверенный взгляд льва отражает цель молодой компании Pride Logistics - стать лидером Украины в сфере логистики.
       Компания обратилась в нашу студию с задачей разработать фирменный стиль и корпоративный сайт.
       В фирменном стиле нам предстояло воплотить также философию и конкурентные преимущества компании: профессионализм,

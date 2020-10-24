@@ -2,10 +2,10 @@ import React from 'react'
 import { useDeviceDetect } from '../../../../Helpers'
 import { SectionDesc, ImageWrapper, SectionLayout } from '../../../../Components'
 /* IMAGES */
-const Pepper = '/images/Bessarabkiy/Pepper.png'
-const Menu = '/images/Bessarabkiy/MenuPage.png'
-const Basket = '/images/Bessarabkiy/BasketPage.png'
-const Reservation = '/images/Bessarabkiy/Reservation.png'
+const Pepper = '/images/Bessarabskiy/Pepper.png'
+const Menu = '/images/Bessarabskiy/MenuPage.png'
+const Basket = '/images/Bessarabskiy/BasketPage.png'
+const Reservation = '/images/Bessarabskiy/Reservation.png'
 
 export const HomePage = () => {
   const { minWidthLaptop } = useDeviceDetect()

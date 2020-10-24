@@ -10,7 +10,7 @@ import {
 } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
 /*IMAGES*/
-const Napkins = '/images/Bessarabkiy/BessarabskiyNapkins.png'
+const Napkins = '/images/Bessarabskiy/BessarabskiyNapkins.png'
 
 export const Other = () => {
   const { minWidthLaptop } = useDeviceDetect()

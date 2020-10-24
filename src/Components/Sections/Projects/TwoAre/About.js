@@ -5,7 +5,6 @@ import { TwoAreAboutInfo } from './Config'
 export const About = () => {
   return (
     <ProjectAboutSection
-      link="-"
       name="Two are"
       year="июнь, 2019"
       description="Задача: создать логотип для украинского DJ-проекта. Требования: логотип должен быть простым и стильным,

@@ -5,8 +5,9 @@ import Col from 'react-bootstrap/Col'
 import Form from 'react-bootstrap/Form'
 import Container from 'react-bootstrap/Container'
 import { InputControl } from '../Inputs'
-import { ImageWrapper, MyScrollAnimation, SectionTitle, SocialsWrap } from '../SectionsComponents'
 import { useDeviceDetect } from '../../Helpers'
+import { ImageWrapper, SectionTitle, SocialsWrap } from '../SectionsComponents'
+import { Modal } from 'react-bootstrap'
 /* IMAGES */
 const MapMarker = '/images/map-marker.svg'
 const FooterLogo = '/images/footer-logo.svg'
@@ -36,12 +37,25 @@ const FormInputs = [
 ]
 
 export const FooterSection = ({ isContact, animation }) => {
+  const [loading, setLoading] = useState(false)
+  const [modal, setModal] = useState(false)
   const [values, setValues] = useState(InitValues)
   const { pathname } = useRouter()
   const { mobile, desktop, minWidthLaptop } = useDeviceDetect()
-
+  
+  const openModal = () => {
+    setModal(true)
+  }
+  
+  const closeModal = () => {
+    setModal(false)
+  }
+  
   const handleSubmit = (e) => {
     e.preventDefault()
+  
+    setLoading(true)
+    
     $.ajax({
       method: 'POST',
       url: 'http://micore-admin.comnd-x.com/send',
@@ -49,10 +63,15 @@ export const FooterSection = ({ isContact, animation }) => {
         ...values,
         url: pathname,
         country: 'RU'
+      },
+      success: ()=> {
+        openModal()
+        setValues(InitValues)
+        setLoading(false)
+      },
+      error: () => {
+        alert('Ошибка при отправке запроса!')
       }
-    }).done(() => {
-      setValues(InitValues)
-      alert('Сообщение упешно отправлено!')
     })
   }
 
@@ -89,7 +108,10 @@ export const FooterSection = ({ isContact, animation }) => {
                       />
                     ))}
                     <div className="btn-wrap">
-                      <button type="submit" className="btn-submit"><span>Отправить</span></button>
+                      <button type="submit" className="btn-submit">
+                        {loading && <div className="preloader" />}
+                        <span>Отправить</span>
+                      </button>
                     </div>
                   </Col>
                   {!isContact && desktop && (
@@ -143,6 +165,16 @@ export const FooterSection = ({ isContact, animation }) => {
           </div>
         )}
       </div>
+  
+      <Modal size="lg" centered show={modal} className="modal-success">
+        <div className="modal-content-wrap">
+          <h1 className="modal-title">Ваша заявка принята!</h1>
+          <h5 className="modal-sub-title">Мы свяжемся с вами в ближайшее время!</h5>
+          <button type="button" className="custom-btn" onClick={closeModal}>
+            <span>Окей</span>
+          </button>
+        </div>
+      </Modal>
     </section>
   )
 }

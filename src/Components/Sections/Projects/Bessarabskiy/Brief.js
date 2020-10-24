@@ -4,10 +4,10 @@ import Col from 'react-bootstrap/Col'
 import { useDeviceDetect } from '../../../../Helpers'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 /* IMAGES */
-const Leaf = '/images/Bessarabkiy/Leaf.png'
-const Barrel = '/images/Bessarabkiy/Barrel.png'
-const LogoVar1 = '/images/Bessarabkiy/LogoVar1.svg'
-const LogoVar2 = '/images/Bessarabkiy/LogoVar2.svg'
+const Leaf = '/images/Bessarabskiy/Leaf.png'
+const Barrel = '/images/Bessarabskiy/Barrel.png'
+const LogoVar1 = '/images/Bessarabskiy/LogoVar1.svg'
+const LogoVar2 = '/images/Bessarabskiy/LogoVar2.svg'
 
 export const Brief = () => {
   const { minWidthLaptop } = useDeviceDetect()

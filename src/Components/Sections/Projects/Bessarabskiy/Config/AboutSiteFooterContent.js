@@ -4,12 +4,12 @@ import Col from 'react-bootstrap/Col'
 import { ImageWrapper, SectionDesc, SectionTitle, SectionWrapper } from '../../../../SectionsComponents'
 
 /*IMAGES*/
-const Tomato = '/images/Bessarabkiy/Tomato.png'
-const Broccoli = '/images/Bessarabkiy/Broccoli.png'
-const GrapeShape = '/images/Bessarabkiy/GrapeShape.svg'
-const iMac = '/images/Bessarabkiy/iMacPresentation.png'
-const PageScreen1 = '/images/Bessarabkiy/PageScreen.png'
-const PageScreen2 = '/images/Bessarabkiy/PageScreen2.png'
+const Tomato = '/images/Bessarabskiy/Tomato.png'
+const Broccoli = '/images/Bessarabskiy/Broccoli.png'
+const GrapeShape = '/images/Bessarabskiy/GrapeShape.svg'
+const iMac = '/images/Bessarabskiy/iMacPresentation.png'
+const PageScreen1 = '/images/Bessarabskiy/PageScreen.png'
+const PageScreen2 = '/images/Bessarabskiy/PageScreen2.png'
 
 export const AboutSiteFooterContent = () => {
   return (
