@@ -17,7 +17,7 @@ export const Mobile = () => {
   const { mobile } = useDeviceDetect()
   
   return (
-    <SectionLayout id="zlata-mobile" wrap={false} Footer={() => <BottomNavigation/>}>
+    <SectionLayout id="zlata-mobile" wrap={false} Footer={() => <BottomNavigation link="zlata-trade.com"/>}>
       <div className="mobile-adaptation">
         <Row className="mobile-adaptation-container">
           <Col xs={12} md={6}>

@@ -110,6 +110,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/keys */ "./no
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/values.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/values.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/values */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/fn/object/values.js");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/promise.js":
 /*!****************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/promise.js ***!
@@ -632,6 +643,19 @@ module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/
 
 __webpack_require__(/*! ../../modules/es6.object.keys */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/es6.object.keys.js");
 module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_core.js").Object.keys;
+
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/fn/object/values.js":
+/*!**********************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/fn/object/values.js ***!
+  \**********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es7.object.values */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/es7.object.values.js");
+module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_core.js").Object.values;
 
 
 /***/ }),
@@ -2493,6 +2517,38 @@ module.exports = function (KEY, exec) {
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_object-to-array.js":
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_object-to-array.js ***!
+  \******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var DESCRIPTORS = __webpack_require__(/*! ./_descriptors */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_descriptors.js");
+var getKeys = __webpack_require__(/*! ./_object-keys */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_object-keys.js");
+var toIObject = __webpack_require__(/*! ./_to-iobject */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_to-iobject.js");
+var isEnum = __webpack_require__(/*! ./_object-pie */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_object-pie.js").f;
+module.exports = function (isEntries) {
+  return function (it) {
+    var O = toIObject(it);
+    var keys = getKeys(O);
+    var length = keys.length;
+    var i = 0;
+    var result = [];
+    var key;
+    while (length > i) {
+      key = keys[i++];
+      if (!DESCRIPTORS || isEnum.call(O, key)) {
+        result.push(isEntries ? [key, O[key]] : O[key]);
+      }
+    }
+    return result;
+  };
+};
+
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_own-keys.js":
 /*!***********************************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_own-keys.js ***!
@@ -4021,6 +4077,26 @@ $export($export.S, 'Object', {
       if (desc !== undefined) createProperty(result, key, desc);
     }
     return result;
+  }
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/es7.object.values.js":
+/*!*******************************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/es7.object.values.js ***!
+  \*******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// https://github.com/tc39/proposal-object-values-entries
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_export.js");
+var $values = __webpack_require__(/*! ./_object-to-array */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_object-to-array.js")(false);
+
+$export($export.S, 'Object', {
+  values: function values(it) {
+    return $values(it);
   }
 });
 
@@ -57466,13 +57542,46 @@ var MenuLinks = [{
 /*!***********************************************!*\
   !*** ./src/Components/Config/ProjectsList.js ***!
   \***********************************************/
-/*! exports provided: AllProjects, ProjectsList */
+/*! exports provided: Sizes, NewProjectsList, Portfolios, Services */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AllProjects", function() { return AllProjects; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProjectsList", function() { return ProjectsList; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Sizes", function() { return Sizes; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewProjectsList", function() { return NewProjectsList; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Portfolios", function() { return Portfolios; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Services", function() { return Services; });
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-properties */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/get-own-property-descriptors */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptors.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/get-own-property-descriptor */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/get-own-property-symbols */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/values */ "./node_modules/@babel/runtime-corejs2/core-js/object/values.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/assign */ "./node_modules/next/dist/build/polyfills/object-assign.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_8__);
+
+
+
+
+
+
+
+
+
+
+function ownKeys(object, enumerableOnly) { var keys = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_7___default()(object); if (_babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default.a) { var symbols = _babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default()(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(target, key, source[key]); }); } else if (_babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default.a) { _babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1___default()(target, _babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default()(source)); } else { ownKeys(Object(source)).forEach(function (key) { _babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(target, key, _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(source, key)); }); } } return target; }
+
 var AtticImage = '/images/Portfolio/attic.jpg';
 var TwoAreImage = '/images/Portfolio/twoare.jpg';
 var VipYogaImage = '/images/Portfolio/yoga.jpg';
@@ -57485,388 +57594,167 @@ var PrideGroupImage = '/images/Portfolio/pride_group.jpg';
 var ZlataTradeImage = '/images/Portfolio/zlata-trade.jpg';
 var VladyDesignImage = '/images/Portfolio/vlady.jpg';
 var PrideLogisticImage = '/images/Portfolio/pridelogistics.jpg';
-var AllProjects = [{
-  img: ZlataTradeImage,
-  title: 'Zlata-trade',
-  link: '/projects/zlata-trade'
-}, {
-  img: FCBalkanyImage,
-  title: 'FC Balkany',
-  link: '/projects/balkany'
-}, {
-  img: PrideLogisticImage,
-  title: 'Pride Logistic',
-  link: '/projects/pride-logistic'
-}, {
-  img: BeeGamesImage,
-  title: 'Bee Games',
-  link: '/projects/bee-games'
-}, {
-  isNavBlack: true,
-  img: VladyDesignImage,
-  title: 'Vlady design',
-  link: '/projects/vlady-design'
-}, {
-  img: PrideGroupImage,
-  title: 'Pride group',
-  link: '/projects/pride-group'
-}, {
-  img: BessarabskiyImage,
-  title: 'Bessarabskiy dvorik',
-  link: '/projects/bessarabskiy'
-}, {
-  title: 'Marinist',
-  img: MarinistImage,
-  link: '/projects/marinist'
-}, {
-  title: 'Gastrobar',
-  img: GastrobarImage,
-  link: '/projects/gastrobar'
-}, {
-  img: TwoAreImage,
-  title: 'Two are',
-  link: '/projects/two-are'
-}, {
-  isNavBlack: true,
-  img: VipYogaImage,
-  title: 'Vip Yoga',
-  link: '/projects/vip-yoga'
-}, {
-  img: AtticImage,
-  title: 'Attic stroy',
-  link: '/projects/attic-stroy'
-}];
-var ProjectsList = [{
-  key: 'web-sites',
-  label: 'Web-sites',
-  content: [{
-    img: ZlataTradeImage,
-    title: 'Zlata-trade',
-    link: '/projects/zlata-trade',
-    size: {
-      xs: 12,
-      md: 5,
-      lg: 5,
-      xl: 5
+var Sizes = {
+  getIterations: function getIterations(matches, index) {
+    var needle = matches.length;
+    var per = Math.floor(index / needle);
+    var i = index - per * needle;
+    return matches[i];
+  },
+  getMDSize: function getMDSize(index) {
+    var matches = [7, 5, 5, 7];
+    return this.getIterations(matches, index);
+  },
+  getLGSize: function getLGSize(index) {
+    var matches = [5, 4, 3, 4, 4, 4];
+    return this.getIterations(matches, index);
+  },
+  getXLSize: function getXLSize(index) {
+    var matches = [5, 3, 4, 6, 3, 3];
+    return this.getIterations(matches, index);
+  }
+};
+var NewProjectsList = {
+  projects: {
+    pride_logistic: {
+      img: PrideLogisticImage,
+      title: 'Pride Logistic',
+      link: '/projects/pride-logistic'
+    },
+    marinist: {
+      title: 'Marinist',
+      img: MarinistImage,
+      link: '/projects/marinist'
+    },
+    vlady: {
+      img: VladyDesignImage,
+      title: 'Vlady design',
+      link: '/projects/vlady-design'
+    },
+    fcbalkans: {
+      img: FCBalkanyImage,
+      title: 'FC Balkany',
+      link: '/projects/balkany'
+    },
+    zlata_trade: {
+      img: ZlataTradeImage,
+      title: 'Zlata-trade',
+      link: '/projects/zlata-trade'
+    },
+    bee_games: {
+      img: BeeGamesImage,
+      title: 'Bee Games',
+      link: '/projects/bee-games'
+    },
+    two_are: {
+      img: TwoAreImage,
+      title: 'Two are',
+      link: '/projects/two-are'
+    },
+    vip_yoga: {
+      img: VipYogaImage,
+      title: 'Vip Yoga',
+      link: '/projects/vip-yoga'
+    },
+    pride_group: {
+      img: PrideGroupImage,
+      title: 'Pride group',
+      link: '/projects/pride-group'
+    },
+    gastrobar: {
+      title: 'Gastrobar',
+      img: GastrobarImage,
+      link: '/projects/gastrobar'
+    },
+    attic: {
+      img: AtticImage,
+      title: 'Attic stroy',
+      link: '/projects/attic-stroy'
+    },
+    bessarabskiy: {
+      img: BessarabskiyImage,
+      title: 'Bessarabskiy dvorik',
+      link: '/projects/bessarabskiy'
     }
-  }, {
-    img: FCBalkanyImage,
-    title: 'FC Balkany',
-    link: '/projects/balkany',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 2,
-      xl: 4
-    }
-  }, {
-    img: PrideLogisticImage,
-    title: 'Pride Logistic',
-    link: '/projects/pride-logistic',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 5,
-      xl: 3
-    }
-  }, {
-    isNavBlack: true,
-    img: VladyDesignImage,
-    title: 'Vlady design',
-    link: '/projects/vlady-design',
-    size: {
-      xs: 12,
-      md: 5,
-      lg: 4,
-      xl: 4
-    }
-  }, {
-    img: BessarabskiyImage,
-    title: 'Bessarabskiy dvorik',
-    link: '/projects/bessarabskiy',
-    size: {
-      xs: 12,
-      md: 5,
-      lg: 4,
-      xl: 4
-    }
-  }, {
-    title: 'Marinist',
-    img: MarinistImage,
-    link: '/projects/marinist',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 4,
-      xl: 4
-    }
-  }]
-}, {
-  key: 'ux/ui',
-  label: 'only ux/ui',
-  content: [{
-    img: BeeGamesImage,
-    title: 'Bee Games',
-    link: '/projects/bee-games',
-    size: {
-      xs: 12,
-      md: 5,
-      lg: 5,
-      xl: 5
-    }
-  }, {
-    img: AtticImage,
-    title: 'Attic stroy',
-    link: '/projects/attic-stroy',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 2,
-      xl: 4
-    }
-  }]
-}, {
-  key: 'branding',
-  label: 'branding',
-  content: [{
-    img: BeeGamesImage,
-    title: 'Bee Games',
-    link: '/projects/bee-games',
-    size: {
-      xs: 12,
-      md: 5,
-      lg: 5,
-      xl: 5
-    }
-  }, {
-    title: 'Gastrobar',
-    img: GastrobarImage,
-    link: '/projects/gastrobar',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 2,
-      xl: 4
-    }
-  }, {
-    img: ZlataTradeImage,
-    title: 'Zlata-trade',
-    link: '/projects/zlata-trade',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 5,
-      xl: 3
-    }
-  }, {
-    img: FCBalkanyImage,
-    title: 'FC Balkany',
-    link: '/projects/balkany',
-    size: {
-      xs: 12,
-      md: 5,
-      lg: 4,
-      xl: 4
-    }
-  }, {
-    img: PrideLogisticImage,
-    title: 'Pride Logistic',
-    link: '/projects/pride-logistic',
-    size: {
-      xs: 12,
-      md: 5,
-      lg: 4,
-      xl: 4
-    }
-  }, {
-    img: PrideGroupImage,
-    title: 'Pride group',
-    link: '/projects/pride-group',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 4,
-      xl: 4
-    }
-  }, {
-    img: BessarabskiyImage,
-    title: 'Bessarabskiy dvorik',
-    link: '/projects/bessarabskiy',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 5,
-      xl: 5
-    }
-  }, {
-    title: 'Marinist',
-    img: MarinistImage,
-    link: '/projects/marinist',
-    size: {
-      xs: 12,
-      md: 5,
-      lg: 2,
-      xl: 4
-    }
-  }, {
-    img: TwoAreImage,
-    title: 'Two are',
-    link: '/projects/two-are',
-    size: {
-      xs: 12,
-      md: 5,
-      lg: 5,
-      xl: 3
-    }
-  }, {
-    isNavBlack: true,
-    img: VipYogaImage,
-    title: 'Vip Yoga',
-    link: '/projects/vip-yoga',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 4,
-      xl: 4
-    }
-  }, {
-    img: AtticImage,
-    title: 'Attic stroy',
-    link: '/projects/attic-stroy',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 5,
-      xl: 4
-    }
-  }]
-}, {
-  key: 'all',
-  label: 'Все',
-  content: [{
-    img: ZlataTradeImage,
-    title: 'Zlata-trade',
-    link: '/projects/zlata-trade',
-    size: {
-      xs: 12,
-      md: 5,
-      lg: 5,
-      xl: 5
-    }
-  }, {
-    img: FCBalkanyImage,
-    title: 'FC Balkany',
-    link: '/projects/balkany',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 2,
-      xl: 4
-    }
-  }, {
-    img: PrideLogisticImage,
-    title: 'Pride Logistic',
-    link: '/projects/pride-logistic',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 5,
-      xl: 3
-    }
-  }, {
-    img: BeeGamesImage,
-    title: 'Bee Games',
-    link: '/projects/bee-games',
-    size: {
-      xs: 12,
-      md: 5,
-      lg: 4,
-      xl: 4
-    }
-  }, {
-    isNavBlack: true,
-    img: VladyDesignImage,
-    title: 'Vlady design',
-    link: '/projects/vlady-design',
-    size: {
-      xs: 12,
-      md: 5,
-      lg: 4,
-      xl: 4
-    }
-  }, {
-    img: PrideGroupImage,
-    title: 'Pride group',
-    link: '/projects/pride-group',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 4,
-      xl: 4
-    }
-  }, {
-    img: BessarabskiyImage,
-    title: 'Bessarabskiy dvorik',
-    link: '/projects/bessarabskiy',
-    size: {
-      xs: 12,
-      md: 5,
-      lg: 5,
-      xl: 5
-    }
-  }, {
-    title: 'Marinist',
-    img: MarinistImage,
-    link: '/projects/marinist',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 2,
-      xl: 4
-    }
-  }, {
-    title: 'Gastrobar',
-    img: GastrobarImage,
-    link: '/projects/gastrobar',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 5,
-      xl: 3
-    }
-  }, {
-    img: TwoAreImage,
-    title: 'Two are',
-    link: '/projects/two-are',
-    size: {
-      xs: 12,
-      md: 5,
-      lg: 4,
-      xl: 4
-    }
-  }, {
-    isNavBlack: true,
-    img: VipYogaImage,
-    title: 'Vip Yoga',
-    link: '/projects/vip-yoga',
-    size: {
-      xs: 12,
-      md: 5,
-      lg: 4,
-      xl: 4
-    }
-  }, {
-    img: AtticImage,
-    title: 'Attic stroy',
-    link: '/projects/attic-stroy',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 4,
-      xl: 4
-    }
-  }]
-}];
+  },
+  getExcept: function getExcept(keys) {
+    var newObj = this.getALl();
+    keys.forEach(key => {
+      delete newObj[key];
+    });
+    return newObj;
+  },
+  getALl: function getALl() {
+    return _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_8___default()({}, this.projects);
+  },
+  getByKeys: function getByKeys(keys) {
+    var sorted = {};
+
+    var res = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_7___default()(this.projects).filter(key => keys.includes(key)).reduce((arr, key) => {
+      arr[key] = this.projects[key];
+      return arr;
+    }, []);
+
+    keys.map(item => {
+      sorted[item] = res[item];
+    });
+    return sorted;
+  }
+};
+var Portfolios = {
+  getSlicedTabs: function getSlicedTabs(sliceCount = 6) {
+    return this.getTabs().map(tab => {
+      return _objectSpread({}, tab, {
+        content: tab.content.slice(0, sliceCount)
+      });
+    });
+  },
+  getTabs: function getTabs() {
+    return [{
+      key: 'all',
+      label: 'Все',
+      content: this.getALl()
+    }, {
+      key: 'web-sites',
+      label: 'web-sites',
+      content: this.getWebSites()
+    }, {
+      key: 'ux/ui',
+      label: 'only ux/ui',
+      content: this.getUIUX()
+    }, {
+      key: 'branding',
+      label: 'branding',
+      content: this.getBranding()
+    }];
+  },
+  getALl: function getALl() {
+    return _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_5___default()(NewProjectsList.getALl());
+  },
+  getWebSites: function getWebSites() {
+    return _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_5___default()(NewProjectsList.getByKeys(['zlata_trade', 'fcbalkans', 'pride_logistic', 'vlady', 'bessarabskiy', 'marinist']));
+  },
+  getUIUX: function getUIUX() {
+    return _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_5___default()(NewProjectsList.getByKeys(['bee_games', 'attic']));
+  },
+  getBranding: function getBranding() {
+    return _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_5___default()(NewProjectsList.getExcept(['bee_games']));
+  }
+};
+var Services = {
+  getLanding: function getLanding() {
+    return _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_5___default()(NewProjectsList.getByKeys(['pride_logistic', 'vlady', 'bee_games']));
+  },
+  getCorporate: function getCorporate() {
+    return _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_5___default()(NewProjectsList.getByKeys(['pride_group', 'marinist', 'zlata_trade']));
+  },
+  getBrand: function getBrand() {
+    return _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_5___default()(NewProjectsList.getByKeys(['fcbalkans', 'zlata_trade', 'two_are']));
+  },
+  getOthers: function getOthers() {
+    return _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_5___default()(NewProjectsList.getByKeys(['fcbalkans', 'marinist', 'pride_logistic']));
+  }
+};
 
 /***/ }),
 
@@ -58000,17 +57888,17 @@ var fbIcon = '/images/facebook.svg';
 var instIcon = '/images/instagram.svg';
 var beIcon = '/images/behance.svg';
 var Socials = [{
-  href: '/',
   src: fbIcon,
-  label: 'Facebook'
+  label: 'Facebook',
+  href: 'https://www.facebook.com/micorestudio'
 }, {
-  href: '/',
   src: instIcon,
-  label: 'Instagram'
+  label: 'Instagram',
+  href: 'https://www.instagram.com/manticoredev'
 }, {
-  href: '/',
   src: beIcon,
-  label: 'Behance'
+  label: 'Behance',
+  href: 'https://www.behance.net/micore'
 }];
 
 /***/ }),
@@ -58070,7 +57958,7 @@ var TeamList = [{
 /*!****************************************!*\
   !*** ./src/Components/Config/index.js ***!
   \****************************************/
-/*! exports provided: Socials, MenuLinks, TeamList, SkillsList, GlobalStyle, ServicesList, AllProjects, ProjectsList */
+/*! exports provided: Socials, MenuLinks, TeamList, SkillsList, GlobalStyle, ServicesList, Sizes, NewProjectsList, Portfolios, Services */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -58094,9 +57982,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ServicesList", function() { return _ServicesList__WEBPACK_IMPORTED_MODULE_5__["ServicesList"]; });
 
 /* harmony import */ var _ProjectsList__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ProjectsList */ "./src/Components/Config/ProjectsList.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "AllProjects", function() { return _ProjectsList__WEBPACK_IMPORTED_MODULE_6__["AllProjects"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Sizes", function() { return _ProjectsList__WEBPACK_IMPORTED_MODULE_6__["Sizes"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ProjectsList", function() { return _ProjectsList__WEBPACK_IMPORTED_MODULE_6__["ProjectsList"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NewProjectsList", function() { return _ProjectsList__WEBPACK_IMPORTED_MODULE_6__["NewProjectsList"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Portfolios", function() { return _ProjectsList__WEBPACK_IMPORTED_MODULE_6__["Portfolios"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Services", function() { return _ProjectsList__WEBPACK_IMPORTED_MODULE_6__["Services"]; });
 
 
 
@@ -58543,19 +58435,6 @@ var FooterSection = ({
       lineNumber: 119,
       columnNumber: 23
     }
-  }), __jsx(_Inputs__WEBPACK_IMPORTED_MODULE_13__["InputControl"], {
-    rows: 4,
-    id: "message",
-    type: "textarea",
-    value: values.message,
-    placeholder: "\u0421\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0435",
-    onChange: handleChange,
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 120,
-      columnNumber: 23
-    }
   }))))), __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_10__["default"], {
     xs: 12,
     lg: isContact ? 12 : 6,
@@ -58611,7 +58490,7 @@ var FooterSection = ({
       columnNumber: 35
     }
   }, "\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B"), __jsx("a", {
-    href: "mailto:micore@gmail.com",
+    href: "mailto:micore.studio@gmail.com",
     className: "contact-sub-title",
     __self: undefined,
     __source: {
@@ -58619,8 +58498,8 @@ var FooterSection = ({
       lineNumber: 139,
       columnNumber: 21
     }
-  }, "micore@gmail.com"), __jsx("a", {
-    href: "tel:+380971840009",
+  }, "micore.studio@gmail.com"), __jsx("a", {
+    href: "tel:+38 096 554 91 27",
     className: "contact-sub-title",
     __self: undefined,
     __source: {
@@ -58633,9 +58512,9 @@ var FooterSection = ({
     __source: {
       fileName: _jsxFileName,
       lineNumber: 140,
-      columnNumber: 79
+      columnNumber: 83
     }
-  }, "+38 097 184 00 09")))), __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_10__["default"], {
+  }, "+38 096 554 91 27")))), __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_10__["default"], {
     xs: 12,
     lg: isContact ? 6 : 12,
     __self: undefined,
@@ -60034,6 +59913,7 @@ var Tablet = () => {
   return __jsx(_SectionsComponents__WEBPACK_IMPORTED_MODULE_1__["SectionLayout"], {
     id: "balkany-tablet",
     Footer: () => __jsx(_SectionsComponents__WEBPACK_IMPORTED_MODULE_1__["BottomNavigation"], {
+      link: "fcbalkans.com.ua",
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -60065,7 +59945,7 @@ var Tablet = () => {
 /*!***********************************************************!*\
   !*** ./src/Components/Sections/Projects/Balkany/index.js ***!
   \***********************************************************/
-/*! exports provided: Main, LogoDesign, LogoConcept, Results, Branding, Fan, AboutSite, News, Desktop, Adaptation, Tablet, About */
+/*! exports provided: Main, About, LogoDesign, LogoConcept, Results, Branding, Fan, AboutSite, News, Desktop, Adaptation, Tablet */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -60163,9 +60043,10 @@ var ActiveLink = (_ref) => {
   var {
     link,
     className,
-    children
+    children,
+    isBlank
   } = _ref,
-      props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["link", "className", "children"]);
+      props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["link", "className", "children", "isBlank"]);
 
   var router = Object(next_router__WEBPACK_IMPORTED_MODULE_3__["useRouter"])();
 
@@ -60177,6 +60058,7 @@ var ActiveLink = (_ref) => {
   return __jsx("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: className,
     href: link,
+    target: isBlank && "_blank",
     onClick: handleClick
   }, props, {
     __self: undefined,
@@ -60451,15 +60333,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Sections__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Sections */ "./src/Components/Sections/index.js");
 /* harmony import */ var _Helpers__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Helpers */ "./src/Helpers/index.js");
 /* harmony import */ var _Projects__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Projects */ "./src/Components/SectionsComponents/Projects/index.js");
-/* harmony import */ var _Styles_Static_general_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../Styles/Static/general.scss */ "./src/Styles/Static/general.scss");
-/* harmony import */ var _Styles_Static_general_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_Styles_Static_general_scss__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _Styles_Includes_index_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../Styles/Includes/index.scss */ "./src/Styles/Includes/index.scss");
-/* harmony import */ var _Styles_Includes_index_scss__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_Styles_Includes_index_scss__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _Styles_Sections_Services_index_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../Styles/Sections/Services/index.scss */ "./src/Styles/Sections/Services/index.scss");
-/* harmony import */ var _Styles_Sections_Services_index_scss__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_Styles_Sections_Services_index_scss__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _Styles_Sections_Projects_index_scss__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../Styles/Sections/Projects/index.scss */ "./src/Styles/Sections/Projects/index.scss");
-/* harmony import */ var _Styles_Sections_Projects_index_scss__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_Styles_Sections_Projects_index_scss__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _MyScrollAnimation__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./MyScrollAnimation */ "./src/Components/SectionsComponents/MyScrollAnimation.js");
+/* harmony import */ var _MyScrollAnimation__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./MyScrollAnimation */ "./src/Components/SectionsComponents/MyScrollAnimation.js");
+/* harmony import */ var _Styles_Static_general_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../Styles/Static/general.scss */ "./src/Styles/Static/general.scss");
+/* harmony import */ var _Styles_Static_general_scss__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_Styles_Static_general_scss__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _Styles_Includes_index_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../Styles/Includes/index.scss */ "./src/Styles/Includes/index.scss");
+/* harmony import */ var _Styles_Includes_index_scss__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_Styles_Includes_index_scss__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _Styles_Sections_Services_index_scss__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../Styles/Sections/Services/index.scss */ "./src/Styles/Sections/Services/index.scss");
+/* harmony import */ var _Styles_Sections_Services_index_scss__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_Styles_Sections_Services_index_scss__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _Styles_Sections_Projects_index_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../Styles/Sections/Projects/index.scss */ "./src/Styles/Sections/Projects/index.scss");
+/* harmony import */ var _Styles_Sections_Projects_index_scss__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_Styles_Sections_Projects_index_scss__WEBPACK_IMPORTED_MODULE_11__);
 var _jsxFileName = "/var/www/manticore-react-next.js/src/Components/SectionsComponents/MainWrapper.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -60469,8 +60351,8 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-/* STYLES */
 
+/* STYLES */
 
 
 
@@ -60544,14 +60426,14 @@ var MainWrapper = ({
       columnNumber: 9
     }
   }, __jsx(_Projects__WEBPACK_IMPORTED_MODULE_6__["ProjectsNavigation"], {
-    links: _Config__WEBPACK_IMPORTED_MODULE_3__["AllProjects"],
+    links: _Config__WEBPACK_IMPORTED_MODULE_3__["Portfolios"].getALl(),
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 40,
       columnNumber: 11
     }
-  }), children, (isProject || isServices) && __jsx(_MyScrollAnimation__WEBPACK_IMPORTED_MODULE_11__["MyScrollAnimation"], {
+  }), children, (isProject || isServices) && __jsx(_MyScrollAnimation__WEBPACK_IMPORTED_MODULE_7__["MyScrollAnimation"], {
     animationName: "fadeIn",
     offset: 300,
     __self: undefined,
@@ -60639,60 +60521,55 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BottomNavigation", function() { return BottomNavigation; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _ScrollBox__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../ScrollBox */ "./src/Components/SectionsComponents/ScrollBox.js");
-/* harmony import */ var _ActiveLink__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ActiveLink */ "./src/Components/SectionsComponents/ActiveLink.js");
-/* harmony import */ var _Helpers__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../Helpers */ "./src/Helpers/index.js");
+/* harmony import */ var _ActiveLink__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../ActiveLink */ "./src/Components/SectionsComponents/ActiveLink.js");
 var _jsxFileName = "/var/www/manticore-react-next.js/src/Components/SectionsComponents/Projects/BottomNavigation.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
 
 
 var BottomNavigation = ({
   link = '#',
   isBlack
 }) => {
-  var {
-    desktop
-  } = Object(_Helpers__WEBPACK_IMPORTED_MODULE_3__["useDeviceDetect"])();
   return __jsx("div", {
     className: "bottom-navigation",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 6,
       columnNumber: 5
     }
-  }, __jsx(_ActiveLink__WEBPACK_IMPORTED_MODULE_2__["ActiveLink"], {
+  }, __jsx(_ActiveLink__WEBPACK_IMPORTED_MODULE_1__["ActiveLink"], {
     link: "/portfolio",
     className: "bottom-project-link ".concat(isBlack ? 'is-black' : ''),
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 7,
       columnNumber: 7
     }
   }, __jsx("span", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 8,
       columnNumber: 9
     }
-  }, "\u0412\u0441\u0435 \u0440\u0430\u0431\u043E\u0442\u044B")), __jsx(_ActiveLink__WEBPACK_IMPORTED_MODULE_2__["ActiveLink"], {
-    link: link,
+  }, "\u0412\u0441\u0435 \u0440\u0430\u0431\u043E\u0442\u044B")), __jsx("a", {
+    target: "_blank",
+    href: "http://".concat(link),
+    rel: "noopener noreferrer",
     className: "bottom-project-link ".concat(isBlack ? 'is-black' : ''),
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 10,
       columnNumber: 7
     }
   }, __jsx("span", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 16,
       columnNumber: 9
     }
   }, "\u041F\u0435\u0440\u0435\u0439\u0442\u0438 \u043D\u0430 \u0441\u0430\u0439\u0442")));
@@ -62884,7 +62761,7 @@ var ServiceShortPortfolio = ({
       lineNumber: 13,
       columnNumber: 7
     }
-  }, projects.length > 0 && projects.map((project, index) => index < 3 && __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, projects.length > 0 && projects.map((project, index) => __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_2__["default"], {
     key: "short_project_".concat(index),
     className: "col-short-portfolio",
     xs: 12,
@@ -63276,9 +63153,9 @@ var SocialsWrap = props => {
       lineNumber: 9,
       columnNumber: 5
     }
-  }, _Config__WEBPACK_IMPORTED_MODULE_1__["Socials"] && _Config__WEBPACK_IMPORTED_MODULE_1__["Socials"].map((item, index) => __jsx(_ActiveLink__WEBPACK_IMPORTED_MODULE_2__["ActiveLink"], {
+  }, _Config__WEBPACK_IMPORTED_MODULE_1__["Socials"] && _Config__WEBPACK_IMPORTED_MODULE_1__["Socials"].map((item, index) => __jsx("a", {
     key: index,
-    link: item.href,
+    href: item.href,
     target: "_blank",
     className: "social-link ".concat(firstLoad ? 'on-first-load' : ''),
     __self: undefined,
@@ -63833,7 +63710,17 @@ var MetaHead = () => {
       lineNumber: 26,
       columnNumber: 7
     }
-  }, "Manticore WEB studio"));
+  }, "Manticore WEB studio"), __jsx("link", {
+    rel: "icon",
+    href: "favicon.ico",
+    type: "image/x-icon",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 7
+    }
+  }));
 };
 
 /***/ }),
@@ -64567,18 +64454,6 @@ var useScroll = ({
 
 /***/ }),
 
-/***/ 19:
-/*!*********************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fprojects%2Fbalkany&absolutePagePath=%2Fvar%2Fwww%2Fmanticore-react-next.js%2Fpages%2Fprojects%2Fbalkany.js ***!
-  \*********************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fprojects%2Fbalkany&absolutePagePath=%2Fvar%2Fwww%2Fmanticore-react-next.js%2Fpages%2Fprojects%2Fbalkany.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fprojects%2Fbalkany&absolutePagePath=%2Fvar%2Fwww%2Fmanticore-react-next.js%2Fpages%2Fprojects%2Fbalkany.js!./");
-
-
-/***/ }),
-
 /***/ 2:
 /*!*********************************!*\
   !*** readable-stream (ignored) ***!
@@ -64587,6 +64462,18 @@ module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fprojec
 /***/ (function(module, exports) {
 
 /* (ignored) */
+
+/***/ }),
+
+/***/ 26:
+/*!*********************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fprojects%2Fbalkany&absolutePagePath=%2Fvar%2Fwww%2Fmanticore-react-next.js%2Fpages%2Fprojects%2Fbalkany.js ***!
+  \*********************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fprojects%2Fbalkany&absolutePagePath=%2Fvar%2Fwww%2Fmanticore-react-next.js%2Fpages%2Fprojects%2Fbalkany.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fprojects%2Fbalkany&absolutePagePath=%2Fvar%2Fwww%2Fmanticore-react-next.js%2Fpages%2Fprojects%2Fbalkany.js!./");
+
 
 /***/ }),
 
@@ -64601,5 +64488,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[19,"static/runtime/webpack.js","styles"]]]);
+},[[26,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=balkany.js.map

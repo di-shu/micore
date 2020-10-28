@@ -32,7 +32,7 @@
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    z-index: 2;
+    z-index: 6;
 
     &.on-first-load {
       animation: titles-on-first-load 3s $timing-func 0.3s both;

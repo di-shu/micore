@@ -1,11 +1,10 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import Tab from 'react-bootstrap/Tab'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Nav from 'react-bootstrap/Nav'
-import Card from 'react-bootstrap/Card'
-import Accordion from 'react-bootstrap/Accordion'
+import { Sizes } from '../Config'
 import { ActiveLink, ImageWrapper } from '../SectionsComponents'
 import { AnimationClass, useDeviceDetect } from '../../Helpers'
 
@@ -32,13 +31,8 @@ const CardWrap = styled(Col)`
   }
 `
 
-export const TabWrap = ({ animation, tabs, isSlice, isSkills }) => {
-  const getProjects = (arr) => isSlice ? arr : arr.slice(0, 6)
-  const { mobile, desktop } = useDeviceDetect()
-  
-  useEffect(() => {
-    tabs.map((tab) => tab.content && tab.content.map((content) => content.delay = Number(Math.random().toFixed(2))))
-  }, [])
+export const TabWrap = ({ animation, tabs }) => {
+  const { desktop } = useDeviceDetect()
   
   return (
     <Tab.Container id="portfolio-tabs" defaultActiveKey={tabs[0].key} transition={false}>
@@ -52,34 +46,16 @@ export const TabWrap = ({ animation, tabs, isSlice, isSkills }) => {
       <Tab.Content className={AnimationClass({ animation, className: 'tab-content-wrap' })}>
         {tabs.map((tab, index) => (
           <Tab.Pane key={`tab_${index}`} eventKey={tab.key}>
-            {isSkills ? (
-              <Accordion defaultActiveKey={!mobile && 'panel1'}>
-                {tab.content.map((content, index) => (
-                  <Card key={`skill_${index}`} className="skill-row">
-                    <Card.Header className="skill-header">
-                      <Accordion.Toggle as={Card.Header} eventKey={mobile ? content.value : 'panel1'} className="skill-toggle">
-                        <p className="skill-name">{content.name}</p>
-                        <ImageWrapper src={content.icon} className="skill-icon"/>
-                      </Accordion.Toggle>
-                    </Card.Header>
-                    <Accordion.Collapse eventKey={mobile ? content.value : 'panel1'} className="skill-collapse">
-                      <Card.Body className="skill-body">
-                        <p className="skill-description">{content.description}</p>
-                      </Card.Body>
-                    </Accordion.Collapse>
-                  </Card>
-                ))}
-              </Accordion>
-            ) : (
-              <Row>
-                {tab.content && getProjects(tab.content).map((content, index) => (
+            <Row>
+              {tab.content.length > 0 && tab.content.map((content, index) => {
+                return (
                   <CardWrap
+                    xs={12}
                     key={`card_${index}`}
-                    xs={content.size.xs}
-                    md={content.size.md}
-                    lg={content.size.lg}
-                    xl={content.size.xl}
                     delay={content.delay}
+                    md={Sizes.getMDSize(index)}
+                    lg={Sizes.getLGSize(index)}
+                    xl={Sizes.getXLSize(index)}
                     className={AnimationClass({ animation, className: 'card-wrap' })}
                   >
                     <ActiveLink link={content.link} className="project-nav-link"/>
@@ -87,12 +63,30 @@ export const TabWrap = ({ animation, tabs, isSlice, isSkills }) => {
                     <h6 className="project-title">{content.title}</h6>
                     {desktop && <p className="project-link" children="View project"/>}
                   </CardWrap>
-                ))}
-              </Row>
-            )}
+                )
+              })}
+            </Row>
           </Tab.Pane>
         ))}
       </Tab.Content>
     </Tab.Container>
   )
 }
+
+// <Accordion defaultActiveKey={!mobile && 'panel1'}>
+//   {tab.content.length > 0 && tab.content.map((content, index) => (
+//     <Card key={`skill_${index}`} className="skill-row">
+//       <Card.Header className="skill-header">
+//         <Accordion.Toggle as={Card.Header} eventKey={mobile ? content.value : 'panel1'} className="skill-toggle">
+//           <p className="skill-name">{content.name}</p>
+//           <ImageWrapper src={content.icon} className="skill-icon"/>
+//         </Accordion.Toggle>
+//       </Card.Header>
+//       <Accordion.Collapse eventKey={mobile ? content.value : 'panel1'} className="skill-collapse">
+//         <Card.Body className="skill-body">
+//           <p className="skill-description">{content.description}</p>
+//         </Card.Body>
+//       </Accordion.Collapse>
+//     </Card>
+//   ))}
+// </Accordion>

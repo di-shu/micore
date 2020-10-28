@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Layout } from './Layout'
-import { AllProjects } from '../Config'
+import { Portfolios } from '../Config'
 import { FooterSection } from '../Sections'
 import { useCheckRoute } from '../../Helpers'
 import { ProjectsNavigation } from './Projects'
+import { MyScrollAnimation } from './MyScrollAnimation'
 /* STYLES */
 import '~/Styles/Static/general.scss'
 import '~/Styles/Includes/index.scss'
 import '~/Styles/Sections/Services/index.scss'
 import '~/Styles/Sections/Projects/index.scss'
-import { MyScrollAnimation } from './MyScrollAnimation'
 
 const easing = [0.64, 0.04, 0.35, 1]
 const variants = {
@@ -37,7 +37,7 @@ export const MainWrapper = ({ id, children }) => {
           animate="visible"
           variants={variants}
         >
-          <ProjectsNavigation links={AllProjects}/>
+          <ProjectsNavigation links={Portfolios.getALl()}/>
           {children}
           {(isProject || isServices) && (
             <MyScrollAnimation animationName="fadeIn" offset={300}>

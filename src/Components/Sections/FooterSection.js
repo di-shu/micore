@@ -117,14 +117,14 @@ export const FooterSection = ({ isContact, animation }) => {
                   {!isContact && desktop && (
                     <Col xl={{ span: 6, offset: 1 }} className="col-center-wrap">
                       <ImageWrapper src={FooterLogo} className="img-wrap"/>
-                      <InputControl
-                        rows={4}
-                        id="message"
-                        type="textarea"
-                        value={values.message}
-                        placeholder="Сообщение"
-                        onChange={handleChange}
-                      />
+                      {/*<InputControl*/}
+                      {/*  rows={4}*/}
+                      {/*  id="message"*/}
+                      {/*  type="textarea"*/}
+                      {/*  value={values.message}*/}
+                      {/*  placeholder="Сообщение"*/}
+                      {/*  onChange={handleChange}*/}
+                      {/*/>*/}
                     </Col>
                   )}
                 </Row>
@@ -136,8 +136,8 @@ export const FooterSection = ({ isContact, animation }) => {
                 <Col xs={12} lg={isContact ? 6 : 12}>
                   <div className="contact-wrap">
                     {isContact && <h3 className="contact-title">Контакты</h3>}
-                    <a href="mailto:micore@gmail.com" className="contact-sub-title">micore@gmail.com</a>
-                    <a href="tel:+380971840009" className="contact-sub-title"><span>+38 097 184 00 09</span></a>
+                    <a href="mailto:micore.studio@gmail.com" className="contact-sub-title">micore.studio@gmail.com</a>
+                    <a href="tel:+38 096 554 91 27" className="contact-sub-title"><span>+38 096 554 91 27</span></a>
                   </div>
                 </Col>
                 <Col xs={12} lg={isContact ? 6 : 12}>

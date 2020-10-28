@@ -9,7 +9,7 @@ import {
 } from '../SectionsComponents'
 import { MakeBranding, MakeLogo } from '../Sections/Services/Branding'
 import { Quotes, StatueOptions, BrandingStages, MainStatue } from './Config/BrandPageConfigs'
-import { ProjectsList } from '../Config'
+import { Services } from '../Config'
 
 export const BrandPage = () => {
   return (
@@ -32,7 +32,7 @@ export const BrandPage = () => {
       <ServiceFeedback title="Заполнить бриф и узнать цену"/>
       <ServiceShortPortfolio
         content={<ImageWrapper isDot/>}
-        projects={[ProjectsList[0].content[0],ProjectsList[0].content[1],ProjectsList[2].content[8],]}
+        projects={Services.getBrand()}
       />
     </>
   )

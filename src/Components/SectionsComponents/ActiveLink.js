@@ -1,7 +1,7 @@
 import React from 'react'
 import { useRouter } from 'next/router'
 
-export const ActiveLink = ({ link, className, children, ...props }) => {
+export const ActiveLink = ({ link, className, children, isBlank, ...props }) => {
   const router = useRouter()
   
   const handleClick = (e) => {
@@ -10,6 +10,6 @@ export const ActiveLink = ({ link, className, children, ...props }) => {
   }
   
   return (
-    <a className={className} href={link} onClick={handleClick} {...props}>{children}</a>
+    <a className={className} href={link} target={isBlank && "_blank"} onClick={handleClick} {...props}>{children}</a>
   )
 }

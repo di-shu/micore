@@ -11,285 +11,179 @@ const ZlataTradeImage = '/images/Portfolio/zlata-trade.jpg'
 const VladyDesignImage = '/images/Portfolio/vlady.jpg'
 const PrideLogisticImage = '/images/Portfolio/pridelogistics.jpg'
 
-export const AllProjects = [
-  {
-    img: ZlataTradeImage,
-    title: 'Zlata-trade',
-    link: '/projects/zlata-trade'
+export const Sizes = {
+  getIterations: function (matches, index) {
+    const needle = matches.length
+    const per = Math.floor(index / needle)
+    const i = (index - (per * needle))
+  
+    return matches[i]
   },
-  {
-    img: FCBalkanyImage,
-    title: 'FC Balkany',
-    link: '/projects/balkany'
+  getMDSize: function (index) {
+    const matches = [7, 5, 5, 7]
+    
+    return this.getIterations(matches, index)
   },
-  {
-    img: PrideLogisticImage,
-    title: 'Pride Logistic',
-    link: '/projects/pride-logistic'
+  getLGSize: function (index) {
+    const matches = [5, 4, 3, 4, 4, 4]
+  
+    return this.getIterations(matches, index)
   },
-  {
-    img: BeeGamesImage,
-    title: 'Bee Games',
-    link: '/projects/bee-games'
-  },
-  {
-    isNavBlack: true,
-    img: VladyDesignImage,
-    title: 'Vlady design',
-    link: '/projects/vlady-design'
-  },
-  {
-    img: PrideGroupImage,
-    title: 'Pride group',
-    link: '/projects/pride-group'
-  },
-  {
-    img: BessarabskiyImage,
-    title: 'Bessarabskiy dvorik',
-    link: '/projects/bessarabskiy'
-  },
-  {
-    title: 'Marinist',
-    img: MarinistImage,
-    link: '/projects/marinist'
-  },
-  {
-    title: 'Gastrobar',
-    img: GastrobarImage,
-    link: '/projects/gastrobar'
-  },
-  {
-    img: TwoAreImage,
-    title: 'Two are',
-    link: '/projects/two-are'
-  },
-  {
-    isNavBlack: true,
-    img: VipYogaImage,
-    title: 'Vip Yoga',
-    link: '/projects/vip-yoga'
-  },
-  {
-    img: AtticImage,
-    title: 'Attic stroy',
-    link: '/projects/attic-stroy'
+  getXLSize: function (index) {
+    const matches = [5, 3, 4, 6, 3, 3]
+    
+    return this.getIterations(matches, index)
   }
-]
+}
 
-export const ProjectsList = [
-  {
-    key: 'web-sites',
-    label: 'Web-sites',
-    content: [
+export const NewProjectsList = {
+  projects: {
+    pride_logistic: {
+      img: PrideLogisticImage,
+      title: 'Pride Logistic',
+      link: '/projects/pride-logistic'
+    },
+    marinist: {
+      title: 'Marinist',
+      img: MarinistImage,
+      link: '/projects/marinist'
+    },
+    vlady: {
+      img: VladyDesignImage,
+      title: 'Vlady design',
+      link: '/projects/vlady-design'
+    },
+    fcbalkans: {
+      img: FCBalkanyImage,
+      title: 'FC Balkany',
+      link: '/projects/balkany'
+    },
+    zlata_trade: {
+      img: ZlataTradeImage,
+      title: 'Zlata-trade',
+      link: '/projects/zlata-trade'
+    },
+    bee_games: {
+      img: BeeGamesImage,
+      title: 'Bee Games',
+      link: '/projects/bee-games'
+    },
+    two_are: {
+      img: TwoAreImage,
+      title: 'Two are',
+      link: '/projects/two-are'
+    },
+    vip_yoga: {
+      img: VipYogaImage,
+      title: 'Vip Yoga',
+      link: '/projects/vip-yoga'
+    },
+    pride_group: {
+      img: PrideGroupImage,
+      title: 'Pride group',
+      link: '/projects/pride-group'
+    },
+    gastrobar: {
+      title: 'Gastrobar',
+      img: GastrobarImage,
+      link: '/projects/gastrobar'
+    },
+    attic: {
+      img: AtticImage,
+      title: 'Attic stroy',
+      link: '/projects/attic-stroy'
+    },
+    bessarabskiy: {
+      img: BessarabskiyImage,
+      title: 'Bessarabskiy dvorik',
+      link: '/projects/bessarabskiy'
+    }
+  },
+  getExcept: function (keys) {
+    let newObj = this.getALl()
+  
+    keys.forEach(key => {
+      delete newObj[key]
+    })
+  
+    return newObj
+  },
+  getALl: function () {
+    return Object.assign({}, this.projects)
+  },
+  getByKeys: function (keys) {
+    let sorted = {}
+    let res = Object.keys(this.projects)
+      .filter(key => keys.includes(key))
+      .reduce((arr, key) => {
+        arr[key] = this.projects[key]
+        
+        return arr
+      }, [])
+    
+    keys.map(item => {
+      sorted[item] = res[item]
+    })
+    
+    return sorted
+  }
+}
+
+export const Portfolios = {
+  getSlicedTabs: function (sliceCount = 6) {
+    return this.getTabs().map(tab => {
+      return { ...tab, content: tab.content.slice(0, sliceCount) }
+    })
+  },
+  getTabs: function () {
+    return [
       {
-        img: ZlataTradeImage,
-        title: 'Zlata-trade',
-        link: '/projects/zlata-trade',
-        size: { xs: 12, md: 5, lg: 5, xl: 5 }
+        key: 'all',
+        label: 'Все',
+        content: this.getALl()
       },
       {
-        img: FCBalkanyImage,
-        title: 'FC Balkany',
-        link: '/projects/balkany',
-        size: { xs: 12, md: 7, lg: 2, xl: 4 }
+        key: 'web-sites',
+        label: 'web-sites',
+        content: this.getWebSites()
       },
       {
-        img: PrideLogisticImage,
-        title: 'Pride Logistic',
-        link: '/projects/pride-logistic',
-        size: { xs: 12, md: 7, lg: 5, xl: 3 }
+        key: 'ux/ui',
+        label: 'only ux/ui',
+        content: this.getUIUX()
       },
       {
-        isNavBlack: true,
-        img: VladyDesignImage,
-        title: 'Vlady design',
-        link: '/projects/vlady-design',
-        size: { xs: 12, md: 5, lg: 4, xl: 4 }
-      },
-      {
-        img: BessarabskiyImage,
-        title: 'Bessarabskiy dvorik',
-        link: '/projects/bessarabskiy',
-        size: { xs: 12, md: 5, lg: 4, xl: 4 }
-      },
-      {
-        title: 'Marinist',
-        img: MarinistImage,
-        link: '/projects/marinist',
-        size: { xs: 12, md: 7, lg: 4, xl: 4 }
+        key: 'branding',
+        label: 'branding',
+        content: this.getBranding()
       }
     ]
   },
-  {
-    key: 'ux/ui',
-    label: 'only ux/ui',
-    content: [
-      {
-        img: BeeGamesImage,
-        title: 'Bee Games',
-        link: '/projects/bee-games',
-        size: { xs: 12, md: 5, lg: 5, xl: 5 }
-      },
-      {
-        img: AtticImage,
-        title: 'Attic stroy',
-        link: '/projects/attic-stroy',
-        size: { xs: 12, md: 7, lg: 2, xl: 4 }
-      }
-    ]
+  getALl: function () {
+    return Object.values(NewProjectsList.getALl())
   },
-  {
-    key: 'branding',
-    label: 'branding',
-    content: [
-      {
-        img: BeeGamesImage,
-        title: 'Bee Games',
-        link: '/projects/bee-games',
-        size: { xs: 12, md: 5, lg: 5, xl: 5 }
-      },
-      {
-        title: 'Gastrobar',
-        img: GastrobarImage,
-        link: '/projects/gastrobar',
-        size: { xs: 12, md: 7, lg: 2, xl: 4 }
-      },
-      {
-        img: ZlataTradeImage,
-        title: 'Zlata-trade',
-        link: '/projects/zlata-trade',
-        size: { xs: 12, md: 7, lg: 5, xl: 3 }
-      },
-      {
-        img: FCBalkanyImage,
-        title: 'FC Balkany',
-        link: '/projects/balkany',
-        size: { xs: 12, md: 5, lg: 4, xl: 4 }
-      },
-      {
-        img: PrideLogisticImage,
-        title: 'Pride Logistic',
-        link: '/projects/pride-logistic',
-        size: { xs: 12, md: 5, lg: 4, xl: 4 }
-      },
-      {
-        img: PrideGroupImage,
-        title: 'Pride group',
-        link: '/projects/pride-group',
-        size: { xs: 12, md: 7, lg: 4, xl: 4 }
-      },
-      {
-        img: BessarabskiyImage,
-        title: 'Bessarabskiy dvorik',
-        link: '/projects/bessarabskiy',
-        size: { xs: 12, md: 7, lg: 5, xl: 5 }
-      },
-      {
-        title: 'Marinist',
-        img: MarinistImage,
-        link: '/projects/marinist',
-        size: { xs: 12, md: 5, lg: 2, xl: 4 }
-      },
-      {
-        img: TwoAreImage,
-        title: 'Two are',
-        link: '/projects/two-are',
-        size: { xs: 12, md: 5, lg: 5, xl: 3 }
-      },
-      {
-        isNavBlack: true,
-        img: VipYogaImage,
-        title: 'Vip Yoga',
-        link: '/projects/vip-yoga',
-        size: { xs: 12, md: 7, lg: 4, xl: 4 }
-      },
-      {
-        img: AtticImage,
-        title: 'Attic stroy',
-        link: '/projects/attic-stroy',
-        size: { xs: 12, md: 7, lg: 5, xl: 4 }
-      }
-    ]
+  getWebSites: function () {
+    return Object.values(NewProjectsList.getByKeys(['zlata_trade', 'fcbalkans', 'pride_logistic', 'vlady', 'bessarabskiy', 'marinist']))
   },
-  {
-    key: 'all',
-    label: 'Все',
-    content: [
-      {
-        img: ZlataTradeImage,
-        title: 'Zlata-trade',
-        link: '/projects/zlata-trade',
-        size: { xs: 12, md: 5, lg: 5, xl: 5 }
-      },
-      {
-        img: FCBalkanyImage,
-        title: 'FC Balkany',
-        link: '/projects/balkany',
-        size: { xs: 12, md: 7, lg: 2, xl: 4 }
-      },
-      {
-        img: PrideLogisticImage,
-        title: 'Pride Logistic',
-        link: '/projects/pride-logistic',
-        size: { xs: 12, md: 7, lg: 5, xl: 3 }
-      },
-      {
-        img: BeeGamesImage,
-        title: 'Bee Games',
-        link: '/projects/bee-games',
-        size: { xs: 12, md: 5, lg: 4, xl: 4 }
-      },
-      {
-        isNavBlack: true,
-        img: VladyDesignImage,
-        title: 'Vlady design',
-        link: '/projects/vlady-design',
-        size: { xs: 12, md: 5, lg: 4, xl: 4 }
-      },
-      {
-        img: PrideGroupImage,
-        title: 'Pride group',
-        link: '/projects/pride-group',
-        size: { xs: 12, md: 7, lg: 4, xl: 4 }
-      },
-      
-      {
-        img: BessarabskiyImage,
-        title: 'Bessarabskiy dvorik',
-        link: '/projects/bessarabskiy',
-        size: { xs: 12, md: 5, lg: 5, xl: 5 }
-      },
-      {
-        title: 'Marinist',
-        img: MarinistImage,
-        link: '/projects/marinist',
-        size: { xs: 12, md: 7, lg: 2, xl: 4 }
-      },
-      {
-        title: 'Gastrobar',
-        img: GastrobarImage,
-        link: '/projects/gastrobar',
-        size: { xs: 12, md: 7, lg: 5, xl: 3 }
-      },
-      {
-        img: TwoAreImage,
-        title: 'Two are',
-        link: '/projects/two-are',
-        size: { xs: 12, md: 5, lg: 4, xl: 4 }
-      },
-      {
-        isNavBlack: true,
-        img: VipYogaImage,
-        title: 'Vip Yoga',
-        link: '/projects/vip-yoga',
-        size: { xs: 12, md: 5, lg: 4, xl: 4 }
-      },
-      {
-        img: AtticImage,
-        title: 'Attic stroy',
-        link: '/projects/attic-stroy',
-        size: { xs: 12, md: 7, lg: 4, xl: 4 }
-      }
-    ]
+  getUIUX: function () {
+    return Object.values(NewProjectsList.getByKeys(['bee_games', 'attic']))
   },
-]
+  getBranding: function () {
+    return Object.values(NewProjectsList.getExcept(['bee_games']))
+  }
+}
+
+export const Services = {
+  getLanding: function () {
+    return Object.values(NewProjectsList.getByKeys(['pride_logistic', 'vlady', 'bee_games']))
+  },
+  getCorporate: function () {
+    return Object.values(NewProjectsList.getByKeys(['pride_group', 'marinist', 'zlata_trade']))
+  },
+  getBrand: function () {
+    return Object.values(NewProjectsList.getByKeys(['fcbalkans', 'zlata_trade', 'two_are']))
+  },
+  getOthers: function () {
+    return Object.values(NewProjectsList.getByKeys(['fcbalkans', 'marinist', 'pride_logistic']))
+  }
+}

@@ -24,6 +24,7 @@ export const MetaHead = () => {
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js" />
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/3/turn.min.js"/>
       <title>Manticore WEB studio</title>
+      <link rel="icon" href="favicon.ico" type="image/x-icon" />
     </Head>
   )
 }

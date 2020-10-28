@@ -11,7 +11,7 @@ export const ServiceShortPortfolio = ({ content, projects }) => {
         <SectionTitle title="Краткое портфолио" isContentWhite />
       </MyScrollAnimation>
       <Row>
-        {projects.length > 0 && projects.map((project, index) => index < 3 && (
+        {projects.length > 0 && projects.map((project, index) => (
           <Col key={`short_project_${index}`} className="col-short-portfolio" xs={12} md={6} lg={4}>
             <MyScrollAnimation delay={[400]}>
               <div className="short-portfolio-box">

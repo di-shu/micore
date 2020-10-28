@@ -14,7 +14,7 @@ import {
   StatueOptions,
   LandingStages
 } from './Config/LandingPageConfigs'
-import { ProjectsList } from '../Config'
+import { Services } from '../Config'
 
 export const LandingPage = () => {
   return (
@@ -34,9 +34,7 @@ export const LandingPage = () => {
       <ServiceFeedback title="Получить первичный просчет в течении суток"/>
       <ServiceQuote quotes={Quotes}/>
       <ServiceWorkStages stages={Stages} title="Этапы работы"/>
-      <ServiceShortPortfolio
-        projects={[ProjectsList[0].content[2], ProjectsList[0].content[3], ProjectsList[1].content[0]]}
-      />
+      <ServiceShortPortfolio projects={Services.getLanding()}/>
     </>
   )
 }

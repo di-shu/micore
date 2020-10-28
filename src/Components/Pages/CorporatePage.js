@@ -1,7 +1,6 @@
 import React from 'react'
 import {
   ServiceQuote,
-  ServiceTarget,
   ServiceFeedback,
   ServiceWorkStages,
   ServiceMainSection,
@@ -15,7 +14,7 @@ import {
   CorporateStages,
   CorporateWorkingStages
 } from './Config/CorporatePageConfigs'
-import { ProjectsList } from '../Config'
+import { Services } from '../Config'
 
 export const CorporatePage = () => {
   return (
@@ -33,7 +32,7 @@ export const CorporatePage = () => {
       <ServiceQuote quotes={Quotes}/>
       <ServiceWorkStages stages={CorporateWorkingStages} title="Этапы работы"/>
       <ServiceShortPortfolio
-        projects={[ProjectsList[0].content[0], ProjectsList[0].content[2], ProjectsList[0].content[5]]}
+        projects={Services.getCorporate()}
       />
     </>
   )

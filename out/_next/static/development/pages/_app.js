@@ -66,6 +66,28 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-prope
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptors.js":
+/*!********************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptors.js ***!
+  \********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-descriptors */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/fn/object/get-own-property-descriptors.js");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-symbols */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/fn/object/get-own-property-symbols.js");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js":
 /*!********************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/keys.js ***!
@@ -74,6 +96,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-prope
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/object/keys */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/fn/object/keys.js");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/values.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/values.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/values */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/fn/object/values.js");
 
 /***/ }),
 
@@ -167,6 +200,36 @@ function _asyncToGenerator(fn) {
 }
 
 module.exports = _asyncToGenerator;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _defineProperty; });
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
 
 /***/ }),
 
@@ -442,6 +505,32 @@ module.exports = function getOwnPropertyDescriptor(it, key) {
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/fn/object/get-own-property-descriptors.js":
+/*!********************************************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/fn/object/get-own-property-descriptors.js ***!
+  \********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es7.object.get-own-property-descriptors */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/es7.object.get-own-property-descriptors.js");
+module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_core.js").Object.getOwnPropertyDescriptors;
+
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/fn/object/get-own-property-symbols.js":
+/*!****************************************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/fn/object/get-own-property-symbols.js ***!
+  \****************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es6.symbol */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/es6.symbol.js");
+module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_core.js").Object.getOwnPropertySymbols;
+
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/fn/object/keys.js":
 /*!********************************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/fn/object/keys.js ***!
@@ -451,6 +540,19 @@ module.exports = function getOwnPropertyDescriptor(it, key) {
 
 __webpack_require__(/*! ../../modules/es6.object.keys */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/es6.object.keys.js");
 module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_core.js").Object.keys;
+
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/fn/object/values.js":
+/*!**********************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/fn/object/values.js ***!
+  \**********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es7.object.values */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/es7.object.values.js");
+module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_core.js").Object.values;
 
 
 /***/ }),
@@ -939,6 +1041,26 @@ module.exports = function (NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
 
 var core = module.exports = { version: '2.6.11' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
+
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_create-property.js":
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_create-property.js ***!
+  \******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var $defineProperty = __webpack_require__(/*! ./_object-dp */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_object-dp.js");
+var createDesc = __webpack_require__(/*! ./_property-desc */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_property-desc.js");
+
+module.exports = function (object, index, value) {
+  if (index in object) $defineProperty.f(object, index, createDesc(0, value));
+  else object[index] = value;
+};
 
 
 /***/ }),
@@ -2074,6 +2196,59 @@ module.exports = function (KEY, exec) {
   var exp = {};
   exp[KEY] = exec(fn);
   $export($export.S + $export.F * fails(function () { fn(1); }), 'Object', exp);
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_object-to-array.js":
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_object-to-array.js ***!
+  \******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var DESCRIPTORS = __webpack_require__(/*! ./_descriptors */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_descriptors.js");
+var getKeys = __webpack_require__(/*! ./_object-keys */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_object-keys.js");
+var toIObject = __webpack_require__(/*! ./_to-iobject */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_to-iobject.js");
+var isEnum = __webpack_require__(/*! ./_object-pie */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_object-pie.js").f;
+module.exports = function (isEntries) {
+  return function (it) {
+    var O = toIObject(it);
+    var keys = getKeys(O);
+    var length = keys.length;
+    var i = 0;
+    var result = [];
+    var key;
+    while (length > i) {
+      key = keys[i++];
+      if (!DESCRIPTORS || isEnum.call(O, key)) {
+        result.push(isEntries ? [key, O[key]] : O[key]);
+      }
+    }
+    return result;
+  };
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_own-keys.js":
+/*!***********************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_own-keys.js ***!
+  \***********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// all object keys, includes non-enumerable and symbols
+var gOPN = __webpack_require__(/*! ./_object-gopn */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_object-gopn.js");
+var gOPS = __webpack_require__(/*! ./_object-gops */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_object-gops.js");
+var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_an-object.js");
+var Reflect = __webpack_require__(/*! ./_global */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_global.js").Reflect;
+module.exports = Reflect && Reflect.ownKeys || function ownKeys(it) {
+  var keys = gOPN.f(anObject(it));
+  var getSymbols = gOPS.f;
+  return getSymbols ? keys.concat(getSymbols(it)) : keys;
 };
 
 
@@ -3514,6 +3689,59 @@ if (NATIVE_WEAK_MAP && IS_IE11) {
     });
   });
 }
+
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/es7.object.get-own-property-descriptors.js":
+/*!*****************************************************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/es7.object.get-own-property-descriptors.js ***!
+  \*****************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// https://github.com/tc39/proposal-object-getownpropertydescriptors
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_export.js");
+var ownKeys = __webpack_require__(/*! ./_own-keys */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_own-keys.js");
+var toIObject = __webpack_require__(/*! ./_to-iobject */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_to-iobject.js");
+var gOPD = __webpack_require__(/*! ./_object-gopd */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_object-gopd.js");
+var createProperty = __webpack_require__(/*! ./_create-property */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_create-property.js");
+
+$export($export.S, 'Object', {
+  getOwnPropertyDescriptors: function getOwnPropertyDescriptors(object) {
+    var O = toIObject(object);
+    var getDesc = gOPD.f;
+    var keys = ownKeys(O);
+    var result = {};
+    var i = 0;
+    var key, desc;
+    while (keys.length > i) {
+      desc = getDesc(O, key = keys[i++]);
+      if (desc !== undefined) createProperty(result, key, desc);
+    }
+    return result;
+  }
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/es7.object.values.js":
+/*!*******************************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/es7.object.values.js ***!
+  \*******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// https://github.com/tc39/proposal-object-values-entries
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_export.js");
+var $values = __webpack_require__(/*! ./_object-to-array */ "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_object-to-array.js")(false);
+
+$export($export.S, 'Object', {
+  values: function values(it) {
+    return $values(it);
+  }
+});
 
 
 /***/ }),
@@ -18759,13 +18987,46 @@ var MenuLinks = [{
 /*!***********************************************!*\
   !*** ./src/Components/Config/ProjectsList.js ***!
   \***********************************************/
-/*! exports provided: AllProjects, ProjectsList */
+/*! exports provided: Sizes, NewProjectsList, Portfolios, Services */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AllProjects", function() { return AllProjects; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProjectsList", function() { return ProjectsList; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Sizes", function() { return Sizes; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewProjectsList", function() { return NewProjectsList; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Portfolios", function() { return Portfolios; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Services", function() { return Services; });
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-properties */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/get-own-property-descriptors */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptors.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/get-own-property-descriptor */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/get-own-property-symbols */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/values */ "./node_modules/@babel/runtime-corejs2/core-js/object/values.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/assign */ "./node_modules/next/dist/build/polyfills/object-assign.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_8__);
+
+
+
+
+
+
+
+
+
+
+function ownKeys(object, enumerableOnly) { var keys = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_7___default()(object); if (_babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default.a) { var symbols = _babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default()(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(target, key, source[key]); }); } else if (_babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default.a) { _babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1___default()(target, _babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default()(source)); } else { ownKeys(Object(source)).forEach(function (key) { _babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(target, key, _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(source, key)); }); } } return target; }
+
 var AtticImage = '/images/Portfolio/attic.jpg';
 var TwoAreImage = '/images/Portfolio/twoare.jpg';
 var VipYogaImage = '/images/Portfolio/yoga.jpg';
@@ -18778,388 +19039,167 @@ var PrideGroupImage = '/images/Portfolio/pride_group.jpg';
 var ZlataTradeImage = '/images/Portfolio/zlata-trade.jpg';
 var VladyDesignImage = '/images/Portfolio/vlady.jpg';
 var PrideLogisticImage = '/images/Portfolio/pridelogistics.jpg';
-var AllProjects = [{
-  img: ZlataTradeImage,
-  title: 'Zlata-trade',
-  link: '/projects/zlata-trade'
-}, {
-  img: FCBalkanyImage,
-  title: 'FC Balkany',
-  link: '/projects/balkany'
-}, {
-  img: PrideLogisticImage,
-  title: 'Pride Logistic',
-  link: '/projects/pride-logistic'
-}, {
-  img: BeeGamesImage,
-  title: 'Bee Games',
-  link: '/projects/bee-games'
-}, {
-  isNavBlack: true,
-  img: VladyDesignImage,
-  title: 'Vlady design',
-  link: '/projects/vlady-design'
-}, {
-  img: PrideGroupImage,
-  title: 'Pride group',
-  link: '/projects/pride-group'
-}, {
-  img: BessarabskiyImage,
-  title: 'Bessarabskiy dvorik',
-  link: '/projects/bessarabskiy'
-}, {
-  title: 'Marinist',
-  img: MarinistImage,
-  link: '/projects/marinist'
-}, {
-  title: 'Gastrobar',
-  img: GastrobarImage,
-  link: '/projects/gastrobar'
-}, {
-  img: TwoAreImage,
-  title: 'Two are',
-  link: '/projects/two-are'
-}, {
-  isNavBlack: true,
-  img: VipYogaImage,
-  title: 'Vip Yoga',
-  link: '/projects/vip-yoga'
-}, {
-  img: AtticImage,
-  title: 'Attic stroy',
-  link: '/projects/attic-stroy'
-}];
-var ProjectsList = [{
-  key: 'web-sites',
-  label: 'Web-sites',
-  content: [{
-    img: ZlataTradeImage,
-    title: 'Zlata-trade',
-    link: '/projects/zlata-trade',
-    size: {
-      xs: 12,
-      md: 5,
-      lg: 5,
-      xl: 5
+var Sizes = {
+  getIterations: function getIterations(matches, index) {
+    var needle = matches.length;
+    var per = Math.floor(index / needle);
+    var i = index - per * needle;
+    return matches[i];
+  },
+  getMDSize: function getMDSize(index) {
+    var matches = [7, 5, 5, 7];
+    return this.getIterations(matches, index);
+  },
+  getLGSize: function getLGSize(index) {
+    var matches = [5, 4, 3, 4, 4, 4];
+    return this.getIterations(matches, index);
+  },
+  getXLSize: function getXLSize(index) {
+    var matches = [5, 3, 4, 6, 3, 3];
+    return this.getIterations(matches, index);
+  }
+};
+var NewProjectsList = {
+  projects: {
+    pride_logistic: {
+      img: PrideLogisticImage,
+      title: 'Pride Logistic',
+      link: '/projects/pride-logistic'
+    },
+    marinist: {
+      title: 'Marinist',
+      img: MarinistImage,
+      link: '/projects/marinist'
+    },
+    vlady: {
+      img: VladyDesignImage,
+      title: 'Vlady design',
+      link: '/projects/vlady-design'
+    },
+    fcbalkans: {
+      img: FCBalkanyImage,
+      title: 'FC Balkany',
+      link: '/projects/balkany'
+    },
+    zlata_trade: {
+      img: ZlataTradeImage,
+      title: 'Zlata-trade',
+      link: '/projects/zlata-trade'
+    },
+    bee_games: {
+      img: BeeGamesImage,
+      title: 'Bee Games',
+      link: '/projects/bee-games'
+    },
+    two_are: {
+      img: TwoAreImage,
+      title: 'Two are',
+      link: '/projects/two-are'
+    },
+    vip_yoga: {
+      img: VipYogaImage,
+      title: 'Vip Yoga',
+      link: '/projects/vip-yoga'
+    },
+    pride_group: {
+      img: PrideGroupImage,
+      title: 'Pride group',
+      link: '/projects/pride-group'
+    },
+    gastrobar: {
+      title: 'Gastrobar',
+      img: GastrobarImage,
+      link: '/projects/gastrobar'
+    },
+    attic: {
+      img: AtticImage,
+      title: 'Attic stroy',
+      link: '/projects/attic-stroy'
+    },
+    bessarabskiy: {
+      img: BessarabskiyImage,
+      title: 'Bessarabskiy dvorik',
+      link: '/projects/bessarabskiy'
     }
-  }, {
-    img: FCBalkanyImage,
-    title: 'FC Balkany',
-    link: '/projects/balkany',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 2,
-      xl: 4
-    }
-  }, {
-    img: PrideLogisticImage,
-    title: 'Pride Logistic',
-    link: '/projects/pride-logistic',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 5,
-      xl: 3
-    }
-  }, {
-    isNavBlack: true,
-    img: VladyDesignImage,
-    title: 'Vlady design',
-    link: '/projects/vlady-design',
-    size: {
-      xs: 12,
-      md: 5,
-      lg: 4,
-      xl: 4
-    }
-  }, {
-    img: BessarabskiyImage,
-    title: 'Bessarabskiy dvorik',
-    link: '/projects/bessarabskiy',
-    size: {
-      xs: 12,
-      md: 5,
-      lg: 4,
-      xl: 4
-    }
-  }, {
-    title: 'Marinist',
-    img: MarinistImage,
-    link: '/projects/marinist',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 4,
-      xl: 4
-    }
-  }]
-}, {
-  key: 'ux/ui',
-  label: 'only ux/ui',
-  content: [{
-    img: BeeGamesImage,
-    title: 'Bee Games',
-    link: '/projects/bee-games',
-    size: {
-      xs: 12,
-      md: 5,
-      lg: 5,
-      xl: 5
-    }
-  }, {
-    img: AtticImage,
-    title: 'Attic stroy',
-    link: '/projects/attic-stroy',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 2,
-      xl: 4
-    }
-  }]
-}, {
-  key: 'branding',
-  label: 'branding',
-  content: [{
-    img: BeeGamesImage,
-    title: 'Bee Games',
-    link: '/projects/bee-games',
-    size: {
-      xs: 12,
-      md: 5,
-      lg: 5,
-      xl: 5
-    }
-  }, {
-    title: 'Gastrobar',
-    img: GastrobarImage,
-    link: '/projects/gastrobar',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 2,
-      xl: 4
-    }
-  }, {
-    img: ZlataTradeImage,
-    title: 'Zlata-trade',
-    link: '/projects/zlata-trade',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 5,
-      xl: 3
-    }
-  }, {
-    img: FCBalkanyImage,
-    title: 'FC Balkany',
-    link: '/projects/balkany',
-    size: {
-      xs: 12,
-      md: 5,
-      lg: 4,
-      xl: 4
-    }
-  }, {
-    img: PrideLogisticImage,
-    title: 'Pride Logistic',
-    link: '/projects/pride-logistic',
-    size: {
-      xs: 12,
-      md: 5,
-      lg: 4,
-      xl: 4
-    }
-  }, {
-    img: PrideGroupImage,
-    title: 'Pride group',
-    link: '/projects/pride-group',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 4,
-      xl: 4
-    }
-  }, {
-    img: BessarabskiyImage,
-    title: 'Bessarabskiy dvorik',
-    link: '/projects/bessarabskiy',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 5,
-      xl: 5
-    }
-  }, {
-    title: 'Marinist',
-    img: MarinistImage,
-    link: '/projects/marinist',
-    size: {
-      xs: 12,
-      md: 5,
-      lg: 2,
-      xl: 4
-    }
-  }, {
-    img: TwoAreImage,
-    title: 'Two are',
-    link: '/projects/two-are',
-    size: {
-      xs: 12,
-      md: 5,
-      lg: 5,
-      xl: 3
-    }
-  }, {
-    isNavBlack: true,
-    img: VipYogaImage,
-    title: 'Vip Yoga',
-    link: '/projects/vip-yoga',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 4,
-      xl: 4
-    }
-  }, {
-    img: AtticImage,
-    title: 'Attic stroy',
-    link: '/projects/attic-stroy',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 5,
-      xl: 4
-    }
-  }]
-}, {
-  key: 'all',
-  label: 'Все',
-  content: [{
-    img: ZlataTradeImage,
-    title: 'Zlata-trade',
-    link: '/projects/zlata-trade',
-    size: {
-      xs: 12,
-      md: 5,
-      lg: 5,
-      xl: 5
-    }
-  }, {
-    img: FCBalkanyImage,
-    title: 'FC Balkany',
-    link: '/projects/balkany',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 2,
-      xl: 4
-    }
-  }, {
-    img: PrideLogisticImage,
-    title: 'Pride Logistic',
-    link: '/projects/pride-logistic',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 5,
-      xl: 3
-    }
-  }, {
-    img: BeeGamesImage,
-    title: 'Bee Games',
-    link: '/projects/bee-games',
-    size: {
-      xs: 12,
-      md: 5,
-      lg: 4,
-      xl: 4
-    }
-  }, {
-    isNavBlack: true,
-    img: VladyDesignImage,
-    title: 'Vlady design',
-    link: '/projects/vlady-design',
-    size: {
-      xs: 12,
-      md: 5,
-      lg: 4,
-      xl: 4
-    }
-  }, {
-    img: PrideGroupImage,
-    title: 'Pride group',
-    link: '/projects/pride-group',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 4,
-      xl: 4
-    }
-  }, {
-    img: BessarabskiyImage,
-    title: 'Bessarabskiy dvorik',
-    link: '/projects/bessarabskiy',
-    size: {
-      xs: 12,
-      md: 5,
-      lg: 5,
-      xl: 5
-    }
-  }, {
-    title: 'Marinist',
-    img: MarinistImage,
-    link: '/projects/marinist',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 2,
-      xl: 4
-    }
-  }, {
-    title: 'Gastrobar',
-    img: GastrobarImage,
-    link: '/projects/gastrobar',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 5,
-      xl: 3
-    }
-  }, {
-    img: TwoAreImage,
-    title: 'Two are',
-    link: '/projects/two-are',
-    size: {
-      xs: 12,
-      md: 5,
-      lg: 4,
-      xl: 4
-    }
-  }, {
-    isNavBlack: true,
-    img: VipYogaImage,
-    title: 'Vip Yoga',
-    link: '/projects/vip-yoga',
-    size: {
-      xs: 12,
-      md: 5,
-      lg: 4,
-      xl: 4
-    }
-  }, {
-    img: AtticImage,
-    title: 'Attic stroy',
-    link: '/projects/attic-stroy',
-    size: {
-      xs: 12,
-      md: 7,
-      lg: 4,
-      xl: 4
-    }
-  }]
-}];
+  },
+  getExcept: function getExcept(keys) {
+    var newObj = this.getALl();
+    keys.forEach(key => {
+      delete newObj[key];
+    });
+    return newObj;
+  },
+  getALl: function getALl() {
+    return _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_8___default()({}, this.projects);
+  },
+  getByKeys: function getByKeys(keys) {
+    var sorted = {};
+
+    var res = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_7___default()(this.projects).filter(key => keys.includes(key)).reduce((arr, key) => {
+      arr[key] = this.projects[key];
+      return arr;
+    }, []);
+
+    keys.map(item => {
+      sorted[item] = res[item];
+    });
+    return sorted;
+  }
+};
+var Portfolios = {
+  getSlicedTabs: function getSlicedTabs(sliceCount = 6) {
+    return this.getTabs().map(tab => {
+      return _objectSpread({}, tab, {
+        content: tab.content.slice(0, sliceCount)
+      });
+    });
+  },
+  getTabs: function getTabs() {
+    return [{
+      key: 'all',
+      label: 'Все',
+      content: this.getALl()
+    }, {
+      key: 'web-sites',
+      label: 'web-sites',
+      content: this.getWebSites()
+    }, {
+      key: 'ux/ui',
+      label: 'only ux/ui',
+      content: this.getUIUX()
+    }, {
+      key: 'branding',
+      label: 'branding',
+      content: this.getBranding()
+    }];
+  },
+  getALl: function getALl() {
+    return _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_5___default()(NewProjectsList.getALl());
+  },
+  getWebSites: function getWebSites() {
+    return _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_5___default()(NewProjectsList.getByKeys(['zlata_trade', 'fcbalkans', 'pride_logistic', 'vlady', 'bessarabskiy', 'marinist']));
+  },
+  getUIUX: function getUIUX() {
+    return _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_5___default()(NewProjectsList.getByKeys(['bee_games', 'attic']));
+  },
+  getBranding: function getBranding() {
+    return _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_5___default()(NewProjectsList.getExcept(['bee_games']));
+  }
+};
+var Services = {
+  getLanding: function getLanding() {
+    return _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_5___default()(NewProjectsList.getByKeys(['pride_logistic', 'vlady', 'bee_games']));
+  },
+  getCorporate: function getCorporate() {
+    return _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_5___default()(NewProjectsList.getByKeys(['pride_group', 'marinist', 'zlata_trade']));
+  },
+  getBrand: function getBrand() {
+    return _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_5___default()(NewProjectsList.getByKeys(['fcbalkans', 'zlata_trade', 'two_are']));
+  },
+  getOthers: function getOthers() {
+    return _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_5___default()(NewProjectsList.getByKeys(['fcbalkans', 'marinist', 'pride_logistic']));
+  }
+};
 
 /***/ }),
 
@@ -19293,17 +19333,17 @@ var fbIcon = '/images/facebook.svg';
 var instIcon = '/images/instagram.svg';
 var beIcon = '/images/behance.svg';
 var Socials = [{
-  href: '/',
   src: fbIcon,
-  label: 'Facebook'
+  label: 'Facebook',
+  href: 'https://www.facebook.com/micorestudio'
 }, {
-  href: '/',
   src: instIcon,
-  label: 'Instagram'
+  label: 'Instagram',
+  href: 'https://www.instagram.com/manticoredev'
 }, {
-  href: '/',
   src: beIcon,
-  label: 'Behance'
+  label: 'Behance',
+  href: 'https://www.behance.net/micore'
 }];
 
 /***/ }),
@@ -19363,7 +19403,7 @@ var TeamList = [{
 /*!****************************************!*\
   !*** ./src/Components/Config/index.js ***!
   \****************************************/
-/*! exports provided: Socials, MenuLinks, TeamList, SkillsList, GlobalStyle, ServicesList, AllProjects, ProjectsList */
+/*! exports provided: Socials, MenuLinks, TeamList, SkillsList, GlobalStyle, ServicesList, Sizes, NewProjectsList, Portfolios, Services */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19387,9 +19427,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ServicesList", function() { return _ServicesList__WEBPACK_IMPORTED_MODULE_5__["ServicesList"]; });
 
 /* harmony import */ var _ProjectsList__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ProjectsList */ "./src/Components/Config/ProjectsList.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "AllProjects", function() { return _ProjectsList__WEBPACK_IMPORTED_MODULE_6__["AllProjects"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Sizes", function() { return _ProjectsList__WEBPACK_IMPORTED_MODULE_6__["Sizes"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ProjectsList", function() { return _ProjectsList__WEBPACK_IMPORTED_MODULE_6__["ProjectsList"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NewProjectsList", function() { return _ProjectsList__WEBPACK_IMPORTED_MODULE_6__["NewProjectsList"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Portfolios", function() { return _ProjectsList__WEBPACK_IMPORTED_MODULE_6__["Portfolios"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Services", function() { return _ProjectsList__WEBPACK_IMPORTED_MODULE_6__["Services"]; });
 
 
 

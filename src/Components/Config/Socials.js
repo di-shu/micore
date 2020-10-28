@@ -4,18 +4,18 @@ const beIcon = '/images/behance.svg'
 
 export const Socials = [
   {
-    href: '/',
     src: fbIcon,
-    label: 'Facebook'
+    label: 'Facebook',
+    href: 'https://www.facebook.com/micorestudio'
   },
   {
-    href: '/',
     src: instIcon,
-    label: 'Instagram'
+    label: 'Instagram',
+    href: 'https://www.instagram.com/manticoredev'
   },
   {
-    href: '/',
     src: beIcon,
-    label: 'Behance'
+    label: 'Behance',
+    href: 'https://www.behance.net/micore'
   }
 ]
