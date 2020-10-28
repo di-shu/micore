@@ -19,6 +19,7 @@
 .DS_Store
 .env*
 .idea/
+/.htaccess
 
 # debug
 npm-debug.log*
