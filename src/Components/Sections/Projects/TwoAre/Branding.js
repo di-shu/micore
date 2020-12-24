@@ -6,7 +6,10 @@ import { TypeContent, TwoAreSlides } from './Config'
 
 export const Branding = () => {
   return (
-    <SectionLayout id="two-are-branding" Footer={() => <SectionSlider slides={TwoAreSlides}/>}>
+    <SectionLayout
+      id="two-are-branding"
+      // Footer={() => <SectionSlider slides={TwoAreSlides}/>}
+    >
       <SectionTitle title="Брендирование" isContentWhite/>
       <Row>
         <Col xs={12} lg={8}>

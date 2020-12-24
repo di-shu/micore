@@ -16,7 +16,10 @@ export const Branding = () => {
   const { minWidthLaptop } = useDeviceDetect()
   
   return (
-    <SectionLayout id="bessarabskiy-branding" Footer={() => <SectionSlider slides={BessarabskiySlides}/>}>
+    <SectionLayout
+      id="bessarabskiy-branding"
+      // Footer={() => <SectionSlider slides={BessarabskiySlides}/>}
+    >
       <ImageWrapper isDot display={minWidthLaptop}/>
       <Row>
         <Col xs={12} lg={6}>

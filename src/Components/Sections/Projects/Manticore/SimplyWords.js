@@ -21,7 +21,7 @@ export const SimplyWords = () => {
   return (
     <SectionLayout
       id="manticore-simply-word"
-      Footer={() => <SectionSlider slides={SimplySlides} customSlide SlideComponent={SlideTemplate}/>}
+      // Footer={() => <SectionSlider slides={SimplySlides} customSlide SlideComponent={SlideTemplate}/>}
     >
       <SectionDesc className="sub-title" children="Сложные вещи"/>
       <SectionTitle isContentWhite>простыми словами</SectionTitle>

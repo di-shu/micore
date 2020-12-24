@@ -18,10 +18,10 @@ export const BrandingHeader = () => {
           рекламной продукции.
         </SectionDesc>
       </SectionWrapper>
-      <SectionSlider
-        slidesToShow={2}
-        slides={BrandingSlides}
-      />
+      {/*<SectionSlider*/}
+      {/*  slidesToShow={2}*/}
+      {/*  slides={BrandingSlides}*/}
+      {/*/>*/}
       <ImageWrapper src={Billboard} className="billboard-image"/>
     </>
   )

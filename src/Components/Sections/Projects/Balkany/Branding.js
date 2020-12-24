@@ -15,11 +15,11 @@ export const Branding = ({ isSecond }) => {
   return (
     <SectionLayout
       id="balkany-branding"
-      Footer={() =>
-        isSecond ?
-          <SectionSlider slidesToShow={1} slides={UniformSlides}/> :
-          <SectionSlider slidesToShow={1} slides={BrandingSlides}/>
-      }
+      // Footer={() =>
+      //   isSecond ?
+      //     <SectionSlider slidesToShow={1} slides={UniformSlides}/> :
+      //     <SectionSlider slidesToShow={1} slides={BrandingSlides}/>
+      // }
     >
       <ImageWrapper isDot display={laptop || desktop}/>
       <SectionTitle title={isSecond ? 'Форма' : 'Брендинг'}/>

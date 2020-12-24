@@ -17,13 +17,13 @@ export const Branding = () => {
       id="zlata-branding"
       Header={BrandingHeader}
       className="uniform-wrapper"
-      Footer={() => (
-        <SectionSlider
-          slidesToShow={1}
-          slides={UniformSlides}
-          className="uniform-slider"
-        />
-      )}
+      // Footer={() => (
+      //   <SectionSlider
+      //     slidesToShow={1}
+      //     slides={UniformSlides}
+      //     className="uniform-slider"
+      //   />
+      // )}
     >
       <ImageWrapper isDot display={desktop}/>
       <SectionTitle title="Униформа"/>

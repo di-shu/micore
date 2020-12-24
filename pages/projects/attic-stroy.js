@@ -4,7 +4,7 @@ import {
   About,
   Icons,
   Mobile,
-  Slider,
+  // Slider,
   Tablet,
   Branding,
   AboutSite,
@@ -26,7 +26,7 @@ const AtticStroy = () => {
       <LogoConcept/>
       <ColorsAndFonts/>
       <Branding/>
-      <Slider/>
+      {/*<Slider/>*/}
       <AboutSite/>
       <OtherPages/>
       <Icons/>

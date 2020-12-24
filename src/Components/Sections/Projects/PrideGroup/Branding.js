@@ -6,7 +6,11 @@ const BrandingBG = '/images/PrideGroup/BrandingBG.jpg'
 
 export const Branding = () => {
   return (
-    <SectionLayout id="pride-group-branding" customWrap Footer={() => <SectionSlider slides={PrideGroupSlides}/>}>
+    <SectionLayout
+      customWrap
+      id="pride-group-branding"
+      // Footer={() => <SectionSlider slides={PrideGroupSlides}/>}
+    >
       <div className="branding-wrap">
         <ImageWrapper src={BrandingBG}/>
         <SectionWrapper>

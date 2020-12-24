@@ -8,7 +8,7 @@ export const Bottom = () => {
   return (
     <SectionLayout
       id="vip-yoga-bottom"
-      Header={() => <SectionSlider slides={VipYogaSlides} />}
+      // Header={() => <SectionSlider slides={VipYogaSlides} />}
       Footer={() => (
         <>
           <ImageWrapper src={FooterImg} className="footer-image" />
