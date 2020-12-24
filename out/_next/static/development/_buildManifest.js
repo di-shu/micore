@@ -1,1 +1,1 @@
-self.__BUILD_MANIFEST = (function(a,b){return {"/projects/balkany":[a,b],"/services/brand":[a,b],"/services/corporate":[a,b],"/services/landing":[a,b],"/services/other":[a,b]}}("static\u002Fcss\u002Fstyles.chunk.css","static\u002Fchunks\u002Fstyles.js"));self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()
+self.__BUILD_MANIFEST = (function(a,b){return {"/services/corporate":[a,b],"/services/other":[a,b]}}("static\u002Fcss\u002Fstyles.chunk.css","static\u002Fchunks\u002Fstyles.js"));self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()
