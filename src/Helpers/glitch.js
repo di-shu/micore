@@ -1,9 +1,9 @@
 let glitch
 let isLoaded = false
 
-export const setup = ({ statue, ...other }) => (p5, canvasParentRef) => {
-  p5.background('rgba(255, 255, 255, 0)')
+export const setup = ({ statue, bg = 'rgba(255, 255, 255, 0)', ...other }) => (p5, canvasParentRef) => {
   p5.createCanvas(other.statueW, other.statueH).parent(canvasParentRef)
+  p5.background(255)
   p5.loadImage(statue, function (img) {
     glitch = new Glitch(img, p5, other)
     isLoaded = true
@@ -12,8 +12,7 @@ export const setup = ({ statue, ...other }) => (p5, canvasParentRef) => {
 
 export const draw = (p5) => {
   p5.clear()
-  p5.background('rgba(255, 255, 255, 0)')
-  
+  // p5.background('rgba(255, 255, 255, 0)')
   if (isLoaded) {
     glitch.show()
   }

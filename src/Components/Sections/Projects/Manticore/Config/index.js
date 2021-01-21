@@ -2,12 +2,14 @@ const MacOpen = '/images/ManticoreProject/MacOpen.png'
 const MacDefault = '/images/ManticoreProject/MacDefault.png'
 
 export const ManticoreAboutInfo = [
-  'Type something 1',
-  'Type something 2',
-  'Type something 3',
-  'Type something 4',
-  'Type something 5',
-  'Type something 6',
+  'Название',
+  'Позиционирование',
+  'Философия',
+  'Логотип',
+  'Айдентика',
+  'Сайт',
+    'Контент',
+    'Соц. сети'
 ]
 
 export const SimplySlides = [

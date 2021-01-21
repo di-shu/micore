@@ -3,6 +3,11 @@
 #manticore-main {
   background-color: #2c3160;
 
+  .section-wrapper {
+    align-items: unset;
+    padding-top: 15px;
+  }
+
   .section-title {
     color: $accent-main;
   }
@@ -24,21 +29,23 @@
 
 #manticore-why {
   background-color: #040d15;
+  padding-bottom: 23px;
 
   .section-desc {
     margin-bottom: 0;
   }
 
   .section-image-wrap {
-    padding-bottom: 55px;
-    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      margin-bottom: 20px;
+    }
   }
 
   .image-text {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    order: 1;
     width: 100%;
     max-width: 260px;
     margin: 0 auto;
@@ -162,12 +169,101 @@
   .slick-dots {
     margin-top: 0;
   }
+
+  .manticore-image__wrapper {
+    margin-bottom: 40px;
+  }
+
+  .section-image-wrap {
+    margin-bottom: 15px;
+  }
+
+  .manticore-image__desc {
+    color: #ffffff;
+    font-size: 14px;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+
+#about-projects-section {
+  .grid-container {
+    .grid-item {
+      &:first-child {
+        order: 1;
+        margin-bottom: 30px;
+      }
+
+      &:last-child {
+        margin-bottom: 45px;
+      }
+    }
+  }
+
+  .about-projects-services {
+    .col-6 {
+      &:last-child, &:nth-last-child(2) {
+        .text-with-dot {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+#manticore-developing__logo {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .section-wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+  }
+
+  .developing-logo__step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-title {
+    margin-bottom: 15px;
+    span {
+      color: #d9255e;
+    }
+  }
+
+  .section-desc {
+    font-size: 24px;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 36px;
+    text-align: center;
+    font-family: "Museo Sans Cyrl 500";
+    margin-bottom: 35px;
+  }
+
+  .section-image-wrap {
+    max-width: 315px;
+  }
 }
 
 @include media-breakpoint-up('lg') {
   #manticore-main {
     .section-wrapper {
       background-color: rgba(44, 49, 96, 0.6);
+      padding-top: 20px;
+      align-items: center;
+    }
+
+    .section-desc {
+      margin-bottom: 0;
     }
 
     .main-statue {
@@ -178,11 +274,165 @@
       width: 100%;
       height: auto;
       transform: none;
+      display: flex;
+      justify-content: center;
 
       canvas {
         display: block;
-        width: 100% !important;
       }
+    }
+  }
+
+  #about-projects-section {
+    overflow: hidden;
+
+    .grid-container {
+      margin-bottom: 97px;
+
+      .grid-item {
+        &:first-child {
+          order: unset;
+          margin-bottom: unset;
+        }
+
+        &:last-child {
+          margin-bottom: unset;
+        }
+      }
+    }
+  }
+
+  #manticore-why {
+    padding-bottom: 0;
+    .section-wrapper {
+      padding-top: 165px;
+      padding-bottom: 158px;
+    }
+
+    .section-desc {
+      max-width: 517px;
+    }
+
+    .section-image-wrap {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      flex-direction: row;
+
+      img {
+        width: auto;
+        object-fit: contain;
+        height: 451px;
+        margin-bottom: 0;
+      }
+    }
+
+    .image-text {
+      position: absolute;
+      max-width: 169px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 36px;
+      bottom: unset;
+      left: unset;
+    }
+  }
+
+  #manticore-about-name {
+   .section-wrapper {
+     max-width: 760px;
+     padding-top: 120px;
+   }
+
+    .sub-title {
+      font-size: 32px;
+      font-style: normal;
+      letter-spacing: 0.9px;
+      line-height: normal;
+    }
+
+    .section-image-wrap {
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  #manticore-simply-word  {
+    .section-desc {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .section-wrapper {
+      padding-top: 80px;
+      padding-bottom: 65px;
+    }
+
+    .manticore-images {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .manticore-image__wrapper {
+      flex-basis: 43%;
+      margin-bottom: 0;
+    }
+
+    .section-image-wrap {
+      margin-bottom: 30px;
+    }
+
+    .manticore-image__desc {
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+
+  #manticore-developing__logo {
+    overflow: hidden;
+    .section-wrapper {
+      max-width: unset;
+      padding: 0;
+      position: relative;
+      height: 100vh;
+      overflow: scroll;
+    }
+
+    .wh-wrap {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      width: 100vw;
+    }
+
+    .horizontal-scroll {
+      width: fit-content;
+      background-color: #fff;
+      overflow: scroll;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+    }
+
+    .horizontal-scroll__container {
+      display: flex;
+      width: fit-content;
+      transition: transform .1s linear;
+      will-change: transform;
+    }
+
+    .developing-logo__step {
+      width: 100vw;
+      height: 100vh;
+      justify-content: center;
+    }
+
+    .section-desc {
+      max-width: 730px;
     }
   }
 }

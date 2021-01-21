@@ -20,13 +20,14 @@ const variants = {
 }
 
 export const MainWrapper = ({ id, children }) => {
-  const { isProject, isServices } = useCheckRoute()
+  const { isProject, isServices , isManticore } = useCheckRoute()
   
   useEffect(() => {
     setTimeout(() => {
       window.scrollTo({ top: 0, left: 0 })
     }, 100)
   }, [])
+
 
   return (
     <Layout>
@@ -39,7 +40,7 @@ export const MainWrapper = ({ id, children }) => {
         >
           <ProjectsNavigation links={Portfolios.getALl()}/>
           {children}
-          {(isProject || isServices) && (
+          {!isManticore && (isProject || isServices) && (
             <MyScrollAnimation animationName="fadeIn" offset={300}>
               <FooterSection animation/>
             </MyScrollAnimation>

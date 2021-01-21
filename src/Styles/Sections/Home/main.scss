@@ -1,6 +1,9 @@
 @import "../../Static/index";
 
 #main-section {
+  height: 100vh;
+  position: relative;
+
   .fp-scroller {
     height: 100%;
   }

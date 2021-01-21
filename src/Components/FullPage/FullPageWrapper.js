@@ -1,8 +1,10 @@
 import React from 'react'
 import ReactFullpage from '@fullpage/react-fullpage'
+import {useDeviceDetect} from "../../Helpers";
 
 export const FullPageWrapper = (props) => {
   const { sections, options, setSections, setOptions } = props
+    const { mobile } = useDeviceDetect()
   
   const sectionMove = (origin, destination) => {
     setSections(prev => {
@@ -19,7 +21,13 @@ export const FullPageWrapper = (props) => {
     })
   }
   
-  return (
+  return  mobile ? (
+      <div>
+          {sections.map(({ name, status, Component }, index) => (
+              <Component key={name} animation={status} firstLoad={index === 0 && options.firstLoad}/>
+          ))}
+      </div>
+  ) : (
     <ReactFullpage
       scrollOverflow
       onLeave={sectionMove}

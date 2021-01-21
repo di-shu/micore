@@ -25,6 +25,19 @@ export const SimplyWords = () => {
     >
       <SectionDesc className="sub-title" children="Сложные вещи"/>
       <SectionTitle isContentWhite>простыми словами</SectionTitle>
+        <div className="manticore-images">
+            <div className="manticore-image__wrapper">
+                <ImageWrapper src="/images/Manticore/first-computer.png" class="manticore-image"/>
+                <SectionDesc className="manticore-image__desc">Усиленная работа системы охлождения из-за
+                    нагрузки процессора большим объемом данных,
+                    вызывает шумовые последствия
+                </SectionDesc>
+            </div>
+            <div className="manticore-image__wrapper">
+                <ImageWrapper src="/images/Manticore/second-computer.png" class="manticore-image"/>
+                <SectionDesc className="manticore-image__desc">Компьютер немного шумит</SectionDesc>
+            </div>
+        </div>
     </SectionLayout>
   )
 }

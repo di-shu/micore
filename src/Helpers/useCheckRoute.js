@@ -4,9 +4,12 @@ import { useRouter } from 'next/router'
 export const useCheckRoute = () => {
   const [isProject, setIsProject] = useState(false)
   const [isServices, setIsServices] = useState(false)
+  const [isManticore, setIsManticore] = useState(false)
   const { pathname } = useRouter()
 
   useEffect(() => {
+
+
     if (pathname.includes('/projects/')) {
       setTimeout(() => {
         setIsProject(true)
@@ -22,7 +25,16 @@ export const useCheckRoute = () => {
     } else {
       setIsServices(false)
     }
+
+    if (pathname.includes('/projects/manticore')) {
+      setTimeout(() => {
+        setIsManticore(true)
+      }, 100)
+    } else {
+      setIsManticore(false)
+    }
+
   }, [])
 
-  return { isProject, isServices }
+  return { isProject, isServices , isManticore}
 }

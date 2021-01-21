@@ -1,18 +1,42 @@
 import React from 'react'
-import { draw, setup, useDeviceDetect } from '../../../../Helpers'
+import {draw, setup, useDeviceDetect} from '../../../../Helpers'
 import { ImageWrapper, ProjectMainSection } from '../../../SectionsComponents'
 import dynamic from 'next/dynamic'
+
 const Sketch = dynamic(() => import('react-p5'), { ssr: false })
 /*IMAGES*/
-const MainImg = '/images/ManticoreProject/MainStatue.png'
+const MainStatue = '/images/Manticore/MainStatue.png'
+
+const opt = {
+  statueW: 610,
+  statueH: 840,
+  statue: MainStatue,
+  posX: 'right',
+  posY: 'bottom',
+  proportions: 'origin',
+  offsetX: 0,
+  offsetY: 0,
+  bg: '#fff'
+}
+
+const optMobile = {
+  statueW: 350,
+  statueH: 480,
+  statue: MainStatue,
+  posX: 'right',
+  posY: 'bottom',
+  proportions: 'origin',
+  offsetX: 0,
+  offsetY: 0,
+  bg: '#fff'
+}
+
 
 const MainSectionFooterContent = () => {
   const { minWidthLaptop } = useDeviceDetect()
 
-  return minWidthLaptop ? (
-    <Sketch setup={setup(MainImg, true, 'center')} draw={draw} className="section-image-wrap main-statue"/>
-  ) : (
-    <ImageWrapper src={MainImg} className="main-statue"/>
+  return (
+      <Sketch setup={minWidthLaptop ? setup(opt) : setup(optMobile)} draw={draw} className="section-image-wrap main-statue"/>
   )
 }
 

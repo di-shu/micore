@@ -10,6 +10,7 @@ const PrideGroupImage = '/images/Portfolio/pride_group.jpg'
 const ZlataTradeImage = '/images/Portfolio/zlata-trade.jpg'
 const VladyDesignImage = '/images/Portfolio/vlady.jpg'
 const PrideLogisticImage = '/images/Portfolio/pridelogistics.jpg'
+const ManticoreImage = '/images/Portfolio/manticore_preview.jpg'
 
 export const Sizes = {
   getIterations: function (matches, index) {
@@ -97,6 +98,11 @@ export const NewProjectsList = {
       img: BessarabskiyImage,
       title: 'Bessarabskiy dvorik',
       link: '/projects/bessarabskiy'
+    },
+    manticore: {
+      img: ManticoreImage,
+      title: 'Manticore Development',
+      link: '/projects/manticore'
     }
   },
   getExcept: function (keys) {

@@ -6,13 +6,14 @@ import { SectionLayout } from '../SectionLayout'
 import { SectionDesc, SectionTitle } from '../SectionInfo'
 import { MyScrollAnimation } from '../MyScrollAnimation'
 
-export const ProjectMainSection = ({ id, name, background, content, isContentWhite, isNavBlack, children }) => {
+export const ProjectMainSection = ({ id, name, image, background, content, isContentWhite, isNavBlack, children }) => {
   return (
     <SectionLayout
       id={`${id}-main`}
       Header={() => (
         <>
           {background && <ImageWrapper src={background} className="section-background" />}
+            { image && <img src={image} alt="main-image" className="main-image"/>}
           <SeeMoreLink label="Назад к проектам" className={isNavBlack ? 'is-black' : ''}/>
           <ScrollBox isBlack={isNavBlack} />
         </>

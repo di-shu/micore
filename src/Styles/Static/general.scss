@@ -50,8 +50,10 @@ img {
 }
 
 .section {
-  min-height: 100vh;
   overflow: hidden;
+  @media screen and(min-width: 576px) {
+    min-height: 100vh;
+  }
 }
 
 .page-wrapper {

@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col'
 
 export const TypeSomething = ({ content, whiteText, size }) => {
   return (
-    <Row>
+    <Row className='about-projects-services'>
       {content && content.map((text, index) => (
         <Col key={index} xs={6} md={size}>
           <p className={`text-with-dot ${whiteText ? 'is-white' : ''}`}>{text}</p>

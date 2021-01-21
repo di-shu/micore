@@ -18916,6 +18916,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/framer-motion.es.js");
 /* harmony import */ var _src_Components_Config__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/Components/Config */ "./src/Components/Config/index.js");
 
+var _jsxFileName = "/Users/Proghammer/PhpstormProjects/manticore-react-next.js/pages/_app.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
@@ -18926,11 +18927,31 @@ var App = ({
   pageProps,
   router
 }) => {
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(_src_Components_Config__WEBPACK_IMPORTED_MODULE_3__["GlobalStyle"], null), __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_2__["AnimatePresence"], {
-    exitBeforeEnter: true
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(_src_Components_Config__WEBPACK_IMPORTED_MODULE_3__["GlobalStyle"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 7
+    }
+  }), __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_2__["AnimatePresence"], {
+    exitBeforeEnter: true,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 7
+    }
   }, __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     key: router.route
-  }, pageProps))));
+  }, pageProps, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 9
+    }
+  }))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
@@ -19039,6 +19060,7 @@ var PrideGroupImage = '/images/Portfolio/pride_group.jpg';
 var ZlataTradeImage = '/images/Portfolio/zlata-trade.jpg';
 var VladyDesignImage = '/images/Portfolio/vlady.jpg';
 var PrideLogisticImage = '/images/Portfolio/pridelogistics.jpg';
+var ManticoreImage = '/images/Portfolio/manticore_preview.jpg';
 var Sizes = {
   getIterations: function getIterations(matches, index) {
     var needle = matches.length;
@@ -19120,6 +19142,11 @@ var NewProjectsList = {
       img: BessarabskiyImage,
       title: 'Bessarabskiy dvorik',
       link: '/projects/bessarabskiy'
+    },
+    manticore: {
+      img: ManticoreImage,
+      title: 'Manticore Development',
+      link: '/projects/manticore'
     }
   },
   getExcept: function getExcept(keys) {
@@ -19453,7 +19480,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! next-client-pages-loader?page=%2F_app&absolutePagePath=private-next-pages%2F_app.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_app&absolutePagePath=private-next-pages%2F_app.js!./");
-module.exports = __webpack_require__(/*! /var/www/manticore-react-next.js/node_modules/next/dist/client/router.js */"./node_modules/next/dist/client/router.js");
+module.exports = __webpack_require__(/*! /Users/Proghammer/PhpstormProjects/manticore-react-next.js/node_modules/next/dist/client/router.js */"./node_modules/next/dist/client/router.js");
 
 
 /***/ }),

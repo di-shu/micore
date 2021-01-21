@@ -1,7 +1,7 @@
 import React from 'react'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 /*IMAGES*/
-const AboutImg = '/images/ManticoreProject/AboutName.png'
+const AboutImg = '/images/Manticore/manticore-about-name.png'
 
 export const AboutName = () => {
   return (
