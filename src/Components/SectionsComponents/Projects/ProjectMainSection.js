@@ -6,7 +6,7 @@ import { SectionLayout } from '../SectionLayout'
 import { SectionDesc, SectionTitle } from '../SectionInfo'
 import { MyScrollAnimation } from '../MyScrollAnimation'
 
-export const ProjectMainSection = ({ id, name, image, background, content, isContentWhite, isNavBlack, children }) => {
+export const ProjectMainSection = ({glitch, id, name, image, background, content, isContentWhite, isNavBlack, children }) => {
   return (
     <SectionLayout
       id={`${id}-main`}
@@ -18,6 +18,7 @@ export const ProjectMainSection = ({ id, name, image, background, content, isCon
           <ScrollBox isBlack={isNavBlack} />
         </>
       )}
+      Glitch={glitch}
       Footer={content}
     >
       <SectionDesc isContentWhite={isContentWhite}>Название проекта</SectionDesc>

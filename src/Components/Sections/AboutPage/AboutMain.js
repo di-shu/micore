@@ -24,6 +24,9 @@ export const AboutMain = ({ firstLoad, animation }) => {
               Мы ищем клиентов, которые понимают, что интернет занимает в мире не последнее место и готовы идти в ногу
               со временем вместе.
             </SectionDesc>
+              <a href="/projects/manticore"className="about-link">
+                <span>История компании</span>
+              </a>
           </Col>
           <Col xs={12} lg={6} className="grid-item-wrap grid-images">
             <ImageWrapper isDot className={AnimationClass({ firstLoad, animation })}/>

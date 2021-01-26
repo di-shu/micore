@@ -1,6 +1,18 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
+    @font-face {
+        font-family: 'Pixel Cyr 123';
+        src: url('/public/fonts/Pixel Cyr/subset-PixelCyr-Normal.eot');
+        src: url('/public/fonts/Pixel Cyr/subset-PixelCyr-Normal.eot?#iefix') format('embedded-opentype'),
+            url('/public/fonts/Pixel Cyr/subset-PixelCyr-Normal.woff2') format('woff2'),
+            url('/public/fonts/Pixel Cyr/subset-PixelCyr-Normal.woff') format('woff'),
+            url('/public/fonts/Pixel Cyr/subset-PixelCyr-Normal.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
   @font-face {
     font-family: 'Museo Sans Cyrl 900';
     src: url('/public/fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-900.eot');

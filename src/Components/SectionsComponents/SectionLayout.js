@@ -3,11 +3,30 @@ import { SectionWrapper } from './SectionWrapper'
 import { MyScrollAnimation } from './MyScrollAnimation'
 
 export const SectionLayout = (props) => {
-  const { id, wrap = true, Header, Footer, children, className, sectionClassName, customWrap = false } = props
+  const { id, wrap = true, Header, Footer, children, className, sectionClassName, Glitch, customWrap = false } = props
+    const [scrolled, setScrolled] = useState(true)
+    const wrapper = useRef(null);
+
+    const handleScroll = () => {
+        if(wrapper.current) {
+            const elem = wrapper.current;
+            if(window.scrollY > elem.getBoundingClientRect().height + 50) {
+                setScrolled(false)
+            } else if(window.scrollY < elem.getBoundingClientRect().height + 50) {
+                setScrolled(true)
+            }
+        }
+    }
+
+    useEffect(() => {
+        if(Glitch) {
+            document.addEventListener('scroll', handleScroll)
+        }
+    }, [])
 
 
   return (
-    <section id={id}  className={`project-section ${sectionClassName ? sectionClassName : ''}`}>
+    <section ref={wrapper} id={id}  className={`project-section ${sectionClassName ? sectionClassName : ''}`}>
       <MyScrollAnimation animationName="fadeIn" offset={id.includes('-main') ? 0 : 300}>
         <div className={`project-section__container ${sectionClassName ? sectionClassName+ '__container': ''}`}>
           {Header && <Header />}
@@ -27,6 +46,7 @@ export const SectionLayout = (props) => {
             )
           )}
           {Footer && <Footer />}
+            {Glitch && scrolled ? <Glitch/> : ''}
         </div>
       </MyScrollAnimation>
     </section>

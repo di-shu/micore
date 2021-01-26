@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState, useRef} from 'react'
 import {draw, setup, useDeviceDetect} from '../../../../Helpers'
 import { ImageWrapper, ProjectMainSection } from '../../../SectionsComponents'
 import dynamic from 'next/dynamic'
@@ -33,15 +33,17 @@ const optMobile = {
 
 
 const MainSectionFooterContent = () => {
-  const { minWidthLaptop } = useDeviceDetect()
+  const { mobile} = useDeviceDetect()
 
   return (
-      <Sketch setup={minWidthLaptop ? setup(opt) : setup(optMobile)} draw={draw} className="section-image-wrap main-statue"/>
+      <div className="section-image-wrap main-statue">
+        {mobile ? <img src={MainStatue} alt="statue"/> : <Sketch setup={setup(opt)} draw={draw}/> }
+      </div>
   )
 }
 
 export const Main = () => {
   return (
-    <ProjectMainSection id="manticore" name="Manticore" content={MainSectionFooterContent} isContentWhite/>
+    <ProjectMainSection id="manticore" name="Manticore" glitch={MainSectionFooterContent} isContentWhite/>
   )
 }

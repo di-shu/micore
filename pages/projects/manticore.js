@@ -5,7 +5,15 @@ import {
     Main,
     Why,
     SimplyWords,
-    DevelopingLogo
+    DevelopingLogo,
+    WhyPhotoHere,
+    Brand,
+    ClientPath,
+    Modernizing,
+    SiteDeveloping,
+    WowEffect,
+    Statues,
+    MobileAdaptation, Case
 } from '../../src/Components/Sections/Projects/Manticore'
 import { MainWrapper } from '~/Components/SectionsComponents'
 /*STYLES*/
@@ -20,7 +28,15 @@ const Manticore = () => {
             <Why/>
             <AboutName/>
             <SimplyWords/>
-            <DevelopingLogo/>
+            <WhyPhotoHere/>
+            <Brand/>
+            <ClientPath/>
+            <Modernizing/>
+            <SiteDeveloping/>
+            <WowEffect/>
+            <Statues/>
+            <MobileAdaptation/>
+            <Case/>
         </MainWrapper>
     )
 }

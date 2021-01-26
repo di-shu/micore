@@ -292,3 +292,16 @@
     }
   }
 }
+
+
+@media screen and(max-height: 650px) {
+  #about-section {
+    .section-desc {
+      padding: 5vh 7vh 10vh;
+    }
+  }
+
+  .scroll-box {
+    display: none;
+  }
+}

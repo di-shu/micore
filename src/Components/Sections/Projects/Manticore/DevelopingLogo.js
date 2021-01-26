@@ -6,8 +6,8 @@ export const DevelopingLogo = () => {
 
 
     return (
-        <SectionLayout  id="manticore-developing__logo">
-            <HorizontalScroll>
+        <SectionLayout id="manticore-developing__logo">
+            <HorizontalScroll >
                 <div className="developing-logo__step">
                     <SectionTitle>Разработка <span>лого</span></SectionTitle>
                     <SectionDesc>Со старта мы знали каким будет лого. Забив на другие идеи, прорабатали форму и интервалы.</SectionDesc>
@@ -24,11 +24,6 @@ export const DevelopingLogo = () => {
                     <ImageWrapper src="/images/Manticore/logo_micore.svg"/>
                 </div>
             </HorizontalScroll>
-            <div className="wh-wrap">
-                <div className="wh"></div>
-                <div className="wh"></div>
-                <div className="wh"></div>
-            </div>
         </SectionLayout>
     )
 }

@@ -40,7 +40,7 @@ export const MainWrapper = ({ id, children }) => {
         >
           <ProjectsNavigation links={Portfolios.getALl()}/>
           {children}
-          {!isManticore && (isProject || isServices) && (
+          {isManticore || isProject || isServices && (
             <MyScrollAnimation animationName="fadeIn" offset={300}>
               <FooterSection animation/>
             </MyScrollAnimation>

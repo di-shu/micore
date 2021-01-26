@@ -24,12 +24,74 @@
       }
     }
   }
+
+  .about-link {
+    animation: sub-title-about-on-first-load 2s cubic-bezier(0.64, 0.04, 0.35, 1) 0.2s both;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 40px;
+    width: 244px;
+    border-radius: 0;
+    border: none;
+    padding: 0;
+    color: #fff;
+    margin-bottom: 20px;
+
+    &:hover {
+      &:after {
+        height: 100%;
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: $accent-main;
+      width: 100%;
+      z-index: 1;
+      transition: all .7s $timing-func;
+    }
+
+    & > span {
+      position: relative;
+      color: $accent-gray;
+      font-family: $museo-300;
+      font-size: 14px;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      z-index: 2;
+    }
+  }
 }
 
 @include media-breakpoint-up('lg') {
   #about-page {
     .scroll-box {
       bottom: 60px;
+    }
+
+    .section-title {
+      margin-bottom: 35px;
+    }
+
+    .section-desc {
+      margin-bottom: 45px;
+    }
+
+    .about-link {
+      font-size: 20px;
+
+      &:before {
+        height: 3px;
+      }
     }
   }
 }
