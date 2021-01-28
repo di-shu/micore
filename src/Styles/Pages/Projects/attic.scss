@@ -472,6 +472,10 @@
 }
 
 @include media-breakpoint-up('lg') {
+  #about-projects-section {
+    overflow: hidden;
+  }
+
   #attic-philosophy {
     display: flex;
     align-items: stretch;
@@ -804,7 +808,7 @@
 
   #attic-other-pages {
     .section-wrapper {
-      padding-top: 90px;
+      padding-top: 138px;
     }
 
     .section-title {

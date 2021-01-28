@@ -26,13 +26,13 @@ export const HomeMain = ({ firstLoad, animation }) => {
       <Container fluid>
         <Row>
           <Col xs={12} lg={6} className={AnimationClass({ firstLoad, animation, className: 'col-info' })}>
-            <ImageWrapper isDot display={!desktop} className={AnimationClass({ firstLoad, animation })}/>
             <SectionTitle isContentWhite className="sub-title">
               We Are <span>WEB-Studio</span>
             </SectionTitle>
             <SectionTitle main isContentWhite className="title" title="MANTICORE" />
           </Col>
           <Col xs={12} lg={6}>
+              <ImageWrapper isDot display={!desktop} className={AnimationClass({ firstLoad, animation })}/>
             <ApolloStatue props={props} move={move} firstLoad={firstLoad} animation={animation}/>
           </Col>
         </Row>

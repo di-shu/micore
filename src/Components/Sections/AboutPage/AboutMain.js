@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
 import { AnimationClass } from '../../../Helpers'
-import { ImageWrapper, SectionDesc, SectionTitle } from '../../SectionsComponents'
+import {ActiveLink, ImageWrapper, SectionDesc, SectionTitle} from '../../SectionsComponents'
 /* STYLES */
 import '~/Styles/Sections/About/main.scss'
 /* IMAGES */
@@ -24,9 +24,9 @@ export const AboutMain = ({ firstLoad, animation }) => {
               Мы ищем клиентов, которые понимают, что интернет занимает в мире не последнее место и готовы идти в ногу
               со временем вместе.
             </SectionDesc>
-              <a href="/projects/manticore"className="about-link">
+              <ActiveLink link="/projects/manticore" className="about-link">
                 <span>История компании</span>
-              </a>
+              </ActiveLink>
           </Col>
           <Col xs={12} lg={6} className="grid-item-wrap grid-images">
             <ImageWrapper isDot className={AnimationClass({ firstLoad, animation })}/>

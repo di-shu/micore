@@ -18,7 +18,7 @@ const SectionFooter = () => {
   return (
     <div className="slider-wrap">
       <ImageWrapper isDot display={minWidthLaptop}/>
-      {/*<SectionSlider slides={MarinistSlides}/>*/}
+      <SectionSlider slides={MarinistSlides}/>
     </div>
   )
 }

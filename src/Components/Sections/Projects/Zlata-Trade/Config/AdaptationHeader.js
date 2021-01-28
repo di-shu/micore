@@ -5,7 +5,7 @@ import { useDeviceDetect } from '../../../../../Helpers'
 import { SectionLine } from '../../../../SectionsComponents/Projects'
 /* IMAGES */
 const AdaptationLogo = '../../images/ZlataProject/AdaptationLogo.png'
-const AdaptationLogoStreet = '../../images/ZlataProject/AdaptationLogoStreet.png'
+const AdaptationLogoStreet = '../../images/ZlataProject/AdaptationLogoStreet.jpg'
 
 export const AdaptationHeader = () => {
   const { desktop } = useDeviceDetect()

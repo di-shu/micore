@@ -1,7 +1,7 @@
 import React from 'react'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 /*IMAGES*/
-const image = '/images/Manticore/socks.png'
+const image = '/images/Manticore/socks.jpg'
 
 export const Brand = () => {
     return (

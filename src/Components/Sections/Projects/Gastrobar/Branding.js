@@ -10,7 +10,7 @@ import {
 import { GastrobarBrandingSlides } from './Config'
 /*IMAGES*/
 const Pattern = '/images/Gastrobar/PatternBG.png'
-const BrandingBG = '/images/Gastrobar/BrandingBG.png'
+const BrandingBG = '/images/Gastrobar/BrandingBG.jpg'
 
 export const Branding = () => {
   return (

@@ -6,12 +6,14 @@
     opacity: 1;
     visibility: visible;
     z-index: 10;
+    padding-top: 60px;
   }
 }
 
 @include media-breakpoint-up('lg') {
   #portfolio-page {
     #portfolio-section {
+      padding-top: 0;
       .tab-wrap {
         position: fixed;
       }

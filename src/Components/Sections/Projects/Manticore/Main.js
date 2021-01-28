@@ -33,7 +33,7 @@ const optMobile = {
 
 
 const MainSectionFooterContent = () => {
-  const { mobile} = useDeviceDetect()
+  const { mobile } = useDeviceDetect()
 
   return (
       <div className="section-image-wrap main-statue">

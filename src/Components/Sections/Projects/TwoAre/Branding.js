@@ -8,7 +8,7 @@ export const Branding = () => {
   return (
     <SectionLayout
       id="two-are-branding"
-      // Footer={() => <SectionSlider slides={TwoAreSlides}/>}
+      Footer={() => <SectionSlider slides={TwoAreSlides}/>}
     >
       <SectionTitle title="Брендирование" isContentWhite/>
       <Row>

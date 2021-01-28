@@ -11,7 +11,7 @@ import {
 import { useDeviceDetect } from '../../../../Helpers'
 import { BrandingInfo } from './Config'
 /* STYLES */
-const BrandingImg = '/images/Attic/Branding.png'
+const BrandingImg = '/images/Attic/Branding.jpg'
 const BrandingMobileImg = '/images/Attic/BrandingMobile.png'
 
 export const Branding = () => {

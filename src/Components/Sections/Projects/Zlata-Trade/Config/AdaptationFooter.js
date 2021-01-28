@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 /* IMAGES */
 const DescriptionLogo = '../../images/ZlataProject/LogoWithDescription.png'
-const DescriptionLogoStreet = '../../images/ZlataProject/LogoStreetWithDescription.png'
+const DescriptionLogoStreet = '../../images/ZlataProject/LogoStreetWithDescription.jpg'
 
 export const AdaptationFooter = () => {
   return (

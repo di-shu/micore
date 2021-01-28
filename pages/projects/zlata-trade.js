@@ -20,7 +20,7 @@ const ZlataTrade = () => {
       <About/>
       <Brief/>
       <Results/>
-      <Adaptation/>
+      {/*<Adaptation/>*/}
       <Branding />
       <Desktop/>
       <Mobile/>

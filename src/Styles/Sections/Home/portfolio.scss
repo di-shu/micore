@@ -28,6 +28,10 @@
     opacity: 0;
     transition: all 1s cubic-bezier(0.64, 0.04, 0.35, 1);
 
+    .card-wrap {
+      height: 40vh;
+    }
+
     &.active {
       position: relative;
       opacity: 1;

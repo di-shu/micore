@@ -3,7 +3,7 @@ import { useDeviceDetect } from '../../../../../Helpers'
 import { ImageWrapper, SectionDesc, SectionSlider, SectionTitle, SectionWrapper } from '../../../../SectionsComponents'
 import { BrandingSlides } from '.'
 /* IMAGES */
-const Billboard = '/images/ZlataProject/Billboard.png'
+const Billboard = '/images/ZlataProject/Billboard.jpg'
 
 export const BrandingHeader = () => {
   const { desktop } = useDeviceDetect()
@@ -18,10 +18,10 @@ export const BrandingHeader = () => {
           рекламной продукции.
         </SectionDesc>
       </SectionWrapper>
-      {/*<SectionSlider*/}
-      {/*  slidesToShow={2}*/}
-      {/*  slides={BrandingSlides}*/}
-      {/*/>*/}
+      <SectionSlider
+        slidesToShow={2}
+        slides={BrandingSlides}
+      />
       <ImageWrapper src={Billboard} className="billboard-image"/>
     </>
   )

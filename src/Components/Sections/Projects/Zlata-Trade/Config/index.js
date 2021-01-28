@@ -31,17 +31,10 @@ export const AboutInfo = [
 
 export const BrandingSlides = [
   { img: BrandingSlide },
-  { img: BrandingSlide },
-  { img: BrandingSlide },
-  { img: BrandingSlide },
   { img: BrandingSlide }
 ]
 
 export const UniformSlides = [
-  { img: ZlataClothes },
-  { img: ZlataClothes },
-  { img: ZlataClothes },
-  { img: ZlataClothes },
   { img: ZlataClothes }
 ]
 

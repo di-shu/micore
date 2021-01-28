@@ -2,7 +2,7 @@ import React from 'react'
 import { useDeviceDetect } from '../../../../Helpers'
 import { ProjectMainSection } from '../../../SectionsComponents'
 /*IMAGES*/
-const MainBG = '/images/TwoAre/MainBG.png'
+const MainBG = '/images/TwoAre/MainBG.jpg'
 const MainBGMobile = '/images/TwoAre/MainBGMobile.png'
 
 export const Main = () => {

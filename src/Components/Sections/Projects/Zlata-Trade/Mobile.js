@@ -11,7 +11,7 @@ import {
 import { useDeviceDetect } from '../../../../Helpers'
 /* IMAGES */
 const ZlataPhone = '../../images/ZlataProject/ZlataPhone.png'
-const ZlataTablet = '../../images/ZlataProject/ZlataTablet.png'
+const ZlataTablet = '../../images/ZlataProject/ZlataTablet.jpg'
 
 export const Mobile = () => {
   const { mobile } = useDeviceDetect()

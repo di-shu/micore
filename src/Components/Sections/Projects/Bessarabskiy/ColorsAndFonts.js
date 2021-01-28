@@ -23,8 +23,8 @@ export const ColorsAndFonts = () => {
               <p className="font-weight">Bold</p>
             </div>
             <div>
-              <img src="/images/Bessarabkiy/FontExample1.svg" alt="Font"/>
-              <img src="/images/Bessarabkiy/FontExample2.svg" alt="Font"/>
+              <img src="/images/Bessarabskiy/FontExample1.svg" alt="Font"/>
+              <img src="/images/Bessarabskiy/FontExample2.svg" alt="Font"/>
             </div>
           </div>
           <div className="d-flex flex-column">
@@ -34,8 +34,8 @@ export const ColorsAndFonts = () => {
               <p className="font-weight">bold, medium, regular</p>
             </div>
             <div className="d-flex flex-column">
-              <img src="/images/Bessarabkiy/FontExample3.svg" alt="Font"/>
-              <img src="/images/Bessarabkiy/FontExample4.svg" alt="Font"/>
+              <img src="/images/Bessarabskiy/FontExample3.svg" alt="Font"/>
+              <img src="/images/Bessarabskiy/FontExample4.svg" alt="Font"/>
             </div>
           </div>
         </Col>

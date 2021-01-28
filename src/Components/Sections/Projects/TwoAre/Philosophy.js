@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 /*IMAGES*/
-const PhilosophyImg = '/images/TwoAre/Philosophy.png'
+const PhilosophyImg = '/images/TwoAre/Philosophy.jpg'
 
 const SectionFooter = () => <ImageWrapper src={PhilosophyImg} className="philosophy-image"/>
 

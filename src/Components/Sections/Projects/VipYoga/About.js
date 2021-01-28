@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 /*IMAGES*/
 const Logo = '/images/VipYoga/Logo.svg'
-const AboutImg = '/images/VipYoga/About.png'
+const AboutImg = '/images/VipYoga/About.jpg'
 
 export const About = () => {
   return (

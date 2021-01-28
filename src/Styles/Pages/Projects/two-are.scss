@@ -26,7 +26,12 @@
   }
 
   .philosophy-image {
-    width: 100%;
+    height: 388px;
+
+    img {
+      object-fit: cover;
+      object-position: right center;
+    }
   }
 }
 
@@ -49,7 +54,7 @@
   }
 
   .section-title {
-    text-transform: none;
+    text-transform: uppercase;
   }
 
   .section-desc {
@@ -89,7 +94,7 @@
   }
 
   .section-title {
-    text-transform: none;
+    text-transform: uppercase;
     font-family: $museo-300;
   }
 
@@ -142,10 +147,15 @@
     }
 
     .philosophy-image {
+      height: 100%;
       position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
+    }
+
+    .section-desc {
+      max-width: 445px;
     }
   }
 
@@ -207,6 +217,7 @@
 
     .section-desc {
       margin-bottom: 160px;
+      max-width: 635px;
     }
 
     .logo-image {
@@ -228,12 +239,16 @@
 }
 
 @include media-breakpoint-up('xl') {
+  #about-projects-section {
+    overflow: hidden;
+  }
+
   #two-are-philosophy {
     height: 950px;
 
     .philosophy-image {
       img {
-        object-fit: contain;
+        object-fit: cover;
         object-position: right center;
       }
     }
@@ -281,7 +296,6 @@
     }
 
     .section-desc {
-      margin-top: 20px;
       margin-bottom: 205px;
     }
 

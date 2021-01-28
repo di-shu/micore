@@ -7,7 +7,7 @@ import {
 } from '../../../SectionsComponents'
 /* IMAGES */
 const Devices = '/images/Balkany/balkany_mockup6.png'
-const AboutSiteImg = '/images/Balkany/AboutSiteImage.png'
+const AboutSiteImg = '/images/Balkany/AboutSiteImage.jpg'
 
 export const AboutSite = () => {
   return (

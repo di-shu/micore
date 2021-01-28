@@ -93,11 +93,6 @@ export const BrandingInfo = [
 ]
 
 export const MarinistSlides = [
-  { img: SlideImage },
-  { img: SlideImage },
-  { img: SlideImage },
-  { img: SlideImage },
-  { img: SlideImage },
   { img: SlideImage }
 ]
 

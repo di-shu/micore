@@ -167,7 +167,7 @@
   overflow: hidden;
 
   .section-desc {
-    margin-bottom: 50px;
+    margin-bottom: 35px;
   }
 
   .section-wrapper {
@@ -524,6 +524,14 @@
       width: 425px;
       height: 425px;
       transform: translate(-35px, -50%);
+    }
+
+    .branding-image {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100vw;
+      margin-bottom: 100px;
     }
   }
 

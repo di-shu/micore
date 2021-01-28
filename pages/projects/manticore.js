@@ -5,12 +5,9 @@ import {
     Main,
     Why,
     SimplyWords,
-    DevelopingLogo,
-    WhyPhotoHere,
     Brand,
     ClientPath,
     Modernizing,
-    SiteDeveloping,
     WowEffect,
     Statues,
     MobileAdaptation, Case
@@ -28,11 +25,9 @@ const Manticore = () => {
             <Why/>
             <AboutName/>
             <SimplyWords/>
-            <WhyPhotoHere/>
             <Brand/>
             <ClientPath/>
             <Modernizing/>
-            <SiteDeveloping/>
             <WowEffect/>
             <Statues/>
             <MobileAdaptation/>

@@ -6,8 +6,8 @@ import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../..
 /* IMAGES */
 const Leaf = '/images/Bessarabskiy/Leaf.png'
 const Barrel = '/images/Bessarabskiy/Barrel.png'
-const LogoVar1 = '/images/Bessarabskiy/LogoVar1.svg'
-const LogoVar2 = '/images/Bessarabskiy/LogoVar2.svg'
+const LogoVar1 = '/images/Bessarabskiy/logo2.jpg'
+const LogoVar2 = '/images/Bessarabskiy/logo1.jpg'
 
 export const Brief = () => {
   const { minWidthLaptop } = useDeviceDetect()

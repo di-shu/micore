@@ -557,12 +557,26 @@
         }
       }
     }
+
+    .section-dots-wrap {
+      right: 0;
+      height: 550px;
+    }
   }
 
   #zlata-desktop {
     .about-site, .about-desktop {
       .section-desc {
         max-width: 50%;
+      }
+    }
+
+    .about-site {
+      padding-bottom: 0;
+
+      .devices-image-wrap {
+        margin-top: -20%;
+        z-index: -1;
       }
     }
 
@@ -576,12 +590,19 @@
       }
     }
 
+
     .devices-image-wrap {
       margin-bottom: 60px;
+      margin-top: 0;
+      position: relative;
+      width: 120%;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 
   #zlata-mobile {
+    overflow: hidden;
     .section-wrapper {
       &.mobile-adaptation {
         padding-top: 0;
@@ -823,7 +844,7 @@
   #zlata-desktop {
     .section-wrapper {
       padding-top: 120px;
-      padding-bottom: 120px;
+      padding-bottom: 0px;
 
       &.adaptation {
         max-width: 100%;

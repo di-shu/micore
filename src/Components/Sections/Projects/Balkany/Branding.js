@@ -29,6 +29,7 @@ export const Branding = ({ isSecond }) => {
           'В белой форме футболисты «Балкан» традиционно выступают на домашнем стадионе. ' :
           'Новый стиль активно используется в сувенирной брендовой продукции клуба.'}
       </SectionDesc>
+      <ImageWrapper src="/images/Balkany/balkany_mockup2.png" className="branding-image"/>
     </SectionLayout>
   )
 }

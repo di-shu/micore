@@ -2,7 +2,7 @@ import React from 'react'
 import { BottomNavigation, ImageWrapper, SectionLayout } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
 /*IMAGES*/
-const PosterImg = '/images/TwoAre/FooterPoster.png'
+const PosterImg = '/images/TwoAre/Poster1.jpg'
 const PosterImgMobile = '/images/TwoAre/FooterPosterMobile.png'
 
 export const Bottom = () => {

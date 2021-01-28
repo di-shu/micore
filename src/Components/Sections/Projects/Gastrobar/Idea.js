@@ -6,7 +6,7 @@ import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle, SectionWrapper 
 const Logo = '/images/Gastrobar/Logo.png'
 const Grill = '/images/Gastrobar/Grill.png'
 const Pattern = '/images/Gastrobar/PatternBG.png'
-const GraphiteBG = '/images/Gastrobar/GraphiteBG.png'
+const GraphiteBG = '/images/Gastrobar/GraphiteBG.jpg'
 
 const IdeaFooterContent = () => {
   return (

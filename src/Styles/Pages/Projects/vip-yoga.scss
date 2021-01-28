@@ -6,6 +6,10 @@
       color: #000;
     }
   }
+
+  #about-projects-section {
+    overflow: hidden;
+  }
 }
 
 #vip-yoga-philosophy {
@@ -22,6 +26,7 @@
 
 #vip-yoga-about {
   z-index: 7;
+  overflow: hidden;
 
   .section-wrapper {
     padding-bottom: 30px;
@@ -261,12 +266,20 @@
       margin: 0 0 0 auto;
     }
 
+    .section-title {
+      margin-bottom: 10px;
+    }
+
     .about-image {
-      margin-bottom: 140px;
+      margin-bottom: 0px;
     }
 
     .logo-image {
       max-width: 620px;
+    }
+
+    .logo-col {
+      margin-top: 140px;
     }
   }
 
@@ -314,12 +327,16 @@
 
   #vip-yoga-branding {
     .section-wrapper {
-      padding-top: 135px;
-      padding-bottom: 105px;
+      height: 100vh;
+      padding-top: 0;
+      padding-bottom: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .section-desc {
-      margin-bottom: 125px;
+      margin-bottom: 0;
     }
   }
 
@@ -333,6 +350,12 @@
       img {
         max-width: 430px;
         max-height: 680px;
+      }
+    }
+
+    .footer-image {
+      img {
+        object-fit: cover;
       }
     }
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 /* IMAGES */
-const PhilosophyImg = '/images/Attic/Philosophy.png'
+const PhilosophyImg = '/images/Attic/Philosophy.jpg'
 
 export const Philosophy = () => {
   return (

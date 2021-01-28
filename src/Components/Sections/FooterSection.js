@@ -58,7 +58,7 @@ export const FooterSection = ({ isContact, animation }) => {
     
     $.ajax({
       method: 'POST',
-      url: 'http://micore-admin.comnd-x.com/send',
+      url: 'https://micore-admin.comnd-x.com/send',
       data: {
         ...values,
         url: pathname,
@@ -70,7 +70,8 @@ export const FooterSection = ({ isContact, animation }) => {
         setLoading(false)
       },
       error: () => {
-        alert('Ошибка при отправке запроса!')
+        alert('Ошибка при отправке заявки!')
+        setLoading(false)
       }
     })
   }
@@ -160,7 +161,7 @@ export const FooterSection = ({ isContact, animation }) => {
         </Container>
         {mobile && (
           <div className="copyright-container">
-            <h6>2017-2020, all rights reserved</h6>
+            <h6>2017-2021, all rights reserved</h6>
             <h6>Manticore development</h6>
           </div>
         )}

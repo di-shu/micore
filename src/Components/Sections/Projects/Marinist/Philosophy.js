@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 /* IMAGES */
 const Water = '/images/Marinist/Water.png'
-const LogoMinimized = '/images/Marinist/LogoMinimized.svg'
+const LogoMinimized = '/images/Marinist/logo.png'
 
 export const Philosophy = () => {
   return (

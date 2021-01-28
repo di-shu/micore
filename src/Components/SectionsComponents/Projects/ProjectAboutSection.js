@@ -23,7 +23,7 @@ export const ProjectAboutSection = (props) => {
     >
       <ImageWrapper isDot display={desktop}/>
       <SectionTitle title="О проекте"/>
-      <Row className="grid-container">
+      <Row className="grid-container align-items-center">
         <Col xs={12} lg={6} className="grid-item">
           <ProjectInfoWrap
             name={name}

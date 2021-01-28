@@ -3,7 +3,7 @@ import { useDeviceDetect } from '../../../../Helpers'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 /*IMAGES*/
 const WavesPattern = '/images/Marinist/WavesPattern.png'
-const OtherPagesImage = '/images/Marinist/OtherPages.png'
+const OtherPagesImage = '/images/Marinist/OtherPages.jpg'
 const OtherPagesMobile = '/images/Marinist/OtherPagesMobile.png'
 
 const SectionHeader = () => <ImageWrapper src={WavesPattern} className="waves-pattern"/>

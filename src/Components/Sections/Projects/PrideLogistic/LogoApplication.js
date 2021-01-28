@@ -15,7 +15,7 @@ export const LogoApplication = () => {
     <SectionLayout
       id="pride-logo-application"
       Header={() =>  <ImageWrapper src={ApplicationBackground} className="section-background-wrap"/>}
-      // Footer={() => <SectionSlider slidesToShow={1} slides={ApplicationSlides}/>}
+      Footer={() => <SectionSlider slidesToShow={1} slides={ApplicationSlides}/>}
     >
       <SectionTitle title="Брендирование"/>
       <SectionDesc>

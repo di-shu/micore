@@ -1,5 +1,9 @@
 @import "../../Static/index";
 
+.square-info-wrap__link {
+  color: $accent-main !important;
+}
+
 [id*='-project-page'] {
   background-color: $accent-black;
 

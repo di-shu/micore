@@ -92,11 +92,6 @@ export const PrideAboutInfo = [
 ]
 
 export const ApplicationSlides = [
-  { img: LogoSlide },
-  { img: LogoSlide },
-  { img: LogoSlide },
-  { img: LogoSlide },
-  { img: LogoSlide },
   { img: LogoSlide }
 ]
 

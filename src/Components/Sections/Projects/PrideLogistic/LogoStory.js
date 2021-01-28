@@ -13,8 +13,8 @@ export const LogoStory = () => {
     <SectionLayout id="pride-logo-story">
       <Row>
         <Col xs={12} lg={6}>
-          <SectionTitle title="Смысл"/>
           <ImageWrapper src={LogoDesign} display={mobile || tablet}/>
+          <SectionTitle title="Смысл"/>
           <SectionDesc>
             Креативным решение при разработке логотипа стала динамическая конструкция построена на взаимодействии шрифта
             и символа. Лев в прыжке раскрывает философию и специфику деятельности компании, символизирует надежность,
