@@ -19085,7 +19085,7 @@ var NewProjectsList = {
   projects: {
     pride_logistic: {
       img: PrideLogisticImage,
-      title: 'Pride Logistic',
+      title: 'Pride Logistics',
       link: '/projects/pride-logistic'
     },
     marinist: {

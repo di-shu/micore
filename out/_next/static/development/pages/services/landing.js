@@ -59963,7 +59963,7 @@ var NewProjectsList = {
   projects: {
     pride_logistic: {
       img: PrideLogisticImage,
-      title: 'Pride Logistic',
+      title: 'Pride Logistics',
       link: '/projects/pride-logistic'
     },
     marinist: {
@@ -62120,8 +62120,8 @@ var AboutMain = ({
       lineNumber: 21,
       columnNumber: 13
     }
-  }, "\u041A\u043E\u043C\u043F\u0430\u043D\u0438\u044F \u0440\u043E\u0434\u0438\u043B\u0430\u0441\u044C \u0441 \u0438\u0434\u0435\u0438 \u0432 \u043C\u0430\u0440\u0442\u0435 2017-\u0433\u043E \u0433\u043E\u0434\u0430. \u0421 \u0442\u043E\u0433\u043E \u0432\u0440\u0435\u043C\u0435\u043D\u0438 \u043D\u0430\u0448\u0430 \u0444\u0438\u043B\u043E\u0441\u043E\u0444\u0438\u044F \u043E\u0441\u0442\u0430\u0451\u0442\u0441\u044F \u043D\u0435\u0438\u0437\u043C\u0435\u043D\u043D\u0430\u044F: \u0441\u043E\u0437\u0434\u0430\u043D\u0438\u0435 \u043D\u043E\u0432\u043E\u0433\u043E \u043D\u0430 \u043E\u0441\u043D\u043E\u0432\u0435 \u0441\u0442\u0430\u0440\u043E\u0433\u043E. \u0421\u043E\u0435\u0434\u0438\u043D\u0438\u0432 \u043F\u0440\u0438\u043D\u0446\u0438\u043F\u044B \u0434\u0438\u0437\u0430\u0439\u043D\u0430 \u0440\u0430\u0437\u043D\u044B\u0445 \u044D\u043F\u043E\u0445 \u043F\u0440\u043E\u0434\u0443\u043A\u0442 \u0432\u044B\u0445\u043E\u0434\u0438\u0442 \u043D\u0435 \u043F\u043E\u0445\u043E\u0436\u0438\u043C \u043D\u0430 \u043A\u043E\u043D\u043A\u0443\u0440\u0435\u043D\u0442\u043E\u0432. \u041C\u044B \u0438\u0449\u0435\u043C \u043A\u043B\u0438\u0435\u043D\u0442\u043E\u0432, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043F\u043E\u043D\u0438\u043C\u0430\u044E\u0442, \u0447\u0442\u043E \u0438\u043D\u0442\u0435\u0440\u043D\u0435\u0442 \u0437\u0430\u043D\u0438\u043C\u0430\u0435\u0442 \u0432 \u043C\u0438\u0440\u0435 \u043D\u0435 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0435 \u043C\u0435\u0441\u0442\u043E \u0438 \u0433\u043E\u0442\u043E\u0432\u044B \u0438\u0434\u0442\u0438 \u0432 \u043D\u043E\u0433\u0443 \u0441\u043E \u0432\u0440\u0435\u043C\u0435\u043D\u0435\u043C \u0432\u043C\u0435\u0441\u0442\u0435."), __jsx("a", {
-    href: "/projects/manticore",
+  }, "\u041A\u043E\u043C\u043F\u0430\u043D\u0438\u044F \u0440\u043E\u0434\u0438\u043B\u0430\u0441\u044C \u0441 \u0438\u0434\u0435\u0438 \u0432 \u043C\u0430\u0440\u0442\u0435 2017-\u0433\u043E \u0433\u043E\u0434\u0430. \u0421 \u0442\u043E\u0433\u043E \u0432\u0440\u0435\u043C\u0435\u043D\u0438 \u043D\u0430\u0448\u0430 \u0444\u0438\u043B\u043E\u0441\u043E\u0444\u0438\u044F \u043E\u0441\u0442\u0430\u0451\u0442\u0441\u044F \u043D\u0435\u0438\u0437\u043C\u0435\u043D\u043D\u0430\u044F: \u0441\u043E\u0437\u0434\u0430\u043D\u0438\u0435 \u043D\u043E\u0432\u043E\u0433\u043E \u043D\u0430 \u043E\u0441\u043D\u043E\u0432\u0435 \u0441\u0442\u0430\u0440\u043E\u0433\u043E. \u0421\u043E\u0435\u0434\u0438\u043D\u0438\u0432 \u043F\u0440\u0438\u043D\u0446\u0438\u043F\u044B \u0434\u0438\u0437\u0430\u0439\u043D\u0430 \u0440\u0430\u0437\u043D\u044B\u0445 \u044D\u043F\u043E\u0445 \u043F\u0440\u043E\u0434\u0443\u043A\u0442 \u0432\u044B\u0445\u043E\u0434\u0438\u0442 \u043D\u0435 \u043F\u043E\u0445\u043E\u0436\u0438\u043C \u043D\u0430 \u043A\u043E\u043D\u043A\u0443\u0440\u0435\u043D\u0442\u043E\u0432. \u041C\u044B \u0438\u0449\u0435\u043C \u043A\u043B\u0438\u0435\u043D\u0442\u043E\u0432, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043F\u043E\u043D\u0438\u043C\u0430\u044E\u0442, \u0447\u0442\u043E \u0438\u043D\u0442\u0435\u0440\u043D\u0435\u0442 \u0437\u0430\u043D\u0438\u043C\u0430\u0435\u0442 \u0432 \u043C\u0438\u0440\u0435 \u043D\u0435 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0435 \u043C\u0435\u0441\u0442\u043E \u0438 \u0433\u043E\u0442\u043E\u0432\u044B \u0438\u0434\u0442\u0438 \u0432 \u043D\u043E\u0433\u0443 \u0441\u043E \u0432\u0440\u0435\u043C\u0435\u043D\u0435\u043C \u0432\u043C\u0435\u0441\u0442\u0435."), __jsx(_SectionsComponents__WEBPACK_IMPORTED_MODULE_5__["ActiveLink"], {
+    link: "/projects/manticore",
     className: "about-link",
     __self: undefined,
     __source: {
@@ -62663,7 +62663,7 @@ var FooterSection = ({
     setLoading(true);
     $.ajax({
       method: 'POST',
-      url: 'http://micore-admin.comnd-x.com/send',
+      url: 'https://micore-admin.comnd-x.com/send',
       data: _objectSpread({}, values, {
         url: pathname,
         country: 'RU'
@@ -62674,7 +62674,8 @@ var FooterSection = ({
         setLoading(false);
       },
       error: () => {
-        alert('Ошибка при отправке запроса!');
+        alert('Ошибка при отправке заявки!');
+        setLoading(false);
       }
     });
   };
@@ -62691,7 +62692,7 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83,
+      lineNumber: 84,
       columnNumber: 5
     }
   }, __jsx("div", {
@@ -62699,7 +62700,7 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84,
+      lineNumber: 85,
       columnNumber: 7
     }
   }, isContact && minWidthLaptop && __jsx(_SectionsComponents__WEBPACK_IMPORTED_MODULE_15__["ImageWrapper"], {
@@ -62708,7 +62709,7 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86,
+      lineNumber: 87,
       columnNumber: 11
     }
   }), __jsx(react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_12__["default"], {
@@ -62716,14 +62717,14 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88,
+      lineNumber: 89,
       columnNumber: 9
     }
   }, __jsx(react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_9__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89,
+      lineNumber: 90,
       columnNumber: 11
     }
   }, __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -62733,7 +62734,7 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90,
+      lineNumber: 91,
       columnNumber: 13
     }
   }, __jsx(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -62742,14 +62743,14 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91,
+      lineNumber: 92,
       columnNumber: 15
     }
   }, __jsx(react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_9__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92,
+      lineNumber: 93,
       columnNumber: 17
     }
   }, __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -62760,7 +62761,7 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93,
+      lineNumber: 94,
       columnNumber: 19
     }
   }, __jsx(_SectionsComponents__WEBPACK_IMPORTED_MODULE_15__["SectionTitle"], {
@@ -62770,7 +62771,7 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94,
+      lineNumber: 95,
       columnNumber: 21
     }
   }), FormInputs.map(({
@@ -62797,7 +62798,7 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96,
+      lineNumber: 97,
       columnNumber: 23
     }
   })), __jsx("div", {
@@ -62805,7 +62806,7 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110,
+      lineNumber: 111,
       columnNumber: 21
     }
   }, __jsx("button", {
@@ -62814,7 +62815,7 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111,
+      lineNumber: 112,
       columnNumber: 23
     }
   }, loading && __jsx("div", {
@@ -62822,14 +62823,14 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 112,
+      lineNumber: 113,
       columnNumber: 37
     }
   }), __jsx("span", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 113,
+      lineNumber: 114,
       columnNumber: 25
     }
   }, "\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C")))), !isContact && desktop && __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -62841,7 +62842,7 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118,
+      lineNumber: 119,
       columnNumber: 21
     }
   }, __jsx(_SectionsComponents__WEBPACK_IMPORTED_MODULE_15__["ImageWrapper"], {
@@ -62850,7 +62851,7 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119,
+      lineNumber: 120,
       columnNumber: 23
     }
   }))))), __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -62864,7 +62865,7 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 133,
+      lineNumber: 134,
       columnNumber: 13
     }
   }, !isContact && desktop && __jsx("h2", {
@@ -62872,14 +62873,14 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 134,
+      lineNumber: 135,
       columnNumber: 41
     }
   }, "\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B"), __jsx(react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_9__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 135,
+      lineNumber: 136,
       columnNumber: 15
     }
   }, __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -62888,7 +62889,7 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136,
+      lineNumber: 137,
       columnNumber: 17
     }
   }, __jsx("div", {
@@ -62896,7 +62897,7 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 137,
+      lineNumber: 138,
       columnNumber: 19
     }
   }, isContact && __jsx("h3", {
@@ -62904,7 +62905,7 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 138,
+      lineNumber: 139,
       columnNumber: 35
     }
   }, "\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B"), __jsx("a", {
@@ -62913,7 +62914,7 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 139,
+      lineNumber: 140,
       columnNumber: 21
     }
   }, "micore.studio@gmail.com"), __jsx("a", {
@@ -62922,14 +62923,14 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 140,
+      lineNumber: 141,
       columnNumber: 21
     }
   }, __jsx("span", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 140,
+      lineNumber: 141,
       columnNumber: 83
     }
   }, "+38 096 554 91 27")))), __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -62938,7 +62939,7 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 143,
+      lineNumber: 144,
       columnNumber: 17
     }
   }, __jsx("div", {
@@ -62946,7 +62947,7 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 144,
+      lineNumber: 145,
       columnNumber: 19
     }
   }, __jsx("h3", {
@@ -62954,7 +62955,7 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 145,
+      lineNumber: 146,
       columnNumber: 21
     }
   }, "\u041E\u0434\u0435\u0441\u0441\u0430"), __jsx("h4", {
@@ -62962,7 +62963,7 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 146,
+      lineNumber: 147,
       columnNumber: 21
     }
   }, "\u0443\u043B\u0438\u0446\u0430 \u041B\u044C\u0432\u043E\u0432\u0441\u043A\u0430\u044F, 48"), __jsx("h4", {
@@ -62970,14 +62971,14 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 147,
+      lineNumber: 148,
       columnNumber: 21
     }
   }, __jsx("span", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 148,
+      lineNumber: 149,
       columnNumber: 23
     }
   }, "\u041E\u0444\u0438\u0441, 301"), __jsx("a", {
@@ -62987,7 +62988,7 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 149,
+      lineNumber: 150,
       columnNumber: 23
     }
   }, __jsx("img", {
@@ -62996,21 +62997,21 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 150,
+      lineNumber: 151,
       columnNumber: 25
     }
   }), __jsx("span", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 151,
+      lineNumber: 152,
       columnNumber: 25
     }
   }, "\u043A\u0430\u0440\u0442\u0430")))))))), __jsx(_SectionsComponents__WEBPACK_IMPORTED_MODULE_15__["SocialsWrap"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 159,
+      lineNumber: 160,
       columnNumber: 11
     }
   })), mobile && __jsx("div", {
@@ -63018,21 +63019,21 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 162,
+      lineNumber: 163,
       columnNumber: 11
     }
   }, __jsx("h6", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 163,
+      lineNumber: 164,
       columnNumber: 13
     }
-  }, "2017-2020, all rights reserved"), __jsx("h6", {
+  }, "2017-2021, all rights reserved"), __jsx("h6", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 164,
+      lineNumber: 165,
       columnNumber: 13
     }
   }, "Manticore development"))), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_16__["Modal"], {
@@ -63043,7 +63044,7 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 169,
+      lineNumber: 170,
       columnNumber: 7
     }
   }, __jsx("div", {
@@ -63051,7 +63052,7 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 170,
+      lineNumber: 171,
       columnNumber: 9
     }
   }, __jsx("h1", {
@@ -63059,7 +63060,7 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 171,
+      lineNumber: 172,
       columnNumber: 11
     }
   }, "\u0412\u0430\u0448\u0430 \u0437\u0430\u044F\u0432\u043A\u0430 \u043F\u0440\u0438\u043D\u044F\u0442\u0430!"), __jsx("h5", {
@@ -63067,7 +63068,7 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 172,
+      lineNumber: 173,
       columnNumber: 11
     }
   }, "\u041C\u044B \u0441\u0432\u044F\u0436\u0435\u043C\u0441\u044F \u0441 \u0432\u0430\u043C\u0438 \u0432 \u0431\u043B\u0438\u0436\u0430\u0439\u0448\u0435\u0435 \u0432\u0440\u0435\u043C\u044F!"), __jsx("button", {
@@ -63077,14 +63078,14 @@ var FooterSection = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 173,
+      lineNumber: 174,
       columnNumber: 11
     }
   }, __jsx("span", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 174,
+      lineNumber: 175,
       columnNumber: 13
     }
   }, "\u041E\u043A\u0435\u0439")))));
@@ -63351,33 +63352,20 @@ var HomeMain = ({
       lineNumber: 28,
       columnNumber: 11
     }
-  }, __jsx(_SectionsComponents__WEBPACK_IMPORTED_MODULE_6__["ImageWrapper"], {
-    isDot: true,
-    display: !desktop,
-    className: Object(_Helpers__WEBPACK_IMPORTED_MODULE_5__["AnimationClass"])({
-      firstLoad,
-      animation
-    }),
+  }, __jsx(_SectionsComponents__WEBPACK_IMPORTED_MODULE_6__["SectionTitle"], {
+    isContentWhite: true,
+    className: "sub-title",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29,
       columnNumber: 13
     }
-  }), __jsx(_SectionsComponents__WEBPACK_IMPORTED_MODULE_6__["SectionTitle"], {
-    isContentWhite: true,
-    className: "sub-title",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30,
-      columnNumber: 13
-    }
   }, "We Are ", __jsx("span", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 30,
       columnNumber: 22
     }
   }, "WEB-Studio")), __jsx(_SectionsComponents__WEBPACK_IMPORTED_MODULE_6__["SectionTitle"], {
@@ -63388,7 +63376,7 @@ var HomeMain = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33,
+      lineNumber: 32,
       columnNumber: 13
     }
   })), __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -63397,10 +63385,23 @@ var HomeMain = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 34,
       columnNumber: 11
     }
-  }, __jsx(_SectionsComponents__WEBPACK_IMPORTED_MODULE_6__["ApolloStatue"], {
+  }, __jsx(_SectionsComponents__WEBPACK_IMPORTED_MODULE_6__["ImageWrapper"], {
+    isDot: true,
+    display: !desktop,
+    className: Object(_Helpers__WEBPACK_IMPORTED_MODULE_5__["AnimationClass"])({
+      firstLoad,
+      animation
+    }),
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 15
+    }
+  }), __jsx(_SectionsComponents__WEBPACK_IMPORTED_MODULE_6__["ApolloStatue"], {
     props: props,
     move: move,
     firstLoad: firstLoad,
@@ -64607,7 +64608,7 @@ var ImageWrapper = props => {
       columnNumber: 5
     }
   }, children, __jsx("img", {
-    src: "".concat(isDot ? Dots : src, "?trace"),
+    src: "".concat(isDot ? Dots : src),
     alt: isDot ? 'Dots' : alt ? alt : '',
     __self: undefined,
     __source: {
@@ -65302,7 +65303,7 @@ var ProjectAboutSection = props => {
       columnNumber: 7
     }
   }), __jsx(react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    className: "grid-container",
+    className: "grid-container align-items-center",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -65571,6 +65572,7 @@ var ProjectInfoWrap = ({
     }
   }, "\u0421\u0441\u044B\u043B\u043A\u0430 - ", __jsx("a", {
     target: "_blank",
+    className: "square-info-wrap__link",
     rel: "noopener noreferrer",
     href: "http://".concat(link),
     __self: undefined,
@@ -67059,15 +67061,25 @@ var ServiceQuote = ({
     0: randIndex,
     1: setRandIndex
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0);
+  var {
+    0: word,
+    1: setWord
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('Упс, цитатки закончились :(');
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    setRandIndex(Math.floor(Math.random() * quotes.length));
+    // setRandIndex(Math.floor(Math.random() * quotes.length))
+    handleGenerate();
   }, []);
 
   var handleGenerate = () => {
-    var getRandNumb = Math.floor(Math.random() * quotes.length);
-    var $quote = $('.quote-text');
-    $quote.removeClass('show');
-    $($quote[getRandNumb]).addClass('show');
+    var getRandNumb = Math.floor(Math.random() * quotes.length); // const $quote = $('.quote-text')
+    // $quote.removeClass('show')
+    // $($quote[getRandNumb]).addClass('show')
+
+    if (quotes.length !== 0) {
+      setWord(quotes.pop());
+    } else {
+      setWord('Упс, цитатки закончились :(');
+    }
   };
 
   return __jsx(_SectionsComponents__WEBPACK_IMPORTED_MODULE_1__["SectionLayout"], {
@@ -67075,7 +67087,7 @@ var ServiceQuote = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 30,
       columnNumber: 5
     }
   }, __jsx("div", {
@@ -67083,7 +67095,7 @@ var ServiceQuote = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 31,
       columnNumber: 7
     }
   }, __jsx(_SectionsComponents__WEBPACK_IMPORTED_MODULE_1__["ImageWrapper"], {
@@ -67092,7 +67104,7 @@ var ServiceQuote = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 32,
       columnNumber: 9
     }
   }), __jsx(_SectionsComponents__WEBPACK_IMPORTED_MODULE_1__["MyScrollAnimation"], {
@@ -67100,24 +67112,23 @@ var ServiceQuote = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 33,
       columnNumber: 9
     }
-  }, quotes.map((quote, index) => __jsx("div", {
-    key: "quote_".concat(index),
-    className: "quote-text ".concat(index === 2 ? 'show' : ''),
+  }, __jsx("div", {
+    className: "quote-text show",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
-      columnNumber: 13
+      lineNumber: 39,
+      columnNumber: 12
     }
-  }, quote)))), __jsx(_SectionsComponents__WEBPACK_IMPORTED_MODULE_1__["MyScrollAnimation"], {
+  }, word))), __jsx(_SectionsComponents__WEBPACK_IMPORTED_MODULE_1__["MyScrollAnimation"], {
     delay: [200],
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33,
+      lineNumber: 44,
       columnNumber: 7
     }
   }, __jsx("button", {
@@ -67127,14 +67138,14 @@ var ServiceQuote = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34,
+      lineNumber: 45,
       columnNumber: 9
     }
   }, __jsx("span", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34,
+      lineNumber: 45,
       columnNumber: 79
     }
   }, "\u0421\u0433\u0435\u043D\u0435\u0440\u0438\u0440\u043E\u0432\u0430\u0442\u044C"))));
@@ -69252,18 +69263,6 @@ var useScroll = ({
 
 /***/ }),
 
-/***/ 1:
-/*!*************************************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fservices%2Flanding&absolutePagePath=%2FUsers%2FProghammer%2FPhpstormProjects%2Fmanticore-react-next.js%2Fpages%2Fservices%2Flanding.js ***!
-  \*************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fservices%2Flanding&absolutePagePath=%2FUsers%2FProghammer%2FPhpstormProjects%2Fmanticore-react-next.js%2Fpages%2Fservices%2Flanding.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fservices%2Flanding&absolutePagePath=%2FUsers%2FProghammer%2FPhpstormProjects%2Fmanticore-react-next.js%2Fpages%2Fservices%2Flanding.js!./");
-
-
-/***/ }),
-
 /***/ 2:
 /*!*********************************!*\
   !*** readable-stream (ignored) ***!
@@ -69272,6 +69271,18 @@ module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fservic
 /***/ (function(module, exports) {
 
 /* (ignored) */
+
+/***/ }),
+
+/***/ 24:
+/*!*************************************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fservices%2Flanding&absolutePagePath=%2FUsers%2FProghammer%2FPhpstormProjects%2Fmanticore-react-next.js%2Fpages%2Fservices%2Flanding.js ***!
+  \*************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fservices%2Flanding&absolutePagePath=%2FUsers%2FProghammer%2FPhpstormProjects%2Fmanticore-react-next.js%2Fpages%2Fservices%2Flanding.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fservices%2Flanding&absolutePagePath=%2FUsers%2FProghammer%2FPhpstormProjects%2Fmanticore-react-next.js%2Fpages%2Fservices%2Flanding.js!./");
+
 
 /***/ }),
 
@@ -69286,5 +69297,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js","styles"]]]);
+},[[24,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=landing.js.map

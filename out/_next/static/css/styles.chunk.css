@@ -2418,7 +2418,7 @@ img {
   position: absolute;
   bottom: 0;
   z-index: 99;
-  width: 210px;
+  width: 290px;
   padding-top: 30px; }
   .see-more-link:before {
     content: '';
@@ -4304,8 +4304,7 @@ img {
     max-width: 1140px; }
   #footer-section .section-title {
     font-size: 66px;
-    letter-spacing: 2px;
-    transform: translateX(-45px); }
+    letter-spacing: 2px; }
   #footer-section .form-wrap {
     padding-left: 0;
     max-width: 100%;
@@ -9527,6 +9526,9 @@ img {
     opacity: 1;
     transform: translateX(0); } }
 
+.square-info-wrap__link {
+  color: #d9255e !important; }
+
 [id*='-project-page'] {
   background-color: #10151b; }
   [id*='-project-page'] section {
@@ -12740,7 +12742,7 @@ img {
     align-items: stretch;
     height: 100%; }
   #main-section .section-dots-wrap {
-    top: -10px;
+    top: 43%;
     left: 10px;
     width: 280px;
     height: 280px;
@@ -12751,7 +12753,7 @@ img {
       transform: translate(0, 0); }
   #main-section .col-info {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 0;
     transform: translateY(-50%);
     z-index: 6; }
@@ -12788,7 +12790,7 @@ img {
     height: 100%;
     transition: transform 1.5s cubic-bezier(0.64, 0.04, 0.35, 1); }
   #main-section .title, #main-section .sub-title {
-    margin-left: 25px; }
+    text-align: center; }
   #main-section .title {
     font-size: 40px;
     margin-bottom: 0; }
@@ -12812,7 +12814,8 @@ img {
     bottom: -130px;
     left: 120px; }
   #main-section .title, #main-section .sub-title {
-    margin-left: 105px; }
+    margin-left: 105px;
+    text-align: unset; }
   #main-section .title {
     font-size: 60px; }
   #main-section .sub-title {
@@ -14946,16 +14949,19 @@ img {
   overflow: auto;
   opacity: 1;
   visibility: visible;
-  z-index: 10; }
+  z-index: 10;
+  padding-top: 60px; }
 
 @media (min-width: 992px) {
-  #portfolio-page #portfolio-section .tab-wrap {
-    position: fixed; }
-  #portfolio-page #portfolio-section .section-wrapper {
-    padding-bottom: 0; }
-  #portfolio-page #portfolio-section .tab-pane {
-    height: 100%;
-    overflow: visible; } }
+  #portfolio-page #portfolio-section {
+    padding-top: 0; }
+    #portfolio-page #portfolio-section .tab-wrap {
+      position: fixed; }
+    #portfolio-page #portfolio-section .section-wrapper {
+      padding-bottom: 0; }
+    #portfolio-page #portfolio-section .tab-pane {
+      height: 100%;
+      overflow: visible; } }
 
 /* FONTS */
 /* COLORS */
@@ -15349,6 +15355,8 @@ img {
   right: 0;
   opacity: 0;
   transition: all 1s cubic-bezier(0.64, 0.04, 0.35, 1); }
+  #portfolio-section .tab-pane .card-wrap {
+    height: 40vh; }
   #portfolio-section .tab-pane.active {
     position: relative;
     opacity: 1; }
