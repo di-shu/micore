@@ -29,7 +29,7 @@ export const Branding = () => {
     <SectionLayout id="marinist-branding" Footer={SectionFooter}>
       <Row>
         <Col xs={12} lg={6}>
-          <SectionTitle title="Бреднирование"/>
+          <SectionTitle title="Брендирование"/>
           <SectionDesc>
             Важной составляющей проекта стала разработка носителей бренда вплоть до мельчайших деталей. В их число
             входит фирменные: шрифты, знак, паттерн и декоративные элементы

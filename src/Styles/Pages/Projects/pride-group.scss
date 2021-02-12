@@ -274,12 +274,12 @@
     @include media-breakpoint-up('xl') {
       .section-title, .section-desc {
         width: 100%;
-        max-width: 445px;
+        max-width: 360px;
         margin: 0 0 0 auto;
       }
 
       .section-title {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
       }
     }
   }
@@ -292,6 +292,11 @@
     @include media-breakpoint-up('lg') {
       left: 0;
       width: 100%;
+      background-color: #060606;
+      img {
+        object-fit: cover;
+        object-position: -150px;
+      }
     }
   }
 

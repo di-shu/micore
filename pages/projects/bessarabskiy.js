@@ -24,8 +24,8 @@ const Bessarabskiy = () => (
     <Brief/>
     <Logo/>
     <ColorsAndFonts/>
-    <Branding/>
-    <Other/>
+    {/*<Branding/>*/}
+    {/*<Other/>*/}
     <AboutSite/>
     <HomePage/>
     <News/>

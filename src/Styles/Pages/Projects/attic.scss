@@ -536,7 +536,8 @@
 
   #attic-about-site {
     .section-wrapper {
-      padding-bottom: 120px;
+      padding: 0;
+      max-width: unset;
     }
 
     .section-title {

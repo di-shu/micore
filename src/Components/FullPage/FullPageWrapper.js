@@ -4,6 +4,7 @@ import {useDeviceDetect} from "../../Helpers"
 
 const ReactFullpage = dynamic(() => import('@fullpage/react-fullpage'), { ssr: false })
 
+
 export const FullPageWrapper = (props) => {
   const { sections, options, setSections, setOptions } = props
     const { mobile } = useDeviceDetect()

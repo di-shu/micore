@@ -21,7 +21,7 @@ export const BrandingElements = () => {
       Footer={() => (
         <>
           <ImageWrapper className="footer-background" src={FooterBackground}/>
-          <BottomNavigation/>
+          <BottomNavigation hidden/>
         </>
       )}
     >

@@ -65,15 +65,15 @@
       bottom: 0;
       right: 0;
       left: auto;
-      width: 90vw;
-      height: auto;
+      //width: 100vw;
+      height: 100vh;
     }
 
     .section-wrapper {
       padding-top: 0;
       padding-bottom: 0;
       position: absolute;
-      top: 35%;
+      top: 50%;
       left: 0;
       right: 0;
       transform: translateY(-50%);
@@ -92,8 +92,13 @@
     .main-statue {
       right: -130px;
       left: auto;
-      width: 65vw;
-      height: 100%;
+      width: 100vw;
+      height: 100vh;
+
+      canvas {
+        width: unset !important;
+        height: 100% !important;
+      }
     }
 
     .section-wrapper {

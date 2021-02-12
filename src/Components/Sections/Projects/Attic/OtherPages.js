@@ -13,7 +13,6 @@ export const OtherPages = () => {
   return (
     <SectionLayout id="attic-other-pages">
       <ImageWrapper isDot/>
-      <SectionTitle title="Другие страницы"/>
       <Row>
         {AtticPages.map((page, index) => (
           <Col xs={12} key={index} className="col-wrap-info">

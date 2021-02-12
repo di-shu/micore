@@ -11,7 +11,7 @@ export const Last = () => {
         return (
           <>
             <ImageWrapper src={BeeGamesPC}/>
-            <BottomNavigation/>
+            <BottomNavigation hidden/>
           </>
         )
       }}

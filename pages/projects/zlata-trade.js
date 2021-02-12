@@ -22,7 +22,7 @@ const ZlataTrade = () => {
       <Results/>
       {/*<Adaptation/>*/}
       <Branding />
-      <Desktop/>
+      {/*<Desktop/>*/}
       <Mobile/>
     </MainWrapper>
   )

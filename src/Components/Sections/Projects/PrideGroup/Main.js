@@ -8,6 +8,6 @@ const SectionContent = () => <ImageWrapper src={MainLogo} className="main-logo" 
 
 export const Main = () => {
   return (
-    <ProjectMainSection id="pride-group" name="PRide Group" background={MainBG} content={SectionContent} isContentWhite />
+    <ProjectMainSection id="pride-group" name="PRide Group" background={MainBG}  isContentWhite />
   )
 }

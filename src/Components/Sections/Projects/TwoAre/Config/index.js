@@ -19,10 +19,5 @@ export const TypeContent = [
 ]
 
 export const TwoAreSlides = [
-  { img: SlideImg },
-  { img: SlideImg },
-  { img: SlideImg },
-  { img: SlideImg },
-  { img: SlideImg },
   { img: SlideImg }
 ]
