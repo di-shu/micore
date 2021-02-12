@@ -21,7 +21,7 @@ export const Brief = () => {
         компании. Главный символ в виде сокола имеет свою историю и глубокий смысл. В нем зашифрованы определяющие для
         компании ценности - уважение к прошлому и уверенность в будущем.
       </SectionDesc>
-      <ImageWrapper isDot display={desktop}/>
+      {/*<ImageWrapper isDot display={desktop}/>*/}
       <Row className="grid-container-brief">
         {BriefList.map((brief, index) => (
           <Col key={`brief_${index}`} xs={12} md={6} lg={4} className="grid-item-brief">

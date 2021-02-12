@@ -17,7 +17,7 @@ const SectionFooter = () => (
   <div className="bottom-wrapper">
     <ImageWrapper src={iPhone} className="iphone-image"/>
     <ImageWrapper src={FooterShape} className="shape-image"/>
-    <BottomNavigation/>
+    <BottomNavigation hidden/>
   </div>
 )
 

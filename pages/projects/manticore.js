@@ -26,7 +26,7 @@ const Manticore = () => {
             <AboutName/>
             <SimplyWords/>
             <Brand/>
-            <ClientPath/>
+            {/*<ClientPath/>*/}
             <Modernizing/>
             <WowEffect/>
             <Statues/>

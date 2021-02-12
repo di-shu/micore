@@ -28,9 +28,6 @@ export const SectionFooter = () => {
                 <Col xs={6} lg={12}>
                   <ImageWrapper src={mobile.image} className="mobile-image" />
                 </Col>
-                <Col xs={6} lg={12}>
-                  <SectionTitle title={mobile.title} className="mobile-title" isContentWhite />
-                </Col>
               </Row>
             </Col>
           ))}
@@ -43,7 +40,7 @@ export const SectionFooter = () => {
         </>
       ) : <ImageWrapper src={FooterHands} className="footer-hands-image" />}
       <ImageWrapper isDot />
-      <BottomNavigation />
+      <BottomNavigation hidden/>
     </div>
   )
 }

@@ -12,7 +12,7 @@ export const Bottom = () => {
       Footer={() => (
         <>
           <ImageWrapper src={FooterImg} className="footer-image" />
-          <BottomNavigation isBlack />
+          <BottomNavigation isBlack hidden/>
         </>
       )}
     />

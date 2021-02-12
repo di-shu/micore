@@ -2,6 +2,7 @@ import React from 'react'
 import ReactFullpage from '@fullpage/react-fullpage'
 import {useDeviceDetect} from "../../Helpers";
 
+
 export const FullPageWrapper = (props) => {
   const { sections, options, setSections, setOptions } = props
     const { mobile } = useDeviceDetect()

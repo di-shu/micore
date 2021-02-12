@@ -32,7 +32,7 @@ const SymbolContentFooter = () => {
         </SectionWrapper>
         <ImageWrapper src={Pattern} className="section-pattern"/>
       </div>
-      <BottomNavigation isBlack />
+      <BottomNavigation isBlack hidden/>
     </>
   )
 }

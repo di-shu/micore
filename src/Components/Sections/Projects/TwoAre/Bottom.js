@@ -9,7 +9,7 @@ export const Bottom = () => {
   const { mobile } = useDeviceDetect()
 
   return (
-    <SectionLayout id="two-are-bottom" Footer={() => <BottomNavigation />}>
+    <SectionLayout id="two-are-bottom" Footer={() => <BottomNavigation hidden/>}>
       <ImageWrapper src={mobile ? PosterImgMobile : PosterImg} className="poster-image" />
     </SectionLayout>
   )

@@ -50,7 +50,7 @@ export const HomePage = () => {
     <SectionLayout
       id="vlady-homepage"
       Footer={VladyDesignFooterContent}
-      Header={() => <div className="desktop-view"><video autoPlay="autoPlay" loop="loop" preload="auto" src={Video}/></div>}
+      Header={() => <div className="desktop-view"><video autoPlay="autoPlay" loop="loop" preload="auto" muted="muted" src={Video}/></div>}
     >
       <SectionTitle title="Главная страница"/>
       <SectionDesc>

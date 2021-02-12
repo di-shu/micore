@@ -16,6 +16,7 @@ import {
 import { MainWrapper } from '~/Components/SectionsComponents'
 /* STYLES */
 import '~/Styles/Pages/Projects/attic.scss'
+import {FooterSection} from "../../src/Components/Sections";
 
 const AtticStroy = () => {
   return (

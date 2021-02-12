@@ -6,6 +6,7 @@ import { FooterSection } from '../Sections'
 import { useCheckRoute } from '../../Helpers'
 import { ProjectsNavigation } from './Projects'
 import { MyScrollAnimation } from './MyScrollAnimation'
+import { getPathname } from '../../Helpers'
 /* STYLES */
 import '~/Styles/Static/general.scss'
 import '~/Styles/Includes/index.scss'
@@ -20,13 +21,13 @@ const variants = {
 }
 
 export const MainWrapper = ({ id, children }) => {
-  const { isProject, isServices , isManticore } = useCheckRoute()
-  
+
   useEffect(() => {
     setTimeout(() => {
       window.scrollTo({ top: 0, left: 0 })
-    }, 100)
+    }, 100);
   }, [])
+
 
 
   return (
@@ -40,10 +41,11 @@ export const MainWrapper = ({ id, children }) => {
         >
           <ProjectsNavigation links={Portfolios.getALl()}/>
           {children}
-          {isManticore || isProject || isServices && (
-            <MyScrollAnimation animationName="fadeIn" offset={300}>
-              <FooterSection animation/>
-            </MyScrollAnimation>
+
+          {(getPathname().isProject || getPathname().isServices) && (
+              <MyScrollAnimation animationName="fadeIn" offset={300}>
+                <FooterSection animation/>
+              </MyScrollAnimation>
           )}
         </motion.div>
       </main>

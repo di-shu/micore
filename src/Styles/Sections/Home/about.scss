@@ -296,8 +296,21 @@
 
 @media screen and(max-height: 650px) {
   #about-section {
+
+    .text-box {
+      height: 200px;
+    }
+
     .section-desc {
-      padding: 5vh 7vh 10vh;
+      padding: 0px;
+      font-size: 12px;
+      line-height: 24px;
+    }
+
+    .about-statue {
+      bottom: -25px;
+      width: 350px;
+      left: 65px;
     }
   }
 

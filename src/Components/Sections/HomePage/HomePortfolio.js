@@ -8,7 +8,7 @@ import { SectionWrapper } from '~/Components/SectionsComponents'
 import '~/Styles/Pages/portfolio.scss'
 import '~/Styles/Sections/Home/portfolio.scss'
 
-export const HomePortfolio = ({ animation, isPortfolio }) => {
+export const HomePortfolio = ({ animation, isPortfolio}) => {
   return (
     <section id="portfolio-section" className="section">
       <SectionWrapper>

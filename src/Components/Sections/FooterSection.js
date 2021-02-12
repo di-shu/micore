@@ -145,13 +145,13 @@ export const FooterSection = ({ isContact, animation }) => {
                   <div className={`contact-wrap ${desktop ? ' mb-0' : ''}`}>
                     <h3 className="contact-title">Одесса</h3>
                     <h4 className="contact-sub-title">улица Львовская, 48</h4>
-                    <h4 className="contact-sub-title with-line">
-                      <span>Офис, 301</span>
-                      <a href="https://goo.gl/maps/XCmNkLGyBsCcrXvM6" target="_blank" className="btn-show-map">
-                        <img src={MapMarker} alt="Map icon"/>
-                        <span>карта</span>
-                      </a>
-                    </h4>
+                    {/*<h4 className="contact-sub-title with-line">*/}
+                    {/*  <span>Офис, 301</span>*/}
+                    {/*  <a href="https://goo.gl/maps/XCmNkLGyBsCcrXvM6" target="_blank" className="btn-show-map">*/}
+                    {/*    <img src={MapMarker} alt="Map icon"/>*/}
+                    {/*    <span>карта</span>*/}
+                    {/*  </a>*/}
+                    {/*</h4>*/}
                   </div>
                 </Col>
               </Row>
