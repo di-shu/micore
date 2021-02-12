@@ -1,6 +1,8 @@
 import React from 'react'
-import ReactFullpage from '@fullpage/react-fullpage'
-import {useDeviceDetect} from "../../Helpers";
+import dynamic from 'next/dynamic'
+import {useDeviceDetect} from "../../Helpers"
+
+const ReactFullpage = dynamic(() => import('@fullpage/react-fullpage'), { ssr: false })
 
 export const FullPageWrapper = (props) => {
   const { sections, options, setSections, setOptions } = props

@@ -58,7 +58,7 @@ export const FooterSection = ({ isContact, animation }) => {
     
     $.ajax({
       method: 'POST',
-      url: 'https://micore-admin.comnd-x.com/send',
+      url: process.env.FEEDBACK_API_URL,
       data: {
         ...values,
         url: pathname,

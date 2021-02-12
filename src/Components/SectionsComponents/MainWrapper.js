@@ -6,11 +6,6 @@ import { FooterSection } from '../Sections'
 import { useCheckRoute } from '../../Helpers'
 import { ProjectsNavigation } from './Projects'
 import { MyScrollAnimation } from './MyScrollAnimation'
-/* STYLES */
-import '~/Styles/Static/general.scss'
-import '~/Styles/Includes/index.scss'
-import '~/Styles/Sections/Services/index.scss'
-import '~/Styles/Sections/Projects/index.scss'
 
 const easing = [0.64, 0.04, 0.35, 1]
 const variants = {

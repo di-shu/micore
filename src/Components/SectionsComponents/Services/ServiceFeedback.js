@@ -34,7 +34,7 @@ export const ServiceFeedback = ({ title, content }) => {
     
     $.ajax({
       method: 'POST',
-      url: 'http://micore-admin.comnd-x.com/send',
+      url: process.env.FEEDBACK_API_URL,
       data: {
         name: user.feedbackName,
         phone: user.feedbackPhone,

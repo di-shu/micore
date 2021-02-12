@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.17",
+    "@next/bundle-analyzer": "^10.0.6",
     "framer-motion": "^1.8.4",
     "gsap": "^3.2.6",
     "image-trace-loader": "^1.0.2",
