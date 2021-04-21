@@ -22,21 +22,21 @@ export const MenuContainer = ({ close, open, animation }) => {
           </ListGroup.Item>
         ))}
       </ListGroup>
-      <SocialsWrap display={mobile} />
-      {/*<div className="switch-box">*/}
-      {/*  <ActiveLink link="/" className="switch-link">*/}
-      {/*    <p className="switch-name">EN</p>*/}
-      {/*    <span className="switch-line"/>*/}
-      {/*  </ActiveLink>*/}
-      {/*  <ActiveLink link="/" className="switch-link">*/}
-      {/*    <p className="switch-name">RU</p>*/}
-      {/*    <span className="switch-line"/>*/}
-      {/*  </ActiveLink>*/}
-      {/*  <ActiveLink link="/" className="switch-link">*/}
-      {/*    <p className="switch-name">UK</p>*/}
-      {/*    <span className="switch-line"/>*/}
-      {/*  </ActiveLink>*/}
-      {/*</div>*/}
+      <SocialsWrap display={mobile}/>
+      <div className="switch-box">
+        <ActiveLink link="/" locale="en" className="switch-link">
+          <p className="switch-name">EN</p>
+          <span className="switch-line"/>
+        </ActiveLink>
+        <ActiveLink link="/" locale="ru" className="switch-link">
+          <p className="switch-name">RU</p>
+          <span className="switch-line"/>
+        </ActiveLink>
+        <ActiveLink link="/" locale="ua" className="switch-link">
+          <p className="switch-name">UA</p>
+          <span className="switch-line"/>
+        </ActiveLink>
+      </div>
     </div>
   )
 }

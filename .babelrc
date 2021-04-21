@@ -1,15 +1,6 @@
 {
   "presets": [
-    [
-      "next/babel",
-      {
-        "styled-jsx": {
-          "plugins": [
-            "styled-jsx-plugin-sass"
-          ]
-        }
-      }
-    ]
+    ["next/babel"]
   ],
   "plugins": [
     [
@@ -19,6 +10,13 @@
         "rootPathPrefix": "~"
       }
     ],
-    ["styled-components", { "ssr": false }]
+    [
+      "styled-components",
+      {
+        "ssr": true,
+        "displayName": true,
+        "preprocess": false
+      }
+    ]
   ]
 }

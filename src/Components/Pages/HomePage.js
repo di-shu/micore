@@ -10,7 +10,7 @@ export const HomePage = () => {
   const { desktop } = useDeviceDetect()
   const [options, setOptions] = useState(Options)
   const [sections, setSections] = useState(MainSections)
-  
+
   return (
     <>
       <SeeMoreLink
