@@ -7,10 +7,13 @@ export const toggleGlitch = (wrap) => {
         const handleScroll = () => {
             if(wrap) {
                 const elem = wrap.current;
-                if(window.scrollY > elem.getBoundingClientRect().height + 50) {
-                    setScrolled(false)
-                } else if(window.scrollY < elem.getBoundingClientRect().height + 50) {
-                    setScrolled(true)
+
+                if (elem) {
+                    if(window.scrollY > elem.getBoundingClientRect().height + 50) {
+                        setScrolled(false)
+                    } else if(window.scrollY < elem.getBoundingClientRect().height + 50) {
+                        setScrolled(true)
+                    }
                 }
             }
         }
