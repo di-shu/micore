@@ -8,7 +8,7 @@ import {
   SectionLayout
 } from '../../../SectionsComponents'
 import { AtticIcons } from './Config'
-/* IMAGES */
+
 const ElephantImg = '/images/Attic/Elephant.png'
 
 export const Icons = () => {

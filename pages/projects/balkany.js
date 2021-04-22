@@ -1,4 +1,5 @@
 import React from 'react'
+import { MainWrapper } from '../../src/Components'
 import {
   About,
   AboutSite,
@@ -11,9 +12,7 @@ import {
   Results,
   Tablet
 } from '../../src/Components/Sections/Projects/Balkany'
-import { MainWrapper } from '~/Components/SectionsComponents'
-/*STYLES*/
-import '~/Styles/Pages/Projects/fc-balkany.scss'
+import '../../src/Styles/Pages/Projects/fc-balkany.scss'
 
 export default () => {
   return (

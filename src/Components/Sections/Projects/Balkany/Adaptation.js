@@ -10,7 +10,7 @@ import {
 } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
 import { AdaptationInfo } from './Config'
-/* IMAGES */
+
 const Phone = '/images/Balkany/AdaptationPhone.png'
 
 export const Adaptation = () => {

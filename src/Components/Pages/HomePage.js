@@ -3,8 +3,7 @@ import { FullPageWrapper } from '../FullPage'
 import { AnimationClass, useDeviceDetect } from '../../Helpers'
 import { SeeMoreLink, ImageWrapper, ScrollBox } from '../SectionsComponents'
 import { MainSections, Options } from './Config/HomePageConfigs'
-/* STYLES */
-import '~/Styles/Pages/home.scss'
+import '../../Styles/Pages/home.scss'
 
 export const HomePage = () => {
   const { desktop } = useDeviceDetect()

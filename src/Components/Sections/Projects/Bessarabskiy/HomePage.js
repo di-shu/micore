@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDeviceDetect } from '../../../../Helpers'
 import { SectionDesc, ImageWrapper, SectionLayout } from '../../../../Components'
-/* IMAGES */
+
 const Pepper = '/images/Bessarabskiy/Pepper.png'
 const Menu = '/images/Bessarabskiy/MenuPage.png'
 const Basket = '/images/Bessarabskiy/BasketPage.png'

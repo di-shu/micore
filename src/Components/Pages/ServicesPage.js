@@ -6,8 +6,7 @@ import { ServicesList } from '../Config'
 import { FooterSection } from '../Sections'
 import { useDeviceDetect } from '../../Helpers'
 import { ActiveLink, ImageWrapper, ScrollBox, SectionDesc, SectionTitle } from '../SectionsComponents'
-/* STYLES */
-import '~/Styles/Pages/services.scss'
+import '../../Styles/Pages/services.scss'
 
 export const ServicesPage = () => {
   const { mobile, desktop } = useDeviceDetect()

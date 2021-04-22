@@ -1,4 +1,5 @@
 import React from 'react'
+import { MainWrapper } from '../../src/Components'
 import {
     About,
     AboutName,
@@ -12,10 +13,7 @@ import {
     Statues,
     MobileAdaptation, Case
 } from '../../src/Components/Sections/Projects/Manticore'
-import { MainWrapper } from '~/Components/SectionsComponents'
-/*STYLES*/
-
-import '~/Styles/Pages/Projects/manticore.scss'
+import '../../src/Styles/Pages/Projects/manticore.scss'
 
 const Manticore = () => {
     return (

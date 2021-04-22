@@ -1,22 +1,11 @@
-const withFonts = require('next-fonts')
 const withSass = require('@zeit/next-sass')
-const { i18n } = require('./next-i18next.config')
+const nextTranslate = require('next-translate')
 const withPlugins = require('next-compose-plugins')
 
-const nextConfig = {
-  i18n,
-  poweredByHeader: false,
-  // exportTrailingSlash: true,
-  devIndicators: { autoPrerender: false },
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      config.node = {
-        fs: 'empty'
-      }
-    }
+// const nextConfig = {
+//   poweredByHeader: false,
+//   exportTrailingSlash: true,
+//   devIndicators: { autoPrerender: false }
+// }
 
-    return config
-  }
-}
-
-module.exports = withPlugins([withSass, withFonts], nextConfig)
+module.exports = withPlugins([withSass, nextTranslate])

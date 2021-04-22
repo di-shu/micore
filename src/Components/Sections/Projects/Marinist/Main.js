@@ -1,6 +1,6 @@
 import React from 'react'
 import { ProjectMainSection } from '../../../SectionsComponents'
-/* IMAGES */
+
 const MainBG = '/images/Marinist/MainBackground.jpg'
 const MainImg = '/images/Marinist/firstphone.png'
 

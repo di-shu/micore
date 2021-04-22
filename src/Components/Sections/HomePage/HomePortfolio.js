@@ -2,11 +2,9 @@ import React from 'react'
 import { TabWrap } from '../../Tab'
 import { Portfolios } from '../../Config'
 import { AnimationClass } from '../../../Helpers'
-import { ActiveLink } from '../../SectionsComponents'
-import { SectionWrapper } from '~/Components/SectionsComponents'
-/* STYLES */
-import '~/Styles/Pages/portfolio.scss'
-import '~/Styles/Sections/Home/portfolio.scss'
+import { ActiveLink, SectionWrapper } from '../../SectionsComponents'
+import '../../../Styles/Pages/portfolio.scss'
+import '../../..//Styles/Sections/Home/portfolio.scss'
 
 export const HomePortfolio = ({ animation, isPortfolio}) => {
   return (

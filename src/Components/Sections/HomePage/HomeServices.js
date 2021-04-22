@@ -1,13 +1,12 @@
 import React from 'react'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import Container from 'react-bootstrap/Container'
 import { ServicesList } from '../../Config'
 import { AnimationClass } from '../../../Helpers'
 import { ActiveLink, ImageWrapper, SectionDesc, SectionTitle } from '../../SectionsComponents'
-/* STYLES */
-import '~/Styles/Pages/services.scss'
-import '~/Styles/Sections/Home/services.scss'
-import Container from 'react-bootstrap/Container'
+import '../../../Styles/Pages/services.scss'
+import '../../../Styles/Sections/Home/services.scss'
 
 export const HomeServices = ({ animation }) => {
   return (

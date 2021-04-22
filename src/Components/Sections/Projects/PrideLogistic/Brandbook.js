@@ -2,7 +2,7 @@ import React from 'react'
 import { PrideBrandbook } from './Config'
 import { useDeviceDetect } from '../../../../Helpers'
 import { FlipBook, ImageWrapper, SectionLayout, SectionTitle } from '../../../SectionsComponents'
-/* IMAGES */
+
 const Car = '/images/PrideLogistic/pridelog_mockup2.jpg'
 
 export const Brandbook = () => {

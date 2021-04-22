@@ -12,7 +12,6 @@ export const ProjectsNavigation = ({ links }) => {
   const { isProject } = useCheckRoute()
   
   useEffect(() => {
-    // eslint-disable-next-line array-callback-return
     links.map((link, index) => {
       if (link.link === pathname) {
         setPrev(index === 0 ? links[links.length - 1].link : links[index - 1].link)

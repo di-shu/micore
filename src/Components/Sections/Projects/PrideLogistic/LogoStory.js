@@ -3,7 +3,7 @@ import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
-/* IMAGES */
+
 const LogoDesign = '/images/PrideLogistic/pridelog_logo.svg'
 
 export const LogoStory = () => {

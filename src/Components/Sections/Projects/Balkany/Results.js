@@ -9,7 +9,7 @@ import {
   SectionTitle
 } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
-/* IMAGES */
+
 const Form = '/images/Balkany/BalkanyForm.jpg'
 
 export const Results = () => {

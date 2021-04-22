@@ -1,4 +1,5 @@
 import React from 'react'
+import { MainWrapper } from '../../src/Components'
 import {
   News,
   Logo,
@@ -13,9 +14,7 @@ import {
   AboutSite,
   ColorsAndFonts
 } from '../../src/Components/Sections/Projects/Bessarabskiy'
-import { MainWrapper } from '~/Components/SectionsComponents'
-/*STYLES*/
-import '~/Styles/Pages/Projects/bessarabskiy.scss'
+import '../../src/Styles/Pages/Projects/bessarabskiy.scss'
 
 const Bessarabskiy = () => (
   <MainWrapper id="bessarabskiy-project-page">

@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import { MenuContainer } from './Menu'
 import { ActiveLink, MyScrollAnimation } from '../SectionsComponents'
-/*IMAGES*/
+
 const Logo = '/images/logo.svg'
 
 export const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isOpened, setIsOpened] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const openMenu = () => {
     setIsMenuOpen(!isMenuOpen)

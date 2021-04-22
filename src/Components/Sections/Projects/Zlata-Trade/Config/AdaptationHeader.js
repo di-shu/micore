@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { useDeviceDetect } from '../../../../../Helpers'
 import { SectionLine } from '../../../../SectionsComponents/Projects'
-/* IMAGES */
+
 const AdaptationLogo = '../../images/ZlataProject/AdaptationLogo.png'
 const AdaptationLogoStreet = '../../images/ZlataProject/AdaptationLogoStreet.jpg'
 

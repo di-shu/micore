@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { AdaptationFooter, AdaptationHeader } from './Config'
 import { SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
-/* IMAGES */
+
 const LogoSizes = '../../images/ZlataProject/LogoSizes.png'
 
 export const Adaptation = () => {

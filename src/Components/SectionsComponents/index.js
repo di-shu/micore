@@ -1,5 +1,4 @@
 export * from './Blob'
-export * from './Layout'
 export * from './Services'
 export * from './Projects'
 export * from './ScrollBox'

@@ -2,7 +2,7 @@ import React from 'react'
 import { useDeviceDetect } from '../../../../../Helpers'
 import { ImageWrapper, SectionDesc, SectionSlider, SectionTitle, SectionWrapper } from '../../../../SectionsComponents'
 import { BrandingSlides } from '.'
-/* IMAGES */
+
 const Billboard = '/images/ZlataProject/Billboard.jpg'
 
 export const BrandingHeader = () => {

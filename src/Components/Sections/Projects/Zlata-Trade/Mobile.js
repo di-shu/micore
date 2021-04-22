@@ -9,7 +9,7 @@ import {
   SectionTitle
 } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
-/* IMAGES */
+
 const ZlataPhone = '../../images/ZlataProject/ZlataPhone.png'
 const ZlataTablet = '../../images/ZlataProject/ZlataTablet.jpg'
 

@@ -8,7 +8,7 @@ import {
   SectionLine,
   SectionTitle
 } from '../../../SectionsComponents'
-/* IMAGES */
+
 const LogoStory = '/images/Balkany/LogoStory.png'
 
 export const LogoConcept = () => {

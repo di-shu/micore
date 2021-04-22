@@ -1,6 +1,5 @@
 import React from 'react'
-import { FooterSection } from '~/Components/Sections'
-import { MainWrapper } from '~/Components/SectionsComponents'
+import { MainWrapper, FooterSection } from '../src/Components'
 
 const Contact = () => (
   <MainWrapper id="contact-page">

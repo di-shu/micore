@@ -1,4 +1,5 @@
 import React from 'react'
+import { MainWrapper } from '../../src/Components'
 import {
   About,
   Adaptation,
@@ -9,9 +10,7 @@ import {
   Mobile,
   Results
 } from '../../src/Components/Sections/Projects/Zlata-Trade'
-import { MainWrapper } from '~/Components/SectionsComponents'
-/*STYLES*/
-import '~/Styles/Pages/Projects/zlata-trade.scss'
+import '../../src/Styles/Pages/Projects/zlata-trade.scss'
 
 const ZlataTrade = () => {
   return (

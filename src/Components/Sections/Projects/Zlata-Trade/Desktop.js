@@ -2,7 +2,7 @@ import React from 'react'
 import Row from 'react-bootstrap/Row'
 import { IconAdaptation, IconList } from './Config'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
-/* IMAGES */
+
 const ZlataSite = '../../images/ZlataProject/Imacbookphone.jpg'
 const ZlataDesktopDevices = '../../images/ZlataProject/ZlataDesktop.jpg'
 

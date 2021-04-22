@@ -5,8 +5,7 @@ import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
 import { AnimationClass, useDeviceDetect } from '../../../Helpers'
 import { ApolloStatue, ImageWrapper, SectionTitle, SeeMoreLink, SocialsWrap } from '../../SectionsComponents'
-/* STYLES */
-import '~/Styles/Sections/Home/main.scss'
+import '../../../Styles/Sections/Home/main.scss'
 
 const move = (x, y) => `${-x / 4}px ${-y / 8}px`
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDeviceDetect } from '../../../../Helpers'
 import { ImageWrapper, ProjectMainSection } from '../../../SectionsComponents'
-/* IMAGES */
+
 const MainLogo = '/images/VladyDesign/VladyMainLogo.png'
 const MainBG = '/images/VladyDesign/VladyMainImage.jpg'
 

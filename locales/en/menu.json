@@ -1,0 +1,18 @@
+{
+  "about": {
+    "О нас": "About Us",
+    "Кратко о том кто мы": "Quickly about us"
+  },
+  "portfolio": {
+    "Наши проекты": "Our projects",
+    "Отражение нашего уровня": "Display of our level"
+  },
+  "services": {
+    "Услуги": "Services",
+    "Чем мы можем помочь": "How we can help you"
+  },
+  "contact": {
+    "Контакты": "Contacts",
+    "Для связи с нами": "To contact with us"
+  }
+}

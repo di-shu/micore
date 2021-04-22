@@ -1,4 +1,5 @@
 import React from 'react'
+import { MainWrapper } from '../../src/Components'
 import {
   Main,
   About,
@@ -13,10 +14,7 @@ import {
   LogoConcept,
   ColorsAndFonts
 } from '../../src/Components/Sections/Projects/Attic'
-import { MainWrapper } from '~/Components/SectionsComponents'
-/* STYLES */
-import '~/Styles/Pages/Projects/attic.scss'
-import {FooterSection} from "../../src/Components/Sections";
+import '../../src/Styles/Pages/Projects/attic.scss'
 
 const AtticStroy = () => {
   return (

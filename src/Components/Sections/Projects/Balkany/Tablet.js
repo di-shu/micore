@@ -6,7 +6,7 @@ import {
   SectionLayout,
   SectionTitle
 } from '../../../SectionsComponents'
-/* IMAGES */
+
 const TabletDevices = '/images/Balkany/balkany_mockup10.png'
 
 export const Tablet = () => {

@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react'
+import React, { useRef } from 'react'
 import dynamic from 'next/dynamic'
 import { ScrollBox } from '../ScrollBox'
 import ReactHtmlParser from 'react-html-parser'

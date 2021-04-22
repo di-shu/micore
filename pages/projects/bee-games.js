@@ -1,4 +1,5 @@
 import React from 'react'
+import { MainWrapper } from '../../src/Components'
 import {
   Last,
   Main,
@@ -8,9 +9,7 @@ import {
   HomePage,
   DesignStory
 } from '../../src/Components/Sections/Projects/BeeGames'
-import { MainWrapper } from '~/Components/SectionsComponents'
-/* STYLES */
-import '~/Styles/Pages/Projects/bee-games.scss'
+import '../../src/Styles/Pages/Projects/bee-games.scss'
 
 const BeeGames = () => {
   return (

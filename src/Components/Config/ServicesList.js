@@ -1,4 +1,3 @@
-/* IMAGES */
 const OtherImage = '/images/Services/Other.png'
 const BrandingImage = '/images/Services/Branding.png'
 const CorporateImage = '/images/Services/Corporate.png'

@@ -2,11 +2,10 @@ import React from 'react'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
-import { ActiveLink, ImageWrapper, SectionDesc, SectionTitle } from '../../SectionsComponents'
-/* STYLES */
-import '~/Styles/Sections/Home/about.scss'
 import { useDeviceDetect } from '../../../Helpers'
-/* IMAGES */
+import { ActiveLink, ImageWrapper, SectionDesc, SectionTitle } from '../../SectionsComponents'
+import '../../../Styles/Sections/Home/about.scss'
+
 const Statue = '/images/statue-about.png'
 
 export const HomeAbout = ({ animation }) => {

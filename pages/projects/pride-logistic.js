@@ -1,4 +1,5 @@
 import React from 'react'
+import { MainWrapper } from '../../src/Components'
 import {
   About,
   Brandbook,
@@ -9,9 +10,7 @@ import {
   Results,
   Services
 } from '../../src/Components/Sections/Projects/PrideLogistic'
-import { MainWrapper } from '~/Components/SectionsComponents'
-/*STYLES*/
-import '~/Styles/Pages/Projects/pride-logistic.scss'
+import '../../src/Styles/Pages/Projects/pride-logistic.scss'
 
 export default () => {
   return (

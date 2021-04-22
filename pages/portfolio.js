@@ -1,7 +1,6 @@
 import React from 'react'
-import { MainWrapper } from '~/Components/SectionsComponents'
-import { HomePortfolio } from '~/Components/Sections/HomePage'
-import { FooterSection } from '~/Components/Sections'
+import { MainWrapper } from '../src/Components'
+import { HomePortfolio } from '../src/Components/Sections/HomePage'
 
 const Portfolio = () => (
   <MainWrapper id="portfolio-page">

@@ -7,7 +7,7 @@ import {
   SectionTitle
 } from '../../../SectionsComponents'
 import { ApplicationSlides } from './Config'
-/* IMAGES */
+
 const ApplicationBackground = '/images/PrideLogistic/pridelog_mockup1.jpg'
 
 export const LogoApplication = () => {

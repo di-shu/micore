@@ -4,9 +4,8 @@ import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
 import { AnimationClass } from '../../../Helpers'
 import {ActiveLink, ImageWrapper, SectionDesc, SectionTitle} from '../../SectionsComponents'
-/* STYLES */
-import '~/Styles/Sections/About/main.scss'
-/* IMAGES */
+import '../../../Styles/Sections/About/main.scss'
+
 const IndianGirl = '/images/About/Indian_Girl.png'
 
 export const AboutMain = ({ firstLoad, animation }) => {

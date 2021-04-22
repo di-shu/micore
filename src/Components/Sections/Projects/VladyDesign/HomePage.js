@@ -9,7 +9,7 @@ import {
 } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
 
-/* IMAGES */
+
 const Video = '/images/VladyDesign/vlady_video.mp4'
 const Plan = '/images/VladyDesign/VladyPlanLook.jpg'
 const Pages = '/images/VladyDesign/VladyPagesLook.png'

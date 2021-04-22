@@ -1,6 +1,6 @@
 import React from 'react'
 import { ImageWrapper, SectionLayout } from '../../../SectionsComponents'
-/* IMAGES */
+
 const DesktopPC = '/images/BeeGames/DesktopPC.png'
 const NintendoSwitch = '/images/BeeGames/NintendoSwitch.png'
 
