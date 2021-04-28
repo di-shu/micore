@@ -1,0 +1,13 @@
+{
+  "footer_title_left": "Contact us",
+  "footer_title_right": "Contacts",
+  "name": "Name",
+  "phone": "Phone",
+  "message": "Message",
+  "send": "Send",
+  "city": "Odessa",
+  "address": "Lvovska st. 48",
+  "success_title": "Your application is accepted!",
+  "success_sub_title": "We will contact you shortly!",
+  "success_button": "Okey"
+}

@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
 import { MenuContainer } from './Menu'
 import { ActiveLink, MyScrollAnimation } from '../SectionsComponents'
 
 const Logo = '/images/logo.svg'
 
 export const Header = () => {
+  const router = useRouter()
   const [isOpened, setIsOpened] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -23,6 +25,14 @@ export const Header = () => {
       setIsMenuOpen(false)
     }, 2000)
   }
+
+  useEffect(() => {
+    setIsOpened(false)
+
+    setTimeout(() => {
+      setIsMenuOpen(false)
+    }, 2000)
+  }, [router.pathname, router.locale])
 
   return (
     <>
