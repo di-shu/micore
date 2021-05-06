@@ -1,3 +1,14 @@
 {
+  "prev": "Prev",
+  "next": "Next",
+  "portfolio": {
+    "all": "All",
+    "web": "web-sites",
+    "branding": "branding",
+    "design": "only ui/ux"
+  },
+  "our_works": "Our works",
+  "back_projects": "Back to projects",
+  "portfolio_view": "View project",
   "title": "MantiCore Development: web-site development and branding"
 }

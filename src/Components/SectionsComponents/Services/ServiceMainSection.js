@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import dynamic from 'next/dynamic'
+import parse from 'html-react-parser'
 import { ScrollBox } from '../ScrollBox'
-import ReactHtmlParser from 'react-html-parser'
 import { draw, setup, useDeviceDetect } from '../../../Helpers'
 import { ImageWrapper, MyScrollAnimation, SectionDesc, SectionLayout, SectionTitle } from '../../SectionsComponents'
 import {toggleGlitch} from "../../../Helpers/toggleGlitch";
@@ -39,7 +39,7 @@ export const ServiceMainSection = ({ title, desc, statue, statueParams }) => {
     <SectionLayout id="service-main-section" Footer={() => <SectionHeader statue={statue} options={statueParams}/>}>
       <MyScrollAnimation delay={[0, 200]}>
         <SectionTitle title={title} main isContentWhite/>
-        <SectionDesc isContentWhite children={ReactHtmlParser(desc)}/>
+        <SectionDesc isContentWhite children={parse(desc)}/>
       </MyScrollAnimation>
     </SectionLayout>
   )

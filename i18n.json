@@ -3,6 +3,9 @@
   "defaultLocale": "en",
   "pages": {
     "*": ["common", "menu", "footer"],
-    "/": ["home"]
+    "/": ["home", "about", "services"],
+    "/about": ["about"],
+    "/services": ["services"],
+    "/services/landing": ["services", "landing"]
   }
 }

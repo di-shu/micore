@@ -3,11 +3,11 @@ import { ActiveLink } from './ActiveLink'
 
 export const SeeMoreLink = (props) => {
   const {
+    label,
     className,
     display = true,
     direction = 'left',
-    nav = '/portfolio',
-    label = 'Наши работы'
+    nav = '/portfolio'
   } = props
   
   return (

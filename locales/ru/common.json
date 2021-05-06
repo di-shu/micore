@@ -1,3 +1,19 @@
 {
-  "title": "MantiCore Development: разработка веб-сайтов и брендинга"
+  "prev": "Назад",
+  "next": "Вперед",
+  "our_works": "Наши работы",
+  "back_projects": "Назад к проектам",
+  "portfolio_view": "Посмотреть проект",
+  "title": "MantiCore Development: разработка веб-сайтов и брендинга",
+  "modal_success": {
+    "button": "Окей",
+    "title": "Ваша заявка принята!",
+    "subtitle": "Мы свяжемся с вами в ближайшее время!"
+  },
+  "portfolio": {
+    "all": "Все",
+    "web": "Веб-сайты",
+    "branding": "Брендинг",
+    "design": "Только ui/ux"
+  }
 }

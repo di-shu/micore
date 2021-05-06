@@ -1,0 +1,21 @@
+{
+  "title": "Services",
+  "services": {
+    "landing": {
+      "title": "Landing",
+      "description": "A landing page where we share the benefits of your product or service"
+    },
+    "corporate": {
+      "title": "Corporate web-site",
+      "description": "Websites for businesses of any size that solve ambitious business tasks"
+    },
+    "branding": {
+      "title": "Branding",
+      "description": "Full cycle of creating a complete branding of the company online and offline"
+    },
+    "other": {
+      "title": "Other",
+      "description": "Online stores, portals, CRM systems, logistics and other complex products"
+    }
+  }
+}

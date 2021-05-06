@@ -1,6 +1,5 @@
 import React from 'react'
-import { LandingPage } from '../../src/Components/Pages'
-import { MainWrapper } from '../../src/Components/SectionsComponents'
+import { MainWrapper, LandingPage } from '../../src/Components'
 import '../../src/Styles/Pages/Services/landing.scss'
 
 const Landing = () => {

@@ -136,32 +136,30 @@ export const NewProjectsList = {
 }
 
 export const Portfolios = {
-  getSlicedTabs: function (sliceCount = 6) {
-    return this.getTabs().map(tab => {
-      return { ...tab, content: tab.content.slice(0, sliceCount) }
-    })
+  getSlicedTabs: function (sliceCount = 6, t) {
+    return this.getTabs(t).map(tab => ({ ...tab, content: tab.content.slice(0, sliceCount) }))
   },
-  getTabs: function () {
+  getTabs: function (translation) {
     return [
       {
         key: 'all',
-        label: 'Все',
-        content: this.getALl()
+        content: this.getALl(),
+        label: translation('portfolio.all')
       },
       {
         key: 'web-sites',
-        label: 'web-sites',
-        content: this.getWebSites()
+        content: this.getWebSites(),
+        label: translation('portfolio.web')
       },
       {
         key: 'ux/ui',
-        label: 'only ux/ui',
-        content: this.getUIUX()
+        content: this.getUIUX(),
+        label: translation('portfolio.design')
       },
       {
         key: 'branding',
-        label: 'branding',
-        content: this.getBranding()
+        content: this.getBranding(),
+        label: translation('portfolio.branding')
       }
     ]
   },

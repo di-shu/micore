@@ -1,3 +1,14 @@
 {
+  "prev": "Назад",
+  "next": "Уперед",
+  "portfolio": {
+    "all": "Усі",
+    "web": "Веб-сайти",
+    "branding": "Брендінг",
+    "design": "Тільки ui/ux"
+  },
+  "our_works": "Наші роботи",
+  "back_projects": "До проектів",
+  "portfolio_view": "Переглянути проект",
   "title": "MantiCore Development: Розробка веб-сайтів та брендингу"
 }

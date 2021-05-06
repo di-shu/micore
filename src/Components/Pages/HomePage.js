@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import useTranslation from 'next-translate/useTranslation'
 import { FullPageWrapper } from '../FullPage'
 import { AnimationClass, useDeviceDetect } from '../../Helpers'
 import { SeeMoreLink, ImageWrapper, ScrollBox } from '../SectionsComponents'
@@ -6,6 +7,7 @@ import { MainSections, Options } from './Config/HomePageConfigs'
 import '../../Styles/Pages/home.scss'
 
 export const HomePage = () => {
+  const { t } = useTranslation('common')
   const { desktop } = useDeviceDetect()
   const [options, setOptions] = useState(Options)
   const [sections, setSections] = useState(MainSections)
@@ -13,6 +15,7 @@ export const HomePage = () => {
   return (
     <>
       <SeeMoreLink
+        label={t('our_works')}
         display={desktop}
         className={AnimationClass({
           firstLoad: options.firstLoad,

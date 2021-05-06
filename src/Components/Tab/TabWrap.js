@@ -7,6 +7,7 @@ import Nav from 'react-bootstrap/Nav'
 import { Sizes } from '../Config'
 import { ActiveLink, ImageWrapper } from '../SectionsComponents'
 import { AnimationClass, useDeviceDetect } from '../../Helpers'
+import useTranslation from 'next-translate/useTranslation'
 
 const CardWrap = styled(Col)`
   height: 200px;
@@ -33,6 +34,7 @@ const CardWrap = styled(Col)`
 
 export const TabWrap = ({ animation, tabs }) => {
   const { desktop } = useDeviceDetect()
+  const { t } = useTranslation('common')
   
   return (
     <Tab.Container id="portfolio-tabs" defaultActiveKey={tabs[0].key} transition={false}>
@@ -61,7 +63,7 @@ export const TabWrap = ({ animation, tabs }) => {
                     <ActiveLink link={content.link} className="project-nav-link"/>
                     <ImageWrapper src={content.img} className="project-image"/>
                     <h6 className="project-title">{content.title}</h6>
-                    {desktop && <p className="project-link" children="View project"/>}
+                    {desktop && <p className="project-link" children={t('portfolio_view')}/>}
                   </CardWrap>
                 )
               })}

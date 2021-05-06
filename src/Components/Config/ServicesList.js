@@ -5,27 +5,23 @@ const LandingImage = '/images/Services/LandingImage.png'
 
 export const ServicesList = [
   {
+    key: 'landing',
     img: LandingImage,
-    name: 'Landing page',
-    link: '/services/landing',
-    desc: 'Целевая страница, где мы расскажем о преимуществах вашего товара или услуги'
+    link: '/services/landing'
   },
   {
+    key: 'corporate',
     img: CorporateImage,
-    name: 'Corporate Web-site',
-    link: '/services/corporate',
-    desc: 'Сайты для бизнеса любого масштаба, решающие амбициозные бизнес-задачи'
+    link: '/services/corporate'
   },
   {
-    name: 'Branding',
+    key: 'branding',
     img: BrandingImage,
-    link: '/services/brand',
-    desc: 'Полный цикл по созданию цельного брендинга компании в онлайне и офлайне'
+    link: '/services/brand'
   },
   {
-    name: 'Other',
+    key: 'other',
     img: OtherImage,
     link: '/services/other',
-    desc: 'Интернет-магазины, порталы, CRM системы, логистики и другие сложные продукты'
   }
 ]
