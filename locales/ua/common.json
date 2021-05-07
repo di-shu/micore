@@ -1,14 +1,19 @@
 {
   "prev": "Назад",
   "next": "Уперед",
+  "our_works": "Наші роботи",
+  "back_projects": "До проектів",
+  "portfolio_view": "Переглянути проект",
+  "title": "MantiCore Development: Розробка веб-сайтів та брендингу",
   "portfolio": {
     "all": "Усі",
     "web": "Веб-сайти",
     "branding": "Брендінг",
     "design": "Тільки ui/ux"
   },
-  "our_works": "Наші роботи",
-  "back_projects": "До проектів",
-  "portfolio_view": "Переглянути проект",
-  "title": "MantiCore Development: Розробка веб-сайтів та брендингу"
+  "modal_success": {
+    "button": "Окей",
+    "title": "Ваша заявка принята!",
+    "subtitle": "Ми зв'яжемося з вами найближчим часом!"
+  }
 }

@@ -47,12 +47,12 @@ export const Quotes = [
 ]
 
 export const CorporateWorkingStages = [
-  { img: Briefing, name: 'Брифинг' },
-  { img: Miscalculation, name: 'Просчет' },
-  { img: ActBrief, name: 'Подписание договора и брифа' },
-  { img: Creating, name: 'Создание логотипа' },
-  { img: FormStyle, name: 'Создание элементов фирменного стиля' },
-  { img: Sources, name: 'Передача исходников' }
+  { img: Briefing },
+  { img: Miscalculation },
+  { img: ActBrief },
+  { img: Creating },
+  { img: FormStyle },
+  { img: Sources }
 ]
 
 export const StatueOptions = {

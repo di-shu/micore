@@ -6,6 +6,9 @@
     "/": ["home", "about", "services"],
     "/about": ["about"],
     "/services": ["services"],
-    "/services/landing": ["services", "landing"]
+    "/services/landing": ["services", "landing"],
+    "/services/corporate": ["services", "corporate"],
+    "/services/brand": ["services", "branding"],
+    "/services/other": ["services", "other"]
   }
 }

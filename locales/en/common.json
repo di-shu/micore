@@ -1,14 +1,19 @@
 {
   "prev": "Prev",
   "next": "Next",
+  "our_works": "Our works",
+  "portfolio_view": "View project",
+  "back_projects": "Back to projects",
+  "title": "MantiCore Development: web-site development and branding",
   "portfolio": {
     "all": "All",
     "web": "web-sites",
     "branding": "branding",
     "design": "only ui/ux"
   },
-  "our_works": "Our works",
-  "back_projects": "Back to projects",
-  "portfolio_view": "View project",
-  "title": "MantiCore Development: web-site development and branding"
+  "modal_success": {
+    "button": "Okay",
+    "title": "Your application is accepted!",
+    "subtitle": "We will contact you shortly!"
+  }
 }

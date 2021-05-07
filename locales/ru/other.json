@@ -1,0 +1,55 @@
+{
+  "main": {
+    "title": "Другое",
+    "description": "При разработке сложного продукта мы практикуем MVP подход, суть которого в создании минимально жизнеспособной версии проекта. Последующими этапами дорабатывая продукт на основе полученных данных от целевой аудитории и сгенерированных идей в ходе работы"
+  },
+  "miscalculations": [
+    {
+      "title": "",
+      "description": ""
+    },
+    {
+      "title": "",
+      "description": ""
+    },
+    {
+      "title": "",
+      "description": ""
+    },
+    {
+      "title": "",
+      "description": ""
+    },
+    {
+      "title": "",
+      "description": ""
+    },
+    {
+      "title": "",
+      "description": ""
+    }
+  ],
+  "sites": [
+    {
+      "title": "",
+      "description": ""
+    },
+    {
+      "title": "",
+      "description": ""
+    },
+    {
+      "title": "",
+      "description": ""
+    },
+    {
+      "title": "",
+      "description": ""
+    },
+    {
+      "title": "",
+      "description": ""
+    }
+  ],
+  "feedback_title": "Получить первичный просчет в течении суток"
+}
