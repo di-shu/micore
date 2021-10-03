@@ -1,0 +1,13 @@
+{
+  "footer_title_left": "Связаться",
+  "footer_title_right": "Контакты",
+  "name": "Имя",
+  "phone": "Телефон",
+  "message": "Сообщение",
+  "send": "Отправить",
+  "city": "Одесса",
+  "address": "улица Львовская, 48",
+  "success_title": "Ваша заявка отправлена!",
+  "success_sub_title": "Мы свяжемся с вами в ближайшее время!",
+  "success_button": "Окей"
+}

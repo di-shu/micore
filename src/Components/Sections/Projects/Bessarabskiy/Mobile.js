@@ -7,7 +7,7 @@ import {
   BottomNavigation
 } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
-/* IMAGES */
+
 const iPhone = '/images/Bessarabskiy/iPhone.png'
 const FooterShape = '/images/Bessarabskiy/FooterShape.svg'
 const MobilePages = '/images/Bessarabskiy/MobilePages.png'

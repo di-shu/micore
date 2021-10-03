@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDeviceDetect } from '../../../../../Helpers'
 import { ImageWrapper, SectionWrapper } from '../../../../SectionsComponents'
-/* IMAGES */
+
 const MacAbout = '/images/PrideLogistic/MacAbout.png'
 const PrideMenu = '/images/PrideLogistic/SiteMenu.png'
 const SitePages = '/images/PrideLogistic/Pages.png'

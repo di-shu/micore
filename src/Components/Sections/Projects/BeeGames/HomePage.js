@@ -3,7 +3,7 @@ import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import { useDeviceDetect } from '../../../../Helpers'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
-/* IMAGES */
+
 const HexYellow = '/images/BeeGames/HexYellow.svg'
 const Honeycomb = '/images/BeeGames/Honeycomb.png'
 const DesktopSite = '/images/BeeGames/DesktopSite.png'

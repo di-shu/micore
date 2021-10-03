@@ -1,4 +1,5 @@
 import React from 'react'
+import useTranslation from 'next-translate/useTranslation'
 import {
   ImageWrapper,
   ServiceFeedback,
@@ -9,26 +10,27 @@ import {
 import { Services } from '../Config'
 import { useDeviceDetect } from '../../Helpers'
 import { Sites } from '../Sections/Services/Other'
-import { MainStatue, StatueOptions, OtherStages } from './Config/OtherPageConfigs'
+import { MainStatue, StatueOptions } from './Config/OtherPageConfigs'
 
 export const OtherPage = () => {
   const { desktop } = useDeviceDetect()
-  
+  const { t } = useTranslation('other')
+  const sites = t('sites', {}, { returnObjects: true })
+  const priceStages = t('miscalculations', {}, { returnObjects: true })
+
   return (
     <>
       <ServiceMainSection
-        title="Other"
         isProportions
         statue={MainStatue}
         statueParams={StatueOptions}
-        desc="При разработке сложного продукта мы практикуем MVP подход, суть которого в создании минимально
-        жизнеспособной версии проекта. Последующими этапами дорабатывая продукт на основе полученных данных от целевой
-        аудитории и сгенерированных идей в ходе работы"
+        title={t('main.title')}
+        desc={t('main.description')}
       />
-      <Sites/>
-      <ServicePriceMiscalculations isPrice={false} stages={OtherStages}/>
+      <Sites sites={sites}/>
+      <ServicePriceMiscalculations isPrice={false} stages={priceStages}/>
       <ServiceFeedback
-        title="Получить первичный просчет в течении суток"
+        title={t('feedback_title')}
         content={<ImageWrapper isDot display={desktop}/>}
       />
       <ServiceShortPortfolio

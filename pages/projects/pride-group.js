@@ -1,5 +1,5 @@
 import React from 'react'
-import { MainWrapper } from '~/Components/SectionsComponents'
+import { MainWrapper } from '../../src/Components'
 import {
   Main,
   About,
@@ -9,8 +9,7 @@ import {
   BrandingElements,
   LogoDemonstration
 } from '../../src/Components/Sections/Projects/PrideGroup'
-/*STYLES*/
-import '~/Styles/Pages/Projects/pride-group.scss'
+import '../../src/Styles/Pages/Projects/pride-group.scss'
 
 const PrideGroup = () => {
   return (

@@ -1,4 +1,5 @@
 import React from 'react'
+import { MainWrapper } from '../../src/Components'
 import {
   Main,
   Logo,
@@ -14,9 +15,7 @@ import {
   Adaptation,
   SelectionPages
 } from '../../src/Components/Sections/Projects/Marinist'
-import { MainWrapper } from '~/Components/SectionsComponents'
-/*STYLES*/
-import '~/Styles/Pages/Projects/marinist.scss'
+import '../../src/Styles/Pages/Projects/marinist.scss'
 
 const Marinist = () => {
   return (

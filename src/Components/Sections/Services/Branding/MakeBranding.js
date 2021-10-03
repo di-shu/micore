@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import useTranslation from 'next-translate/useTranslation'
 import { ImageWrapper, MyScrollAnimation, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 
 const BrandingImage = '/images/Services/Branding/BrandingImage.png'
 const BrandFinalImage = '/images/Services/Branding/BrandFinalImage.jpg'
 
 export const MakeBranding = () => {
+  const { t } = useTranslation('branding')
   const [isBrandChange, setIsBrandChange] = useState(false)
 
   const changeBrand = () => {
@@ -18,14 +20,12 @@ export const MakeBranding = () => {
       <Row>
         <Col xs={12} lg={6}>
           <MyScrollAnimation delay={[200, 400, 600]}>
-            <SectionTitle title="Узнаваемость на каждом шагу" />
-            <SectionDesc className="d-none d-lg-block">
-              Узнаваемость компании строится в целостности фирменного стиля и продолжении на потоках коммуникации.
-            </SectionDesc>
+            <SectionTitle children={t('make_branding.title')}/>
+            <SectionDesc className="d-none d-lg-block" children={t('make_branding.description')}/>
             <div className="make-branding-wrap d-block d-lg-none">
               <ImageWrapper src={BrandingImage} className={`branding-image start ${isBrandChange ? 'hide' : ''}`} />
               <ImageWrapper src={BrandFinalImage} className={`branding-image final ${isBrandChange ? 'active' : ''}`} />
-              <button className={`custom-btn ${isBrandChange ? 'hide' : ''}`} onClick={changeBrand}><span>Брендировать</span></button>
+              <button className={`custom-btn ${isBrandChange ? 'hide' : ''}`} onClick={changeBrand}><span>{t('make_branding.button')}</span></button>
             </div>
           </MyScrollAnimation>
         </Col>
@@ -35,7 +35,7 @@ export const MakeBranding = () => {
             <div className="make-branding-wrap d-none d-lg-block">
               <ImageWrapper src={BrandingImage} className={`branding-image start ${isBrandChange ? 'hide' : ''}`} />
               <ImageWrapper src={BrandFinalImage} className={`branding-image final ${isBrandChange ? 'active' : ''}`} />
-              <button className={`custom-btn ${isBrandChange ? 'hide' : ''}`} onClick={changeBrand}><span>Брендировать</span></button>
+              <button className={`custom-btn ${isBrandChange ? 'hide' : ''}`} onClick={changeBrand}><span>{t('make_branding.button')}</span></button>
             </div>
           </MyScrollAnimation>
         </Col>

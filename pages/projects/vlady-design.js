@@ -1,8 +1,7 @@
 import React from 'react'
-import { MainWrapper } from '~/Components/SectionsComponents'
+import { MainWrapper } from '../../src/Components'
 import { About, DesignStory, HomePage, Main } from '../../src/Components/Sections/Projects/VladyDesign'
-/* STYLES */
-import '~/Styles/Pages/Projects/vlady-design.scss'
+import '../../src/Styles/Pages/Projects/vlady-design.scss'
 
 const VladyDesign = () => {
   return (

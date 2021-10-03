@@ -1,22 +1,22 @@
 export const MenuLinks = [
   {
     to: '/about',
-    title: 'Кратко о том кто мы',
-    linkTitle: 'О нас'
+    linkTitle: 'О нас',
+    title: 'Кратко о том кто мы'
   },
   {
     to: '/portfolio',
-    title: 'Отражение нашего уровня',
-    linkTitle: 'Наши проекты'
+    linkTitle: 'Наши проекты',
+    title: 'Отражение нашего уровня'
   },
   {
     to: '/services',
-    title: 'Чем мы можем помочь',
-    linkTitle: 'Услуги'
+    linkTitle: 'Услуги',
+    title: 'Чем мы можем помочь'
   },
   {
     to: '/contact',
-    title: 'Для связи с нами',
-    linkTitle: 'Контакты'
+    linkTitle: 'Контакты',
+    title: 'Для связи с нами'
   }
 ]

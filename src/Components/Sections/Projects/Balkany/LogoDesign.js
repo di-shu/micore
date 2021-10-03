@@ -9,7 +9,7 @@ import {
   SectionTitle
 } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
-/* IMAGES */
+
 const LogoStory = '/images/Balkany/balkany_logo.svg'
 
 export const LogoDesign = () => {

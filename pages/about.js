@@ -1,6 +1,5 @@
 import React from 'react'
-import { AboutPage } from '~/Components/Pages'
-import { MainWrapper } from '~/Components/SectionsComponents'
+import { MainWrapper, AboutPage } from '../src/Components'
 
 const About = () => {
   return (

@@ -2,7 +2,7 @@ import React from 'react'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
-/* IMAGES */
+
 const Water = '/images/Marinist/Water.png'
 const LogoMinimized = '/images/Marinist/logo.png'
 

@@ -48,15 +48,15 @@ export const Quotes = [
   'Анимации очень ценятся на лендингах, но больше ценятся те, кто их делает. Берегите своих разработчиков!'
 ]
 
-export const Stages = [
-  { img: TZ, name: 'Составление технического задания' },
-  { img: DogovoriTZ, name: 'Подписание договора и тз' },
-  { img: Prototype, name: 'Создание прототипа сайта' },
-  { img: Design, name: 'Отрисовка дизайна' },
-  { img: Content, name: 'Подготовка контента' },
-  { img: Develop, name: 'Разработка сайта' },
-  { img: ContentFill, name: 'Наполнение контентом' },
-  { img: LoadSiteOnDomen, name: 'Загрузка сайта на домен' },
+export const Works = [
+  { img: TZ },
+  { img: DogovoriTZ },
+  { img: Prototype },
+  { img: Design },
+  { img: Content },
+  { img: Develop },
+  { img: ContentFill },
+  { img: LoadSiteOnDomen },
 ]
 
 export const StatueOptions = {

@@ -1,6 +1,5 @@
 import React from 'react'
-import { HomePage } from '~/Components/Pages'
-import { MainWrapper } from '~/Components/SectionsComponents'
+import { HomePage, MainWrapper } from '../src/Components'
 
 const Home = () => {
   return (

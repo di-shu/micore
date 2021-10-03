@@ -1,4 +1,5 @@
 import React from 'react'
+import useTranslation from 'next-translate/useTranslation'
 import {
   ServiceQuote,
   ServiceFeedback,
@@ -8,32 +9,30 @@ import {
   ServicePriceMiscalculations
 } from '../SectionsComponents'
 import {
-  Quotes,
-  Stages,
+  Works,
   MainStatue,
-  StatueOptions,
-  LandingStages
+  StatueOptions
 } from './Config/LandingPageConfigs'
 import { Services } from '../Config'
 
 export const LandingPage = () => {
+  const { t } = useTranslation('landing')
+  const quotes = t('quotes', {}, { returnObjects: true })
+  const workStages = t('works.list', {}, { returnObjects: true })
+  const priceStages = t('miscalculations', {}, { returnObjects: true })
+
   return (
     <>
       <ServiceMainSection
-        title="Landing page"
         statue={MainStatue}
         statueParams={StatueOptions}
-        desc="
-          Сегодня недостаточно только продукта. В комбинацию к нему нужны разработанные инструменты продаж. Если вы
-          планируете продавать в интернете товар или услугу - то для этой цели подойдёт лендинг.<br>
-          <br>
-          Мы создадим для вас продукт, который оценит целевая аудитории и выделит компанию среди конкурентов.
-        "
+        title={t('main.title')}
+        desc={t('main.description')}
       />
-      <ServicePriceMiscalculations stages={LandingStages}/>
-      <ServiceFeedback title="Получить первичный просчет в течении суток"/>
-      <ServiceQuote quotes={Quotes}/>
-      <ServiceWorkStages stages={Stages} title="Этапы работы"/>
+      <ServicePriceMiscalculations stages={priceStages}/>
+      <ServiceFeedback title={t('feedback_title')}/>
+      <ServiceQuote quotes={quotes}/>
+      <ServiceWorkStages stagesImages={Works} stages={workStages} title={t('works.title')}/>
       <ServiceShortPortfolio projects={Services.getLanding()}/>
     </>
   )

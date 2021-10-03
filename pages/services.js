@@ -1,6 +1,5 @@
 import React from 'react'
-import { ServicesPage } from '~/Components/Pages'
-import { MainWrapper } from '~/Components/SectionsComponents'
+import { MainWrapper, ServicesPage } from '../src/Components'
 
 const Services = () => (
   <MainWrapper id="services-page">

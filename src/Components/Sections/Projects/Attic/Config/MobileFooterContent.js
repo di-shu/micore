@@ -10,7 +10,7 @@ import {
 } from '../../../../SectionsComponents'
 import { AtticMobile } from './index'
 import { useDeviceDetect } from '../../../../../Helpers'
-/* IMAGES */
+
 const FooterHands = '/images/Attic/FooterHands.png'
 const FooterHandFirst = '/images/Attic/FooterHandFirst.png'
 const FooterHandSecond = '/images/Attic/FooterHandSecond.png'

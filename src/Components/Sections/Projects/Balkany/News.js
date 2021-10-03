@@ -6,7 +6,7 @@ import {
   SectionLine,
   SectionTitle
 } from '../../../SectionsComponents'
-/* IMAGES */
+
 const BalkanyMac = '/images/Balkany/balkany_mockup7.jpg'
 
 export const News = () => {

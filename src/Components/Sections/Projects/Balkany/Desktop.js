@@ -5,7 +5,7 @@ import {
   SectionLayout,
   SectionTitle
 } from '../../../SectionsComponents'
-/* IMAGES */
+
 const DesktopMac = '/images/Balkany/AboutDesktopMac.png'
 const DesktopMacFull = '/images/Balkany/balkany_mockup9.jpg'
 

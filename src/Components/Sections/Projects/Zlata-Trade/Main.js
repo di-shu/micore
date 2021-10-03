@@ -1,6 +1,6 @@
 import React from 'react'
 import { ImageWrapper, ProjectMainSection } from '../../../SectionsComponents'
-/* IMAGES */
+
 const EagleImg = '/images/ZlataProject/Eagle.png'
 const WheatImg = '/images/ZlataProject/Wheat.svg'
 

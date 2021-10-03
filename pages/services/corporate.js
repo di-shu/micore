@@ -1,7 +1,6 @@
 import React from 'react'
-import { CorporatePage } from '~/Components/Pages'
-import { MainWrapper } from '~/Components/SectionsComponents'
-import '~/Styles/Pages/Services/corporate.scss'
+import { MainWrapper, CorporatePage } from '../../src/Components'
+import '../../src/Styles/Pages/Services/corporate.scss'
 
 const Corporate = () => {
   return (

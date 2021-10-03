@@ -340,10 +340,14 @@
         margin-right: 0;
       }
 
-      &:hover {
+      &:hover, &.active {
         .switch-line {
           width: 12px;
           background-color: $accent-main;
+        }
+
+        .switch-name {
+          color: $accent-main;
         }
       }
 
@@ -411,7 +415,7 @@
       transform-origin: left top;
 
       .switch-link {
-        &:hover {
+        &:hover, &.active {
           .switch-line {
             width: 20px;
           }

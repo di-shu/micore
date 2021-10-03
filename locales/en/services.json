@@ -1,0 +1,34 @@
+{
+  "title": "Services",
+  "button_quote": "Generate",
+  "portfolio_button": "View project",
+  "portfolio_title": "Short portfolio",
+  "miscalculations_title": "Calculation stages",
+  "empty_quote": "Oops, quotes are over :(",
+  "price_title": "Prices <span>or why we don't name them</span>",
+  "price_subtitle": "Costing is a process that relies on communication between managers, designers and developers.",
+  "feedback": {
+    "name": "Name",
+    "phone": "Phone",
+    "button": "Send",
+    "message": "Message"
+  },
+  "services": {
+    "landing": {
+      "title": "Landing",
+      "description": "A landing page where we share the benefits of your product or service"
+    },
+    "corporate": {
+      "title": "Corporate web-site",
+      "description": "Websites for businesses of any size that solve ambitious business tasks"
+    },
+    "branding": {
+      "title": "Branding",
+      "description": "Full cycle of creating a complete branding of the company online and offline"
+    },
+    "other": {
+      "title": "Other",
+      "description": "Online stores, portals, CRM systems, logistics and other complex products"
+    }
+  }
+}

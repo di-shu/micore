@@ -5,7 +5,7 @@ import {
   SectionLayout,
   SectionTitle
 } from '../../../SectionsComponents'
-/* IMAGES */
+
 const Devices = '/images/Balkany/balkany_mockup6.png'
 const AboutSiteImg = '/images/Balkany/AboutSiteImage.jpg'
 

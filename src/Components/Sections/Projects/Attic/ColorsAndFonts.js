@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { FontExample, ImageWrapper, ProjectColor, SectionLayout, SectionTitle } from '../../../SectionsComponents'
 import { AtticColors } from './Config'
-/* IMAGES */
+
 const FontExample1 = '/images/Attic/attic_font_1.svg'
 const FontExample2 = '/images/Attic/attic_font_2.svg'
 const LogoGoldLine = '/images/Attic/LogoGoldLine.png'

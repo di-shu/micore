@@ -8,7 +8,7 @@ import {
   SectionWrapper
 } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
-/* IMAGES */
+
 const ServicesImg = '/images/PrideLogistic/pridelog_mockup3.jpg'
 const Device2 = '/images/PrideLogistic/pridelog_mockup4.jpg'
 const AllDevices = '/images/PrideLogistic/AllDevices.png'

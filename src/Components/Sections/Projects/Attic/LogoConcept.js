@@ -1,6 +1,6 @@
 import React from 'react'
 import { ImageWrapper, SectionLayout } from '../../../SectionsComponents'
-/* IMAGES */
+
 const LogoConceptImage = '/images/Attic/LogoConcept.svg'
 
 export const LogoConcept = () => {

@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { useDeviceDetect } from '../../../../Helpers'
 import { ImageWrapper, SectionDesc, SectionLayout, SectionTitle } from '../../../SectionsComponents'
-/* IMAGES */
+
 const Leaf = '/images/Bessarabskiy/Leaf.png'
 const Barrel = '/images/Bessarabskiy/Barrel.png'
 const LogoVar1 = '/images/Bessarabskiy/logo2.jpg'

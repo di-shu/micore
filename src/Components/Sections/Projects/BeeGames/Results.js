@@ -8,7 +8,7 @@ import {
   SectionLayout,
   ProjectInfoWrap
 } from '../../../SectionsComponents'
-/* IMAGES */
+
 const HexBlack = '/images/BeeGames/HexBlack.svg'
 const HexYellow = '/images/BeeGames/HexYellow.svg'
 const Honeycomb = '/images/BeeGames/Honeycomb.svg'

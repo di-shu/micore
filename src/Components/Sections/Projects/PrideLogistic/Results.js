@@ -10,7 +10,7 @@ import {
 } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
 import {PrideLColors} from "./Config";
-/* IMAGES */
+
 const LogoResult = '/images/PrideLogistic/LogoResult.png'
 
 export const Results = () => {

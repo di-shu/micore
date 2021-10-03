@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import { FooterSection } from '../Sections'
+import { useDeviceDetect } from '../../Helpers'
 import { FullPageWrapper, ScrollBox } from '../index'
 import { AboutMain } from '../Sections/AboutPage' //AboutTeam, Skills
-/* STYLES */
-import '~/Styles/Pages/about.scss'
-import { useDeviceDetect } from '../../Helpers'
+import '../../Styles/Pages/about.scss'
 
 const AboutSections = [
   { name: 'about-main', status: true, Component: AboutMain },

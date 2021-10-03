@@ -1,4 +1,5 @@
 import React from 'react'
+import { MainWrapper } from '../../src/Components'
 import {
   About,
   AboutSection,
@@ -8,9 +9,8 @@ import {
   Main,
   Philosophy
 } from '../../src/Components/Sections/Projects/VipYoga'
-import { MainWrapper } from '~/Components/SectionsComponents'
 /*STYLES*/
-import '~/Styles/Pages/Projects/vip-yoga.scss'
+import '../../src/Styles/Pages/Projects/vip-yoga.scss'
 
 const VipYoga = () => {
   return (

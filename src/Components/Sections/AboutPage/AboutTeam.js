@@ -5,8 +5,7 @@ import Col from 'react-bootstrap/Col'
 import { TeamList } from '../../Config'
 import { useDeviceDetect } from '../../../Helpers'
 import { ImageWrapper, SectionDesc, SectionTitle, SectionWrapper, TeamModal } from '../../../Components'
-/* STYLES */
-import '~/Styles/Sections/About/team.scss'
+import '../../../Styles/Sections/About/team.scss'
 
 const Slider = dynamic(() => import('react-slick'), { ssr: false })
 

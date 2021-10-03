@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Blob } from './Blob'
 import { AnimationClass } from '../../Helpers'
-/* IMAGES */
+
 const Apollo = '/images/BlobAnimation/Apollo.png?trace'
 const Mask = '/images/BlobAnimation/ApolloMask.svg?trace'
 const Blob1 = '/images/BlobAnimation/Blob1.svg?trace'

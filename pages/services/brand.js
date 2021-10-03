@@ -1,7 +1,6 @@
 import React from 'react'
-import { BrandPage } from '~/Components/Pages'
-import { MainWrapper } from '~/Components/SectionsComponents'
-import '~/Styles/Pages/Services/branding.scss'
+import { MainWrapper, BrandPage } from '../../src/Components'
+import '../../src/Styles/Pages/Services/branding.scss'
 
 const Brand = () => {
   return (

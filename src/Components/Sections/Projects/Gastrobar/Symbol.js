@@ -10,7 +10,7 @@ import {
   SectionWrapper
 } from '../../../SectionsComponents'
 import { useDeviceDetect } from '../../../../Helpers'
-/* IMAGES */
+
 const TShirt = '/images/Gastrobar/TShirt.png'
 const Hand = '/images/Gastrobar/HandIcon.svg'
 const Artbook = '/images/Gastrobar/Artbook.png'
