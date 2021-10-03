@@ -7,8 +7,9 @@
 
 # testing
 /coverage
-
-# next.js
+.user.ini
+.well-known
+ next.js
 /.next/
 
 # production
