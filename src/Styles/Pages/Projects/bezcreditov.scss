@@ -1,0 +1,369 @@
+@import "../../Static/index";
+
+#bezcreditov-project-page {
+  background-color: #fff;
+}
+
+#bezcreditov-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .section-image-wrap {
+    img {
+      object-fit: cover;
+      object-position: 80% center;
+    }
+  }
+
+  .project-section__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-image {
+    order: 1;
+    object-fit: contain;
+    width: 90%;
+  }
+}
+
+#bezcreditov-sitemap {
+  position: relative;
+  .wallet-image {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    max-width: 95px;
+    width: 100%;
+    img {
+      object-fit: contain;
+    }
+  }
+  .half-circle-image {
+    position: absolute;
+    max-width: 74px;
+    width: 100%;
+    right: 0;
+    bottom: -25px;
+    img {
+      object-fit: contain;
+    }
+  }
+}
+
+#bezcreditov-about {
+  background-color: transparent;
+  .about-main {
+    margin-left: auto;
+  }
+  .about-image {
+    height: 100%;
+  }
+}
+
+#bezcreditov-roadmap {
+  background-color: $bezcreditov-accent;
+}
+
+#bezcreditov-colorsAndFonts {
+  .colorsAndFonts-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+  }
+  .fonts-wrapper {
+    border: 1px solid #eeeeee;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  }
+  .fonts-block {
+    padding: 15px;
+    &__title {
+      font-size: 24px;
+      line-height: 33px;
+      margin-bottom: 30px;
+    }
+    &__light,
+    &__medium,
+    &__bold {
+      font-size: 16px;
+      line-height: 22px;
+      margin-top: 16px;
+    }
+    &__bold {
+      font-family: $museo-700;
+    }
+  }
+  .fonts-letter {
+    max-width: 202px;
+    width: 100%;
+    height: 174px;
+    object-fit: contain;
+  }
+  .colors-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+  }
+  .colors-block {
+    padding: 20px;
+    border: 1px solid #eeeeee;
+    border-radius: 16px;
+    &__info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+    &__title,
+    &__number {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    &__title {
+      font-family: $museo-700;
+    }
+    &__example {
+      width: 100%;
+      height: 54px;
+      border-radius: 8px;
+    }
+  }
+}
+
+#bezcreditov-landing {
+  background-color: $bezcreditov-accent;
+  .landing-content {
+    display: flex;
+    justify-content: space-between;
+    &__text {
+      display: none;
+      justify-content: space-between;
+      flex-direction: column;
+      padding-bottom: 130px;
+			margin-top: 50px;
+      p {
+        color: #fff;
+      }
+    }
+  }
+}
+
+#bezcreditov-purchase {
+  .bezcreditov-purchase-title {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .purchase-step {
+    font-family: $museo-700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+  }
+}
+
+#bezcreditov-account {
+  .bezcreditov-account-title {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+}
+
+#bezcreditov-purchase-history {
+  .purchase-main {
+    margin-left: auto;
+  }
+  .purchase-image {
+    height: 100%;
+  }
+}
+
+#bezcreditov-buyout-agreements {
+  .bezcreditov-buyout-agreements-title {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+}
+
+#bezcreditov-mobile-version {
+  .bezcreditov-mobile-version-title {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #bezcreditov-about,
+	#bezcreditov-purchase-history,
+	#bezcreditov-landing {
+    .section-wrapper {
+      padding-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #bezcreditov-about,
+	#bezcreditov-purchase-history {
+    .section-wrapper {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+@include media-breakpoint-up("md") {
+  #bezcreditov-sitemap {
+    .half-circle-image {
+      max-width: 145px;
+      bottom: -50px;
+    }
+    .wallet-image {
+      bottom: 50px;
+      max-width: 210px;
+    }
+  }
+  #bezcreditov-colorsAndFonts {
+    .fonts-block {
+      padding: 40px;
+      &__title {
+        font-size: 32px;
+        line-height: 44px;
+        margin-bottom: 30px;
+      }
+      &__light,
+      &__medium,
+      &__bold {
+        font-size: 20px;
+        line-height: 36px;
+        margin-top: 20px;
+      }
+      &__bold {
+        font-family: $museo-700;
+      }
+    }
+  }
+	#bezcreditov-landing {
+		.landing-content__text {
+			display: flex;
+		}
+	}
+	#bezcreditov-purchase {
+		.bezcreditov-purchase-title {
+			margin-bottom: 40px;
+		}
+		.purchase-step {
+			font-size: 32px;
+			line-height: 44px;
+		}
+	}
+	#bezcreditov-account {
+		.bezcreditov-account-title {
+			margin-bottom: 40px;
+		}
+	}
+	#bezcreditov-buyout-agreements {
+		.bezcreditov-buyout-agreements-title {
+			margin-bottom: 40px;
+		}
+	}
+	#bezcreditov-mobile-version {
+		.bezcreditov-mobile-version-title {
+			margin-bottom: 40px;
+		}
+	}
+}
+@include media-breakpoint-up("lg") {
+  #bezcreditov-main {
+    display: block;
+    .section-image-wrap img {
+      object-position: center center;
+    }
+    .project-section__container {
+      display: block;
+    }
+    .main-image {
+      position: absolute;
+      top: 10px;
+      height: 75vh;
+      width: 100%;
+    }
+  }
+  #bezcreditov-about {
+    .about-image {
+      position: absolute;
+      left: 0;
+      bottom: -7px;
+    }
+  }
+  #bezcreditov-colorsAndFonts {
+    .colorsAndFonts-wrap {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 30px;
+    }
+    .colors-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 30px;
+    }
+  }
+  #bezcreditov-purchase-history {
+    .purchase-image {
+      position: absolute;
+      left: 0;
+      bottom: -7px;
+    }
+  }
+}
+
+@include media-breakpoint-up("xl") {
+  #bezcreditov-sitemap {
+    .wallet-image {
+      bottom: 120px;
+      max-width: 305px;
+    }
+    .half-circle-image {
+      max-width: 255px;
+      bottom: -58px;
+    }
+  }
+  #bezcreditov-about {
+    .about-image {
+      bottom: -15px;
+      max-width: 900px;
+      margin: 0 0 0 auto;
+    }
+  }
+  #bezcreditov-colorsAndFonts {
+    .fonts-letter {
+      max-width: 313px;
+    }
+  }
+	#bezcreditov-landing {
+		.landing-content__text {
+			display: flex;
+		}
+		.section-title {
+			margin-bottom: 50px;
+		}
+	}
+  #bezcreditov-purchase-history {
+    .purchase-image {
+      bottom: -15px;
+      max-width: 900px;
+      margin: 0 0 0 auto;
+    }
+  }
+}

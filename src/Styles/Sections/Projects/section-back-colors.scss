@@ -1,0 +1,39 @@
+@import "../../Static/index";
+
+[id*="-project-page"] {
+  .col-item-back-color {
+    margin-bottom: 20px;
+  }
+
+  .back-color-info-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .back-color-wrap {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto;
+  }
+}
+
+@include media-breakpoint-up("lg") {
+  [id*="-project-page"] {
+    .col-item-back-color {
+      margin-bottom: 30px;
+    }
+
+    .back-color-info-wrap {
+      max-width: 100%;
+      align-items: flex-start;
+    }
+
+    .back-color-wrap {
+      width: 110px;
+      height: 110px;
+      margin: 0 !important;
+    }
+  }
+}
