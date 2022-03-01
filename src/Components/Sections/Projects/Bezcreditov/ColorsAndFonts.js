@@ -18,9 +18,9 @@ export const ColorsAndFonts = () => {
         <div className="fonts-wrapper">
           <div className="fonts-block">
             <div className="fonts-block__title">Aeroport</div>
-            <div className="fonts-block__light">light</div>
-            <div className="fonts-block__medium">medium</div>
-            <div className="fonts-block__bold">bold</div>
+            <div className="fonts-block__light">Light</div>
+            <div className="fonts-block__medium">Medium</div>
+            <div className="fonts-block__bold">Bold</div>
           </div>
 					<img src={fontLetterA} className="fonts-letter" />
         </div>

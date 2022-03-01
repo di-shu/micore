@@ -84,6 +84,7 @@
   .fonts-block {
     padding: 15px;
     &__title {
+			font-family: $aero-500;
       font-size: 24px;
       line-height: 33px;
       margin-bottom: 30px;
@@ -95,8 +96,14 @@
       line-height: 22px;
       margin-top: 16px;
     }
+		&__light {
+      font-family: $aero-300;
+    }
+		&__medium {
+      font-family: $aero-500;
+    }
     &__bold {
-      font-family: $museo-700;
+      font-family: $aero-700;
     }
   }
   .fonts-letter {
@@ -111,25 +118,28 @@
     grid-gap: 15px;
   }
   .colors-block {
-    padding: 20px;
+    padding: 15px;
     border: 1px solid #eeeeee;
     border-radius: 16px;
     &__info {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
     }
     &__title,
     &__number {
       font-size: 18px;
       line-height: 26px;
     }
+    &__number {
+			font-family: $aero-300;
+    }
     &__title {
-      font-family: $museo-700;
+      font-family: $aero-700;
     }
     &__example {
       width: 100%;
-      height: 54px;
+      height: 48px;
       border-radius: 8px;
     }
   }
@@ -175,6 +185,9 @@
     align-items: center;
     margin-bottom: 0;
   }
+	.account-img {
+		transform: translateX(12px) scale(1.1);
+	}
 }
 
 #bezcreditov-purchase-history {
@@ -250,10 +263,16 @@
         line-height: 36px;
         margin-top: 20px;
       }
-      &__bold {
-        font-family: $museo-700;
-      }
     }
+		.colors-block {
+			padding: 20px;
+			&__info {
+				margin-bottom: 16px;
+			}
+			&__example {
+				height: 54px;
+			}
+		}
   }
 	#bezcreditov-landing {
 		.landing-content__text {

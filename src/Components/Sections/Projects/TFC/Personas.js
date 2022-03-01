@@ -11,7 +11,7 @@ import { PersonasData } from "./Config";
 export const Personas = () => {
   return (
     <SectionLayout id="tfc-personas">
-      <SectionTitle title="Personas" />
+      <SectionTitle title="Персоны" />
       <div className="tfc-personas-items">
         <Row style={{ flexDirection: 'row', justifyContent: 'space-between'}}>
           {PersonasData.map((item, index) => (

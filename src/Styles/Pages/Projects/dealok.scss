@@ -44,12 +44,16 @@
     padding-top: 50px;
     padding-bottom: 0;
   }
+	.about-items {
+		padding-top: 0;
+	}
   .about-item {
     margin-bottom: 30px;
     &__title {
       font-size: 20px;
       line-height: 24px;
       margin-bottom: 15px;
+			font-family: $museo-700;
     }
     &__text {
       font-size: 14px;
@@ -85,7 +89,7 @@
   padding-bottom: 10px;
 }
 
-#bezcreditov-colorsAndFonts {
+#dealok-colorsAndFonts {
   .colorsAndFonts__inner {
     display: flex;
     justify-content: center;
@@ -113,22 +117,26 @@
   .fonts-block {
     padding: 15px;
     &__title {
+			font-family: $pragma-bold;
       font-size: 20px;
       line-height: 26px;
       margin-bottom: 15px;
     }
-    &__light,
-    &__medium,
-    &__bold {
+    &__book,
+    &__bold,
+    &__extended {
       font-size: 14px;
       line-height: 17px;
       margin-top: 16px;
     }
+    &__book {
+      font-family: $pragma-book;
+    }
     &__bold {
-      font-family: $museo-700;
+      font-family: $pragma-bold;
     }
     &__extended {
-      font-family: $museo-900;
+      font-family: $pragma-extended;
     }
   }
   .fonts-letter {
@@ -152,15 +160,14 @@
       margin-bottom: 12px;
     }
     &__title {
+			font-family: $pragma-bold;
       font-size: 16px;
       line-height: 20px;
     }
     &__number {
+			font-family: $pragma-book;
       font-size: 14px;
       line-height: 16.6px;
-    }
-    &__title {
-      font-family: $museo-700;
     }
     &__example {
       width: 100%;
@@ -227,6 +234,9 @@
     margin-bottom: 0;
   }
   .payment-images {
+		&__registration {
+			max-width: 1148px;
+		}
     &__autorization {
       margin: 5px 0 15px;
       display: flex;
@@ -297,6 +307,14 @@
   background-color: $dealok-accent;
 }
 
+@media screen and (max-width: 479px) {
+	#dealok-payment {
+		.payment-images__registration {
+			max-width: 309px;
+		}
+	}
+}
+
 @include media-breakpoint-up("md") {
   #dealok-about {
     .section-wrapper {
@@ -336,7 +354,7 @@
     }
     padding-bottom: 30px;
   }
-  #bezcreditov-colorsAndFonts {
+  #dealok-colorsAndFonts {
     .colorsAndFonts__main {
       max-width: 730px;
       width: 100%;
@@ -351,12 +369,13 @@
         line-height: 33px;
         margin-bottom: 30px;
       }
-      &__light,
-      &__bold,
-      &__extended {
-        font-size: 16px;
-        line-height: 22px;
-      }
+			&__book,
+			&__bold,
+			&__extended {
+				font-size: 20px;
+				line-height: 36px;
+				margin-top: 12px;
+			}
     }
     .fonts-letter {
       max-width: 202px;
@@ -446,8 +465,16 @@
   }
 }
 
+@include media-breakpoint-up("lg") {
+	#dealok-about {
+		.about-items {
+			padding-top: 15px;
+		}
+	}
+}
+
 @include media-breakpoint-up("xl") {
-  #bezcreditov-colorsAndFonts {
+  #dealok-colorsAndFonts {
     .colorsAndFonts__inner {
       justify-content: space-between;
       flex-direction: row;

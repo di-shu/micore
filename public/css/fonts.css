@@ -57,3 +57,63 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+	font-family: 'Aeroport Light';
+	src: local('Aeroport Light'), local('Aeroport-Light'),
+			url('../fonts/Aeroport/Aeroport-Light.woff2') format('woff2'),
+			url('../fonts/Aeroport/Aeroport-Light.woff') format('woff'),
+			url('../fonts/Aeroport/Aeroport-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Aeroport Medium';
+	src: local('Aeroport Medium'), local('Aeroport-Medium'),
+			url('../fonts/Aeroport/Aeroport-Medium.woff2') format('woff2'),
+			url('../fonts/Aeroport/Aeroport-Medium.woff') format('woff'),
+			url('../fonts/Aeroport/Aeroport-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Aeroport Bold';
+	src: local('Aeroport Bold'), local('Aeroport-Bold'),
+			url('../fonts/Aeroport/Aeroport-Bold.woff2') format('woff2'),
+			url('../fonts/Aeroport/Aeroport-Bold.woff') format('woff'),
+			url('../fonts/Aeroport/Aeroport-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Pragmatica Book';
+	src: local('Pragmatica Book'), local('Pragmatica-Book'),
+			url('../fonts/Pragmatica/Pragmatica-Book.woff2') format('woff2'),
+			url('../fonts/Pragmatica/Pragmatica-Book.woff') format('woff'),
+			url('../fonts/Pragmatica/Pragmatica-Book.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Pragmatica Bold';
+	src: local('Pragmatica Bold'), local('Pragmatica-Bold'),
+			url('../fonts/Pragmatica/Pragmatica-Bold.woff2') format('woff2'),
+			url('../fonts/Pragmatica/Pragmatica-Bold.woff') format('woff'),
+			url('../fonts/Pragmatica/Pragmatica-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Pragmatica Extended';
+	src: local('Pragmatica Extended Bold'), local('Pragmatica-Extended-Bold'),
+			url('../fonts/Pragmatica/PragmaticaExtended-Bold.woff2') format('woff2'),
+			url('../fonts/Pragmatica/PragmaticaExtended-Bold.woff') format('woff'),
+			url('../fonts/Pragmatica/PragmaticaExtended-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}

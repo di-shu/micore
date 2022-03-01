@@ -11,7 +11,7 @@ export const Bottom = () => {
         return (
           <>
             <ImageWrapper src={BottomBg}/>
-            <BottomNavigation link="svoydom.od.com.ua" />
+            <BottomNavigation link="svoydom.od.ua" />
           </>
         )
       }}

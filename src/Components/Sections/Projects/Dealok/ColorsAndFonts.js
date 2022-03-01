@@ -11,7 +11,7 @@ const Phone = "/images/Dealok/phone.png";
 
 export const ColorsAndFonts = () => {
   return (
-    <SectionLayout id="bezcreditov-colorsAndFonts">
+    <SectionLayout id="dealok-colorsAndFonts">
       <div className="colorsAndFonts__inner">
         <ImageWrapper src={Phone} className="phone" />
         <div className="colorsAndFonts__main">
@@ -19,9 +19,9 @@ export const ColorsAndFonts = () => {
           <div className="fonts-wrapper">
             <div className="fonts-block">
               <div className="fonts-block__title">Pragmatica</div>
-              <div className="fonts-block__light">Book</div>
-              <div className="fonts-block__medium">Bold</div>
-              <div className="fonts-block__bold">Extended</div>
+              <div className="fonts-block__book">Book</div>
+              <div className="fonts-block__bold">Bold</div>
+              <div className="fonts-block__extended">Extended</div>
             </div>
             <img src={fontLetterA} className="fonts-letter" />
           </div>

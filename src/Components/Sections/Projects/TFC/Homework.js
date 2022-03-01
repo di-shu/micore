@@ -15,13 +15,11 @@ export const Homework = () => {
     <SectionLayout id="tfc-homework" Footer={() => <ImageWrapper src={HomeworkBg} className="system-img" />}>
       <Row className="tfc-homework-items">
         <Col xl={6}>
-          <SectionTitle title="Homework" />
+          <SectionTitle title="Домашка" />
         </Col>
         <Col xl={6}>
           <SectionDesc>
-            Цветовое палитра представлена тремя цветами: лазурный бирюзовый -
-            цвет морской волны, темно-коричневый - выделяет шрифтовую часть,
-            изумрудный морской - используется в качестве фона.
+						Работа учителя над домашним заданием проходит по логике: мы выбираем группу, урок, к которому прилагается домашнее задание, ученика и смотрим его прикреплённое домашнее задание. Ставим оценку.
           </SectionDesc>
         </Col>
       </Row>

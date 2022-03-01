@@ -5,10 +5,10 @@ export const About = () => {
   return (
     <ProjectAboutSection
       isOverflow
-      year="September, 2020"
-      name="First Step Platform"
+      year="сентябрь, 2020"
+      name="TFC Platform"
       link="closed system"
-      description="When quarantine started, most of the companies were not ready for it. Our client - an English school, at the beginning used Zoom. They contacted us with the goal of developing a platform for online english studying: schedule, homeworks, grades, etc."
+      description="Когда начался карантин, большинство компаний оказались к нему не готовы. Наш клиент - английская школа, в начале использовала Zoom. К нам обратились с целью разработать платформу для онлайн изучения английского языка: расписание, домашние задания, оценки и т.д."
     />
   )
 }

@@ -11,6 +11,10 @@ const ZlataTradeImage = '/images/Portfolio/zlata-trade.jpg'
 const VladyDesignImage = '/images/Portfolio/vlady.jpg'
 const PrideLogisticImage = '/images/Portfolio/pridelogistics.jpg'
 const ManticoreImage = '/images/Portfolio/manticore_preview.jpg'
+const DealokImage = '/images/Portfolio/dealok.jpg'
+const BezcreditovImage = '/images/Portfolio/bezcreditov.jpg'
+const TfcImage = '/images/Portfolio/tfc.jpg'
+const MyHouseImage = '/images/Portfolio/my_house.jpg'
 
 export const Sizes = {
   getIterations: function (matches, index) {
@@ -103,6 +107,26 @@ export const NewProjectsList = {
       img: ManticoreImage,
       title: 'Manticore Development',
       link: '/projects/manticore'
+    },
+    dealok: {
+      img: DealokImage,
+      title: 'Dealok',
+      link: '/projects/dealok'
+    },
+    bezcreditov: {
+      img: BezcreditovImage,
+      title: 'Bezcreditov',
+      link: '/projects/bezcreditov'
+    },
+    tfc: {
+      img: TfcImage,
+      title: 'TFC',
+      link: '/projects/tfc'
+    },
+    my_house: {
+      img: MyHouseImage,
+      title: 'My House',
+      link: '/projects/my-house'
     }
   },
   getExcept: function (keys) {
@@ -167,13 +191,13 @@ export const Portfolios = {
     return Object.values(NewProjectsList.getALl())
   },
   getWebSites: function () {
-    return Object.values(NewProjectsList.getByKeys(['zlata_trade', 'fcbalkans', 'pride_logistic', 'vlady', 'bessarabskiy', 'marinist']))
+    return Object.values(NewProjectsList.getByKeys(['zlata_trade', 'fcbalkans', 'pride_logistic', 'vlady', 'bessarabskiy', 'marinist', 'dealok', 'bezcreditov', 'tfc', 'my_house']))
   },
   getUIUX: function () {
     return Object.values(NewProjectsList.getByKeys(['bee_games', 'attic']))
   },
   getBranding: function () {
-    return Object.values(NewProjectsList.getExcept(['bee_games']))
+    return Object.values(NewProjectsList.getExcept(['bee_games', 'bezcreditov', 'tfc', 'my_house']))
   }
 }
 

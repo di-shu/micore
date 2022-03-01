@@ -5,39 +5,39 @@ const PersonasImg3 = '/images/TFC/Personas/PersonasImg3.jpg'
 export const DesignProcesses = [
   {
     number: 1,
-    title: "Primary research",
+    title: "Первичные исследования",
     descr:
-      "First of all we listened to the client’s problems. We studied their business processes and working methods to better understand their company.",
+      "В первую очередь мы выслушали проблемы клиента. Мы изучили их бизнес-процессы и методы работы, чтобы лучше понять их компанию.",
   },
   {
     number: 2,
-    title: "Personas",
+    title: "Составление персон",
     descr:
-      "We compiled portraits of future users of the system. It was important for us to understand who we are making the system for.",
+      "Мы составили портреты будущих пользователей системы. Нам было важно понять, для кого мы делаем систему.",
   },
   {
     number: 3,
-    title: "User Stories",
+    title: "Сценарии использования",
     descr:
-      "After the audience investigation, we found many new details of studying from our client.",
+      "После исследования аудитории мы узнали много новых подробностей обучения у нашего клиента.",
   },
   {
     number: 4,
-    title: "Site-map & User-flow",
+    title: "Составление структуры",
     descr:
-      "Then we worked on the structure and created a user-flow for three different user accounts: admin, teacher and student.",
+      "Затем мы поработали над структурой и создали пользовательский поток для трех разных учетных записей пользователей: администратора, учителя и ученика.",
   },
   {
     number: 5,
-    title: "Wireframes",
+    title: "Варфреймы",
     descr:
-      "We created low-fidelity prototypes to approve the approach to platform navigation with the client, as well as save time.",
+      "Мы создали низкоточные прототипы, чтобы согласовать с клиентом подход к навигации по платформе, а также сэкономить время.",
   },
   {
     number: 6,
-    title: "UI design",
+    title: "UI дизайн",
     descr:
-      "After the UX platform was approved, we compiled the UI design of all cabinets and optimized it for mobile devices and tablets.",
+      "После утверждения платформы UX мы составили UI-дизайн всех кабинетов и оптимизировали его для мобильных устройств и планшетов.",
   },
 ];
 

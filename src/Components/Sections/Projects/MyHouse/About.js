@@ -5,10 +5,10 @@ export const About = () => {
   return (
     <ProjectAboutSection
       isOverflow
-      year="September, 2020"
-      name="My House"
-      link="svoydom.od.com.ua"
-      description="My House is a developer of residential complexes and housing estates. The client contacted our company to develop a website which would show its openness and transparency to tenants. Furthermore, it would have to fulfill the marketing goals of the company."
+      year="сентябрь, 2020"
+      name="Свой дом"
+      link="svoydom.od.ua"
+      description="Свой Дом - это застройщик жилых комплексов и жилых массивов. Клиент пришёл к нам с задачей реализовать сайт, который бы отражал их открытость и прозрачность к жильцам. А также выполнял маркетинговые цели компании."
     />
   )
 }
