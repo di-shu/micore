@@ -60,7 +60,12 @@
   }
   .about-image {
     height: 100%;
+		transform: scale(1.1);
+		margin-bottom: -11%;
   }
+	.section-desc {
+		margin-bottom: 0;
+	}
 }
 
 #bezcreditov-roadmap {
@@ -324,7 +329,10 @@
     .about-image {
       position: absolute;
       left: 0;
-      bottom: -7px;
+      bottom: -55px;
+			height: 380px;
+			margin-bottom: 0;
+			transform: scale(1);
     }
   }
   #bezcreditov-colorsAndFonts {
@@ -360,9 +368,10 @@
   }
   #bezcreditov-about {
     .about-image {
-      bottom: -15px;
-      max-width: 900px;
-      margin: 0 0 0 auto;
+      bottom: -82px;
+			max-width: 900px;
+			margin: 0 0 0 auto;
+			height: 560px;
     }
   }
   #bezcreditov-colorsAndFonts {

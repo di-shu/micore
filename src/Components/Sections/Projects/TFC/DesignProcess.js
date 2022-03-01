@@ -11,7 +11,7 @@ import { DesignProcesses } from "./Config";
 export const DesignProcess = () => {
   return (
     <SectionLayout id="tfc-design-process">
-      <SectionTitle title="Design process" />
+      <SectionTitle title="Дизайн-процесс" />
       <div className="tfc-design-process-items">
         <Row style={{ flexDirection: 'row', justifyContent: 'space-between'}}>
           {DesignProcesses.map((item, index) => (
