@@ -1,0 +1,131 @@
+@import "../../Static/index";
+
+#my-house-project-page {
+  .section-wrapper {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  #about-projects-section {
+    .section-wrapper {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+}
+
+#my-house-main {
+  background-color: $myhouse-accent;
+
+	.section-wrapper {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .section-background {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    bottom: unset;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+  }
+
+  .section-desc {
+    margin-bottom: 25px !important;
+  }
+
+  img {
+    padding: 0 58px;
+  }
+}
+
+#mvp-version-logo-design {
+  .section-wrapper {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .section-desc {
+    margin-bottom: 30px;
+  }
+}
+
+.my-house-prime-items,
+.my-house-adaptation-items,
+.my-house-services-items,
+.my-house-objects-items {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#my-house-bottom {
+  background-color: $myhouse-accent;
+}
+
+@include media-breakpoint-up("md") {
+  #mvp-version-logo-design {
+    .section-desc {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include media-breakpoint-up("lg") {
+}
+
+@include media-breakpoint-up("xl") {
+  #my-house-main {
+    .section-background {
+      left: 0;
+      width: unset;
+      margin: 0 auto;
+      bottom: auto;
+      transform: none;
+      height: 65%;
+      top: 6%;
+
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+  #my-house-project-page {
+    .section-wrapper {
+      padding-top: 120px;
+      padding-bottom: 80px;
+    }
+    #about-projects-section {
+      .section-wrapper {
+        padding-top: 120px;
+        padding-bottom: 120px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  #my-house-prime {
+    .section-title {
+      margin-bottom: 0 !important;
+    }
+    .section-desc {
+      margin-bottom: 0 !important;
+    }
+  }
+  .my-house-prime-items,
+  .my-house-adaptation-items,
+  .my-house-services-items,
+  .my-house-objects-items {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+@include media-breakpoint-up("xxl") {
+  #my-house-project-page {
+    .section-wrapper {
+      padding-top: 160px;
+      padding-bottom: 80px;
+    }
+  }
+}
