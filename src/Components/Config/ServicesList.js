@@ -1,27 +1,27 @@
-const OtherImage = '/images/Services/Other.png'
-const BrandingImage = '/images/Services/Branding.png'
-const CorporateImage = '/images/Services/Corporate.png'
-const LandingImage = '/images/Services/LandingImage.png'
+const OtherImage = "/images/Services/Other.png";
+const BrandingImage = "/images/Services/Branding.png";
+const CorporateImage = "/images/Services/Corporate.png";
+const LandingImage = "/images/Services/LandingImage.png";
 
 export const ServicesList = [
   {
-    key: 'landing',
+    key: "landing",
     img: LandingImage,
-    link: '/services/landing'
+    link: "/services/landing",
   },
   {
-    key: 'corporate',
-    img: CorporateImage,
-    link: '/services/corporate'
-  },
-  {
-    key: 'branding',
+    key: "branding",
     img: BrandingImage,
-    link: '/services/brand'
+    link: "/services/brand",
   },
   {
-    key: 'other',
+    key: "corporate",
+    img: CorporateImage,
+    link: "/services/corporate",
+  },
+  {
+    key: "other",
     img: OtherImage,
-    link: '/services/other',
-  }
-]
+    link: "/services/other",
+  },
+];

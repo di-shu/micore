@@ -3,23 +3,28 @@
 @keyframes main-dots-first-load {
   from {
     opacity: 0;
-    transform: translate(-50px, 0);
+    //transform: translate(-50px, 0);
   }
   to {
     opacity: 0.5;
-    transform: translate(0, 0);
+    //transform: translate(0, 0);
   }
 }
 
 #main-page {
   .section-dots-wrap {
     position: absolute;
-    opacity: 0.5;
-    transition: all 1s $timing-func;
+    // transition: all 1s $timing-func;
+  }
+
+  .scroll-box {
+    &.on-first-load {
+      animation: common-fade-up 0.4s $timing-func 1.3s both;
+    }
   }
 }
 
-@include media-breakpoint-up('md') {
+@include media-breakpoint-up("md") {
   #main-page {
     .socials-wrap {
       position: absolute;
@@ -32,15 +37,15 @@
         margin-right: 95px;
 
         &.on-first-load {
-          animation: social-on-first-load 3s $timing-func 0.3s both;
+          animation: social-on-first-load 0.4s $timing-func 1.3s both;
 
-          &:nth-child(2) {
-            animation-delay: 0.4s;
-          }
+          // &:nth-child(2) {
+          //   animation-delay: 0.4s;
+          // }
 
-          &:nth-child(3) {
-            animation-delay: 0.5s;
-          }
+          // &:nth-child(3) {
+          //   animation-delay: 0.5s;
+          // }
         }
 
         &:last-child {
@@ -58,7 +63,7 @@
   }
 }
 
-@include media-breakpoint-up('lg') {
+@include media-breakpoint-up("lg") {
   #main-page {
     .socials-wrap {
       left: 50px;
@@ -82,26 +87,36 @@
   }
 }
 
-@include media-breakpoint-up('xl') {
+@include media-breakpoint-up("xl") {
   #main-page {
-    .section-dots-wrap {
+    // .col-info {
+    //   &.on-leave {
+    //     animation: section-content-on-leave 1s $timing-func both;
+    //   }
+    // }
+
+    .socials-wrap {
       position: fixed;
-      width: 515px;
-      height: 515px;
-      top: 180px;
-      left: 200px;
+      left: 60px;
+      bottom: 40px;
+    }
+
+    .section-dots-wrap {
+      position: absolute;
+      width: 272px;
+      height: 272px;
       z-index: 0;
 
       &.on-first-load {
-        animation: main-dots-first-load 3s $timing-func 0s both;
+        //animation: main-dots-first-load 3s $timing-func 0s both;
       }
 
       &.on-enter {
-        animation: dots-on-enter 1s $timing-func 0s both;
+        //animation: dots-on-enter 1s $timing-func 0s both;
       }
 
       &.on-leave {
-        animation: dots-on-leave 1s $timing-func 0s both;
+        //animation: dots-on-leave 1s $timing-func 0s both;
       }
     }
 

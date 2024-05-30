@@ -1,16 +1,19 @@
-import React from 'react'
-import { AnimatePresence } from 'framer-motion'
-import { Header } from '../src/Components'
+import React from "react";
+import { AnimatePresence } from "framer-motion";
+import { Header } from "../src/Components";
+import StoreProvider from "../redux/StoreProvider";
 
 const App = ({ Component, pageProps, router }) => {
   return (
     <>
-      <Header/>
       <AnimatePresence exitBeforeEnter>
-        <Component key={router.route} {...pageProps}/>
+        <StoreProvider>
+          <Header />
+          <Component key={router.route} {...pageProps} />
+        </StoreProvider>
       </AnimatePresence>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

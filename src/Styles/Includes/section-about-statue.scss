@@ -1,0 +1,61 @@
+.about-statue {
+  position: absolute;
+  width: 357px;
+  right: -55px;
+  top: 1020px;
+  z-index: 1;
+
+  .statue-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@include media-breakpoint-up("md") {
+  .about-statue {
+    left: auto;
+    bottom: 0;
+    right: -155px;
+    width: 570px;
+  }
+}
+@include media-breakpoint-up("lg") {
+  .about-statue {
+    left: unset;
+    top: unset;
+    bottom: -30px;
+    right: -100px;
+  }
+}
+@include media-breakpoint-up("xl") {
+  .about-statue {
+    position: fixed;
+    width: auto;
+    height: 80.17vh;
+    bottom: -100%;
+    right: 60px;
+
+    &.on-enter {
+      animation: statue-about-on-enter 1.2s $timing-func 0s both;
+    }
+
+    &.on-leave {
+      animation: statue-about-on-leave 1.2s $timing-func 0s both;
+    }
+
+    &.on-right-leave {
+      animation: statue-about-on-right-leave 1.2s $timing-func 0s both;
+    }
+
+    &.on-right-enter {
+      animation: statue-about-on-right-enter 1.2s $timing-func 0s both;
+    }
+
+    &.leave-at-bottom {
+      bottom: 0;
+    }
+
+    img {
+      object-fit: contain;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+#other-section {
+  .home-portfolio-section {
+    padding-bottom: 64px;
+  }
+  .portfolio {
+    margin-bottom: 20px;
+  }
+  .slick-slider {
+    padding-right: 60px;
+    margin: 0 -15px;
+  }
+  .slick-list {
+    overflow: visible !important;
+
+    .slick-track {
+      display: flex;
+    }
+    .slick-slide {
+      width: 96.66vw !important;
+      padding: 0 15px !important;
+    }
+  }
+}

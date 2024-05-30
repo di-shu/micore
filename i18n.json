@@ -1,14 +1,43 @@
 {
-  "locales": ["en", "ru", "ua"],
+  "locales": [
+    "en",
+    "ru",
+    "ua"
+  ],
   "defaultLocale": "en",
   "pages": {
-    "*": ["common", "menu", "footer"],
-    "/": ["home", "about", "services"],
-    "/about": ["about"],
-    "/services": ["services"],
-    "/services/landing": ["services", "landing"],
-    "/services/corporate": ["services", "corporate"],
-    "/services/brand": ["services", "branding"],
-    "/services/other": ["services", "other"]
+    "*": [
+      "common",
+      "menu",
+      "footer"
+    ],
+    "/": [
+      "home",
+      "about",
+      "services",
+      "benefits"
+    ],
+    "/about": [
+      "about"
+    ],
+    "/services": [
+      "services"
+    ],
+    "/services/landing": [
+      "services",
+      "landing"
+    ],
+    "/services/corporate": [
+      "services",
+      "corporate"
+    ],
+    "/services/brand": [
+      "services",
+      "branding"
+    ],
+    "/services/other": [
+      "services",
+      "other"
+    ]
   }
 }

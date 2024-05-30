@@ -1,62 +1,25 @@
 @import "../../Static/index";
 
-#main-section {
-  height: 100vh;
-  position: relative;
+.statue-wrap {
+  position: absolute;
+  top: 353px;
+  right: 15px;
+  width: 100%;
+  max-width: 191px;
+  margin: 0 auto;
+  z-index: 1;
 
-  .fp-scroller {
-    height: 100%;
-  }
+  &.on-first-load {
+    animation: statue-on-first-load-mobile 1.2s $timing-func 0.5s both;
 
-  .container-fluid {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    height: 100%;
-  }
-
-  .section-dots-wrap {
-    top: 43%;
-    left: 10px;
-    width: 280px;
-    height: 280px;
-    opacity: 0;
-    transform: translate(-50px, 0);
-
-    &.on-first-load {
-      opacity: 0.5;
-      transform: translate(0, 0);
+    @include media-breakpoint-up("lg") {
+      animation-name: statue-on-first-load;
     }
   }
 
-  .col-info {
-    position: absolute;
-    top: 45%;
-    left: 0;
-    transform: translateY(-50%);
-    z-index: 6;
-
-    &.on-first-load {
-      animation: titles-on-first-load 3s $timing-func 0.3s both;
-    }
-  }
-
-  .statue-wrap {
-    position: relative;
+  img {
     width: 100%;
-    max-width: 290px;
-    margin: 0 auto;
-    z-index: 1;
-
-    &.on-first-load {
-      animation: statue-on-first-load 3s $timing-func 0.3s both;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
+    height: 100%;
   }
 
   .statue {
@@ -81,35 +44,117 @@
     height: 100%;
     transition: transform 1.5s cubic-bezier(0.64, 0.04, 0.35, 1);
   }
+}
 
-  .title, .sub-title {
-    text-align: center;
+#main-section {
+  height: 100vh;
+  position: relative;
+
+  .fp-scroller {
+    height: 100%;
   }
 
-  .title {
-    font-size: 40px;
-    margin-bottom: 0;
+  .container-fluid {
+    height: 100%;
+  }
+
+  .section-dots-wrap {
+    top: -10px;
+    left: 15px;
+    width: 160px;
+    height: 160px;
+    z-index: -1;
+
+    &.on-first-load {
+      animation: common-fade-up 0.4s $timing-func 1.3s both;
+    }
+  }
+
+  .title-container {
+    &.on-first-load * {
+      animation-delay: 0.1s;
+      animation-duration: 0.9s;
+    }
+  }
+
+  .col-info {
+    position: relative;
+    top: 91px;
+    padding: 0 30px;
+    left: 0;
+    z-index: 6;
   }
 
   .sub-title {
-    font-size: 20px;
-    letter-spacing: -0.22px;
+    &.on-first-load {
+      animation: text-on-fade-up 0.8s $timing-func both;
+    }
+  }
+
+  .title,
+  .sub-title {
+    text-align: left;
+  }
+
+  .title {
+    font-size: 36px;
+    margin-bottom: 0;
+  }
+
+  .title-container {
+    margin-bottom: 16px;
+  }
+
+  .sub-title {
+    font-size: 16px;
     text-transform: none;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     font-family: $museo-100;
 
     span {
       color: $accent-main;
     }
   }
+
+  .section-title.title::first-letter {
+    color: $accent-main;
+  }
+
+  .description {
+    line-height: 24px;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+
+    &.on-first-load {
+      animation: text-on-fade-up 0.8s $timing-func 0.35s both;
+    }
+  }
+
+  .alternative-button {
+    &.on-first-load {
+      animation: text-on-fade-up 0.8s $timing-func 0.6s both;
+    }
+  }
 }
 
-@include media-breakpoint-up('md') {
+@include media-breakpoint-up("md") {
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .statue-wrap {
+    margin-right: 50px;
+    max-width: 440px;
+  }
+
   #main-section {
-    .statue-wrap {
-      margin-right: 50px;
-      max-width: 440px;
-    }
+    //  .statue-wrap {
+    //   margin-right: 50px;
+    //   max-width: 440px;
+    // }
 
     .section-dots-wrap {
       width: 545px;
@@ -119,8 +164,10 @@
       left: 120px;
     }
 
-    .title, .sub-title {
-      margin-left: 105px;
+    .title-container,
+    .sub-title,
+    .description {
+      margin-left: 180px;
       text-align: unset;
     }
 
@@ -134,7 +181,7 @@
   }
 }
 
-@include media-breakpoint-up('lg') {
+@include media-breakpoint-up("lg") {
   #main-section {
     .col-info {
       position: relative;
@@ -151,65 +198,102 @@
       bottom: auto;
       width: 500px;
       height: 500px;
+      top: 70px;
+      left: 170px;
 
       &.on-first-load {
-        transform: translate(0, -50%);
+        animation: common-fade-up 3s $timing-func 0s both;
       }
     }
+  }
 
-    .statue-wrap {
-      max-width: 395px;
-      margin-right: auto;
-    }
+  .statue-wrap {
+    max-width: 395px;
+    margin-right: auto;
   }
 }
 
-@include media-breakpoint-up('xl') {
-  #main-section {
-    .statue-wrap {
-      isolation: isolate;
-      max-width: 500px;
-      height: 85vh;
+@include media-breakpoint-up("xl") {
+  .statue-wrap {
+    isolation: isolate;
+    max-width: 500px;
+    height: 76.19vh;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: $statue-pos-right;
 
-      &.on-enter {
-        animation: statue-on-enter 1s $timing-func 0s both;
-      }
-
-      &.on-leave {
-        animation: statue-on-leave 1s $timing-func 0s both;
-      }
-
-      .statue {
-        object-fit: contain;
-      }
+    &.on-enter {
+      animation: statue-on-enter 1.2s $timing-func 0s both;
     }
+
+    &.on-leave {
+      animation: statue-on-leave 1.2s $timing-func 0s both;
+    }
+
+    .statue {
+      object-fit: contain;
+    }
+  }
+
+  #main-section {
+    // .statue-wrap {
+    //   isolation: isolate;
+    //   max-width: 500px;
+    //   height: 85vh;
+    //   position: fixed;
+    //   top: 50%;
+    //   transform: translateY(-50%);
+    //   right: -185px;
+
+    //   &.on-enter {
+    //     animation: statue-on-enter 1s $timing-func 0s both;
+    //   }
+
+    //   &.on-leave {
+    //     animation: statue-on-leave 1s $timing-func 0s both;
+    //   }
+
+    //   .statue {
+    //     object-fit: contain;
+    //   }
+    // }
 
     .col-info {
-      &.on-enter {
-        animation: titles-on-enter 1s $timing-func 0s both;
+      &.on-first-load {
+        animation: common-fade-up 1s $timing-func 0s both;
       }
-
-      &.on-leave {
-        animation: titles-on-leave 1s $timing-func 0s both;
-      }
-    }
-
-    .section-dots-wrap {
-      width: 520px;
-      height: 520px;
-    }
-
-    .title, .sub-title {
-      transform: translateY(-60px);
     }
 
     .title {
-      font-size: 90px;
+      font-size: 82px;
+      letter-spacing: 2px;
+      margin-bottom: 0;
+    }
+
+    .title-container {
+      margin-bottom: 32px;
+    }
+
+    .description {
+      font-size: 18px;
+      line-height: 36px;
+      letter-spacing: 2px;
+      margin-bottom: 40px;
+
+      span {
+        text-decoration: underline;
+        color: $accent-main;
+      }
     }
 
     .sub-title {
-      font-size: 40px;
-      margin-bottom: 0;
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .alternative-button {
+      margin-left: 180px;
     }
   }
 }

@@ -1,0 +1,28 @@
+@include media-breakpoint-up("xl") {
+  .alternative-nav-wrapper {
+    position: fixed;
+    top: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: calc(infinity);
+  }
+  .alternative-nav {
+    &.header-nav-on-leave {
+      animation: header-nav-on-leave 1s $timing-func both;
+    }
+  }
+  .alternative-nav-link {
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-right: 60px;
+    transition: all 0.5s $timing-func;
+
+    &:hover {
+      color: $accent-main;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

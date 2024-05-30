@@ -31,7 +31,7 @@
 
 .scroll-box {
   position: fixed;
-  bottom: 60px;
+  bottom: 40px;
   left: 50%;
   width: 18px;
   height: 30px;
@@ -42,15 +42,15 @@
   &.on-first-load {
     animation: scroll-box-on-first-load 3s $timing-func both;
   }
-  
+
   &.is-black {
     border-color: $accent-black;
-    
+
     span {
       background-color: $accent-black;
     }
   }
-  
+
   span {
     display: block;
     position: absolute;

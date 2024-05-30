@@ -1,21 +1,27 @@
-const fbIcon = '/images/facebook.svg'
-const instIcon = '/images/instagram.svg'
-const beIcon = '/images/behance.svg'
+const fbIcon = "/images/facebook.svg";
+const fbIconGray = "/images/facebook-gray.svg";
+const instIcon = "/images/instagram.svg";
+const instIconGray = "/images/instagram-gray.svg";
+const beIcon = "/images/behance.svg";
+const beIconGray = "/images/behance-gray.svg";
 
 export const Socials = [
   {
     src: fbIcon,
-    label: 'Facebook',
-    href: 'https://www.facebook.com/micorestudio'
+    srcGray: fbIconGray,
+    label: "Facebook",
+    href: "https://www.facebook.com/micorestudio",
   },
   {
     src: instIcon,
-    label: 'Instagram',
-    href: 'https://www.instagram.com/manticoredev'
+    srcGray: instIconGray,
+    label: "Instagram",
+    href: "https://www.instagram.com/manticoredev",
   },
   {
     src: beIcon,
-    label: 'Behance',
-    href: 'https://www.behance.net/micore'
-  }
-]
+    srcGray: beIconGray,
+    label: "Behance",
+    href: "https://www.behance.net/micore",
+  },
+];

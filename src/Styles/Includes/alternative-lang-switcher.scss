@@ -1,0 +1,37 @@
+@include media-breakpoint-up("xl") {
+  .alternative-lang-switcher-wrapper {
+    z-index: calc(infinity);
+    position: fixed;
+    top: 48px;
+    right: 60px;
+  }
+  .alternative-lang-switcher {
+    display: flex;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    &.header-lang-switcher-on-leave {
+      animation: header-right-fade-out 1s $timing-func both;
+    }
+  }
+  .locale-link {
+    color: $gray;
+    transition: all 0.5s $timing-func;
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      color: $accent-main;
+    }
+
+    &.active {
+      color: $white !important;
+
+      pointer-events: none;
+    }
+  }
+}

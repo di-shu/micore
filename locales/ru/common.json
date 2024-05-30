@@ -2,8 +2,10 @@
   "prev": "Назад",
   "next": "Вперед",
   "our_works": "Наши работы",
+  "see_works": "Смотреть работы",
   "back_projects": "Назад к проектам",
   "portfolio_view": "Посмотреть проект",
+  "see_project": "Смотреть кейс",
   "title": "MantiCore Development: разработка веб-сайтов и брендинга",
   "modal_success": {
     "button": "Окей",

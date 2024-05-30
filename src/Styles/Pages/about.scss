@@ -1,8 +1,6 @@
 @import "../Static/index";
 
-
 #about-page {
-
   .section-dots-wrap {
     opacity: 0.2;
   }
@@ -26,7 +24,8 @@
   }
 
   .about-link {
-    animation: sub-title-about-on-first-load 2s cubic-bezier(0.64, 0.04, 0.35, 1) 0.2s both;
+    animation: sub-title-about-on-first-load 2s
+      cubic-bezier(0.64, 0.04, 0.35, 1) 0.2s both;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,7 +47,7 @@
     }
 
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 0;
       left: 0;
@@ -57,7 +56,7 @@
       background-color: $accent-main;
       width: 100%;
       z-index: 1;
-      transition: all .7s $timing-func;
+      transition: all 0.7s $timing-func;
     }
 
     & > span {
@@ -72,7 +71,7 @@
   }
 }
 
-@include media-breakpoint-up('lg') {
+@include media-breakpoint-up("lg") {
   #about-page {
     .scroll-box {
       bottom: 60px;

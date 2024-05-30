@@ -1,0 +1,18 @@
+@import "../../../Styles//Static/index.scss";
+
+.animation-fade-up-container {
+  overflow: hidden;
+
+  &.on-first-load * {
+    animation: animation-fade-up 1.2s $timing-func both;
+  }
+}
+
+@keyframes animation-fade-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,68 @@
+@import "../../Static/index";
+
+#benefits-section {
+  position: relative;
+  padding-top: 91px;
+
+  .fp-scroller {
+    height: 100%;
+  }
+
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    height: 100%;
+  }
+
+  .benefits-section-title {
+    margin-bottom: 20px;
+  }
+
+  .benefit {
+    background-color: $light-background;
+    padding: 16px 20px;
+    border-radius: 16px;
+    margin-bottom: 16px;
+  }
+
+  .benefit-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .benefit-number {
+    font-size: 28px;
+    margin-right: 11px;
+    color: $accent-main;
+    font-family: $museo-500;
+  }
+
+  .benefit-title {
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+}
+
+@include media-breakpoint-up("lg") {
+  #benefits-section {
+    padding-top: 0;
+    .benefits-section-title {
+      font-size: 48px;
+      margin-bottom: 30px;
+      margin-left: 185px;
+    }
+    .benefits-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 30px;
+      margin-left: 185px;
+    }
+    .benefit-head {
+      margin-bottom: 12px;
+    }
+  }
+}

@@ -1,44 +1,89 @@
-import React from 'react'
-import { useSpring } from 'react-spring'
-import useTranslation from 'next-translate/useTranslation'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import Container from 'react-bootstrap/Container'
-import { AnimationClass, useDeviceDetect } from '../../../Helpers'
-import { ApolloStatue, ImageWrapper, SectionTitle, SeeMoreLink, SocialsWrap } from '../../SectionsComponents'
-import '../../../Styles/Sections/Home/main.scss'
-
-const move = (x, y) => `${-x / 4}px ${-y / 8}px`
+import React from "react";
+import useTranslation from "next-translate/useTranslation";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
+import { AnimationClass, useDeviceDetect } from "../../../Helpers";
+import {
+  ImageWrapper,
+  SectionDesc,
+  SectionTitle,
+  SeeMoreLink,
+} from "../../SectionsComponents";
+import "../../../Styles/Sections/Home/main.scss";
+import { AlternativeButton } from "../../SectionsComponents/AlternativeButton";
+import { AnimationFadeUp } from "../../SharedComponents/AnimationFadeUp/AnimationFadeUp";
 
 export const HomeMain = ({ firstLoad, animation }) => {
-  const { mobile, desktop } = useDeviceDetect()
-  const { t } = useTranslation('common')
-  const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 9, tension: 136, friction: 81 } }))
-  const handleMouseMove = ({ clientX: x, clientY: y }) => set({ xy: [x, y] })
+  const { mobile, desktop } = useDeviceDetect();
+  const { t } = useTranslation("common");
 
   return (
-    <section id="main-section" className="section" onMouseMove={handleMouseMove}>
-      <SeeMoreLink
-        display={!desktop}
-        label={t('our_works')}
-        direction={mobile ? 'right' : 'left'}
-        className={AnimationClass({ firstLoad, animation })}
-      />
-      <SocialsWrap firstLoad={firstLoad} display={!mobile}/>
-      <Container fluid>
-        <Row>
-          <Col xs={12} lg={6} className={AnimationClass({ firstLoad, animation, className: 'col-info' })}>
-            <SectionTitle isContentWhite className="sub-title">
-              We Are <span>WEB-Studio</span>
-            </SectionTitle>
-            <SectionTitle main isContentWhite className="title" title="MANTICORE" />
-          </Col>
-          <Col xs={12} lg={6}>
-            <ImageWrapper isDot display={!desktop} className={AnimationClass({ firstLoad, animation })}/>
-            <ApolloStatue props={props} move={move} firstLoad={firstLoad} animation={animation}/>
-          </Col>
-        </Row>
-      </Container>
-    </section>
-  )
-}
+    <>
+      <section id="main-section" className="section">
+        <SeeMoreLink
+          display={!desktop}
+          label={t("our_works")}
+          direction={mobile ? "right" : "left"}
+          className={AnimationClass({ firstLoad, animation })}
+        />
+        <Container fluid>
+          <Row>
+            <Col xs={12} lg={7} className="col-info">
+              <ImageWrapper
+                isDot
+                isNewDots
+                className={AnimationClass({
+                  firstLoad,
+                })}
+              />
+              <SectionTitle
+                isContentWhite
+                className={AnimationClass({
+                  firstLoad,
+                  className: "sub-title",
+                })}
+              >
+                We Are
+              </SectionTitle>
+              <AnimationFadeUp
+                className={AnimationClass({
+                  firstLoad,
+                  className: "title-container",
+                })}
+              >
+                <SectionTitle
+                  main
+                  isContentWhite
+                  className="title"
+                  title="MANTICORE"
+                />
+              </AnimationFadeUp>
+              <SectionDesc
+                className={AnimationClass({
+                  firstLoad,
+                  className: "description",
+                })}
+                isContentWhite
+              >
+                И мы разрабатываем креативные сайты. А также брендируем
+                компании. Мы в этом шарим 👌🏻 На нашем сайте вы найдёте примеры
+                наших работ, наши услуги, кто мы и многое другое. <br />
+                Например, <span>кейс в кейсе</span>
+              </SectionDesc>
+              <AlternativeButton
+                isLink
+                to="/portfolio"
+                className={AnimationClass({
+                  firstLoad,
+                })}
+              >
+                {t("common:see_works")}
+              </AlternativeButton>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+    </>
+  );
+};

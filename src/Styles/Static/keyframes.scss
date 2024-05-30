@@ -4,40 +4,54 @@
 @keyframes statue-on-first-load {
   from {
     opacity: 0;
+    transform: translate(234px, -50%);
+
+    @media screen and (max-width: 768px) {
+      transform: translate(234px, 0);
+    }
   }
   to {
     opacity: 1;
+    transform: translate(0, -50%);
+
+    @media screen and (max-width: 768px) {
+      transform: translate(0, 0);
+    }
+  }
+}
+@keyframes statue-on-first-load-mobile {
+  from {
+    opacity: 0;
+    transform: translate(50px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
   }
 }
 @keyframes statue-on-leave {
   from {
-    opacity: 1;
-    transform: translateX(0);
+    right: $statue-pos-right;
   }
   to {
-    opacity: 0;
-    transform: translateX(-50px);
+    right: -33%;
   }
 }
 @keyframes statue-on-enter {
   from {
-    opacity: 0;
-    transform: translateX(-50px);
+    right: -33%;
   }
   to {
-    opacity: 1;
-    transform: translateX(0px);
+    right: $statue-pos-right;
   }
 }
 
 @keyframes dots-on-first-load {
   from {
     opacity: 0;
-    transform: translate(-50px, 0);
   }
   to {
     opacity: 1;
-    transform: translate(0px, 0);
   }
 }
 @keyframes dots-on-leave {
@@ -54,6 +68,26 @@
   }
   to {
     transform: translate(0, 0);
+  }
+}
+
+@keyframes common-fade-up {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes text-on-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -94,6 +128,35 @@
   }
   to {
     transform: translateY(0);
+  }
+}
+
+@keyframes section-content-on-leave {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-70vh);
+  }
+}
+
+@keyframes header-nav-on-leave {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes header-right-fade-out {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(30px);
   }
 }
 
@@ -181,22 +244,38 @@
 }
 @keyframes statue-about-on-enter {
   from {
-    opacity: 0;
-    transform: translateX(200px);
+    bottom: -100%;
   }
   to {
-    opacity: 1;
-    transform: translateX(110px);
+    bottom: 0;
   }
 }
 @keyframes statue-about-on-leave {
   from {
-    opacity: 1;
-    transform: translateX(110px);
+    bottom: 0;
   }
   to {
-    opacity: 0;
-    transform: translateX(200px);
+    bottom: -100%;
+  }
+}
+@keyframes statue-about-on-right-leave {
+  from {
+    right: 60px;
+    bottom: 0;
+  }
+  to {
+    right: -100%;
+    bottom: 0;
+  }
+}
+@keyframes statue-about-on-right-enter {
+  from {
+    bottom: 0;
+    right: -100%;
+  }
+  to {
+    bottom: 0;
+    right: 60px;
   }
 }
 @keyframes text-about-on-enter {

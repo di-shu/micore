@@ -1,30 +1,32 @@
 /* FONTS */
-$museo-100: 'Museo Sans Cyrl 100';
-$museo-300: 'Museo Sans Cyrl 300';
-$museo-500: 'Museo Sans Cyrl 500';
+$museo-100: "Museo Sans Cyrl 100";
+$museo-300: "Museo Sans Cyrl 300";
+$museo-500: "Museo Sans Cyrl 500";
 //$museo-600: 'Museo Sans Cyrl 600';
-$museo-700: 'Museo Sans Cyrl 700';
-$museo-900: 'Museo Sans Cyrl 900';
+$museo-700: "Museo Sans Cyrl 700";
+$museo-900: "Museo Sans Cyrl 900";
 
 //'Aeroport';
-$aero-300: 'Aeroport Light';
-$aero-500: 'Aeroport Medium';
-$aero-700: 'Aeroport Bold';
+$aero-300: "Aeroport Light";
+$aero-500: "Aeroport Medium";
+$aero-700: "Aeroport Bold";
 
 //'Pragmatica';
-$pragma-book: 'Pragmatica Book';
-$pragma-bold: 'Pragmatica Bold';
-$pragma-extended: 'Pragmatica Extended';
+$pragma-book: "Pragmatica Book";
+$pragma-bold: "Pragmatica Bold";
+$pragma-extended: "Pragmatica Extended";
 
 /* COLORS */
 $white: #fff;
+$gray: #707376;
+$primary-light: #e1517e;
 $accent-black: #10151b;
 $accent-main: #d9255e;
 $accent-gray: #d6d7d7;
-$myhouse-accent: #22929D;
-$tfс-accent: #F0F0F0;
-$bezcreditov-accent: #13BF9C;
-$dealok-accent: #54648C;
+$myhouse-accent: #22929d;
+$tfс-accent: #f0f0f0;
+$bezcreditov-accent: #13bf9c;
+$dealok-accent: #54648c;
 $zlata-accent: #3c3647;
 $zlata-accent-primary: #3d3a4a;
 $zlata-accent-secondary: #a88154;
@@ -32,5 +34,7 @@ $balkany-accent: #3e4676;
 $pride-accent: #e6923a;
 $vlady-accent: #5e774d;
 $bee-game-accent: #f2c403;
+$light-background: #182028;
 
 $timing-func: cubic-bezier(0.64, 0.04, 0.35, 1);
+$statue-pos-right: 140px;

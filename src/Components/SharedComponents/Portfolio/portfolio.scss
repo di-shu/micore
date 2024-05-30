@@ -1,0 +1,72 @@
+@import "../../../Styles/Static/index";
+
+.portfolio {
+  .project {
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: $light-background;
+
+    .section-title {
+      margin-bottom: 12px;
+      font-size: 20px;
+      letter-spacing: 1px;
+    }
+
+    .section-desc {
+      line-height: 24px;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+
+    .active-link {
+      color: $primary-light;
+      letter-spacing: 1px;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: -32px;
+        top: 50%;
+        display: block;
+        height: 1px;
+        width: 24px;
+        background-color: $primary-light;
+      }
+    }
+
+    .project-content {
+      padding: 20px;
+    }
+  }
+}
+
+@include media-breakpoint-up("lg") {
+  .portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+
+    .project {
+      .section-title {
+        font-size: 24px;
+        margin-bottom: 16px;
+      }
+
+      .section-desc {
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 1px;
+        margin-bottom: 16px;
+      }
+
+      .active-link {
+        font-size: 16px;
+      }
+
+      .project-content {
+        padding: 30px;
+      }
+    }
+  }
+}

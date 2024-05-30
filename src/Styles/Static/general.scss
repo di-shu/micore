@@ -1,6 +1,7 @@
 @import "index";
 
-body, html {
+body,
+html {
   padding: 0;
   margin: 0;
   color: $accent-black;
@@ -9,7 +10,15 @@ body, html {
   background-color: $accent-black;
 }
 
-h1, h2, h3, h4, h5, h6, p, li, a {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a {
   margin: 0;
   font-size: 14px;
   font-family: $museo-300;
@@ -84,31 +93,28 @@ img {
   transition: opacity 1s $timing-func;
 }
 
-@include media-breakpoint-up('xl') {
+@include media-breakpoint-up("xl") {
   main {
     min-height: 100vh;
   }
 
   .section {
-    position: fixed !important;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
     visibility: hidden;
-    z-index: -1;
+    z-index: 2;
     transition: all 1s $timing-func;
 
     &.active {
       position: relative !important;
-      opacity: 1;
       visibility: visible;
       z-index: 10;
     }
   }
 
-  .fullpage-inner-wrap  {
+  #fullpage {
+    transition-timing-function: $timing-func !important;
+  }
+
+  .fullpage-inner-wrap {
     &.last-section {
       .section {
         &:nth-last-child(2) {

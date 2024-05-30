@@ -7,68 +7,42 @@
   }
 
   .container-fluid {
-    padding-top: 25px;
+    padding-top: 91px;
     height: 100%;
 
     .row {
       height: 100%;
     }
 
-    .col-12 {
-      &:last-child {
-        height: calc(100% - 65px);
-      }
-    }
+    // .col-12 {
+    //   &:last-child {
+    //     height: calc(100% - 65px);
+    //   }
+    // }
   }
 
   .section-dots-wrap {
-    width: 360px;
-    height: 360px;
-    bottom: 25px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: -10px;
+    left: 15px;
+    width: 160px;
+    height: 160px;
     z-index: 1;
   }
 
   .section-title {
     position: relative;
-    font-size: 40px;
-    letter-spacing: 1.13px;
-    text-align: center;
-    margin-bottom: 30px;
+    font-size: 26px;
+    text-align: left;
+    margin-bottom: 16px;
     z-index: 2;
-  }
-
-  .about-statue {
-    position: absolute;
-    bottom: 0;
-    width: 400px;
-    left: 65px;
-    z-index: 5;
-  
-    .statue-img {
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  .text-box {
-    position: relative;
-    border: 1px solid #4d5257;
-    background-color: #10151b;
-    padding: 15px 15px 50px;
-    max-width: 325px;
-    width: 100%;
-    margin: 0 auto;
-    z-index: 5;
   }
 
   .about-desc {
     position: relative;
     font-size: 14px;
-    letter-spacing: 1.4px;
-    line-height: 26px;
-    margin-bottom: 0;
+    letter-spacing: 1px;
+    line-height: 24px;
+    margin-bottom: 24px;
   }
 
   .about-link {
@@ -84,7 +58,6 @@
     transition: all 0.4s $timing-func 0.4s;
     z-index: 1;
 
-
     &:hover {
       bottom: 10px;
       transition-delay: 0s;
@@ -97,7 +70,7 @@
     }
 
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 0;
       left: 0;
@@ -108,18 +81,23 @@
       transition: all 0.4s $timing-func 0s;
     }
   }
+  .section-title.title::first-letter {
+    color: $accent-main;
+  }
+
+  .col-info {
+    padding: 0 30px;
+  }
 }
 
-@include media-breakpoint-up('md') {
+@include media-breakpoint-up("md") {
   #about-section {
     .container-fluid {
-      padding-top: 110px;
-
-      .col-12 {
-        &:last-child {
-          height: calc(100% - 132px);
-        }
-      }
+      // .col-12 {
+      //   &:last-child {
+      //     height: calc(100% - 132px);
+      //   }
+      // }
     }
 
     .section-dots-wrap {
@@ -130,7 +108,6 @@
       bottom: -15px;
       left: 110px;
       transform: none;
-      opacity: 0.5;
     }
 
     .section-title {
@@ -139,15 +116,6 @@
       text-align: left;
       margin-left: 100px;
       margin-bottom: 60px;
-    }
-
-    .text-box {
-      max-width: 590px;
-      margin: 0 auto 0 100px;
-      padding: 50px 50px 60px;
-      border: 1px solid #fff;
-      background-color: $accent-black;
-      z-index: 3;
     }
 
     .about-desc {
@@ -162,20 +130,12 @@
       left: 65px;
       bottom: -15px;
     }
-
-    .about-statue {
-      left: auto;
-      bottom: 0;
-      right: -155px;
-      width: 570px;
-    }
   }
 }
 
-@include media-breakpoint-up('lg') {
+@include media-breakpoint-up("lg") {
   #about-section {
     .section-dots-wrap {
-      bottom: 65px;
       width: 485px;
       height: 485px;
     }
@@ -183,33 +143,44 @@
     .section-title {
       margin-left: 100px;
     }
-
-    .text-box {
-      margin-left: auto;
-      padding: 40px 40px 75px 50px;
-    }
-
-    .about-statue {
-      bottom: -30px;
-      right: -100px;
-    }
   }
 }
 
-@include media-breakpoint-up('xl') {
+@include media-breakpoint-up("xl") {
   #about-section {
     .container-fluid {
-      .col-12 {
-        &:last-child {
-          height: calc(100% - 175px);
-        }
+      padding-top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
+      // .col-12 {
+      //   &:last-child {
+      //     height: calc(100% - 175px);
+      //   }
+      // }
+      .row {
+        height: unset;
       }
     }
 
+    .section-dots-wrap {
+      top: -73.5px;
+      left: 120px;
+    }
+
+    .col-info {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
     .section-title {
-      font-size: 71px;
+      font-size: 48px;
       letter-spacing: 2px;
-      margin-bottom: 90px;
+      margin-left: 180px;
+      margin-bottom: 30px;
 
       &.on-enter {
         animation: section-title-on-enter 1s $timing-func 0s both;
@@ -220,62 +191,12 @@
       }
     }
 
-    .about-statue {
-      width: auto;
-      height: 85vh;
-      bottom: 0;
-      right: -110px;
-
-      &.on-enter {
-        animation: statue-about-on-enter 1s $timing-func 0s both;
-      }
-
-      &.on-leave {
-        animation: statue-about-on-leave 1s $timing-func 0s both;
-      }
-
-      img {
-        object-fit: contain;
-      }
-    }
-
-    .text-box {
-      max-width: 655px;
-      padding: 0;
-      border: none;
-      margin-right: 315px;
-      overflow: hidden;
-
-      &:before {
-        content: '';
-        position: absolute;
-        top: -3px;
-        left: 3px;
-        right: 0;
-        bottom: -3px;
-        width: 100%;
-        z-index: 3;
-        background-color: $accent-black;
-        transform: translateX(0);
-      }
-
-      &.on-enter {
-        &:before {
-          animation: text-about-on-enter 1s $timing-func 0.4s both;
-        }
-      }
-
-      &.on-leave {
-        &:before {
-          animation: text-about-on-leave 1s $timing-func 0s both;
-        }
-      }
-    }
-
     .about-desc {
-      border: 3px solid #fff;
-      padding: 50px 72px 100px;
-      margin-bottom: 10px;
+      font-size: 18px;
+      line-height: 36px;
+      letter-spacing: 2px;
+      margin-left: 180px;
+      margin-bottom: 40px;
     }
 
     .about-link {
@@ -290,31 +211,32 @@
         bottom: 10px;
       }
     }
+    .alternative-button {
+      margin-left: 180px;
+    }
   }
 }
 
+// @media screen and(max-height: 650px) {
+//   #about-section {
+//     .text-box {
+//       height: 200px;
+//     }
 
-@media screen and(max-height: 650px) {
-  #about-section {
+//     .section-desc {
+//       padding: 0px;
+//       font-size: 12px;
+//       line-height: 24px;
+//     }
 
-    .text-box {
-      height: 200px;
-    }
+//     .about-statue {
+//       bottom: -25px;
+//       width: 350px;
+//       left: 65px;
+//     }
+//   }
 
-    .section-desc {
-      padding: 0px;
-      font-size: 12px;
-      line-height: 24px;
-    }
-
-    .about-statue {
-      bottom: -25px;
-      width: 350px;
-      left: 65px;
-    }
-  }
-
-  .scroll-box {
-    display: none;
-  }
-}
+//   .scroll-box {
+//     display: none;
+//   }
+// }

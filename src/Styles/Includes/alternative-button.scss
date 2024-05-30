@@ -1,0 +1,28 @@
+.alternative-button {
+  display: block;
+  width: fit-content;
+  padding: 13px 30px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: $accent-main;
+  border: none;
+  color: $white;
+  border-radius: 8px;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+@include media-breakpoint-up("lg") {
+  .alternative-button {
+    padding: 16px 50px;
+    font-size: 14px;
+    transition: all 0.5s $timing-func !important;
+
+    &:hover {
+      opacity: 0.8 !important;
+    }
+  }
+}
