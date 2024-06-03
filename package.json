@@ -38,7 +38,6 @@
     "sass": "^1.32.11",
     "styled-components": "^5.2.3",
     "turn.js": "^1.0.5",
-    "use-debounce": "^10.0.1",
     "webp-loader": "^0.6.0",
     "webpack": "^4.46.0"
   },

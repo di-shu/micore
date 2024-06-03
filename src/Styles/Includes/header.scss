@@ -1,6 +1,8 @@
 @import "../Static/index";
 
 .site-header {
+  position: relative;
+  z-index: calc(infinity);
   .header-fade-up-animation {
     animation: common-fade-up 0.4s $timing-func 1.3s both;
   }
