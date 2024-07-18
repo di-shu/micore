@@ -9,7 +9,6 @@ import { useDeviceDetect } from "../../Helpers";
 import { isDesktop, isMobile } from "react-device-detect";
 
 export const Header = () => {
-  const { desktop, mobile } = useDeviceDetect();
   const { isAlternativeNavigationEnabled } = useSelector(
     (state) => state.header
   );
@@ -69,7 +68,7 @@ export const Header = () => {
     if (!isFirstLoad && isDesktop) {
       changeMenu();
     } else {
-      if (!isMobile) {
+      if (!isMobile && isAlternativeNavigationEnabled) {
         setIsBurgerShown(false);
       }
     }

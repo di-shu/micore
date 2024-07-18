@@ -1,0 +1,291 @@
+@import "../../Static/index";
+
+#filatov-project-page {
+  section {
+    background-color: #eee;
+  }
+
+  .filatov-about-section {
+    .about-section-title {
+      .section-title {
+        font-family: $graphik-500;
+      }
+    }
+
+    .about-section-content {
+      font-family: $graphik-400;
+
+      .work-done-list {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .section-title,
+      .section-desc {
+        font-family: $graphik-400;
+        letter-spacing: normal;
+      }
+
+      .work-done-link {
+        color: #94979b;
+      }
+    }
+  }
+
+  .filatov-font-section {
+    background-color: #fff;
+    .font-section-content {
+      font-family: $graphik-400;
+
+      span {
+        font-family: $graphik-500;
+      }
+    }
+  }
+
+  .filatov-font-section {
+    .font-section-content {
+      color: #000de5;
+    }
+  }
+
+  .filatov-creativity-section {
+    background-color: #f7f7f7;
+
+    .creativity-section-content {
+      color: #000de5;
+    }
+  }
+
+  .filatov-colors-section {
+    .section-title {
+      color: #000de5;
+    }
+
+    .filatov-color {
+      color: #fff;
+      border-bottom: none !important;
+      text-align: center;
+    }
+  }
+
+  .filatov-footer-section {
+    background-color: #fff;
+    img {
+      &:first-child,
+      &:nth-child(2) {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        left: 0;
+        top: 10px;
+      }
+    }
+
+    .footer-logo {
+      height: 100px;
+      width: auto;
+    }
+  }
+
+  .section-title {
+    text-transform: unset;
+  }
+}
+
+@include media-breakpoint-up("md") {
+  #filatov-project-page {
+    .filatov-about-section {
+      padding: 160px 0 67px;
+
+      .container {
+        position: relative;
+      }
+
+      .about-section-frame {
+        width: 88.85px;
+        height: auto;
+        position: absolute;
+        top: -20px;
+        right: -100px;
+      }
+
+      .about-section-title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 60px;
+
+        img {
+          width: 43px;
+          height: auto;
+          margin-right: 30px;
+        }
+        .section-title {
+          padding-top: 16px;
+          font-size: 48px;
+          margin-bottom: 0;
+        }
+      }
+
+      .about-section-content {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+
+        .work-done-list,
+        .section-desc {
+          font-size: 24px;
+          line-height: 40px;
+        }
+
+        .section-title {
+          font-size: 32px;
+          margin-bottom: 20px;
+        }
+      }
+
+      .work-done {
+        margin-left: auto;
+      }
+
+      .work-done-list {
+        margin-bottom: 44px;
+      }
+
+      .work-done-link {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+
+    .filatov-font-section {
+      padding: 160px 0;
+      position: relative;
+
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+
+      .font-section-content {
+        font-size: 64px;
+        line-height: 64px;
+        max-width: 943px;
+      }
+
+      .font-frame1 {
+        left: 120px;
+        bottom: 140px;
+      }
+
+      .font-frame2 {
+        right: 120px;
+        top: 140px;
+      }
+
+      .font-frame1,
+      .font-frame2 {
+        position: absolute;
+        height: 64px;
+        width: auto;
+        z-index: -1;
+      }
+    }
+
+    .filatov-services-section {
+      padding: 200px 0;
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 120px;
+      }
+    }
+
+    .filatov-creativity-section {
+      .creativity-section-content {
+        padding: 160px 0;
+        background-color: #fff;
+        text-align: center;
+        position: relative;
+
+        .section-content-title {
+          font-size: 64px;
+          line-height: 64px;
+
+          span {
+            font-family: $graphik-500;
+          }
+        }
+      }
+
+      .creativity-frame1,
+      .creativity-frame2 {
+        position: absolute;
+        height: 64px;
+        width: auto;
+      }
+
+      .creativity-frame1 {
+        left: 120px;
+        top: 80px;
+      }
+      .creativity-frame2 {
+        bottom: 80px;
+        right: 120px;
+      }
+
+      .creativity-section-images {
+        padding: 200px 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 80px;
+      }
+    }
+
+    .filatov-colors-section {
+      background-color: #fff;
+      padding-top: 120px;
+      .section-title {
+        margin-bottom: 60px;
+        text-align: center;
+      }
+
+      .filatov-colors {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: 40px;
+      }
+
+      .filatov-color {
+        height: 160px;
+        font-family: 24px;
+        padding-top: 21px;
+      }
+    }
+
+    .filatov-footer-section {
+      padding: 205px 0 100px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 1520px;
+      padding: 0 60px;
+      margin: 0 auto;
+    }
+  }
+}
+
+#filatov-main {
+  .section-title {
+    text-transform: uppercase;
+  }
+}
+
+#filatov-project-page #footer-section {
+  background-color: #10151b;
+  .section-title {
+    font-family: $museo-700;
+    text-transform: uppercase;
+  }
+}

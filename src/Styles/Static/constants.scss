@@ -1,4 +1,19 @@
 /* FONTS */
+//Inter
+$inter-400: "Inter Regular";
+$inter-500: "Inter Medium";
+$inter-700: "Inter Bold";
+
+// E-Ukraine
+$eukraine-300: "EUkraine Ultra Light";
+$eukraine-400: "EUkraine Light";
+$eukraine-500: "EUkraine Regular";
+$eukraine-700: "EUkraine Bold";
+
+// Graphik LCG
+$graphik-400: "Graphik LCG Regular";
+$graphik-500: "Graphik LCG Medium";
+
 $museo-100: "Museo Sans Cyrl 100";
 $museo-300: "Museo Sans Cyrl 300";
 $museo-500: "Museo Sans Cyrl 500";
@@ -19,6 +34,7 @@ $pragma-extended: "Pragmatica Extended";
 /* COLORS */
 $white: #fff;
 $gray: #707376;
+$grey: #7b7b7b;
 $primary-light: #e1517e;
 $accent-black: #10151b;
 $accent-main: #d9255e;
@@ -35,6 +51,9 @@ $pride-accent: #e6923a;
 $vlady-accent: #5e774d;
 $bee-game-accent: #f2c403;
 $light-background: #182028;
+$eerie-black: #1c1c1e;
+$nero: #232323;
+$black-mana: #838383;
 
 $timing-func: cubic-bezier(0.64, 0.04, 0.35, 1);
 $statue-pos-right: 140px;

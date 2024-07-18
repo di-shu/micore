@@ -1,119 +1,217 @@
 @font-face {
-    font-family: 'Museo Sans Cyrl 100';
-    src: url('../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-100.eot');
-    src: url('../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-100.woff2') format('woff2'),
-    url('../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-100.woff') format('woff'),
-    url('../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-100.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Museo Sans Cyrl 100";
+  src: url("../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-100.eot");
+  src: url("../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-100.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-100.woff2")
+      format("woff2"),
+    url("../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-100.woff") format("woff"),
+    url("../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-100.ttf")
+      format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Museo Sans Cyrl 300';
-    src: url('../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-300.eot');
-    src: url('../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-300.woff2') format('woff2'),
-    url('../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-300.woff') format('woff'),
-    url('../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-300.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Museo Sans Cyrl 300";
+  src: url("../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-300.eot");
+  src: url("../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-300.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-300.woff2")
+      format("woff2"),
+    url("../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-300.woff") format("woff"),
+    url("../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-300.ttf")
+      format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Museo Sans Cyrl 500';
-    src: url('../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-500.eot');
-    src: url('../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-500.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-500.woff2') format('woff2'),
-    url('../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-500.woff') format('woff'),
-    url('../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-500.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Museo Sans Cyrl 500";
+  src: url("../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-500.eot");
+  src: url("../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-500.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-500.woff2")
+      format("woff2"),
+    url("../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-500.woff") format("woff"),
+    url("../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-500.ttf")
+      format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Museo Sans Cyrl 700';
-    src: url('../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-700.eot');
-    src: url('../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-700.woff2') format('woff2'),
-    url('../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-700.woff') format('woff'),
-    url('../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-700.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Museo Sans Cyrl 700";
+  src: url("../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-700.eot");
+  src: url("../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-700.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-700.woff2")
+      format("woff2"),
+    url("../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-700.woff") format("woff"),
+    url("../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-700.ttf")
+      format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Museo Sans Cyrl 900';
-    src: url('../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-900.eot');
-    src: url('../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-900.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-900.woff2') format('woff2'),
-    url('../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-900.woff') format('woff'),
-    url('../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-900.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Museo Sans Cyrl 900";
+  src: url("../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-900.eot");
+  src: url("../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-900.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-900.woff2")
+      format("woff2"),
+    url("../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-900.woff") format("woff"),
+    url("../fonts/Museo Sans Cyrl/hinted-MuseoSansCyrl-900.ttf")
+      format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-	font-family: 'Aeroport Light';
-	src: local('Aeroport Light'), local('Aeroport-Light'),
-			url('../fonts/Aeroport/Aeroport-Light.woff2') format('woff2'),
-			url('../fonts/Aeroport/Aeroport-Light.woff') format('woff'),
-			url('../fonts/Aeroport/Aeroport-Light.ttf') format('truetype');
-	font-weight: 300;
-	font-style: normal;
+  font-family: "Aeroport Light";
+  src: local("Aeroport Light"), local("Aeroport-Light"),
+    url("../fonts/Aeroport/Aeroport-Light.woff2") format("woff2"),
+    url("../fonts/Aeroport/Aeroport-Light.woff") format("woff"),
+    url("../fonts/Aeroport/Aeroport-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Aeroport Medium';
-	src: local('Aeroport Medium'), local('Aeroport-Medium'),
-			url('../fonts/Aeroport/Aeroport-Medium.woff2') format('woff2'),
-			url('../fonts/Aeroport/Aeroport-Medium.woff') format('woff'),
-			url('../fonts/Aeroport/Aeroport-Medium.ttf') format('truetype');
-	font-weight: 500;
-	font-style: normal;
+  font-family: "Aeroport Medium";
+  src: local("Aeroport Medium"), local("Aeroport-Medium"),
+    url("../fonts/Aeroport/Aeroport-Medium.woff2") format("woff2"),
+    url("../fonts/Aeroport/Aeroport-Medium.woff") format("woff"),
+    url("../fonts/Aeroport/Aeroport-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Aeroport Bold';
-	src: local('Aeroport Bold'), local('Aeroport-Bold'),
-			url('../fonts/Aeroport/Aeroport-Bold.woff2') format('woff2'),
-			url('../fonts/Aeroport/Aeroport-Bold.woff') format('woff'),
-			url('../fonts/Aeroport/Aeroport-Bold.ttf') format('truetype');
-	font-weight: 700;
-	font-style: normal;
+  font-family: "Aeroport Bold";
+  src: local("Aeroport Bold"), local("Aeroport-Bold"),
+    url("../fonts/Aeroport/Aeroport-Bold.woff2") format("woff2"),
+    url("../fonts/Aeroport/Aeroport-Bold.woff") format("woff"),
+    url("../fonts/Aeroport/Aeroport-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Pragmatica Book';
-	src: local('Pragmatica Book'), local('Pragmatica-Book'),
-			url('../fonts/Pragmatica/Pragmatica-Book.woff2') format('woff2'),
-			url('../fonts/Pragmatica/Pragmatica-Book.woff') format('woff'),
-			url('../fonts/Pragmatica/Pragmatica-Book.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "Pragmatica Book";
+  src: local("Pragmatica Book"), local("Pragmatica-Book"),
+    url("../fonts/Pragmatica/Pragmatica-Book.woff2") format("woff2"),
+    url("../fonts/Pragmatica/Pragmatica-Book.woff") format("woff"),
+    url("../fonts/Pragmatica/Pragmatica-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Pragmatica Bold';
-	src: local('Pragmatica Bold'), local('Pragmatica-Bold'),
-			url('../fonts/Pragmatica/Pragmatica-Bold.woff2') format('woff2'),
-			url('../fonts/Pragmatica/Pragmatica-Bold.woff') format('woff'),
-			url('../fonts/Pragmatica/Pragmatica-Bold.ttf') format('truetype');
-	font-weight: 700;
-	font-style: normal;
+  font-family: "Pragmatica Bold";
+  src: local("Pragmatica Bold"), local("Pragmatica-Bold"),
+    url("../fonts/Pragmatica/Pragmatica-Bold.woff2") format("woff2"),
+    url("../fonts/Pragmatica/Pragmatica-Bold.woff") format("woff"),
+    url("../fonts/Pragmatica/Pragmatica-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Pragmatica Extended';
-	src: local('Pragmatica Extended Bold'), local('Pragmatica-Extended-Bold'),
-			url('../fonts/Pragmatica/PragmaticaExtended-Bold.woff2') format('woff2'),
-			url('../fonts/Pragmatica/PragmaticaExtended-Bold.woff') format('woff'),
-			url('../fonts/Pragmatica/PragmaticaExtended-Bold.ttf') format('truetype');
-	font-weight: 700;
-	font-style: normal;
+  font-family: "Pragmatica Extended";
+  src: local("Pragmatica Extended Bold"), local("Pragmatica-Extended-Bold"),
+    url("../fonts/Pragmatica/PragmaticaExtended-Bold.woff2") format("woff2"),
+    url("../fonts/Pragmatica/PragmaticaExtended-Bold.woff") format("woff"),
+    url("../fonts/Pragmatica/PragmaticaExtended-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter Bold";
+  src: url("../fonts/Inter/Inter-Bold.woff2") format("woff2"),
+    url("../fonts/Inter/Inter-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter Regular";
+  src: url("../fonts/Inter/Inter-Regular.woff2") format("woff2"),
+    url("../fonts/Inter/Inter-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter Medium";
+  src: url("../fonts/Inter/Inter-Medium.woff2") format("woff2"),
+    url("../fonts/Inter/Inter-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "EUkraine Ultra Light";
+  src: url("../fonts/EUkraine/e-UkraineHead-UltraLight.otf") format("otf"),
+    url("../fonts/EUkraine/e-ukrainehead-ultralight_w.woff") format("woff"),
+    url("../fonts/EUkraine/e-ukrainehead-ultralight_w.woff2") format("woff2"),
+    url("../fonts/EUkraine/e-ukrainehead-ultralight_w.eot") format("eot");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "EUkraine Light";
+  src: url("../fonts/EUkraine/e-UkraineHead-Light.otf") format("otf"),
+    url("../fonts/EUkraine/e-ukrainehead-light_w.woff") format("woff"),
+    url("../fonts/EUkraine/e-ukrainehead-light_w.woff2") format("woff2"),
+    url("../fonts/EUkraine/e-ukrainehead-light_w.eot") format("eot");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "EUkraine Regular";
+  src: url("../fonts/EUkraine/e-UkraineHead-Regular.otf") format("otf"),
+    url("../fonts/EUkraine/e-ukrainehead-regular_w.woff") format("woff"),
+    url("../fonts/EUkraine/e-ukrainehead-regular_w.woff2") format("woff2"),
+    url("../fonts/EUkraine/e-ukrainehead-regular_w.eot") format("eot");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "EUkraine Bold";
+  src: url("../fonts/EUkraine/e-UkraineHead-Bold.otf") format("otf"),
+    url("../fonts/EUkraine/e-ukrainehead-bold_w.woff") format("woff"),
+    url("../fonts/EUkraine/e-ukrainehead-bold_w.woff2") format("woff2"),
+    url("../fonts/EUkraine/e-ukrainehead-bold_w.eot") format("eot");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphik LCG Regular";
+  src: local("Graphik LCG Regular"), local("Graphik-LCG-Regular"),
+    url("../fonts/GraphikLCG/GraphikLCG-Regular.woff2") format("woff2"),
+    url("../fonts/GraphikLCG/GraphikLCG-Regular.woff") format("woff"),
+    url("../fonts/GraphikLCG/GraphikLCG-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphik LCG Medium";
+  src: local("Graphik LCG Medium"), local("Graphik-LCG-Medium"),
+    url("../fonts/GraphikLCG/GraphikLCG-Medium.woff2") format("woff2"),
+    url("../fonts/GraphikLCG/GraphikLCG-Medium.woff") format("woff"),
+    url("../fonts/GraphikLCG/GraphikLCG-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
 }

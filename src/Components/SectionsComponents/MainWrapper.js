@@ -1,28 +1,32 @@
-import React, { useEffect } from 'react'
-import { motion } from 'framer-motion'
-import { Portfolios } from '../Config'
-import { FooterSection } from '../Sections'
-import { getPathname } from '../../Helpers'
-import { ProjectsNavigation } from './Projects'
-import { MyScrollAnimation } from './MyScrollAnimation'
-import '../../Styles/Static/general.scss'
-import '../../Styles/Includes/index.scss'
-import '../../Styles/Sections/Services/index.scss'
-import '../../Styles/Sections/Projects/index.scss'
+import React, { useEffect } from "react";
+import { motion } from "framer-motion";
+import { Portfolios } from "../Config";
+import { FooterSection } from "../Sections";
+import { getPathname } from "../../Helpers";
+import { ProjectsNavigation } from "./Projects";
+import { MyScrollAnimation } from "./MyScrollAnimation";
+import "../../Styles/Static/general.scss";
+import "../../Styles/Includes/index.scss";
+import "../../Styles/Sections/Services/index.scss";
+import "../../Styles/Sections/Projects/index.scss";
+import { useDispatch } from "react-redux";
+import { SET_IsAlternativeNavigationEnabled } from "../../../redux/reducers/headerSlice";
 
 export const MainWrapper = ({ id, children }) => {
-  const easing = [0.64, 0.04, 0.35, 1]
+  const easing = [0.64, 0.04, 0.35, 1];
   const variants = {
     exit: { opacity: 0, transition: { duration: 1, ease: easing } },
     visible: { opacity: 1, transition: { duration: 1, ease: easing } },
-    hidden: { opacity: 0, transition: { duration: 1, ease: easing } }
-  }
+    hidden: { opacity: 0, transition: { duration: 1, ease: easing } },
+  };
+  //const dispatch = useDispatch();
 
   useEffect(() => {
+    //dispatch(SET_IsAlternativeNavigationEnabled(false));
     setTimeout(() => {
-      window.scrollTo({ top: 0, left: 0 })
-    }, 100)
-  }, [])
+      window.scrollTo({ top: 0, left: 0 });
+    }, 100);
+  }, []);
 
   return (
     <>
@@ -33,15 +37,15 @@ export const MainWrapper = ({ id, children }) => {
           animate="visible"
           variants={variants}
         >
-          <ProjectsNavigation links={Portfolios.getALl()}/>
+          <ProjectsNavigation links={Portfolios.getALl()} />
           {children}
           {(getPathname().isProject || getPathname().isServices) && (
             <MyScrollAnimation animationName="fadeIn" offset={300}>
-              <FooterSection animation/>
+              <FooterSection animation />
             </MyScrollAnimation>
           )}
         </motion.div>
       </main>
     </>
-  )
-}
+  );
+};

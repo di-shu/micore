@@ -15,6 +15,9 @@ const DealokImage = "/images/Portfolio/dealok.jpg";
 const BezcreditovImage = "/images/Portfolio/bezcreditov.jpg";
 const TfcImage = "/images/Portfolio/tfc.jpg";
 const MyHouseImage = "/images/Portfolio/my_house.jpg";
+const JFTImage = "/images/JFT/JFT-Main-bg.jpg";
+const EasyAcademy = "/images/EasyAcademy/EasyAcademyCover.jpg";
+const Filatov = "/images/Filatov/FilatovMain.jpg";
 
 export const Sizes = {
   getIterations: function (matches, index) {
@@ -127,6 +130,21 @@ export const NewProjectsList = {
       img: MyHouseImage,
       title: "My House",
       link: "/projects/my-house",
+    },
+    jft: {
+      img: JFTImage,
+      title: "JFT",
+      link: "/projects/jft",
+    },
+    easy_academy: {
+      img: EasyAcademy,
+      title: "EasyAcademy",
+      link: "/projects/easy-academy",
+    },
+    filatov: {
+      img: Filatov,
+      title: "Filatov Education",
+      link: "/projects/filatov-education",
     },
   },
   getExcept: function (keys) {
